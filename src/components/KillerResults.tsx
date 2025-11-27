@@ -61,7 +61,7 @@ export default function KillerResults() {
     {
       image: '/files_7126411-1763632208250-Before and After Image Youtube Thumbnail (5).png',
       title: 'Before & After Transformation',
-      description: 'From $0 Melbourne Draft sales to $25K+ in sold-out events. Real transformation.',
+      description: 'From 49 tickets to 88 and $25K+ in packed Melbourne Draft events. Real transformation.',
       metric: '$25K+',
       metricLabel: 'Event Revenue',
       icon: Tag,
