@@ -32,6 +32,13 @@ export default function CaseStudiesPage() {
             <p className="text-xs font-semibold uppercase tracking-wide text-orange-100 mb-3">
               Case Study
             </p>
+            <div className="mb-6">
+              <img
+                src="/Asset 51x transparent.png"
+                alt="Elite Football Agency Logo"
+                className="h-16 sm:h-20 w-auto"
+              />
+            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Alan, Elite Football Agency, Gold Coast
             </h1>

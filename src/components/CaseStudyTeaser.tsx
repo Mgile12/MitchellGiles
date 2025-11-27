@@ -23,6 +23,14 @@ export default function CaseStudyTeaser() {
               Case Study
             </p>
 
+            <div className="flex items-center gap-4 mb-4">
+              <img
+                src="/Asset 51x transparent.png"
+                alt="Elite Football Agency Logo"
+                className="h-12 sm:h-16 w-auto"
+              />
+            </div>
+
             <h2 id="case-study-heading" className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4 sm:mb-5">
               Alan, Elite Football Agency (Gold Coast)
             </h2>
