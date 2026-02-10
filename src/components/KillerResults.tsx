@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { TrendingUp, DollarSign, BarChart3, Zap, Mail, ShoppingCart, Tag } from 'lucide-react';
+import { TrendingUp, BarChart3, Zap, Mail, ShoppingCart, Tag, Trophy, Target } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 
 const results = [
@@ -10,6 +10,7 @@ const results = [
     metric: '6.88x',
     metricLabel: 'ROAS',
     icon: BarChart3,
+    overlay: '6.88x ROAS | 67 Purchases | $30K+ Value',
   },
   {
     image: '/Screenshot 2025-11-20 200216.png',
@@ -18,6 +19,7 @@ const results = [
     metric: '100%',
     metricLabel: 'Automated',
     icon: Zap,
+    overlay: '100% Automated | Shopify to Delivery | Zero Manual',
   },
   {
     image: '/Screenshot 2025-08-04 132125.png',
@@ -26,6 +28,7 @@ const results = [
     metric: '$82K',
     metricLabel: 'in 3hrs',
     icon: TrendingUp,
+    overlay: '$82K | 3 Hours | Organic',
   },
   {
     image: '/files_7126411-1763632304045-Screenshot 2025-07-24 143236.png',
@@ -34,6 +37,7 @@ const results = [
     metric: '72%',
     metricLabel: 'Open Rate',
     icon: Mail,
+    overlay: '72% Open Rate | 10.3% Click Rate | Real Engagement',
   },
   {
     image: '/files_7126411-1763632208203-Before and After Image Youtube Thumbnail (3).png',
@@ -42,6 +46,7 @@ const results = [
     metric: '$425K',
     metricLabel: 'Annual Sales',
     icon: ShoppingCart,
+    overlay: '$425K Annual | 436% Growth | 1,801 Orders',
   },
   {
     image: '/files_7126411-1763632208151-Before and After Image Youtube Thumbnail (4).png',
@@ -50,6 +55,7 @@ const results = [
     metric: '$100K',
     metricLabel: 'Weekly Sales',
     icon: TrendingUp,
+    overlay: '$100K Weekly Sales | No Paid Ads',
   },
   {
     image: '/files_7126411-1763632208250-Before and After Image Youtube Thumbnail (5).png',
@@ -58,6 +64,7 @@ const results = [
     metric: '$25K+',
     metricLabel: 'Event Revenue',
     icon: Tag,
+    overlay: '$25K+ Event Revenue | 88 Tickets | Sold Out',
   }
 ];
 
@@ -140,34 +147,35 @@ function ResultCard({ result, index }: ResultCardProps) {
         index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
       } gap-8 lg:gap-12 items-center`}
     >
-      <motion.div
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.3 }}
-        className="w-full lg:w-1/2"
-      >
+      <div className="w-full lg:w-1/2">
         <motion.div
-          className="relative group cursor-pointer"
-          whileHover={{ y: -8 }}
-          transition={{ duration: 0.3, ease: 'easeOut' }}
+          className="relative group"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
-          <motion.div
-            className="absolute -inset-4 bg-gradient-to-r from-gold/30 to-gold-dark/30 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"
-          />
-          <motion.div
-            className="relative rounded-xl overflow-hidden shadow-xl border border-white/10"
-            whileHover={{ boxShadow: '0 20px 40px rgba(200,161,78,0.15)' }}
-          >
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-            />
-            <img
-              src={result.image}
-              alt={result.title}
-              className="w-full h-auto"
-            />
-          </motion.div>
+          <div className="relative rounded-2xl overflow-hidden border border-gold/20 bg-white/[0.03] backdrop-blur-sm p-2 sm:p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+            <div className="relative rounded-xl overflow-hidden">
+              <img
+                src={result.image}
+                alt={result.title}
+                className="w-full h-auto block"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                <div className="flex items-center gap-2">
+                  <Trophy className="w-3.5 h-3.5 text-gold shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-white/90 tracking-wide font-sans">
+                    {result.overlay}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="absolute inset-0 rounded-2xl border border-gold/10 pointer-events-none" />
+          </div>
         </motion.div>
-      </motion.div>
+      </div>
 
       <div className="w-full lg:w-1/2 space-y-6">
         <motion.div
