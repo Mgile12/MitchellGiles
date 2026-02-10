@@ -53,21 +53,7 @@ export default function Hero() {
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                No mystery dashboards. No disappearing acts. No excuses.
-              </p>
-
-              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                No buzzwords.<br />
-                No "trust the process".<br />
-                No waiting for results.
-              </p>
-
-              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                A pipeline that delivers.
-              </p>
-
-              <p className="text-base sm:text-lg text-white leading-[1.9] tracking-wide font-semibold font-sans">
-                If I cannot prove where your leads came from within 90 days, you do not pay.
+                Pipelines that deliver while you sleep
               </p>
             </motion.div>
 
