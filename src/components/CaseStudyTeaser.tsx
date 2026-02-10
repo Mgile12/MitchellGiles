@@ -45,7 +45,7 @@ export default function CaseStudyTeaser() {
 
             {/* Headline - Lead with outcome */}
             <p className="text-xl sm:text-2xl font-semibold text-gold/90 mb-5 leading-tight font-serif">
-              Scaled from $50k to $425k in 12 months. No ad budget. No complexity.
+              Scaled from $50k to $425k in 12 months.
             </p>
 
             {/* Body Copy */}
