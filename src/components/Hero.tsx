@@ -36,29 +36,24 @@ export default function Hero() {
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif"
             >
-              You've been{' '}
-              <span className="border-b-2 border-gold/50 pb-1">burned before</span>
-              .{' '}
-              <span className="text-gold italic">That makes you the perfect client.</span>
+              I work with{' '}
+              <span className="border-b-2 border-gold/50 pb-1">select businesses</span>{' '}
+              who are ready for{' '}
+              <span className="text-gold italic">real results.</span>
             </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
-              className="mt-5 text-lg sm:text-xl text-slate-300 font-normal tracking-wide leading-relaxed font-sans"
-            >
-              That skepticism is an asset.
-            </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
               className="mt-8 space-y-5"
             >
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                I help Aussie businesses dominate their market. No mystery dashboards. No disappearing acts. No excuses.
+                Email Marketing, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
+              </p>
+
+              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
+                No mystery dashboards. No disappearing acts. No excuses.
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
