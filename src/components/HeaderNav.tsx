@@ -29,7 +29,6 @@ export default function HeaderNav() {
   };
 
   const navLinks = [
-    { label: 'Case Studies', href: '/case-studies/elite-football-agency' },
     { label: 'Process', action: () => scrollToSection('services') },
     { label: 'Results', action: () => scrollToSection('results') },
   ];
@@ -43,38 +42,25 @@ export default function HeaderNav() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-[72px]">
-          <Link to="/" className="flex items-center gap-2.5 group shrink-0">
+        <div className={`relative flex items-center justify-center md:justify-between transition-all duration-300 ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
+          <Link to="/" className="shrink-0">
             <img
               src="https://iili.io/fyI7mAB.png"
               alt="MG Logo"
-              className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
+              className={`object-contain transition-all duration-300 ${scrolled ? 'h-10 w-10 sm:h-11 sm:w-11' : 'h-16 w-16 sm:h-14 sm:w-14'}`}
             />
-            <span className="font-bold text-lg sm:text-xl text-white tracking-tight group-hover:text-gold transition-colors duration-200">
-              Mitchell Giles
-            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-7">
-            {navLinks.map((link) =>
-              link.href ? (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <button
-                  key={link.label}
-                  onClick={link.action}
-                  className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
-                >
-                  {link.label}
-                </button>
-              )
-            )}
+            {navLinks.map((link) => (
+              <button
+                key={link.label}
+                onClick={link.action}
+                className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              >
+                {link.label}
+              </button>
+            ))}
             <a
               href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
               target="_blank"
@@ -87,7 +73,7 @@ export default function HeaderNav() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 -mr-2 text-white/80 hover:text-white transition-colors"
+            className="md:hidden absolute right-0 p-2 text-white/80 hover:text-white transition-colors"
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -105,25 +91,15 @@ export default function HeaderNav() {
             className="md:hidden overflow-hidden bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06]"
           >
             <div className="px-5 py-5 space-y-1">
-              {navLinks.map((link) =>
-                link.href ? (
-                  <Link
-                    key={link.label}
-                    to={link.href}
-                    className="block px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                ) : (
-                  <button
-                    key={link.label}
-                    onClick={link.action}
-                    className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
-                  >
-                    {link.label}
-                  </button>
-                )
-              )}
+              {navLinks.map((link) => (
+                <button
+                  key={link.label}
+                  onClick={link.action}
+                  className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+                >
+                  {link.label}
+                </button>
+              ))}
               <div className="pt-3">
                 <a
                   href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
