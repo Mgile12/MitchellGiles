@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Calendar } from 'lucide-react';
+import { TrendingUp, Calendar } from 'lucide-react';
 import { fadeInUp } from '../utils/animations';
 
 export default function CaseStudyTeaser() {
@@ -71,18 +70,9 @@ export default function CaseStudyTeaser() {
               </div>
             </div>
 
-            {/* CTA Button */}
-            <Link to="/case-studies/elite-football-agency">
-              <motion.div
-                whileHover={{ scale: 1.02, x: 4 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.2 }}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-navy-950 border-2 border-gold text-gold font-bold rounded-lg hover:bg-gold hover:text-navy-950 transition-all duration-300 shadow-lg hover:shadow-gold/20 font-sans tracking-wide"
-              >
-                Read Full Breakdown
-                <ArrowRight className="w-5 h-5" />
-              </motion.div>
-            </Link>
+            <div className="inline-flex items-center px-8 py-4 bg-navy-950/60 border border-white/[0.06] text-slate-400 font-semibold rounded-lg font-sans tracking-wide text-sm">
+              Coming Soon
+            </div>
           </motion.div>
         </motion.div>
       </div>
