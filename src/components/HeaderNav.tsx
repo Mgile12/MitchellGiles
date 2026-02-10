@@ -65,7 +65,7 @@ export default function HeaderNav() {
               href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
               target="_blank"
               rel="noopener noreferrer"
-              className="gold-flat-btn inline-flex items-center justify-center rounded px-5 py-2 text-sm font-semibold tracking-wide"
+              className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
             >
               Book a Call
             </a>
@@ -105,7 +105,7 @@ export default function HeaderNav() {
                   href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="gold-flat-btn block text-center rounded px-5 py-3.5 text-sm font-semibold tracking-wide"
+                  className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
                 >
                   Book a Call
                 </a>

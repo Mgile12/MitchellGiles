@@ -29,7 +29,7 @@ export function Footer({
   bottomTagline,
 }: FooterProps) {
   return (
-    <footer className="bg-slate-950 text-slate-50 border-t border-slate-800/50">
+    <footer className="bg-navy-950 text-slate-50 border-t border-white/[0.06]">
       <div className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 pt-14 pb-8 sm:pt-16 sm:pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           <div className="space-y-4">
@@ -93,7 +93,7 @@ export function Footer({
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-slate-800/40">
+        <div className="mt-10 pt-6 border-t border-white/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="text-xs text-slate-500 leading-relaxed">
               <span>{copyright.text}</span>

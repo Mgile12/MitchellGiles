@@ -46,7 +46,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
-              className="mt-5 text-lg sm:text-xl text-white/70 font-normal tracking-wide leading-relaxed font-sans"
+              className="mt-5 text-lg sm:text-xl text-slate-300 font-normal tracking-wide leading-relaxed font-sans"
             >
               You're exactly who I work best with.
             </motion.p>
@@ -57,17 +57,17 @@ export default function Hero() {
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
               className="mt-8 space-y-5"
             >
-              <p className="text-base sm:text-lg text-[#EDEDED] leading-[1.9] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 I help small Aussie businesses take over their industry without the agency crap, the mystery reports, or the disappearing acts.
               </p>
 
-              <p className="text-base sm:text-lg text-white/80 leading-[1.9] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 No buzzwords.<br />
                 No "trust the process".<br />
                 No "we're optimising".
               </p>
 
-              <p className="text-base sm:text-lg text-[#EDEDED] leading-[1.9] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Just a pipeline that actually works.
               </p>
 
@@ -86,14 +86,14 @@ export default function Hero() {
                 href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gold-flat-btn inline-flex items-center justify-center rounded px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
+                className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
                 Book Your Reality Check Call
               </a>
 
               <Link
                 to="/case-studies/elite-football-agency"
-                className="inline-flex items-center justify-center rounded px-8 py-4 text-sm font-medium tracking-wide border border-white/50 text-white hover:bg-white/5 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
+                className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide border border-white/50 text-white hover:bg-white/5 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
                 View Case Studies
               </Link>

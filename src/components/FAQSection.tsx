@@ -15,7 +15,7 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
   return (
     <motion.div
       variants={fadeInUp}
-      className="border-b border-slate-800/50 overflow-hidden"
+      className="border-b border-white/[0.06] overflow-hidden"
     >
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
@@ -105,7 +105,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="bg-[#121420] text-slate-50" aria-labelledby="faq-heading">
+    <section className="bg-navy-900 text-slate-50" aria-labelledby="faq-heading">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -137,7 +137,7 @@ export default function FAQSection() {
           ))}
         </motion.div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800/50 text-center">
+        <div className="mt-12 pt-8 border-t border-white/[0.06] text-center">
           <p className="text-base text-slate-400 font-sans">
             Needs results ASAP?{' '}
             <a

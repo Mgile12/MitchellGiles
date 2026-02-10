@@ -26,7 +26,7 @@ const rules = [
 
 export default function RulesSection() {
   return (
-    <section className="bg-slate-900 text-white" aria-labelledby="rules-heading">
+    <section className="bg-navy-800 text-white" aria-labelledby="rules-heading">
       <motion.div
         initial="hidden"
         whileInView="visible"

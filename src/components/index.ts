@@ -9,4 +9,3 @@ export { default as Testimonials } from './Testimonials';
 export { default as KillerResults } from './KillerResults';
 export { default as CaseStudyTeaser } from './CaseStudyTeaser';
 export { default as FinalCTA } from './FinalCTA';
-export { default as StatCard } from './StatCard';

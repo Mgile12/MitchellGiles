@@ -5,7 +5,7 @@ import { fadeInUp } from '../utils/animations';
 
 export default function CaseStudyTeaser() {
   return (
-    <section className="bg-slate-900 text-white" aria-labelledby="case-study-heading">
+    <section className="bg-navy-800 text-white" aria-labelledby="case-study-heading">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <motion.div
           initial="hidden"
@@ -17,7 +17,7 @@ export default function CaseStudyTeaser() {
           <motion.div
             whileHover={{ y: -6 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="relative rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-8 sm:p-10 shadow-2xl hover:shadow-gold/10 hover:border-gold/60 transition-all duration-300 backdrop-blur-sm"
+            className="relative rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-navy-800/90 to-navy-900/90 p-8 sm:p-10 shadow-2xl hover:shadow-gold/10 hover:border-gold/60 transition-all duration-300 backdrop-blur-sm"
           >
             {/* Case Study Label */}
             <div className="flex items-center gap-2 mb-6">

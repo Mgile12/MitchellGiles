@@ -119,7 +119,7 @@ export default function KillerResults() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gold text-navy-950 font-bold rounded-xl hover:bg-gold-light transition-colors duration-200 shadow-lg hover:shadow-gold/20 text-lg font-sans"
+            className="px-8 py-4 bg-gold text-navy-950 font-semibold rounded-lg hover:bg-gold-light transition-colors duration-200 shadow-lg hover:shadow-gold/20 text-lg font-sans"
           >
             Get Results Like These
           </motion.button>
@@ -221,7 +221,7 @@ function ResultCard({ result, index }: ResultCardProps) {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="pt-4 border-t border-white/10"
+          className="pt-4 border-t border-white/[0.06]"
         >
           <p className="text-sm text-slate-500 italic font-sans">
             Real data. Real clients. Real impact.
