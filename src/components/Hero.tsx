@@ -137,7 +137,7 @@ export default function Hero() {
                 >
                   <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-1">Proven Results</p>
                   <p className="text-2xl font-bold text-white">$190,000</p>
-                  <p className="text-sm text-slate-300 mt-0.5">Generated from email alone. 60 days.</p>
+                  <p className="text-sm text-slate-300 mt-0.5">Printed from email marketing in 2 years</p>
                 </motion.div>
               </div>
             </div>
