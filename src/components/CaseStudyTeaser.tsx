@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, TrendingUp, Calendar } from 'lucide-react';
 import { fadeInUp } from '../utils/animations';
 
 export default function CaseStudyTeaser() {
   return (
-    <section className="bg-slate-50 text-slate-900" aria-labelledby="case-study-heading">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <section className="bg-slate-900 text-white" aria-labelledby="case-study-heading">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -15,41 +15,71 @@ export default function CaseStudyTeaser() {
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-200"
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="relative rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-8 sm:p-10 shadow-2xl hover:shadow-gold/10 hover:border-gold/60 transition-all duration-300 backdrop-blur-sm"
           >
-            <p className="text-xs font-semibold uppercase tracking-wide text-orange-500 mb-3">
-              Case Study
-            </p>
-
-            <div className="flex items-center gap-4 mb-4">
-              <img
-                src="/Asset 51x transparent.png"
-                alt="Elite Football Agency Logo"
-                className="h-12 sm:h-16 w-auto"
-              />
+            {/* Case Study Label */}
+            <div className="flex items-center gap-2 mb-6">
+              <span className="h-px w-8 bg-gold" />
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold font-sans">
+                Case Study
+              </p>
             </div>
 
-            <h2 id="case-study-heading" className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4 sm:mb-5">
+            {/* Logo */}
+            <div className="flex items-center gap-4 mb-6">
+              <div className="bg-white/5 border border-white/10 rounded-lg p-3">
+                <img
+                  src="/Asset 51x transparent.png"
+                  alt="Elite Football Agency Logo"
+                  className="h-10 sm:h-12 w-auto"
+                />
+              </div>
+            </div>
+
+            {/* Title */}
+            <h2 id="case-study-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3 font-serif">
               Alan, Elite Football Agency (Gold Coast)
             </h2>
 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-6 sm:mb-8">
-              Alan already had the programs, reputation, and results. What he did not have was a system.
-              In twelve months we turned his manual, messy setup into a clean marketing engine, taking
-              Elite Football Agency from <span className="font-semibold text-slate-900">50k to 425k</span> with
-              packed events and demand he had to slow down.
+            {/* Headline - Lead with outcome */}
+            <p className="text-xl sm:text-2xl font-semibold text-gold/90 mb-5 leading-tight font-serif">
+              Scaled from $50k to $425k in 12 months. No ad budget. No complexity.
             </p>
 
+            {/* Body Copy */}
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-sans">
+              Alan had brand. Had product. But no system. I built a full-stack marketing engine from scratch — driving demand so strong he had to cap enrolments.
+            </p>
+
+            {/* Stats Badges */}
+            <div className="flex flex-wrap gap-4 mb-8">
+              <div className="flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-lg px-4 py-2">
+                <TrendingUp className="w-4 h-4 text-gold" />
+                <div>
+                  <p className="text-xs text-gold/70 font-semibold uppercase tracking-wide font-sans">Revenue Increase</p>
+                  <p className="text-sm font-bold text-white font-serif">$375k</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-lg px-4 py-2">
+                <Calendar className="w-4 h-4 text-gold" />
+                <div>
+                  <p className="text-xs text-gold/70 font-semibold uppercase tracking-wide font-sans">Timeframe</p>
+                  <p className="text-sm font-bold text-white font-serif">12 Months</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
             <Link to="/case-studies/elite-football-agency">
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.15 }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-200 shadow-md hover:shadow-lg"
+                whileHover={{ scale: 1.02, x: 4 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.2 }}
+                className="inline-flex items-center gap-2 px-8 py-4 bg-navy-950 border-2 border-gold text-gold font-bold rounded-lg hover:bg-gold hover:text-navy-950 transition-all duration-300 shadow-lg hover:shadow-gold/20 font-sans tracking-wide"
               >
-                See the full case study
+                Read Full Breakdown
                 <ArrowRight className="w-5 h-5" />
               </motion.div>
             </Link>
