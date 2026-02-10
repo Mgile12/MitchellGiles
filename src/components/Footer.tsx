@@ -41,6 +41,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
         text: `© ${new Date().getFullYear()} Mitchell Giles`,
         license: 'All rights reserved',
       }}
+      bottomTagline="Built for speed & conversion. No agency fluff."
     />
   );
 }
