@@ -6,12 +6,9 @@ import { fadeInUp } from '../utils/animations';
 export default function Hero() {
   return (
     <section
-      className="bg-navy-950 text-slate-50 relative overflow-hidden hero-noise"
+      className="bg-navy-950 text-slate-50 relative overflow-hidden hero-grain"
       aria-labelledby="hero-headline"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(200,161,78,0.05)_0%,_transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(15,20,36,0.8)_0%,_transparent_60%)]" />
-
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
         <div className="grid gap-12 lg:gap-20 md:grid-cols-2 md:items-center">
           <motion.div
@@ -40,7 +37,9 @@ export default function Hero() {
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif"
             >
-              If you've been burned by marketers before,{' '}
+              If you've been{' '}
+              <span className="border-b-2 border-gold/50 pb-1">burned by marketers</span>
+              {' '}before,{' '}
               <span className="text-gold italic">good.</span>
             </motion.h1>
 
@@ -48,7 +47,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
-              className="mt-5 text-lg sm:text-xl text-slate-300 font-normal tracking-wide leading-relaxed font-sans"
+              className="mt-5 text-lg sm:text-xl text-white/70 font-normal tracking-wide leading-relaxed font-sans"
             >
               You're exactly who I work best with.
             </motion.p>
@@ -59,21 +58,21 @@ export default function Hero() {
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
               className="mt-8 space-y-5"
             >
-              <p className="text-base sm:text-lg text-slate-400 leading-[1.75] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-[#EDEDED] leading-[1.9] tracking-wide font-normal font-sans">
                 I help small Aussie businesses take over their industry without the agency crap, the mystery reports, or the disappearing acts.
               </p>
 
-              <p className="text-base sm:text-lg text-slate-400 leading-[1.75] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-white/80 leading-[1.9] tracking-wide font-normal font-sans">
                 No buzzwords.<br />
                 No "trust the process".<br />
                 No "we're optimising".
               </p>
 
-              <p className="text-base sm:text-lg text-slate-400 leading-[1.75] tracking-wide font-normal font-sans">
+              <p className="text-base sm:text-lg text-[#EDEDED] leading-[1.9] tracking-wide font-normal font-sans">
                 Just a pipeline that actually works.
               </p>
 
-              <p className="text-base sm:text-lg text-white/90 leading-[1.75] tracking-wide font-medium font-sans">
+              <p className="text-base sm:text-lg text-white leading-[1.9] tracking-wide font-semibold font-sans">
                 And if I can't show you where your leads came from in 90 days, I don't want your money.
               </p>
             </motion.div>
@@ -88,7 +87,7 @@ export default function Hero() {
                 href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gold-gradient-btn inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-navy-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
+                className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
                 Book Your Reality Check Call
                 <ArrowRight className="w-4 h-4" />
@@ -96,7 +95,7 @@ export default function Hero() {
 
               <Link
                 to="/case-studies/elite-football-agency"
-                className="inline-flex items-center justify-center rounded-full px-8 py-4 text-sm font-medium tracking-wide border border-white/25 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
+                className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-medium tracking-wide border border-white/50 text-white hover:bg-white/5 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
                 View Case Studies
               </Link>
@@ -111,9 +110,9 @@ export default function Hero() {
               <p className="text-xs uppercase tracking-[0.15em] text-gold/60 mb-3 font-sans">
                 Recent client result
               </p>
-              <p className="text-sm text-slate-400 italic font-sans">
+              <p className="text-sm text-slate-300 italic font-sans">
                 "This was the first year I actually felt successful."
-                <span className="not-italic text-slate-600 ml-2">-- Alan, Elite Football Agency</span>
+                <span className="not-italic text-slate-500 ml-2">-- Alan, Elite Football Agency</span>
               </p>
             </motion.div>
           </motion.div>
@@ -124,9 +123,7 @@ export default function Hero() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             className="relative w-full max-w-md mx-auto"
           >
-            <div className="absolute -inset-4 bg-[radial-gradient(ellipse_at_center,_rgba(200,161,78,0.08)_0%,_transparent_70%)] rounded-3xl" />
-
-            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden ring-1 ring-gold/20 shadow-[0_0_60px_rgba(200,161,78,0.08)]">
+            <div className="relative aspect-[3/4] w-full overflow-hidden border-l-2 border-l-gold shadow-2xl shadow-black/60">
               <img
                 src="https://iili.io/fynfkw7.jpg"
                 alt="Mitchell Giles"
@@ -135,25 +132,23 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-navy-950/30 to-transparent" />
 
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.7 }}
-                  className="bg-navy-950/70 backdrop-blur-xl rounded-xl p-5 border border-gold/15 border-l-2 border-l-gold"
-                >
-                  <p className="text-xs uppercase tracking-[0.15em] text-gold mb-1.5 font-sans">Proven Results</p>
-                  <p className="text-2xl font-bold text-white font-serif">$190,000</p>
-                  <p className="text-sm text-slate-300 mt-1 font-sans">Printed from email marketing in 2 years</p>
-                </motion.div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.7 }}
+                className="absolute bottom-4 right-4 left-auto max-w-[220px] bg-navy-950/70 backdrop-blur-xl rounded-lg p-4 border border-gold/25"
+              >
+                <p className="text-xs uppercase tracking-[0.15em] text-gold mb-1.5 font-sans">Proven Results</p>
+                <p className="text-2xl font-bold text-white font-serif">$190,000</p>
+                <p className="text-xs text-slate-300 mt-1 font-sans">Printed from email marketing in 2 years</p>
+              </motion.div>
             </div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.35, ease: "easeOut", delay: 0.55 }}
-              className="absolute -top-3 -right-3 rounded-full bg-navy-950 border border-gold/40 px-5 py-2.5 text-xs font-semibold text-gold shadow-lg shadow-gold/10 tracking-wide font-sans"
+              className="absolute -top-3 -right-3 rounded-full bg-navy-950 border border-gold/40 px-5 py-2.5 text-xs font-semibold text-gold shadow-lg shadow-black/30 tracking-wide font-sans"
             >
               90-day guarantee
             </motion.div>
