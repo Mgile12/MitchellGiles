@@ -8,7 +8,7 @@ export default function Hero() {
       className="bg-navy-950 text-slate-50 relative overflow-hidden hero-grain"
       aria-labelledby="hero-headline"
     >
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 lg:pt-40 pb-20 sm:pb-28 lg:pb-36">
         <div className="grid gap-12 lg:gap-20 md:grid-cols-2 md:items-center">
           <motion.div
             initial="hidden"
