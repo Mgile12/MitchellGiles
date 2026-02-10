@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Zap } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 
@@ -15,59 +15,30 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
   return (
     <motion.div
       variants={fadeInUp}
-      whileHover={{
-        scale: 1.01,
-        transition: { duration: 0.2, ease: 'easeOut' }
-      }}
-      className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200"
+      className="border-b border-slate-800/50 overflow-hidden"
     >
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between gap-4 p-5 text-left relative group"
+        className="w-full flex items-center justify-between gap-4 py-5 text-left group"
         aria-expanded={isOpen}
-        whileTap={{ scale: 0.99 }}
       >
-        <div className="flex items-start gap-3 flex-1">
-          <motion.div
-            animate={{
-              rotate: isOpen ? 180 : 0,
-              scale: isOpen ? 1.1 : 1,
-            }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-            className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
-              isOpen
-                ? 'bg-orange-500 text-white'
-                : 'bg-slate-100 text-slate-600 group-hover:bg-orange-50 group-hover:text-orange-500'
-            } transition-colors duration-200`}
-          >
-            <Zap className="w-4 h-4" />
-          </motion.div>
-          <span className={`text-base sm:text-lg font-semibold transition-colors duration-200 ${
-            isOpen ? 'text-orange-500' : 'text-slate-900 group-hover:text-slate-700'
-          }`}>
-            {question}
-          </span>
-        </div>
+        <span className={`text-base sm:text-lg font-semibold transition-colors duration-200 font-sans ${
+          isOpen ? 'text-gold' : 'text-white group-hover:text-gold/80'
+        }`}>
+          {question}
+        </span>
         <motion.div
           animate={{
             rotate: isOpen ? 180 : 0,
-            scale: isOpen ? 1.1 : 1,
           }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
         >
           <ChevronDown
             className={`w-5 h-5 flex-shrink-0 transition-colors duration-200 ${
-              isOpen ? 'text-orange-500' : 'text-slate-400 group-hover:text-slate-600'
+              isOpen ? 'text-gold' : 'text-slate-500 group-hover:text-gold/60'
             }`}
           />
         </motion.div>
-
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-orange-50/0 via-orange-50/50 to-orange-50/0 pointer-events-none"
-          initial={{ x: '-100%', opacity: 0 }}
-          whileHover={{ x: '100%', opacity: 1 }}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
-        />
       </motion.button>
 
       <AnimatePresence initial={false}>
@@ -93,15 +64,15 @@ function FAQItem({ question, answer, index }: FAQItemProps) {
               animate={{ y: 0 }}
               exit={{ y: -10 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="px-5 pb-5 pt-1 pl-16"
+              className="pb-6"
             >
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.1, duration: 0.3 }}
-                className="border-l-2 border-orange-200 pl-4"
+                className="border-l-2 border-gold/30 pl-4"
               >
-                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
                   {answer}
                 </p>
               </motion.div>
@@ -134,21 +105,21 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="bg-slate-50 text-slate-900" aria-labelledby="faq-heading">
+    <section className="bg-[#121420] text-slate-50" aria-labelledby="faq-heading">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
       >
-        <div className="mb-10">
-          <h2 id="faq-heading" className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
-            Questions I get asked (a lot)
+        <div className="mb-12">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
+            Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Straight answers. No sales talk.
+          <p className="mt-3 text-base sm:text-lg text-slate-400 font-sans">
+            Real answers. No fluff.
           </p>
         </div>
 
@@ -157,7 +128,7 @@ export default function FAQSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
-          className="space-y-4"
+          className="space-y-0"
         >
           {faqs.map((faq, index) => (
             <FAQItem
@@ -169,12 +140,12 @@ export default function FAQSection() {
           ))}
         </motion.div>
 
-        <div className="mt-10 text-center">
-          <p className="text-base text-slate-600">
+        <div className="mt-12 pt-8 border-t border-slate-800/50 text-center">
+          <p className="text-base text-slate-400 font-sans">
             Needs results ASAP?{' '}
             <a
               href="tel:0474870535"
-              className="font-semibold text-orange-500 hover:text-orange-600 underline underline-offset-2 transition-colors duration-150"
+              className="font-semibold text-gold hover:text-gold/80 underline underline-offset-2 transition-colors duration-150"
             >
               Jump on a call
             </a>
