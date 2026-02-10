@@ -1,6 +1,5 @@
 import {
   Hero,
-  MiniProofStrip,
   FAQSection,
   RulesSection,
   CaseStudyTeaser,
@@ -14,7 +13,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <MiniProofStrip />
       <FAQSection />
       <RulesSection />
       <CaseStudyTeaser />
