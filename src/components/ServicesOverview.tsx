@@ -1,101 +1,145 @@
 import { motion } from 'framer-motion';
+import { Target, Layers, Megaphone, BarChart3, Scissors } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
+
+const services = [
+  {
+    number: '01',
+    title: 'Sharpen Your Offer',
+    description: 'Clean up your offer so customers instantly get it. No confusion, no friction -- just clarity that converts.',
+    icon: Target,
+  },
+  {
+    number: '02',
+    title: 'Build the Funnel',
+    description: 'A dead-simple funnel that guides prospects from click to customer. No over-engineering, no bloat.',
+    icon: Layers,
+  },
+  {
+    number: '03',
+    title: 'Launch Industry-Specific Ads',
+    description: 'Set up ads that work for your exact industry. Tested angles, proven creatives, real targeting.',
+    icon: Megaphone,
+  },
+  {
+    number: '04',
+    title: 'Track Every Lead',
+    description: 'Full visibility on your pipeline. Know where every dollar goes and where every lead comes from.',
+    icon: BarChart3,
+  },
+  {
+    number: '05',
+    title: 'Cut What Doesn\'t Work',
+    description: 'Kill anything that wastes your money. Ruthless optimisation so every cent pulls its weight.',
+    icon: Scissors,
+  },
+];
 
 export default function ServicesOverview() {
   return (
-    <section id="services" className="bg-white text-slate-900">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
-      >
-        <div className="mb-10 text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
-            What I actually do
+    <section id="services" className="bg-navy-900 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,161,78,0.05),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(200,161,78,0.03),transparent_60%)]" />
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInUp}
+          className="text-center mb-14 sm:mb-20"
+        >
+          <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
+            The Process
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+            What I Actually Do
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-600">
-            No packages. No bronze, silver, gold. No full-stack solutions.
-          </p>
-          <p className="mt-2 text-base sm:text-lg text-slate-700">
-            I build you a simple, predictable lead pipeline, built for real Aussie customers, not marketing textbooks.
-          </p>
-        </div>
+          <div className="max-w-2xl mx-auto space-y-2">
+            <p className="text-base sm:text-lg text-slate-400 font-sans">
+              No packages. No bronze, silver, gold. No full-stack solutions.
+            </p>
+            <p className="text-base sm:text-lg text-slate-300 font-sans">
+              I build you a simple, predictable lead pipeline -- built for real Aussie customers, not marketing textbooks.
+            </p>
+          </div>
+        </motion.div>
 
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
-          className="space-y-3"
+          className="relative"
         >
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ y: -3 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="flex items-start gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50 hover:shadow-sm transition-shadow duration-150"
-          >
-            <span className="text-orange-500 font-semibold text-lg">1.</span>
-            <p className="text-sm sm:text-base text-slate-700">
-              Clean up your offer so customers instantly get it
-            </p>
-          </motion.div>
+          <div className="absolute left-8 sm:left-10 top-0 bottom-0 w-px bg-gradient-to-b from-gold/40 via-gold/20 to-transparent hidden md:block" />
 
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ y: -3 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="flex items-start gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50 hover:shadow-sm transition-shadow duration-150"
-          >
-            <span className="text-orange-500 font-semibold text-lg">2.</span>
-            <p className="text-sm sm:text-base text-slate-700">
-              Build a dead-simple funnel that doesn't confuse anyone
-            </p>
-          </motion.div>
+          <div className="space-y-6 sm:space-y-8">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <motion.div
+                  key={index}
+                  variants={fadeInUp}
+                  className="group relative"
+                >
+                  <div className="md:pl-24 relative">
+                    <div className="absolute left-0 top-6 hidden md:flex items-center justify-center">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gold/5 border border-gold/20 flex items-center justify-center group-hover:bg-gold/10 group-hover:border-gold/40 transition-all duration-300">
+                        <span className="text-gold font-bold text-lg sm:text-xl font-serif">{service.number}</span>
+                      </div>
+                    </div>
 
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ y: -3 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="flex items-start gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50 hover:shadow-sm transition-shadow duration-150"
-          >
-            <span className="text-orange-500 font-semibold text-lg">3.</span>
-            <p className="text-sm sm:text-base text-slate-700">
-              Set up ads that work for your exact industry
-            </p>
-          </motion.div>
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      transition={{ duration: 0.25, ease: 'easeOut' }}
+                      className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] transition-all duration-300"
+                    >
+                      <div className="flex items-start gap-5">
+                        <div className="md:hidden shrink-0 w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center">
+                          <span className="text-gold font-bold text-sm font-serif">{service.number}</span>
+                        </div>
 
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ y: -3 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="flex items-start gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50 hover:shadow-sm transition-shadow duration-150"
-          >
-            <span className="text-orange-500 font-semibold text-lg">4.</span>
-            <p className="text-sm sm:text-base text-slate-700">
-              Track your leads properly so you always know what's happening
-            </p>
-          </motion.div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-3 mb-3">
+                            <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+                              <Icon className="w-4.5 h-4.5 text-gold" />
+                            </div>
+                            <h3 className="text-lg sm:text-xl font-bold text-white font-serif">
+                              {service.title}
+                            </h3>
+                          </div>
+                          <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
+                            {service.description}
+                          </p>
+                        </div>
+                      </div>
 
-          <motion.div
-            variants={fadeInUp}
-            whileHover={{ y: -3 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="flex items-start gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50 hover:shadow-sm transition-shadow duration-150"
-          >
-            <span className="text-orange-500 font-semibold text-lg">5.</span>
-            <p className="text-sm sm:text-base text-slate-700">
-              Kill anything that wastes your money
-            </p>
-          </motion.div>
+                      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-gold/[0.03] to-transparent rounded-2xl pointer-events-none" />
+                    </motion.div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
         </motion.div>
 
-        <p className="mt-8 text-base sm:text-lg text-slate-700 font-semibold text-center md:text-left">
-          You're not buying 'marketing.' You're buying peace of mind.
-        </p>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-14 sm:mt-20 text-center"
+        >
+          <div className="inline-block relative">
+            <div className="absolute -inset-x-6 -inset-y-3 bg-gold/5 rounded-2xl blur-sm" />
+            <p className="relative text-lg sm:text-xl text-white font-semibold font-serif">
+              You're not buying 'marketing.'
+              <span className="text-gold"> You're buying peace of mind.</span>
+            </p>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
