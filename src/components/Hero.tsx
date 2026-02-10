@@ -136,7 +136,7 @@ export default function Hero() {
                   className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/10"
                 >
                   <p className="text-xs uppercase tracking-[0.15em] text-slate-400 mb-1">Proven Results</p>
-                  <p className="text-2xl font-bold text-white">$124K</p>
+                  <p className="text-2xl font-bold text-white">$190,000</p>
                   <p className="text-sm text-slate-300 mt-0.5">Generated from email alone. 60 days.</p>
                 </motion.div>
               </div>
