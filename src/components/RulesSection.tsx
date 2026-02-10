@@ -5,22 +5,22 @@ const rules = [
   {
     number: '01',
     title: 'No Proof, No Deal.',
-    description: "If I can't show you where the money came from in 90 days, you don't pay. Simple."
+    description: "If I cannot show you where the revenue came from in 90 days, you do not pay."
   },
   {
     number: '02',
     title: 'No Fluff. No Black Box.',
-    description: "If your numbers can't be read in under 30 seconds, it's not real transparency. I show you everything."
+    description: "Your metrics should be crystal clear within 30 seconds. Complete visibility, zero confusion."
   },
   {
     number: '03',
     title: 'Cut Fast. Scale Hard.',
-    description: 'We keep what works. Everything else dies immediately. No waiting, no dragging.'
+    description: 'We keep what performs. Everything else gets cut. No delays, no excuses.'
   },
   {
     number: '04',
     title: 'One Offer. One System.',
-    description: 'Agencies sell SEO. Funnels. Tricks. I build you a pipeline you can sleep on.'
+    description: 'Most agencies sell tactics: SEO, funnels, one-off campaigns. I build systems that run while you sleep.'
   }
 ];
 

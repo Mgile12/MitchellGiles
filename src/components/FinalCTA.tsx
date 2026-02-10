@@ -17,12 +17,12 @@ export default function FinalCTA() {
       >
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif">
-            Ready to stop gambling with your leads?
+            Your pipeline should not be a guessing game.
           </h2>
 
           <div className="mt-8 space-y-3">
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-sans">
-              I'll tell you where your pipeline is leaking, what's stealing your money, and what we can fix in the next 90 days.
+              On our call, you will discover where your pipeline is leaking, what is draining your budget, and exactly what we can fix in the next 90 days.
             </p>
           </div>
 
@@ -37,15 +37,6 @@ export default function FinalCTA() {
               Book a Call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
-          </div>
-
-          <div className="mt-8">
-            <button
-              type="button"
-              className="text-sm font-medium text-slate-400 underline underline-offset-4 decoration-slate-600 hover:text-gold hover:decoration-gold transition-colors duration-200"
-            >
-              Not ready yet? Grab the free guide instead.
-            </button>
           </div>
         </div>
       </motion.div>

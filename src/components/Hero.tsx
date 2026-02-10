@@ -36,10 +36,10 @@ export default function Hero() {
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif"
             >
-              If you've been{' '}
-              <span className="border-b-2 border-gold/50 pb-1">burned by marketers</span>
-              {' '}before,{' '}
-              <span className="text-gold italic">good.</span>
+              You've been{' '}
+              <span className="border-b-2 border-gold/50 pb-1">burned before</span>
+              .{' '}
+              <span className="text-gold italic">That makes you the perfect client.</span>
             </motion.h1>
 
             <motion.p
@@ -48,7 +48,7 @@ export default function Hero() {
               transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
               className="mt-5 text-lg sm:text-xl text-slate-300 font-normal tracking-wide leading-relaxed font-sans"
             >
-              You're exactly who I work best with.
+              That skepticism is an asset.
             </motion.p>
 
             <motion.div
@@ -58,21 +58,21 @@ export default function Hero() {
               className="mt-8 space-y-5"
             >
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                I help small Aussie businesses take over their industry without the agency crap, the mystery reports, or the disappearing acts.
+                I help Aussie businesses dominate their market. No mystery dashboards. No disappearing acts. No excuses.
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 No buzzwords.<br />
                 No "trust the process".<br />
-                No "we're optimising".
+                No waiting for results.
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                Just a pipeline that actually works.
+                A pipeline that delivers.
               </p>
 
               <p className="text-base sm:text-lg text-white leading-[1.9] tracking-wide font-semibold font-sans">
-                And if I can't show you where your leads came from in 90 days, I don't want your money.
+                If I cannot prove where your leads came from within 90 days, you do not pay.
               </p>
             </motion.div>
 
@@ -88,7 +88,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
-                Book Your Reality Check Call
+                Book Your Strategy Call
               </a>
 
               <Link
@@ -123,7 +123,7 @@ export default function Hero() {
               >
                 <p className="text-xs uppercase tracking-[0.15em] text-gold mb-1.5 font-sans">Proven Results</p>
                 <p className="text-2xl font-bold text-white font-serif">$190,000</p>
-                <p className="text-xs text-slate-300 mt-1 font-sans">Printed from email marketing in 2 years</p>
+                <p className="text-xs text-slate-300 mt-1 font-sans">Generated through email marketing in 2 years</p>
               </motion.div>
             </div>
           </motion.div>

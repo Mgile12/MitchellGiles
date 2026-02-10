@@ -49,7 +49,7 @@ export default function CaseStudyTeaser() {
 
             {/* Body Copy */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-sans">
-              Alan had brand. Had product. But no system. I built a full-stack marketing engine from scratch — driving demand so strong he had to cap enrolments.
+              Alan had the brand and the product, but no system to scale. I built a complete marketing engine from the ground up — demand became so strong he had to limit enrollment.
             </p>
 
             {/* Stats Badges */}

@@ -6,19 +6,19 @@ const services = [
   {
     number: '01',
     title: 'Sharpen Your Offer',
-    description: 'Clean up your offer so customers instantly get it. No confusion, no friction -- just clarity that converts.',
+    description: 'Refine your offer until customers understand it immediately. Clear positioning that converts.',
     icon: Target,
   },
   {
     number: '02',
     title: 'Build the Funnel',
-    description: 'A dead-simple funnel that guides prospects from click to customer. No over-engineering, no bloat.',
+    description: 'A streamlined funnel that guides prospects from interest to purchase. Simple, effective, profitable.',
     icon: Layers,
   },
   {
     number: '03',
     title: 'Launch Industry-Specific Ads',
-    description: 'Set up ads that work for your exact industry. Tested angles, proven creatives, real targeting.',
+    description: 'Deploy ads tailored to your specific industry. Proven angles, tested creatives, precise targeting.',
     icon: Megaphone,
   },
   {
@@ -30,7 +30,7 @@ const services = [
   {
     number: '05',
     title: 'Cut What Doesn\'t Work',
-    description: 'Kill anything that wastes your money. Ruthless optimisation so every cent pulls its weight.',
+    description: 'Eliminate anything that wastes your budget. Continuous optimization where every dollar performs.',
     icon: Scissors,
   },
 ];
@@ -57,7 +57,7 @@ export default function ServicesOverview() {
           </h2>
           <div className="max-w-2xl mx-auto space-y-2">
             <p className="text-base sm:text-lg text-slate-400 font-sans">
-              No packages. No bronze, silver, gold. No full-stack solutions.
+              No generic packages. No tiered pricing games.
             </p>
             <p className="text-base sm:text-lg text-slate-300 font-sans">
               I build you a simple, predictable lead pipeline -- built for real Aussie customers, not marketing textbooks.
@@ -134,8 +134,8 @@ export default function ServicesOverview() {
           <div className="inline-block relative">
             <div className="absolute -inset-x-6 -inset-y-3 bg-gold/5 rounded-2xl blur-sm" />
             <p className="relative text-lg sm:text-xl text-white font-semibold font-serif">
-              You're not buying 'marketing.'
-              <span className="text-gold"> You're buying peace of mind.</span>
+              You're not buying marketing services.
+              <span className="text-gold"> You're buying predictable growth.</span>
             </p>
           </div>
         </motion.div>

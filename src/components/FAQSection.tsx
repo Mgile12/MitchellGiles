@@ -88,19 +88,19 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "How long until I see results?",
-      answer: "Most clients see their first enquiries within 2-3 weeks. Consistent flow? Usually by week 6-8. If you don't have clear, trackable leads within 90 days, I don't want your money."
+      answer: "First enquiries typically arrive within 2-3 weeks. Consistent flow by week 6-8. Clear, trackable leads within 90 days, or you do not pay."
     },
     {
       question: "What if I've been burned by agencies before?",
-      answer: "Good. That means you'll actually appreciate transparency. I'll show you exactly where every lead comes from, what's working, and what's not. No dashboards designed to confuse you."
+      answer: "Then you understand the value of transparency. You will see exactly where every lead comes from, what is working, and what is not. Clear reporting that makes sense in 30 seconds."
     },
     {
       question: "How much does it cost?",
-      answer: "Depends on what you need and where you're at. We'll talk straight on the call. No surprise invoices, no hidden fees. You'll know exactly what you're paying and why."
+      answer: "It depends on your situation and goals. We will discuss everything transparently on the call. No hidden fees, no surprise invoices."
     },
     {
       question: "Do I need to sign a long-term contract?",
-      answer: "No lock-ins. If it's not working, you can walk. Simple as that. I'd rather you stay because it's working, not because you're trapped."
+      answer: "No lock-ins. If it is not working, you can walk. You stay because the results keep you here, not a contract."
     },
   ];
 
@@ -139,7 +139,7 @@ export default function FAQSection() {
 
         <div className="mt-12 pt-8 border-t border-white/[0.06] text-center">
           <p className="text-base text-slate-400 font-sans">
-            Needs results ASAP?{' '}
+            Ready to move fast?{' '}
             <a
               href="tel:0474870535"
               className="font-semibold text-gold hover:text-gold/80 underline underline-offset-2 transition-colors duration-150"

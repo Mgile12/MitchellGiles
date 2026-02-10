@@ -24,7 +24,7 @@ const results = [
   {
     image: '/Screenshot 2025-08-04 132125.png',
     title: 'ROAS That Makes Sense',
-    description: '6.88 ROAS across multiple campaigns with $4.4K spend. This result was in 3hrs.',
+    description: '6.88 ROAS across multiple campaigns with $4.4K spend, generated within 3 hours.',
     metric: '$82K',
     metricLabel: 'in 3hrs',
     icon: TrendingUp,
@@ -90,10 +90,10 @@ export default function KillerResults() {
             Real Results
           </motion.div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
-            Killer Results That Matter
+            Results That Matter
           </h2>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
-            Not vanity metrics. Real revenue, real automation, real ROI. This is what happens when you stop messing around.
+            Revenue, automation, and ROI you can verify. This is what happens when strategy meets execution.
           </p>
         </motion.div>
 
@@ -121,10 +121,10 @@ export default function KillerResults() {
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-gold text-navy-950 font-semibold rounded-lg hover:bg-gold-light transition-colors duration-200 shadow-lg hover:shadow-gold/20 text-lg font-sans"
           >
-            Get Results Like These
+            Start Your Growth
           </motion.button>
           <p className="mt-4 text-sm text-slate-500 font-sans">
-            Your numbers could be here. Let's talk.
+            These results are within reach. Let's discuss your goals.
           </p>
         </motion.div>
       </div>
@@ -224,7 +224,7 @@ function ResultCard({ result, index }: ResultCardProps) {
           className="pt-4 border-t border-white/[0.06]"
         >
           <p className="text-sm text-slate-500 italic font-sans">
-            Real data. Real clients. Real impact.
+            Verified results. Actual clients. Measurable impact.
           </p>
         </motion.div>
       </div>
