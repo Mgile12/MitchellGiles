@@ -118,9 +118,6 @@ export default function FAQSection() {
           <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
             Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-400 font-sans">
-            Real answers. No fluff.
-          </p>
         </div>
 
         <motion.div
