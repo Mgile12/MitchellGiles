@@ -100,21 +100,6 @@ export default function Hero() {
                 View Case Studies
               </Link>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
-              className="mt-12 pt-8 border-t border-gold/15"
-            >
-              <p className="text-xs uppercase tracking-[0.15em] text-gold/60 mb-3 font-sans">
-                Recent client result
-              </p>
-              <p className="text-sm text-slate-300 italic font-sans">
-                "This was the first year I actually felt successful."
-                <span className="not-italic text-slate-500 ml-2">-- Alan, Elite Football Agency</span>
-              </p>
-            </motion.div>
           </motion.div>
 
           <motion.div
