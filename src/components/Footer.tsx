@@ -1,4 +1,3 @@
-import { Hexagon } from 'lucide-react';
 import { Footer as UIFooter } from '@/components/ui/footer';
 
 interface FooterProps {
@@ -15,7 +14,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
 
   return (
     <UIFooter
-      logo={<Hexagon className="h-8 w-8 text-gold" strokeWidth={1.5} />}
+      logo={<img src="https://iili.io/fyI7mAB.png" alt="MG Logo" className="h-12 w-12 object-contain" />}
       brandName="Mitchell Giles"
       tagline="Pipelines & leads for Aussie businesses."
       mainLinks={[
