@@ -30,7 +30,7 @@ export default function CaseStudyTeaser() {
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-white/5 border border-white/10 rounded-lg p-3">
                 <img
-                  src="/Asset 51x transparent.png"
+                  src="https://freeimage.host/i/asset-1-at-2x-transparent-1.fyXHQRf"
                   alt="Elite Football Agency Logo"
                   className="h-10 sm:h-12 w-auto"
                 />
