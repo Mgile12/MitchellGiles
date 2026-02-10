@@ -121,7 +121,7 @@ export default function Hero() {
           >
             <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
               <img
-                src="/Mitchell Giles Marketing  copy.jpg"
+                src="https://iili.io/fynfkw7.jpg"
                 alt="Mitchell Giles"
                 className="w-full h-full object-cover object-top scale-110"
               />
