@@ -5,7 +5,6 @@ export { default as Hero } from './Hero';
 export { default as FAQSection } from './FAQSection';
 export { default as RulesSection } from './RulesSection';
 export { default as ServicesOverview } from './ServicesOverview';
-export { default as ProcessTimeline } from './ProcessTimeline';
 export { default as Testimonials } from './Testimonials';
 export { default as KillerResults } from './KillerResults';
 export { default as CaseStudyTeaser } from './CaseStudyTeaser';

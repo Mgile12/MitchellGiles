@@ -5,7 +5,6 @@ import {
   CaseStudyTeaser,
   KillerResults,
   ServicesOverview,
-  ProcessTimeline,
   FinalCTA,
 } from '../components';
 
@@ -18,7 +17,6 @@ export default function HomePage() {
       <CaseStudyTeaser />
       <KillerResults />
       <ServicesOverview />
-      <ProcessTimeline />
       <FinalCTA />
     </>
   );
