@@ -4,23 +4,23 @@ import { fadeInUp, staggerContainer } from '../utils/animations';
 const rules = [
   {
     number: '01',
-    title: 'No Proof, No Deal.',
-    description: "If I cannot show you where the revenue came from in 90 days, you do not pay."
+    title: 'Proof or We Stop.',
+    description: "Every decision ties back to revenue. If something cannot be tracked, validated, or defended with numbers, it does not survive. Opinion never outranks data."
   },
   {
     number: '02',
-    title: 'No Fluff. No Black Box.',
-    description: "Your metrics should be crystal clear within 30 seconds. Complete visibility, zero confusion."
+    title: 'Full Visibility. Always.',
+    description: "You will know what is running, why it is running, and what it is producing. No fluff. No hidden mechanics. No guessing where your money went."
   },
   {
     number: '03',
-    title: 'Cut Fast. Scale Hard.',
-    description: 'We keep what performs. Everything else gets cut. No delays, no excuses.'
+    title: 'Kill What Loses. Double Down on What Wins.',
+    description: 'Anything that underperforms gets cut without emotion. What works gets fed aggressively. Speed beats comfort every time.'
   },
   {
     number: '04',
-    title: 'One Offer. One System.',
-    description: 'Most agencies sell tactics: SEO, funnels, one-off campaigns. I build systems that run while you sleep.'
+    title: 'One Core Offer. One Revenue System.',
+    description: 'No scattered tactics. No random experiments. Everything is built to push a single offer through a single system designed to compound, not spike and die.'
   }
 ];
 
@@ -41,7 +41,7 @@ export default function RulesSection() {
             The Rules of the Game
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-400 font-sans">
-            If we work together, here's what you can expect — every time.
+            If we work together, here is what does not change.
           </p>
         </div>
 
