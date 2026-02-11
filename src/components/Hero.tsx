@@ -49,7 +49,7 @@ export default function Hero() {
               className="mt-8 space-y-5"
             >
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                Email Marketing, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
+                Email Marketing, Copywriting, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
