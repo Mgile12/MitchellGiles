@@ -25,7 +25,7 @@ export default function Hero() {
             >
               <span className="h-px w-8 bg-gold" />
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold font-sans">
-                For Aussie business owners
+                Mitchell Giles Marketing Consultant
               </p>
             </motion.div>
 
