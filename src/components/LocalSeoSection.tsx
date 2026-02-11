@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 import { BUSINESS_INFO } from '../lib/business-info';
 
@@ -68,100 +68,6 @@ export default function LocalSeoSection() {
               <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
             </motion.div>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeInUp}
-          className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 sm:p-10"
-          itemScope
-          itemType="https://schema.org/LocalBusiness"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 font-serif" itemProp="name">
-                {BUSINESS_INFO.name}
-              </h3>
-              <p className="text-slate-300 leading-relaxed mb-6 font-sans" itemProp="description">
-                Full-service digital marketing for Australian businesses. I specialise in building
-                predictable lead pipelines through email marketing, Meta Ads, Google Ads, SEO, and
-                marketing automation. No lock-in contracts. No agency runaround.
-              </p>
-              <a
-                href={BUSINESS_INFO.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gold-flat-btn inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide"
-              >
-                Book a Strategy Call
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-
-            <div className="space-y-5">
-              <div
-                className="flex items-start gap-4"
-                itemProp="address"
-                itemScope
-                itemType="https://schema.org/PostalAddress"
-              >
-                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <MapPin className="w-4.5 h-4.5 text-gold" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white mb-1 font-sans">Office</p>
-                  <p className="text-sm text-slate-400 font-sans">
-                    <span itemProp="streetAddress">{BUSINESS_INFO.address.street}</span>
-                    <br />
-                    <span itemProp="addressLocality">{BUSINESS_INFO.address.locality}</span>,{' '}
-                    <span itemProp="addressRegion">{BUSINESS_INFO.address.region}</span>{' '}
-                    <span itemProp="postalCode">{BUSINESS_INFO.address.postalCode}</span>
-                  </p>
-                </div>
-              </div>
-
-              <a
-                href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-                className="flex items-start gap-4 group"
-              >
-                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <Phone className="w-4.5 h-4.5 text-gold" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white mb-1 font-sans">Phone</p>
-                  <p
-                    className="text-sm text-slate-400 group-hover:text-gold transition-colors duration-200 font-sans"
-                    itemProp="telephone"
-                  >
-                    {BUSINESS_INFO.phone}
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href={`mailto:${BUSINESS_INFO.email}`}
-                className="flex items-start gap-4 group"
-              >
-                <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <Mail className="w-4.5 h-4.5 text-gold" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white mb-1 font-sans">Email</p>
-                  <p
-                    className="text-sm text-slate-400 group-hover:text-gold transition-colors duration-200 font-sans"
-                    itemProp="email"
-                  >
-                    {BUSINESS_INFO.email}
-                  </p>
-                </div>
-              </a>
-
-              <meta itemProp="url" content={BUSINESS_INFO.url} />
-              <meta itemProp="image" content={BUSINESS_INFO.logo} />
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
