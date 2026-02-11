@@ -36,10 +36,7 @@ export default function Hero() {
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif"
             >
-              I work with{' '}
-              <span className="border-b-2 border-gold/50 pb-1">select businesses</span>{' '}
-              who are ready for{' '}
-              <span className="text-gold italic">real results.</span>
+              Marketing Consultant Gold Coast
             </motion.h1>
 
             <motion.div
