@@ -12,6 +12,11 @@ interface FooterProps {
     phone: string
     location: string
   }
+  socialLinks?: Array<{
+    href: string
+    icon: React.ReactNode
+    label: string
+  }>
   copyright: {
     text: string
     license?: string
@@ -25,6 +30,7 @@ export function Footer({
   tagline,
   mainLinks,
   contactInfo,
+  socialLinks,
   copyright,
   bottomTagline,
 }: FooterProps) {
@@ -43,7 +49,7 @@ export function Footer({
                 {brandName}
               </span>
             </a>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="text-sm text-slate-400 leading-relaxed max-w-xs font-sans">
               {tagline}
             </p>
           </div>
@@ -56,14 +62,14 @@ export function Footer({
                     {link.onClick ? (
                       <button
                         onClick={link.onClick}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans"
                       >
                         {link.label}
                       </button>
                     ) : (
                       <a
                         href={link.href}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans"
                       >
                         {link.label}
                       </a>
@@ -76,26 +82,43 @@ export function Footer({
             <div className="space-y-1.5">
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5"
+                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
               >
                 {contactInfo.email}
               </a>
               <a
                 href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
-                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5"
+                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
               >
                 {contactInfo.phone}
               </a>
-              <p className="text-sm text-slate-500 py-0.5">
+              <p className="text-sm text-slate-500 py-0.5 font-sans">
                 {contactInfo.location}
               </p>
             </div>
+
+            {socialLinks && socialLinks.length > 0 && (
+              <div className="flex gap-3 md:justify-end pt-1">
+                {socialLinks.map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="text-slate-400 hover:text-gold transition-colors duration-200"
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="text-xs text-slate-500 leading-relaxed">
+            <div className="text-xs text-slate-500 leading-relaxed font-sans">
               <span>{copyright.text}</span>
               {copyright.license && (
                 <>
@@ -106,7 +129,7 @@ export function Footer({
             </div>
 
             {bottomTagline && (
-              <p className="text-xs text-slate-600 italic">
+              <p className="text-xs text-slate-600 italic font-sans">
                 {bottomTagline}
               </p>
             )}

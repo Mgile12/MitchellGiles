@@ -1,4 +1,5 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
+import { Facebook, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 interface FooterProps {
   onOpenModal: () => void;
@@ -34,8 +35,30 @@ export default function Footer({ onOpenModal }: FooterProps) {
       contactInfo={{
         email: 'MitchellGiles134@Gmail.com',
         phone: '0474 870 535',
-        location: 'Gold Coast, QLD',
+        location: '82 Marine Parade, Southport QLD 4215',
       }}
+      socialLinks={[
+        {
+          href: 'https://www.facebook.com/mitchell.giles.56',
+          icon: <Facebook size={20} />,
+          label: 'Facebook',
+        },
+        {
+          href: 'https://www.instagram.com/mitcheeellgiles?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+          icon: <Instagram size={20} />,
+          label: 'Instagram',
+        },
+        {
+          href: 'https://x.com/MitchellGilesAu',
+          icon: <Twitter size={20} />,
+          label: 'X (Twitter)',
+        },
+        {
+          href: 'https://www.linkedin.com/in/mitchellgiles-au',
+          icon: <Linkedin size={20} />,
+          label: 'LinkedIn',
+        },
+      ]}
       copyright={{
         text: `© ${new Date().getFullYear()} Mitchell Giles`,
         license: 'All rights reserved',
