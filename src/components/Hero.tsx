@@ -49,11 +49,11 @@ export default function Hero() {
               className="mt-8 space-y-5"
             >
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                Email Marketing, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites. I build revenue systems that compound over time, not tactics that spike and die.
+                Email Marketing, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
               </p>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                Every campaign is tracked. Every dollar is accounted for. Every decision is backed by data. If I cannot show you where the revenue came from, you do not pay.
+                Pipelines that deliver while you sleep
               </p>
             </motion.div>
 
