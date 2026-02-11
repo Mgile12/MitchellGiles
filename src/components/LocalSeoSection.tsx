@@ -69,38 +69,6 @@ export default function LocalSeoSection() {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeInUp}
-          className="mt-14 max-w-3xl mx-auto"
-        >
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 text-center font-serif">
-            Why Local Businesses Choose Mitchell Giles
-          </h3>
-          <div className="text-slate-400 leading-relaxed space-y-4 font-sans text-center">
-            <p>
-              Finding a reliable marketing consultant on the Gold Coast can be frustrating. Most agencies
-              lock you into long contracts, overcharge for basic deliverables, and treat your business like
-              another number on a spreadsheet.
-            </p>
-            <p>
-              I take a different approach. As a solo consultant based right here in{' '}
-              {BUSINESS_INFO.address.locality}, I work with a select number of businesses at any one time.
-              That means you get direct access to the person doing the work -- not a junior account manager
-              reading from a script.
-            </p>
-            <p>
-              Whether you are searching for{' '}
-              <strong className="text-slate-200">email marketing near me</strong>,{' '}
-              <strong className="text-slate-200">paid advertising on the Gold Coast</strong>, or a{' '}
-              <strong className="text-slate-200">digital marketing consultant in South East Queensland</strong>
-              , I can help you build a pipeline that actually delivers.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
