@@ -1,9 +1,24 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
-import { Facebook, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 
 interface FooterProps {
   onOpenModal: () => void;
 }
+
+const XIcon = ({ size = 20 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M4 4l16 16m0-16L4 20" />
+  </svg>
+);
 
 export default function Footer({ onOpenModal }: FooterProps) {
   const scrollToSection = (sectionId: string) => {
@@ -50,7 +65,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
         },
         {
           href: 'https://x.com/MitchellGilesAu',
-          icon: <Twitter size={20} />,
+          icon: <XIcon size={20} />,
           label: 'X (Twitter)',
         },
         {
