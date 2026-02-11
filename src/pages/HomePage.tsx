@@ -6,6 +6,7 @@ import {
   KillerResults,
   ServicesOverview,
   FinalCTA,
+  LocalSeoSection,
 } from '../components';
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <CaseStudyTeaser />
       <KillerResults />
       <ServicesOverview />
+      <LocalSeoSection />
       <FinalCTA />
     </>
   );

@@ -9,3 +9,6 @@ export { default as Testimonials } from './Testimonials';
 export { default as KillerResults } from './KillerResults';
 export { default as CaseStudyTeaser } from './CaseStudyTeaser';
 export { default as FinalCTA } from './FinalCTA';
+export { default as LocalSeoSection } from './LocalSeoSection';
+export { default as LocalBusinessSchema } from './LocalBusinessSchema';
+export { default as SeoHead } from './SeoHead';

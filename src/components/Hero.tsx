@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { fadeInUp } from '../utils/animations';
+import { BUSINESS_INFO } from '../lib/business-info';
 
 export default function Hero() {
   return (
@@ -64,7 +64,7 @@ export default function Hero() {
               className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4"
             >
               <a
-                href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
+                href={BUSINESS_INFO.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"

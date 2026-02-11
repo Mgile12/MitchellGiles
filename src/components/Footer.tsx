@@ -1,5 +1,6 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { BUSINESS_INFO } from '../lib/business-info';
 
 interface FooterProps {
   onOpenModal: () => void;
@@ -26,8 +27,8 @@ export default function Footer({ onOpenModal }: FooterProps) {
 
   return (
     <UIFooter
-      logo={<img src="https://iili.io/fyI7mAB.png" alt="MG Logo" className="h-12 w-12 object-contain" />}
-      brandName="Mitchell Giles"
+      logo={<img src={BUSINESS_INFO.logo} alt="MG Logo" className="h-12 w-12 object-contain" />}
+      brandName={BUSINESS_INFO.legalName}
       tagline="Pipelines & leads for Aussie businesses."
       mainLinks={[
         {
@@ -44,34 +45,34 @@ export default function Footer({ onOpenModal }: FooterProps) {
         },
       ]}
       contactInfo={{
-        email: 'MitchellGiles134@Gmail.com',
-        phone: '0474 870 535',
-        location: '82 Marine Parade, Southport QLD 4215',
+        email: BUSINESS_INFO.email,
+        phone: BUSINESS_INFO.phone,
+        location: BUSINESS_INFO.address.full,
       }}
       socialLinks={[
         {
-          href: 'https://www.facebook.com/mitchell.giles.56',
+          href: BUSINESS_INFO.social.facebook,
           icon: <Facebook size={20} />,
           label: 'Facebook',
         },
         {
-          href: 'https://www.instagram.com/mitcheeellgiles?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+          href: BUSINESS_INFO.social.instagram,
           icon: <Instagram size={20} />,
           label: 'Instagram',
         },
         {
-          href: 'https://x.com/MitchellGilesAu',
+          href: BUSINESS_INFO.social.twitter,
           icon: <XIcon size={20} />,
           label: 'X (Twitter)',
         },
         {
-          href: 'https://www.linkedin.com/in/mitchellgiles-au',
+          href: BUSINESS_INFO.social.linkedin,
           icon: <Linkedin size={20} />,
           label: 'LinkedIn',
         },
       ]}
       copyright={{
-        text: `© ${new Date().getFullYear()} Mitchell Giles`,
+        text: `\u00A9 ${new Date().getFullYear()} ${BUSINESS_INFO.legalName}`,
         license: 'All rights reserved',
       }}
       bottomTagline="Built for speed & conversion. No agency fluff."

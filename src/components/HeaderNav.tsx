@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BUSINESS_INFO } from '../lib/business-info';
 
 export default function HeaderNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +63,14 @@ export default function HeaderNav() {
               </button>
             ))}
             <a
-              href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
+              href={`tel:${BUSINESS_INFO.phoneFormatted}`}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+            >
+              <Phone className="h-3.5 w-3.5" />
+              {BUSINESS_INFO.phone}
+            </a>
+            <a
+              href={BUSINESS_INFO.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
@@ -100,9 +108,16 @@ export default function HeaderNav() {
                   {link.label}
                 </button>
               ))}
+              <a
+                href={`tel:${BUSINESS_INFO.phoneFormatted}`}
+                className="flex items-center gap-2 px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+              >
+                <Phone className="h-4 w-4" />
+                {BUSINESS_INFO.phone}
+              </a>
               <div className="pt-3">
                 <a
-                  href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
+                  href={BUSINESS_INFO.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AppLayout, HeaderNav, Footer } from './components';
+import { AppLayout, HeaderNav, Footer, LocalBusinessSchema, SeoHead } from './components';
 import ContactModal from './components/ContactModal';
 import HomePage from './pages/HomePage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
@@ -10,6 +10,8 @@ function App() {
 
   return (
     <AppLayout>
+      <LocalBusinessSchema />
+      <SeoHead />
       <HeaderNav />
       <main>
         <Routes>
