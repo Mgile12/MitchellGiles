@@ -72,12 +72,12 @@ export default function Hero() {
                 Book Your Strategy Call
               </a>
 
-              <Link
-                to="/case-studies/elite-football-agency"
+              <a
+                href="#results"
                 className="inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide border border-white/50 text-white hover:bg-white/5 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
-                View Case Studies
-              </Link>
+                View Results
+              </a>
             </motion.div>
           </motion.div>
 
