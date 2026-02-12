@@ -76,7 +76,7 @@ export default function EmailMarketingWhy() {
           <AnimateOnScroll stagger={2}>
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08]">
               <img
-                src="https://iili.io/qHd52vj.md.jpg"
+                src="https://iili.io/qHd5KTQ.md.jpg"
                 alt="Gold Coast business owner reviewing email campaign analytics and performance data"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
