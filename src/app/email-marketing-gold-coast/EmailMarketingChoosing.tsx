@@ -71,7 +71,7 @@ export default function EmailMarketingChoosing() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08]">
               <img
-                src="/email-marketing-services-gold-coast-planning.jpg"
+                src="https://iili.io/qHd5KTQ.jpg"
                 alt="Email marketing strategy planning session in a Gold Coast office"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
