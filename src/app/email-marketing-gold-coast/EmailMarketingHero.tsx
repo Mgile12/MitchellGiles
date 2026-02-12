@@ -68,7 +68,7 @@ export default function EmailMarketingHero() {
           <div className="animate-fade-in-up animate-delay-200">
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/30">
               <img
-                src="/email-marketing-gold-coast-strategy-session.jpg"
+                src="https://iili.io/qHd5dYb.md.jpg"
                 alt="Team planning email marketing strategy for Gold Coast business"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="eager"

@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/email-marketing-gold-coast`,
     locale: 'en_AU',
-    images: [{ url: '/email-marketing-gold-coast-strategy-session.jpg' }],
+    images: [{ url: 'https://iili.io/qHd5dYb.md.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Email Marketing Gold Coast | Mitchell Giles Marketing',
     description:
       'Strategic email marketing services for Gold Coast businesses. Automation, campaigns, and reporting that turn your database into predictable monthly revenue.',
-    images: ['/email-marketing-gold-coast-strategy-session.jpg'],
+    images: ['https://iili.io/qHd5dYb.md.jpg'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/email-marketing-gold-coast`,
