@@ -24,9 +24,10 @@ export default function Hero() {
             </h1>
 
             <div className="mt-8 space-y-5 animate-fade-in-up animate-delay-150">
-              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
-                Email Marketing, Copywriting, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
-              </p>
+              <h2 className="text-base sm:text-lg text-slate-200 leading-[1.9] tracking-wide font-medium font-sans">
+                Email Marketing, Copywriting, Lead Generation &amp; Paid Advertising<br />
+                Brand Awareness, Strategic SEO, Business Automation, Event Management &amp; Business Consulting
+              </h2>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Pipelines that deliver while you sleep
