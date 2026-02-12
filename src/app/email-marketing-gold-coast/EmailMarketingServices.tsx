@@ -201,7 +201,7 @@ export default function EmailMarketingServices() {
           <AnimateOnScroll className="mt-12">
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08]">
               <img
-                src="/email-automation-workflow-gold-coast.jpg"
+                src="https://iili.io/qHd53yx.jpg"
                 alt="Laptop showing email automation workflow for Gold Coast business"
                 className="w-full h-auto object-cover aspect-[16/9] sm:aspect-[21/9]"
                 loading="lazy"
