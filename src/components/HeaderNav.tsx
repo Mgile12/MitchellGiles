@@ -1,14 +1,22 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
+
+const serviceLinks = [
+  { label: 'Email Marketing Gold Coast', href: '/email-marketing-gold-coast' },
+];
 
 export default function HeaderNav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -19,7 +27,28 @@ export default function HeaderNav() {
 
   useEffect(() => {
     setMobileOpen(false);
+    setServicesOpen(false);
+    setMobileServicesOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setServicesOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setServicesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setServicesOpen(false), 150);
+  };
 
   const scrollToSection = (id: string) => {
     setMobileOpen(false);
@@ -30,11 +59,6 @@ export default function HeaderNav() {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
-
-  const navLinks = [
-    { label: 'Process', action: () => scrollToSection('services') },
-    { label: 'Results', action: () => scrollToSection('results') },
-  ];
 
   return (
     <header
@@ -55,15 +79,51 @@ export default function HeaderNav() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-7">
-            {navLinks.map((link) => (
+            <div
+              ref={dropdownRef}
+              className="relative"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <button
-                key={link.label}
-                onClick={link.action}
-                className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+                onClick={() => setServicesOpen(!servicesOpen)}
+                className="inline-flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
               >
-                {link.label}
+                Services
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
-            ))}
+
+              <div
+                className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 transition-all duration-200 ${
+                  servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'
+                }`}
+              >
+                <div className="w-64 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden">
+                  {serviceLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block px-5 py-3.5 text-sm font-medium text-slate-300 hover:text-gold hover:bg-white/[0.04] transition-colors duration-150"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={() => scrollToSection('services')}
+              className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+            >
+              Process
+            </button>
+            <button
+              onClick={() => scrollToSection('results')}
+              className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+            >
+              Results
+            </button>
             <a
               href={`tel:${BUSINESS_INFO.phoneFormatted}`}
               className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
@@ -93,19 +153,48 @@ export default function HeaderNav() {
 
       <div
         className={`md:hidden overflow-hidden transition-all duration-250 ease-in-out bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
-          mobileOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+          mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-5 py-5 space-y-1">
-          {navLinks.map((link) => (
+          <div>
             <button
-              key={link.label}
-              onClick={link.action}
-              className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              className="flex items-center justify-between w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
             >
-              {link.label}
+              Services
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-gold' : 'text-slate-500'}`} />
             </button>
-          ))}
+            <div className={`grid transition-all duration-300 ease-out ${mobileServicesOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+              <div className="overflow-hidden">
+                <div className="pl-6 pb-1 space-y-0.5">
+                  {serviceLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-150"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            onClick={() => scrollToSection('services')}
+            className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+          >
+            Process
+          </button>
+          <button
+            onClick={() => scrollToSection('results')}
+            className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+          >
+            Results
+          </button>
           <a
             href={`tel:${BUSINESS_INFO.phoneFormatted}`}
             className="flex items-center gap-2 px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"

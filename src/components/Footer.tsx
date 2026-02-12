@@ -38,6 +38,10 @@ export default function Footer({ onOpenModal }: FooterProps) {
           label: 'Case Studies',
         },
         {
+          href: '/email-marketing-gold-coast',
+          label: 'Email Marketing',
+        },
+        {
           label: 'Process',
           onClick: () => scrollToSection('services'),
         },
