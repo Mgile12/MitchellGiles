@@ -1,13 +1,15 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Phone } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { BUSINESS_INFO } from '../lib/business-info';
 
 export default function HeaderNav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -17,11 +19,11 @@ export default function HeaderNav() {
 
   useEffect(() => {
     setMobileOpen(false);
-  }, [location.pathname]);
+  }, [pathname]);
 
   const scrollToSection = (id: string) => {
     setMobileOpen(false);
-    if (location.pathname !== '/') {
+    if (pathname !== '/') {
       window.location.href = `/#${id}`;
       return;
     }
@@ -44,7 +46,7 @@ export default function HeaderNav() {
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className={`relative flex items-center justify-center md:justify-between transition-all duration-300 ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
-          <Link to="/" className="shrink-0">
+          <Link href="/" className="shrink-0">
             <img
               src="https://iili.io/fyI7mAB.png"
               alt="MG Logo"
@@ -89,46 +91,40 @@ export default function HeaderNav() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="md:hidden overflow-hidden bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06]"
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-250 ease-in-out bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
+          mobileOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="px-5 py-5 space-y-1">
+          {navLinks.map((link) => (
+            <button
+              key={link.label}
+              onClick={link.action}
+              className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+            >
+              {link.label}
+            </button>
+          ))}
+          <a
+            href={`tel:${BUSINESS_INFO.phoneFormatted}`}
+            className="flex items-center gap-2 px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
           >
-            <div className="px-5 py-5 space-y-1">
-              {navLinks.map((link) => (
-                <button
-                  key={link.label}
-                  onClick={link.action}
-                  className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
-                >
-                  {link.label}
-                </button>
-              ))}
-              <a
-                href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-                className="flex items-center gap-2 px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
-              >
-                <Phone className="h-4 w-4" />
-                {BUSINESS_INFO.phone}
-              </a>
-              <div className="pt-3">
-                <a
-                  href={BUSINESS_INFO.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
-                >
-                  Book a Call
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <Phone className="h-4 w-4" />
+            {BUSINESS_INFO.phone}
+          </a>
+          <div className="pt-3">
+            <a
+              href={BUSINESS_INFO.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
+            >
+              Book a Call
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

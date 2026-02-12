@@ -1,14 +1,12 @@
-export { default as AppLayout } from './AppLayout';
 export { default as HeaderNav } from './HeaderNav';
 export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
 export { default as FAQSection } from './FAQSection';
 export { default as RulesSection } from './RulesSection';
 export { default as ServicesOverview } from './ServicesOverview';
-export { default as Testimonials } from './Testimonials';
 export { default as KillerResults } from './KillerResults';
 export { default as CaseStudyTeaser } from './CaseStudyTeaser';
 export { default as FinalCTA } from './FinalCTA';
 export { default as LocalSeoSection } from './LocalSeoSection';
-export { default as LocalBusinessSchema } from './LocalBusinessSchema';
-export { default as SeoHead } from './SeoHead';
+export { default as ContactModal } from './ContactModal';
+export { default as AnimateOnScroll } from './AnimateOnScroll';

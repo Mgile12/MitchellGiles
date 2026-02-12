@@ -1,6 +1,5 @@
-import { motion } from 'framer-motion';
 import { Target, Layers, Megaphone, BarChart3, Scissors } from 'lucide-react';
-import { fadeInUp, staggerContainer } from '../utils/animations';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const services = [
   {
@@ -29,7 +28,7 @@ const services = [
   },
   {
     number: '05',
-    title: 'Cut What Doesn\'t Work',
+    title: "Cut What Doesn't Work",
     description: 'Eliminate anything that wastes your budget. Continuous optimization where every dollar performs.',
     icon: Scissors,
   },
@@ -42,13 +41,7 @@ export default function ServicesOverview() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(200,161,78,0.03),transparent_60%)]" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeInUp}
-          className="text-center mb-14 sm:mb-20"
-        >
+        <AnimateOnScroll className="text-center mb-14 sm:mb-20">
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
             The Process
           </span>
@@ -63,26 +56,16 @@ export default function ServicesOverview() {
               I build you a simple, predictable lead pipeline -- built for real Aussie customers, not marketing textbooks.
             </p>
           </div>
-        </motion.div>
+        </AnimateOnScroll>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-          className="relative"
-        >
+        <div className="relative">
           <div className="absolute left-8 sm:left-10 top-0 bottom-0 w-px bg-gradient-to-b from-gold/40 via-gold/20 to-transparent hidden md:block" />
 
           <div className="space-y-6 sm:space-y-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  className="group relative"
-                >
+                <AnimateOnScroll key={index} stagger={index + 1} className="group relative">
                   <div className="md:pl-24 relative">
                     <div className="absolute left-0 top-6 hidden md:flex items-center justify-center">
                       <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gold/5 border border-gold/20 flex items-center justify-center group-hover:bg-gold/10 group-hover:border-gold/40 transition-all duration-300">
@@ -90,11 +73,7 @@ export default function ServicesOverview() {
                       </div>
                     </div>
 
-                    <motion.div
-                      whileHover={{ y: -4 }}
-                      transition={{ duration: 0.25, ease: 'easeOut' }}
-                      className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] transition-all duration-300"
-                    >
+                    <div className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300">
                       <div className="flex items-start gap-5">
                         <div className="md:hidden shrink-0 w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center">
                           <span className="text-gold font-bold text-sm font-serif">{service.number}</span>
@@ -116,29 +95,23 @@ export default function ServicesOverview() {
                       </div>
 
                       <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-gold/[0.03] to-transparent rounded-2xl pointer-events-none" />
-                    </motion.div>
+                    </div>
                   </div>
-                </motion.div>
+                </AnimateOnScroll>
               );
             })}
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-14 sm:mt-20 text-center"
-        >
+        <AnimateOnScroll className="mt-14 sm:mt-20 text-center">
           <div className="inline-block relative">
             <div className="absolute -inset-x-6 -inset-y-3 bg-gold/5 rounded-2xl blur-sm" />
             <p className="relative text-lg sm:text-xl text-white font-semibold font-serif">
-              You're not buying marketing services.
-              <span className="text-gold"> You're buying predictable growth.</span>
+              You&apos;re not buying marketing services.
+              <span className="text-gold"> You&apos;re buying predictable growth.</span>
             </p>
           </div>
-        </motion.div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

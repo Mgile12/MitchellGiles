@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { fadeInUp, staggerContainer } from '../utils/animations';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const rules = [
   {
@@ -27,15 +26,7 @@ const rules = [
 export default function RulesSection() {
   return (
     <section className="bg-navy-800 text-white" aria-labelledby="rules-heading">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
-      >
-        {/* Section Header */}
+      <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="mb-12">
           <h2 id="rules-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
             The Rules of the Game
@@ -45,34 +36,18 @@ export default function RulesSection() {
           </p>
         </div>
 
-        {/* Rules Stack */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-          className="space-y-8"
-        >
+        <div className="space-y-8">
           {rules.map((rule, index) => (
-            <motion.div
-              key={rule.number}
-              variants={fadeInUp}
-              className="relative"
-            >
-              {/* Vertical line connector (except for last item) */}
+            <div key={rule.number} className="relative">
               {index < rules.length - 1 && (
                 <div className="absolute left-[17px] top-12 bottom-0 w-px bg-gradient-to-b from-gold/50 to-transparent" />
               )}
-
               <div className="flex gap-6">
-                {/* Number Badge */}
                 <div className="flex-shrink-0">
                   <div className="w-9 h-9 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center relative z-10">
                     <span className="text-sm font-bold text-gold font-serif">{rule.number}</span>
                   </div>
                 </div>
-
-                {/* Content */}
                 <div className="flex-1 pb-4">
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-serif">
                     {rule.title}
@@ -82,10 +57,10 @@ export default function RulesSection() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </AnimateOnScroll>
     </section>
   );
 }

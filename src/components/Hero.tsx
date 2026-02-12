@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { fadeInUp } from '../utils/animations';
 import { BUSINESS_INFO } from '../lib/business-info';
 
 export default function Hero() {
@@ -10,41 +8,22 @@ export default function Hero() {
     >
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 lg:pt-40 pb-20 sm:pb-28 lg:pb-36">
         <div className="grid gap-12 lg:gap-20 md:grid-cols-2 md:items-center">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={fadeInUp}
-            transition={{ duration: 0.45, ease: "easeOut" }}
-            className="text-left"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 }}
-              className="flex items-center gap-3 mb-8"
-            >
+          <div className="text-left animate-fade-in-up">
+            <div className="flex items-center gap-3 mb-8 animate-fade-in-up animate-delay-50">
               <span className="h-px w-8 bg-gold" />
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold font-sans">
                 Mitchell Giles Marketing Consultant
               </p>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
+            <h1
               id="hero-headline"
-              className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif"
+              className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif animate-fade-in-up animate-delay-100"
             >
               Marketing Consultant Gold Coast
-            </motion.h1>
+            </h1>
 
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.15 }}
-              className="mt-8 space-y-5"
-            >
+            <div className="mt-8 space-y-5 animate-fade-in-up animate-delay-150">
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Email Marketing, Copywriting, Meta Ads, SEO, Google Ads, Automations, AI, Event Tickets, CRMs, Websites.
               </p>
@@ -52,14 +31,9 @@ export default function Hero() {
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Pipelines that deliver while you sleep
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, ease: "easeOut", delay: 0.25 }}
-              className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4"
-            >
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4 animate-fade-in-up animate-delay-250">
               <a
                 href={BUSINESS_INFO.bookingUrl}
                 target="_blank"
@@ -75,15 +49,10 @@ export default function Hero() {
               >
                 View Results
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-            className="relative w-full max-w-md mx-auto"
-          >
+          <div className="relative w-full max-w-md mx-auto animate-fade-in-up animate-delay-200">
             <div className="relative aspect-[3/4] w-full overflow-hidden border-l-2 border-l-gold shadow-2xl shadow-black/60">
               <img
                 src="https://iili.io/fynfkw7.jpg"
@@ -93,18 +62,13 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-r from-navy-950/30 to-transparent" />
 
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.7 }}
-                className="absolute bottom-4 right-4 left-auto max-w-[220px] bg-navy-950/70 backdrop-blur-xl rounded-lg p-4 border border-gold/25"
-              >
+              <div className="absolute bottom-4 right-4 left-auto max-w-[220px] bg-navy-950/70 backdrop-blur-xl rounded-lg p-4 border border-gold/25 animate-fade-in-up animate-delay-700">
                 <p className="text-xs uppercase tracking-[0.15em] text-gold mb-1.5 font-sans">Proven Results</p>
                 <p className="text-2xl font-bold text-white font-serif">$190,000</p>
                 <p className="text-xs text-slate-300 mt-1 font-sans">Generated through email marketing in 2 years</p>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

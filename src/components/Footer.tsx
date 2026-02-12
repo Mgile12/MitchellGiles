@@ -1,3 +1,5 @@
+'use client';
+
 import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
@@ -32,7 +34,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
       tagline="Pipelines & leads for Aussie businesses."
       mainLinks={[
         {
-          href: '/case-studies',
+          href: '/case-studies/elite-football-agency',
           label: 'Case Studies',
         },
         {

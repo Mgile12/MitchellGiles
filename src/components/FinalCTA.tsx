@@ -1,21 +1,13 @@
-import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { fadeInUp } from '../utils/animations';
 import { BUSINESS_INFO } from '../lib/business-info';
+import AnimateOnScroll from './AnimateOnScroll';
 
 export default function FinalCTA() {
   return (
     <section className="relative bg-navy-950 text-slate-50">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeInUp}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24"
-      >
+      <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif">
             Your pipeline should not be a guessing game.
@@ -40,7 +32,7 @@ export default function FinalCTA() {
             </a>
           </div>
         </div>
-      </motion.div>
+      </AnimateOnScroll>
     </section>
   );
 }
