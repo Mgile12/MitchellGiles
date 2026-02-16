@@ -133,7 +133,11 @@ export function Footer({
                 <Link
                   key={i}
                   href={area.href}
-                  className="text-sm text-slate-400 hover:text-gold transition-colors duration-200 font-sans"
+                  className={`text-sm transition-colors duration-200 font-sans ${
+                    area.label === 'View All Areas'
+                      ? 'font-semibold text-gold hover:text-gold-light'
+                      : 'text-slate-400 hover:text-gold'
+                  }`}
                 >
                   {area.label}
                 </Link>

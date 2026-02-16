@@ -6,8 +6,33 @@ export const AREAS = [
   { name: 'Burleigh Heads', slug: 'burleigh-heads', tagline: 'Marketing for boutique, wellness and creative businesses' },
   { name: 'Robina', slug: 'robina', tagline: 'Marketing for retail, professional services and health businesses' },
   { name: 'Nerang', slug: 'nerang', tagline: 'Marketing for trades, services and growing local businesses' },
+  { name: 'Hope Island', slug: 'hope-island', tagline: 'Marketing for premium services, marina and golf course businesses' },
+  { name: 'Paradise Point', slug: 'paradise-point', tagline: 'Marketing for waterfront and premium local businesses' },
+  { name: 'Runaway Bay', slug: 'runaway-bay', tagline: 'Marketing for retail, trades and family-oriented businesses' },
+  { name: 'Hollywell', slug: 'hollywell', tagline: 'Marketing for marine, trades and Broadwater businesses' },
+  { name: 'Labrador', slug: 'labrador', tagline: 'Marketing for hospitality, trades and Broadwater businesses' },
+  { name: 'Main Beach', slug: 'main-beach', tagline: 'Marketing for luxury hospitality and premium service businesses' },
+  { name: 'Chevron Island', slug: 'chevron-island', tagline: 'Marketing for creative, hospitality and boutique businesses near HOTA' },
+  { name: 'Isle of Capri', slug: 'isle-of-capri', tagline: 'Marketing for premium services near Capri on Via Roma' },
+  { name: 'Mermaid Beach', slug: 'mermaid-beach', tagline: 'Marketing for luxury lifestyle and hospitality businesses' },
+  { name: 'Nobby Beach', slug: 'nobby-beach', tagline: 'Marketing for hospitality, fitness and lifestyle businesses' },
+  { name: 'Miami', slug: 'miami', tagline: 'Marketing for surf culture, lifestyle and hospitality businesses' },
+  { name: 'Palm Beach', slug: 'palm-beach', tagline: 'Marketing for surf, lifestyle and growing coastal businesses' },
+  { name: 'Currumbin', slug: 'currumbin', tagline: 'Marketing for tourism, community and coastal businesses' },
+  { name: 'Tugun', slug: 'tugun', tagline: 'Marketing for airport corridor and coastal community businesses' },
+  { name: 'Bilinga', slug: 'bilinga', tagline: 'Marketing for coastal accommodation and airport-adjacent businesses' },
+  { name: 'Kirra', slug: 'kirra', tagline: 'Marketing for surf tourism and coastal hospitality businesses' },
+  { name: 'Coolangatta', slug: 'coolangatta', tagline: 'Marketing for southern Gold Coast tourism and hospitality businesses' },
   { name: 'Brisbane', slug: 'brisbane', tagline: 'Extending Gold Coast marketing expertise to SEQ capital' },
   { name: 'South East Queensland', slug: 'south-east-queensland', tagline: 'Regional marketing coverage across the SEQ corridor' },
+] as const;
+
+export const TOP_5_AREAS = [
+  { name: 'Southport', slug: 'southport' },
+  { name: 'Surfers Paradise', slug: 'surfers-paradise' },
+  { name: 'Broadbeach', slug: 'broadbeach' },
+  { name: 'Burleigh Heads', slug: 'burleigh-heads' },
+  { name: 'Robina', slug: 'robina' },
 ] as const;
 
 export const SERVICE_LINKS = [

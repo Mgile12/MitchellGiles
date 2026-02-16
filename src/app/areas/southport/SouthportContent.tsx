@@ -5,10 +5,11 @@ import Link from 'next/link';
 import {
   ChevronRight, ChevronDown, MapPin, ArrowRight,
   Search, Megaphone, Mail, Cog, BarChart3, Target,
-  CheckCircle, TrendingUp, Eye, Scissors, Award,
+  TrendingUp, Eye, Scissors, Award,
 } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import AreaMapDirections from '@/components/AreaMapDirections';
 
 interface FAQItem { question: string; answer: string; }
 interface Props { faqItems: FAQItem[]; }
@@ -196,29 +197,24 @@ export default function SouthportContent({ faqItems }: Props) {
         </div>
       </section>
 
-      <section className="bg-navy-950 relative overflow-hidden">
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10">
-            <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">Find Us</span>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-5 font-serif">Visit Us in Southport</h2>
-            <div className="flex items-center justify-center gap-2 text-slate-300 font-sans">
-              <MapPin className="w-4 h-4 text-gold" />
-              <p className="text-sm">{BUSINESS_INFO.address.full}</p>
-            </div>
-          </AnimateOnScroll>
-          <div className="rounded-xl overflow-hidden border border-white/10">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.992210498041!2d153.4133307!3d-27.963524800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910f7b954aafeb%3A0x46bd1aa9daada649!2sMitchell%20Giles!5e0!3m2!1sen!2sau!4v1770894024737!5m2!1sen!2sau"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
-      </section>
+      <AreaMapDirections
+        areaName="Southport"
+        landmarks={[
+          { name: 'Broadwater Parklands', time: '3 min walk' },
+          { name: 'Australia Fair Shopping Centre', time: '5 min walk' },
+          { name: 'Southport Courthouse', time: '4 min drive' },
+          { name: 'Gold Coast University Hospital', time: '8 min drive' },
+        ]}
+        directions={[
+          'Head along Marine Parade toward the Broadwater.',
+          'Our office is at 82 Marine Parade, opposite Broadwater Parklands.',
+          'Street parking available on Marine Parade and surrounding streets.',
+        ]}
+        publicTransport={[
+          'Southport Station (G:link light rail) - 10 min walk or one tram stop.',
+          'Bus routes 704, 705, 709 stop within walking distance.',
+        ]}
+      />
 
       <section className="bg-navy-900 text-slate-50" aria-labelledby="southport-faq-heading">
         <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">

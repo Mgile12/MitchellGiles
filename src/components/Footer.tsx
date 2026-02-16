@@ -3,7 +3,7 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
-import { AREAS } from '../lib/areas';
+import { TOP_5_AREAS } from '../lib/areas';
 
 interface FooterProps {
   onOpenModal: () => void;
@@ -19,6 +19,14 @@ const XIcon = ({ size = 20 }: { size?: number }) => (
     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
   </svg>
 );
+
+const footerAreaLinks = [
+  ...TOP_5_AREAS.map((area) => ({
+    href: `/areas/${area.slug}`,
+    label: area.name,
+  })),
+  { href: '/areas', label: 'View All Areas' },
+];
 
 export default function Footer({ onOpenModal }: FooterProps) {
   return (
@@ -46,10 +54,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
         { href: BUSINESS_INFO.social.twitter, icon: <XIcon size={20} />, label: 'X (Twitter)' },
         { href: BUSINESS_INFO.social.linkedin, icon: <Linkedin size={20} />, label: 'LinkedIn' },
       ]}
-      areaLinks={AREAS.map((area) => ({
-        href: `/areas/${area.slug}`,
-        label: area.name,
-      }))}
+      areaLinks={footerAreaLinks}
       copyright={{
         text: `\u00A9 ${new Date().getFullYear()} ${BUSINESS_INFO.legalName}`,
         license: 'All rights reserved',
