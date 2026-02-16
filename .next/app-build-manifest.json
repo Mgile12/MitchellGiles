@@ -20,6 +20,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/areas/southport/page.js"
+    ],
+    "/seo-gold-coast/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/seo-gold-coast/page.js"
     ]
   }
 }
