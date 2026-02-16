@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       'From $50k to $425k in 12 months. See how Elite Football Agency transformed with the right marketing systems.',
   },
   alternates: {
-    canonical: 'https://mitchellgiles.com.au/case-studies/elite-football-agency',
+    canonical: 'https://mitchellgiles.com/case-studies/elite-football-agency',
   },
 };
 

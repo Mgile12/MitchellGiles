@@ -3,6 +3,7 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
+import { AREAS } from '../lib/areas';
 
 interface FooterProps {
   onOpenModal: () => void;
@@ -20,35 +21,19 @@ const XIcon = ({ size = 20 }: { size?: number }) => (
 );
 
 export default function Footer({ onOpenModal }: FooterProps) {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <UIFooter
       logo={<img src={BUSINESS_INFO.logo} alt="MG Logo" className="h-12 w-12 object-contain" />}
       brandName={BUSINESS_INFO.legalName}
       tagline="Pipelines & leads for Aussie businesses."
       mainLinks={[
-        {
-          href: '/case-studies/elite-football-agency',
-          label: 'Case Studies',
-        },
-        {
-          href: '/email-marketing-gold-coast',
-          label: 'Email Marketing',
-        },
-        {
-          label: 'Process',
-          onClick: () => scrollToSection('services'),
-        },
-        {
-          label: 'Contact',
-          onClick: onOpenModal,
-        },
+        { href: '/services', label: 'All Services' },
+        { href: '/seo-gold-coast', label: 'SEO' },
+        { href: '/google-ads-gold-coast', label: 'Google Ads' },
+        { href: '/email-marketing-gold-coast', label: 'Email Marketing' },
+        { href: '/lead-generation-gold-coast', label: 'Lead Generation' },
+        { href: '/digital-marketing-gold-coast', label: 'Digital Marketing' },
+        { label: 'Contact', onClick: onOpenModal },
       ]}
       contactInfo={{
         email: BUSINESS_INFO.email,
@@ -56,27 +41,15 @@ export default function Footer({ onOpenModal }: FooterProps) {
         location: BUSINESS_INFO.address.full,
       }}
       socialLinks={[
-        {
-          href: BUSINESS_INFO.social.facebook,
-          icon: <Facebook size={20} />,
-          label: 'Facebook',
-        },
-        {
-          href: BUSINESS_INFO.social.instagram,
-          icon: <Instagram size={20} />,
-          label: 'Instagram',
-        },
-        {
-          href: BUSINESS_INFO.social.twitter,
-          icon: <XIcon size={20} />,
-          label: 'X (Twitter)',
-        },
-        {
-          href: BUSINESS_INFO.social.linkedin,
-          icon: <Linkedin size={20} />,
-          label: 'LinkedIn',
-        },
+        { href: BUSINESS_INFO.social.facebook, icon: <Facebook size={20} />, label: 'Facebook' },
+        { href: BUSINESS_INFO.social.instagram, icon: <Instagram size={20} />, label: 'Instagram' },
+        { href: BUSINESS_INFO.social.twitter, icon: <XIcon size={20} />, label: 'X (Twitter)' },
+        { href: BUSINESS_INFO.social.linkedin, icon: <Linkedin size={20} />, label: 'LinkedIn' },
       ]}
+      areaLinks={AREAS.map((area) => ({
+        href: `/areas/${area.slug}`,
+        label: area.name,
+      }))}
       copyright={{
         text: `\u00A9 ${new Date().getFullYear()} ${BUSINESS_INFO.legalName}`,
         license: 'All rights reserved',

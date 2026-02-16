@@ -66,24 +66,12 @@ function buildJsonLd() {
     '@type': 'ProfessionalService',
     '@id': `${BUSINESS_INFO.url}/#business`,
     name: BUSINESS_INFO.name,
-    alternateName: BUSINESS_INFO.legalName,
     description: BUSINESS_INFO.description,
     url: BUSINESS_INFO.url,
     logo: BUSINESS_INFO.logo,
     image: BUSINESS_INFO.image,
-    telephone: BUSINESS_INFO.phoneFormatted,
+    telephone: '0474870535',
     email: BUSINESS_INFO.email,
-    founder: {
-      '@type': 'Person',
-      name: BUSINESS_INFO.founder,
-      url: BUSINESS_INFO.url,
-      sameAs: [
-        BUSINESS_INFO.social.linkedin,
-        BUSINESS_INFO.social.twitter,
-        BUSINESS_INFO.social.facebook,
-        BUSINESS_INFO.social.instagram,
-      ],
-    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS_INFO.address.street,
@@ -94,22 +82,23 @@ function buildJsonLd() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: BUSINESS_INFO.geo.latitude,
-      longitude: BUSINESS_INFO.geo.longitude,
+      latitude: -27.9635248,
+      longitude: 153.4133307,
     },
-    areaServed: BUSINESS_INFO.serviceArea.map((area) => ({
-      '@type': 'City',
-      name: area,
-    })),
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Marketing Services',
-      itemListElement: BUSINESS_INFO.services.map((service, i) => ({
-        '@type': 'Offer',
-        itemOffered: { '@type': 'Service', name: service },
-        position: i + 1,
-      })),
+    areaServed: {
+      '@type': 'AdministrativeArea',
+      name: 'Gold Coast QLD',
     },
+    makesOffer: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Email Marketing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Copywriting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Lead Generation & Paid Advertising' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Brand Awareness' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategic SEO' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Automation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Event Management' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Consulting' } },
+    ],
     sameAs: [
       BUSINESS_INFO.social.facebook,
       BUSINESS_INFO.social.instagram,
@@ -117,14 +106,18 @@ function buildJsonLd() {
       BUSINESS_INFO.social.linkedin,
     ],
     priceRange: '$$',
-    currenciesAccepted: 'AUD',
-    paymentAccepted: 'Bank Transfer, Credit Card',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00',
+        opens: '09:00',
+        closes: '16:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Saturday'],
+        opens: '09:00',
+        closes: '16:00',
       },
     ],
   };

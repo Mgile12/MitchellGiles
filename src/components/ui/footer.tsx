@@ -1,27 +1,33 @@
+import Link from 'next/link';
+
 interface FooterProps {
-  logo: React.ReactNode
-  brandName: string
-  tagline: string
+  logo: React.ReactNode;
+  brandName: string;
+  tagline: string;
   mainLinks: Array<{
-    href?: string
-    label: string
-    onClick?: () => void
-  }>
+    href?: string;
+    label: string;
+    onClick?: () => void;
+  }>;
   contactInfo: {
-    email: string
-    phone: string
-    location: string
-  }
+    email: string;
+    phone: string;
+    location: string;
+  };
   socialLinks?: Array<{
-    href: string
-    icon: React.ReactNode
-    label: string
-  }>
+    href: string;
+    icon: React.ReactNode;
+    label: string;
+  }>;
+  areaLinks?: Array<{
+    href: string;
+    label: string;
+  }>;
   copyright: {
-    text: string
-    license?: string
-  }
-  bottomTagline?: string
+    text: string;
+    license?: string;
+  };
+  bottomTagline?: string;
 }
 
 export function Footer({
@@ -31,6 +37,7 @@ export function Footer({
   mainLinks,
   contactInfo,
   socialLinks,
+  areaLinks,
   copyright,
   bottomTagline,
 }: FooterProps) {
@@ -39,7 +46,7 @@ export function Footer({
       <div className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 pt-14 pb-8 sm:pt-16 sm:pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           <div className="space-y-4">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-3 group"
               aria-label={brandName}
@@ -48,7 +55,7 @@ export function Footer({
               <span className="font-bold text-2xl text-slate-50 tracking-tight group-hover:text-gold transition-colors duration-200">
                 {brandName}
               </span>
-            </a>
+            </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs font-sans">
               {tagline}
             </p>
@@ -66,14 +73,14 @@ export function Footer({
                       >
                         {link.label}
                       </button>
-                    ) : (
-                      <a
+                    ) : link.href ? (
+                      <Link
                         href={link.href}
                         className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans"
                       >
                         {link.label}
-                      </a>
-                    )}
+                      </Link>
+                    ) : null}
                   </li>
                 ))}
               </ul>
@@ -116,6 +123,25 @@ export function Footer({
           </div>
         </div>
 
+        {areaLinks && areaLinks.length > 0 && (
+          <div className="mt-10 pt-6 border-t border-white/[0.06]">
+            <p className="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
+              Areas We Serve
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              {areaLinks.map((area, i) => (
+                <Link
+                  key={i}
+                  href={area.href}
+                  className="text-sm text-slate-400 hover:text-gold transition-colors duration-200 font-sans"
+                >
+                  {area.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="mt-10 pt-6 border-t border-white/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="text-xs text-slate-500 leading-relaxed font-sans">
@@ -137,5 +163,5 @@ export function Footer({
         </div>
       </div>
     </footer>
-  )
+  );
 }

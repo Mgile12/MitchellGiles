@@ -4,7 +4,7 @@ export const BUSINESS_INFO = {
   description:
     'Gold Coast marketing consultant specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO, copywriting, automations, and CRM solutions for Australian businesses.',
   founder: 'Mitchell Giles',
-  url: 'https://mitchellgiles.com.au',
+  url: 'https://mitchellgiles.com',
   logo: 'https://iili.io/fyI7mAB.png',
   image: 'https://iili.io/fynfkw7.jpg',
   bookingUrl: 'https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337',

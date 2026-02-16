@@ -7,7 +7,12 @@ import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
 
 const serviceLinks = [
+  { label: 'SEO Gold Coast', href: '/seo-gold-coast' },
+  { label: 'Google Ads Gold Coast', href: '/google-ads-gold-coast' },
   { label: 'Email Marketing Gold Coast', href: '/email-marketing-gold-coast' },
+  { label: 'Lead Generation Gold Coast', href: '/lead-generation-gold-coast' },
+  { label: 'Digital Marketing Gold Coast', href: '/digital-marketing-gold-coast' },
+  { label: 'Marketing Automation Gold Coast', href: '/marketing-automation-gold-coast' },
 ];
 
 export default function HeaderNav() {
@@ -98,7 +103,7 @@ export default function HeaderNav() {
                   servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'
                 }`}
               >
-                <div className="w-64 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden">
+                <div className="w-72 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden">
                   {serviceLinks.map((link) => (
                     <Link
                       key={link.href}

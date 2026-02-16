@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Search, Target, Database, Filter } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
@@ -5,24 +6,28 @@ const integrations = [
   {
     icon: Search,
     title: 'SEO Traffic Conversion',
+    href: '/seo-gold-coast',
     description:
       'Capture organic visitors with targeted lead magnets and convert them into email subscribers. Turn search traffic into a retargetable audience.',
   },
   {
     icon: Target,
     title: 'Paid Ad Retargeting',
+    href: '/google-ads-gold-coast',
     description:
       'Use email engagement data to build custom audiences for Meta and Google Ads. Reduce cost per acquisition by re-engaging warm prospects.',
   },
   {
     icon: Database,
     title: 'CRM Automation',
+    href: '/marketing-automation-gold-coast',
     description:
       'Connect email directly to your CRM so sales teams get warm leads with full context. No manual handoffs, no dropped follow-ups.',
   },
   {
     icon: Filter,
     title: 'Lead Qualification',
+    href: '/lead-generation-gold-coast',
     description:
       'Score and segment leads based on email behaviour. Prioritise follow-up with prospects who are actively engaged and ready to buy.',
   },
@@ -62,13 +67,17 @@ export default function EmailMarketingIntegration() {
               <AnimateOnScroll
                 key={index}
                 stagger={index + 1}
-                className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-7 hover:border-gold/20 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-5">
-                  <Icon className="w-5 h-5 text-gold" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-3 font-serif">{item.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
+                <Link
+                  href={item.href}
+                  className="block rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-7 hover:border-gold/20 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300 h-full"
+                >
+                  <div className="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center mb-5">
+                    <Icon className="w-5 h-5 text-gold" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-3 font-serif">{item.title}</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
+                </Link>
               </AnimateOnScroll>
             );
           })}
