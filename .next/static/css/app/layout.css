@@ -517,6 +517,9 @@ video {
 .pointer-events-auto {
   pointer-events: auto;
 }
+.invisible {
+  visibility: hidden;
+}
 .fixed {
   position: fixed;
 }
@@ -770,6 +773,9 @@ video {
 .h-px {
   height: 1px;
 }
+.h-3 {
+  height: 0.75rem;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -841,6 +847,12 @@ video {
 }
 .w-px {
   width: 1px;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-72 {
+  width: 18rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -999,6 +1011,10 @@ video {
 }
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -2332,6 +2348,10 @@ video {
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:space-y-16 > :not([hidden]) ~ :not([hidden]) {
