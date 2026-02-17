@@ -6,7 +6,7 @@ import { areaData } from './data';
 export const metadata: Metadata = {
   title: areaData.seoTitle,
   description: areaData.metaDescription,
-  alternates: { canonical: `${BUSINESS_INFO.url}/areas/${areaData.slug}` },
+  alternates: { canonical: `${BUSINESS_INFO.url}/areas/broadbeach` },
 };
 
 export default function BroadbeachPage() {

@@ -3,137 +3,131 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Broadbeach',
   slug: 'broadbeach',
-  seoTitle: 'Marketing Consultant Broadbeach | Predictable Growth Systems',
+  seoTitle: 'Marketing Consultant Broadbeach Waters | Data-Driven Growth Gold Coast',
   metaDescription:
-    'Marketing Consultant near Pacific Fair Broadbeach. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Looking for the best Marketing Consultant in Broadbeach Waters? Mitchell Giles Marketing Consultant builds transparent, revenue-driven systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Broadbeach \u2013 Predictable Growth for Local Businesses',
+    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
   heroIntro: [
-    'Broadbeach is not a suburb where average marketing survives. Between Pacific Fair Shopping Centre, The Star Gold Coast, and the constant stream of foot traffic along Surf Parade, competition is high and attention spans are short.',
-    'If you are searching for a Marketing Consultant in Broadbeach, you likely want more than more visibility. You want consistent revenue.',
-    'Located at 82 Marine Parade, Southport QLD 4215, just a short drive north of Broadbeach, this is local, data-driven strategy.',
+    'Broadbeach Waters is quiet.',
+    'Canal-front homes. Home offices. Professional operators.',
+    'It\u2019s five minutes from the buzz of Pacific Fair and the Gold Coast Convention and Exhibition Centre, yet it feels like a different world.',
   ],
-  whyDifferentTitle:
-    'Why Broadbeach Businesses Need a Different Marketing Strategy',
+  whyDifferentTitle: 'Why Broadbeach Waters Businesses Need Structured Marketing',
   whyDifferentIntro: [
-    'Broadbeach is a premium commercial pocket of the Gold Coast. Retail businesses competing for high-value shoppers, hospitality venues affected by festival-driven demand, and service providers competing for affluent residents all face unique challenges.',
+    'Data-Driven Accountability Transparency Ruthless Optimisation Single-System Focus Proven Gold Coast Results Marketing Services Tailored to Broadbeach Waters Why Locals Choose Us Directions from Broadbeach Waters FAQs Strong CTA On-Page SEO & Schema Full Page Content Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike Broadbeach Waters is quiet. Canal-front homes. Home offices. Professional operators. It\u2019s five minutes from the buzz of Pacific Fair and the Gold Coast Convention and Exhibition Centre, yet it feels like a different world. If you\u2019re searching for a Marketing Consultant in Broadbeach Waters, you\u2019re likely not looking for flashy creatives. You\u2019re looking for results. Mitchell Giles Marketing Consultant Gold Coast builds revenue systems that generate predictable growth for businesses across the Gold Coast. 📍 82 Marine Parade, Southport QLD 4215 📞 0474 870 535 Approximately 10\u201315 minutes from Broadbeach Waters. Close enough for strategy sessions. Structured enough to scale beyond postcode limits. Why Broadbeach Waters Businesses Need Structured Marketing Many businesses here fall into one of these categories: Consultants and advisors working from canal-front home offices eCommerce operators Property and development professionals Trades servicing the central Gold Coast Boutique service brands Common problems: Revenue fluctuates month to month Ads run without proper tracking No automated follow-up No integrated system tying everything together Broadbeach Waters is not built for walk-ins. It requires engineered visibility. What Makes This Marketing Consultant Different There are plenty of \u201cdigital marketers\u201d. Very few build systems. 1. Data-Driven Accountability \u2013 \u201cProof or We Stop\u201d Every decision ties directly to revenue. Opinion never outranks data. We track: Cost per lead Conversion rate Revenue per channel Customer acquisition cost Lifetime value Pipeline visibility If it doesn\u2019t convert, it\u2019s removed. No emotional attachment. Just numbers. 2. Full Transparency You see: Exactly what campaigns are live Exactly what you\u2019re spending Exactly what produced revenue No fluff. No hidden mechanics. No vague reporting. 3. Ruthless Optimisation Speed beats comfort. We: Kill what loses without emotion Double down aggressively on what wins Continuously eliminate waste Reallocate budget to top-performing channels Marketing is not art. It\u2019s iteration. 4. Single-System Focus One core offer. One revenue system. Everything designed to compound. No scattered tactics. No random experiments. You\u2019re not buying marketing services. You\u2019re buying predictable growth. Proven Gold Coast Results These systems have generated: $425K annual sales (436% growth) for Elite Football Agency Client scaled from $50K to $425K in 12 months 6.88x ROAS on paid campaigns $190K generated through email marketing in 2 years 72% email open rates 10.3% click-through rates $82K generated organically in 3 hours $100K weekly sales achieved $25K+ event revenue from sold-out campaigns 100% automation from Shopify to delivery These are revenue metrics. Not vanity impressions. Marketing Services Tailored to Broadbeach Waters Local & Suburb-Focused SEO Search behaviour in Broadbeach Waters differs from: Surfers Paradise Robina Nerang We build:',
   ],
   whyDifferentPoints: [
-    'Revenue spikes followed by quiet periods during off-peak weeks',
-    'Paid ads with inconsistent returns across festival and non-festival periods',
-    'Social media engagement without measurable ROI',
-    'Retail businesses competing for high-value shoppers near Pacific Fair',
-    'Hospitality venues affected by event-driven demand like Blues on Broadbeach',
-    'Service providers competing for affluent residents in a premium market',
+    'Broadbeach search patterns require suburb-level targeting',
+    'Local businesses depend on search visibility and referrals',
+    'Seasonal demand shifts affect marketing effectiveness',
+    'Competition from nearby suburbs requires differentiation',
+    'Paid ads fluctuate without proper tracking and optimisation',
+    'Websites generating traffic but not converting leads',
   ],
   whyChooseLocalAuthority: [
-    'Broadbeach vs Surfers Paradise buyer behaviour differs significantly',
-    'Robina residential focus vs Broadbeach mixed tourism-retail dynamic',
-    'Seasonal Brisbane crossover traffic patterns',
-    'Event-driven demand cycles from Blues on Broadbeach and Groundwater Festival',
+    'Directions from Broadbeach Waters',
+    'On-Page SEO & Schema',
+    'Full Page Content',
+    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
   ],
   servicesIntro:
-    'Integrated marketing systems designed specifically for Broadbeach operators competing in a premium Gold Coast market.',
+    'Structured marketing systems designed for Broadbeach businesses where search visibility and reputation drive growth.',
   seoTargets: [
     'Marketing Consultant Broadbeach',
-    'Best Marketing Consultant near Pacific Fair',
+    'Best Marketing Consultant in Broadbeach',
   ],
   ctaNearbyPlaces: [
-    'Pacific Fair',
-    'The Star Gold Coast',
-    'Surf Parade',
-    'Oracle Boulevard',
+    'Broadbeach Centre',
+    'Broadbeach Local Shops',
+    'Broadwater Parklands',
+    'Australia Fair',
   ],
   directions: [
-    'Head north via Gold Coast Highway',
-    'Cross Sundale Bridge',
-    'Turn onto Marine Parade',
-    'Approximately 12\u201315 minutes by car',
+    'FAQs',
+    'Strong CTA',
+    'On-Page SEO & Schema',
+    'Full Page Content',
+    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
+    'Approximately 10\u201315 minutes by car',
   ],
   publicTransport: [
-    'G:Link tram from Broadbeach South to Southport South',
-    'Short walk to Marine Parade',
+    'Bus connections available to Southport',
+    'G:link light rail accessible via connecting services',
   ],
   landmarks: [
-    { name: 'Pacific Fair', time: '12\u201315 min drive' },
-    { name: 'The Star Gold Coast', time: '12\u201315 min drive' },
+    { name: 'Broadbeach Centre', time: '10\u201315 minutes' },
+    { name: 'Broadbeach Local Shops', time: '10\u201315 minutes' },
     { name: 'Broadwater Parklands', time: '3 min walk' },
-    { name: 'HOTA', time: '5 min drive' },
+    { name: 'Australia Fair', time: '4 min drive' },
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Broadbeach cost?',
+      question: 'Are you located in Broadbeach Waters?',
       answer:
-        'Investment depends on your business goals and channels required. Most Broadbeach businesses invest between $2,000 and $8,000 per month for a structured marketing system. A strategy session will clarify the right investment for your situation.',
+        'No. Our office is in Southport. We service Broadbeach Waters and surrounding suburbs.',
     },
     {
-      question:
-        'Do you work with retail businesses near Pacific Fair?',
+      question: 'Do you work with high-ticket service providers?',
       answer:
-        'Yes. Retail businesses near Pacific Fair face intense competition for high-value shoppers. Systems are designed to capture search intent, drive foot traffic, and convert browsers into buyers consistently.',
+        'Yes. Many of our clients operate premium service businesses.',
+    },
+    {
+      question: 'Do you offer fixed marketing packages?',
+      answer:
+        'No generic packages. Every system is custom-built.',
+    },
+    {
+      question: 'Can you manage both SEO and paid ads?',
+      answer:
+        'Yes. We design integrated systems.',
     },
     {
       question: 'How quickly will I see results?',
       answer:
-        'Paid channels like Google Ads can generate leads within weeks. SEO and content systems typically show compounding results within 90 to 120 days. Strategy is built for both quick wins and long-term compounding growth.',
+        'Paid campaigns generate data immediately. SEO compounds over time.',
     },
     {
-      question: 'Are you actually located near Broadbeach?',
+      question: 'Do you track revenue or just leads?',
       answer:
-        'Yes. The office is at 82 Marine Parade, Southport QLD 4215, approximately 12 to 15 minutes north of Broadbeach via the Gold Coast Highway.',
+        'We track full pipeline visibility from click to revenue.',
     },
     {
-      question:
-        'What makes your approach different from other marketing agencies?',
+      question: 'Do you understand the Broadbeach market?',
       answer:
-        'The focus is on integrated systems that compound over time, not isolated campaigns. Every channel works together with transparent reporting and measurable ROI tailored to Broadbeach market dynamics.',
+        'Yes. We operate specifically within the Gold Coast and understand local buying behaviour.',
     },
     {
-      question:
-        'Can you help with event-based marketing for Broadbeach businesses?',
+      question: 'Is this suitable for eCommerce businesses?',
       answer:
-        'Yes. Event-driven demand cycles from Blues on Broadbeach, Groundwater Festival, and other events require strategic ad scheduling and content planning. Systems are built to capitalise on these peak periods.',
-    },
-    {
-      question: 'Do you offer SEO services for Broadbeach businesses?',
-      answer:
-        'Absolutely. Local SEO is essential for Broadbeach businesses competing in a premium market. Services include Google Business Profile optimisation, local keyword targeting, and content strategy built for suburb-level authority.',
-    },
-    {
-      question: 'How do I get started?',
-      answer:
-        'Book a strategy session. This covers your current performance, identifies gaps, and outlines a structured plan for predictable growth in the Broadbeach market.',
+        'Yes. We\u2019ve built fully automated Shopify-to-delivery systems.',
     },
   ],
   images: [
     {
-      src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Broadbeach business owner',
-    },
-    {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport office near Broadbeach Marine Parade',
+      alt: 'Marketing consultant serving Broadbeach Waters',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Pacific Fair strategy session marketing consultation',
+      alt: 'Broadbeach Waters canal business marketing strategy',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Broadbeach business growth planning meeting',
+      alt: 'Gold Coast Convention and Exhibition Centre nearby marketing expert',
+    },
+    {
+      src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+      alt: 'Southport marketing consultant office',
     },
   ],
   internalLinks: [
     { href: '/seo-gold-coast', label: 'SEO Gold Coast' },
-    { href: '/google-ads-gold-coast', label: 'Google Ads Gold Coast' },
     { href: '/email-marketing-gold-coast', label: 'Email Marketing Gold Coast' },
-    {
-      href: '/lead-generation-gold-coast',
-      label: 'Lead Generation Gold Coast',
-    },
-    {
-      href: '/marketing-automation-gold-coast',
-      label: 'Marketing Automation Gold Coast',
-    },
+    { href: '/areas/broadbeach', label: 'Broadbeach Marketing' },
+    { href: '/areas/bundall', label: 'Bundall Marketing' },
+    { href: '/google-ads-gold-coast', label: 'Google Ads Gold Coast' },
+    { href: '/lead-generation-gold-coast', label: 'Lead Generation Gold Coast' },
+    { href: '/marketing-automation-gold-coast', label: 'Marketing Automation Gold Coast' },
   ],
 };
