@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import LayoutClient from './LayoutClient';
 import '@/index.css';
@@ -167,6 +168,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         ))}
       </head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-GNM9TTTWFJ"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GNM9TTTWFJ');
+        `}
+      </Script>
       <body>
         <LayoutClient>{children}</LayoutClient>
       </body>
