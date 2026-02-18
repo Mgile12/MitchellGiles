@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import FAQSection from '@/components/FAQSection';
 import RulesSection from '@/components/RulesSection';
-import CaseStudyTeaser from '@/components/CaseStudyTeaser';
 import KillerResults from '@/components/KillerResults';
 import ServicesOverview from '@/components/ServicesOverview';
 import LocalSeoSection from '@/components/LocalSeoSection';
@@ -13,8 +12,7 @@ export default function HomePage() {
       <Hero />
       <FAQSection />
       <RulesSection />
-      <CaseStudyTeaser />
-      <KillerResults />
+<KillerResults />
       <ServicesOverview />
       <LocalSeoSection />
       <FinalCTA />

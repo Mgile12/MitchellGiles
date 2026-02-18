@@ -29,6 +29,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     ...servicePages,
     ...areaPages,
-    { url: `${baseUrl}/case-studies/elite-football-agency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 }

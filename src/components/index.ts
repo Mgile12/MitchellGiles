@@ -5,7 +5,6 @@ export { default as FAQSection } from './FAQSection';
 export { default as RulesSection } from './RulesSection';
 export { default as ServicesOverview } from './ServicesOverview';
 export { default as KillerResults } from './KillerResults';
-export { default as CaseStudyTeaser } from './CaseStudyTeaser';
 export { default as FinalCTA } from './FinalCTA';
 export { default as LocalSeoSection } from './LocalSeoSection';
 export { default as ContactModal } from './ContactModal';
