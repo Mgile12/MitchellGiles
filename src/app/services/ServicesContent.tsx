@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight } from 'lucide-react';
+import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight, Layers } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
@@ -19,6 +19,13 @@ const services = [
     description:
       'Search campaigns, remarketing, performance tracking and budget optimisation. Precision paid search that turns ad spend into qualified leads.',
     href: '/google-ads-gold-coast',
+  },
+  {
+    icon: Layers,
+    title: 'Meta Ads Agency',
+    description:
+      'Signal-driven Facebook and Instagram advertising built on Andromeda, GEM and Lattice. Creative strategy, conversion tracking and methodical scaling for predictable revenue growth.',
+    href: '/meta-ads-agency',
   },
   {
     icon: Mail,

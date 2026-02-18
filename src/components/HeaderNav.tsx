@@ -10,6 +10,7 @@ import { TOP_5_AREAS } from '../lib/areas';
 const serviceLinks = [
   { label: 'SEO Gold Coast', href: '/seo-gold-coast' },
   { label: 'Google Ads Gold Coast', href: '/google-ads-gold-coast' },
+  { label: 'Meta Ads Agency', href: '/meta-ads-agency' },
   { label: 'Email Marketing Gold Coast', href: '/email-marketing-gold-coast' },
   { label: 'Lead Generation Gold Coast', href: '/lead-generation-gold-coast' },
   { label: 'Digital Marketing Gold Coast', href: '/digital-marketing-gold-coast' },
