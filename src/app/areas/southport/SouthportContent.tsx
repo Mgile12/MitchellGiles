@@ -10,6 +10,19 @@ import {
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import AreaMapDirections from '@/components/AreaMapDirections';
+import ServedAreasLinks from '@/components/ServedAreasLinks';
+
+const NEARBY_AREAS = [
+  { name: 'Surfers Paradise', slug: 'surfers-paradise' },
+  { name: 'Broadbeach', slug: 'broadbeach' },
+  { name: 'Burleigh Heads', slug: 'burleigh-heads' },
+  { name: 'Robina', slug: 'robina' },
+  { name: 'Nerang', slug: 'nerang' },
+  { name: 'Main Beach', slug: 'main-beach' },
+  { name: 'Labrador', slug: 'labrador' },
+  { name: 'Hope Island', slug: 'hope-island' },
+  { name: 'Gold Coast', slug: 'gold-coast' },
+];
 
 interface FAQItem { question: string; answer: string; }
 interface Props { faqItems: FAQItem[]; }
@@ -223,6 +236,8 @@ export default function SouthportContent({ faqItems }: Props) {
           </div>
         </AnimateOnScroll>
       </section>
+
+      <ServedAreasLinks areas={NEARBY_AREAS} heading="Other Gold Coast Areas We Serve" />
 
       <section className="relative bg-navy-950 text-slate-50">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />

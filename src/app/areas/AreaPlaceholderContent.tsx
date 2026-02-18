@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ChevronRight, MapPin, ArrowRight, Search, Megaphone, Mail, Target, TrendingUp, Cog } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import ServedAreasLinks from '@/components/ServedAreasLinks';
 
 const services = [
   { icon: Search, title: 'SEO', href: '/seo-gold-coast', desc: 'Organic visibility that compounds over time' },
@@ -12,6 +13,19 @@ const services = [
   { icon: Target, title: 'Lead Generation', href: '/lead-generation-gold-coast', desc: 'Predictable pipeline of qualified leads' },
   { icon: TrendingUp, title: 'Digital Marketing', href: '/digital-marketing-gold-coast', desc: 'Integrated strategy across all channels' },
   { icon: Cog, title: 'Marketing Automation', href: '/marketing-automation-gold-coast', desc: 'Systems that scale without headcount' },
+];
+
+const NEARBY_AREAS = [
+  { name: 'Gold Coast', slug: 'gold-coast' },
+  { name: 'Southport', slug: 'southport' },
+  { name: 'Surfers Paradise', slug: 'surfers-paradise' },
+  { name: 'Broadbeach', slug: 'broadbeach' },
+  { name: 'Burleigh Heads', slug: 'burleigh-heads' },
+  { name: 'Robina', slug: 'robina' },
+  { name: 'Nerang', slug: 'nerang' },
+  { name: 'Hope Island', slug: 'hope-island' },
+  { name: 'Main Beach', slug: 'main-beach' },
+  { name: 'Coolangatta', slug: 'coolangatta' },
 ];
 
 interface Props {
@@ -42,8 +56,15 @@ export default function AreaPlaceholderContent({ areaName, description }: Props)
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 font-serif">
               Marketing Consultant {areaName}
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-10 font-sans">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6 font-sans">
               {description}
+            </p>
+            <p className="text-base text-slate-400 leading-relaxed mb-10 font-sans">
+              Whether you need{' '}
+              <Link href="/seo-gold-coast" className="text-gold hover:underline">local SEO</Link>,{' '}
+              <Link href="/google-ads-gold-coast" className="text-gold hover:underline">Google Ads</Link>, or a full{' '}
+              <Link href="/digital-marketing-gold-coast" className="text-gold hover:underline">digital marketing strategy</Link>,
+              {' '}we work with businesses right across the Gold Coast region from our Southport base.
             </p>
             <a
               href={BUSINESS_INFO.bookingUrl}
@@ -92,6 +113,8 @@ export default function AreaPlaceholderContent({ areaName, description }: Props)
           </div>
         </div>
       </section>
+
+      <ServedAreasLinks areas={NEARBY_AREAS} heading="Other Areas We Serve" />
 
       <section className="relative bg-navy-950 text-slate-50">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />

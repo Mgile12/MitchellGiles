@@ -28,7 +28,8 @@ export default function AreasContent() {
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
               Based in {BUSINESS_INFO.address.locality}, we work with businesses across the Gold Coast, Brisbane
-              and South East Queensland. Local expertise, real results.
+              and South East Queensland. Local expertise, real results. See our full range of{' '}
+              <Link href="/services" className="text-gold hover:underline">marketing services</Link> to find out what we can do for your business.
             </p>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { MapPin } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -5,16 +6,32 @@ import AnimateOnScroll from './AnimateOnScroll';
 const serviceAreas = [
   {
     area: 'Gold Coast',
+    href: '/areas/gold-coast',
     description: 'Southport, Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Nerang & surrounds',
   },
   {
     area: 'Brisbane',
+    href: '/areas/brisbane',
     description: 'CBD, South Bank, Fortitude Valley, West End, Paddington & surrounds',
   },
   {
     area: 'South East Queensland',
+    href: '/areas/south-east-queensland',
     description: 'Ipswich, Logan, Redlands, Moreton Bay & the wider SEQ corridor',
   },
+];
+
+const TOP_SUBURBS = [
+  { name: 'Southport', slug: 'southport' },
+  { name: 'Surfers Paradise', slug: 'surfers-paradise' },
+  { name: 'Broadbeach', slug: 'broadbeach' },
+  { name: 'Burleigh Heads', slug: 'burleigh-heads' },
+  { name: 'Robina', slug: 'robina' },
+  { name: 'Nerang', slug: 'nerang' },
+  { name: 'Main Beach', slug: 'main-beach' },
+  { name: 'Coolangatta', slug: 'coolangatta' },
+  { name: 'Hope Island', slug: 'hope-island' },
+  { name: 'Palm Beach', slug: 'palm-beach' },
 ];
 
 export default function LocalSeoSection() {
@@ -39,23 +56,49 @@ export default function LocalSeoSection() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {serviceAreas.map((item, index) => (
             <AnimateOnScroll
               key={item.area}
               stagger={index + 1}
-              className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 hover:border-gold/20 hover:bg-white/[0.04] transition-all duration-300"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4 text-gold" />
+              <Link
+                href={item.href}
+                className="block rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 hover:border-gold/20 hover:bg-white/[0.04] transition-all duration-300 group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-4 h-4 text-gold" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white font-serif group-hover:text-gold transition-colors duration-200">{item.area}</h3>
                 </div>
-                <h3 className="text-lg font-bold text-white font-serif">{item.area}</h3>
-              </div>
-              <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
+                <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
+              </Link>
             </AnimateOnScroll>
           ))}
         </div>
+
+        <AnimateOnScroll className="mb-14">
+          <p className="text-sm text-slate-500 font-sans mb-4 font-semibold tracking-wider uppercase">Popular Suburbs</p>
+          <div className="flex flex-wrap gap-2">
+            {TOP_SUBURBS.map((suburb) => (
+              <Link
+                key={suburb.slug}
+                href={`/areas/${suburb.slug}`}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/[0.07] bg-white/[0.02] text-sm text-slate-400 hover:text-gold hover:border-gold/25 hover:bg-white/[0.04] transition-all duration-200 font-sans"
+              >
+                <MapPin className="w-3 h-3 text-gold/50" />
+                {suburb.name}
+              </Link>
+            ))}
+            <Link
+              href="/areas"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-gold/20 bg-gold/5 text-sm text-gold hover:bg-gold/10 hover:border-gold/35 transition-all duration-200 font-sans font-semibold"
+            >
+              All areas →
+            </Link>
+          </div>
+        </AnimateOnScroll>
 
         <div className="rounded-xl overflow-hidden border border-white/10">
           <iframe
