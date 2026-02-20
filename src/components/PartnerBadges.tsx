@@ -4,55 +4,102 @@ import React from "react";
 import Image from "next/image";
 import { LogoCarousel, type Logo } from "@/components/ui/logo-carousel";
 
-function MailchimpLogo(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <div className="flex items-center justify-center w-full h-full">
-      <Image
-        src="/Mailchimp-Partner-logo-mad-cat-marketing.png"
-        alt="Mailchimp Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
-      />
-    </div>
-  ) as unknown as React.ReactElement<SVGSVGElement>;
-}
-
-function MetaLogo(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <div className="flex items-center justify-center w-full h-full">
-      <Image
-        src="/Met-Business-Partners.png"
-        alt="Meta Business Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
-      />
-    </div>
-  ) as unknown as React.ReactElement<SVGSVGElement>;
-}
-
-function GoogleLogo(props: React.SVGProps<SVGSVGElement>) {
+function GoogleLogo() {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <Image
         src="/new-Google-Partner-logo-png-large-size.png"
         alt="Google Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
+        width={180}
+        height={90}
+        className="object-contain max-h-14 md:max-h-20 w-auto"
+        style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
+      />
+    </div>
+  ) as unknown as React.ReactElement<SVGSVGElement>;
+}
+
+function MetaLogo() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <Image
+        src="/Met-Business-Partners.png"
+        alt="Meta Business Partner"
+        width={180}
+        height={90}
+        className="object-contain max-h-14 md:max-h-20 w-auto"
+        style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
+      />
+    </div>
+  ) as unknown as React.ReactElement<SVGSVGElement>;
+}
+
+function MailchimpLogo() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <Image
+        src="/Mailchimp-Partner-logo-mad-cat-marketing.png"
+        alt="Mailchimp Partner"
+        width={180}
+        height={90}
+        className="object-contain max-h-14 md:max-h-20 w-auto"
+        style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
+      />
+    </div>
+  ) as unknown as React.ReactElement<SVGSVGElement>;
+}
+
+function MondayCRMLogo() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <Image
+        src="/68ad9288ef124251014c5e7b_certification_badge-CRM_v1 copy.png"
+        alt="Monday.com CRM Pro Certified"
+        width={180}
+        height={180}
+        className="object-contain max-h-14 md:max-h-20 w-auto"
+      />
+    </div>
+  ) as unknown as React.ReactElement<SVGSVGElement>;
+}
+
+function ZapierLogo() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <Image
+        src="/ZapierLogo copy.png"
+        alt="Zapier"
+        width={180}
+        height={90}
+        className="object-contain max-h-10 md:max-h-16 w-auto"
+        style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
+      />
+    </div>
+  ) as unknown as React.ReactElement<SVGSVGElement>;
+}
+
+function BoltLogo() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <Image
+        src="/sponsor_boltnew copy.png"
+        alt="bolt.new"
+        width={180}
+        height={90}
+        className="object-contain max-h-10 md:max-h-16 w-auto"
+        style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
       />
     </div>
   ) as unknown as React.ReactElement<SVGSVGElement>;
 }
 
 const partnerLogos: Logo[] = [
-  { name: "Mailchimp Partner", id: 1, img: MailchimpLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+  { name: "Google Partner", id: 1, img: GoogleLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
   { name: "Meta Business Partner", id: 2, img: MetaLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
-  { name: "Google Partner", id: 3, img: GoogleLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+  { name: "Mailchimp Partner", id: 3, img: MailchimpLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+  { name: "Monday.com CRM Pro", id: 4, img: MondayCRMLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+  { name: "Zapier", id: 5, img: ZapierLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+  { name: "bolt.new", id: 6, img: BoltLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
 ];
 
 export default function PartnerBadges() {
@@ -72,37 +119,8 @@ export default function PartnerBadges() {
             </p>
           </div>
 
-          <div className="flex flex-row items-center justify-center gap-8 md:gap-16 w-full">
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
-              <Image
-                src="/new-Google-Partner-logo-png-large-size.png"
-                alt="Google Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
-              />
-            </div>
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
-              <Image
-                src="/Met-Business-Partners.png"
-                alt="Meta Business Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
-              />
-            </div>
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
-              <Image
-                src="/Mailchimp-Partner-logo-mad-cat-marketing.png"
-                alt="Mailchimp Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
-              />
-            </div>
+          <div className="w-full flex justify-center">
+            <LogoCarousel logos={partnerLogos} columnCount={3} />
           </div>
         </div>
       </div>
