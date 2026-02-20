@@ -1263,6 +1263,9 @@ video {
 .border-white\/\[0\.12\] {
   border-color: rgb(255 255 255 / 0.12);
 }
+.border-white\/30 {
+  border-color: rgb(255 255 255 / 0.3);
+}
 .border-l-gold {
   --tw-border-opacity: 1;
   border-left-color: rgb(200 161 78 / var(--tw-border-opacity, 1));
@@ -1371,6 +1374,10 @@ video {
 .bg-\[\#070c18\] {
   --tw-bg-opacity: 1;
   background-color: rgb(7 12 24 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#0a0a0a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 10 / var(--tw-bg-opacity, 1));
 }
 .bg-\[radial-gradient\(ellipse_at_bottom_left\2c rgba\(200\2c 161\2c 78\2c 0\.03\)\2c transparent_60\%\)\] {
   background-image: radial-gradient(ellipse at bottom left,rgba(200,161,78,0.03),transparent 60%);
@@ -1919,6 +1926,10 @@ video {
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
 }
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -1936,6 +1947,9 @@ video {
 }
 .opacity-30 {
   opacity: 0.3;
+}
+.opacity-90 {
+  opacity: 0.9;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -1994,6 +2008,10 @@ video {
 }
 .blur-sm {
   --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.brightness-0 {
+  --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .invert {
@@ -2307,6 +2325,10 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:shadow-2xl:hover {
@@ -2809,6 +2831,16 @@ video {
 
   .md\:text-right {
     text-align: right;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
