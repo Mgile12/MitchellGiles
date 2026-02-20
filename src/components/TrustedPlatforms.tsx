@@ -20,30 +20,6 @@ const partners = [
     width: 160,
     bordered: true,
   },
-  {
-    src: '/68ad9288ef124251014c5e7b_certification_badge-CRM_v1.png',
-    alt: 'Monday.com CRM Pro Certified',
-    width: 100,
-    bordered: false,
-  },
-  {
-    src: '/ZapierLogo.png',
-    alt: 'Zapier',
-    width: 160,
-    bordered: false,
-  },
-  {
-    src: '/sponsor_boltnew.png',
-    alt: 'bolt.new',
-    width: 160,
-    bordered: false,
-  },
-  {
-    src: '/image_(7).png',
-    alt: 'Shopify Certified Foundations',
-    width: 100,
-    bordered: false,
-  },
 ];
 
 export default function TrustedPlatforms() {
