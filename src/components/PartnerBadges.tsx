@@ -1,109 +1,58 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-import { LogoCarousel, type Logo } from "@/components/ui/logo-carousel";
 
-function MailchimpLogo(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <div className="flex items-center justify-center w-full h-full">
-      <Image
-        src="/Mailchimp-Partner-logo-mad-cat-marketing.png"
-        alt="Mailchimp Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
-      />
-    </div>
-  ) as unknown as React.ReactElement<SVGSVGElement>;
-}
-
-function MetaLogo(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <div className="flex items-center justify-center w-full h-full">
-      <Image
-        src="/Met-Business-Partners.png"
-        alt="Meta Business Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
-      />
-    </div>
-  ) as unknown as React.ReactElement<SVGSVGElement>;
-}
-
-function GoogleLogo(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <div className="flex items-center justify-center w-full h-full">
-      <Image
-        src="/new-Google-Partner-logo-png-large-size.png"
-        alt="Google Partner"
-        width={160}
-        height={80}
-        className="object-contain max-h-16 md:max-h-24 w-auto"
-        style={{ filter: "brightness(0) invert(1)" }}
-      />
-    </div>
-  ) as unknown as React.ReactElement<SVGSVGElement>;
-}
-
-const partnerLogos: Logo[] = [
-  { name: "Mailchimp Partner", id: 1, img: MailchimpLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
-  { name: "Meta Business Partner", id: 2, img: MetaLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
-  { name: "Google Partner", id: 3, img: GoogleLogo as React.ComponentType<React.SVGProps<SVGSVGElement>> },
+const partners = [
+  {
+    src: "/new-Google-Partner-logo-png-large-size copy.png",
+    alt: "Google Partner",
+    width: 160,
+    height: 100,
+  },
+  {
+    src: "/Met-Business-Partners copy.png",
+    alt: "Meta Business Partner",
+    width: 200,
+    height: 100,
+  },
+  {
+    src: "/Mailchimp-Partner-logo-mad-cat-marketing copy.png",
+    alt: "Mailchimp Partner",
+    width: 180,
+    height: 100,
+  },
 ];
 
 export default function PartnerBadges() {
   return (
-    <section className="bg-[#0a0e1a] py-16 md:py-24 border-t border-white/5">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center space-y-10">
-          <div className="text-center">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a84c] mb-3">
-              Certified Partnerships
-            </p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
-              Trusted By The Platforms That Matter
-            </h2>
-            <p className="mt-3 text-white/50 text-sm max-w-md mx-auto">
-              Accredited as an official partner across Google, Meta, and Mailchimp — so you know your campaigns are in qualified hands.
-            </p>
-          </div>
+    <section className="bg-[#070c18] py-20 px-6 border-t border-white/5">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+        <p className="text-[#c9a84c] text-xs font-semibold tracking-[0.22em] uppercase mb-5">
+          Certified Partnerships
+        </p>
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-[2.5rem] font-bold mb-4 leading-tight">
+          Trusted By The Platforms That Matter
+        </h2>
+        <p className="text-white/50 text-base max-w-md mb-16 leading-relaxed">
+          Accredited as an official partner across Google, Meta, and
+          Mailchimp — so you know your campaigns are in qualified hands.
+        </p>
 
-          <div className="flex flex-row items-center justify-center gap-8 md:gap-16 w-full">
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
+        <div className="grid grid-cols-3 gap-6 sm:gap-10 lg:gap-16 w-full max-w-3xl items-center justify-items-center">
+          {partners.map((partner) => (
+            <div
+              key={partner.alt}
+              className="flex items-center justify-center w-full py-2"
+            >
               <Image
-                src="/new-Google-Partner-logo-png-large-size.png"
-                alt="Google Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
+                src={partner.src}
+                alt={partner.alt}
+                width={partner.width}
+                height={partner.height}
+                className="object-contain w-auto max-h-[80px] sm:max-h-[100px] select-none"
+                draggable={false}
               />
             </div>
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
-              <Image
-                src="/Met-Business-Partners.png"
-                alt="Meta Business Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
-              />
-            </div>
-            <div className="flex items-center justify-center h-16 md:h-24 w-36 md:w-48">
-              <Image
-                src="/Mailchimp-Partner-logo-mad-cat-marketing.png"
-                alt="Mailchimp Partner"
-                width={180}
-                height={90}
-                className="object-contain max-h-14 md:max-h-20 w-auto"
-                style={{ filter: "brightness(0) invert(1)", opacity: 0.85 }}
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
