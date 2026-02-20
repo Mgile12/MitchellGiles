@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 mb-8 animate-fade-in-up animate-delay-50">
               <span className="h-px w-8 bg-gold" />
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold font-sans">
-                Mitchell Giles Marketing Consultant
+                Revenue-Driven Strategy & Execution
               </p>
             </div>
 
