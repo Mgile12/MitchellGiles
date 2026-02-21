@@ -11,7 +11,7 @@ const clients = [
   {
     name: 'EFA',
     logo: '/Asset_1@2x_transparent_(1).png',
-    href: '#',
+    href: 'https://www.elitefootball.com.au/',
   },
   {
     name: 'MJLT Welding',
