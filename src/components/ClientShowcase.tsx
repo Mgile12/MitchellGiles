@@ -16,7 +16,7 @@ const clients = [
   {
     name: 'MJLT Welding',
     logo: '/5fac5d_ae48250114174c80aa68a0394770fbb1~mv2_(1).png',
-    href: '#',
+    href: 'https://www.mjltservices.com.au/',
   },
 ];
 
