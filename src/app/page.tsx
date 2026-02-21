@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import FAQSection from '@/components/FAQSection';
 import ClientShowcase from '@/components/ClientShowcase';
-import RulesSection from '@/components/RulesSection';
 import KillerResults from '@/components/KillerResults';
 import PartnerBadges from '@/components/PartnerBadges';
 import ServicesOverview from '@/components/ServicesOverview';
@@ -14,7 +13,6 @@ export default function HomePage() {
       <Hero />
       <FAQSection />
       <ClientShowcase />
-      <RulesSection />
       <KillerResults />
       <PartnerBadges />
       <ServicesOverview />
