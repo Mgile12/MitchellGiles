@@ -5,7 +5,7 @@ import AnimateOnScroll from './AnimateOnScroll';
 const clients = [
   {
     name: 'Polish Hub',
-    logo: '/Untitled_design_(44).jpg',
+    logo: '/Untitled_design_(99).png',
     href: 'https://polishhub.com.au/',
   },
   {
@@ -66,7 +66,7 @@ export default function ClientShowcase() {
                   draggable={false}
                   onContextMenu={preventSave}
                   onDragStart={preventSave}
-                  className="h-16 sm:h-20 w-auto object-contain pointer-events-none select-none filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+                  className="h-16 sm:h-20 w-auto object-contain pointer-events-none select-none transition-all duration-300"
                   style={{ WebkitUserDrag: 'none' } as React.CSSProperties}
                 />
                 <div className="absolute inset-0" onContextMenu={preventSave} onDragStart={preventSave} />
