@@ -37,7 +37,7 @@ const results: Result[] = [
   {
     image: '/Screenshot 2025-08-04 132125.png',
     title: 'ROAS That Makes Sense',
-    description: '6.88 ROAS across multiple campaigns with $4.4K spend, generated within 3 hours.',
+    description: '$82,574 in 3 hours from an upsell waitlist. We ran this twice.',
     metric: '$82K',
     metricLabel: 'in 3hrs',
     icon: TrendingUp,
