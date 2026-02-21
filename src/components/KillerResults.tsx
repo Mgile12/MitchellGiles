@@ -36,12 +36,12 @@ const results: Result[] = [
   },
   {
     image: '/Screenshot 2025-08-04 132125.png',
-    title: 'ROAS That Makes Sense',
-    description: '$82,574 in 3 hours from an upsell waitlist. We ran this twice.',
+    title: '$82,574 from a Single Event Upsell',
+    description: 'Built a high-ticket upsell waitlist off a live event and generated $82,574 in under 3 hours. No ads. We ran the same sequence twice.',
     metric: '$82K',
-    metricLabel: 'in 3hrs',
+    metricLabel: 'in 3hrs, twice',
     icon: TrendingUp,
-    overlay: '$82K | 3 Hours | Organic',
+    overlay: '$82,574 | Event Upsell | 3 Hours | Done Twice',
   },
   {
     image: '/files_7126411-1763632304045-Screenshot 2025-07-24 143236.png',
