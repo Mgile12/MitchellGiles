@@ -1,4 +1,4 @@
-import { Target, Layers, Megaphone, BarChart3, Scissors } from 'lucide-react';
+import { Target, Layers, Rocket, BarChart3, Scissors } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 const services = [
@@ -16,9 +16,9 @@ const services = [
   },
   {
     number: '03',
-    title: 'Launch Industry-Specific Ads',
-    description: 'Deploy ads tailored to your specific industry. Proven angles, tested creatives, precise targeting.',
-    icon: Megaphone,
+    title: 'Deploy the Right Channels',
+    description: 'SEO, paid ads, email, automation -- whatever moves the needle for your business. No fluff, just the channels that drive results.',
+    icon: Rocket,
   },
   {
     number: '04',
@@ -46,7 +46,7 @@ export default function ServicesOverview() {
             The Process
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
-            What I Actually Do
+            What I Do in 5 Steps
           </h2>
           <div className="max-w-2xl mx-auto space-y-2">
             <p className="text-base sm:text-lg text-slate-400 font-sans">
