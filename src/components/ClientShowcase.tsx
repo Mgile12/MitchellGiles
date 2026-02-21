@@ -5,8 +5,8 @@ import AnimateOnScroll from './AnimateOnScroll';
 const clients = [
   {
     name: 'Polish Hub',
-    logo: '/Untitled_design_(77).png',
-    href: '#',
+    logo: '/Untitled_design_(44).jpg',
+    href: 'https://polishhub.com.au/',
   },
   {
     name: 'EFA',
