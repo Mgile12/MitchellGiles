@@ -1,6 +1,6 @@
 'use client';
 
-import { TrendingUp, BarChart3, Zap, Mail, ShoppingCart, Tag, Trophy, X } from 'lucide-react';
+import { TrendingUp, BarChart3, Mail, ShoppingCart, Tag, Trophy, X } from 'lucide-react';
 import { useState } from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 import type { LucideIcon } from 'lucide-react';
@@ -26,13 +26,13 @@ const results: Result[] = [
     overlay: '6.88x ROAS | 67 Purchases | $30K+ Value',
   },
   {
-    image: '/Screenshot 2025-11-20 200216.png',
-    title: 'Automation That Actually Works',
-    description: 'Complete order fulfillment automation from Shopify to delivery',
-    metric: '100%',
-    metricLabel: 'Automated',
-    icon: Zap,
-    overlay: '100% Automated | Shopify to Delivery | Zero Manual',
+    image: '/Screenshot_2026-02-20_082607.png',
+    title: '$60,632 in 30 Days',
+    description: 'Email marketing driving 63.4% of monthly store revenue. Strategy, automation, and execution that turns subscribers into buyers.',
+    metric: '$60K',
+    metricLabel: 'Email Revenue',
+    icon: Mail,
+    overlay: '$60,632 in 30 Days | Email Marketing | 63.4% Monthly Revenue',
   },
   {
     image: '/Screenshot 2025-08-04 132125.png',
