@@ -1,97 +1,34 @@
 'use client';
 
-import { useRef } from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 const clients = [
   {
     name: 'Polish Hub',
-    description: 'Auto Vehicle & Marine Detailing',
     logo: '/Untitled_design_(77).png',
     href: '#',
-    bg: 'bg-white',
   },
   {
-    name: 'Client Two',
-    description: 'Industry Leader',
+    name: 'EFA',
     logo: '/Asset_1@2x_transparent_(1).png',
     href: '#',
-    bg: 'bg-[#1a2340]',
   },
   {
     name: 'MJLT Welding',
-    description: 'Welding Fabrication & Repairs',
     logo: '/5fac5d_ae48250114174c80aa68a0394770fbb1~mv2_(1).png',
     href: '#',
-    bg: 'bg-[#2a2a2a]',
   },
 ];
 
-interface ClientCardProps {
-  name: string;
-  description: string;
-  logo: string;
-  href: string;
-  bg: string;
-}
-
-function ClientCard({ name, description, logo, href, bg }: ClientCardProps) {
-  const imgRef = useRef<HTMLImageElement>(null);
-
-  const preventSave = (e: React.MouseEvent | React.DragEvent) => {
-    e.preventDefault();
-    return false;
-  };
-
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group relative flex flex-col items-center justify-center rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 hover:border-gold/40 hover:shadow-[0_0_40px_rgba(0,0,0,0.4)] hover:-translate-y-1"
-      style={{ userSelect: 'none' }}
-    >
-      <div className={`w-full flex items-center justify-center ${bg} p-10 min-h-[200px]`}>
-        <div
-          className="relative w-full max-w-[220px] select-none"
-          onContextMenu={preventSave}
-          onDragStart={preventSave}
-        >
-          <img
-            ref={imgRef}
-            src={logo}
-            alt={name}
-            draggable={false}
-            onContextMenu={preventSave}
-            onDragStart={preventSave}
-            className="w-full h-auto object-contain max-h-[140px] pointer-events-none select-none"
-            style={{
-              WebkitUserDrag: 'none',
-              userSelect: 'none',
-            } as React.CSSProperties}
-          />
-          <div
-            className="absolute inset-0"
-            onContextMenu={preventSave}
-            onDragStart={preventSave}
-          />
-        </div>
-      </div>
-      <div className="w-full px-6 py-5 bg-navy-900 border-t border-white/[0.06]">
-        <p className="text-sm font-semibold text-white font-sans group-hover:text-gold transition-colors duration-200">
-          {name}
-        </p>
-        <p className="text-xs text-slate-500 mt-0.5 font-sans">{description}</p>
-      </div>
-    </a>
-  );
-}
+const preventSave = (e: React.MouseEvent | React.DragEvent) => {
+  e.preventDefault();
+};
 
 export default function ClientShowcase() {
   return (
     <section className="bg-navy-950 text-slate-50" aria-labelledby="clients-heading">
       <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="text-center mb-4">
+        <div className="text-center mb-14">
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-gold/70 font-sans mb-4">
             Current Clients
           </span>
@@ -106,15 +43,41 @@ export default function ClientShowcase() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-12 sm:gap-16 lg:gap-24">
           {clients.map((client) => (
-            <ClientCard key={client.name} {...client} />
+            <a
+              key={client.name}
+              href={client.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 select-none"
+              style={{ userSelect: 'none' }}
+              onContextMenu={preventSave}
+              onDragStart={preventSave}
+            >
+              <div
+                className="relative select-none"
+                onContextMenu={preventSave}
+                onDragStart={preventSave}
+              >
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  draggable={false}
+                  onContextMenu={preventSave}
+                  onDragStart={preventSave}
+                  className="h-16 sm:h-20 w-auto object-contain pointer-events-none select-none filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+                  style={{ WebkitUserDrag: 'none' } as React.CSSProperties}
+                />
+                <div className="absolute inset-0" onContextMenu={preventSave} onDragStart={preventSave} />
+              </div>
+            </a>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-14 text-center">
           <p className="text-sm text-slate-500 font-sans italic">
-            Spots are limited. If you're a fit, let's talk.
+            Spots are limited. If you&apos;re a fit, let&apos;s talk.
           </p>
         </div>
       </AnimateOnScroll>
