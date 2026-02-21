@@ -11,13 +11,13 @@ const services = [
   {
     number: '02',
     title: 'Build the Funnel',
-    description: 'A streamlined funnel that guides prospects from interest to purchase. Simple, effective, profitable.',
+    description: 'A clear funnel that guides prospects from interest to purchase. Simple, direct, and built to make money.',
     icon: Layers,
   },
   {
     number: '03',
     title: 'Deploy the Right Channels',
-    description: 'SEO, paid ads, email, automation -- whatever moves the needle for your business. No fluff, just the channels that drive results.',
+    description: 'SEO, paid ads, email, automation -- whatever actually works for your business. No wasted effort, just the channels that bring in customers.',
     icon: Rocket,
   },
   {

@@ -24,7 +24,7 @@ const services = [
     icon: Search,
     title: 'SEO Gold Coast',
     description:
-      'Technical audits, on-page optimisation, local SEO, content strategy and link building that earns sustainable organic visibility. Build an asset that compounds.',
+      'Technical audits, on-page optimisation, local SEO, content strategy and link building that earns sustainable organic visibility. Build an asset that keeps paying off over time.',
     href: '/seo-gold-coast',
   },
   {

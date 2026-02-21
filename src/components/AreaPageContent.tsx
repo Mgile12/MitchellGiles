@@ -45,14 +45,14 @@ const differentiators = [
 
 const diffDescriptions: Record<string, string> = {
   accountability: 'Every decision tied to revenue. No opinions over numbers. Track every lead, validate every campaign. If it does not produce measurable return, it gets cut.',
-  transparency: 'You see what is running, why it is running, what it costs, and what it returns. No fluff. No hidden mechanics. Full pipeline visibility.',
+  transparency: 'You see what is running, why it is running, what it costs, and what it returns. No mysteries. No hidden mechanics. Full pipeline visibility.',
   optimisation: 'Kill what loses. Double down on what wins. Eliminate waste continuously. Speed beats comfort.',
-  system: 'One core revenue system. No scattered tactics. Everything compounds. SEO feeds ads. Ads feed email. Email feeds automation.',
+  system: 'One core revenue system. No scattered tactics. Everything builds on itself. SEO feeds ads. Ads feed email. Email feeds automation.',
   authority: 'Based at 82 Marine Parade, Southport with deep understanding of Gold Coast suburb-driven search behaviour, seasonal patterns, and Brisbane crossover traffic.',
 };
 
 const services = [
-  { icon: Search, title: 'SEO', href: '/seo-gold-coast', desc: 'Suburb-specific organic visibility that compounds over time' },
+  { icon: Search, title: 'SEO', href: '/seo-gold-coast', desc: 'Suburb-specific organic visibility that grows stronger over time' },
   { icon: Megaphone, title: 'Google Ads', href: '/google-ads-gold-coast', desc: 'High-intent paid search capturing immediate local demand' },
   { icon: Mail, title: 'Email Marketing', href: '/email-marketing-gold-coast', desc: 'Database monetisation with automated nurture sequences' },
   { icon: Target, title: 'Lead Generation', href: '/lead-generation-gold-coast', desc: 'Predictable pipeline of qualified local leads' },
@@ -243,7 +243,7 @@ export default function AreaPageContent({ data }: Props) {
                     <p key={i} className="text-sm text-slate-300 font-sans italic">&ldquo;{target}&rdquo;</p>
                   ))}
                 </div>
-                <p className="text-sm text-slate-400 mt-4 font-sans">Structured SEO builds long-term authority that compounds.</p>
+                <p className="text-sm text-slate-400 mt-4 font-sans">Structured SEO builds long-term authority that keeps growing.</p>
               </div>
             </AnimateOnScroll>
           )}
