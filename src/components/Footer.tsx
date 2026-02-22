@@ -41,6 +41,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
         { href: '/email-marketing-gold-coast', label: 'Email Marketing' },
         { href: '/lead-generation-gold-coast', label: 'Lead Generation' },
         { href: '/digital-marketing-gold-coast', label: 'Digital Marketing' },
+        { href: '/book', label: 'Book a Call' },
         { label: 'Contact', onClick: onOpenModal },
       ]}
       contactInfo={{

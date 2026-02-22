@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import { BUSINESS_INFO } from '@/lib/business-info';
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 export default function MetaAdsCTA() {
@@ -28,15 +28,13 @@ export default function MetaAdsCTA() {
 
           <div className="mt-12 relative inline-block group">
             <div className="absolute -inset-1 bg-gradient-to-r from-gold via-gold-light to-gold rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-300" />
-            <a
-              href={BUSINESS_INFO.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="relative inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold bg-gradient-to-r from-gold via-gold-light to-gold text-navy-950 hover:shadow-2xl hover:shadow-gold/20 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
               Book a Free Meta Ads Audit
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
+            </Link>
           </div>
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 border-t border-white/[0.06]">

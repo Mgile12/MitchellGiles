@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import { BUSINESS_INFO } from '@/lib/business-info';
 
 export default function SEOHero() {
   const scrollToContent = () => {
@@ -46,15 +45,13 @@ export default function SEOHero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href={BUSINESS_INFO.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/book"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide group"
               >
                 Book a Call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </a>
+              </Link>
               <button
                 onClick={scrollToContent}
                 className="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide border border-white/[0.12] text-slate-300 hover:text-gold hover:border-gold/30 transition-all duration-300"

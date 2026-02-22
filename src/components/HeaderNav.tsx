@@ -202,14 +202,12 @@ export default function HeaderNav() {
               <Phone className="h-3.5 w-3.5" />
               {BUSINESS_INFO.phone}
             </a>
-            <a
-              href={BUSINESS_INFO.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
             >
               Book a Call
-            </a>
+            </Link>
           </nav>
 
           <button
@@ -307,14 +305,12 @@ export default function HeaderNav() {
             {BUSINESS_INFO.phone}
           </a>
           <div className="pt-3">
-            <a
-              href={BUSINESS_INFO.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
             >
               Book a Call
-            </a>
+            </Link>
           </div>
         </div>
       </div>

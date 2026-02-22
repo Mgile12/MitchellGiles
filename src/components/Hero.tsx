@@ -1,4 +1,4 @@
-import { BUSINESS_INFO } from '../lib/business-info';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -35,14 +35,12 @@ export default function Hero() {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4 animate-fade-in-up animate-delay-250">
-              <a
-                href={BUSINESS_INFO.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/book"
                 className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950"
               >
                 Book Your Strategy Call
-              </a>
+              </Link>
 
               <a
                 href="#results"
