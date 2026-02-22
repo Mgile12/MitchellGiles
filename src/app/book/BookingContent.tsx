@@ -14,7 +14,7 @@ const trustPoints = [
 
 const stats = [
   { value: '$190k+', label: 'Email Marketing', icon: Users },
-  { value: '4.8x', label: 'Avg. ROAS', icon: TrendingUp },
+  { value: '$425k', label: 'YoY Growth (1 Client)', icon: TrendingUp },
   { value: '6+', label: 'Years Experience', icon: Award },
 ];
 
