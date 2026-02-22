@@ -15,7 +15,7 @@ const trustPoints = [
 const stats = [
   { value: '$190k+', label: 'Email Marketing', icon: Users },
   { value: '$425k', label: 'YoY Growth (1 Client)', icon: TrendingUp },
-  { value: '6+', label: 'Years Experience', icon: Award },
+  { value: '$100k', label: 'Weekly Sales (1 Client)', icon: Award },
 ];
 
 export default function BookingContent() {
