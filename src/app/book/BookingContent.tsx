@@ -6,8 +6,6 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 
 const trustPoints = [
   'No lock-in contracts — results-first approach',
-  'Google & Mailchimp certified partner',
-  'Serving Gold Coast businesses since 2019',
   'Transparent reporting — always know your ROI',
   'Direct access to your strategist, no account managers',
 ];
