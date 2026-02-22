@@ -686,6 +686,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
 .block {
   display: block;
 }
@@ -962,6 +965,15 @@ video {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 .cursor-default {
   cursor: default;
@@ -1343,6 +1355,9 @@ video {
 .bg-white\/\[0\.03\] {
   background-color: rgb(255 255 255 / 0.03);
 }
+.bg-navy-950\/90 {
+  background-color: rgb(10 14 26 / 0.9);
+}
 .bg-\[radial-gradient\(ellipse_at_bottom_left\2c rgba\(200\2c 161\2c 78\2c 0\.03\)\2c transparent_60\%\)\] {
   background-image: radial-gradient(ellipse at bottom left,rgba(200,161,78,0.03),transparent 60%);
 }
@@ -1611,6 +1626,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -1895,6 +1914,9 @@ video {
 }
 .opacity-60 {
   opacity: 0.6;
+}
+.opacity-80 {
+  opacity: 0.8;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -2264,6 +2286,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-slate-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2392,6 +2419,11 @@ video {
 
 .group:hover .group-hover\:text-gold\/80 {
   color: rgb(200 161 78 / 0.8);
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -2769,6 +2801,14 @@ video {
 
 @media (min-width: 1024px) {
 
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:top-8 {
+    top: 2rem;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -2807,6 +2847,10 @@ video {
 
   .lg\:grid-cols-\[auto_1fr\] {
     grid-template-columns: auto 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr_1\.6fr\] {
+    grid-template-columns: 1fr 1.6fr;
   }
 
   .lg\:flex-row {
@@ -2851,12 +2895,21 @@ video {
     padding-bottom: 6rem;
   }
 
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:pb-36 {
     padding-bottom: 9rem;
   }
 
   .lg\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 
   .lg\:text-2xl {
