@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Broadbeach',
   slug: 'broadbeach',
-  seoTitle: 'Marketing Consultant Broadbeach Waters | Data-Driven Growth Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Broadbeach Waters | Data-Driven Growth Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Consultant in Broadbeach Waters? Mitchell Giles Marketing Consultant builds transparent, revenue-driven systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Broadbeach Waters? Mitchell Giles Marketing Agency Gold Coast builds transparent, revenue-driven systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
+    'Marketing Agency Gold Coast Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
   heroIntro: [
     'Broadbeach Waters is quiet.',
     'Canal-front homes. Home offices. Professional operators.',
@@ -15,7 +15,7 @@ export const areaData: AreaPageData = {
   ],
   whyDifferentTitle: 'Why Broadbeach Waters Businesses Need Structured Marketing',
   whyDifferentIntro: [
-    'Data-Driven Accountability Transparency Ruthless Optimisation Single-System Focus Proven Gold Coast Results Marketing Services Tailored to Broadbeach Waters Why Locals Choose Us Directions from Broadbeach Waters FAQs Strong CTA On-Page SEO & Schema Full Page Content Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike Broadbeach Waters is quiet. Canal-front homes. Home offices. Professional operators. It\u2019s five minutes from the buzz of Pacific Fair and the Gold Coast Convention and Exhibition Centre, yet it feels like a different world. If you\u2019re searching for a Marketing Consultant in Broadbeach Waters, you\u2019re likely not looking for flashy creatives. You\u2019re looking for results. Mitchell Giles Marketing Consultant Gold Coast builds revenue systems that generate predictable growth for businesses across the Gold Coast. 📍 82 Marine Parade, Southport QLD 4215 📞 0474 870 535 Approximately 10\u201315 minutes from Broadbeach Waters. Close enough for strategy sessions. Structured enough to scale beyond postcode limits. Why Broadbeach Waters Businesses Need Structured Marketing Many businesses here fall into one of these categories: Consultants and advisors working from canal-front home offices eCommerce operators Property and development professionals Trades servicing the central Gold Coast Boutique service brands Common problems: Revenue fluctuates month to month Ads run without proper tracking No automated follow-up No integrated system tying everything together Broadbeach Waters is not built for walk-ins. It requires engineered visibility. What Makes This Marketing Consultant Different There are plenty of \u201cdigital marketers\u201d. Very few build systems. 1. Data-Driven Accountability \u2013 \u201cProof or We Stop\u201d Every decision ties directly to revenue. Opinion never outranks data. We track: Cost per lead Conversion rate Revenue per channel Customer acquisition cost Lifetime value Pipeline visibility If it doesn\u2019t convert, it\u2019s removed. No emotional attachment. Just numbers. 2. Full Transparency You see: Exactly what campaigns are live Exactly what you\u2019re spending Exactly what produced revenue No fluff. No hidden mechanics. No vague reporting. 3. Ruthless Optimisation Speed beats comfort. We: Kill what loses without emotion Double down aggressively on what wins Continuously eliminate waste Reallocate budget to top-performing channels Marketing is not art. It\u2019s iteration. 4. Single-System Focus One core offer. One revenue system. Everything designed to compound. No scattered tactics. No random experiments. You\u2019re not buying marketing services. You\u2019re buying predictable growth. Proven Gold Coast Results These systems have generated: $425K annual sales (436% growth) for Elite Football Agency Client scaled from $50K to $425K in 12 months 6.88x ROAS on paid campaigns $190K generated through email marketing in 2 years 72% email open rates 10.3% click-through rates $82K generated organically in 3 hours $100K weekly sales achieved $25K+ event revenue from sold-out campaigns 100% automation from Shopify to delivery These are revenue metrics. Not vanity impressions. Marketing Services Tailored to Broadbeach Waters Local & Suburb-Focused SEO Search behaviour in Broadbeach Waters differs from: Surfers Paradise Robina Nerang We build:',
+    'Data-Driven Accountability Transparency Ruthless Optimisation Single-System Focus Proven Gold Coast Results Marketing Services Tailored to Broadbeach Waters Why Locals Choose Us Directions from Broadbeach Waters FAQs Strong CTA On-Page SEO & Schema Full Page Content Marketing Agency Gold Coast Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike Broadbeach Waters is quiet. Canal-front homes. Home offices. Professional operators. It\u2019s five minutes from the buzz of Pacific Fair and the Gold Coast Convention and Exhibition Centre, yet it feels like a different world. If you\u2019re searching for a Marketing Agency Gold Coast in Broadbeach Waters, you\u2019re likely not looking for flashy creatives. You\u2019re looking for results. Mitchell Giles Marketing Agency Gold Coast Gold Coast builds revenue systems that generate predictable growth for businesses across the Gold Coast. 📍 82 Marine Parade, Southport QLD 4215 📞 0474 870 535 Approximately 10\u201315 minutes from Broadbeach Waters. Close enough for strategy sessions. Structured enough to scale beyond postcode limits. Why Broadbeach Waters Businesses Need Structured Marketing Many businesses here fall into one of these categories: Consultants and advisors working from canal-front home offices eCommerce operators Property and development professionals Trades servicing the central Gold Coast Boutique service brands Common problems: Revenue fluctuates month to month Ads run without proper tracking No automated follow-up No integrated system tying everything together Broadbeach Waters is not built for walk-ins. It requires engineered visibility. What Makes This Marketing Agency Gold Coast Different There are plenty of \u201cdigital marketers\u201d. Very few build systems. 1. Data-Driven Accountability \u2013 \u201cProof or We Stop\u201d Every decision ties directly to revenue. Opinion never outranks data. We track: Cost per lead Conversion rate Revenue per channel Customer acquisition cost Lifetime value Pipeline visibility If it doesn\u2019t convert, it\u2019s removed. No emotional attachment. Just numbers. 2. Full Transparency You see: Exactly what campaigns are live Exactly what you\u2019re spending Exactly what produced revenue No fluff. No hidden mechanics. No vague reporting. 3. Ruthless Optimisation Speed beats comfort. We: Kill what loses without emotion Double down aggressively on what wins Continuously eliminate waste Reallocate budget to top-performing channels Marketing is not art. It\u2019s iteration. 4. Single-System Focus One core offer. One revenue system. Everything designed to compound. No scattered tactics. No random experiments. You\u2019re not buying marketing services. You\u2019re buying predictable growth. Proven Gold Coast Results These systems have generated: $425K annual sales (436% growth) for Elite Football Agency Client scaled from $50K to $425K in 12 months 6.88x ROAS on paid campaigns $190K generated through email marketing in 2 years 72% email open rates 10.3% click-through rates $82K generated organically in 3 hours $100K weekly sales achieved $25K+ event revenue from sold-out campaigns 100% automation from Shopify to delivery These are revenue metrics. Not vanity impressions. Marketing Services Tailored to Broadbeach Waters Local & Suburb-Focused SEO Search behaviour in Broadbeach Waters differs from: Surfers Paradise Robina Nerang We build:',
   ],
   whyDifferentPoints: [
     'Broadbeach search patterns require suburb-level targeting',
@@ -29,13 +29,13 @@ export const areaData: AreaPageData = {
     'Directions from Broadbeach Waters',
     'On-Page SEO & Schema',
     'Full Page Content',
-    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
+    'Marketing Agency Gold Coast Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
   ],
   servicesIntro:
     'Structured marketing systems designed for Broadbeach businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Broadbeach',
-    'Best Marketing Consultant in Broadbeach',
+    'Marketing Agency Gold Coast Broadbeach',
+    'Best Marketing Agency Gold Coast in Broadbeach',
   ],
   ctaNearbyPlaces: [
     'Broadbeach Centre',
@@ -48,7 +48,7 @@ export const areaData: AreaPageData = {
     'Strong CTA',
     'On-Page SEO & Schema',
     'Full Page Content',
-    'Marketing Consultant Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
+    'Marketing Agency Gold Coast Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
     'Approximately 10\u201315 minutes by car',
   ],
   publicTransport: [
@@ -106,7 +106,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant serving Broadbeach Waters',
+      alt: 'Marketing agency gold coast serving Broadbeach Waters',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -118,7 +118,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office',
+      alt: 'Southport marketing agency gold coast office',
     },
   ],
   internalLinks: [

@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Palm Beach',
   slug: 'palm-beach',
   seoTitle:
-    'Marketing Consultant Palm Beach | Data-Driven Growth Near Tallebudgera Creek',
+    'Marketing Agency Gold Coast Palm Beach | Data-Driven Growth Near Tallebudgera Creek',
   metaDescription:
-    'Looking for the best Marketing Consultant in Palm Beach? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Palm Beach? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Palm Beach \u2013 Data-Driven Growth for Local Businesses',
+    'Marketing Agency Gold Coast Palm Beach \u2013 Data-Driven Growth for Local Businesses',
   heroIntro: [
     'Palm Beach has transformed. From sleepy surf suburb to one of the Gold Coast\u2019s fastest-growing lifestyle hubs. Morning surf at Tallebudgera Creek. Weekend markets at Palm Beach Parklands. Busy cafes along the Gold Coast Highway.',
     'Opportunity is everywhere. But so is competition. If your marketing depends on seasonal tourism or weekend spikes, revenue fluctuates.',
     'Located at 82 Marine Parade, Southport, QLD 4215, around 25 minutes north of Palm Beach. We help Palm Beach businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Palm Beach Businesses Need a Different Type of Marketing Consultant',
+    'Why Palm Beach Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search intent shifts dramatically suburb to suburb. Someone searching cafe near Tallebudgera Creek behaves differently from someone typing marketing consultant Palm Beach.',
+    'Search intent shifts dramatically suburb to suburb. Someone searching cafe near Tallebudgera Creek behaves differently from someone typing marketing agency gold coast Palm Beach.',
   ],
   whyDifferentPoints: [
     'Tourism seasonality creating peak and off-peak revenue swings',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems for Palm Beach\u2019s growing lifestyle hub where surf culture meets residential growth.',
   seoTargets: [
-    'Marketing Consultant Palm Beach',
-    'Best Marketing Consultant near Tallebudgera Creek',
+    'Marketing Agency Gold Coast Palm Beach',
+    'Best Marketing Agency Gold Coast near Tallebudgera Creek',
   ],
   ctaNearbyPlaces: [
     'Tallebudgera Creek',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Palm Beach strategy session',
+      alt: 'Marketing agency gold coast Palm Beach strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Tallebudgera Creek',
+      alt: 'Mitchell Giles marketing agency gold coast near Tallebudgera Creek',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Neranwood',
   slug: 'neranwood',
-  seoTitle: 'Marketing Consultant Neranwood | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Neranwood | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Neranwood. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Neranwood. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Neranwood \u2013 Data-Driven Growth for Hinterland Operators',
+    'Marketing Agency Gold Coast Neranwood \u2013 Data-Driven Growth for Hinterland Operators',
   heroIntro: [
     'Neranwood offers something different.',
     'It\u2019s peaceful. Elevated. Surrounded by bushland and close to Little Nerang Dam.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Neranwood businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Neranwood',
-    'Best Marketing Consultant in Neranwood',
+    'Marketing Agency Gold Coast Neranwood',
+    'Best Marketing Agency Gold Coast in Neranwood',
   ],
   ctaNearbyPlaces: [
     'Neranwood',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Neranwood cost?',
+      question: 'How much does a marketing agency gold coast in Neranwood cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Neranwood businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Neranwood Gold Coast',
+      alt: 'Marketing Agency Gold Coast Neranwood Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

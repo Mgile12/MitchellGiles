@@ -54,7 +54,7 @@ export default function AreaPlaceholderContent({ areaName, description }: Props)
               {areaName}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 font-serif">
-              Marketing Consultant {areaName}
+              Marketing Agency Gold Coast {areaName}
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-6 font-sans">
               {description}

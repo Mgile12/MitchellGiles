@@ -4,18 +4,18 @@ export const areaData: AreaPageData = {
   name: 'Main Beach',
   slug: 'main-beach',
   seoTitle:
-    'Marketing Consultant Main Beach | Data-Driven Growth Near Sea World',
+    'Marketing Agency Gold Coast Main Beach | Data-Driven Growth Near Sea World',
   metaDescription:
-    'Looking for the best Marketing Consultant in Main Beach? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Main Beach? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Main Beach \u2013 Predictable Growth for Premium Gold Coast Businesses',
+    'Marketing Agency Gold Coast Main Beach \u2013 Predictable Growth for Premium Gold Coast Businesses',
   heroIntro: [
     'Main Beach is not an average suburb. You have Tedder Avenue\u2019s cafe and restaurant strip, luxury apartment towers, proximity to Sea World and Marina Mirage, tourism-driven foot traffic, and high-value local residents.',
     'Marketing here behaves differently. Peak periods surge with holidaymakers. Off-season requires precision. Luxury buyers expect quality and trust.',
     'Based at 82 Marine Parade, Southport, QLD 4215, just minutes from Main Beach via Seaworld Drive. We work with Main Beach businesses who want predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Main Beach Businesses Need a Smarter Marketing Consultant',
+    'Why Main Beach Businesses Need a Smarter Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Search behaviour changes block by block. Someone staying near Sea World searches differently from a long-term apartment resident on Tedder Avenue.',
   ],
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Premium marketing systems designed for Main Beach\u2019s luxury hospitality and high-value resident market.',
   seoTargets: [
-    'Marketing Consultant Main Beach',
-    'Best Marketing Consultant near Sea World',
+    'Marketing Agency Gold Coast Main Beach',
+    'Best Marketing Agency Gold Coast near Sea World',
   ],
   ctaNearbyPlaces: [
     'Sea World',
@@ -107,11 +107,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Main Beach strategy meeting',
+      alt: 'Marketing agency gold coast Main Beach strategy meeting',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Sea World',
+      alt: 'Mitchell Giles marketing agency gold coast near Sea World',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

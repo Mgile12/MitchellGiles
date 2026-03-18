@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Mudgeeraba',
   slug: 'mudgeeraba',
-  seoTitle: 'Marketing Consultant Mudgeeraba | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Mudgeeraba | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Mudgeeraba. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Mudgeeraba. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Mudgeeraba \u2013 Data-Driven Growth That Compounds',
+    'Marketing Agency Gold Coast Mudgeeraba \u2013 Data-Driven Growth That Compounds',
   heroIntro: [
     'Mudgeeraba has character.',
     'It\u2019s not a high-rise strip like Surfers Paradise. It\u2019s not a corporate hub like Robina.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Mudgeeraba businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Mudgeeraba',
-    'Best Marketing Consultant in Mudgeeraba',
+    'Marketing Agency Gold Coast Mudgeeraba',
+    'Best Marketing Agency Gold Coast in Mudgeeraba',
   ],
   ctaNearbyPlaces: [
     'Mudgeeraba',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Mudgeeraba cost?',
+      question: 'How much does a marketing agency gold coast in Mudgeeraba cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Mudgeeraba businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Mudgeeraba Gold Coast',
+      alt: 'Marketing Agency Gold Coast Mudgeeraba Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

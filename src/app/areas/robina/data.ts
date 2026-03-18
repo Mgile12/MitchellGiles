@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Robina',
   slug: 'robina',
-  seoTitle: 'Marketing Consultant Robina | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Robina | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Robina Town Centre. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Robina Town Centre. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Robina \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Robina \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Robina is not driven by weekend tourism. It is driven by families, professionals and long-term residents. Between Robina Town Centre, the Robina Hospital precinct, Bond University nearby, and surrounding residential estates, businesses here compete on trust and consistency.',
-    'If you are searching for a Marketing Consultant in Robina, you are likely not looking for flashy campaigns. You are looking for steady, predictable growth.',
+    'If you are searching for a Marketing Agency Gold Coast in Robina, you are likely not looking for flashy campaigns. You are looking for steady, predictable growth.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Robina businesses across the M1 corridor, this is local strategy with measurable results.',
   ],
   whyDifferentTitle: 'Why Robina Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Robina\u2019s professional, residential market where trust and consistency drive growth.',
   seoTargets: [
-    'Marketing Consultant Robina',
-    'Best Marketing Consultant near Robina Town Centre',
+    'Marketing Agency Gold Coast Robina',
+    'Best Marketing Agency Gold Coast near Robina Town Centre',
   ],
   ctaNearbyPlaces: [
     'Robina Town Centre',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Robina cost?',
+      question: 'How much does a marketing agency gold coast in Robina cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Robina businesses invest between $2,000 and $8,000 per month for a structured marketing system. A strategy session will clarify the right investment for your situation.',
     },
@@ -107,7 +107,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Robina business owner',
+      alt: 'Marketing agency gold coast meeting Robina business owner',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

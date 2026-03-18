@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Alberton',
   slug: 'alberton',
-  seoTitle: 'Marketing Consultant Alberton | Revenue Systems Near Albert River',
+  seoTitle: 'Marketing Agency Gold Coast Alberton | Revenue Systems Near Albert River',
   metaDescription:
-    'Looking for the best Marketing Consultant in Alberton? Mitchell Giles Marketing Consultant Gold Coast delivers data-driven, revenue-focused growth systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Alberton? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Alberton \u2013 Revenue Systems Built for Businesses Near Albert River',
+    'Marketing Agency Gold Coast Alberton \u2013 Revenue Systems Built for Businesses Near Albert River',
   heroIntro: [
     'Alberton operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Alberton, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Alberton, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Alberton businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Alberton Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Alberton businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Alberton',
-    'Best Marketing Consultant in Alberton',
+    'Marketing Agency Gold Coast Alberton',
+    'Best Marketing Agency Gold Coast in Alberton',
   ],
   ctaNearbyPlaces: [
     'Alberton',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Alberton cost?',
+      question: 'How much does a marketing agency gold coast in Alberton cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Alberton businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Alberton strategy meeting',
+      alt: 'Marketing Agency Gold Coast Alberton strategy meeting',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant near Albert River',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast near Albert River',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -117,7 +117,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Alberton local SEO marketing consultant',
+      alt: 'Alberton local SEO marketing agency gold coast',
     },
   ],
   internalLinks: [

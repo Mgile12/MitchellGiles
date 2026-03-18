@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Tugun',
   slug: 'tugun',
   seoTitle:
-    'Marketing Consultant Tugun | Data-Driven Growth Near Tugun Beach',
+    'Marketing Agency Gold Coast Tugun | Data-Driven Growth Near Tugun Beach',
   metaDescription:
-    'Looking for the best Marketing Consultant in Tugun? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Tugun? Mitchell Giles Marketing Agency Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Tugun \u2013 Data-Driven Growth for Local Businesses',
+    'Marketing Agency Gold Coast Tugun \u2013 Data-Driven Growth for Local Businesses',
   heroIntro: [
     'Tugun has its own pace. Morning surf at Tugun Beach. Visitors passing through near Gold Coast Airport. Families dining along Golden Four Drive. Locals loyal to community-based businesses.',
     'It feels relaxed. But from a marketing perspective, it is competitive. Tourism fluctuates. School holidays create spikes. Nearby suburbs like Currumbin and Palm Beach attract attention fast.',
     'Located at 82 Marine Parade, Southport, QLD 4215, approximately 35 minutes north of Tugun. We help Tugun businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Tugun Businesses Need a Different Type of Marketing Consultant',
+    'Why Tugun Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search intent changes dramatically suburb to suburb. Someone searching cafe near Tugun Beach behaves differently from someone typing marketing consultant Tugun.',
+    'Search intent changes dramatically suburb to suburb. Someone searching cafe near Tugun Beach behaves differently from someone typing marketing agency gold coast Tugun.',
   ],
   whyDifferentPoints: [
     'Airport-driven demand patterns create unique opportunities',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems for Tugun\u2019s airport corridor and coastal community businesses.',
   seoTargets: [
-    'Marketing Consultant Tugun',
-    'Best Marketing Consultant near Tugun Beach',
+    'Marketing Agency Gold Coast Tugun',
+    'Best Marketing Agency Gold Coast near Tugun Beach',
   ],
   ctaNearbyPlaces: [
     'Tugun Beach',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Tugun strategy session',
+      alt: 'Marketing agency gold coast Tugun strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Tugun Beach',
+      alt: 'Mitchell Giles marketing agency gold coast near Tugun Beach',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'South Stradbroke Island',
   slug: 'south-stradbroke-island',
-  seoTitle: 'Marketing Consultant South Stradbroke Island | Tourism Growth Systems | Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast South Stradbroke Island | Tourism Growth Systems | Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in South Stradbroke Island? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for Gold Coast tourism businesses.',
+    'Looking for a Marketing Agency Gold Coast in South Stradbroke Island? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for Gold Coast tourism businesses.',
   heroH1:
-    'Marketing Consultant South Stradbroke Island \u2013 Built for Predictable Tourism Growth',
+    'Marketing Agency Gold Coast South Stradbroke Island \u2013 Built for Predictable Tourism Growth',
   heroIntro: [
     'South Stradbroke Island is not a standard suburb.',
     'It\u2019s boat-access. It\u2019s seasonal. It\u2019s experience-driven.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for South Stradbroke Island businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant South Stradbroke Island',
-    'Best Marketing Consultant in South Stradbroke Island',
+    'Marketing Agency Gold Coast South Stradbroke Island',
+    'Best Marketing Agency Gold Coast in South Stradbroke Island',
   ],
   ctaNearbyPlaces: [
     'South Stradbroke Island',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in South Stradbroke Island cost?',
+      question: 'How much does a marketing agency gold coast in South Stradbroke Island cost?',
       answer:
         'Investment depends on your business goals and channels required. Most South Stradbroke Island businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant South Stradbroke Island',
+      alt: 'Marketing Agency Gold Coast South Stradbroke Island',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office',
+      alt: 'Southport marketing agency gold coast office',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

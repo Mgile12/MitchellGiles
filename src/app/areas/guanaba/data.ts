@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Guanaba',
   slug: 'guanaba',
-  seoTitle: 'Marketing Consultant Guanaba | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Guanaba | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Guanaba. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Guanaba. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Guanaba \u2013 Predictable Growth for Hinterland Businesses',
+    'Marketing Agency Gold Coast Guanaba \u2013 Predictable Growth for Hinterland Businesses',
   heroIntro: [
     'Guanaba isn\u2019t a high-foot-traffic suburb.',
     'It\u2019s acreage. It\u2019s space. It\u2019s quiet roads winding past Guanaba Gorge and Guanaba Creek.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Guanaba businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Guanaba',
-    'Best Marketing Consultant in Guanaba',
+    'Marketing Agency Gold Coast Guanaba',
+    'Best Marketing Agency Gold Coast in Guanaba',
   ],
   ctaNearbyPlaces: [
     'Guanaba',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Guanaba cost?',
+      question: 'How much does a marketing agency gold coast in Guanaba cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Guanaba businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Guanaba Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Guanaba Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cGuanaba Gorge near marketing consultant service area\u201d',
+      alt: '\u201cGuanaba Gorge near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

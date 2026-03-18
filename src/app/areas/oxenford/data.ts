@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Oxenford',
   slug: 'oxenford',
-  seoTitle: 'Marketing Consultant Oxenford | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Oxenford | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Oxenford. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Oxenford. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Oxenford \u2013 Systems That Turn Attention Into Revenue',
+    'Marketing Agency Gold Coast Oxenford \u2013 Systems That Turn Attention Into Revenue',
   heroIntro: [
     'Oxenford isn\u2019t just another Gold Coast suburb.',
     'It\u2019s a high-traffic corridor.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Oxenford businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Oxenford',
-    'Best Marketing Consultant in Oxenford',
+    'Marketing Agency Gold Coast Oxenford',
+    'Best Marketing Agency Gold Coast in Oxenford',
   ],
   ctaNearbyPlaces: [
     'Oxenford',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Oxenford cost?',
+      question: 'How much does a marketing agency gold coast in Oxenford cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Oxenford businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Oxenford QLD',
+      alt: 'Marketing Agency Gold Coast Oxenford QLD',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

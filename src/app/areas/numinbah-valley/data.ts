@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Numinbah Valley',
   slug: 'numinbah-valley',
-  seoTitle: 'Marketing Consultant Numinbah Valley | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Numinbah Valley | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Numinbah Valley. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Numinbah Valley. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Numinbah Valley \u2013 Structured Growth for Rural & Tourism Businesses',
+    'Marketing Agency Gold Coast Numinbah Valley \u2013 Structured Growth for Rural & Tourism Businesses',
   heroIntro: [
     'Numinbah Valley is different.',
     'It\u2019s not a suburban shopping strip. It\u2019s not a corporate office hub.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Numinbah Valley businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Numinbah Valley',
-    'Best Marketing Consultant in Numinbah Valley',
+    'Marketing Agency Gold Coast Numinbah Valley',
+    'Best Marketing Agency Gold Coast in Numinbah Valley',
   ],
   ctaNearbyPlaces: [
     'Numinbah Valley',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Numinbah Valley cost?',
+      question: 'How much does a marketing agency gold coast in Numinbah Valley cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Numinbah Valley businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Numinbah Valley',
+      alt: 'Marketing Agency Gold Coast Numinbah Valley',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

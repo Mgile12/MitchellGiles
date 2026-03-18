@@ -45,13 +45,13 @@ export default function LocalSeoSection() {
             Local Expertise
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
-            Gold Coast Marketing Consultant
+            Gold Coast Marketing Agency Gold Coast
           </h2>
           <div className="max-w-2xl mx-auto">
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
               Based in {BUSINESS_INFO.address.locality}, I work with businesses across the Gold Coast, Brisbane
               and South East Queensland. Whether you need email marketing, paid ads, or a complete digital
-              strategy -- you get a local consultant who understands the Australian market.
+              strategy -- you get a local marketing agency gold coast who understands the Australian market.
             </p>
           </div>
         </AnimateOnScroll>

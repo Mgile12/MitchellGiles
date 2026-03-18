@@ -4,14 +4,14 @@ export const areaData: AreaPageData = {
   name: 'Paradise Point',
   slug: 'paradise-point',
   seoTitle:
-    'Marketing Consultant Paradise Point | Revenue Systems for Local Businesses',
+    'Marketing Agency Gold Coast Paradise Point | Revenue Systems for Local Businesses',
   metaDescription:
-    'Marketing Consultant near Sovereign Island & Paradise Point. Data-driven systems, measurable ROI, local Gold Coast expertise. Book a strategy session.',
+    'Marketing Agency Gold Coast near Sovereign Island & Paradise Point. Data-driven systems, measurable ROI, local Gold Coast expertise. Book a strategy session.',
   heroH1:
-    'Marketing Consultant Paradise Point \u2013 Predictable Growth for Waterfront & Premium Local Businesses',
+    'Marketing Agency Gold Coast Paradise Point \u2013 Predictable Growth for Waterfront & Premium Local Businesses',
   heroIntro: [
     'Paradise Point is not built on impulse buying. Between the Paradise Point Parklands, waterfront dining strip along The Esplanade, and the prestige homes of Sovereign Island, this is a suburb where trust and positioning matter.',
-    'If you are searching for a Marketing Consultant in Paradise Point, you likely do not want generic marketing. You want high-quality leads, premium positioning, predictable revenue, and clear accountability.',
+    'If you are searching for a Marketing Agency Gold Coast in Paradise Point, you likely do not want generic marketing. You want high-quality leads, premium positioning, predictable revenue, and clear accountability.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing the northern Gold Coast daily, the approach is disciplined, transparent and ruthlessly data-driven.',
   ],
   whyDifferentTitle:
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Paradise Point and Sovereign Island where quality matters more than quantity.',
   seoTargets: [
-    'Marketing Consultant Paradise Point',
-    'Marketing Consultant near Sovereign Island',
+    'Marketing Agency Gold Coast Paradise Point',
+    'Marketing Agency Gold Coast near Sovereign Island',
   ],
   ctaNearbyPlaces: [
     'Sovereign Island',
@@ -108,7 +108,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant serving Paradise Point businesses',
+      alt: 'Marketing agency gold coast serving Paradise Point businesses',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',

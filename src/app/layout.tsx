@@ -10,16 +10,16 @@ export const metadata: Metadata = {
     default: "BEST Marketing Agency Gold Coast - If You're Looking for Digital Marketing Services Near Me or Social Media Marketing & Search Engine Optimisation Near Me - Mitchell Giles Marketing Agency Gold Coast is the place to be",
     template: '%s | Mitchell Giles Marketing',
   },
-  description: `${BUSINESS_INFO.name} - Gold Coast's leading marketing consultant. Specialising in email marketing, Meta Ads, Google Ads, SEO & digital marketing for Australian businesses. Based in ${BUSINESS_INFO.address.locality}, serving ${BUSINESS_INFO.serviceArea.slice(0, 5).join(', ')}. Call ${BUSINESS_INFO.phone}.`,
+  description: `${BUSINESS_INFO.name} - Gold Coast's leading marketing agency gold coast. Specialising in email marketing, Meta Ads, Google Ads, SEO & digital marketing for Australian businesses. Based in ${BUSINESS_INFO.address.locality}, serving ${BUSINESS_INFO.serviceArea.slice(0, 5).join(', ')}. Call ${BUSINESS_INFO.phone}.`,
   keywords: [
-    'marketing consultant gold coast',
+    'marketing agency gold coast',
     'email marketing near me',
     'digital marketing gold coast',
     'paid advertising gold coast',
     'Meta Ads gold coast',
     'Google Ads gold coast',
     'SEO gold coast',
-    'marketing consultant southport',
+    'marketing agency gold coast',
     'marketing agency gold coast',
     ...BUSINESS_INFO.services.map((s) => s.toLowerCase()),
   ],
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     'max-snippet': -1,
   },
   openGraph: {
-    title: 'BEST Marketing Consultant Gold Coast - Mitchell Giles',
+    title: 'BEST Marketing Agency Gold Coast - Mitchell Giles',
     description:
-      "Gold Coast marketing consultant specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
+      "Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
     type: 'website',
     url: BUSINESS_INFO.url,
     siteName: BUSINESS_INFO.name,
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BEST Marketing Consultant Gold Coast - Mitchell Giles',
+    title: 'BEST Marketing Agency Gold Coast - Mitchell Giles',
     description:
-      "Gold Coast marketing consultant specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
+      "Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
     images: ['/image.png'],
   },
   alternates: {

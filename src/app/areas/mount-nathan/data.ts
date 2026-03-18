@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Mount Nathan',
   slug: 'mount-nathan',
-  seoTitle: 'Marketing Consultant Mount Nathan | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Mount Nathan | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Mount Nathan. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Mount Nathan. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Mount Nathan \u2013 Data-Driven Growth for Hinterland Businesses',
+    'Marketing Agency Gold Coast Mount Nathan \u2013 Data-Driven Growth for Hinterland Businesses',
   heroIntro: [
     'Mount Nathan isn\u2019t Surfers Paradise.',
     'It\u2019s elevated. Quiet. Destination-driven.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Mount Nathan businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Mount Nathan',
-    'Best Marketing Consultant in Mount Nathan',
+    'Marketing Agency Gold Coast Mount Nathan',
+    'Best Marketing Agency Gold Coast in Mount Nathan',
   ],
   ctaNearbyPlaces: [
     'Mount Nathan',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Mount Nathan cost?',
+      question: 'How much does a marketing agency gold coast in Mount Nathan cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Mount Nathan businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Mount Nathan Gold Coast',
+      alt: 'Marketing Agency Gold Coast Mount Nathan Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

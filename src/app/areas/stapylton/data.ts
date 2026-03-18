@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Stapylton',
   slug: 'stapylton',
-  seoTitle: 'Marketing Consultant Stapylton | Industrial & Trade Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Stapylton | Industrial & Trade Growth Systems',
   metaDescription:
-    'Looking for a Marketing Consultant in Stapylton? Mitchell Giles builds data-driven marketing systems that generate consistent B2B leads and measurable growth across SEQ.',
+    'Looking for a Marketing Agency Gold Coast in Stapylton? Mitchell Giles builds data-driven marketing systems that generate consistent B2B leads and measurable growth across SEQ.',
   heroH1:
-    'Marketing Consultant Stapylton \u2013 Revenue Systems for Industrial & Trade Businesses',
+    'Marketing Agency Gold Coast Stapylton \u2013 Revenue Systems for Industrial & Trade Businesses',
   heroIntro: [
     'Stapylton isn\u2019t built on foot traffic.',
     'It\u2019s built on contracts. Quotes. Repeat commercial clients.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Stapylton businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Stapylton',
-    'Best Marketing Consultant in Stapylton',
+    'Marketing Agency Gold Coast Stapylton',
+    'Best Marketing Agency Gold Coast in Stapylton',
   ],
   ctaNearbyPlaces: [
     'Stapylton',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Stapylton cost?',
+      question: 'How much does a marketing agency gold coast in Stapylton cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Stapylton businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Stapylton',
+      alt: 'Marketing Agency Gold Coast Stapylton',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -117,7 +117,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office',
+      alt: 'Southport marketing agency gold coast office',
     },
   ],
   internalLinks: [

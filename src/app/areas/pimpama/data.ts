@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Pimpama',
   slug: 'pimpama',
-  seoTitle: 'Marketing Consultant Pimpama | Data-Driven Growth | Gold Coast Expert',
+  seoTitle: 'Marketing Agency Gold Coast Pimpama | Data-Driven Growth | Gold Coast Expert',
   metaDescription:
-    'Looking for a Marketing Consultant in Pimpama? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for northern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Pimpama? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for northern Gold Coast businesses.',
   heroH1:
-    'Marketing Consultant Pimpama \u2013 Built for Predictable Growth',
+    'Marketing Agency Gold Coast Pimpama \u2013 Built for Predictable Growth',
   heroIntro: [
     'Pimpama isn\u2019t a quiet little suburb anymore.',
     'It\u2019s one of the fastest-growing areas on the Gold Coast.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Pimpama businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Pimpama',
-    'Best Marketing Consultant in Pimpama',
+    'Marketing Agency Gold Coast Pimpama',
+    'Best Marketing Agency Gold Coast in Pimpama',
   ],
   ctaNearbyPlaces: [
     'Pimpama',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Pimpama cost?',
+      question: 'How much does a marketing agency gold coast in Pimpama cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Pimpama businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Pimpama QLD',
+      alt: 'Marketing Agency Gold Coast Pimpama QLD',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

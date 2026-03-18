@@ -3,15 +3,15 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Ormeau',
   slug: 'ormeau',
-  seoTitle: 'Marketing Consultant Ormeau | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Ormeau | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Ormeau. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Ormeau. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Ormeau \u2013 Data-Driven Growth for Businesses Ready to Scale',
+    'Marketing Agency Gold Coast Ormeau \u2013 Data-Driven Growth for Businesses Ready to Scale',
   heroIntro: [
     'Ormeau isn\u2019t slowing down.',
     'Between the rapid residential expansion near Pimpama and the steady commercial growth around Norfolk Village and the Ormeau industrial precinct, this corridor is one of South East Queensland\u2019s most competitive business zones.',
-    'If you\u2019re searching for a Marketing Consultant in Ormeau, chances are:',
+    'If you\u2019re searching for a Marketing Agency Gold Coast in Ormeau, chances are:',
   ],
   whyDifferentTitle: 'Why Ormeau Businesses Need Structured Marketing',
   whyDifferentIntro: [
@@ -26,7 +26,7 @@ export const areaData: AreaPageData = {
     'Websites generating traffic but not converting leads',
   ],
   whyChooseLocalAuthority: [
-    'Mitchell Giles Marketing Consultant',
+    'Mitchell Giles Marketing Agency',
     '1. Data-Driven Accountability \u2013 \u201cProof or We Stop\u201d',
     'Every decision ties back to revenue.',
     'Cost per lead',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Ormeau businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Ormeau',
-    'Best Marketing Consultant in Ormeau',
+    'Marketing Agency Gold Coast Ormeau',
+    'Best Marketing Agency Gold Coast in Ormeau',
   ],
   ctaNearbyPlaces: [
     'Ormeau',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Ormeau cost?',
+      question: 'How much does a marketing agency gold coast in Ormeau cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Ormeau businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Ormeau',
+      alt: 'Marketing Agency Gold Coast Ormeau',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -117,7 +117,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
   ],
   internalLinks: [

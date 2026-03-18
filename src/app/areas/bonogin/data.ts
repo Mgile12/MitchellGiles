@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Bonogin',
   slug: 'bonogin',
-  seoTitle: 'Marketing Consultant Bonogin | Predictable Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Bonogin | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Consultant in Bonogin? Mitchell Giles Marketing Consultant Gold Coast builds data-driven, transparent revenue systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bonogin? Mitchell Giles Marketing Agency Gold Coast Gold Coast builds data-driven, transparent revenue systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Bonogin \u2013 Systems Built for Quiet Operators Who Want Loud Results',
+    'Marketing Agency Gold Coast Bonogin \u2013 Systems Built for Quiet Operators Who Want Loud Results',
   heroIntro: [
     'Bonogin operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Bonogin, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Bonogin, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Bonogin businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Bonogin Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Bonogin businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Bonogin',
-    'Best Marketing Consultant in Bonogin',
+    'Marketing Agency Gold Coast Bonogin',
+    'Best Marketing Agency Gold Coast in Bonogin',
   ],
   ctaNearbyPlaces: [
     'Bonogin',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Bonogin cost?',
+      question: 'How much does a marketing agency gold coast in Bonogin cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Bonogin businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant serving Bonogin Gold Coast',
+      alt: 'Marketing agency gold coast serving Bonogin Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport office marketing consultant for Bonogin',
+      alt: 'Southport office marketing agency gold coast for Bonogin',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -4,14 +4,14 @@ export const areaData: AreaPageData = {
   name: 'Hope Island',
   slug: 'hope-island',
   seoTitle:
-    'Marketing Consultant Hope Island | Predictable Growth Systems',
+    'Marketing Agency Gold Coast Hope Island | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Sanctuary Cove Hope Island. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Sanctuary Cove Hope Island. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Hope Island \u2013 Predictable Growth for Premium Local Businesses',
+    'Marketing Agency Gold Coast Hope Island \u2013 Predictable Growth for Premium Local Businesses',
   heroIntro: [
     'Hope Island is not a suburb built on impulse. Between Sanctuary Cove Marina, golf course estates, and tightly held residential communities, businesses here grow through trust, reputation and consistent visibility.',
-    'If you are searching for a Marketing Consultant in Hope Island, you likely want more than clicks. You want quality enquiries. You want high-value clients. You want predictable growth.',
+    'If you are searching for a Marketing Agency Gold Coast in Hope Island, you likely want more than clicks. You want quality enquiries. You want high-value clients. You want predictable growth.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Hope Island businesses across the northern Gold Coast, the approach is disciplined, transparent and data-driven.',
   ],
   whyDifferentTitle:
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Premium marketing systems designed for Hope Island\u2019s affluent, relationship-driven market where quality matters more than volume.',
   seoTargets: [
-    'Marketing Consultant Hope Island',
-    'Best Marketing Consultant near Sanctuary Cove',
+    'Marketing Agency Gold Coast Hope Island',
+    'Best Marketing Agency Gold Coast near Sanctuary Cove',
   ],
   ctaNearbyPlaces: [
     'Sanctuary Cove',
@@ -65,7 +65,7 @@ export const areaData: AreaPageData = {
   faqItems: [
     {
       question:
-        'How much does a marketing consultant in Hope Island cost?',
+        'How much does a marketing agency gold coast in Hope Island cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Hope Island businesses invest between $3,000 and $10,000 per month for a structured marketing system targeting premium clientele. A strategy session will clarify the right investment.',
     },
@@ -111,7 +111,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Hope Island business owner',
+      alt: 'Marketing agency gold coast meeting Hope Island business owner',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

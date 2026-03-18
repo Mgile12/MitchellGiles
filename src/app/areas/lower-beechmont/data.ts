@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Lower Beechmont',
   slug: 'lower-beechmont',
-  seoTitle: 'Marketing Consultant Lower Beechmont | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Lower Beechmont | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Lower Beechmont. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Lower Beechmont. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Lower Beechmont \u2013 Predictable Growth for Hinterland Businesses',
+    'Marketing Agency Gold Coast Lower Beechmont \u2013 Predictable Growth for Hinterland Businesses',
   heroIntro: [
     'Lower Beechmont isn\u2019t built on passing traffic.',
     'It\u2019s quiet roads climbing toward the hinterland. It\u2019s scenic views near Rosins Lookout Conservation Park. It\u2019s businesses operating from acreage or servicing wider Gold Coast regions.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Lower Beechmont businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Lower Beechmont',
-    'Best Marketing Consultant in Lower Beechmont',
+    'Marketing Agency Gold Coast Lower Beechmont',
+    'Best Marketing Agency Gold Coast in Lower Beechmont',
   ],
   ctaNearbyPlaces: [
     'Lower Beechmont',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Lower Beechmont cost?',
+      question: 'How much does a marketing agency gold coast in Lower Beechmont cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Lower Beechmont businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Lower Beechmont Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Lower Beechmont Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cRosins Lookout Conservation Park near marketing consultant service area\u201d',
+      alt: '\u201cRosins Lookout Conservation Park near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

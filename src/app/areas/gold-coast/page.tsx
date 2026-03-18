@@ -3,8 +3,8 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 import AreaPlaceholderContent from '../AreaPlaceholderContent';
 
 export const metadata: Metadata = {
-  title: 'Marketing Consultant Gold Coast | Full-Service Marketing',
-  description: 'Gold Coast marketing consultant specialising in SEO, Google Ads, email marketing, lead generation and automation. Based in Southport QLD.',
+  title: 'Marketing Agency Gold Coast | Full-Service Marketing',
+  description: 'Gold Coast marketing agency gold coast specialising in SEO, Google Ads, email marketing, lead generation and automation. Based in Southport QLD.',
   alternates: { canonical: `${BUSINESS_INFO.url}/areas/gold-coast` },
 };
 

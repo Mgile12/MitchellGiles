@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Kirra',
   slug: 'kirra',
   seoTitle:
-    'Marketing Consultant Kirra | Predictable Growth Near Kirra Beach & Point',
+    'Marketing Agency Gold Coast Kirra | Predictable Growth Near Kirra Beach & Point',
   metaDescription:
-    'Looking for the best Marketing Consultant in Kirra? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Kirra? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Kirra \u2013 Revenue Systems Built for Coastal Businesses',
+    'Marketing Agency Gold Coast Kirra \u2013 Revenue Systems Built for Coastal Businesses',
   heroIntro: [
     'Kirra has its own rhythm. Early morning surf at Kirra Point. Visitors walking along Kirra Beach. Locals grabbing coffee on Marine Parade. Holiday makers flying in and out via Gold Coast Airport.',
     'On the surface, it feels relaxed. Behind the scenes, it is competitive. Weekend trade surges. School holidays spike demand. Midweek can slow down.',
     'Located at 82 Marine Parade, Southport, QLD 4215, approximately 35\u201340 minutes north of Kirra. We help Kirra businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Kirra Businesses Need a Different Type of Marketing Consultant',
+    'Why Kirra Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search behaviour shifts suburb by suburb. Someone searching cafe near Kirra Beach behaves differently from someone typing marketing consultant Kirra.',
+    'Search behaviour shifts suburb by suburb. Someone searching cafe near Kirra Beach behaves differently from someone typing marketing agency gold coast Kirra.',
   ],
   whyDifferentPoints: [
     'Surf-driven weekend demand creates revenue peaks and midweek valleys',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems for Kirra\u2019s surf tourism and coastal hospitality market.',
   seoTargets: [
-    'Marketing Consultant Kirra',
-    'Best Marketing Consultant near Kirra Beach',
+    'Marketing Agency Gold Coast Kirra',
+    'Best Marketing Agency Gold Coast near Kirra Beach',
   ],
   ctaNearbyPlaces: [
     'Kirra Beach',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Kirra strategy session',
+      alt: 'Marketing agency gold coast Kirra strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Kirra Beach',
+      alt: 'Mitchell Giles marketing agency gold coast near Kirra Beach',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -4,15 +4,15 @@ export const areaData: AreaPageData = {
   name: 'Runaway Bay',
   slug: 'runaway-bay',
   seoTitle:
-    'Marketing Consultant Runaway Bay | Data-Driven Growth Systems',
+    'Marketing Agency Gold Coast Runaway Bay | Data-Driven Growth Systems',
   metaDescription:
-    'Marketing Consultant near Runaway Bay Shopping Village. Proven ROI, local Gold Coast expertise, predictable growth systems. Book a strategy session.',
+    'Marketing Agency Gold Coast near Runaway Bay Shopping Village. Proven ROI, local Gold Coast expertise, predictable growth systems. Book a strategy session.',
   heroH1:
-    'Marketing Consultant Runaway Bay \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Runaway Bay \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Runaway Bay is not Surfers Paradise. It is not built on tourists and impulse traffic. It is built on families, long-term residents, repeat customers, and community trust.',
-    'If you are searching for a Marketing Consultant in Runaway Bay, you likely want something different: measurable ROI, local expertise, clear accountability, and growth that compounds.',
-    'Mitchell Giles Marketing Consultant Gold Coast builds structured revenue systems for businesses servicing Runaway Bay \u2014 designed to generate predictable leads, not random spikes.',
+    'If you are searching for a Marketing Agency Gold Coast in Runaway Bay, you likely want something different: measurable ROI, local expertise, clear accountability, and growth that compounds.',
+    'Mitchell Giles Marketing Agency Gold Coast builds structured revenue systems for businesses servicing Runaway Bay \u2014 designed to generate predictable leads, not random spikes.',
   ],
   whyDifferentTitle:
     'Why Runaway Bay Businesses Need Smarter Marketing',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Runaway Bay\u2019s family-oriented, community-driven market.',
   seoTargets: [
-    'Marketing Consultant Runaway Bay',
-    'Best Marketing Consultant near Runaway Bay Shopping Village',
+    'Marketing Agency Gold Coast Runaway Bay',
+    'Best Marketing Agency Gold Coast near Runaway Bay Shopping Village',
   ],
   ctaNearbyPlaces: [
     'Runaway Bay Shopping Village',
@@ -107,7 +107,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant serving Runaway Bay businesses',
+      alt: 'Marketing agency gold coast serving Runaway Bay businesses',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -115,7 +115,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office near Broadwater',
+      alt: 'Southport marketing agency gold coast office near Broadwater',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

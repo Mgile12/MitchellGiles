@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Mermaid Beach',
   slug: 'mermaid-beach',
   seoTitle:
-    'Marketing Consultant Mermaid Beach | Data-Driven Growth Near Hedges Avenue',
+    'Marketing Agency Gold Coast Mermaid Beach | Data-Driven Growth Near Hedges Avenue',
   metaDescription:
-    'Looking for the best Marketing Consultant in Mermaid Beach? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Mermaid Beach? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Mermaid Beach \u2013 Data-Driven Growth for Local Businesses',
+    'Marketing Agency Gold Coast Mermaid Beach \u2013 Data-Driven Growth for Local Businesses',
   heroIntro: [
     'Mermaid Beach is one of the Gold Coast\u2019s most competitive micro-markets. You have Hedges Avenue luxury homes, boutique hospitality venues, high-end fitness and lifestyle brands, tourism spillover from Broadbeach and Pacific Fair, and constant traffic along Gold Coast Highway.',
     'Weekend tourist surges do not guarantee consistent revenue. Affluent locals expect premium positioning. And competing suburbs can siphon attention fast.',
     'Located at 82 Marine Parade, Southport, QLD 4215, approximately 15 minutes north of Mermaid Beach. We help Mermaid Beach businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Mermaid Beach Businesses Need a Different Type of Marketing Consultant',
+    'Why Mermaid Beach Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search behaviour in Mermaid Beach is nuanced. Someone searching restaurant near Hedges Avenue behaves differently from someone typing best marketing consultant Mermaid Beach.',
+    'Search behaviour in Mermaid Beach is nuanced. Someone searching restaurant near Hedges Avenue behaves differently from someone typing best marketing agency gold coast Mermaid Beach.',
   ],
   whyDifferentPoints: [
     'Premium buyer psychology for Hedges Avenue luxury homeowners',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Mermaid Beach\u2019s premium, competitive micro-market.',
   seoTargets: [
-    'Marketing Consultant Mermaid Beach',
-    'Best Marketing Consultant near Hedges Avenue',
+    'Marketing Agency Gold Coast Mermaid Beach',
+    'Best Marketing Agency Gold Coast near Hedges Avenue',
   ],
   ctaNearbyPlaces: [
     'Hedges Avenue',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Mermaid Beach strategy session',
+      alt: 'Marketing agency gold coast Mermaid Beach strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Hedges Avenue',
+      alt: 'Mitchell Giles marketing agency gold coast near Hedges Avenue',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

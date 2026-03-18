@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Tallebudgera',
   slug: 'tallebudgera',
-  seoTitle: 'Marketing Consultant Tallebudgera | Predictable Gold Coast Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Tallebudgera | Predictable Gold Coast Growth Systems',
   metaDescription:
-    'Looking for a Marketing Consultant in Tallebudgera? Mitchell Giles builds data-driven marketing systems delivering measurable leads and predictable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Tallebudgera? Mitchell Giles builds data-driven marketing systems delivering measurable leads and predictable growth across the Gold Coast.',
   heroH1:
-    'Marketing Consultant Tallebudgera \u2013 Revenue Systems That Work Beyond Word of Mouth',
+    'Marketing Agency Gold Coast Tallebudgera \u2013 Revenue Systems That Work Beyond Word of Mouth',
   heroIntro: [
     'Tallebudgera has a different rhythm.',
     'Morning paddle boarders on Tallebudgera Creek. Tourists drifting through during school holidays. Acreage properties tucked behind the hills.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Tallebudgera businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Tallebudgera',
-    'Best Marketing Consultant in Tallebudgera',
+    'Marketing Agency Gold Coast Tallebudgera',
+    'Best Marketing Agency Gold Coast in Tallebudgera',
   ],
   ctaNearbyPlaces: [
     'Tallebudgera',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Tallebudgera cost?',
+      question: 'How much does a marketing agency gold coast in Tallebudgera cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Tallebudgera businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Tallebudgera',
+      alt: 'Marketing Agency Gold Coast Tallebudgera',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

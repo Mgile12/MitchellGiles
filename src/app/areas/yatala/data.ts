@@ -3,17 +3,17 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Yatala',
   slug: 'yatala',
-  seoTitle: 'Marketing Consultant Yatala | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Yatala | Predictable Growth Systems | Mitchell Giles Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Yatala? Mitchell Giles builds data-driven growth systems for industrial and trade businesses. Proven ROI. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Yatala? Mitchell Giles builds data-driven growth systems for industrial and trade businesses. Proven ROI. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Yatala \u2013 Predictable Growth for Industrial & Trade Businesses',
+    'Marketing Agency Gold Coast Yatala \u2013 Predictable Growth for Industrial & Trade Businesses',
   heroIntro: [
     'If you run a business in Yatala, you already know something most marketing agencies don\u2019t:',
     'You\u2019re not chasing foot traffic.',
     'You\u2019re chasing contracts. Projects. Commercial clients.',
   ],
-  whyDifferentTitle: 'Why Yatala Businesses Need a Different Kind of Marketing Consultant',
+  whyDifferentTitle: 'Why Yatala Businesses Need a Different Kind of Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Yatala\u2019s location along the M1 makes it strategic.',
   ],
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Yatala businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Yatala',
-    'Best Marketing Consultant in Yatala',
+    'Marketing Agency Gold Coast Yatala',
+    'Best Marketing Agency Gold Coast in Yatala',
   ],
   ctaNearbyPlaces: [
     'Yatala',
@@ -45,7 +45,7 @@ export const areaData: AreaPageData = {
   ],
   directions: [
     'Yatala',
-    'Mitchell Giles Marketing Consultant Gold Coast',
+    'Mitchell Giles Marketing Agency Gold Coast',
     'Enter M1 southbound',
     'Continue toward Southport exit',
     'Approximately 20\u201325 minutes by car',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Yatala cost?',
+      question: 'How much does a marketing agency gold coast in Yatala cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Yatala businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Yatala strategy session',
+      alt: 'Marketing Agency Gold Coast Yatala strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',

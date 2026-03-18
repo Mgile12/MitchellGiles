@@ -4,14 +4,14 @@ export const areaData: AreaPageData = {
   name: 'Burleigh Heads',
   slug: 'burleigh-heads',
   seoTitle:
-    'Marketing Consultant Burleigh Heads | Predictable Growth Systems',
+    'Marketing Agency Gold Coast Burleigh Heads | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Burleigh Heads. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Burleigh Heads. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Burleigh Heads \u2013 Predictable Growth for Local Brands',
+    'Marketing Agency Gold Coast Burleigh Heads \u2013 Predictable Growth for Local Brands',
   heroIntro: [
     'Burleigh Heads is different. Between the early morning surf crowd at Burleigh Head National Park, the boutique strip along James Street, and packed weekends at Burleigh Pavilion, this suburb runs on reputation, quality and consistency.',
-    'If you are searching for a Marketing Consultant in Burleigh Heads, chances are you are not looking for more Instagram likes. You are looking for predictable revenue.',
+    'If you are searching for a Marketing Agency Gold Coast in Burleigh Heads, chances are you are not looking for more Instagram likes. You are looking for predictable revenue.',
     'Based at 82 Marine Parade, Southport QLD 4215, just a short drive up the Gold Coast Highway from Burleigh, this is local strategy built for South East Queensland conditions.',
   ],
   whyDifferentTitle:
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Burleigh\u2019s lifestyle-driven, brand-conscious market where quality and consistency matter.',
   seoTargets: [
-    'Marketing Consultant Burleigh Heads',
-    'Best Marketing Consultant near Burleigh Head National Park',
+    'Marketing Agency Gold Coast Burleigh Heads',
+    'Best Marketing Agency Gold Coast near Burleigh Head National Park',
   ],
   ctaNearbyPlaces: [
     'James Street',
@@ -65,7 +65,7 @@ export const areaData: AreaPageData = {
   faqItems: [
     {
       question:
-        'How much does a marketing consultant in Burleigh Heads cost?',
+        'How much does a marketing agency gold coast in Burleigh Heads cost?',
       answer:
         'Investment varies based on your business goals and channels required. Most Burleigh Heads businesses invest between $2,000 and $8,000 per month for a structured marketing system. A strategy session will clarify the right approach for your brand.',
     },
@@ -111,7 +111,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Burleigh Heads business owner',
+      alt: 'Marketing agency gold coast meeting Burleigh Heads business owner',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

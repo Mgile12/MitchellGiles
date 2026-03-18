@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Norwell',
   slug: 'norwell',
-  seoTitle: 'Marketing Consultant Norwell | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Norwell | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Norwell. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Norwell. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Norwell \u2013 Predictable Growth for Northern Gold Coast Businesses',
+    'Marketing Agency Gold Coast Norwell \u2013 Predictable Growth for Northern Gold Coast Businesses',
   heroIntro: [
     'Norwell sits in a unique position.',
     'Close to the M1. Minutes from Helensvale. Home to Norwell Motorplex and surrounded by acreage properties and specialist operators.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Norwell businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Norwell',
-    'Best Marketing Consultant in Norwell',
+    'Marketing Agency Gold Coast Norwell',
+    'Best Marketing Agency Gold Coast in Norwell',
   ],
   ctaNearbyPlaces: [
     'Norwell',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Norwell cost?',
+      question: 'How much does a marketing agency gold coast in Norwell cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Norwell businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Norwell Gold Coast',
+      alt: 'Marketing Agency Gold Coast Norwell Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

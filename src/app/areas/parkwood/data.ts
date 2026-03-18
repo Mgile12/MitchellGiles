@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Parkwood',
   slug: 'parkwood',
-  seoTitle: 'Marketing Consultant Parkwood | Predictable Growth Systems | Gold Coast Expert',
+  seoTitle: 'Marketing Agency Gold Coast Parkwood | Predictable Growth Systems | Gold Coast Expert',
   metaDescription:
-    'Looking for a Marketing Consultant in Parkwood? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Parkwood? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for Gold Coast businesses.',
   heroH1:
-    'Marketing Consultant Parkwood \u2013 Systems Built for Predictable Growth',
+    'Marketing Agency Gold Coast Parkwood \u2013 Systems Built for Predictable Growth',
   heroIntro: [
     'Parkwood is in a unique position on the Gold Coast.',
     'You\u2019ve got residential estates. You\u2019ve got commercial pockets. You\u2019ve got proximity to The Club at Parkwood Village, Griffith University and the Gold Coast University Hospital precinct.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Parkwood businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Parkwood',
-    'Best Marketing Consultant in Parkwood',
+    'Marketing Agency Gold Coast Parkwood',
+    'Best Marketing Agency Gold Coast in Parkwood',
   ],
   ctaNearbyPlaces: [
     'Parkwood',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Parkwood cost?',
+      question: 'How much does a marketing agency gold coast in Parkwood cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Parkwood businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Parkwood QLD',
+      alt: 'Marketing Agency Gold Coast Parkwood QLD',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

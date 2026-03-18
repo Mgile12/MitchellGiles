@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Clagiraba',
   slug: 'clagiraba',
-  seoTitle: 'Marketing Consultant Clagiraba | Data-Driven Growth Near Lower Beechmont',
+  seoTitle: 'Marketing Agency Gold Coast Clagiraba | Data-Driven Growth Near Lower Beechmont',
   metaDescription:
-    'Looking for the best Marketing Consultant in Clagiraba? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535 today.',
+    'Looking for the best Marketing Agency Gold Coast in Clagiraba? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535 today.',
   heroH1:
-    'Marketing Consultant Clagiraba \u2013 Predictable Growth for Hinterland Businesses',
+    'Marketing Agency Gold Coast Clagiraba \u2013 Predictable Growth for Hinterland Businesses',
   heroIntro: [
     'Clagiraba operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Clagiraba, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Clagiraba, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Clagiraba businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Clagiraba Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Clagiraba businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Clagiraba',
-    'Best Marketing Consultant in Clagiraba',
+    'Marketing Agency Gold Coast Clagiraba',
+    'Best Marketing Agency Gold Coast in Clagiraba',
   ],
   ctaNearbyPlaces: [
     'Clagiraba',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Clagiraba cost?',
+      question: 'How much does a marketing agency gold coast in Clagiraba cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Clagiraba businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Clagiraba Gold Coast',
+      alt: 'Marketing agency gold coast Clagiraba Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant near Clagiraba',
+      alt: 'Southport marketing agency gold coast near Clagiraba',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

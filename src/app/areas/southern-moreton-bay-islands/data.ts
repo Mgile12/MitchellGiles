@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Southern Moreton Bay Islands',
   slug: 'southern-moreton-bay-islands',
-  seoTitle: 'Marketing Consultant Southern Moreton Bay Islands | Predictable Growth Systems | Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Southern Moreton Bay Islands | Predictable Growth Systems | Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Southern Moreton Bay Islands? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for island businesses.',
+    'Looking for a Marketing Agency Gold Coast in Southern Moreton Bay Islands? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for island businesses.',
   heroH1:
-    'Marketing Consultant Southern Moreton Bay Islands \u2013 Built for Island Business Growth',
+    'Marketing Agency Gold Coast Southern Moreton Bay Islands \u2013 Built for Island Business Growth',
   heroIntro: [
     'Running a business on the Southern Moreton Bay Islands is not the same as operating in Brisbane or Surfers Paradise.',
     'Weekend visitors',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Southern Moreton Bay Islands businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Southern Moreton Bay Islands',
-    'Best Marketing Consultant in Southern Moreton Bay Islands',
+    'Marketing Agency Gold Coast Southern Moreton Bay Islands',
+    'Best Marketing Agency Gold Coast in Southern Moreton Bay Islands',
   ],
   ctaNearbyPlaces: [
     'Southern Moreton Bay Islands',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Southern Moreton Bay Islands cost?',
+      question: 'How much does a marketing agency gold coast in Southern Moreton Bay Islands cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Southern Moreton Bay Islands businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Southern Moreton Bay Islands',
+      alt: 'Marketing Agency Gold Coast Southern Moreton Bay Islands',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office',
+      alt: 'Southport marketing agency gold coast office',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',

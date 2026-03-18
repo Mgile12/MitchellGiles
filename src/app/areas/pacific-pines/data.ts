@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Pacific Pines',
   slug: 'pacific-pines',
-  seoTitle: 'Marketing Consultant Pacific Pines | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Pacific Pines | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Pacific Pines. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Pacific Pines. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Pacific Pines \u2013 Systems That Turn Attention Into Revenue',
+    'Marketing Agency Gold Coast Pacific Pines \u2013 Systems That Turn Attention Into Revenue',
   heroIntro: [
     'Pacific Pines is one of the most competitive residential pockets on the northern Gold Coast.',
     'Drive through Pacific Pines Central Park on a weekend and you\u2019ll see exactly why:',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Pacific Pines businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Pacific Pines',
-    'Best Marketing Consultant in Pacific Pines',
+    'Marketing Agency Gold Coast Pacific Pines',
+    'Best Marketing Agency Gold Coast in Pacific Pines',
   ],
   ctaNearbyPlaces: [
     'Pacific Pines',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Pacific Pines cost?',
+      question: 'How much does a marketing agency gold coast in Pacific Pines cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Pacific Pines businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Pacific Pines QLD',
+      alt: 'Marketing Agency Gold Coast Pacific Pines QLD',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',

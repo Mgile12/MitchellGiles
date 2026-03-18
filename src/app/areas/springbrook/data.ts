@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Springbrook',
   slug: 'springbrook',
-  seoTitle: 'Marketing Consultant Springbrook | Predictable Growth for Tourism Businesses',
+  seoTitle: 'Marketing Agency Gold Coast Springbrook | Predictable Growth for Tourism Businesses',
   metaDescription:
-    'Looking for a Marketing Consultant in Springbrook? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable growth for local and tourism businesses.',
+    'Looking for a Marketing Agency Gold Coast in Springbrook? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable growth for local and tourism businesses.',
   heroH1:
-    'Marketing Consultant Springbrook \u2013 Revenue Systems Built for Tourism & Local Growth',
+    'Marketing Agency Gold Coast Springbrook \u2013 Revenue Systems Built for Tourism & Local Growth',
   heroIntro: [
     'Springbrook isn\u2019t Surfers Paradise.',
     'You don\u2019t rely on walk-by traffic. You rely on intention.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Springbrook businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Springbrook',
-    'Best Marketing Consultant in Springbrook',
+    'Marketing Agency Gold Coast Springbrook',
+    'Best Marketing Agency Gold Coast in Springbrook',
   ],
   ctaNearbyPlaces: [
     'Springbrook',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Springbrook cost?',
+      question: 'How much does a marketing agency gold coast in Springbrook cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Springbrook businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Springbrook',
+      alt: 'Marketing Agency Gold Coast Springbrook',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -117,7 +117,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant office',
+      alt: 'Southport marketing agency gold coast office',
     },
   ],
   internalLinks: [

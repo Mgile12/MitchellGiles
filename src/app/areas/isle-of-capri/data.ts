@@ -4,18 +4,18 @@ export const areaData: AreaPageData = {
   name: 'Isle of Capri',
   slug: 'isle-of-capri',
   seoTitle:
-    'Marketing Consultant Isle of Capri | Data-Driven Growth Near Capri on Via Roma',
+    'Marketing Agency Gold Coast Isle of Capri | Data-Driven Growth Near Capri on Via Roma',
   metaDescription:
-    'Looking for the best Marketing Consultant in Isle of Capri? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Isle of Capri? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Isle of Capri \u2013 Data-Driven Growth Near Capri on Via Roma',
+    'Marketing Agency Gold Coast Isle of Capri \u2013 Data-Driven Growth Near Capri on Via Roma',
   heroIntro: [
     'Isle of Capri sits in a unique position on the Gold Coast. Close enough to Surfers Paradise to feel the tourism pull. Residential enough to attract long-term, high-value clients. Premium enough that positioning matters.',
     'If your business operates near Capri on Via Roma, along Salacia Waters, or across the Isle of Capri Bridge, you already know: marketing here requires precision.',
     'Based at 82 Marine Parade, Southport, QLD 4215, under 10 minutes from Isle of Capri via Bundall Road. We help Isle of Capri businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Isle of Capri Businesses Need a Smarter Marketing Consultant',
+    'Why Isle of Capri Businesses Need a Smarter Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Search intent changes suburb to suburb. Someone typing restaurant Capri on Via Roma behaves differently from someone searching best service Isle of Capri.',
   ],
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Premium marketing systems designed for Isle of Capri\u2019s affluent, waterfront market.',
   seoTargets: [
-    'Marketing Consultant Isle of Capri',
-    'Best Marketing Consultant near Capri on Via Roma',
+    'Marketing Agency Gold Coast Isle of Capri',
+    'Best Marketing Agency Gold Coast near Capri on Via Roma',
   ],
   ctaNearbyPlaces: [
     'Capri on Via Roma',
@@ -111,11 +111,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Isle of Capri strategy session',
+      alt: 'Marketing agency gold coast Isle of Capri strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Capri on Via Roma',
+      alt: 'Mitchell Giles marketing agency gold coast near Capri on Via Roma',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

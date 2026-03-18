@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Bilinga',
   slug: 'bilinga',
   seoTitle:
-    'Marketing Consultant Bilinga | Predictable Growth Near Bilinga Beach',
+    'Marketing Agency Gold Coast Bilinga | Predictable Growth Near Bilinga Beach',
   metaDescription:
-    'Looking for the best Marketing Consultant in Bilinga? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bilinga? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Bilinga \u2013 Revenue Systems Built for Coastal Businesses',
+    'Marketing Agency Gold Coast Bilinga \u2013 Revenue Systems Built for Coastal Businesses',
   heroIntro: [
     'Bilinga does not feel like the rest of the Gold Coast. It is quieter. Morning walks along Bilinga Beach. Aircraft overhead from Gold Coast Airport. Holiday homes and boutique stays scattered along Golden Four Drive.',
     'It is calm on the surface. But for business owners, the pressure is real. Tourism spikes. Off-season dips. Competition from Tugun and Coolangatta.',
     'Located at 82 Marine Parade, Southport, QLD 4215, approximately 40 minutes north of Bilinga. We help Bilinga businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Bilinga Businesses Need a Different Type of Marketing Consultant',
+    'Why Bilinga Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search intent shifts suburb by suburb. Someone searching holiday stay near Bilinga Beach behaves differently from someone typing marketing consultant Bilinga.',
+    'Search intent shifts suburb by suburb. Someone searching holiday stay near Bilinga Beach behaves differently from someone typing marketing agency gold coast Bilinga.',
   ],
   whyDifferentPoints: [
     'Airport-driven booking cycles create unique demand patterns',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems for Bilinga\u2019s quiet coastal market where airport proximity and tourism seasonality drive business.',
   seoTargets: [
-    'Marketing Consultant Bilinga',
-    'Best Marketing Consultant near Bilinga Beach',
+    'Marketing Agency Gold Coast Bilinga',
+    'Best Marketing Agency Gold Coast near Bilinga Beach',
   ],
   ctaNearbyPlaces: [
     'Bilinga Beach',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Bilinga strategy session',
+      alt: 'Marketing agency gold coast Bilinga strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Bilinga Beach',
+      alt: 'Mitchell Giles marketing agency gold coast near Bilinga Beach',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

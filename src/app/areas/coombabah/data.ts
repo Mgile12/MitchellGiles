@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Coombabah',
   slug: 'coombabah',
-  seoTitle: 'Marketing Consultant Coombabah | Growth Systems Near Coombabah Lakelands',
+  seoTitle: 'Marketing Agency Gold Coast Coombabah | Growth Systems Near Coombabah Lakelands',
   metaDescription:
-    'Looking for the best Marketing Consultant in Coombabah? Data-driven, transparent revenue systems near Coombabah Lakelands Conservation Area. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Coombabah? Data-driven, transparent revenue systems near Coombabah Lakelands Conservation Area. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Coombabah \u2013 Revenue Systems That Scale',
+    'Marketing Agency Gold Coast Coombabah \u2013 Revenue Systems That Scale',
   heroIntro: [
     'Coombabah isn\u2019t flashy.',
     'It\u2019s consistent. Established. Community-focused.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Coombabah businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Coombabah',
-    'Best Marketing Consultant in Coombabah',
+    'Marketing Agency Gold Coast Coombabah',
+    'Best Marketing Agency Gold Coast in Coombabah',
   ],
   ctaNearbyPlaces: [
     'Coombabah',
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Coombabah Gold Coast',
+      alt: 'Marketing agency gold coast Coombabah Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant near Coombabah',
+      alt: 'Southport marketing agency gold coast near Coombabah',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

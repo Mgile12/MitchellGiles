@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Woongoolba',
   slug: 'woongoolba',
-  seoTitle: 'Marketing Consultant Woongoolba | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Woongoolba | Predictable Growth Systems | Mitchell Giles Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Woongoolba? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. No generic packages. Proven ROI. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Woongoolba? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. No generic packages. Proven ROI. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Woongoolba \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Woongoolba \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'If you run a business in Woongoolba, you already know this:',
     'You don\u2019t need \u201cmore marketing ideas.\u201d You need revenue that shows up consistently.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Woongoolba businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Woongoolba',
-    'Best Marketing Consultant in Woongoolba',
+    'Marketing Agency Gold Coast Woongoolba',
+    'Best Marketing Agency Gold Coast in Woongoolba',
   ],
   ctaNearbyPlaces: [
     'Woongoolba',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Woongoolba cost?',
+      question: 'How much does a marketing agency gold coast in Woongoolba cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Woongoolba businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Woongoolba strategy session',
+      alt: 'Marketing Agency Gold Coast Woongoolba strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Gold Coast office Southport',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast office Southport',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

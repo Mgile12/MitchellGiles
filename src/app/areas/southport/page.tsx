@@ -3,13 +3,13 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 import SouthportContent from './SouthportContent';
 
 export const metadata: Metadata = {
-  title: 'Marketing Consultant Southport | Local Marketing Services Southport QLD',
+  title: 'Marketing Agency Gold Coast Southport | Local Marketing Services Southport QLD',
   description:
-    'Southport marketing consultant specialising in SEO, Google Ads, email marketing, lead generation and automation. Based at 82 Marine Parade, Southport QLD 4215. Book a strategy session.',
+    'Southport marketing agency gold coast specialising in SEO, Google Ads, email marketing, lead generation and automation. Based at 82 Marine Parade, Southport QLD 4215. Book a strategy session.',
   openGraph: {
-    title: 'Marketing Consultant Southport | Mitchell Giles Marketing',
+    title: 'Marketing Agency Gold Coast Southport | Mitchell Giles Marketing',
     description:
-      'Local marketing consultant in Southport QLD. SEO, Google Ads, email marketing, lead generation and automation for Southport businesses.',
+      'Local marketing agency gold coast in Southport QLD. SEO, Google Ads, email marketing, lead generation and automation for Southport businesses.',
     type: 'website',
     url: `${BUSINESS_INFO.url}/areas/southport`,
     locale: 'en_AU',
@@ -34,7 +34,7 @@ const faqItems = [
     answer: 'SEO, Google Ads, email marketing, lead generation, digital marketing strategy, and marketing automation. All designed for local Gold Coast businesses.',
   },
   {
-    question: 'How is working with a local Southport consultant different?',
+    question: 'How is working with a local Southport marketing agency gold coast different?',
     answer: 'You get someone who understands the Gold Coast market, the local competition, and the seasonal patterns. No generic strategies from interstate agencies.',
   },
   {

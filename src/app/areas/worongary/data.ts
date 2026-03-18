@@ -3,17 +3,17 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Worongary',
   slug: 'worongary',
-  seoTitle: 'Marketing Consultant Worongary | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Worongary | Predictable Growth Systems | Mitchell Giles Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Worongary? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. Proven ROI. No generic packages. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Worongary? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. Proven ROI. No generic packages. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Worongary \u2013 Predictable Growth for Local Gold Coast Businesses',
+    'Marketing Agency Gold Coast Worongary \u2013 Predictable Growth for Local Gold Coast Businesses',
   heroIntro: [
     'If you run a business in Worongary, you already know something most agencies don\u2019t:',
     'You\u2019re not competing just in Worongary.',
     'You\u2019re competing across Robina. Carrara. Mudgeeraba. Nerang. Sometimes Brisbane.',
   ],
-  whyDifferentTitle: 'Why Worongary Businesses Need a Different Kind of Marketing Consultant',
+  whyDifferentTitle: 'Why Worongary Businesses Need a Different Kind of Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Search visibility across the Gold Coast Search behaviour shifts suburb to suburb:',
   ],
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Worongary businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Worongary',
-    'Best Marketing Consultant in Worongary',
+    'Marketing Agency Gold Coast Worongary',
+    'Best Marketing Agency Gold Coast in Worongary',
   ],
   ctaNearbyPlaces: [
     'Worongary',
@@ -46,7 +46,7 @@ export const areaData: AreaPageData = {
   directions: [
     'Worongary',
     'Office location:',
-    'Mitchell Giles Marketing Consultant Gold Coast',
+    'Mitchell Giles Marketing Agency Gold Coast',
     'Head via Worongary Road to the M1',
     'Approximately 20\u201325 minutes by car',
   ],
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Worongary cost?',
+      question: 'How much does a marketing agency gold coast in Worongary cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Worongary businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Worongary strategy session',
+      alt: 'Marketing agency gold coast Worongary strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

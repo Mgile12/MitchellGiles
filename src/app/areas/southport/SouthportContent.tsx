@@ -88,7 +88,7 @@ export default function SouthportContent({ faqItems }: Props) {
             <div>
               <span className="inline-block text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5 font-sans">Southport QLD</span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 font-serif">
-                Marketing Consultant Southport
+                Marketing Agency Gold Coast Southport
               </h1>
               <div className="space-y-4 mb-10">
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">

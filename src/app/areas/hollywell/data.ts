@@ -4,18 +4,18 @@ export const areaData: AreaPageData = {
   name: 'Hollywell',
   slug: 'hollywell',
   seoTitle:
-    'Marketing Consultant Hollywell | Data-Driven Growth \u2013 Mitchell Giles Gold Coast',
+    'Marketing Agency Gold Coast Hollywell | Data-Driven Growth \u2013 Mitchell Giles Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Consultant in Hollywell? Mitchell Giles Marketing Consultant delivers data-driven, revenue-focused growth systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Hollywell? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant in Hollywell \u2013 Data-Driven Growth for Gold Coast Businesses',
+    'Marketing Agency Gold Coast in Hollywell \u2013 Data-Driven Growth for Gold Coast Businesses',
   heroIntro: [
     'If you run a business in Hollywell, you already know something most agencies do not: the Gold Coast does not behave like other markets. Demand shifts with tourism. Search intent changes suburb to suburb.',
     'If your office or shop sits near Jabiru Island Park, the Broadwater, or along Bayview Street, your customers move differently than someone in Robina or Nerang.',
     'Located at 82 Marine Parade, Southport, QLD 4215, just minutes from Hollywell, we work with Northern Gold Coast businesses who want one thing: predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Hollywell Businesses Need a Different Kind of Marketing Consultant',
+    'Why Hollywell Businesses Need a Different Kind of Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Hollywell is unique. You have Broadwater-facing residential pockets, marine businesses, trades servicing Paradise Point and Runaway Bay, hospitality operators relying on weekend spikes, and service businesses dependent on local word-of-mouth.',
   ],
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems designed specifically for Hollywell and Northern Gold Coast businesses.',
   seoTargets: [
-    'Marketing Consultant Hollywell',
-    'Best Marketing Consultant near Jabiru Island Park',
+    'Marketing Agency Gold Coast Hollywell',
+    'Best Marketing Agency Gold Coast near Jabiru Island Park',
   ],
   ctaNearbyPlaces: [
     'Jabiru Island Park',
@@ -107,11 +107,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Hollywell Gold Coast strategy session',
+      alt: 'Marketing agency gold coast Hollywell Gold Coast strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Jabiru Island Park',
+      alt: 'Mitchell Giles marketing agency gold coast near Jabiru Island Park',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

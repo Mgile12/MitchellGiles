@@ -4,18 +4,18 @@ export const areaData: AreaPageData = {
   name: 'Chevron Island',
   slug: 'chevron-island',
   seoTitle:
-    'Marketing Consultant Chevron Island | Data-Driven Growth Near HOTA',
+    'Marketing Agency Gold Coast Chevron Island | Data-Driven Growth Near HOTA',
   metaDescription:
-    'Looking for the best Marketing Consultant in Chevron Island? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Chevron Island? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Chevron Island \u2013 Predictable Growth Near HOTA',
+    'Marketing Agency Gold Coast Chevron Island \u2013 Predictable Growth Near HOTA',
   heroIntro: [
     'Chevron Island sits in a unique pocket of the Gold Coast. Close enough to Surfers Paradise to feel the tourism flow. Quiet enough to build loyal local clientele. Creative enough, thanks to HOTA (Home of the Arts), to attract artists, hospitality venues and boutique brands.',
     'But marketing here requires nuance. Weekend spikes do not equal consistent revenue. Event traffic near HOTA does not guarantee conversions.',
     'Located at 82 Marine Parade, Southport, QLD 4215, less than a 10-minute drive from Chevron Island. We help Chevron Island businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Chevron Island Businesses Need a Smarter Marketing Consultant',
+    'Why Chevron Island Businesses Need a Smarter Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Search behaviour changes by suburb. Someone searching restaurant near HOTA behaves differently from someone typing best cafe Chevron Island.',
   ],
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Chevron Island\u2019s creative, community-oriented market near HOTA.',
   seoTargets: [
-    'Marketing Consultant Chevron Island',
-    'Best Marketing Consultant near HOTA',
+    'Marketing Agency Gold Coast Chevron Island',
+    'Best Marketing Agency Gold Coast near HOTA',
   ],
   ctaNearbyPlaces: [
     'HOTA (Home of the Arts)',
@@ -109,11 +109,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Chevron Island strategy session',
+      alt: 'Marketing agency gold coast Chevron Island strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near HOTA',
+      alt: 'Mitchell Giles marketing agency gold coast near HOTA',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -4,18 +4,18 @@ export const areaData: AreaPageData = {
   name: 'Labrador',
   slug: 'labrador',
   seoTitle:
-    'Marketing Consultant Labrador | Data-Driven Growth Near The Grand Hotel',
+    'Marketing Agency Gold Coast Labrador | Data-Driven Growth Near The Grand Hotel',
   metaDescription:
-    'Looking for the best Marketing Consultant in Labrador? Mitchell Giles Marketing Consultant Gold Coast delivers data-driven, revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Labrador? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers data-driven, revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Labrador \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Labrador \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Labrador is not Surfers Paradise. And it does not behave like Robina either. Along Marine Parade near The Grand Hotel, you get weekend traffic, Broadwater walkers, boating families, and seasonal tourism spikes.',
     'Move inland toward Central Street or Chirn Park and you are dealing with local residents, tradies, professionals and repeat customers. If your marketing treats Labrador like a generic suburb, you will waste money.',
     'Located at 82 Marine Parade, Southport, QLD 4215, just minutes from Labrador along the Broadwater. We work with businesses across Labrador who want one thing: predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Labrador Businesses Need a Different Kind of Marketing Consultant',
+    'Why Labrador Businesses Need a Different Kind of Marketing Agency Gold Coast',
   whyDifferentIntro: [
     'Labrador is Broadwater-driven. Foot traffic changes during school holidays. Tourism affects hospitality bookings. Local trades rely on suburb-specific search.',
   ],
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Labrador\u2019s unique mix of Broadwater tourism and residential services.',
   seoTargets: [
-    'Marketing Consultant Labrador',
-    'Best Marketing Consultant near The Grand Hotel',
+    'Marketing Agency Gold Coast Labrador',
+    'Best Marketing Agency Gold Coast near The Grand Hotel',
   ],
   ctaNearbyPlaces: [
     'The Grand Hotel',
@@ -107,11 +107,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Labrador strategy session',
+      alt: 'Marketing agency gold coast Labrador strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near The Grand Hotel',
+      alt: 'Mitchell Giles marketing agency gold coast near The Grand Hotel',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

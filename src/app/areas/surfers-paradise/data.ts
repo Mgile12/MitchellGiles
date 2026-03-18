@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Surfers Paradise',
   slug: 'surfers-paradise',
-  seoTitle: 'Marketing Consultant Surfers Paradise | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Surfers Paradise | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Surfers Paradise. Data-driven growth systems, local expertise, proven ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Surfers Paradise. Data-driven growth systems, local expertise, proven ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Surfers Paradise \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Surfers Paradise \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Surfers Paradise doesn\u2019t operate like every other suburb. Between the Q1 skyline, Cavill Avenue foot traffic, and constant tourist flow, competition is relentless. Visibility is easy. Conversion is not.',
-    'If you are searching for a Marketing Consultant in Surfers Paradise, you likely do not need more brand awareness. You need revenue consistency.',
+    'If you are searching for a Marketing Agency Gold Coast in Surfers Paradise, you likely do not need more brand awareness. You need revenue consistency.',
     'Located at 82 Marine Parade, Southport QLD 4215, just minutes from Surfers Paradise, the focus is not vanity metrics. It is predictable growth.',
   ],
   whyDifferentTitle:
@@ -35,8 +35,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Every marketing channel designed to work together as one compounding revenue system for Surfers Paradise businesses.',
   seoTargets: [
-    'Marketing Consultant Surfers Paradise',
-    'Best Marketing Consultant near SkyPoint Observation Deck',
+    'Marketing Agency Gold Coast Surfers Paradise',
+    'Best Marketing Agency Gold Coast near SkyPoint Observation Deck',
   ],
   ctaNearbyPlaces: [
     'Cavill Avenue',
@@ -63,7 +63,7 @@ export const areaData: AreaPageData = {
   faqItems: [
     {
       question:
-        'How much does a marketing consultant in Surfers Paradise cost?',
+        'How much does a marketing agency gold coast in Surfers Paradise cost?',
       answer:
         'Investment varies based on your business goals and the channels required. Most Surfers Paradise businesses invest between $2,000 and $8,000 per month for a structured marketing system. A strategy session will clarify exactly what you need.',
     },
@@ -107,7 +107,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Surfers Paradise business owner',
+      alt: 'Marketing agency gold coast meeting Surfers Paradise business owner',
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',

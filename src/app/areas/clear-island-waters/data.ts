@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Clear Island Waters',
   slug: 'clear-island-waters',
-  seoTitle: 'Marketing Consultant Clear Island Waters | Growth Systems Near Surfers Paradise Golf Club',
+  seoTitle: 'Marketing Agency Gold Coast Clear Island Waters | Growth Systems Near Surfers Paradise Golf Club',
   metaDescription:
-    'Looking for the best Marketing Consultant in Clear Island Waters? Data-driven growth systems with full transparency. Call 0474 870 535 today.',
+    'Looking for the best Marketing Agency Gold Coast in Clear Island Waters? Data-driven growth systems with full transparency. Call 0474 870 535 today.',
   heroH1:
-    'Marketing Consultant Clear Island Waters \u2013 Data-Driven Growth for Premium Gold Coast Businesses',
+    'Marketing Agency Gold Coast Clear Island Waters \u2013 Data-Driven Growth for Premium Gold Coast Businesses',
   heroIntro: [
     'Clear Island Waters is not a volume suburb.',
     'It\u2019s established. Professional. High-value.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Clear Island Waters businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Clear Island Waters',
-    'Best Marketing Consultant in Clear Island Waters',
+    'Marketing Agency Gold Coast Clear Island Waters',
+    'Best Marketing Agency Gold Coast in Clear Island Waters',
   ],
   ctaNearbyPlaces: [
     'Clear Island Waters',
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Clear Island Waters Gold Coast',
+      alt: 'Marketing agency gold coast Clear Island Waters Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant near Clear Island Waters',
+      alt: 'Southport marketing agency gold coast near Clear Island Waters',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

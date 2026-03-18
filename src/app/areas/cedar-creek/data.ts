@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Cedar Creek',
   slug: 'cedar-creek',
-  seoTitle: 'Marketing Consultant Cedar Creek | Data-Driven Growth Near Cedar Creek Falls',
+  seoTitle: 'Marketing Agency Gold Coast Cedar Creek | Data-Driven Growth Near Cedar Creek Falls',
   metaDescription:
-    'Looking for the best Marketing Consultant in Cedar Creek? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Cedar Creek? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Cedar Creek \u2013 Data-Driven Growth for Local Operators',
+    'Marketing Agency Gold Coast Cedar Creek \u2013 Data-Driven Growth for Local Operators',
   heroIntro: [
     'Cedar Creek operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Cedar Creek, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Cedar Creek, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Cedar Creek businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Cedar Creek Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Cedar Creek businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Cedar Creek',
-    'Best Marketing Consultant in Cedar Creek',
+    'Marketing Agency Gold Coast Cedar Creek',
+    'Best Marketing Agency Gold Coast in Cedar Creek',
   ],
   ctaNearbyPlaces: [
     'Cedar Creek',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Cedar Creek cost?',
+      question: 'How much does a marketing agency gold coast in Cedar Creek cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Cedar Creek businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Cedar Creek Gold Coast',
+      alt: 'Marketing agency gold coast Cedar Creek Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant near Cedar Creek',
+      alt: 'Southport marketing agency gold coast near Cedar Creek',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

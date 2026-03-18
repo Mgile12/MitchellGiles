@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Willow Vale',
   slug: 'willow-vale',
-  seoTitle: 'Marketing Consultant Willow Vale | Data-Driven Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Willow Vale | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Willow Vale? Mitchell Giles builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Willow Vale? Mitchell Giles builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
   heroH1:
-    'Marketing Consultant Willow Vale \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Willow Vale \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Willow Vale operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Willow Vale, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Willow Vale, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Willow Vale businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Willow Vale Businesses Need Smarter Marketing Systems',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Willow Vale businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Willow Vale',
-    'Best Marketing Consultant in Willow Vale',
+    'Marketing Agency Gold Coast Willow Vale',
+    'Best Marketing Agency Gold Coast in Willow Vale',
   ],
   ctaNearbyPlaces: [
     'Willow Vale',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Willow Vale cost?',
+      question: 'How much does a marketing agency gold coast in Willow Vale cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Willow Vale businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Willow Vale',
+      alt: 'Marketing Agency Gold Coast Willow Vale',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

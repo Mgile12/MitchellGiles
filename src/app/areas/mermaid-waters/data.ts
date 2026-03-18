@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Mermaid Waters',
   slug: 'mermaid-waters',
-  seoTitle: 'Marketing Consultant Mermaid Waters | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Mermaid Waters | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Mermaid Waters. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Mermaid Waters. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Mermaid Waters \u2013 Predictable Growth for Coastal Businesses',
+    'Marketing Agency Gold Coast Mermaid Waters \u2013 Predictable Growth for Coastal Businesses',
   heroIntro: [
     'Mermaid Waters sits quietly behind the coastline \u2014 but the competition is anything but quiet.',
     'Between Lake Hugh Muntz, Sunshine Boulevard and the Pacific Fair commercial zone, businesses here compete with:',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Mermaid Waters businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Mermaid Waters',
-    'Best Marketing Consultant in Mermaid Waters',
+    'Marketing Agency Gold Coast Mermaid Waters',
+    'Best Marketing Agency Gold Coast in Mermaid Waters',
   ],
   ctaNearbyPlaces: [
     'Mermaid Waters',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Mermaid Waters cost?',
+      question: 'How much does a marketing agency gold coast in Mermaid Waters cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Mermaid Waters businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Mermaid Waters Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Mermaid Waters Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cLake Hugh Muntz near marketing consultant service area\u201d',
+      alt: '\u201cLake Hugh Muntz near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

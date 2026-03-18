@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Merrimac',
   slug: 'merrimac',
-  seoTitle: 'Marketing Consultant Merrimac | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Merrimac | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Merrimac. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Merrimac. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Merrimac \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Merrimac \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Merrimac is quiet residential on the surface.',
     'But commercially? It\u2019s strategically placed.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Merrimac businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Merrimac',
-    'Best Marketing Consultant in Merrimac',
+    'Marketing Agency Gold Coast Merrimac',
+    'Best Marketing Agency Gold Coast in Merrimac',
   ],
   ctaNearbyPlaces: [
     'Merrimac',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Merrimac cost?',
+      question: 'How much does a marketing agency gold coast in Merrimac cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Merrimac businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant serving Merrimac Gold Coast',
+      alt: 'Marketing Agency Gold Coast serving Merrimac Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

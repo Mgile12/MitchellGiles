@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Austinville',
   slug: 'austinville',
-  seoTitle: 'Marketing Consultant Austinville | Data-Driven Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Austinville | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Consultant in Austinville? Mitchell Giles Marketing Consultant Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Austinville? Mitchell Giles Marketing Agency Gold Coast Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Austinville \u2013 Revenue Systems Built for Sustainable Growth',
+    'Marketing Agency Gold Coast Austinville \u2013 Revenue Systems Built for Sustainable Growth',
   heroIntro: [
     'Austinville operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Austinville, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Austinville, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Austinville businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Austinville Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Austinville businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Austinville',
-    'Best Marketing Consultant in Austinville',
+    'Marketing Agency Gold Coast Austinville',
+    'Best Marketing Agency Gold Coast in Austinville',
   ],
   ctaNearbyPlaces: [
     'Austinville',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Austinville cost?',
+      question: 'How much does a marketing agency gold coast in Austinville cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Austinville businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Austinville strategy session',
+      alt: 'Marketing agency gold coast Austinville strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Upper Coomera',
   slug: 'upper-coomera',
-  seoTitle: 'Marketing Consultant Upper Coomera | Predictable Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Upper Coomera | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Looking for a Marketing Consultant in Upper Coomera? Mitchell Giles builds data-driven marketing systems delivering measurable leads and scalable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Upper Coomera? Mitchell Giles builds data-driven marketing systems delivering measurable leads and scalable growth across the Gold Coast.',
   heroH1:
-    'Marketing Consultant Upper Coomera \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Upper Coomera \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Upper Coomera operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Upper Coomera, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Upper Coomera, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Upper Coomera businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Upper Coomera Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Upper Coomera businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Upper Coomera',
-    'Best Marketing Consultant in Upper Coomera',
+    'Marketing Agency Gold Coast Upper Coomera',
+    'Best Marketing Agency Gold Coast in Upper Coomera',
   ],
   ctaNearbyPlaces: [
     'Upper Coomera',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Upper Coomera cost?',
+      question: 'How much does a marketing agency gold coast in Upper Coomera cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Upper Coomera businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Upper Coomera',
+      alt: 'Marketing Agency Gold Coast Upper Coomera',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

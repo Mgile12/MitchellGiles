@@ -3,8 +3,8 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 import AreaPlaceholderContent from '../AreaPlaceholderContent';
 
 export const metadata: Metadata = {
-  title: 'Marketing Consultant South East Queensland | Regional Marketing Coverage',
-  description: 'Marketing consultant serving South East Queensland. SEO, Google Ads, email marketing and lead generation across the SEQ corridor from Gold Coast to Brisbane.',
+  title: 'Marketing Agency Gold Coast South East Queensland | Regional Marketing Coverage',
+  description: 'Marketing agency gold coast serving South East Queensland. SEO, Google Ads, email marketing and lead generation across the SEQ corridor from Gold Coast to Brisbane.',
   alternates: { canonical: `${BUSINESS_INFO.url}/areas/south-east-queensland` },
 };
 

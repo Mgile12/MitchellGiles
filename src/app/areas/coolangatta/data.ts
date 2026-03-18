@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Coolangatta',
   slug: 'coolangatta',
   seoTitle:
-    'Marketing Consultant Coolangatta | Predictable Growth Near Snapper Rocks',
+    'Marketing Agency Gold Coast Coolangatta | Predictable Growth Near Snapper Rocks',
   metaDescription:
-    'Looking for the best Marketing Consultant in Coolangatta? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Coolangatta? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Coolangatta \u2013 Revenue Systems Built for Southern Gold Coast Businesses',
+    'Marketing Agency Gold Coast Coolangatta \u2013 Revenue Systems Built for Southern Gold Coast Businesses',
   heroIntro: [
     'Coolangatta is iconic. Sunrise at Snapper Rocks. Families on Coolangatta Beach. Visitors shopping at The Strand. Surfers lining up at first light. Flights landing overhead every hour.',
     'It feels vibrant. But for business owners, it is intense. Tourism surges. Surf events spike traffic. Long weekends bring chaos. Midweek can slow dramatically.',
     'Located at 82 Marine Parade, Southport, QLD 4215, approximately 40 minutes north of Coolangatta. We help Coolangatta businesses build predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Coolangatta Businesses Need a Different Type of Marketing Consultant',
+    'Why Coolangatta Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search intent changes suburb to suburb. Someone searching restaurant near Snapper Rocks behaves differently from someone typing marketing consultant Coolangatta.',
+    'Search intent changes suburb to suburb. Someone searching restaurant near Snapper Rocks behaves differently from someone typing marketing agency gold coast Coolangatta.',
   ],
   whyDifferentPoints: [
     'Airport-driven booking cycles create unique demand patterns',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems for Coolangatta\u2019s iconic southern Gold Coast tourism and hospitality market.',
   seoTargets: [
-    'Marketing Consultant Coolangatta',
-    'Best Marketing Consultant near Snapper Rocks',
+    'Marketing Agency Gold Coast Coolangatta',
+    'Best Marketing Agency Gold Coast near Snapper Rocks',
   ],
   ctaNearbyPlaces: [
     'Snapper Rocks',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Coolangatta strategy session',
+      alt: 'Marketing agency gold coast Coolangatta strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near Snapper Rocks',
+      alt: 'Mitchell Giles marketing agency gold coast near Snapper Rocks',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

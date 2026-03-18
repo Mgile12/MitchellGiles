@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Natural Bridge',
   slug: 'natural-bridge',
-  seoTitle: 'Marketing Consultant Natural Bridge | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Natural Bridge | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Natural Bridge. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Natural Bridge. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Natural Bridge \u2013 Revenue Systems for Hinterland Businesses',
+    'Marketing Agency Gold Coast Natural Bridge \u2013 Revenue Systems for Hinterland Businesses',
   heroIntro: [
     'Natural Bridge is one of the most photographed spots in South East Queensland.',
     'Visitors drive up to Springbrook National Park for waterfalls, glow worms and rainforest walks.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Natural Bridge businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Natural Bridge',
-    'Best Marketing Consultant in Natural Bridge',
+    'Marketing Agency Gold Coast Natural Bridge',
+    'Best Marketing Agency Gold Coast in Natural Bridge',
   ],
   ctaNearbyPlaces: [
     'Natural Bridge',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Natural Bridge cost?',
+      question: 'How much does a marketing agency gold coast in Natural Bridge cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Natural Bridge businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Natural Bridge Gold Coast',
+      alt: 'Marketing Agency Gold Coast Natural Bridge Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',

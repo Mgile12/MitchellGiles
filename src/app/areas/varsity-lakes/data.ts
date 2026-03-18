@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Varsity Lakes',
   slug: 'varsity-lakes',
-  seoTitle: 'Marketing Consultant Varsity Lakes | Predictable Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Varsity Lakes | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Searching for a Marketing Consultant in Varsity Lakes? Mitchell Giles builds data-driven marketing systems that deliver measurable leads and scalable revenue across the Gold Coast.',
+    'Searching for a Marketing Agency Gold Coast in Varsity Lakes? Mitchell Giles builds data-driven marketing systems that deliver measurable leads and scalable revenue across the Gold Coast.',
   heroH1:
-    'Marketing Consultant Varsity Lakes \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Varsity Lakes \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Varsity Lakes operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Varsity Lakes, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Varsity Lakes, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Varsity Lakes businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Varsity Lakes Businesses Need a Different Kind of Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Varsity Lakes businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Varsity Lakes',
-    'Best Marketing Consultant in Varsity Lakes',
+    'Marketing Agency Gold Coast Varsity Lakes',
+    'Best Marketing Agency Gold Coast in Varsity Lakes',
   ],
   ctaNearbyPlaces: [
     'Varsity Lakes',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Varsity Lakes cost?',
+      question: 'How much does a marketing agency gold coast in Varsity Lakes cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Varsity Lakes businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Varsity Lakes',
+      alt: 'Marketing Agency Gold Coast Varsity Lakes',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',

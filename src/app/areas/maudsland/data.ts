@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Maudsland',
   slug: 'maudsland',
-  seoTitle: 'Marketing Consultant Maudsland | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Maudsland | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Maudsland. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Maudsland. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Maudsland \u2013 Predictable Growth for Northern Gold Coast Businesses',
+    'Marketing Agency Gold Coast Maudsland \u2013 Predictable Growth for Northern Gold Coast Businesses',
   heroIntro: [
     'Maudsland isn\u2019t a tourist strip.',
     'It\u2019s growth corridors. Family homes. New estates. Businesses servicing Upper Coomera, Helensvale and Oxenford.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Maudsland businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Maudsland',
-    'Best Marketing Consultant in Maudsland',
+    'Marketing Agency Gold Coast Maudsland',
+    'Best Marketing Agency Gold Coast in Maudsland',
   ],
   ctaNearbyPlaces: [
     'Maudsland',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Maudsland cost?',
+      question: 'How much does a marketing agency gold coast in Maudsland cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Maudsland businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Maudsland Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Maudsland Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cParklake Park Maudsland near marketing consultant service area\u201d',
+      alt: '\u201cParklake Park Maudsland near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

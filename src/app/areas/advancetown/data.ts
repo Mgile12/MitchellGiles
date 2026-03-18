@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Advancetown',
   slug: 'advancetown',
-  seoTitle: 'Marketing Consultant Advancetown | Predictable Growth Near Hinze Dam',
+  seoTitle: 'Marketing Agency Gold Coast Advancetown | Predictable Growth Near Hinze Dam',
   metaDescription:
-    'Looking for the best Marketing Consultant in Advancetown? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Advancetown? Mitchell Giles Marketing Agency Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Advancetown \u2013 Revenue Systems Built for Hinterland Businesses',
+    'Marketing Agency Gold Coast Advancetown \u2013 Revenue Systems Built for Hinterland Businesses',
   heroIntro: [
     'Advancetown operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Advancetown, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Advancetown, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Advancetown businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Advancetown Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Advancetown businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Advancetown',
-    'Best Marketing Consultant in Advancetown',
+    'Marketing Agency Gold Coast Advancetown',
+    'Best Marketing Agency Gold Coast in Advancetown',
   ],
   ctaNearbyPlaces: [
     'Advancetown',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Advancetown cost?',
+      question: 'How much does a marketing agency gold coast in Advancetown cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Advancetown businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Advancetown strategy session',
+      alt: 'Marketing Agency Gold Coast Advancetown strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant near Hinze Dam',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast near Hinze Dam',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Ashmore',
   slug: 'ashmore',
-  seoTitle: 'Marketing Consultant Ashmore | Data-Driven Growth Systems Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Ashmore | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Consultant in Ashmore? Mitchell Giles Marketing Consultant Gold Coast delivers transparent, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Ashmore? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers transparent, revenue-focused systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Ashmore \u2013 Revenue Systems That Actually Scale',
+    'Marketing Agency Gold Coast Ashmore \u2013 Revenue Systems That Actually Scale',
   heroIntro: [
     'Ashmore operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Ashmore, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Ashmore, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Ashmore businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Ashmore Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Ashmore businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Ashmore',
-    'Best Marketing Consultant in Ashmore',
+    'Marketing Agency Gold Coast Ashmore',
+    'Best Marketing Agency Gold Coast in Ashmore',
   ],
   ctaNearbyPlaces: [
     'Ashmore',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Ashmore cost?',
+      question: 'How much does a marketing agency gold coast in Ashmore cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Ashmore businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Ashmore strategy meeting',
+      alt: 'Marketing agency gold coast Ashmore strategy meeting',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Ashmore Plaza business marketing consultant',
+      alt: 'Ashmore Plaza business marketing agency gold coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -4,20 +4,20 @@ export const areaData: AreaPageData = {
   name: 'Miami',
   slug: 'miami',
   seoTitle:
-    'Marketing Consultant Miami | Data-Driven Growth Near North Burleigh Lookout',
+    'Marketing Agency Gold Coast Miami | Data-Driven Growth Near North Burleigh Lookout',
   metaDescription:
-    'Looking for the best Marketing Consultant in Miami? Mitchell Giles Marketing Consultant Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Miami? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Miami \u2013 Data-Driven Growth for Gold Coast Businesses',
+    'Marketing Agency Gold Coast Miami \u2013 Data-Driven Growth for Gold Coast Businesses',
   heroIntro: [
     'Miami has its own energy. Early morning surf traffic near North Burleigh Lookout. Busy evenings around Miami Marketta. Fitness studios, cafes and lifestyle brands lining the Gold Coast Highway. Local residents who value quality \u2014 not gimmicks.',
     'But that energy creates competition. If your marketing relies on weekend foot traffic alone, revenue fluctuates.',
     'Located at 82 Marine Parade, Southport, QLD 4215, around 20 minutes north of Miami. We work with Miami businesses who want predictable growth.',
   ],
   whyDifferentTitle:
-    'Why Miami Businesses Need a Different Type of Marketing Consultant',
+    'Why Miami Businesses Need a Different Type of Marketing Agency Gold Coast',
   whyDifferentIntro: [
-    'Search intent changes suburb to suburb. Someone searching gym near North Burleigh Lookout behaves differently from someone typing marketing consultant Miami.',
+    'Search intent changes suburb to suburb. Someone searching gym near North Burleigh Lookout behaves differently from someone typing marketing agency gold coast Miami.',
   ],
   whyDifferentPoints: [
     'Tourism seasonality creates weekend surges and midweek dips',
@@ -36,8 +36,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Miami\u2019s surf culture, lifestyle and hospitality-driven market.',
   seoTargets: [
-    'Marketing Consultant Miami',
-    'Best Marketing Consultant near North Burleigh Lookout',
+    'Marketing Agency Gold Coast Miami',
+    'Best Marketing Agency Gold Coast near North Burleigh Lookout',
   ],
   ctaNearbyPlaces: [
     'North Burleigh Lookout',
@@ -110,11 +110,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Miami strategy session',
+      alt: 'Marketing agency gold coast Miami strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing consultant near North Burleigh Lookout',
+      alt: 'Mitchell Giles marketing agency gold coast near North Burleigh Lookout',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Highland Park',
   slug: 'highland-park',
-  seoTitle: 'Marketing Consultant Highland Park | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Highland Park | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Highland Park. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Highland Park. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Highland Park \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Highland Park \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Highland Park sits quietly between Nerang and Ashmore \u2014 but the competition isn\u2019t quiet.',
     'If you run a business near William Duncan State School, around Highland Park Shopping Plaza, or along Nerang Broadbeach Road, you\u2019re competing with:',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Highland Park businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Highland Park',
-    'Best Marketing Consultant in Highland Park',
+    'Marketing Agency Gold Coast Highland Park',
+    'Best Marketing Agency Gold Coast in Highland Park',
   ],
   ctaNearbyPlaces: [
     'Highland Park',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Highland Park cost?',
+      question: 'How much does a marketing agency gold coast in Highland Park cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Highland Park businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Highland Park Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Highland Park Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cWilliam Duncan State School near marketing consultant service area\u201d',
+      alt: '\u201cWilliam Duncan State School near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

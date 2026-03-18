@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Nerang',
   slug: 'nerang',
-  seoTitle: 'Marketing Consultant Nerang | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Nerang | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Nerang Cineplex. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Nerang Cineplex. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Nerang \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Nerang \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Nerang is built on real businesses. Trades. Automotive. Construction. Local services. It is not a tourism suburb chasing foot traffic. It is a working community driven by referrals, repeat customers and Google search.',
-    'If you are searching for a Marketing Consultant in Nerang, you are likely not interested in branding fluff. You want consistent leads. You want predictable growth.',
+    'If you are searching for a Marketing Agency Gold Coast in Nerang, you are likely not interested in branding fluff. You want consistent leads. You want predictable growth.',
     'Located at 82 Marine Parade, Southport QLD 4215, just 15\u201318 minutes from Nerang, this is local strategy tailored for the Gold Coast market.',
   ],
   whyDifferentTitle: 'Why Nerang Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Marketing systems built for Nerang\u2019s trade-heavy, service-driven market where consistent enquiries matter most.',
   seoTargets: [
-    'Marketing Consultant Nerang',
-    'Best Marketing Consultant near Nerang Cineplex',
+    'Marketing Agency Gold Coast Nerang',
+    'Best Marketing Agency Gold Coast near Nerang Cineplex',
   ],
   ctaNearbyPlaces: [
     'Nerang Cineplex',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Nerang cost?',
+      question: 'How much does a marketing agency gold coast in Nerang cost?',
       answer:
         'Investment varies based on your business goals and channels required. Most Nerang businesses invest between $2,000 and $8,000 per month for a structured marketing system. A strategy session will clarify the right approach for your business.',
     },
@@ -107,7 +107,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant meeting Nerang business owner',
+      alt: 'Marketing agency gold coast meeting Nerang business owner',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',

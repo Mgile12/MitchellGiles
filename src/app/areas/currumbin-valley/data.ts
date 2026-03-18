@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Currumbin Valley',
   slug: 'currumbin-valley',
-  seoTitle: 'Marketing Consultant Currumbin Valley | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Currumbin Valley | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Currumbin Valley. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Currumbin Valley. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Currumbin Valley \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Currumbin Valley \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'If you run a business in Currumbin Valley, you already know it\u2019s not Surfers Paradise.',
     'It\u2019s quieter. More nature-driven. More local. But it still relies on visibility \u2014 especially when weekend traffic floods toward Currumbin Rock Pools, tourists pass through toward the hinterland, or Gold Coast locals search for services nearby.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Currumbin Valley businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Currumbin Valley',
-    'Best Marketing Consultant in Currumbin Valley',
+    'Marketing Agency Gold Coast Currumbin Valley',
+    'Best Marketing Agency Gold Coast in Currumbin Valley',
   ],
   ctaNearbyPlaces: [
     'Currumbin Valley',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Currumbin Valley cost?',
+      question: 'How much does a marketing agency gold coast in Currumbin Valley cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Currumbin Valley businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Currumbin Valley Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Currumbin Valley Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cCurrumbin Rock Pools near marketing consultant service area\u201d',
+      alt: '\u201cCurrumbin Rock Pools near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

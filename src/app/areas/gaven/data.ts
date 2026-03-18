@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Gaven',
   slug: 'gaven',
-  seoTitle: 'Marketing Consultant Gaven | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Gaven | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Gaven. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Gaven. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Gaven \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Gaven \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Gaven isn\u2019t Surfers Paradise.',
     'It\u2019s practical. Residential. Service-driven.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Gaven businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Gaven',
-    'Best Marketing Consultant in Gaven',
+    'Marketing Agency Gold Coast Gaven',
+    'Best Marketing Agency Gold Coast in Gaven',
   ],
   ctaNearbyPlaces: [
     'Gaven',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Gaven cost?',
+      question: 'How much does a marketing agency gold coast in Gaven cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Gaven businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Gaven Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Gaven Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cDamian Leeding Memorial Park near marketing consultant service area\u201d',
+      alt: '\u201cDamian Leeding Memorial Park near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

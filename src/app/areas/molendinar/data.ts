@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Molendinar',
   slug: 'molendinar',
-  seoTitle: 'Marketing Consultant Molendinar | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Molendinar | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Molendinar. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Molendinar. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Molendinar \u2013 Predictable Growth for Commercial Businesses',
+    'Marketing Agency Gold Coast Molendinar \u2013 Predictable Growth for Commercial Businesses',
   heroIntro: [
     'Molendinar isn\u2019t built on tourism hype.',
     'It\u2019s built on industry.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Molendinar businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Molendinar',
-    'Best Marketing Consultant in Molendinar',
+    'Marketing Agency Gold Coast Molendinar',
+    'Best Marketing Agency Gold Coast in Molendinar',
   ],
   ctaNearbyPlaces: [
     'Molendinar',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Molendinar cost?',
+      question: 'How much does a marketing agency gold coast in Molendinar cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Molendinar businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Molendinar commercial district',
+      alt: 'Marketing Agency Gold Coast Molendinar commercial district',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Consultant Southport office',
+      alt: 'Mitchell Giles Marketing Agency Gold Coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',

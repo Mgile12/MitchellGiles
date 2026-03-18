@@ -3,14 +3,14 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Bundall',
   slug: 'bundall',
-  seoTitle: 'Marketing Consultant Bundall | Data-Driven Growth Near HOTA',
+  seoTitle: 'Marketing Agency Gold Coast Bundall | Data-Driven Growth Near HOTA',
   metaDescription:
-    'Looking for the best Marketing Consultant in Bundall? Mitchell Giles builds revenue-driven systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bundall? Mitchell Giles builds revenue-driven systems with full transparency. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Bundall \u2013 Predictable Growth for Gold Coast Professionals',
+    'Marketing Agency Gold Coast Bundall \u2013 Predictable Growth for Gold Coast Professionals',
   heroIntro: [
     'Bundall operates differently from the coastal strip. Business growth here depends on search visibility, reputation, and structured marketing systems.',
-    'If you are searching for a Marketing Consultant in Bundall, you need predictable growth, not random campaigns or generic packages.',
+    'If you are searching for a Marketing Agency Gold Coast in Bundall, you need predictable growth, not random campaigns or generic packages.',
     'Based at 82 Marine Parade, Southport QLD 4215, servicing Bundall businesses with data-driven marketing systems that compound over time.',
   ],
   whyDifferentTitle: 'Why Bundall Businesses Need Structured Marketing',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Bundall businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Bundall',
-    'Best Marketing Consultant in Bundall',
+    'Marketing Agency Gold Coast Bundall',
+    'Best Marketing Agency Gold Coast in Bundall',
   ],
   ctaNearbyPlaces: [
     'Bundall',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Bundall cost?',
+      question: 'How much does a marketing agency gold coast in Bundall cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Bundall businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Bundall Gold Coast',
+      alt: 'Marketing agency gold coast Bundall Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant near Bundall',
+      alt: 'Southport marketing agency gold coast near Bundall',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',

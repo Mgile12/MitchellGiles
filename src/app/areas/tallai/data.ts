@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Tallai',
   slug: 'tallai',
-  seoTitle: 'Marketing Consultant Tallai | Data-Driven Gold Coast Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Tallai | Data-Driven Gold Coast Growth Systems',
   metaDescription:
-    'Looking for a Marketing Consultant in Tallai? Mitchell Giles builds data-driven marketing systems delivering predictable leads and measurable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Tallai? Mitchell Giles builds data-driven marketing systems delivering predictable leads and measurable growth across the Gold Coast.',
   heroH1:
-    'Marketing Consultant Tallai \u2013 Revenue Systems That Deliver While You Sleep',
+    'Marketing Agency Gold Coast Tallai \u2013 Revenue Systems That Deliver While You Sleep',
   heroIntro: [
     'Tallai sits above the noise.',
     'Acreage homes. Tree-lined drives. Views stretching toward the coast from spots like The Panorama lookout.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Tallai businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Tallai',
-    'Best Marketing Consultant in Tallai',
+    'Marketing Agency Gold Coast Tallai',
+    'Best Marketing Agency Gold Coast in Tallai',
   ],
   ctaNearbyPlaces: [
     'Tallai',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Tallai cost?',
+      question: 'How much does a marketing agency gold coast in Tallai cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Tallai businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing Consultant Tallai',
+      alt: 'Marketing Agency Gold Coast Tallai',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -113,7 +113,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gold Coast marketing consultant Southport office',
+      alt: 'Gold Coast marketing agency gold coast Southport office',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

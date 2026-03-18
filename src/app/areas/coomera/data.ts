@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Coomera',
   slug: 'coomera',
-  seoTitle: 'Marketing Consultant Coomera | Revenue Systems Near Dreamworld & Movie World',
+  seoTitle: 'Marketing Agency Gold Coast Coomera | Revenue Systems Near Dreamworld & Movie World',
   metaDescription:
-    'Looking for the best Marketing Consultant in Coomera? Data-driven, transparent growth systems near Dreamworld, Movie World & WhiteWater World. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Coomera? Data-driven, transparent growth systems near Dreamworld, Movie World & WhiteWater World. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Coomera \u2013 Build a Revenue System That Scales',
+    'Marketing Agency Gold Coast Coomera \u2013 Build a Revenue System That Scales',
   heroIntro: [
     'Coomera is expanding.',
     'New estates. New families. New businesses opening every month.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Coomera businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Coomera',
-    'Best Marketing Consultant in Coomera',
+    'Marketing Agency Gold Coast Coomera',
+    'Best Marketing Agency Gold Coast in Coomera',
   ],
   ctaNearbyPlaces: [
     'Coomera',
@@ -105,7 +105,7 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Coomera Gold Coast',
+      alt: 'Marketing agency gold coast Coomera Gold Coast',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -117,7 +117,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Southport marketing consultant serving Coomera',
+      alt: 'Southport marketing agency gold coast serving Coomera',
     },
   ],
   internalLinks: [

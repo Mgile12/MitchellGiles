@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Gilberton',
   slug: 'gilberton',
-  seoTitle: 'Marketing Consultant Gilberton | Predictable Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Gilberton | Predictable Growth Systems',
   metaDescription:
-    'Marketing Consultant near Gilberton. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
+    'Marketing Agency Gold Coast near Gilberton. Data-driven systems, local expertise, measurable ROI. Book your strategy session today.',
   heroH1:
-    'Marketing Consultant Gilberton \u2013 Predictable Growth for Local Businesses',
+    'Marketing Agency Gold Coast Gilberton \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
     'Gilberton isn\u2019t built on foot traffic.',
     'It\u2019s acreage. It\u2019s space. It\u2019s service-area driven.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Gilberton businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Gilberton',
-    'Best Marketing Consultant in Gilberton',
+    'Marketing Agency Gold Coast Gilberton',
+    'Best Marketing Agency Gold Coast in Gilberton',
   ],
   ctaNearbyPlaces: [
     'Gilberton',
@@ -62,7 +62,7 @@ export const areaData: AreaPageData = {
   ],
   faqItems: [
     {
-      question: 'How much does a marketing consultant in Gilberton cost?',
+      question: 'How much does a marketing agency gold coast in Gilberton cost?',
       answer:
         'Investment depends on your business goals and channels required. Most Gilberton businesses invest between $2,000 and $8,000 per month for a structured marketing system.',
     },
@@ -105,15 +105,15 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMarketing Consultant serving Gilberton Gold Coast\u201d',
+      alt: '\u201cMarketing Agency Gold Coast serving Gilberton Gold Coast\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cMitchell Giles Marketing Consultant Southport office\u201d',
+      alt: '\u201cMitchell Giles Marketing Agency Gold Coast Southport office\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: '\u201cSpringbrook National Park hinterland near marketing consultant service area\u201d',
+      alt: '\u201cSpringbrook National Park hinterland near marketing agency gold coast service area\u201d',
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -3,11 +3,11 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Arundel',
   slug: 'arundel',
-  seoTitle: 'Marketing Consultant Arundel | Revenue-Driven Growth Systems',
+  seoTitle: 'Marketing Agency Gold Coast Arundel | Revenue-Driven Growth Systems',
   metaDescription:
-    'Looking for the best Marketing Consultant in Arundel? Mitchell Giles Marketing Consultant Gold Coast delivers data-driven, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Arundel? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused systems. Call 0474 870 535.',
   heroH1:
-    'Marketing Consultant Arundel \u2013 Revenue Systems That Actually Scale',
+    'Marketing Agency Gold Coast Arundel \u2013 Revenue Systems That Actually Scale',
   heroIntro: [
     'Arundel is one of the Gold Coast\u2019s most strategically placed suburbs.',
     'Close to the M1. Minutes from Harbour Town. Bordering Coombabah and Labrador.',
@@ -34,8 +34,8 @@ export const areaData: AreaPageData = {
   servicesIntro:
     'Structured marketing systems designed for Arundel businesses where search visibility and reputation drive growth.',
   seoTargets: [
-    'Marketing Consultant Arundel',
-    'Best Marketing Consultant in Arundel',
+    'Marketing Agency Gold Coast Arundel',
+    'Best Marketing Agency Gold Coast in Arundel',
   ],
   ctaNearbyPlaces: [
     'Arundel',
@@ -105,11 +105,11 @@ export const areaData: AreaPageData = {
   images: [
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Marketing consultant Arundel strategy session',
+      alt: 'Marketing agency gold coast Arundel strategy session',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Arundel Hills Country Club local marketing consultant',
+      alt: 'Arundel Hills Country Club local marketing agency gold coast',
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
