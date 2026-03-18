@@ -20,7 +20,7 @@ export default function Hero() {
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif animate-fade-in-up animate-delay-100"
             >
-              Marketing Consultant Gold Coast
+              Marketing Agency Gold Coast
             </h1>
 
             <div className="mt-8 space-y-5 animate-fade-in-up animate-delay-150">

@@ -7,7 +7,7 @@ import '@/index.css';
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
   title: {
-    default: "BEST Marketing Consultant Gold Coast - If You're Looking for Email Marketing Near Me or Paid Advertising & Digital Marketing Near Me - Work with Mitchell Giles",
+    default: "BEST Marketing Agency Gold Coast - If You're Looking for Digital Marketing Services Near Me or Social Media Marketing & Search Engine Optimisation Near Me - Mitchell Giles Marketing Agency Gold Coast is the place to be",
     template: '%s | Mitchell Giles Marketing',
   },
   description: `${BUSINESS_INFO.name} - Gold Coast's leading marketing consultant. Specialising in email marketing, Meta Ads, Google Ads, SEO & digital marketing for Australian businesses. Based in ${BUSINESS_INFO.address.locality}, serving ${BUSINESS_INFO.serviceArea.slice(0, 5).join(', ')}. Call ${BUSINESS_INFO.phone}.`,
