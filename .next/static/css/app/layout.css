@@ -2542,6 +2542,14 @@ video {
     height: 88px;
   }
 
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
+  .sm\:h-24 {
+    height: 6rem;
+  }
+
   .sm\:w-11 {
     width: 2.75rem;
   }
@@ -2757,6 +2765,10 @@ video {
 
   .md\:h-32 {
     height: 8rem;
+  }
+
+  .md\:h-28 {
+    height: 7rem;
   }
 
   .md\:max-h-20 {

@@ -5,21 +5,28 @@ import AnimateOnScroll from './AnimateOnScroll';
 const clients = [
   {
     name: 'Polish Hub',
-    logo: '/Untitled_design_(99).png',
+    logo: 'https://iili.io/qjHQUpS.png',
     href: 'https://polishhub.com.au/',
-    sizeClass: 'h-24 sm:h-28',
   },
   {
     name: 'EFA',
-    logo: '/Asset_1@2x_transparent_(1).png',
+    logo: 'https://iili.io/qjHQjQn.png',
     href: 'https://www.elitefootball.com.au/',
-    sizeClass: 'h-16 sm:h-20',
   },
   {
     name: 'MJLT Welding',
-    logo: '/5fac5d_ae48250114174c80aa68a0394770fbb1~mv2_(1).png',
+    logo: 'https://iili.io/qjJ2TYX.png',
     href: 'https://www.mjltservices.com.au/',
-    sizeClass: 'h-16 sm:h-20',
+  },
+  {
+    name: 'Tradie Marketing Pros',
+    logo: 'https://iili.io/qjHQXIt.webp',
+    href: '#',
+  },
+  {
+    name: 'Ceramic Coating Gold Coast',
+    logo: 'https://iili.io/qjHQVpI.png',
+    href: '#',
   },
 ];
 
@@ -69,7 +76,7 @@ export default function ClientShowcase() {
                   draggable={false}
                   onContextMenu={preventSave}
                   onDragStart={preventSave}
-                  className={`${client.sizeClass} w-auto object-contain pointer-events-none select-none transition-all duration-300`}
+                  className="h-20 sm:h-24 md:h-28 w-auto object-contain pointer-events-none select-none transition-all duration-300"
                   style={{ WebkitUserDrag: 'none' } as React.CSSProperties}
                 />
                 <div className="absolute inset-0" onContextMenu={preventSave} onDragStart={preventSave} />
