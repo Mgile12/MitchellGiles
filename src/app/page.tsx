@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import FAQSection from '@/components/FAQSection';
 import ClientShowcase from '@/components/ClientShowcase';
+import GoogleMapsOffer from '@/components/GoogleMapsOffer';
 import KillerResults from '@/components/KillerResults';
 import PartnerBadges from '@/components/PartnerBadges';
 import ServicesOverview from '@/components/ServicesOverview';
@@ -13,8 +14,9 @@ export default function HomePage() {
       <Hero />
       <FAQSection />
       <ClientShowcase />
-      <KillerResults />
+      <GoogleMapsOffer />
       <PartnerBadges />
+      <KillerResults />
       <ServicesOverview />
       <LocalSeoSection />
       <FinalCTA />
