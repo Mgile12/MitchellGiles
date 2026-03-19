@@ -44,7 +44,7 @@ export default function GoogleMapsOffer() {
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif mb-6">
             Top 3 on Google Maps.<br />
-            <span className="text-gold">In 7 Days.</span> Guaranteed.
+            <span className="text-gold">In 14 Days.</span> Guaranteed.
           </h2>
 
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-sans">
@@ -114,7 +114,7 @@ export default function GoogleMapsOffer() {
                     <div>
                       <p className="text-white font-semibold text-sm mb-1">Money-Back Guarantee</p>
                       <p className="text-slate-400 text-sm font-sans leading-relaxed">
-                        If you're not ranked in the top 3 within 7 days, you get a full refund. No questions. No excuses.
+                        If you're not ranked in the top 3 within 14 days, you get a full refund. No questions. No excuses.
                       </p>
                     </div>
                   </div>
@@ -228,7 +228,7 @@ export default function GoogleMapsOffer() {
               Ready to own the top 3?
             </h3>
             <p className="text-slate-400 mb-8 font-sans leading-relaxed">
-              One call. One investment. Top 3 in 7 days — or your money back.
+              One call. One investment. Top 3 in 14 days — or your money back.
             </p>
 
             <a
@@ -240,7 +240,7 @@ export default function GoogleMapsOffer() {
             </a>
 
             <p className="mt-5 text-xs text-slate-500 font-sans">
-              $2,000 one-time. Top 3 in 7 days. Money-back guarantee.
+              $2,000 one-time. Top 3 in 14 days. Money-back guarantee.
             </p>
           </div>
         </AnimateOnScroll>
