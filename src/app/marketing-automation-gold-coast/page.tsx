@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Marketing automation services for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that scales without adding headcount. Based in Southport QLD.',
   openGraph: {
-    title: 'Marketing Automation Gold Coast | Mitchell Giles Marketing',
+    title: 'Marketing Automation Gold Coast | MRG Marketing',
     description:
       'Marketing automation for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that runs while you sleep.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marketing Automation Gold Coast | Mitchell Giles Marketing',
+    title: 'Marketing Automation Gold Coast | MRG Marketing',
     description:
       'Marketing automation for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that runs while you sleep.',
     images: ['/image.png'],
