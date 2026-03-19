@@ -23,11 +23,30 @@ export default function Hero() {
               Marketing Agency Gold Coast
             </h1>
 
-            <div className="mt-8 space-y-5 animate-fade-in-up animate-delay-150">
-              <h2 className="text-base sm:text-lg text-slate-200 leading-[1.9] tracking-wide font-medium font-sans">
-                Email Marketing, Copywriting, Lead Generation &amp; Paid Advertising<br />
-                Brand Awareness, Strategic SEO, Business Automation, Event Management &amp; Business Consulting
+            <div className="mt-8 space-y-4 animate-fade-in-up animate-delay-150">
+              <h2 className="sr-only">
+                Web Designer Services: Website design, Ecommerce website design, UX/UI design, Website development, SEO web design, Website optimisation, Website maintenance | Marketing Consultant Services: Marketing strategy consulting, SEO consulting, PPC advertising consulting, Email marketing consulting, Lead generation consulting, Conversion rate optimisation consulting, Growth marketing consulting, CRM strategy consulting
               </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-hidden="true">
+                <div className="border-l-2 border-gold pl-3 space-y-2">
+                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gold font-sans">Web Designer</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Website Design","Ecommerce Design","UX/UI Design","Web Development","SEO Web Design","Website Optimisation","Website Maintenance"].map((s) => (
+                      <span key={s} className="text-[0.7rem] font-medium tracking-wide text-slate-300 bg-white/5 border border-white/10 rounded px-2 py-0.5 font-sans">{s}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="border-l-2 border-gold pl-3 space-y-2">
+                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gold font-sans">Marketing Consultant</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Marketing Strategy","SEO Consulting","PPC Advertising","Email Marketing","Lead Generation","Conversion Rate Optimisation","Growth Marketing","CRM Strategy"].map((s) => (
+                      <span key={s} className="text-[0.7rem] font-medium tracking-wide text-slate-300 bg-white/5 border border-white/10 rounded px-2 py-0.5 font-sans">{s}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Pipelines that deliver while you sleep

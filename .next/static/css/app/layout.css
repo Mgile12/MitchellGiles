@@ -511,6 +511,17 @@ video {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1175,6 +1186,9 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1257,6 +1271,10 @@ video {
 }
 .border-white\/\[0\.12\] {
   border-color: rgb(255 255 255 / 0.12);
+}
+.border-gold {
+  --tw-border-opacity: 1;
+  border-color: rgb(200 161 78 / var(--tw-border-opacity, 1));
 }
 .border-l-gold {
   --tw-border-opacity: 1;
@@ -1361,6 +1379,9 @@ video {
 }
 .bg-white\/\[0\.03\] {
   background-color: rgb(255 255 255 / 0.03);
+}
+.bg-white\/5 {
+  background-color: rgb(255 255 255 / 0.05);
 }
 .bg-\[radial-gradient\(ellipse_at_bottom_left\2c rgba\(200\2c 161\2c 78\2c 0\.03\)\2c transparent_60\%\)\] {
   background-image: radial-gradient(ellipse at bottom left,rgba(200,161,78,0.03),transparent 60%);
@@ -1635,6 +1656,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1688,6 +1713,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pl-3 {
+  padding-left: 0.75rem;
 }
 .text-left {
   text-align: left;
@@ -1746,6 +1774,12 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[0\.65rem\] {
+  font-size: 0.65rem;
+}
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
 }
 .font-black {
   font-weight: 900;
