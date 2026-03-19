@@ -23,6 +23,24 @@ export default function Hero() {
               Marketing Agency Gold Coast
             </h1>
 
+            {/* Mobile-only image — shown between H1 and service tags */}
+            <div className="md:hidden mt-8 animate-fade-in-up animate-delay-150">
+              <div className="relative aspect-[3/4] w-full overflow-hidden border-l-2 border-l-gold shadow-2xl shadow-black/60">
+                <img
+                  src="https://iili.io/fynfkw7.jpg"
+                  alt="MRG Marketing"
+                  className="w-full h-full object-cover object-top scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-navy-950/30 to-transparent" />
+                <div className="absolute bottom-4 right-4 left-auto max-w-[220px] bg-navy-950/70 backdrop-blur-xl rounded-lg p-4 border border-gold/25">
+                  <p className="text-xs uppercase tracking-[0.15em] text-gold mb-1.5 font-sans">Proven Results</p>
+                  <p className="text-2xl font-bold text-white font-serif">$190,000</p>
+                  <p className="text-xs text-slate-300 mt-1 font-sans">Generated through email marketing in 2 years</p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 space-y-4 animate-fade-in-up animate-delay-150">
               <h2 className="sr-only">
                 Web Designer Services: Website Design, Ecommerce Website Design, UX/UI Design, Website Development, SEO Web Design, Website Optimisation, Website Maintenance | Marketing Consultant Services: Marketing Strategy Consulting, PPC Advertising Consulting, Email Marketing Consulting, Lead Generation Consulting, Conversion Rate Optimisation Consulting, Growth Marketing Consulting, CRM Strategy Consulting
@@ -70,7 +88,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative w-full max-w-md mx-auto animate-fade-in-up animate-delay-200">
+          {/* Desktop-only image column */}
+          <div className="hidden md:block relative w-full max-w-md mx-auto animate-fade-in-up animate-delay-200">
             <div className="relative aspect-[3/4] w-full overflow-hidden border-l-2 border-l-gold shadow-2xl shadow-black/60">
               <img
                 src="https://iili.io/fynfkw7.jpg"

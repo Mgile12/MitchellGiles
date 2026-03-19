@@ -102,7 +102,7 @@ export default function LocalSeoSection() {
 
         <div className="rounded-xl overflow-hidden border border-white/10">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.992210498041!2d153.4133307!3d-27.963524800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910f7b954aafeb%3A0x46bd1aa9daada649!2sMitchell%20Giles!5e0!3m2!1sen!2sau!4v1770894024737!5m2!1sen!2sau"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.9848382683535!2d153.41107557547642!3d-27.963750576036485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910fb8fc9eb923%3A0xa7a2f66f2a98e68a!2sMRG%20Marketing%20Agency%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1773915739820!5m2!1sen!2sau"
             width="100%"
             height="450"
             style={{ border: 0 }}
