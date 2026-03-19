@@ -31,7 +31,7 @@ const footerAreaLinks = [
 export default function Footer({ onOpenModal }: FooterProps) {
   return (
     <UIFooter
-      logo={<img src={BUSINESS_INFO.logo} alt="MG Logo" className="h-12 w-12 object-contain" />}
+      logo={<img src="https://iili.io/qjWolf9.md.png" alt="Mitchell Giles Marketing Logo" className="h-20 object-contain" style={{ width: 'auto' }} />}
       brandName={BUSINESS_INFO.legalName}
       tagline="Pipelines & leads for Aussie businesses."
       mainLinks={[
