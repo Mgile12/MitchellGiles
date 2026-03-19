@@ -28,11 +28,10 @@ export const BUSINESS_INFO = {
   },
 
   social: {
-    facebook: 'https://www.facebook.com/mitchell.giles.56',
-    instagram:
-      'https://www.instagram.com/mitcheeellgiles?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+    facebook: 'https://www.facebook.com/profile.php?id=61557011930635',
+    instagram: 'https://www.instagram.com/mrg.marketing/',
     twitter: 'https://x.com/MitchellGilesAu',
-    linkedin: 'https://www.linkedin.com/in/mitchellgiles-au',
+    linkedin: 'https://www.linkedin.com/in/mrg-marketing/',
   },
 
   services: [
