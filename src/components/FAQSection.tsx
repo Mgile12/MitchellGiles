@@ -56,8 +56,8 @@ function FAQItem({ question, answer }: FAQItemProps) {
 
 const faqs = [
   {
-    question: "How long until I see results?",
-    answer: "First enquiries typically arrive within 2-3 weeks. Consistent flow by week 6-8. Clear, trackable leads within 90 days, or you do not pay."
+    question: "How do you rank businesses in the top 3 on GMB in 14 days?",
+    answer: "Think of your GMB profile and website as two magnets. I make both extremely powerful. The exact method is proprietary — you'll find out exactly what that means when we work together."
   },
   {
     question: "What if I've been burned by agencies before?",
