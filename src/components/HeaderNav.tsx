@@ -102,7 +102,7 @@ export default function HeaderNav() {
         <div className={`relative flex items-center justify-center md:justify-between transition-all duration-300 ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
           <Link href="/" className="shrink-0">
             <img
-              src="https://iili.io/fyI7mAB.png"
+              src="https://iili.io/qjAyV71.png"
               alt="MG Logo"
               className={`object-contain transition-all duration-300 ${scrolled ? 'h-10 w-10 sm:h-11 sm:w-11' : 'h-16 w-16 sm:h-14 sm:w-14'}`}
             />
