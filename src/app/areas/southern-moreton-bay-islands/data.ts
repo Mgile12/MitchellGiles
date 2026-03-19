@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'southern-moreton-bay-islands',
   seoTitle: 'Marketing Agency Gold Coast Southern Moreton Bay Islands | Predictable Growth Systems | Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Southern Moreton Bay Islands? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for island businesses.',
+    'Looking for a Marketing Agency Gold Coast in Southern Moreton Bay Islands? MRG Marketing builds data-driven marketing systems that generate consistent bookings and measurable revenue for island businesses.',
   heroH1:
     'Marketing Agency Gold Coast Southern Moreton Bay Islands \u2013 Built for Island Business Growth',
   heroIntro: [
