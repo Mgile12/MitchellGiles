@@ -53,84 +53,6 @@ export default function GoogleMapsOffer() {
           </p>
         </AnimateOnScroll>
 
-        {/* Project Math Block */}
-        <AnimateOnScroll className="mb-16">
-          <div className="relative rounded-2xl border border-gold/20 bg-white/[0.03] backdrop-blur-sm overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gold/60" />
-            <div className="p-8 sm:p-10 lg:p-12">
-              <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-                <div>
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10 border border-gold/30">
-                      <TrendingUp className="w-5 h-5 text-gold" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white font-serif">The Project Math</h3>
-                  </div>
-
-                  <p className="text-slate-400 leading-relaxed mb-6 font-sans">
-                    Let's say your average job is worth <strong className="text-white">$500</strong> and you miss
-                    just <strong className="text-white">2 calls per week</strong> because you're buried on page 2.
-                  </p>
-
-                  <div className="space-y-3 font-sans">
-                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
-                      <span className="text-slate-400">Missed calls per week</span>
-                      <span className="text-white font-semibold">2 jobs</span>
-                    </div>
-                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
-                      <span className="text-slate-400">Average job value</span>
-                      <span className="text-white font-semibold">$500</span>
-                    </div>
-                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
-                      <span className="text-slate-400">Weekly revenue lost</span>
-                      <span className="text-red-400 font-semibold">−$1,000</span>
-                    </div>
-                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
-                      <span className="text-slate-400">Monthly revenue lost</span>
-                      <span className="text-red-400 font-semibold">−$4,000+</span>
-                    </div>
-                    <div className="flex justify-between items-center py-4 rounded-xl bg-gold/5 border border-gold/20 px-4 mt-2">
-                      <span className="text-white font-semibold">One-time investment</span>
-                      <span className="text-gold font-bold text-xl">$2,000</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div className="rounded-xl bg-white/[0.04] border border-white/[0.08] p-6">
-                    <p className="text-2xl sm:text-3xl font-bold text-white font-serif mb-2">
-                      $2,000 once.<br />
-                      <span className="text-gold">$4,000+ every month</span><br />
-                      you stay invisible.
-                    </p>
-                    <p className="text-slate-400 text-sm mt-3 font-sans">
-                      Your competitors in the top 3 are taking your calls right now. Every single day you wait is money you'll never get back.
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-gold/5 border border-gold/20">
-                    <Shield className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white font-semibold text-sm mb-1">Money-Back Guarantee</p>
-                      <p className="text-slate-400 text-sm font-sans leading-relaxed">
-                        If you're not ranked in the top 3 within 14 days, you get a full refund. No questions. No excuses.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.08]">
-                    <ChevronRight className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                    <p className="text-slate-300 text-sm font-sans leading-relaxed">
-                      We've done this for businesses that weren't even listed on Google — and had them outranking established competitors within days.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </AnimateOnScroll>
-
         {/* Heatmap Before/After */}
         <AnimateOnScroll className="mb-16">
           <div className="text-center mb-10">
@@ -215,6 +137,84 @@ export default function GoogleMapsOffer() {
                 />
               </div>
             ))}
+          </div>
+        </AnimateOnScroll>
+
+        {/* Project Math Block */}
+        <AnimateOnScroll className="mb-16">
+          <div className="relative rounded-2xl border border-gold/20 bg-white/[0.03] backdrop-blur-sm overflow-hidden">
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gold/60" />
+            <div className="p-8 sm:p-10 lg:p-12">
+              <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10 border border-gold/30">
+                      <TrendingUp className="w-5 h-5 text-gold" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white font-serif">The Project Math</h3>
+                  </div>
+
+                  <p className="text-slate-400 leading-relaxed mb-6 font-sans">
+                    Let's say your average job is worth <strong className="text-white">$500</strong> and you miss
+                    just <strong className="text-white">2 calls per week</strong> because you're buried on page 2.
+                  </p>
+
+                  <div className="space-y-3 font-sans">
+                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
+                      <span className="text-slate-400">Missed calls per week</span>
+                      <span className="text-white font-semibold">2 jobs</span>
+                    </div>
+                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
+                      <span className="text-slate-400">Average job value</span>
+                      <span className="text-white font-semibold">$500</span>
+                    </div>
+                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
+                      <span className="text-slate-400">Weekly revenue lost</span>
+                      <span className="text-red-400 font-semibold">−$1,000</span>
+                    </div>
+                    <div className="flex justify-between items-center py-3 border-b border-white/[0.06]">
+                      <span className="text-slate-400">Monthly revenue lost</span>
+                      <span className="text-red-400 font-semibold">−$4,000+</span>
+                    </div>
+                    <div className="flex justify-between items-center py-4 rounded-xl bg-gold/5 border border-gold/20 px-4 mt-2">
+                      <span className="text-white font-semibold">One-time investment</span>
+                      <span className="text-gold font-bold text-xl">$2,000</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="rounded-xl bg-white/[0.04] border border-white/[0.08] p-6">
+                    <p className="text-2xl sm:text-3xl font-bold text-white font-serif mb-2">
+                      $2,000 once.<br />
+                      <span className="text-gold">$4,000+ every month</span><br />
+                      you stay invisible.
+                    </p>
+                    <p className="text-slate-400 text-sm mt-3 font-sans">
+                      Your competitors in the top 3 are taking your calls right now. Every single day you wait is money you'll never get back.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-gold/5 border border-gold/20">
+                    <Shield className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Money-Back Guarantee</p>
+                      <p className="text-slate-400 text-sm font-sans leading-relaxed">
+                        If you're not ranked in the top 3 within 14 days, you get a full refund. No questions. No excuses.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.08]">
+                    <ChevronRight className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+                    <p className="text-slate-300 text-sm font-sans leading-relaxed">
+                      We've done this for businesses that weren't even listed on Google — and had them outranking established competitors within days.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </AnimateOnScroll>
 
