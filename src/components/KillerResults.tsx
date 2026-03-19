@@ -189,7 +189,7 @@ export default function KillerResults() {
             href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-gold text-navy-950 font-semibold rounded-lg hover:bg-gold-light transition-colors duration-200 shadow-lg hover:shadow-gold/20 text-lg font-sans hover:scale-105 active:scale-95"
+            className="gold-flat-btn inline-block px-8 py-4 font-semibold rounded-lg text-lg font-sans hover:scale-105 active:scale-95"
           >
             Start Your Growth
           </a>

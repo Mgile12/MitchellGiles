@@ -15,7 +15,7 @@ interface Props {
 export default function ServedAreasLinks({ areas, heading = 'Areas We Serve' }: Props) {
   return (
     <section className="bg-navy-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(200,161,78,0.04),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(12,134,234,0.04),transparent_60%)]" />
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         <AnimateOnScroll className="mb-10">
           <div className="flex items-center gap-3 mb-2">

@@ -30,8 +30,8 @@ export default function GoogleMapsOffer() {
 
   return (
     <section className="relative bg-navy-950 text-white overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,175,55,0.07)_0%,transparent_65%)] pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(12,134,234,0.06)_0%,transparent_65%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative">
 
@@ -56,7 +56,7 @@ export default function GoogleMapsOffer() {
         {/* Project Math Block */}
         <AnimateOnScroll className="mb-16">
           <div className="relative rounded-2xl border border-gold/20 bg-white/[0.03] backdrop-blur-sm overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold/0 via-gold to-gold/0" />
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gold/60" />
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -231,16 +231,13 @@ export default function GoogleMapsOffer() {
               One call. One investment. Top 3 in 7 days — or your money back.
             </p>
 
-            <div className="relative inline-block group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-gold via-gold-light to-gold rounded-lg blur opacity-40 group-hover:opacity-60 transition duration-300" />
-              <a
-                href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-                className="relative inline-flex items-center justify-center gap-3 rounded-lg px-10 py-5 text-lg font-bold bg-gradient-to-r from-gold via-gold-light to-gold text-navy-950 hover:shadow-2xl hover:shadow-gold/20 transition-all duration-300 group"
-              >
-                <Phone className="w-5 h-5" />
-                Call Now — {BUSINESS_INFO.phone}
-              </a>
-            </div>
+            <a
+              href={`tel:${BUSINESS_INFO.phoneFormatted}`}
+              className="gold-flat-btn inline-flex items-center justify-center gap-3 rounded-lg px-10 py-5 text-lg font-bold"
+            >
+              <Phone className="w-5 h-5" />
+              Call Now — {BUSINESS_INFO.phone}
+            </a>
 
             <p className="mt-5 text-xs text-slate-500 font-sans">
               $2,000 one-time. Top 3 in 7 days. Money-back guarantee.
