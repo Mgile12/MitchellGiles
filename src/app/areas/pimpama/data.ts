@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'pimpama',
   seoTitle: 'Marketing Agency Gold Coast Pimpama | Data-Driven Growth | Gold Coast Expert',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Pimpama? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for northern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Pimpama? MRG Marketing builds data-driven marketing systems that generate consistent leads and measurable revenue for northern Gold Coast businesses.',
   heroH1:
     'Marketing Agency Gold Coast Pimpama \u2013 Built for Predictable Growth',
   heroIntro: [

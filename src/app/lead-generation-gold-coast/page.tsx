@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Professional lead generation services for Gold Coast businesses. Google Ads, Meta Ads, SEO, email nurturing and conversion tracking that builds a predictable pipeline. Based in Southport QLD.',
   openGraph: {
-    title: 'Lead Generation Gold Coast | Mitchell Giles Marketing',
+    title: 'Lead Generation Gold Coast | MRG Marketing',
     description:
       'Lead generation systems for Gold Coast businesses. Paid ads, SEO, email nurturing and conversion tracking that delivers qualified leads on repeat.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lead Generation Gold Coast | Mitchell Giles Marketing',
+    title: 'Lead Generation Gold Coast | MRG Marketing',
     description:
       'Lead generation systems for Gold Coast businesses. Paid ads, SEO, email nurturing and conversion tracking that delivers qualified leads on repeat.',
     images: ['/image.png'],

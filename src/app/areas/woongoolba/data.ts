@@ -3,9 +3,9 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Woongoolba',
   slug: 'woongoolba',
-  seoTitle: 'Marketing Agency Gold Coast Woongoolba | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Woongoolba | Predictable Growth Systems | MRG Marketing Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Woongoolba? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. No generic packages. Proven ROI. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Woongoolba? MRG Marketing builds data-driven growth systems for Gold Coast businesses. No generic packages. Proven ROI. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Woongoolba \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
@@ -26,7 +26,7 @@ export const areaData: AreaPageData = {
     'Email automation that follows up without manual effort',
   ],
   whyChooseLocalAuthority: [
-    'Mitchell Giles',
+    'MRG Marketing',
     '1. Gold Coast Local Authority',
     'This matters.',
     'Search behaviour changes suburb to suburb:',
@@ -109,7 +109,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Agency Gold Coast office Southport',
+      alt: 'MRG Marketing Agency Gold Coast office Southport',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

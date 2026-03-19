@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'cedar-creek',
   seoTitle: 'Marketing Agency Gold Coast Cedar Creek | Data-Driven Growth Near Cedar Creek Falls',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Cedar Creek? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Cedar Creek? MRG Marketing builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Cedar Creek \u2013 Data-Driven Growth for Local Operators',
   heroIntro: [

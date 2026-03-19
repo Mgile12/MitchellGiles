@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'varsity-lakes',
   seoTitle: 'Marketing Agency Gold Coast Varsity Lakes | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Searching for a Marketing Agency Gold Coast in Varsity Lakes? Mitchell Giles builds data-driven marketing systems that deliver measurable leads and scalable revenue across the Gold Coast.',
+    'Searching for a Marketing Agency Gold Coast in Varsity Lakes? MRG Marketing builds data-driven marketing systems that deliver measurable leads and scalable revenue across the Gold Coast.',
   heroH1:
     'Marketing Agency Gold Coast Varsity Lakes \u2013 Predictable Growth for Local Businesses',
   heroIntro: [

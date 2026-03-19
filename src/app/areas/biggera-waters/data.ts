@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'biggera-waters',
   seoTitle: 'Marketing Agency Gold Coast Biggera Waters | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Biggera Waters? Mitchell Giles Marketing Agency Gold Coast Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Biggera Waters? MRG Marketing Agency Gold Coast Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Biggera Waters \u2013 Built for Predictable Revenue',
   heroIntro: [

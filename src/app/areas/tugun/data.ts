@@ -6,7 +6,7 @@ export const areaData: AreaPageData = {
   seoTitle:
     'Marketing Agency Gold Coast Tugun | Data-Driven Growth Near Tugun Beach',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Tugun? Mitchell Giles Marketing Agency Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Tugun? MRG Marketing Agency Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Tugun \u2013 Data-Driven Growth for Local Businesses',
   heroIntro: [
@@ -114,7 +114,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing agency gold coast near Tugun Beach',
+      alt: 'MRG Marketing marketing agency gold coast near Tugun Beach',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

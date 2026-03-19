@@ -6,7 +6,7 @@ export const areaData: AreaPageData = {
   seoTitle:
     'Marketing Agency Gold Coast Coolangatta | Predictable Growth Near Snapper Rocks',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Coolangatta? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Coolangatta? MRG Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Coolangatta \u2013 Revenue Systems Built for Southern Gold Coast Businesses',
   heroIntro: [
@@ -114,7 +114,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing agency gold coast near Snapper Rocks',
+      alt: 'MRG Marketing marketing agency gold coast near Snapper Rocks',
     },
     {
       src: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',

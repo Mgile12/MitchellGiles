@@ -6,7 +6,7 @@ export const areaData: AreaPageData = {
   seoTitle:
     'Marketing Agency Gold Coast Mermaid Beach | Data-Driven Growth Near Hedges Avenue',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Mermaid Beach? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Mermaid Beach? MRG Marketing Agency Gold Coast Gold Coast delivers revenue-focused systems from our Southport office. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Mermaid Beach \u2013 Data-Driven Growth for Local Businesses',
   heroIntro: [
@@ -114,7 +114,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing agency gold coast near Hedges Avenue',
+      alt: 'MRG Marketing marketing agency gold coast near Hedges Avenue',
     },
     {
       src: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',

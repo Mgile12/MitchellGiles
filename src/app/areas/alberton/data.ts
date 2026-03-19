@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'alberton',
   seoTitle: 'Marketing Agency Gold Coast Alberton | Revenue Systems Near Albert River',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Alberton? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Alberton? MRG Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Alberton \u2013 Revenue Systems Built for Businesses Near Albert River',
   heroIntro: [
@@ -109,7 +109,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Marketing Agency Gold Coast near Albert River',
+      alt: 'MRG Marketing Agency Gold Coast near Albert River',
     },
     {
       src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',

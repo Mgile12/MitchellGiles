@@ -74,7 +74,7 @@ export default function Hero() {
             <div className="relative aspect-[3/4] w-full overflow-hidden border-l-2 border-l-gold shadow-2xl shadow-black/60">
               <img
                 src="https://iili.io/fynfkw7.jpg"
-                alt="Mitchell Giles"
+                alt="MRG Marketing"
                 className="w-full h-full object-cover object-top scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent" />

@@ -23,12 +23,12 @@ export default function BookingContent() {
         <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <img
-              src="https://iili.io/fyI7mAB.png"
-              alt="Mitchell Giles Marketing"
+              src="https://iili.io/qjAyV71.png"
+              alt="MRG Marketing"
               className="h-9 w-9 object-contain"
             />
             <span className="hidden sm:block text-sm font-semibold text-white/80 group-hover:text-white transition-colors duration-200">
-              Mitchell Giles Marketing
+              MRG Marketing
             </span>
           </Link>
 
@@ -107,7 +107,7 @@ export default function BookingContent() {
 
       <footer className="border-t border-white/[0.06] py-6">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
-          <span>&copy; {new Date().getFullYear()} Mitchell Giles Marketing. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} MRG Marketing. All rights reserved.</span>
           <a href={`mailto:${BUSINESS_INFO.email}`} className="hover:text-slate-400 transition-colors duration-200">
             {BUSINESS_INFO.email}
           </a>

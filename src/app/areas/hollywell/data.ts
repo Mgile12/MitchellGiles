@@ -4,9 +4,9 @@ export const areaData: AreaPageData = {
   name: 'Hollywell',
   slug: 'hollywell',
   seoTitle:
-    'Marketing Agency Gold Coast Hollywell | Data-Driven Growth \u2013 Mitchell Giles Gold Coast',
+    'Marketing Agency Gold Coast Hollywell | Data-Driven Growth \u2013 MRG Marketing Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Hollywell? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Hollywell? MRG Marketing Agency Gold Coast delivers data-driven, revenue-focused growth systems from our Southport office. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast in Hollywell \u2013 Data-Driven Growth for Gold Coast Businesses',
   heroIntro: [
@@ -111,7 +111,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing agency gold coast near Jabiru Island Park',
+      alt: 'MRG Marketing marketing agency gold coast near Jabiru Island Park',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

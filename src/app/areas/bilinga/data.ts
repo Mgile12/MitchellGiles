@@ -6,7 +6,7 @@ export const areaData: AreaPageData = {
   seoTitle:
     'Marketing Agency Gold Coast Bilinga | Predictable Growth Near Bilinga Beach',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Bilinga? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bilinga? MRG Marketing Agency Gold Coast Gold Coast delivers revenue-driven systems from our Southport office. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Bilinga \u2013 Revenue Systems Built for Coastal Businesses',
   heroIntro: [
@@ -114,7 +114,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles marketing agency gold coast near Bilinga Beach',
+      alt: 'MRG Marketing marketing agency gold coast near Bilinga Beach',
     },
     {
       src: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',

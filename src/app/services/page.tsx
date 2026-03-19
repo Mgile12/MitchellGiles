@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital marketing strategy and marketing automation. Based in Southport QLD.',
   openGraph: {
-    title: 'Services Gold Coast | Mitchell Giles Marketing',
+    title: 'Services Gold Coast | MRG Marketing',
     description:
       'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital strategy and automation.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services Gold Coast | Mitchell Giles Marketing',
+    title: 'Services Gold Coast | MRG Marketing',
     description:
       'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital strategy and automation.',
     images: ['/image.png'],

@@ -1,6 +1,6 @@
 export const BUSINESS_INFO = {
-  name: 'Mitchell Giles Marketing',
-  legalName: 'Mitchell Giles',
+  name: 'MRG Marketing',
+  legalName: 'MRG Marketing',
   description:
     'Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO, copywriting, automations, and CRM solutions for Australian businesses.',
   founder: 'Mitchell Giles',

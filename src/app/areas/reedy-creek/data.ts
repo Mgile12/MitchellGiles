@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'reedy-creek',
   seoTitle: 'Marketing Agency Gold Coast Reedy Creek | Predictable Growth Systems | Gold Coast Expert',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Reedy Creek? Mitchell Giles builds data-driven marketing systems that generate measurable revenue and consistent leads for southern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Reedy Creek? MRG Marketing builds data-driven marketing systems that generate measurable revenue and consistent leads for southern Gold Coast businesses.',
   heroH1:
     'Marketing Agency Gold Coast Reedy Creek \u2013 Built for Predictable Growth',
   heroIntro: [

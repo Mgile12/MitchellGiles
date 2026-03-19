@@ -26,7 +26,7 @@ export const areaData: AreaPageData = {
     'Websites generating traffic but not converting leads',
   ],
   whyChooseLocalAuthority: [
-    'Mitchell Giles',
+    'MRG Marketing',
     'Data-first strategy',
     'Custom-built pipelines',
     'No generic packages',

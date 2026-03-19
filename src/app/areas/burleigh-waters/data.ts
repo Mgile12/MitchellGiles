@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'burleigh-waters',
   seoTitle: 'Marketing Agency Gold Coast Burleigh Waters | Data-Driven Growth Near Burleigh Head National Park',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Burleigh Waters? Mitchell Giles builds revenue-driven systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Burleigh Waters? MRG Marketing builds revenue-driven systems with full transparency. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Burleigh Waters \u2013 Predictable Revenue, Not Guesswork',
   heroIntro: [

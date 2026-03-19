@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'steiglitz',
   seoTitle: 'Marketing Agency Gold Coast Steiglitz | Data-Driven Growth Systems',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Steiglitz? Mitchell Giles builds data-driven marketing systems delivering predictable leads and measurable growth across South East Queensland.',
+    'Looking for a Marketing Agency Gold Coast in Steiglitz? MRG Marketing builds data-driven marketing systems delivering predictable leads and measurable growth across South East Queensland.',
   heroH1:
     'Marketing Agency Gold Coast Steiglitz \u2013 Revenue Systems That Deliver While You Sleep',
   heroIntro: [

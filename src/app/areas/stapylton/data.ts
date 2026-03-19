@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'stapylton',
   seoTitle: 'Marketing Agency Gold Coast Stapylton | Industrial & Trade Growth Systems',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Stapylton? Mitchell Giles builds data-driven marketing systems that generate consistent B2B leads and measurable growth across SEQ.',
+    'Looking for a Marketing Agency Gold Coast in Stapylton? MRG Marketing builds data-driven marketing systems that generate consistent B2B leads and measurable growth across SEQ.',
   heroH1:
     'Marketing Agency Gold Coast Stapylton \u2013 Revenue Systems for Industrial & Trade Businesses',
   heroIntro: [

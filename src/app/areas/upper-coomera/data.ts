@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'upper-coomera',
   seoTitle: 'Marketing Agency Gold Coast Upper Coomera | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Upper Coomera? Mitchell Giles builds data-driven marketing systems delivering measurable leads and scalable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Upper Coomera? MRG Marketing builds data-driven marketing systems delivering measurable leads and scalable growth across the Gold Coast.',
   heroH1:
     'Marketing Agency Gold Coast Upper Coomera \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
@@ -26,7 +26,7 @@ export const areaData: AreaPageData = {
     'Websites generating traffic but not converting leads',
   ],
   whyChooseLocalAuthority: [
-    'Mitchell Giles',
+    'MRG Marketing',
     'Data-Driven Accountability',
     'Full Transparency',
     'Ruthless Optimisation',

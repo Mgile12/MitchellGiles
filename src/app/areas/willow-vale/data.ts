@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'willow-vale',
   seoTitle: 'Marketing Agency Gold Coast Willow Vale | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Willow Vale? Mitchell Giles builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Willow Vale? MRG Marketing builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
   heroH1:
     'Marketing Agency Gold Coast Willow Vale \u2013 Predictable Growth for Local Businesses',
   heroIntro: [

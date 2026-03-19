@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Professional Google Ads management for Gold Coast businesses. Search campaigns, remarketing, performance tracking and budget optimisation that delivers measurable ROI. Based in Southport QLD.',
   openGraph: {
-    title: 'Google Ads Gold Coast | Mitchell Giles Marketing',
+    title: 'Google Ads Gold Coast | MRG Marketing',
     description:
       'Strategic Google Ads management for Gold Coast businesses. Search campaigns, remarketing and budget optimisation built for real ROI.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Google Ads Gold Coast | Mitchell Giles Marketing',
+    title: 'Google Ads Gold Coast | MRG Marketing',
     description:
       'Strategic Google Ads management for Gold Coast businesses. Search campaigns, remarketing and budget optimisation built for real ROI.',
     images: ['/image.png'],

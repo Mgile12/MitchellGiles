@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'springbrook',
   seoTitle: 'Marketing Agency Gold Coast Springbrook | Predictable Growth for Tourism Businesses',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Springbrook? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable growth for local and tourism businesses.',
+    'Looking for a Marketing Agency Gold Coast in Springbrook? MRG Marketing builds data-driven marketing systems that generate consistent bookings and measurable growth for local and tourism businesses.',
   heroH1:
     'Marketing Agency Gold Coast Springbrook \u2013 Revenue Systems Built for Tourism & Local Growth',
   heroIntro: [

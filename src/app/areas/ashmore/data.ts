@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'ashmore',
   seoTitle: 'Marketing Agency Gold Coast Ashmore | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Ashmore? Mitchell Giles Marketing Agency Gold Coast Gold Coast delivers transparent, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Ashmore? MRG Marketing Agency Gold Coast Gold Coast delivers transparent, revenue-focused systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Ashmore \u2013 Revenue Systems That Actually Scale',
   heroIntro: [

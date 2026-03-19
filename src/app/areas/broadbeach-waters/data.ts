@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'broadbeach-waters',
   seoTitle: 'Marketing Agency Gold Coast Broadbeach Waters | Data-Driven Growth Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Broadbeach Waters? Mitchell Giles Marketing Agency Gold Coast builds transparent, revenue-driven systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Broadbeach Waters? MRG Marketing Agency Gold Coast builds transparent, revenue-driven systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Broadbeach Waters \u2013 Systems That Compound, Not Campaigns That Spike',
   heroIntro: [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Professional SEO services for Gold Coast businesses. Technical audits, on-page optimisation, local SEO, content strategy and link building that delivers sustainable organic growth. Based in Southport QLD.',
   openGraph: {
-    title: 'SEO Gold Coast | Mitchell Giles Marketing',
+    title: 'SEO Gold Coast | MRG Marketing',
     description:
       'Strategic SEO services for Gold Coast businesses. Technical audits, local SEO, content strategy and ongoing optimisation that drives sustainable organic traffic.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEO Gold Coast | Mitchell Giles Marketing',
+    title: 'SEO Gold Coast | MRG Marketing',
     description:
       'Strategic SEO services for Gold Coast businesses. Technical audits, local SEO, content strategy and ongoing optimisation that drives sustainable organic traffic.',
     images: ['/image.png'],

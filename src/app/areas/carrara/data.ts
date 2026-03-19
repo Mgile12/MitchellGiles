@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'carrara',
   seoTitle: 'Marketing Agency Gold Coast Carrara | Data-Driven Growth Near People First Stadium',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Carrara? Mitchell Giles builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Carrara? MRG Marketing builds revenue-driven marketing systems with full transparency. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Carrara \u2013 Predictable Growth for Gold Coast Businesses',
   heroIntro: [

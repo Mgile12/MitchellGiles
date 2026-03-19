@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'arundel',
   seoTitle: 'Marketing Agency Gold Coast Arundel | Revenue-Driven Growth Systems',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Arundel? Mitchell Giles Marketing Agency Gold Coast delivers data-driven, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Arundel? MRG Marketing Agency Gold Coast delivers data-driven, revenue-focused systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Arundel \u2013 Revenue Systems That Actually Scale',
   heroIntro: [

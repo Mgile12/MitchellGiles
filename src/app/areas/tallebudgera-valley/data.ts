@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'tallebudgera-valley',
   seoTitle: 'Marketing Agency Gold Coast Tallebudgera Valley | Gold Coast Revenue Systems',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Tallebudgera Valley? Mitchell Giles builds data-driven marketing systems delivering measurable leads and predictable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Tallebudgera Valley? MRG Marketing builds data-driven marketing systems delivering measurable leads and predictable growth across the Gold Coast.',
   heroH1:
     'Marketing Agency Gold Coast Tallebudgera Valley \u2013 Build a System That Grows Beyond Word of Mouth',
   heroIntro: [
@@ -26,7 +26,7 @@ export const areaData: AreaPageData = {
     'Websites generating traffic but not converting leads',
   ],
   whyChooseLocalAuthority: [
-    'Mitchell Giles',
+    'MRG Marketing',
     '1. Data-Driven Accountability \u2013 \u201cProof or We Stop\u201d',
     'Marketing should tie directly to revenue.',
     'Leads generated',

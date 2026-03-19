@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Expert Meta Ads Agency for Gold Coast & Brisbane businesses. Data-driven Facebook & Instagram ads with advanced optimisation frameworks including Andromeda, GEM and Lattice.',
   openGraph: {
-    title: 'Meta Ads Agency Gold Coast & Brisbane | Mitchell Giles Marketing',
+    title: 'Meta Ads Agency Gold Coast & Brisbane | MRG Marketing',
     description:
       'Strategic Facebook & Instagram advertising for Gold Coast and Brisbane businesses. Signal-driven Meta Ads management with technical depth most agencies ignore.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Meta Ads Agency Gold Coast & Brisbane | Mitchell Giles Marketing',
+    title: 'Meta Ads Agency Gold Coast & Brisbane | MRG Marketing',
     description:
       'Strategic Facebook & Instagram advertising for Gold Coast and Brisbane businesses. Signal-driven Meta Ads management with technical depth most agencies ignore.',
     images: ['/image.png'],

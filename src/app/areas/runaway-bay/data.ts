@@ -12,7 +12,7 @@ export const areaData: AreaPageData = {
   heroIntro: [
     'Runaway Bay is not Surfers Paradise. It is not built on tourists and impulse traffic. It is built on families, long-term residents, repeat customers, and community trust.',
     'If you are searching for a Marketing Agency Gold Coast in Runaway Bay, you likely want something different: measurable ROI, local expertise, clear accountability, and growth that compounds.',
-    'Mitchell Giles Marketing Agency Gold Coast builds structured revenue systems for businesses servicing Runaway Bay \u2014 designed to generate predictable leads, not random spikes.',
+    'MRG Marketing Agency Gold Coast builds structured revenue systems for businesses servicing Runaway Bay \u2014 designed to generate predictable leads, not random spikes.',
   ],
   whyDifferentTitle:
     'Why Runaway Bay Businesses Need Smarter Marketing',

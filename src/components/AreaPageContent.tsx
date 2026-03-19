@@ -174,7 +174,7 @@ export default function AreaPageContent({ data }: Props) {
           <AnimateOnScroll className="text-center mb-14 sm:mb-20">
             <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">Why Choose Local</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
-              Why {data.name} Businesses Choose Mitchell Giles
+              Why {data.name} Businesses Choose MRG Marketing
             </h2>
           </AnimateOnScroll>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

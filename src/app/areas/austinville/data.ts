@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'austinville',
   seoTitle: 'Marketing Agency Gold Coast Austinville | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Austinville? Mitchell Giles Marketing Agency Gold Coast Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Austinville? MRG Marketing Agency Gold Coast Gold Coast builds transparent, revenue-focused systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Austinville \u2013 Revenue Systems Built for Sustainable Growth',
   heroIntro: [

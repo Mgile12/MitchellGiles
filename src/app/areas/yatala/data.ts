@@ -3,9 +3,9 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Yatala',
   slug: 'yatala',
-  seoTitle: 'Marketing Agency Gold Coast Yatala | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Yatala | Predictable Growth Systems | MRG Marketing Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Yatala? Mitchell Giles builds data-driven growth systems for industrial and trade businesses. Proven ROI. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Yatala? MRG Marketing builds data-driven growth systems for industrial and trade businesses. Proven ROI. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Yatala \u2013 Predictable Growth for Industrial & Trade Businesses',
   heroIntro: [
@@ -45,7 +45,7 @@ export const areaData: AreaPageData = {
   ],
   directions: [
     'Yatala',
-    'Mitchell Giles Marketing Agency Gold Coast',
+    'MRG Marketing Agency Gold Coast',
     'Enter M1 southbound',
     'Continue toward Southport exit',
     'Approximately 20\u201325 minutes by car',
@@ -109,7 +109,7 @@ export const areaData: AreaPageData = {
     },
     {
       src: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Mitchell Giles Southport office serving Yatala',
+      alt: 'MRG Marketing Southport office serving Yatala',
     },
     {
       src: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',

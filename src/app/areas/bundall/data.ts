@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'bundall',
   seoTitle: 'Marketing Agency Gold Coast Bundall | Data-Driven Growth Near HOTA',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Bundall? Mitchell Giles builds revenue-driven systems with full transparency. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bundall? MRG Marketing builds revenue-driven systems with full transparency. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Bundall \u2013 Predictable Growth for Gold Coast Professionals',
   heroIntro: [

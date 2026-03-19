@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'tallai',
   seoTitle: 'Marketing Agency Gold Coast Tallai | Data-Driven Gold Coast Growth Systems',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Tallai? Mitchell Giles builds data-driven marketing systems delivering predictable leads and measurable growth across the Gold Coast.',
+    'Looking for a Marketing Agency Gold Coast in Tallai? MRG Marketing builds data-driven marketing systems delivering predictable leads and measurable growth across the Gold Coast.',
   heroH1:
     'Marketing Agency Gold Coast Tallai \u2013 Revenue Systems That Deliver While You Sleep',
   heroIntro: [

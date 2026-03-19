@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Southport marketing agency gold coast specialising in SEO, Google Ads, email marketing, lead generation and automation. Based at 82 Marine Parade, Southport QLD 4215. Book a strategy session.',
   openGraph: {
-    title: 'Marketing Agency Gold Coast Southport | Mitchell Giles Marketing',
+    title: 'Marketing Agency Gold Coast Southport | MRG Marketing',
     description:
       'Local marketing agency gold coast in Southport QLD. SEO, Google Ads, email marketing, lead generation and automation for Southport businesses.',
     type: 'website',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Where is Mitchell Giles based in Southport?',
+    question: 'Where is MRG Marketing based in Southport?',
     answer: '82 Marine Parade, Southport QLD 4215. Walking distance from Broadwater Parklands, Australia Fair Shopping Centre, and Southport CBD.',
   },
   {

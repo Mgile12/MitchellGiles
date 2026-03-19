@@ -5,9 +5,9 @@ import AreasContent from './AreasContent';
 export const metadata: Metadata = {
   title: 'Areas We Serve | Gold Coast & South East Queensland Marketing',
   description:
-    'Mitchell Giles Marketing serves the Gold Coast, Southport, Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Nerang, Brisbane and South East Queensland.',
+    'MRG Marketing serves the Gold Coast, Southport, Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Nerang, Brisbane and South East Queensland.',
   openGraph: {
-    title: 'Areas We Serve | Mitchell Giles Marketing',
+    title: 'Areas We Serve | MRG Marketing',
     description:
       'Marketing services across the Gold Coast, Brisbane and South East Queensland.',
     type: 'website',

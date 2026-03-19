@@ -3,9 +3,9 @@ import type { AreaPageData } from '@/lib/area-data';
 export const areaData: AreaPageData = {
   name: 'Worongary',
   slug: 'worongary',
-  seoTitle: 'Marketing Agency Gold Coast Worongary | Predictable Growth Systems | Mitchell Giles Gold Coast',
+  seoTitle: 'Marketing Agency Gold Coast Worongary | Predictable Growth Systems | MRG Marketing Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Worongary? Mitchell Giles builds data-driven growth systems for Gold Coast businesses. Proven ROI. No generic packages. Call 0474 870 535.',
+    'Looking for a Marketing Agency Gold Coast in Worongary? MRG Marketing builds data-driven growth systems for Gold Coast businesses. Proven ROI. No generic packages. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Worongary \u2013 Predictable Growth for Local Gold Coast Businesses',
   heroIntro: [
@@ -46,7 +46,7 @@ export const areaData: AreaPageData = {
   directions: [
     'Worongary',
     'Office location:',
-    'Mitchell Giles Marketing Agency Gold Coast',
+    'MRG Marketing Agency Gold Coast',
     'Head via Worongary Road to the M1',
     'Approximately 20\u201325 minutes by car',
   ],

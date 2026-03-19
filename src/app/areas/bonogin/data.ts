@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'bonogin',
   seoTitle: 'Marketing Agency Gold Coast Bonogin | Predictable Growth Systems Gold Coast',
   metaDescription:
-    'Looking for the best Marketing Agency Gold Coast in Bonogin? Mitchell Giles Marketing Agency Gold Coast Gold Coast builds data-driven, transparent revenue systems. Call 0474 870 535.',
+    'Looking for the best Marketing Agency Gold Coast in Bonogin? MRG Marketing Agency Gold Coast Gold Coast builds data-driven, transparent revenue systems. Call 0474 870 535.',
   heroH1:
     'Marketing Agency Gold Coast Bonogin \u2013 Systems Built for Quiet Operators Who Want Loud Results',
   heroIntro: [

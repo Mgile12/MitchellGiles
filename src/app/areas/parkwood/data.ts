@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'parkwood',
   seoTitle: 'Marketing Agency Gold Coast Parkwood | Predictable Growth Systems | Gold Coast Expert',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Parkwood? Mitchell Giles builds data-driven marketing systems that generate consistent leads and measurable revenue for Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Parkwood? MRG Marketing builds data-driven marketing systems that generate consistent leads and measurable revenue for Gold Coast businesses.',
   heroH1:
     'Marketing Agency Gold Coast Parkwood \u2013 Systems Built for Predictable Growth',
   heroIntro: [

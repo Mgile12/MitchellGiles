@@ -115,7 +115,7 @@ export default function AreaMapDirections({
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title={`Mitchell Giles Marketing office location near ${areaName}`}
+                  title={`MRG Marketing office location near ${areaName}`}
                 />
               </div>
             </AnimateOnScroll>

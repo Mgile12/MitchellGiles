@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'south-stradbroke-island',
   seoTitle: 'Marketing Agency Gold Coast South Stradbroke Island | Tourism Growth Systems | Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in South Stradbroke Island? Mitchell Giles builds data-driven marketing systems that generate consistent bookings and measurable revenue for Gold Coast tourism businesses.',
+    'Looking for a Marketing Agency Gold Coast in South Stradbroke Island? MRG Marketing builds data-driven marketing systems that generate consistent bookings and measurable revenue for Gold Coast tourism businesses.',
   heroH1:
     'Marketing Agency Gold Coast South Stradbroke Island \u2013 Built for Predictable Tourism Growth',
   heroIntro: [

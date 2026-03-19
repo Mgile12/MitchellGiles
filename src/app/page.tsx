@@ -18,8 +18,8 @@ export default function HomePage() {
       <PartnerBadges />
       <KillerResults />
       <ServicesOverview />
-      <LocalSeoSection />
       <FinalCTA />
+      <LocalSeoSection />
     </>
   );
 }

@@ -8,4 +8,5 @@ export { default as FinalCTA } from './FinalCTA';
 export { default as LocalSeoSection } from './LocalSeoSection';
 export { default as ContactModal } from './ContactModal';
 export { default as AnimateOnScroll } from './AnimateOnScroll';
+export { default as GoogleMapsOffer } from './GoogleMapsOffer';
 export { default as ServedAreasLinks } from './ServedAreasLinks';

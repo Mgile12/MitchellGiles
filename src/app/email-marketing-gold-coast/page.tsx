@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Professional email marketing services for Gold Coast businesses. Strategy, automation, campaign management and reporting that drives measurable revenue. Based in Southport QLD.',
   openGraph: {
-    title: 'Email Marketing Gold Coast | Mitchell Giles Marketing',
+    title: 'Email Marketing Gold Coast | MRG Marketing',
     description:
       'Strategic email marketing services for Gold Coast businesses. Automation, campaigns, and reporting that turn your database into predictable monthly revenue.',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Email Marketing Gold Coast | Mitchell Giles Marketing',
+    title: 'Email Marketing Gold Coast | MRG Marketing',
     description:
       'Strategic email marketing services for Gold Coast businesses. Automation, campaigns, and reporting that turn your database into predictable monthly revenue.',
     images: ['https://iili.io/qHd5dYb.md.jpg'],

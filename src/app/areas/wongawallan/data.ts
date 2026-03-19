@@ -5,7 +5,7 @@ export const areaData: AreaPageData = {
   slug: 'wongawallan',
   seoTitle: 'Marketing Agency Gold Coast Wongawallan | Data-Driven Growth Systems Gold Coast',
   metaDescription:
-    'Looking for a Marketing Agency Gold Coast in Wongawallan? Mitchell Giles builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
+    'Looking for a Marketing Agency Gold Coast in Wongawallan? MRG Marketing builds measurable, revenue-focused marketing systems for northern Gold Coast businesses.',
   heroH1:
     'Marketing Agency Gold Coast Wongawallan \u2013 Predictable Growth for Local Businesses',
   heroIntro: [
