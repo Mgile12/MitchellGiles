@@ -42,10 +42,10 @@ export default function GoogleMapsOffer() {
             Limited Offer
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif mb-6">
+          <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif mb-6">
             Top 3 on Google Maps.<br />
             <span className="text-gold">In 14 Days.</span> Guaranteed.
-          </h2>
+          </h3>
 
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-sans">
             The top 3 Google Maps listings capture <strong className="text-white">70% of all local clicks</strong>.
@@ -56,9 +56,9 @@ export default function GoogleMapsOffer() {
         {/* Heatmap Before/After */}
         <AnimateOnScroll className="mb-16">
           <div className="text-center mb-10">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white font-serif mb-3">
+            <h4 className="text-2xl sm:text-3xl font-bold text-white font-serif mb-3">
               Real Clients. Real Heatmaps. Real Rankings.
-            </h3>
+            </h4>
             <p className="text-slate-400 font-sans">
               These aren't projections — these are live Google Maps ranking heatmaps from actual clients.
             </p>
@@ -120,7 +120,7 @@ export default function GoogleMapsOffer() {
         {/* Testimonial Screenshots */}
         <AnimateOnScroll className="mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-xl sm:text-2xl font-bold text-white font-serif mb-2">What People Are Saying</h3>
+            <h4 className="text-xl sm:text-2xl font-bold text-white font-serif mb-2">What People Are Saying</h4>
             <p className="text-slate-400 text-sm font-sans">Unfiltered. Unedited. Real.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -152,7 +152,7 @@ export default function GoogleMapsOffer() {
                     <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10 border border-gold/30">
                       <TrendingUp className="w-5 h-5 text-gold" />
                     </div>
-                    <h3 className="text-xl font-bold text-white font-serif">The Project Math</h3>
+                    <h4 className="text-xl font-bold text-white font-serif">The Project Math</h4>
                   </div>
 
                   <p className="text-slate-400 leading-relaxed mb-6 font-sans">
@@ -224,9 +224,9 @@ export default function GoogleMapsOffer() {
             <p className="text-sm text-gold/80 font-semibold uppercase tracking-widest mb-4 font-sans">
               Limited spots available
             </p>
-            <h3 className="text-3xl sm:text-4xl font-bold text-white font-serif mb-4">
+            <h4 className="text-3xl sm:text-4xl font-bold text-white font-serif mb-4">
               Ready to own the top 3?
-            </h3>
+            </h4>
             <p className="text-slate-400 mb-8 font-sans leading-relaxed">
               One call. One investment. Top 3 in 14 days — or your money back.
             </p>

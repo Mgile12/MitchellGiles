@@ -125,9 +125,9 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 text-gold mb-4 hover:scale-105 hover:rotate-[5deg] transition-transform duration-200">
             <Icon className="w-7 h-7" />
           </div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
+          <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
             {result.title}
-          </h3>
+          </h4>
           <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-sans">
             {result.description}
           </p>
@@ -165,9 +165,9 @@ export default function KillerResults() {
             <BarChart3 className="w-4 h-4" />
             Real Results
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
             Results That Matter
-          </h2>
+          </h3>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
             Revenue, automation, and ROI you can verify. This is what happens when strategy meets execution.
           </p>

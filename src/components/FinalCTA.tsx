@@ -9,9 +9,9 @@ export default function FinalCTA() {
 
       <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif">
+          <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif">
             Ask yourself something honestly.
-          </h2>
+          </h3>
 
           <div className="mt-8 space-y-4">
             <p className="text-xl sm:text-2xl text-slate-200 leading-relaxed font-sans">

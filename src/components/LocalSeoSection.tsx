@@ -44,9 +44,9 @@ export default function LocalSeoSection() {
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
             Local Expertise
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
             Gold Coast Marketing Agency Gold Coast
-          </h2>
+          </h3>
           <div className="max-w-2xl mx-auto">
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
               Based in {BUSINESS_INFO.address.locality}, I work with businesses across the Gold Coast, Brisbane
@@ -70,7 +70,7 @@ export default function LocalSeoSection() {
                   <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                     <MapPin className="w-4 h-4 text-gold" />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-serif group-hover:text-gold transition-colors duration-200">{item.area}</h3>
+                  <h4 className="text-lg font-bold text-white font-serif group-hover:text-gold transition-colors duration-200">{item.area}</h4>
                 </div>
                 <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.description}</p>
               </Link>

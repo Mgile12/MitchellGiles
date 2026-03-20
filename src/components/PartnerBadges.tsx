@@ -64,9 +64,9 @@ export default function PartnerBadges() {
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
               Certified Partnerships
             </p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white">
               Trusted By The Platforms That Matter
-            </h2>
+            </h3>
             <p className="mt-3 text-white/50 text-sm max-w-md mx-auto">
               Accredited as an official partner across Google, Meta, and Mailchimp — so you know your campaigns are in qualified hands.
             </p>

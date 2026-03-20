@@ -42,12 +42,12 @@ export default function ClientShowcase() {
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-gold/70 font-sans mb-4">
             Current Clients
           </span>
-          <h2
+          <h3
             id="clients-heading"
             className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif"
           >
             I work with a select few
-          </h2>
+          </h3>
           <p className="mt-4 text-slate-400 text-base sm:text-lg max-w-xl mx-auto font-sans leading-relaxed">
             I deliberately keep my client list small. Every business I take on gets my full attention, not a junior account manager.
           </p>

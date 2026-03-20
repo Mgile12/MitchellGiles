@@ -45,9 +45,9 @@ export default function ServicesOverview() {
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
             The Process
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
             What I Do in 5 Steps
-          </h2>
+          </h3>
           <div className="max-w-2xl mx-auto space-y-2">
             <p className="text-base sm:text-lg text-slate-400 font-sans">
               No generic packages. No tiered pricing games.
@@ -84,9 +84,9 @@ export default function ServicesOverview() {
                             <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                               <Icon className="w-4.5 h-4.5 text-gold" />
                             </div>
-                            <h3 className="text-lg sm:text-xl font-bold text-white font-serif">
+                            <h4 className="text-lg sm:text-xl font-bold text-white font-serif">
                               {service.title}
-                            </h3>
+                            </h4>
                           </div>
                           <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
                             {service.description}
