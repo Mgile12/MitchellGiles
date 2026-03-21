@@ -43,23 +43,14 @@ export default function Hero() {
 
             <div className="mt-8 space-y-4 animate-fade-in-up animate-delay-150">
               <h2 className="sr-only">
-                Web Designer Services: Website Design, Ecommerce Website Design, UX/UI Design, Website Development, SEO Web Design, Website Optimisation, Website Maintenance | Marketing Consultant Services: Marketing Strategy Consulting, PPC Advertising Consulting, Email Marketing Consulting, Lead Generation Consulting, Conversion Rate Optimisation Consulting, Growth Marketing Consulting, CRM Strategy Consulting
+                Web Designer Services: Website Design, Ecommerce Website Design, UX/UI Design, Website Development, SEO Web Design, Website Optimisation, Website Maintenance
               </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-hidden="true">
+              <div className="grid grid-cols-1 gap-3" aria-hidden="true">
                 <div className="border-l-2 border-gold pl-3 space-y-2">
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gold font-sans">Web Designer</p>
                   <div className="flex flex-wrap gap-1.5">
                     {["Website Design","Ecommerce Website Design","UX/UI Design","Website Development","SEO Web Design","Website Optimisation","Website Maintenance"].map((s) => (
-                      <span key={s} className="text-[0.7rem] font-medium tracking-wide text-slate-300 bg-white/5 border border-white/10 rounded px-2 py-0.5 font-sans">{s}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="border-l-2 border-gold pl-3 space-y-2">
-                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gold font-sans">Marketing Consultant</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {["Marketing Strategy Consulting","PPC Advertising Consulting","Email Marketing Consulting","Lead Generation Consulting","Conversion Rate Optimisation Consulting","Growth Marketing Consulting","CRM Strategy Consulting"].map((s) => (
                       <span key={s} className="text-[0.7rem] font-medium tracking-wide text-slate-300 bg-white/5 border border-white/10 rounded px-2 py-0.5 font-sans">{s}</span>
                     ))}
                   </div>
