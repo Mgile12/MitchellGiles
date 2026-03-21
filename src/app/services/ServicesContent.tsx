@@ -137,6 +137,36 @@ export default function ServicesContent() {
 
       <ServedAreasLinks areas={SERVICES_AREAS} heading="We Work With Businesses Across the Gold Coast" />
 
+      <section className="bg-navy-950 relative overflow-hidden">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <AnimateOnScroll className="text-center mb-10">
+            <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
+              Our Location
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-5 font-serif">
+              Based on the Gold Coast
+            </h2>
+            <p className="text-slate-400 text-base max-w-2xl mx-auto font-sans">
+              We work with businesses across the Gold Coast and South East Queensland. Come visit us or get in touch to start a conversation.
+            </p>
+          </AnimateOnScroll>
+          <AnimateOnScroll>
+            <div className="rounded-2xl overflow-hidden border border-white/[0.08]" style={{ height: '450px' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14095.710317647996!2d153.4036289967759!3d-27.965504083131016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910fb8fc9eb923%3A0xa7a2f66f2a98e68a!2sMRG%20Marketing%20Agency%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1774087897467!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="MRG Marketing Agency Gold Coast location"
+              />
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       <section className="relative bg-navy-950 text-slate-50">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 

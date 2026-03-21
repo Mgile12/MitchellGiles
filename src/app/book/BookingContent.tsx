@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, Phone, CheckCircle2, TrendingUp, Users, Award } from 'lucide-react';
+import { ArrowLeft, Phone, CheckCircle2, TrendingUp, Users, Award, MapPin } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 
 const trustPoints = [
@@ -104,6 +104,32 @@ export default function BookingContent() {
           </div>
         </div>
       </main>
+
+      <section className="border-t border-white/[0.06] py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center">
+              <MapPin className="w-4 h-4 text-gold" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold font-sans">Our Location</p>
+              <p className="text-sm text-slate-400 font-sans">{BUSINESS_INFO.address.full}</p>
+            </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-white/[0.08]" style={{ height: '420px' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14095.710317647996!2d153.4036289967759!3d-27.965504083131016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910fb8fc9eb923%3A0xa7a2f66f2a98e68a!2sMRG%20Marketing%20Agency%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1774087897467!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="MRG Marketing Agency Gold Coast location"
+            />
+          </div>
+        </div>
+      </section>
 
       <footer className="border-t border-white/[0.06] py-6">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
