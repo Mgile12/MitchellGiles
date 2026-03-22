@@ -49,7 +49,6 @@ const clients: ClientLogo[] = [
   },
 ];
 
-const COLUMN_COUNT = 3;
 const DISPLAY_DURATION = 2000;
 const TICK_INTERVAL = 100;
 const COLUMN_OFFSET = 200;
@@ -72,14 +71,31 @@ function buildColumnSequences(logos: ClientLogo[], columns: number): ClientLogo[
   return sequences;
 }
 
-const columnSequences = buildColumnSequences(clients, COLUMN_COUNT);
+const mobileSequences = buildColumnSequences(clients, 2);
+const desktopSequences = buildColumnSequences(clients, 3);
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  return isMobile;
+}
 
 function LogoColumn({
   sequence,
   columnIndex,
+  containerWidth,
 }: {
   sequence: ClientLogo[];
   columnIndex: number;
+  containerWidth: number;
 }) {
   const [tick, setTick] = useState(0);
 
@@ -101,7 +117,7 @@ function LogoColumn({
   return (
     <div
       className="flex items-center justify-center overflow-hidden"
-      style={{ width: 220, height: 96 }}
+      style={{ width: containerWidth, height: 96 }}
     >
       <AnimatePresence mode="wait">
         <motion.a
@@ -143,8 +159,11 @@ function LogoColumn({
             src={logo.src}
             alt={logo.name}
             draggable={false}
-            className="h-14 sm:h-16 md:h-20 w-auto max-w-[180px] sm:max-w-[200px] object-contain select-none"
-            style={{ WebkitUserDrag: "none" } as React.CSSProperties}
+            className="h-14 sm:h-16 md:h-20 w-auto object-contain select-none"
+            style={{
+              maxWidth: containerWidth - 16,
+              WebkitUserDrag: "none",
+            } as React.CSSProperties}
             onContextMenu={(e) => e.preventDefault()}
           />
         </motion.a>
@@ -154,6 +173,10 @@ function LogoColumn({
 }
 
 export default function CurrentClients() {
+  const isMobile = useIsMobile();
+  const sequences = isMobile ? mobileSequences : desktopSequences;
+  const containerWidth = isMobile ? 150 : 220;
+
   return (
     <section className="bg-[#050a14]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 md:py-44">
@@ -173,14 +196,19 @@ export default function CurrentClients() {
         </motion.div>
 
         <motion.div
-          className="flex items-center justify-center gap-12 sm:gap-20 md:gap-28 lg:gap-36"
+          className="flex items-center justify-center gap-8 sm:gap-20 md:gap-28 lg:gap-36"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {columnSequences.map((sequence, i) => (
-            <LogoColumn key={i} sequence={sequence} columnIndex={i} />
+          {sequences.map((sequence, i) => (
+            <LogoColumn
+              key={i}
+              sequence={sequence}
+              columnIndex={i}
+              containerWidth={containerWidth}
+            />
           ))}
         </motion.div>
 
