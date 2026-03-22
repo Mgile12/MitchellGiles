@@ -159,9 +159,12 @@ function LogoColumn({
             src={logo.src}
             alt={logo.name}
             draggable={false}
-            className="h-14 sm:h-16 md:h-20 w-auto object-contain select-none"
+            className="w-auto object-contain select-none"
             style={{
-              maxWidth: containerWidth - 16,
+              height: logo.name === "Polish Hub" ? "auto" : undefined,
+              width: logo.name === "Polish Hub" ? containerWidth - 8 : undefined,
+              maxWidth: logo.name === "Polish Hub" ? containerWidth - 8 : containerWidth - 16,
+              maxHeight: logo.name === "Polish Hub" ? 96 : 80,
               WebkitUserDrag: "none",
             } as React.CSSProperties}
             onContextMenu={(e) => e.preventDefault()}
