@@ -9,9 +9,13 @@ const services = [
   'Meta Ads',
   'Email Marketing',
   'Copywriting',
-  'SEO',
+  'Local SEO',
   'Automation',
   'Google Ads',
+  'AI Optimisation (GEO)',
+  'TikTok Ads',
+  'Website Design',
+  'Event Marketing',
 ];
 
 export function AnimatedHero() {
