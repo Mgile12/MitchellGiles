@@ -11,7 +11,9 @@ import { AnimatePresence, motion } from "framer-motion";
 export interface Logo {
   name: string;
   id: number;
-  img: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  img?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  imgSrc?: string;
+  href?: string;
 }
 
 interface LogoColumnProps {
@@ -49,20 +51,21 @@ const distributeLogos = (allLogos: Logo[], columnCount: number): Logo[][] => {
 
 const LogoColumn: React.FC<LogoColumnProps> = React.memo(
   ({ logos, index, currentTime }) => {
-    const cycleInterval = 2000;
-    const columnDelay = index * 200;
+    const cycleInterval = 2500;
+    const columnDelay = index * 300;
     const adjustedTime =
       (currentTime + columnDelay) % (cycleInterval * logos.length);
     const currentIndex = Math.floor(adjustedTime / cycleInterval);
+    const currentLogo = logos[currentIndex];
     const CurrentLogo = useMemo(
-      () => logos[currentIndex].img,
-      [logos, currentIndex]
+      () => currentLogo.img,
+      [currentLogo]
     );
 
     return (
       <motion.div
-        className="relative h-14 w-24 overflow-hidden md:h-24 md:w-48"
-        initial={{ opacity: 0, y: 50 }}
+        className="relative h-20 w-36 overflow-hidden md:h-28 md:w-52"
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: index * 0.1,
@@ -72,26 +75,24 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
       >
         <AnimatePresence mode="wait">
           <motion.div
-            key={`${logos[currentIndex].id}-${currentIndex}`}
-            className="absolute inset-0 flex items-center justify-center"
-            initial={{ y: "10%", opacity: 0, filter: "blur(8px)" }}
+            key={`${currentLogo.id}-${currentIndex}`}
+            className="absolute inset-0 flex items-center justify-center px-3"
+            initial={{ y: "15%", opacity: 0, filter: "blur(6px)" }}
             animate={{
               y: "0%",
               opacity: 1,
               filter: "blur(0px)",
               transition: {
                 type: "spring",
-                stiffness: 300,
-                damping: 20,
-                mass: 1,
-                bounce: 0.2,
+                stiffness: 260,
+                damping: 22,
                 duration: 0.5,
               },
             }}
             exit={{
-              y: "-20%",
+              y: "-15%",
               opacity: 0,
-              filter: "blur(6px)",
+              filter: "blur(4px)",
               transition: {
                 type: "tween",
                 ease: "easeIn",
@@ -99,7 +100,17 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
               },
             }}
           >
-            <CurrentLogo className="h-20 w-20 max-h-[80%] max-w-[80%] object-contain md:h-32 md:w-32" />
+            {currentLogo.imgSrc ? (
+              <img
+                src={currentLogo.imgSrc}
+                alt={currentLogo.name}
+                draggable={false}
+                className="max-h-16 md:max-h-20 w-auto max-w-full object-contain"
+                style={{ filter: 'brightness(0) invert(1)' }}
+              />
+            ) : CurrentLogo ? (
+              <CurrentLogo className="h-16 w-16 max-h-full max-w-full object-contain md:h-20 md:w-20" />
+            ) : null}
           </motion.div>
         </AnimatePresence>
       </motion.div>
@@ -114,7 +125,7 @@ interface LogoCarouselProps {
   logos: Logo[];
 }
 
-export function LogoCarousel({ columnCount = 2, logos }: LogoCarouselProps) {
+export function LogoCarousel({ columnCount = 5, logos }: LogoCarouselProps) {
   const [logoSets, setLogoSets] = useState<Logo[][]>([]);
   const [currentTime, setCurrentTime] = useState(0);
 
@@ -133,7 +144,7 @@ export function LogoCarousel({ columnCount = 2, logos }: LogoCarouselProps) {
   }, [logos, columnCount]);
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex items-center justify-center gap-4 md:gap-8 flex-wrap">
       {logoSets.map((logos, index) => (
         <LogoColumn
           key={index}
