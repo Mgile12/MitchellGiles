@@ -1,6 +1,7 @@
 import { AnimatedHero } from '@/components/ui/animated-hero';
 import FAQSection from '@/components/FAQSection';
 import GoogleMapsOffer from '@/components/GoogleMapsOffer';
+import CurrentClients from '@/components/CurrentClients';
 import KillerResults from '@/components/KillerResults';
 import PartnerBadges from '@/components/PartnerBadges';
 import ServicesOverview from '@/components/ServicesOverview';
@@ -13,6 +14,7 @@ export default function HomePage() {
       <AnimatedHero />
       <FAQSection />
       <GoogleMapsOffer />
+      <CurrentClients />
       <PartnerBadges />
       <KillerResults />
       <ServicesOverview />
