@@ -1404,6 +1404,10 @@ video {
 .bg-white\/\[0\.04\] {
   background-color: rgb(255 255 255 / 0.04);
 }
+.bg-\[\#0C86EA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 134 234 / var(--tw-bg-opacity, 1));
+}
 .bg-\[radial-gradient\(ellipse_at_50\%_0\%\2c rgba\(12\2c 134\2c 234\2c 0\.06\)_0\%\2c transparent_65\%\)\] {
   background-image: radial-gradient(ellipse at 50% 0%,rgba(12,134,234,0.06) 0%,transparent 65%);
 }
@@ -1936,6 +1940,10 @@ video {
 }
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
+}
+.text-\[\#0C86EA\] {
+  --tw-text-opacity: 1;
+  color: rgb(12 134 234 / var(--tw-text-opacity, 1));
 }
 .underline {
   text-decoration-line: underline;
@@ -2845,6 +2853,11 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

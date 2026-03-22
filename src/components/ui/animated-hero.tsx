@@ -85,14 +85,25 @@ export function AnimatedHero() {
         </div>
       </div>
 
-      <div className="w-full border-t border-b border-white/8 bg-navy-900 py-3">
-        <MarqueeAnimation
-          direction="left"
-          baseVelocity={-4}
-          className="text-sm text-white/70 tracking-widest font-sans font-semibold normal-case"
-        >
-          {STATS}
-        </MarqueeAnimation>
+      <div className="w-full overflow-hidden">
+        <div className="bg-[#0C86EA] py-4">
+          <MarqueeAnimation
+            direction="left"
+            baseVelocity={-1.5}
+            className="text-xl md:text-2xl text-white font-bold tracking-wide normal-case font-sans"
+          >
+            {STATS}
+          </MarqueeAnimation>
+        </div>
+        <div className="bg-navy-800 py-4">
+          <MarqueeAnimation
+            direction="right"
+            baseVelocity={-1.5}
+            className="text-xl md:text-2xl text-[#0C86EA] font-bold tracking-wide normal-case font-sans"
+          >
+            {STATS}
+          </MarqueeAnimation>
+        </div>
       </div>
     </section>
   );
