@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface ClientLogo {
@@ -49,95 +49,106 @@ const clients: ClientLogo[] = [
   },
 ];
 
-const SLOT_COUNT = 3;
+const COLUMN_COUNT = 3;
+const DISPLAY_DURATION = 2000;
+const TICK_INTERVAL = 100;
+const COLUMN_OFFSET = 200;
 
-function DominoSlot({ clientId }: { clientId: number }) {
-  const client = clients.find((c) => c.id === clientId)!;
-  return (
-    <motion.a
-      key={clientId}
-      href={client.href}
-      target={client.href !== "#" ? "_blank" : undefined}
-      rel="noopener noreferrer"
-      className="flex items-center justify-center opacity-55 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 0.55, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      whileHover={{ opacity: 1 }}
-      transition={{ duration: 0.45, ease: "easeOut" }}
-      draggable={false}
-      onContextMenu={(e) => e.preventDefault()}
-    >
-      <img
-        src={client.src}
-        alt={client.name}
-        draggable={false}
-        className="h-16 sm:h-20 md:h-24 w-auto max-w-[160px] sm:max-w-[200px] md:max-w-[220px] object-contain select-none"
-        style={{ WebkitUserDrag: "none" } as React.CSSProperties}
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </motion.a>
-  );
+function buildColumnSequences(logos: ClientLogo[], columns: number): ClientLogo[][] {
+  const shuffled = [...logos].sort(() => Math.random() - 0.5);
+  const sequences: ClientLogo[][] = Array.from({ length: columns }, () => []);
+
+  shuffled.forEach((logo, i) => {
+    sequences[i % columns].push(logo);
+  });
+
+  const maxLen = Math.max(...sequences.map((s) => s.length));
+  sequences.forEach((seq) => {
+    while (seq.length < maxLen) {
+      seq.push(...seq.slice(0, maxLen - seq.length));
+    }
+  });
+
+  return sequences;
 }
 
-function DominoLogos() {
-  const initialSlots = clients.slice(0, SLOT_COUNT).map((c) => c.id);
-  const [slots, setSlots] = useState<number[]>(initialSlots);
-  const nextSlotRef = useRef(0);
-  const usedIdsRef = useRef<Set<number>>(new Set(initialSlots));
+const columnSequences = buildColumnSequences(clients, COLUMN_COUNT);
+
+function LogoColumn({
+  sequence,
+  columnIndex,
+}: {
+  sequence: ClientLogo[];
+  columnIndex: number;
+}) {
+  const [tick, setTick] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const slotIndex = nextSlotRef.current;
-      nextSlotRef.current = (nextSlotRef.current + 1) % SLOT_COUNT;
+    const offset = columnIndex * COLUMN_OFFSET;
+    const start = Date.now();
 
-      const availableIds = clients
-        .map((c) => c.id)
-        .filter((id) => !usedIdsRef.current.has(id));
+    const id = setInterval(() => {
+      const elapsed = Date.now() - start + offset;
+      setTick(Math.floor(elapsed / DISPLAY_DURATION));
+    }, TICK_INTERVAL);
 
-      if (availableIds.length === 0) {
-        usedIdsRef.current = new Set(
-          slots.filter((_, i) => i !== slotIndex)
-        );
-        const fallback = clients
-          .map((c) => c.id)
-          .find((id) => !usedIdsRef.current.has(id));
-        if (!fallback) return;
-        usedIdsRef.current.add(fallback);
-        setSlots((prev) => {
-          const next = [...prev];
-          next[slotIndex] = fallback;
-          return next;
-        });
-      } else {
-        const nextId = availableIds[0];
-        const outgoingId = slots[slotIndex];
-        usedIdsRef.current.delete(outgoingId);
-        usedIdsRef.current.add(nextId);
-        setSlots((prev) => {
-          const next = [...prev];
-          next[slotIndex] = nextId;
-          return next;
-        });
-      }
-    }, 1800);
+    return () => clearInterval(id);
+  }, [columnIndex]);
 
-    return () => clearInterval(interval);
-  }, [slots]);
+  const currentIndex = tick % sequence.length;
+  const logo = sequence[currentIndex];
 
   return (
-    <div className="flex items-center justify-center gap-12 sm:gap-20 md:gap-28 lg:gap-36">
-      {slots.map((clientId, i) => (
-        <div
-          key={i}
-          className="flex items-center justify-center"
-          style={{ minWidth: 140, minHeight: 80 }}
+    <div
+      className="flex items-center justify-center overflow-hidden"
+      style={{ width: 220, height: 96 }}
+    >
+      <AnimatePresence mode="wait">
+        <motion.a
+          key={`${columnIndex}-${tick}`}
+          href={logo.href}
+          target={logo.href !== "#" ? "_blank" : undefined}
+          rel="noopener noreferrer"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
+          className="flex items-center justify-center w-full h-full cursor-pointer"
+          initial={{
+            opacity: 0,
+            y: "10%",
+            filter: "blur(7px)",
+          }}
+          animate={{
+            opacity: 0.7,
+            y: "0%",
+            filter: "blur(0px)",
+            transition: {
+              type: "spring",
+              stiffness: 120,
+              damping: 18,
+              mass: 0.8,
+            },
+          }}
+          exit={{
+            opacity: 0,
+            y: "-20%",
+            filter: "blur(4px)",
+            transition: {
+              duration: 0.22,
+              ease: "easeIn",
+            },
+          }}
+          whileHover={{ opacity: 1 }}
         >
-          <AnimatePresence mode="wait">
-            <DominoSlot key={`slot-${i}-${clientId}`} clientId={clientId} />
-          </AnimatePresence>
-        </div>
-      ))}
+          <img
+            src={logo.src}
+            alt={logo.name}
+            draggable={false}
+            className="h-14 sm:h-16 md:h-20 w-auto max-w-[180px] sm:max-w-[200px] object-contain select-none"
+            style={{ WebkitUserDrag: "none" } as React.CSSProperties}
+            onContextMenu={(e) => e.preventDefault()}
+          />
+        </motion.a>
+      </AnimatePresence>
     </div>
   );
 }
@@ -162,12 +173,15 @@ export default function CurrentClients() {
         </motion.div>
 
         <motion.div
+          className="flex items-center justify-center gap-12 sm:gap-20 md:gap-28 lg:gap-36"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <DominoLogos />
+          {columnSequences.map((sequence, i) => (
+            <LogoColumn key={i} sequence={sequence} columnIndex={i} />
+          ))}
         </motion.div>
 
         <motion.p
