@@ -42,22 +42,7 @@ export default function Hero() {
             </div>
 
             <div className="mt-8 space-y-4 animate-fade-in-up animate-delay-150">
-              <h2 className="sr-only">
-                Web Designer Services: Website Design, Ecommerce Website Design, UX/UI Design, Website Development, SEO Web Design, Website Optimisation, Website Maintenance
-              </h2>
-
-              <div className="grid grid-cols-1 gap-3" aria-hidden="true">
-                <div className="border-l-2 border-gold pl-3 space-y-2">
-                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gold font-sans">Web Designer</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {["Website Design","Ecommerce Website Design","UX/UI Design","Website Development","SEO Web Design","Website Optimisation","Website Maintenance"].map((s) => (
-                      <span key={s} className="text-[0.7rem] font-medium tracking-wide text-slate-300 bg-white/5 border border-white/10 rounded px-2 py-0.5 font-sans">{s}</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
+<p className="text-base sm:text-lg text-slate-300 leading-[1.9] tracking-wide font-normal font-sans">
                 Pipelines that deliver while you sleep
               </p>
             </div>
