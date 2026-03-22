@@ -42,11 +42,11 @@ export function AnimatedHero() {
               Marketing Agency Gold Coast
             </h1>
 
-            <div className="relative flex w-full justify-center overflow-hidden h-[60px] md:h-[80px] mt-2">
+            <div className="relative flex w-full justify-center overflow-hidden h-[90px] md:h-[80px] mt-2">
               {titles.map((title, index) => (
                 <motion.span
                   key={index}
-                  className="absolute text-4xl md:text-6xl font-bold font-serif text-gold tracking-tighter"
+                  className="absolute w-full text-center text-4xl md:text-6xl font-bold font-serif text-gold tracking-tighter"
                   initial={{ opacity: 0, y: 80 }}
                   transition={{ type: 'spring', stiffness: 60, damping: 14 }}
                   animate={
