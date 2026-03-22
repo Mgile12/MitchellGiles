@@ -1,0 +1,81 @@
+'use client';
+
+import { useEffect, useMemo, useState } from 'react';
+import { motion } from 'framer-motion';
+import { MoveRight, PhoneCall } from 'lucide-react';
+import Link from 'next/link';
+
+const services = [
+  'Meta Ads',
+  'Email Marketing',
+  'Copywriting',
+  'SEO',
+  'Automation',
+  'Google Ads',
+];
+
+export function AnimatedHero() {
+  const [titleNumber, setTitleNumber] = useState(0);
+  const titles = useMemo(() => services, []);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setTitleNumber((prev) => (prev === titles.length - 1 ? 0 : prev + 1));
+    }, 2000);
+    return () => clearTimeout(timeoutId);
+  }, [titleNumber, titles]);
+
+  return (
+    <section className="w-full bg-navy-950 hero-grain overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex gap-8 py-24 lg:py-40 items-center justify-center flex-col">
+          <div className="flex gap-4 flex-col items-center">
+            <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-bold font-serif text-white">
+              Marketing Agency Gold Coast
+            </h1>
+
+            <div className="relative flex w-full justify-center overflow-hidden h-[60px] md:h-[80px] mt-2">
+              {titles.map((title, index) => (
+                <motion.span
+                  key={index}
+                  className="absolute text-4xl md:text-6xl font-bold font-serif text-gold tracking-tighter"
+                  initial={{ opacity: 0, y: 80 }}
+                  transition={{ type: 'spring', stiffness: 60, damping: 14 }}
+                  animate={
+                    titleNumber === index
+                      ? { y: 0, opacity: 1 }
+                      : {
+                          y: titleNumber > index ? -80 : 80,
+                          opacity: 0,
+                        }
+                  }
+                >
+                  {title}
+                </motion.span>
+              ))}
+            </div>
+
+            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-2xl text-center mt-4 font-sans">
+              Predictable revenue systems for Gold Coast businesses. We build the pipelines — you close the clients.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <Link
+              href="/book"
+              className="inline-flex items-center justify-center gap-3 h-11 rounded-lg px-8 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+            >
+              Book a Strategy Call <PhoneCall className="w-4 h-4" />
+            </Link>
+            <a
+              href="#results"
+              className="gold-flat-btn inline-flex items-center justify-center gap-3 h-11 rounded-lg px-8 text-sm font-semibold tracking-wide"
+            >
+              View Results <MoveRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

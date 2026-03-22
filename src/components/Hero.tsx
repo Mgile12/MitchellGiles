@@ -16,12 +16,12 @@ export default function Hero() {
               </p>
             </div>
 
-            <h1
+            <h2
               id="hero-headline"
               className="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight text-white leading-[1.1] font-serif animate-fade-in-up animate-delay-100"
             >
               Marketing Agency Gold Coast
-            </h1>
+            </h2>
 
             {/* Mobile-only image — shown between H1 and service tags */}
             <div className="md:hidden mt-8 animate-fade-in-up animate-delay-150">
