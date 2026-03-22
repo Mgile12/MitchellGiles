@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface ClientLogo {
@@ -49,17 +49,22 @@ const clients: ClientLogo[] = [
   },
 ];
 
-function ClientLogoItem({ client }: { client: ClientLogo }) {
+const SLOT_COUNT = 3;
+
+function DominoSlot({ clientId }: { clientId: number }) {
+  const client = clients.find((c) => c.id === clientId)!;
   return (
     <motion.a
+      key={clientId}
       href={client.href}
       target={client.href !== "#" ? "_blank" : undefined}
       rel="noopener noreferrer"
-      className="flex items-center justify-center px-4 py-3 opacity-70 hover:opacity-100 transition-opacity duration-300"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 0.7, y: 0 }}
-      whileHover={{ opacity: 1, scale: 1.05 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="flex items-center justify-center opacity-55 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 0.55, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      whileHover={{ opacity: 1 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
       draggable={false}
       onContextMenu={(e) => e.preventDefault()}
     >
@@ -67,7 +72,7 @@ function ClientLogoItem({ client }: { client: ClientLogo }) {
         src={client.src}
         alt={client.name}
         draggable={false}
-        className="h-14 sm:h-16 md:h-20 w-auto max-w-[140px] sm:max-w-[160px] object-contain select-none"
+        className="h-16 sm:h-20 md:h-24 w-auto max-w-[160px] sm:max-w-[200px] md:max-w-[220px] object-contain select-none"
         style={{ WebkitUserDrag: "none" } as React.CSSProperties}
         onContextMenu={(e) => e.preventDefault()}
       />
@@ -75,89 +80,98 @@ function ClientLogoItem({ client }: { client: ClientLogo }) {
   );
 }
 
-function AnimatedClientRow() {
-  const [visible, setVisible] = useState(true);
-  const [currentBatch, setCurrentBatch] = useState(0);
-
-  const toggle = useCallback(() => {
-    setVisible(false);
-    setTimeout(() => {
-      setCurrentBatch((prev) => (prev + 1) % 1);
-      setVisible(true);
-    }, 400);
-  }, []);
+function DominoLogos() {
+  const initialSlots = clients.slice(0, SLOT_COUNT).map((c) => c.id);
+  const [slots, setSlots] = useState<number[]>(initialSlots);
+  const nextSlotRef = useRef(0);
+  const usedIdsRef = useRef<Set<number>>(new Set(initialSlots));
 
   useEffect(() => {
-    const id = setInterval(toggle, 5000);
-    return () => clearInterval(id);
-  }, [toggle]);
+    const interval = setInterval(() => {
+      const slotIndex = nextSlotRef.current;
+      nextSlotRef.current = (nextSlotRef.current + 1) % SLOT_COUNT;
+
+      const availableIds = clients
+        .map((c) => c.id)
+        .filter((id) => !usedIdsRef.current.has(id));
+
+      if (availableIds.length === 0) {
+        usedIdsRef.current = new Set(
+          slots.filter((_, i) => i !== slotIndex)
+        );
+        const fallback = clients
+          .map((c) => c.id)
+          .find((id) => !usedIdsRef.current.has(id));
+        if (!fallback) return;
+        usedIdsRef.current.add(fallback);
+        setSlots((prev) => {
+          const next = [...prev];
+          next[slotIndex] = fallback;
+          return next;
+        });
+      } else {
+        const nextId = availableIds[0];
+        const outgoingId = slots[slotIndex];
+        usedIdsRef.current.delete(outgoingId);
+        usedIdsRef.current.add(nextId);
+        setSlots((prev) => {
+          const next = [...prev];
+          next[slotIndex] = nextId;
+          return next;
+        });
+      }
+    }, 1800);
+
+    return () => clearInterval(interval);
+  }, [slots]);
 
   return (
-    <AnimatePresence mode="wait">
-      {visible && (
-        <motion.div
-          key={currentBatch}
-          className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-14"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
+    <div className="flex items-center justify-center gap-12 sm:gap-20 md:gap-28 lg:gap-36">
+      {slots.map((clientId, i) => (
+        <div
+          key={i}
+          className="flex items-center justify-center"
+          style={{ minWidth: 140, minHeight: 80 }}
         >
-          {clients.map((client, i) => (
-            <motion.a
-              key={client.id}
-              href={client.href}
-              target={client.href !== "#" ? "_blank" : undefined}
-              rel="noopener noreferrer"
-              className="flex items-center justify-center opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-105"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 0.7, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.07, ease: "easeOut" }}
-              draggable={false}
-              onContextMenu={(e) => e.preventDefault()}
-            >
-              <img
-                src={client.src}
-                alt={client.name}
-                draggable={false}
-                className="h-12 sm:h-16 md:h-20 w-auto max-w-[130px] sm:max-w-[160px] object-contain select-none"
-                style={{ WebkitUserDrag: "none" } as React.CSSProperties}
-                onContextMenu={(e) => e.preventDefault()}
-              />
-            </motion.a>
-          ))}
-        </motion.div>
-      )}
-    </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <DominoSlot key={`slot-${i}-${clientId}`} clientId={clientId} />
+          </AnimatePresence>
+        </div>
+      ))}
+    </div>
   );
 }
 
 export default function CurrentClients() {
   return (
-    <section className="bg-[#050a14] border-y border-white/5">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <section className="bg-[#050a14]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 md:py-44">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-16 sm:mb-20"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <p className="text-slate-400 text-base sm:text-lg font-semibold font-sans mb-4 tracking-wide">
+            The best are already here
+          </p>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white font-serif leading-none">
+            We work with a select few
+          </h2>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#C9A84C]/70 font-sans mb-4">
-            Current Clients
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
-            I work with a select few
-          </h2>
-          <p className="mt-4 text-slate-400 text-base sm:text-lg max-w-xl mx-auto font-sans leading-relaxed">
-            I deliberately keep my client list small. Every business I take on gets my full attention — not a junior account manager.
-          </p>
+          <DominoLogos />
         </motion.div>
 
-        <AnimatedClientRow />
-
         <motion.p
-          className="mt-12 text-center text-sm text-slate-500 font-sans italic"
+          className="mt-16 sm:mt-20 text-center text-sm text-slate-500 font-sans italic"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

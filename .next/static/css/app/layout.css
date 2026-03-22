@@ -965,6 +965,9 @@ video {
 .max-w-\[140px\] {
   max-width: 140px;
 }
+.max-w-\[160px\] {
+  max-width: 160px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1733,6 +1736,10 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1902,6 +1909,9 @@ video {
 .leading-tight {
   line-height: 1.25;
 }
+.leading-none {
+  line-height: 1;
+}
 .tracking-\[0\.15em\] {
   letter-spacing: 0.15em;
 }
@@ -2038,6 +2048,9 @@ video {
 }
 .opacity-70 {
   opacity: 0.7;
+}
+.opacity-55 {
+  opacity: 0.55;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -2635,6 +2648,10 @@ video {
     max-width: 160px;
   }
 
+  .sm\:max-w-\[200px\] {
+    max-width: 200px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2673,6 +2690,10 @@ video {
 
   .sm\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .sm\:gap-20 {
+    gap: 5rem;
   }
 
   .sm\:space-y-16 > :not([hidden]) ~ :not([hidden]) {
@@ -2755,6 +2776,11 @@ video {
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 
   .sm\:pb-10 {
@@ -2885,6 +2911,10 @@ video {
     width: 12rem;
   }
 
+  .md\:max-w-\[220px\] {
+    max-width: 220px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2909,9 +2939,18 @@ video {
     gap: 4rem;
   }
 
+  .md\:gap-28 {
+    gap: 7rem;
+  }
+
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
   .md\:pl-24 {
@@ -3025,6 +3064,10 @@ video {
     gap: 3.5rem;
   }
 
+  .lg\:gap-36 {
+    gap: 9rem;
+  }
+
   .lg\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -3121,6 +3164,11 @@ video {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .lg\:leading-\[0\.5rem\] {
