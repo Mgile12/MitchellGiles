@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MoveRight, PhoneCall } from 'lucide-react';
 import Link from 'next/link';
+import { MarqueeAnimation } from '@/components/ui/marquee-effect';
 
 const services = [
   'Meta Ads',
@@ -17,6 +18,9 @@ const services = [
   'Website Design',
   'Event Marketing',
 ];
+
+const STATS =
+  '$60,632 in 30 Days | $82,574 from a Single Event Upsell | Top 3 Google Maps in 2 Days | 72% open rate & 10.3% click rate | $425K total sales with 436% growth | $100.3K in weekly sales | From 49 tickets to 88 and $25K+ in event tickets';
 
 export function AnimatedHero() {
   const [titleNumber, setTitleNumber] = useState(0);
@@ -32,7 +36,7 @@ export function AnimatedHero() {
   return (
     <section className="w-full bg-navy-950 hero-grain overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex gap-8 py-24 lg:py-40 items-center justify-center flex-col">
+        <div className="flex gap-8 py-20 lg:py-32 pb-12 lg:pb-16 items-center justify-center flex-col">
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-bold font-serif text-white">
               Marketing Agency Gold Coast
@@ -79,6 +83,16 @@ export function AnimatedHero() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="w-full border-t border-b border-white/8 bg-navy-900 py-3">
+        <MarqueeAnimation
+          direction="left"
+          baseVelocity={-4}
+          className="text-sm text-white/70 tracking-widest font-sans font-semibold normal-case"
+        >
+          {STATS}
+        </MarqueeAnimation>
       </div>
     </section>
   );
