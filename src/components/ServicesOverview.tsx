@@ -46,7 +46,7 @@ export default function ServicesOverview() {
             The Process
           </span>
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
-            What I Do in 5 Steps
+            What We Do in 5 Steps
           </h3>
           <div className="max-w-2xl mx-auto space-y-2">
             <p className="text-base sm:text-lg text-slate-400 font-sans">
