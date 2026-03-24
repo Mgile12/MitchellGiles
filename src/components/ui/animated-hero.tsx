@@ -37,7 +37,7 @@ export function AnimatedHero() {
     <section
       className="w-full hero-grain overflow-hidden relative"
       style={{
-        backgroundImage: 'url(https://iili.io/qrASeTB.png)',
+        backgroundImage: 'url(https://iili.io/qrRBDes.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
