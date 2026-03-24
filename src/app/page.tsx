@@ -15,8 +15,8 @@ export default function HomePage() {
       <FAQSection />
       <GoogleMapsOffer />
       <CurrentClients />
-      <PartnerBadges />
       <KillerResults />
+      <PartnerBadges />
       <ServicesOverview />
       <FinalCTA />
       <LocalSeoSection />
