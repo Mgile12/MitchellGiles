@@ -1612,9 +1612,18 @@ video {
 .to-neutral-800 {
   --tw-gradient-to: #262626 var(--tw-gradient-to-position);
 }
+.bg-cover {
+  background-size: cover;
+}
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .object-contain {
   -o-object-fit: contain;
@@ -2167,6 +2176,9 @@ video {
 }
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.\[background-image\:url\(\'https\:\/\/iili\.io\/qrRtzxa\.png\'\)\] {
+  background-image: url('https://iili.io/qrRtzxa.png');
 }
 
 @keyframes fadeIn {
@@ -2988,6 +3000,10 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:\[background-image\:url\(\'https\:\/\/iili\.io\/qrRBDes\.png\'\)\] {
+    background-image: url('https://iili.io/qrRBDes.png');
   }
 }
 

@@ -35,13 +35,7 @@ export function AnimatedHero() {
 
   return (
     <section
-      className="w-full hero-grain overflow-hidden relative"
-      style={{
-        backgroundImage: 'url(https://iili.io/qrRBDes.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="w-full hero-grain overflow-hidden relative bg-cover bg-center bg-no-repeat [background-image:url('https://iili.io/qrRtzxa.png')] md:[background-image:url('https://iili.io/qrRBDes.png')]"
     >
       <div className="absolute inset-0 bg-navy-950/80 z-0" />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
