@@ -34,8 +34,17 @@ export function AnimatedHero() {
   }, [titleNumber, titles]);
 
   return (
-    <section className="w-full bg-navy-950 hero-grain overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="w-full hero-grain overflow-hidden relative"
+      style={{
+        backgroundImage: 'url(https://iili.io/qrASeTB.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-navy-950/80 z-0" />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex gap-8 py-20 lg:py-32 pb-12 lg:pb-16 items-center justify-center flex-col">
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-bold font-serif text-white">
