@@ -53,7 +53,7 @@ export default function ServicesOverview() {
               No generic packages. No tiered pricing games.
             </p>
             <p className="text-base sm:text-lg text-slate-300 font-sans">
-              I build you a simple, predictable lead pipeline -- built for real Aussie customers, not marketing textbooks.
+              We build you a simple, predictable lead pipeline -- built for real Aussie customers, not marketing textbooks.
             </p>
           </div>
         </AnimateOnScroll>
