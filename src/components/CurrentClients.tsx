@@ -57,24 +57,34 @@ const clients: ClientLogo[] = [
 
 const DISPLAY_DURATION = 2000;
 const TICK_INTERVAL = 100;
-const COLUMN_OFFSET = 200;
+const COLUMN_OFFSET = 700;
+
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const result = [...arr];
+  let s = seed;
+  for (let i = result.length - 1; i > 0; i--) {
+    s = (s * 1664525 + 1013904223) & 0xffffffff;
+    const j = Math.abs(s) % (i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
 function buildColumnSequences(logos: ClientLogo[], columns: number): ClientLogo[][] {
-  const shuffled = [...logos].sort(() => Math.random() - 0.5);
-  const sequences: ClientLogo[][] = Array.from({ length: columns }, () => []);
-
-  shuffled.forEach((logo, i) => {
-    sequences[i % columns].push(logo);
-  });
-
-  const maxLen = Math.max(...sequences.map((s) => s.length));
-  sequences.forEach((seq) => {
-    while (seq.length < maxLen) {
-      seq.push(...seq.slice(0, maxLen - seq.length));
+  return Array.from({ length: columns }, (_, col) => {
+    const shuffled = seededShuffle(logos, col * 31337 + 9001);
+    const sequence: ClientLogo[] = [];
+    const targetLen = logos.length * 2;
+    while (sequence.length < targetLen) {
+      for (const logo of shuffled) {
+        if (sequence.length === 0 || sequence[sequence.length - 1].id !== logo.id) {
+          sequence.push(logo);
+        }
+        if (sequence.length >= targetLen) break;
+      }
     }
+    return sequence;
   });
-
-  return sequences;
 }
 
 const mobileSequences = buildColumnSequences(clients, 2);
