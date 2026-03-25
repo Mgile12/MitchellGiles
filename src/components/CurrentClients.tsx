@@ -47,6 +47,12 @@ const clients: ClientLogo[] = [
     src: "https://iili.io/q8YGebS.png",
     href: "#",
   },
+  {
+    id: 7,
+    name: "All GC Hire",
+    src: "https://iili.io/qPHnu8x.png",
+    href: "https://allgchire.com.au/",
+  },
 ];
 
 const DISPLAY_DURATION = 2000;
