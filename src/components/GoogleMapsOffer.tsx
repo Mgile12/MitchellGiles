@@ -179,7 +179,7 @@ export default function GoogleMapsOffer() {
                     </div>
                     <div className="flex justify-between items-center py-4 rounded-xl bg-gold/5 border border-gold/20 px-4 mt-2">
                       <span className="text-white font-semibold">One-time investment</span>
-                      <span className="text-gold font-bold text-xl">$2,000</span>
+                      <span className="text-gold font-bold text-xl">$750</span>
                     </div>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function GoogleMapsOffer() {
                 <div className="space-y-6">
                   <div className="rounded-xl bg-white/[0.04] border border-white/[0.08] p-6">
                     <p className="text-2xl sm:text-3xl font-bold text-white font-serif mb-2">
-                      $2,000 once.<br />
+                      $750 once.<br />
                       <span className="text-gold">$4,000+ every month</span><br />
                       you stay invisible.
                     </p>
@@ -240,7 +240,7 @@ export default function GoogleMapsOffer() {
             </a>
 
             <p className="mt-5 text-xs text-slate-500 font-sans">
-              $2,000 one-time. Top 3 in 14 days. Money-back guarantee.
+              $750 one-time. Top 3 in 14 days. Money-back guarantee.
             </p>
           </div>
         </AnimateOnScroll>
