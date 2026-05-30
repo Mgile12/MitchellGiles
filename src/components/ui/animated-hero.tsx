@@ -42,7 +42,7 @@ export function AnimatedHero() {
         <div className="flex gap-8 py-20 lg:py-32 pb-12 lg:pb-16 items-center justify-center flex-col">
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-bold font-serif text-white">
-              Marketing Agency Gold Coast
+              Marketing Agency Ormeau
             </h1>
 
             <div className="relative flex w-full justify-center overflow-hidden h-[90px] md:h-[80px] mt-2">
