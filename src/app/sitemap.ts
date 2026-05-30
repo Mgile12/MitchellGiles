@@ -1,5 +1,4 @@
 import type { MetadataRoute } from 'next';
-import { AREAS } from '@/lib/areas';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mitchellgiles.com';
@@ -15,19 +14,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/marketing-automation-gold-coast`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
   ];
 
-  const areaPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/areas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    ...AREAS.map((area) => ({
-      url: `${baseUrl}/areas/${area.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    })),
-  ];
-
   return [
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     ...servicePages,
-    ...areaPages,
+    { url: `${baseUrl}/areas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 }

@@ -4,20 +4,6 @@ import Link from 'next/link';
 import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight, Layers } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
-import ServedAreasLinks from '@/components/ServedAreasLinks';
-
-const SERVICES_AREAS = [
-  { name: 'Southport', slug: 'southport' },
-  { name: 'Surfers Paradise', slug: 'surfers-paradise' },
-  { name: 'Broadbeach', slug: 'broadbeach' },
-  { name: 'Burleigh Heads', slug: 'burleigh-heads' },
-  { name: 'Robina', slug: 'robina' },
-  { name: 'Nerang', slug: 'nerang' },
-  { name: 'Hope Island', slug: 'hope-island' },
-  { name: 'Main Beach', slug: 'main-beach' },
-  { name: 'Gold Coast', slug: 'gold-coast' },
-  { name: 'Brisbane', slug: 'brisbane' },
-];
 
 const services = [
   {
@@ -134,8 +120,6 @@ export default function ServicesContent() {
           </div>
         </div>
       </section>
-
-      <ServedAreasLinks areas={SERVICES_AREAS} heading="We Work With Businesses Across the Gold Coast" />
 
       <section className="bg-navy-950 relative overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">

@@ -3,7 +3,6 @@
 import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
-import { TOP_5_AREAS } from '../lib/areas';
 
 interface FooterProps {
   onOpenModal: () => void;
@@ -20,13 +19,7 @@ const XIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-const footerAreaLinks = [
-  ...TOP_5_AREAS.map((area) => ({
-    href: `/areas/${area.slug}`,
-    label: area.name,
-  })),
-  { href: '/areas', label: 'View All Areas' },
-];
+const footerAreaLinks = [{ href: '/areas', label: 'View All Areas' }];
 
 export default function Footer({ onOpenModal }: FooterProps) {
   return (
