@@ -53,6 +53,30 @@ const clients: ClientLogo[] = [
     src: "https://iili.io/qPHnu8x.png",
     href: "https://allgchire.com.au/",
   },
+  {
+    id: 8,
+    name: "Washroom Essential",
+    src: "https://iili.io/ChPt9R4.md.webp",
+    href: "#",
+  },
+  {
+    id: 9,
+    name: "Cleaning Melbourne",
+    src: "https://iili.io/ChPtFs9.md.png",
+    href: "#",
+  },
+  {
+    id: 10,
+    name: "Best Deal 4 U",
+    src: "https://iili.io/ChPtxOQ.md.png",
+    href: "#",
+  },
+  {
+    id: 11,
+    name: "Fleur",
+    src: "https://iili.io/ChPZLxI.png",
+    href: "#",
+  },
 ];
 
 const DISPLAY_DURATION = 2000;
