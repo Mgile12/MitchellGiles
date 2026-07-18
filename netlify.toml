@@ -1,3 +1,15 @@
 [build]
 command = "npx next build"
 publish = "out"
+
+[[redirects]]
+from = "https://mitchellgiles.com/*"
+to = "https://mrgmarketing.com.au/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.mitchellgiles.com/*"
+to = "https://mrgmarketing.com.au/:splat"
+status = 301
+force = true
