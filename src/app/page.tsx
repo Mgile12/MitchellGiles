@@ -5,7 +5,6 @@ import CurrentClients from '@/components/CurrentClients';
 import KillerResults from '@/components/KillerResults';
 import PartnerBadges from '@/components/PartnerBadges';
 import ServicesOverview from '@/components/ServicesOverview';
-import LocalSeoSection from '@/components/LocalSeoSection';
 import FinalCTA from '@/components/FinalCTA';
 
 export default function HomePage() {
@@ -19,7 +18,6 @@ export default function HomePage() {
       <PartnerBadges />
       <ServicesOverview />
       <FinalCTA />
-      <LocalSeoSection />
     </>
   );
 }

@@ -20,7 +20,7 @@ const services = [
 ];
 
 const STATS =
-  '$60,632 in 30 Days | $82,574 from a Single Event Upsell | Top 3 Google Maps in 2 Days | 72% open rate & 10.3% click rate | $425K total sales with 436% growth | $100.3K in weekly sales | From 49 tickets to 88 and $25K+ in event tickets';
+  '$60,632 in 30 Days | $82,574 from a Single Event Upsell | Top 3 Google Maps in 2 Days | 72% open rate & 10.3% click rate | $425K total sales with 436% growth | $100.3K in weekly sales';
 
 export function AnimatedHero() {
   const [titleNumber, setTitleNumber] = useState(0);

@@ -1,6 +1,6 @@
 'use client';
 
-import { TrendingUp, BarChart3, Mail, ShoppingCart, Tag, Trophy, X } from 'lucide-react';
+import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy, X } from 'lucide-react';
 import { useState } from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 import type { LucideIcon } from 'lucide-react';
@@ -69,15 +69,6 @@ const results: Result[] = [
     metricLabel: 'Weekly Sales',
     icon: TrendingUp,
     overlay: '$100K Weekly Sales | No Paid Ads',
-  },
-  {
-    image: '/files_7126411-1763632208250-Before and After Image Youtube Thumbnail (5).png',
-    title: 'Before & After Transformation',
-    description: 'From 49 tickets to 88 and $25K+ in packed Melbourne Draft events. Real transformation.',
-    metric: '$25K+',
-    metricLabel: 'Event Revenue',
-    icon: Tag,
-    overlay: '$25K+ Event Revenue | 88 Tickets | Sold Out',
   }
 ];
 
