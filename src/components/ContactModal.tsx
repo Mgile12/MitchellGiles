@@ -58,7 +58,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       }, 2400);
     } catch (error) {
       console.error('Error submitting form:', error);
-      setErrors({ submit: 'Failed to submit form. Please try again.' });
+      setErrors({ submit: "That didn't send. Try again, or call 0474 870 535." });
     } finally {
       setIsSubmitting(false);
     }

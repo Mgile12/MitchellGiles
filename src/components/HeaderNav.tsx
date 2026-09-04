@@ -151,7 +151,7 @@ export default function HeaderNav() {
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
             >
-              Book a Call
+              Book a call
             </Link>
           </nav>
 
@@ -231,7 +231,7 @@ export default function HeaderNav() {
               href="/book"
               className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
             >
-              Book a Call
+              Book a call
             </Link>
           </div>
         </div>

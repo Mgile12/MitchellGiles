@@ -21,26 +21,26 @@ interface Result {
 const results: Result[] = [
   {
     image: '/image.png',
-    title: 'Multi-Campaign Performance',
-    description: 'Managed 3 high-performing ad sets with 67 website purchases and $30K+ in value.',
+    title: '6.88x return on Meta, three ad sets',
+    description: 'Three ad sets, 67 website purchases, $30K in value. Screenshot from Ads Manager.',
     metric: '6.88x',
-    metricLabel: 'ROAS',
+    metricLabel: 'return on ad spend',
     icon: BarChart3,
     overlay: '6.88x ROAS | 67 Purchases | $30K+ Value',
   },
   {
     image: '/Screenshot_2026-02-20_082607.png',
-    title: '$60,632 in 30 Days',
-    description: 'Email marketing driving 63.4% of monthly store revenue. Strategy, automation, and execution that turns subscribers into buyers.',
+    title: '$60,632 from email in 30 days',
+    description: "Email drove 63.4% of the store's revenue that month, from a list they already had.",
     metric: '$60K',
-    metricLabel: 'Email Revenue',
+    metricLabel: 'from email',
     icon: Mail,
     overlay: '$60,632 in 30 Days | Email Marketing | 63.4% Monthly Revenue',
   },
   {
     image: '/Screenshot 2025-08-04 132125.png',
-    title: '$82,574 from a Single Event Upsell',
-    description: 'Built a high-ticket upsell waitlist off a live event and generated $82,574 in under 3 hours. No ads. We ran the same sequence twice.',
+    title: '$82,574 from one event upsell, twice',
+    description: 'A high-ticket upsell waitlist off a live event. $82,574 in under three hours, no ads. I ran the same sequence twice.',
     metric: '$82K',
     metricLabel: 'in 3hrs, twice',
     icon: TrendingUp,
@@ -48,28 +48,28 @@ const results: Result[] = [
   },
   {
     image: '/files_7126411-1763632304045-Screenshot 2025-07-24 143236.png',
-    title: 'Email Marketing That Converts',
-    description: '72% open rate, 10.3% click rate. Email performance that actually drives action.',
+    title: '72% open rate, 10.3% click rate',
+    description: 'One campaign to a list the client already had.',
     metric: '72%',
-    metricLabel: 'Open Rate',
+    metricLabel: 'open rate',
     icon: Mail,
     overlay: '72% Open Rate | 10.3% Click Rate | Real Engagement',
   },
   {
     image: '/files_7126411-1763632208203-Before and After Image Youtube Thumbnail (3).png',
-    title: 'Yearly Revenue Growth',
-    description: '$425K total sales with 436% growth. 1,801 orders, 1,425 bookings.',
+    title: '$425K in a year, up 436%',
+    description: '1,801 orders and 1,425 bookings in twelve months.',
     metric: '$425K',
-    metricLabel: 'Annual Sales',
+    metricLabel: 'in a year',
     icon: ShoppingCart,
     overlay: '$425K Annual | 436% Growth | 1,801 Orders',
   },
   {
     image: '/files_7126411-1763632208151-Before and After Image Youtube Thumbnail (4).png',
-    title: '7-Day Sales Surge',
-    description: '$100.3K in weekly sales with 49 orders and 87 form submissions.',
+    title: '$100.3K in one week',
+    description: '49 orders and 87 form submissions in seven days.',
     metric: '$100K',
-    metricLabel: 'Weekly Sales',
+    metricLabel: 'in a week',
     icon: TrendingUp,
     overlay: '$100K Weekly Sales | No Paid Ads',
   }
@@ -158,10 +158,10 @@ export default function KillerResults() {
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
           <Eyebrow className="mb-4">Results</Eyebrow>
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
-            Results That Matter
+            What the work made.
           </h3>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
-            Revenue, not vanity metrics. Every screenshot is from a client account. Tap to enlarge. The Google Maps heatmaps and profile numbers live on the{' '}
+            Revenue, not vanity metrics. Every screenshot is from a client account. Tap any to enlarge. The Google Maps heatmaps and profile numbers are on the{' '}
             <Link href="/google-business-profile-gold-coast" className="text-gold underline underline-offset-2 hover:text-gold/80">Business Profile page</Link>.
           </p>
         </AnimateOnScroll>

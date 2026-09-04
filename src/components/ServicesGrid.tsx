@@ -36,13 +36,13 @@ const services = [
   },
   {
     title: 'Lead Generation',
-    blurb: 'A pipeline you can count on every week, not a spike you cannot repeat.',
+    blurb: 'A pipeline you can count on every week, not a spike you can&apos;t repeat.',
     href: '/lead-generation-gold-coast',
     icon: Target,
   },
   {
     title: 'Marketing Automation',
-    blurb: 'Follow-up that happens whether or not you are on the tools that day.',
+    blurb: 'Follow-up that happens whether or not you&apos;re on the tools that day.',
     href: '/marketing-automation-gold-coast',
     icon: Cog,
   },
@@ -70,8 +70,7 @@ export default function ServicesGrid() {
             Pick the problem. I&apos;ll pick the channel.
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
-            Eight things I do for Gold Coast businesses. Each one has its own page with the detail, the proof and
-            how it works.
+            Eight things I do for Gold Coast businesses. Not sure which one you need? That&apos;s what the call is for.
           </p>
         </AnimateOnScroll>
 

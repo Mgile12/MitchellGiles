@@ -16,12 +16,12 @@ const howIWork = [
   {
     icon: Scissors,
     title: 'No packages',
-    text: 'We find the choke point, fix it, and cut what does not work quickly. Budget goes where the results are.',
+    text: 'I find the choke point, fix it, and cut what doesn\'t work. Budget goes where the results are.',
   },
   {
     icon: CalendarCheck,
     title: 'Every Friday',
-    text: 'You get an update from me every week. Any message in between is answered the same day.',
+    text: 'You get an update every Friday. Anything in between is answered the same day.',
   },
 ];
 
