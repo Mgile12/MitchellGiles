@@ -71,7 +71,7 @@ const results: Result[] = [
     metric: '$100K',
     metricLabel: 'in a week',
     icon: TrendingUp,
-    overlay: '$100K Weekly Sales | No Paid Ads',
+    overlay: '$100K in a week | No paid ads',
   }
 ];
 
