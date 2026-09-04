@@ -4,6 +4,7 @@ import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy, X } from 'lucide-rea
 import { useState } from 'react';
 import Link from 'next/link';
 import AnimateOnScroll from './AnimateOnScroll';
+import Eyebrow from './Eyebrow';
 import type { LucideIcon } from 'lucide-react';
 
 interface Result {
@@ -127,7 +128,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
 
         <div className="inline-block px-6 py-4 rounded-xl bg-gold/10 border-2 border-gold/30 hover-scale">
           <div className="flex items-baseline gap-2">
-            <span className="text-4xl sm:text-5xl font-bold text-gold font-serif">
+            <span className="text-gradient-accent text-4xl sm:text-5xl font-bold font-serif">
               {result.metric}
             </span>
           </div>
@@ -150,13 +151,11 @@ export default function KillerResults() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section id="results" className="bg-navy-950 text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section id="results" className="relative bg-navy-950 text-white overflow-hidden">
+      <div className="glow w-[640px] h-[640px] -top-56 right-[-10%]" style={{ ['--glow-a' as string]: '0.12' }} aria-hidden="true" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold/30 text-gold rounded-full mb-6 font-semibold text-sm animate-scale-in">
-            <BarChart3 className="w-4 h-4" />
-            Real Results
-          </div>
+          <Eyebrow className="mb-4">Results</Eyebrow>
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
             Results That Matter
           </h3>

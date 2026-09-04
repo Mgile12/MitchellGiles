@@ -1,17 +1,18 @@
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import AnimateOnScroll from './AnimateOnScroll';
+import Eyebrow from './Eyebrow';
 
 export default function FinalCTA() {
   return (
-    <section className="relative bg-navy-950 text-slate-50" aria-labelledby="final-heading">
+    <section className="relative bg-navy-950 text-slate-50 overflow-hidden" aria-labelledby="final-heading">
       <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
+      <div className="grid-ground absolute inset-0" aria-hidden="true" />
+      <div className="glow w-[700px] h-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
 
-      <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28">
+      <AnimateOnScroll className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6 font-sans">
-            One honest question
-          </span>
+          <Eyebrow className="mb-6">One honest question</Eyebrow>
           <h2
             id="final-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15] font-serif"

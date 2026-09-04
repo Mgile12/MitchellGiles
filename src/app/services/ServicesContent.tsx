@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight, Layers } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Eyebrow from '@/components/Eyebrow';
 import ServicesOverview from '@/components/ServicesOverview';
 
 const services = [
@@ -73,9 +74,7 @@ export default function ServicesContent() {
           </nav>
 
           <div className="max-w-3xl animate-fade-in-up">
-            <span className="inline-block text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5 font-sans">
-              All Services
-            </span>
+            <Eyebrow align="left" className="mb-5">All services</Eyebrow>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 font-serif">
               Marketing Services Gold Coast
             </h1>
@@ -125,9 +124,7 @@ export default function ServicesContent() {
       <section className="bg-navy-950 relative overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <AnimateOnScroll className="text-center mb-10">
-            <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
-              Our Location
-            </span>
+            <Eyebrow className="mb-4">Location</Eyebrow>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-5 font-serif">
               Based on the Gold Coast
             </h2>

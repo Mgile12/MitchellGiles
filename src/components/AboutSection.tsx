@@ -1,5 +1,6 @@
 import { Users, Globe2, Scissors, CalendarCheck } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
+import Eyebrow from './Eyebrow';
 
 const howIWork = [
   {
@@ -34,13 +35,12 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative bg-navy-950 text-white overflow-hidden" aria-labelledby="about-heading">
       <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
+      <div className="glow w-[620px] h-[620px] -bottom-72 -left-40" style={{ ['--glow-a' as string]: '0.12' }} aria-hidden="true" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
           <AnimateOnScroll className="lg:col-span-7">
-            <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-5 font-sans">
-              About
-            </span>
+            <Eyebrow align="left" className="mb-5">About</Eyebrow>
             <h2
               id="about-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1] font-serif mb-6"
@@ -83,14 +83,14 @@ export default function AboutSection() {
           </AnimateOnScroll>
 
           <AnimateOnScroll className="lg:col-span-5">
-            <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 sm:p-8 lg:sticky lg:top-28">
+            <div className="accent-line relative overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.05] to-white/[0.02] p-6 sm:p-8 lg:sticky lg:top-28">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">
                 Three numbers, all from client accounts
               </p>
               <div className="divide-y divide-white/[0.06]">
                 {quickProof.map((p) => (
                   <div key={p.figure} className="py-5 first:pt-0 last:pb-0">
-                    <p className="text-3xl sm:text-4xl font-bold text-white font-serif tabular-nums">{p.figure}</p>
+                    <p className="text-gradient-accent text-3xl sm:text-4xl font-bold font-serif tabular-nums">{p.figure}</p>
                     <p className="text-sm text-slate-400 font-sans mt-1 leading-relaxed">{p.label}</p>
                   </div>
                 ))}

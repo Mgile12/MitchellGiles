@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Eyebrow from './Eyebrow';
 
 interface ClientLogo {
   name: string;
@@ -88,8 +89,9 @@ function MarqueeRow({
 
 export default function CurrentClients() {
   return (
-    <section className="bg-[#050a14] overflow-hidden" aria-labelledby="clients-heading">
-      <div className="py-24 sm:py-32">
+    <section className="relative bg-[#050a14] overflow-hidden" aria-labelledby="clients-heading">
+      <div className="glow w-[720px] h-[420px] -top-40 left-1/2 -translate-x-1/2" style={{ ['--glow-a' as string]: '0.1' }} aria-hidden="true" />
+      <div className="relative py-24 sm:py-32">
         <motion.div
           className="text-center mb-14 sm:mb-16 px-4"
           initial={{ opacity: 0, y: 16 }}
@@ -97,9 +99,7 @@ export default function CurrentClients() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
         >
-          <p className="text-slate-400 text-base sm:text-lg font-semibold font-sans mb-4 tracking-wide">
-            The best are already here
-          </p>
+          <Eyebrow className="mb-5">The best are already here</Eyebrow>
           <h2
             id="clients-heading"
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white font-serif leading-none"

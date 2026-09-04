@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MapPin, Search, Megaphone, Layers, Mail, Target, Cog, BarChart3, ArrowUpRight } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
+import Eyebrow from './Eyebrow';
 
 const services = [
   {
@@ -56,13 +57,12 @@ const services = [
 export default function ServicesGrid() {
   return (
     <section id="services" className="bg-navy-900 relative overflow-hidden" aria-labelledby="services-heading">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(12,134,234,0.05),transparent_60%)]" />
+      <div className="grid-ground absolute inset-0" aria-hidden="true" />
+      <div className="glow w-[560px] h-[560px] -top-48 right-[-8%]" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
-          <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
-            What I help with
-          </span>
+          <Eyebrow className="mb-4">What I help with</Eyebrow>
           <h2
             id="services-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"

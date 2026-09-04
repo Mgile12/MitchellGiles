@@ -1,5 +1,6 @@
 import { MessageSquare, Globe2, Users, ClipboardCheck, Crosshair, Scissors, CalendarCheck } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
+import Eyebrow from './Eyebrow';
 
 const steps = [
   {
@@ -60,9 +61,7 @@ export default function ServicesOverview() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-14 sm:mb-20">
-          <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
-            The process
-          </span>
+          <Eyebrow className="mb-4">The process</Eyebrow>
           <h3
             id="process-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"

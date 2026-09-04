@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { MapPin, ArrowRight, ArrowDown, X, ChevronDown, Search, Magnet, CalendarDays, Lock } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Eyebrow from '@/components/Eyebrow';
 
 const heatmaps = [
   {
@@ -100,7 +101,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
     <div className="bg-navy-950 text-white">
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(12,134,234,0.08)_0%,transparent_60%)] pointer-events-none" />
+        <div className="grid-ground absolute inset-0" aria-hidden="true" />
+        <div className="glow w-[720px] h-[520px] -top-56 left-1/2 -translate-x-1/2" style={{ ['--glow-a' as string]: '0.16' }} aria-hidden="true" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 sm:pt-44 pb-16 sm:pb-20 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold/40 text-gold rounded-full mb-6 font-semibold text-sm tracking-wide uppercase font-sans">
             <MapPin className="w-4 h-4" />
@@ -252,9 +254,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       <section className="bg-navy-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <AnimateOnScroll className="text-center mb-12">
-            <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
-              How it works
-            </span>
+            <Eyebrow className="mb-4">How it works</Eyebrow>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
               Four steps. The last one never ends.
             </h2>
