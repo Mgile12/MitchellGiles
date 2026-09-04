@@ -71,10 +71,12 @@ export default function MetaAdsHero() {
           <div className="animate-fade-in-up animate-delay-200">
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/30">
               <img
-                src="/meta-ads-agency-gold-coast-analytics-dashboard.jpg"
-                alt="Meta Ads Agency Gold Coast analytics dashboard"
-                className="w-full h-auto object-cover aspect-[4/3]"
+                src="/image.png"
+                alt="Meta Ads Manager: three ad sets, 67 website purchases, 6.88x return on ad spend"
+                className="w-full h-auto object-cover aspect-[4/3] object-left-top"
                 loading="eager"
+                width={1411}
+                height={517}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">

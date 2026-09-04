@@ -106,12 +106,10 @@ export default function MetaAdsLocal() {
 
         <AnimateOnScroll>
           <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/30">
-            <img
-              src="/meta-ads-brisbane-performance-report.jpg"
-              alt="Meta Ads Brisbane performance report"
-              className="w-full h-64 sm:h-80 object-cover"
-              loading="lazy"
-            />
+            <div className="w-full h-64 sm:h-80 bg-navy-950 relative" aria-hidden="true">
+              <div className="grid-ground absolute inset-0" />
+              <div className="glow w-[520px] h-[520px] -top-40 right-[-10%]" style={{ ['--glow-a' as string]: '0.2' }} />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/50 to-transparent" />
             <div className="absolute inset-0 flex items-center">
               <div className="p-8 sm:p-12 max-w-xl">

@@ -1,4 +1,4 @@
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Plug } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 const scalingSteps = [
@@ -85,12 +85,9 @@ export default function MetaAdsFramework() {
           <AnimateOnScroll stagger={2}>
             <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8 h-full">
               <div className="flex items-center gap-3 mb-6">
-                <img
-                  src="/meta-ads-conversion-api-setup.jpg"
-                  alt="Conversion API setup for Meta Ads"
-                  className="w-16 h-16 rounded-xl object-cover border border-white/[0.08]"
-                  loading="lazy"
-                />
+                <div className="w-16 h-16 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
+                  <Plug className="w-7 h-7 text-gold" aria-hidden="true" />
+                </div>
                 <div>
                   <h3 className="text-xl font-bold text-white font-serif">2025 Technical Checklist</h3>
                   <p className="text-xs text-slate-500 font-sans mt-0.5">Confirm before increasing spend</p>

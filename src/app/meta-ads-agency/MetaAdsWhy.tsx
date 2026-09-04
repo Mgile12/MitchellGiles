@@ -114,12 +114,10 @@ export default function MetaAdsWhy() {
 
           <AnimateOnScroll stagger={2}>
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/30">
-              <img
-                src="/meta-ads-specialist-facebook-ads-manager-review.jpg"
-                alt="Meta Ads specialist reviewing Facebook Ads Manager"
-                className="w-full h-auto object-cover aspect-[4/3]"
-                loading="lazy"
-              />
+              <div className="w-full aspect-[4/3] bg-navy-950 relative" aria-hidden="true">
+                <div className="grid-ground absolute inset-0" />
+                <div className="glow w-[420px] h-[420px] -top-32 -right-24" style={{ ['--glow-a' as string]: '0.22' }} />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-900/10 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <div className="bg-navy-950/85 backdrop-blur-sm rounded-xl border border-white/[0.08] px-5 py-4">
