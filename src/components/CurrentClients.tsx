@@ -1,8 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import Eyebrow from './Eyebrow';
-
 interface ClientLogo {
   name: string;
   src: string;
@@ -39,16 +34,16 @@ function LogoTile({ logo }: { logo: ClientLogo }) {
       alt={logo.name}
       draggable={false}
       loading="lazy"
-      className="max-h-14 sm:max-h-16 w-auto object-contain select-none"
+      className="max-h-12 sm:max-h-14 w-auto object-contain select-none"
       style={{
-        maxWidth: logo.wide ? 200 : 140,
+        maxWidth: logo.wide ? 180 : 130,
         filter: logo.invert ? 'invert(1)' : undefined,
         mixBlendMode: logo.invert ? 'screen' : undefined,
       }}
     />
   );
 
-  const cls = 'logo-tile flex items-center justify-center h-24 sm:h-28 px-8 sm:px-12 opacity-70 shrink-0';
+  const cls = 'logo-tile flex items-center justify-center h-20 sm:h-24 px-7 sm:px-10 opacity-70 shrink-0';
 
   return logo.href ? (
     <a href={logo.href} target="_blank" rel="noopener noreferrer" className={cls} aria-label={logo.name}>
@@ -87,35 +82,13 @@ function MarqueeRow({
   );
 }
 
+/** Client logos, two slow rows, straight under the hero. No heading by design. */
 export default function CurrentClients() {
   return (
-    <section className="relative bg-[#050a14] overflow-hidden" aria-labelledby="clients-heading">
-      <div className="glow w-[720px] h-[420px] -top-40 left-1/2 -translate-x-1/2" style={{ ['--glow-a' as string]: '0.1' }} aria-hidden="true" />
-      <div className="relative py-24 sm:py-32">
-        <motion.div
-          className="text-center mb-14 sm:mb-16 px-4"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-        >
-          <Eyebrow className="mb-5">The best are already here</Eyebrow>
-          <h2
-            id="clients-heading"
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white font-serif leading-none"
-          >
-            We work with a select few
-          </h2>
-        </motion.div>
-
-        <div className="space-y-2">
-          <MarqueeRow logos={rowOne} direction="left" duration={70} />
-          <MarqueeRow logos={rowTwo} direction="left" duration={78} />
-        </div>
-
-        <p className="mt-14 sm:mt-16 text-center text-sm text-slate-500 font-sans italic px-4">
-          Spots are limited. If you&apos;re a fit, let&apos;s talk.
-        </p>
+    <section className="bg-navy-950 border-b border-white/[0.06] overflow-hidden" aria-label="Clients">
+      <div className="py-8 sm:py-10">
+        <MarqueeRow logos={rowOne} direction="left" duration={70} />
+        <MarqueeRow logos={rowTwo} direction="left" duration={78} />
       </div>
     </section>
   );
