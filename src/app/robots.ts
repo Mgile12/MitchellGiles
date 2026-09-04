@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { BUSINESS_INFO } from '@/lib/business-info';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mitchellgiles.com/sitemap.xml',
+    sitemap: `${BUSINESS_INFO.url}/sitemap.xml`,
   };
 }

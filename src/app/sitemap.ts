@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { BUSINESS_INFO } from '@/lib/business-info';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mitchellgiles.com';
+  const baseUrl = BUSINESS_INFO.url;
 
   const servicePages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
