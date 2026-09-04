@@ -11,7 +11,7 @@ export const BUSINESS_INFO = {
 
   phone: '0474 870 535',
   phoneFormatted: '+61474870535',
-  email: 'MitchellGiles134@Gmail.com',
+  email: 'mitchell@mrgmarketing.com.au',
 
   address: {
     street: '9 Laverton St',
