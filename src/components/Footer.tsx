@@ -18,6 +18,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
       tagline="Marketing consultant, Ormeau. Working across the Gold Coast and Brisbane."
       mainLinks={[
         { href: '/services', label: 'All Services' },
+        { href: '/google-business-profile-gold-coast', label: 'Google Business Profile' },
         { href: '/seo-gold-coast', label: 'SEO' },
         { href: '/google-ads-gold-coast', label: 'Google Ads' },
         { href: '/email-marketing-gold-coast', label: 'Email Marketing' },

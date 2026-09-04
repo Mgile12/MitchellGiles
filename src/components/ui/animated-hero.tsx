@@ -76,7 +76,7 @@ export function AnimatedHero() {
               href="/book"
               className="press inline-flex items-center justify-center gap-3 h-11 rounded-lg px-8 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
             >
-              Book a Strategy Call <PhoneCall className="w-4 h-4" />
+              Book a 15-minute call <PhoneCall className="w-4 h-4" />
             </Link>
             <a
               href="#results"

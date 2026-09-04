@@ -12,17 +12,17 @@ export default function FinalCTA() {
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6 font-sans">
             One honest question
           </span>
-          <h3
+          <h2
             id="final-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15] font-serif"
           >
             Do you care more about what you pay,
             <span className="text-slate-400"> or what your marketing makes you?</span>
-          </h3>
+          </h2>
 
           <p className="mt-8 text-lg sm:text-xl text-slate-300 leading-relaxed font-sans max-w-2xl mx-auto">
-            If it&apos;s the second, book a call and bring your numbers. If it&apos;s the first, I&apos;m not the
-            right fit, and that&apos;s fine.
+            If it&apos;s the second, a 15-minute call is all it takes to find out if I can help. Tell me what you sell
+            and what&apos;s not working. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.
           </p>
 
           <div className="mt-10">
@@ -30,10 +30,10 @@ export default function FinalCTA() {
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
             >
-              Book a call with Mitchell
+              Book a 15-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
-            <p className="mt-4 text-sm text-slate-500 font-sans">30 minutes. No pitch on the first call.</p>
+            <p className="mt-4 text-sm text-slate-500 font-sans">No pitch. No obligation.</p>
           </div>
         </div>
       </AnimateOnScroll>

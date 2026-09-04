@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight, Layers } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import ServicesOverview from '@/components/ServicesOverview';
 
 const services = [
   {
@@ -150,6 +151,8 @@ export default function ServicesContent() {
           </AnimateOnScroll>
         </div>
       </section>
+
+      <ServicesOverview />
 
       <section className="relative bg-navy-950 text-slate-50">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />

@@ -7,6 +7,7 @@ import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
 
 const serviceLinks = [
+  { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
   { label: 'SEO Gold Coast', href: '/seo-gold-coast' },
   { label: 'Google Ads Gold Coast', href: '/google-ads-gold-coast' },
   { label: 'Meta Ads Agency', href: '/meta-ads-agency' },
@@ -79,7 +80,7 @@ export default function HeaderNav() {
           <Link href="/" className="shrink-0">
             <img
               src="https://iili.io/qjWolf9.md.png"
-              alt="Mitchell Giles Marketing Logo"
+              alt="MRG Marketing logo"
               className={`object-contain transition-all duration-300 ${scrolled ? 'h-14 sm:h-16' : 'h-20 sm:h-24'}`}
               style={{ width: 'auto' }}
             />
@@ -127,10 +128,10 @@ export default function HeaderNav() {
             </Link>
 
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('about')}
               className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
-              Process
+              About
             </button>
             <button
               onClick={() => scrollToSection('results')}
@@ -204,10 +205,10 @@ export default function HeaderNav() {
           </Link>
 
           <button
-            onClick={() => scrollToSection('services')}
+            onClick={() => scrollToSection('about')}
             className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
           >
-            Process
+            About
           </button>
           <button
             onClick={() => scrollToSection('results')}

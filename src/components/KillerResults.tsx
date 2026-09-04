@@ -2,6 +2,7 @@
 
 import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy, X } from 'lucide-react';
 import { useState } from 'react';
+import Link from 'next/link';
 import AnimateOnScroll from './AnimateOnScroll';
 import type { LucideIcon } from 'lucide-react';
 
@@ -160,7 +161,8 @@ export default function KillerResults() {
             Results That Matter
           </h3>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
-            Revenue, not vanity metrics. Every screenshot is from a client account. Tap to enlarge.
+            Revenue, not vanity metrics. Every screenshot is from a client account. Tap to enlarge. The Google Maps heatmaps and profile numbers live on the{' '}
+            <Link href="/google-business-profile-gold-coast" className="text-gold underline underline-offset-2 hover:text-gold/80">Business Profile page</Link>.
           </p>
         </AnimateOnScroll>
 
@@ -176,14 +178,12 @@ export default function KillerResults() {
         </div>
 
         <AnimateOnScroll className="text-center mt-16 sm:mt-20">
-          <a
-            href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/book"
             className="gold-flat-btn inline-block px-8 py-4 font-semibold rounded-lg text-lg font-sans"
           >
-            Start Your Growth
-          </a>
+            Book a 15-minute call
+          </Link>
           <p className="mt-4 text-sm text-slate-500 font-sans">
             Bring your numbers. I&apos;ll tell you what I&apos;d do with them.
           </p>
