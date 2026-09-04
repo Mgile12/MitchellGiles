@@ -43,7 +43,7 @@ export default function DigitalMarketingHero() {
                 href="/book"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide group"
               >
-                Get a Free Strategy Review
+                Book a 15-minute call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </div>
