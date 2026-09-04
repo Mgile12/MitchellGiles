@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <>
       <AnimatedHero />
-      <CurrentClients />
       <ServicesGrid />
+      <CurrentClients />
       <AboutSection />
       <KillerResults />
       <FinalCTA />

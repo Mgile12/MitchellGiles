@@ -82,13 +82,13 @@ function MarqueeRow({
   );
 }
 
-/** Client logos, two slow rows, straight under the hero. No heading by design. */
+/** Client logos, two slow rows, between the services and About. No heading by design. */
 export default function CurrentClients() {
   return (
-    <section className="bg-navy-950 border-b border-white/[0.06] overflow-hidden" aria-label="Clients">
+    <section className="bg-navy-950 overflow-hidden" aria-label="Clients">
       <div className="py-8 sm:py-10">
-        <MarqueeRow logos={rowOne} direction="left" duration={70} />
-        <MarqueeRow logos={rowTwo} direction="left" duration={78} />
+        <MarqueeRow logos={rowOne} direction="left" duration={55} />
+        <MarqueeRow logos={rowTwo} direction="left" duration={62} />
       </div>
     </section>
   );
