@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     description:
       'Marketing services across the Gold Coast, Brisbane and South East Queensland.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/areas`,
+    url: `${BUSINESS_INFO.url}/areas/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/areas`,
+    canonical: `${BUSINESS_INFO.url}/areas/`,
   },
 };
 

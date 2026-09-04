@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Integrated digital marketing strategy for Gold Coast businesses. SEO, Google Ads, email and automation working together for sustainable growth.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/digital-marketing-gold-coast`,
+    url: `${BUSINESS_INFO.url}/digital-marketing-gold-coast/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/digital-marketing-gold-coast`,
+    canonical: `${BUSINESS_INFO.url}/digital-marketing-gold-coast/`,
   },
 };
 
@@ -41,7 +41,7 @@ function buildPageJsonLd() {
       name: 'Gold Coast',
       containedInPlace: { '@type': 'State', name: 'Queensland' },
     },
-    url: `${BUSINESS_INFO.url}/digital-marketing-gold-coast`,
+    url: `${BUSINESS_INFO.url}/digital-marketing-gold-coast/`,
   };
 
   const breadcrumbSchema = {

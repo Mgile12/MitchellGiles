@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital strategy and automation.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/services`,
+    url: `${BUSINESS_INFO.url}/services/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/services`,
+    canonical: `${BUSINESS_INFO.url}/services/`,
   },
 };
 

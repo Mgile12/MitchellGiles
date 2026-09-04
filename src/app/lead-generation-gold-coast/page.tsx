@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Lead generation systems for Gold Coast businesses. Paid ads, SEO, email nurturing and conversion tracking that delivers qualified leads on repeat.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/lead-generation-gold-coast`,
+    url: `${BUSINESS_INFO.url}/lead-generation-gold-coast/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/lead-generation-gold-coast`,
+    canonical: `${BUSINESS_INFO.url}/lead-generation-gold-coast/`,
   },
 };
 
@@ -84,7 +84,7 @@ function buildPageJsonLd() {
       name: 'Gold Coast',
       containedInPlace: { '@type': 'State', name: 'Queensland' },
     },
-    url: `${BUSINESS_INFO.url}/lead-generation-gold-coast`,
+    url: `${BUSINESS_INFO.url}/lead-generation-gold-coast/`,
   };
 
   const breadcrumbSchema = {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Strategic email marketing services for Gold Coast businesses. Automation, campaigns, and reporting that turn your database into predictable monthly revenue.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/email-marketing-gold-coast`,
+    url: `${BUSINESS_INFO.url}/email-marketing-gold-coast/`,
     locale: 'en_AU',
     images: [{ url: 'https://iili.io/qHd5dYb.md.jpg' }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['https://iili.io/qHd5dYb.md.jpg'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/email-marketing-gold-coast`,
+    canonical: `${BUSINESS_INFO.url}/email-marketing-gold-coast/`,
   },
 };
 
@@ -95,7 +95,7 @@ function buildPageJsonLd() {
         name: 'Queensland',
       },
     },
-    url: `${BUSINESS_INFO.url}/email-marketing-gold-coast`,
+    url: `${BUSINESS_INFO.url}/email-marketing-gold-coast/`,
   };
 
   const breadcrumbSchema = {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Strategic Google Ads management for Gold Coast businesses. Search campaigns, remarketing and budget optimisation built for real ROI.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/google-ads-gold-coast`,
+    url: `${BUSINESS_INFO.url}/google-ads-gold-coast/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/google-ads-gold-coast`,
+    canonical: `${BUSINESS_INFO.url}/google-ads-gold-coast/`,
   },
 };
 
@@ -41,7 +41,7 @@ function buildPageJsonLd() {
       name: 'Gold Coast',
       containedInPlace: { '@type': 'State', name: 'Queensland' },
     },
-    url: `${BUSINESS_INFO.url}/google-ads-gold-coast`,
+    url: `${BUSINESS_INFO.url}/google-ads-gold-coast/`,
   };
 
   const breadcrumbSchema = {

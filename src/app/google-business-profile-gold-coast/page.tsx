@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       'Top 3 on Google Maps within 90 days, measured in calls and website clicks. Live heatmaps from real Gold Coast clients.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}${PATH}`,
+    url: `${BUSINESS_INFO.url}${PATH}/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}${PATH}`,
+    canonical: `${BUSINESS_INFO.url}${PATH}/`,
   },
 };
 
@@ -81,7 +81,7 @@ function buildPageJsonLd() {
       name: 'Gold Coast',
       containedInPlace: { '@type': 'State', name: 'Queensland' },
     },
-    url: `${BUSINESS_INFO.url}${PATH}`,
+    url: `${BUSINESS_INFO.url}${PATH}/`,
   };
 
   const breadcrumbSchema = {

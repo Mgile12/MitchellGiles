@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Strategic Facebook & Instagram advertising for Gold Coast and Brisbane businesses. Signal-driven Meta Ads management with technical depth most agencies ignore.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/meta-ads-agency`,
+    url: `${BUSINESS_INFO.url}/meta-ads-agency/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/meta-ads-agency`,
+    canonical: `${BUSINESS_INFO.url}/meta-ads-agency/`,
   },
 };
 
@@ -40,7 +40,7 @@ function buildPageJsonLd() {
       { '@type': 'City', name: 'Gold Coast', containedInPlace: { '@type': 'State', name: 'Queensland' } },
       { '@type': 'City', name: 'Brisbane', containedInPlace: { '@type': 'State', name: 'Queensland' } },
     ],
-    url: `${BUSINESS_INFO.url}/meta-ads-agency`,
+    url: `${BUSINESS_INFO.url}/meta-ads-agency/`,
   };
 
   const faqSchema = {

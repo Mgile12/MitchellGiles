@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       'Strategic SEO services for Gold Coast businesses. Technical audits, local SEO, content strategy and ongoing optimisation that drives sustainable organic traffic.',
     type: 'website',
-    url: `${BUSINESS_INFO.url}/seo-gold-coast`,
+    url: `${BUSINESS_INFO.url}/seo-gold-coast/`,
     locale: 'en_AU',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: `${BUSINESS_INFO.url}/seo-gold-coast`,
+    canonical: `${BUSINESS_INFO.url}/seo-gold-coast/`,
   },
 };
 
@@ -95,7 +95,7 @@ function buildPageJsonLd() {
         name: 'Queensland',
       },
     },
-    url: `${BUSINESS_INFO.url}/seo-gold-coast`,
+    url: `${BUSINESS_INFO.url}/seo-gold-coast/`,
   };
 
   const breadcrumbSchema = {
