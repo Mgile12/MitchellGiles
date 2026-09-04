@@ -109,8 +109,8 @@ export default function CurrentClients() {
         </motion.div>
 
         <div className="space-y-2">
-          <MarqueeRow logos={rowOne} direction="left" duration={42} />
-          <MarqueeRow logos={rowTwo} direction="right" duration={38} />
+          <MarqueeRow logos={rowOne} direction="left" duration={70} />
+          <MarqueeRow logos={rowTwo} direction="left" duration={78} />
         </div>
 
         <p className="mt-14 sm:mt-16 text-center text-sm text-slate-500 font-sans italic px-4">
