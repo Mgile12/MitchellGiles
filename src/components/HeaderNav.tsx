@@ -103,7 +103,7 @@ export default function HeaderNav() {
               </button>
 
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 transition-all duration-200 ${
+                className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 transition-[opacity,transform] duration-200 ease-[var(--ease-out)] ${
                   servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'
                 }`}
               >
@@ -166,10 +166,12 @@ export default function HeaderNav() {
       </div>
 
       <div
-        className={`md:hidden overflow-hidden transition-all duration-250 ease-in-out bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
-          mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
+          mobileOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
+        aria-hidden={!mobileOpen}
       >
+        <div className="overflow-hidden">
         <div className="px-5 py-5 space-y-1">
           <div>
             <button
@@ -232,6 +234,7 @@ export default function HeaderNav() {
               Book a Call
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </header>

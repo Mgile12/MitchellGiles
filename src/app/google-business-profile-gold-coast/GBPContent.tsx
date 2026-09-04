@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { MapPin, ArrowRight, ArrowDown, X, ChevronDown, Search, Magnet, CalendarDays, Lock } from 'lucide-react';
+import { MapPin, ArrowRight, ArrowDown, ChevronDown, Search, Magnet, CalendarDays, Lock } from 'lucide-react';
+import Lightbox from '@/components/Lightbox';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 
@@ -198,13 +199,13 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
             </p>
           </AnimateOnScroll>
 
-          <AnimateOnScroll className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {gbpProof.map((item) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {gbpProof.map((item, index) => (
+              <AnimateOnScroll key={item.src} stagger={(index % 3) + 1}>
               <button
-                key={item.src}
                 type="button"
                 onClick={() => setLightbox(item.src)}
-                className="proof-card group text-left rounded-2xl border border-white/[0.08] bg-white/[0.02] overflow-hidden"
+                className="proof-card group w-full text-left rounded-2xl border border-white/[0.08] bg-white/[0.02] overflow-hidden"
                 aria-label={`${item.stat}. ${item.note}. Open full size.`}
               >
                 <div className="bg-white">
@@ -222,8 +223,9 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                   <p className="text-slate-400 text-sm font-sans mt-0.5">{item.note}</p>
                 </div>
               </button>
+              </AnimateOnScroll>
             ))}
-          </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
@@ -311,25 +313,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
         </AnimateOnScroll>
       </section>
 
-      {lightbox && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 cursor-pointer animate-fade-in"
-          onClick={() => setLightbox(null)}
-          role="dialog"
-          aria-modal="true"
-        >
-          <button
-            onClick={() => setLightbox(null)}
-            className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-200 z-10"
-            aria-label="Close"
-          >
-            <X className="w-6 h-6 text-white" />
-          </button>
-          <div className="relative max-w-5xl max-h-[90vh] cursor-default animate-modal-in" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Expanded view" className="w-full h-full object-contain rounded-lg shadow-2xl" />
-          </div>
-        </div>
-      )}
+      <Lightbox src={lightbox} onClose={() => setLightbox(null)} />
     </div>
   );
 }

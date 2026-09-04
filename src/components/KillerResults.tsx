@@ -1,6 +1,7 @@
 'use client';
 
-import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy, X } from 'lucide-react';
+import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy } from 'lucide-react';
+import Lightbox from './Lightbox';
 import { useState } from 'react';
 import Link from 'next/link';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -189,29 +190,7 @@ export default function KillerResults() {
         </AnimateOnScroll>
       </div>
 
-      {selectedImage && (
-        <div
-          onClick={() => setSelectedImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 cursor-pointer animate-fade-in"
-        >
-          <button
-            onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-200 z-10"
-          >
-            <X className="w-6 h-6 text-white" />
-          </button>
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="relative max-w-6xl max-h-[90vh] cursor-default animate-modal-in"
-          >
-            <img
-              src={selectedImage}
-              alt="Result preview"
-              className="w-full h-full object-contain rounded-lg shadow-2xl"
-            />
-          </div>
-        </div>
-      )}
+      <Lightbox src={selectedImage} alt="Result preview" onClose={() => setSelectedImage(null)} />
     </section>
   );
 }

@@ -41,7 +41,7 @@ export default function GoogleAdsSEOConnection() {
               className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors duration-200 font-sans group"
             >
               Learn about SEO Gold Coast
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </AnimateOnScroll>
 

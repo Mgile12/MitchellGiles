@@ -21,19 +21,18 @@ export default function MetaAdsCTA() {
               integrity, explains technical frameworks clearly and scales methodically — let's talk.
             </p>
             <p className="text-base text-slate-400 font-sans">
-              Get a free audit of your current Meta Ads account. We will show you exactly where budget
+              Book a 15-minute call about your Meta Ads account. I&apos;ll show you exactly where budget
               is being wasted and what it will take to scale profitably.
             </p>
           </div>
 
           <div className="mt-12 relative inline-block group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-gold via-gold-light to-gold rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-300" />
             <Link
               href="/book"
-              className="relative inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold bg-gradient-to-r from-gold via-gold-light to-gold text-navy-950 hover:shadow-2xl hover:shadow-gold/20 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
+              className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
-              Book a Free Meta Ads Audit
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              Book a 15-minute call
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>
 

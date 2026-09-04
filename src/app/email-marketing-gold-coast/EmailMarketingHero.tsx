@@ -51,11 +51,11 @@ export default function EmailMarketingHero() {
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide group"
               >
                 Book a Call
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
               <button
                 onClick={scrollToContent}
-                className="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide border border-white/[0.12] text-slate-300 hover:text-gold hover:border-gold/30 transition-all duration-300"
+                className="press inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide border border-white/[0.12] text-slate-300 hover:text-gold hover:border-gold/30"
               >
                 See What This Involves
               </button>
