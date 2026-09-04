@@ -5,7 +5,7 @@ import AutomationContent from './AutomationContent';
 export const metadata: Metadata = {
   title: 'Marketing Automation Gold Coast | Build Systems That Scale',
   description:
-    'Marketing automation services for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that scales without adding headcount. Based in Southport QLD.',
+    'Marketing automation services for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that scales without adding headcount. Based in Ormeau QLD.',
   openGraph: {
     title: 'Marketing Automation Gold Coast | MRG Marketing',
     description:

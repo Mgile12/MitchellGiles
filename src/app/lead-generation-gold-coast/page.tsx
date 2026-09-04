@@ -5,7 +5,7 @@ import LeadGenContent from './LeadGenContent';
 export const metadata: Metadata = {
   title: 'Lead Generation Gold Coast | Paid Advertising & Systems That Convert',
   description:
-    'Professional lead generation services for Gold Coast businesses. Google Ads, Meta Ads, SEO, email nurturing and conversion tracking that builds a predictable pipeline. Based in Southport QLD.',
+    'Professional lead generation services for Gold Coast businesses. Google Ads, Meta Ads, SEO, email nurturing and conversion tracking that builds a predictable pipeline. Based in Ormeau QLD.',
   openGraph: {
     title: 'Lead Generation Gold Coast | MRG Marketing',
     description:

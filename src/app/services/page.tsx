@@ -5,7 +5,7 @@ import ServicesContent from './ServicesContent';
 export const metadata: Metadata = {
   title: 'Services Gold Coast | Marketing Services for Local Business Growth',
   description:
-    'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital marketing strategy and marketing automation. Based in Southport QLD.',
+    'Full-service marketing for Gold Coast businesses. SEO, Google Ads, email marketing, lead generation, digital marketing strategy and marketing automation. Based in Ormeau QLD.',
   openGraph: {
     title: 'Services Gold Coast | MRG Marketing',
     description:

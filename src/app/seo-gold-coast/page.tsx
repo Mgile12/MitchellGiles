@@ -5,7 +5,7 @@ import SEOContent from './SEOContent';
 export const metadata: Metadata = {
   title: 'SEO Gold Coast | Strategic Search Engine Optimisation for Local Business Growth',
   description:
-    'Professional SEO services for Gold Coast businesses. Technical audits, on-page optimisation, local SEO, content strategy and link building that delivers sustainable organic growth. Based in Southport QLD.',
+    'Professional SEO services for Gold Coast businesses. Technical audits, on-page optimisation, local SEO, content strategy and link building that delivers sustainable organic growth. Based in Ormeau QLD.',
   openGraph: {
     title: 'SEO Gold Coast | MRG Marketing',
     description:

@@ -14,17 +14,17 @@ export const BUSINESS_INFO = {
   email: 'MitchellGiles134@Gmail.com',
 
   address: {
-    street: '82 Marine Parade',
-    locality: 'Southport',
+    street: '9 Laverton St',
+    locality: 'Ormeau',
     region: 'QLD',
-    postalCode: '4215',
+    postalCode: '4208',
     country: 'AU',
-    full: '82 Marine Parade, Southport QLD 4215',
+    full: '9 Laverton St, Ormeau QLD 4208',
   },
 
   geo: {
-    latitude: -27.9673,
-    longitude: 153.4145,
+    latitude: -27.767,
+    longitude: 153.2616,
   },
 
   social: {
@@ -47,6 +47,7 @@ export const BUSINESS_INFO = {
   ],
 
   serviceArea: [
+    'Ormeau',
     'Gold Coast',
     'Southport',
     'Surfers Paradise',

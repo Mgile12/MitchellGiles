@@ -71,16 +71,16 @@ function buildJsonLd() {
     telephone: '0474870535',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '82 Marine Parade, SOUTHPORT QLD 4215',
-      addressLocality: 'Gold coast',
+      streetAddress: '9 Laverton St',
+      addressLocality: 'Ormeau',
       addressRegion: 'QLD',
-      postalCode: '4215',
+      postalCode: '4208',
       addressCountry: 'AU',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -27.9636877,
-      longitude: 153.4136107,
+      latitude: -27.767,
+      longitude: 153.2616,
     },
     openingHoursSpecification: [
       {

@@ -5,7 +5,7 @@ import GoogleAdsContent from './GoogleAdsContent';
 export const metadata: Metadata = {
   title: 'Google Ads Gold Coast | Paid Search That Drives Qualified Leads',
   description:
-    'Professional Google Ads management for Gold Coast businesses. Search campaigns, remarketing, performance tracking and budget optimisation that delivers measurable ROI. Based in Southport QLD.',
+    'Professional Google Ads management for Gold Coast businesses. Search campaigns, remarketing, performance tracking and budget optimisation that delivers measurable ROI. Based in Ormeau QLD.',
   openGraph: {
     title: 'Google Ads Gold Coast | MRG Marketing',
     description:

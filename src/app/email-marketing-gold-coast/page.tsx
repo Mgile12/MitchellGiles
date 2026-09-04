@@ -5,7 +5,7 @@ import EmailMarketingContent from './EmailMarketingContent';
 export const metadata: Metadata = {
   title: 'Email Marketing Gold Coast | Strategy & Services for Local Business Growth',
   description:
-    'Professional email marketing services for Gold Coast businesses. Strategy, automation, campaign management and reporting that drives measurable revenue. Based in Southport QLD.',
+    'Professional email marketing services for Gold Coast businesses. Strategy, automation, campaign management and reporting that drives measurable revenue. Based in Ormeau QLD.',
   openGraph: {
     title: 'Email Marketing Gold Coast | MRG Marketing',
     description:

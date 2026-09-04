@@ -5,7 +5,7 @@ import DigitalMarketingContent from './DigitalMarketingContent';
 export const metadata: Metadata = {
   title: 'Digital Marketing Gold Coast | Integrated Strategy for Sustainable Growth',
   description:
-    'Full-service digital marketing for Gold Coast businesses. SEO, Google Ads, email marketing and automation integrated into one strategy that drives predictable growth. Based in Southport QLD.',
+    'Full-service digital marketing for Gold Coast businesses. SEO, Google Ads, email marketing and automation integrated into one strategy that drives predictable growth. Based in Ormeau QLD.',
   openGraph: {
     title: 'Digital Marketing Gold Coast | MRG Marketing',
     description:
