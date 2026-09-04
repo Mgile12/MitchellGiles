@@ -126,23 +126,24 @@ export default function ServicesContent() {
           <AnimateOnScroll className="text-center mb-10">
             <Eyebrow className="mb-4">Location</Eyebrow>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-5 font-serif">
-              Based on the Gold Coast
+              Based in Ormeau
             </h2>
             <p className="text-slate-400 text-base max-w-2xl mx-auto font-sans">
-              We work with businesses across the Gold Coast and South East Queensland. Come visit us or get in touch to start a conversation.
+              North end of the Gold Coast, half an hour from Brisbane. I work with businesses across both, and most of
+              it happens over the phone and on site with you.
             </p>
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="rounded-2xl overflow-hidden border border-white/[0.08]" style={{ height: '450px' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14095.710317647996!2d153.4036289967759!3d-27.965504083131016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910fb8fc9eb923%3A0xa7a2f66f2a98e68a!2sMRG%20Marketing%20Agency%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1774087897467!5m2!1sen!2sau"
+                src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.address.full}, Australia`)}&z=14&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="MRG Marketing Agency Gold Coast location"
+                title={`MRG Marketing, ${BUSINESS_INFO.address.full}, on Google Maps`}
               />
             </div>
           </AnimateOnScroll>
@@ -160,7 +161,7 @@ export default function ServicesContent() {
               Not sure where to start?
             </h2>
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-sans mb-12">
-              Book a free strategy call and we will audit your current setup, identify the biggest opportunities,
+              Book a 15-minute call. Tell me what you sell and what is not working, and I will tell you where I would start,
               and recommend exactly where to focus first.
             </p>
 
@@ -170,7 +171,7 @@ export default function ServicesContent() {
                 href="/book"
                 className="relative inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold bg-gradient-to-r from-gold via-gold-light to-gold text-navy-950 hover:shadow-2xl hover:shadow-gold/20 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
               >
-                Book a Free Strategy Call
+                Book a 15-minute call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>

@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import BookingContent from './BookingContent';
 
 export const metadata: Metadata = {
-  title: 'Book a Free Strategy Call | MRG Marketing Marketing',
+  title: 'Book a 15-minute call | MRG Marketing',
   description:
-    'Book a free 30-minute growth strategy session with MRG Marketing. Get a clear, channel-specific marketing plan for your Gold Coast business.',
+    'Book a 15-minute call with Mitchell Giles, marketing consultant in Ormeau. Tell him what you sell and what is not working. If he can help, you get a plan.',
   robots: { index: false, follow: false },
 };
 

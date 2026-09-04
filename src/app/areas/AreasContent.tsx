@@ -51,7 +51,7 @@ export default function AreasContent() {
                 href="/book"
                 className="relative inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold bg-gradient-to-r from-gold via-gold-light to-gold text-navy-950 hover:shadow-2xl hover:shadow-gold/20 transition-all duration-300 group"
               >
-                Book a Free Strategy Call
+                Book a 15-minute call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
