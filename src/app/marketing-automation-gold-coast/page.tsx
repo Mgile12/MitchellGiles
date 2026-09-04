@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/marketing-automation-gold-coast`,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Marketing Automation Gold Coast | MRG Marketing',
     description:
       'Marketing automation for Gold Coast businesses. CRM integration, lead scoring, nurture sequences and conversion tracking that runs while you sleep.',
-    images: ['/image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/marketing-automation-gold-coast`,

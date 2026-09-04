@@ -22,14 +22,8 @@ export default function BookingContent() {
       <header className="border-b border-white/[0.06] bg-navy-950/90 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <img
-              src="https://iili.io/qjAyV71.png"
-              alt="MRG Marketing"
-              className="h-9 w-9 object-contain"
-            />
-            <span className="hidden sm:block text-sm font-semibold text-white/80 group-hover:text-white transition-colors duration-200">
-              MRG Marketing
-            </span>
+            <img src="/logos/mrg-wordmark.png" alt="MRG Marketing" width={240} height={63} className="h-6 w-auto object-contain" />
+            <span className="sr-only">MRG Marketing</span>
           </Link>
 
           <Link

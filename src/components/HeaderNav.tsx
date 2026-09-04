@@ -79,10 +79,11 @@ export default function HeaderNav() {
         <div className={`relative flex items-center justify-center md:justify-between transition-all duration-300 ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
           <Link href="/" className="shrink-0">
             <img
-              src="https://iili.io/qjWolf9.md.png"
-              alt="MRG Marketing logo"
-              className={`object-contain transition-all duration-300 ${scrolled ? 'h-14 sm:h-16' : 'h-20 sm:h-24'}`}
-              style={{ width: 'auto' }}
+              src="/logos/mrg-wordmark.png"
+              alt="MRG Marketing"
+              width={240}
+              height={63}
+              className={`w-auto object-contain transition-[height] duration-300 ${scrolled ? 'h-5 sm:h-6' : 'h-6 sm:h-7'}`}
             />
           </Link>
 

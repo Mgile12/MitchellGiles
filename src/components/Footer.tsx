@@ -13,7 +13,7 @@ const footerAreaLinks = [{ href: '/areas', label: 'View All Areas' }];
 export default function Footer({ onOpenModal }: FooterProps) {
   return (
     <UIFooter
-      logo={<img src="https://iili.io/qjWolf9.md.png" alt="MRG Marketing logo" className="h-20 object-contain" style={{ width: 'auto' }} />}
+      logo={<img src="/logos/mrg-wordmark.png" alt="MRG Marketing" width={240} height={63} className="h-7 w-auto object-contain" />}
       brandName={BUSINESS_INFO.legalName}
       tagline="Marketing consultant, Ormeau. Working across the Gold Coast and Brisbane."
       mainLinks={[

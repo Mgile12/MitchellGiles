@@ -37,20 +37,25 @@ export const metadata: Metadata = {
     url: BUSINESS_INFO.url,
     siteName: BUSINESS_INFO.name,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'MRG Marketing, marketing consultant, Ormeau, Gold Coast' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
     description:
       'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
-    images: ['/image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: BUSINESS_INFO.url,
   },
   icons: {
-    icon: BUSINESS_INFO.logo,
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
   other: {
     'geo.region': `${BUSINESS_INFO.address.country}-${BUSINESS_INFO.address.region}`,
@@ -134,8 +139,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-AU">
       <head>
-        <link rel="icon" href="https://iili.io/qjWolf9.md.png" type="image/png" />
-        <link rel="apple-touch-icon" href="https://iili.io/qjWolf9.md.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

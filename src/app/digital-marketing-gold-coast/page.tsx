@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/digital-marketing-gold-coast`,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Digital Marketing Gold Coast | MRG Marketing',
     description:
       'Integrated digital marketing strategy for Gold Coast businesses. SEO, Google Ads, email and automation working together for sustainable growth.',
-    images: ['/image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/digital-marketing-gold-coast`,

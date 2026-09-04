@@ -52,9 +52,7 @@ export function Footer({
               aria-label={brandName}
             >
               {logo}
-              <span className="font-bold text-2xl text-slate-50 tracking-tight group-hover:text-gold transition-colors duration-200">
-                {brandName}
-              </span>
+              <span className="sr-only">{brandName}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs font-sans">
               {tagline}

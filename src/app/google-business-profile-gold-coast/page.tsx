@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}${PATH}`,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Google Business Profile Gold Coast | MRG Marketing',
     description:
       'Top 3 on Google Maps within 90 days, measured in calls and website clicks. Live heatmaps from real Gold Coast clients.',
-    images: ['/image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}${PATH}`,

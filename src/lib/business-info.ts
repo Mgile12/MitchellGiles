@@ -5,7 +5,7 @@ export const BUSINESS_INFO = {
     'Marketing consultant in Ormeau on the Gold Coast. Google Business Profile, Google and Meta Ads, email marketing, SEO, copywriting and automation for Australian businesses.',
   founder: 'Mitchell Giles',
   url: 'https://mrgmarketing.com.au',
-  logo: 'https://iili.io/qjAyV71.png',
+  logo: 'https://mrgmarketing.com.au/icon-512.png',
   image: 'https://iili.io/fynfkw7.jpg',
   bookingUrl: 'https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337',
 

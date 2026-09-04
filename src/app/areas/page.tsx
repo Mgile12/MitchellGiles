@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/areas`,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/areas`,

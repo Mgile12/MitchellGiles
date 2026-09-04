@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/meta-ads-agency`,
     locale: 'en_AU',
-    images: [{ url: '/image.png' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Meta Ads Agency Gold Coast & Brisbane | MRG Marketing',
     description:
       'Strategic Facebook & Instagram advertising for Gold Coast and Brisbane businesses. Signal-driven Meta Ads management with technical depth most agencies ignore.',
-    images: ['/image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/meta-ads-agency`,
