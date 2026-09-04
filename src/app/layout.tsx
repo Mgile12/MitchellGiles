@@ -7,20 +7,19 @@ import '@/index.css';
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
   title: {
-    default: "BEST Marketing Agency Gold Coast - If You're Looking for Digital Marketing Services Near Me or Social Media Marketing & Search Engine Optimisation Near Me - MRG Marketing Agency Gold Coast is the place to be",
+    default: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
     template: '%s | MRG Marketing',
   },
-  description: `${BUSINESS_INFO.name} - Gold Coast's leading marketing agency gold coast. Specialising in email marketing, Meta Ads, Google Ads, SEO & digital marketing for Australian businesses. Based in ${BUSINESS_INFO.address.locality}, serving ${BUSINESS_INFO.serviceArea.slice(0, 5).join(', ')}. Call ${BUSINESS_INFO.phone}.`,
+  description: `Mitchell Giles is a marketing consultant in Ormeau on the Gold Coast. Google Business Profile, Google and Meta Ads, email and strategy for Australian businesses, with results you can check. Call ${BUSINESS_INFO.phone}.`,
   keywords: [
+    'marketing consultant ormeau',
+    'marketing consultant gold coast',
     'marketing agency gold coast',
-    'email marketing near me',
+    'google business profile gold coast',
     'digital marketing gold coast',
-    'paid advertising gold coast',
     'Meta Ads gold coast',
     'Google Ads gold coast',
     'SEO gold coast',
-    'marketing agency gold coast',
-    'marketing agency gold coast',
     ...BUSINESS_INFO.services.map((s) => s.toLowerCase()),
   ],
   authors: [{ name: BUSINESS_INFO.founder }],
@@ -31,9 +30,9 @@ export const metadata: Metadata = {
     'max-snippet': -1,
   },
   openGraph: {
-    title: 'BEST Marketing Agency Gold Coast - MRG Marketing',
+    title: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
     description:
-      "Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
+      'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
     type: 'website',
     url: BUSINESS_INFO.url,
     siteName: BUSINESS_INFO.name,
@@ -42,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BEST Marketing Agency Gold Coast - MRG Marketing',
+    title: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
     description:
-      "Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO & digital marketing. Based in Southport QLD.",
+      'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
     images: ['/image.png'],
   },
   alternates: {
@@ -101,7 +100,6 @@ function buildJsonLd() {
       'https://www.facebook.com/profile.php?id=61557011930635',
       'https://www.linkedin.com/in/mrg-marketing/',
       'https://www.instagram.com/mrg.marketing/',
-      'https://x.com/MitchellGilesAu',
     ],
   };
 

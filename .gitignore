@@ -26,3 +26,5 @@ tsconfig.tsbuildinfo
 *.sln
 *.sw?
 .env
+.claude/
+.gstack/

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -40,7 +45,7 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
@@ -111,7 +116,7 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
 }
 
 .animate-on-scroll.is-visible {
@@ -146,13 +151,24 @@
 .gold-flat-btn {
   background: #0C86EA;
   color: #FFFFFF;
-  transition: all 0.25s ease;
+  transition: background-color 200ms ease, box-shadow 200ms ease, transform 160ms var(--ease-out);
 }
 
-.gold-flat-btn:hover {
-  background: #0967B2;
-  box-shadow: 0 0 0 1px rgba(12, 134, 234, 0.4);
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  .gold-flat-btn:hover {
+    background: #0967B2;
+    box-shadow: 0 0 0 1px rgba(12, 134, 234, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.gold-flat-btn:active,
+.press:active {
+  transform: scale(0.97);
+}
+
+.press {
+  transition: transform 160ms var(--ease-out), border-color 200ms ease, background-color 200ms ease, color 200ms ease;
 }
 
 .hero-grain::before {
@@ -165,4 +181,76 @@
   pointer-events: none;
   z-index: 1;
   opacity: 0.3;
+}
+
+/* Logo marquee: CSS-driven so it stays smooth while the page is busy */
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee var(--marquee-duration, 40s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-track[data-direction='right'] {
+  animation-direction: reverse;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.logo-tile {
+  transition: opacity 200ms ease, transform 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo-tile:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+/* Proof cards */
+.proof-card {
+  transition: transform 200ms var(--ease-out), border-color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .proof-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(12, 134, 234, 0.4);
+  }
+}
+
+.proof-card:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    transform: none;
+    transition: opacity 200ms ease;
+  }
+  .marquee-track {
+    animation: none;
+  }
+  .hover-lift, .hover-scale, .gold-flat-btn, .press, .logo-tile, .proof-card {
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

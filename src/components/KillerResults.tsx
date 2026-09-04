@@ -137,7 +137,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
 
         <div className="pt-4 border-t border-white/[0.06]">
           <p className="text-sm text-slate-500 italic font-sans">
-            Verified results. Actual clients. Measurable impact.
+            Client account. Screenshot unedited.
           </p>
         </div>
       </div>
@@ -160,7 +160,7 @@ export default function KillerResults() {
             Results That Matter
           </h3>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
-            Revenue, automation, and ROI you can verify. This is what happens when strategy meets execution.
+            Revenue, not vanity metrics. Every screenshot is from a client account. Tap to enlarge.
           </p>
         </AnimateOnScroll>
 
@@ -180,12 +180,12 @@ export default function KillerResults() {
             href="https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337"
             target="_blank"
             rel="noopener noreferrer"
-            className="gold-flat-btn inline-block px-8 py-4 font-semibold rounded-lg text-lg font-sans hover:scale-105 active:scale-95"
+            className="gold-flat-btn inline-block px-8 py-4 font-semibold rounded-lg text-lg font-sans"
           >
             Start Your Growth
           </a>
           <p className="mt-4 text-sm text-slate-500 font-sans">
-            These results are within reach. Let&apos;s discuss your goals.
+            Bring your numbers. I&apos;ll tell you what I&apos;d do with them.
           </p>
         </AnimateOnScroll>
       </div>

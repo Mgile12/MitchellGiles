@@ -42,7 +42,7 @@ export function AnimatedHero() {
         <div className="flex gap-8 py-20 lg:py-32 pb-12 lg:pb-16 items-center justify-center flex-col">
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-3xl tracking-tighter text-center font-bold font-serif text-white">
-              Marketing Agency Ormeau
+              Marketing Consultant Ormeau
             </h1>
 
             <div className="relative flex w-full justify-center overflow-hidden h-[90px] md:h-[80px] mt-2">
@@ -67,14 +67,14 @@ export function AnimatedHero() {
             </div>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-2xl text-center mt-4 font-sans">
-              Predictable revenue systems for Gold Coast businesses. We build the pipelines — you close the clients.
+              I find where your business is losing customers, fix it, and stay until the numbers move. Ormeau based, working across the Gold Coast and Brisbane.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-3 h-11 rounded-lg px-8 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+              className="press inline-flex items-center justify-center gap-3 h-11 rounded-lg px-8 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
             >
               Book a Strategy Call <PhoneCall className="w-4 h-4" />
             </Link>

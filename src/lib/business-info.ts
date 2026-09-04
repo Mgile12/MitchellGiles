@@ -2,7 +2,7 @@ export const BUSINESS_INFO = {
   name: 'MRG Marketing',
   legalName: 'MRG Marketing',
   description:
-    'Gold Coast marketing agency gold coast specialising in email marketing, paid advertising, Meta Ads, Google Ads, SEO, copywriting, automations, and CRM solutions for Australian businesses.',
+    'Marketing consultant in Ormeau on the Gold Coast. Google Business Profile, Google and Meta Ads, email marketing, SEO, copywriting and automation for Australian businesses.',
   founder: 'Mitchell Giles',
   url: 'https://mrgmarketing.com.au',
   logo: 'https://iili.io/qjAyV71.png',
@@ -30,7 +30,6 @@ export const BUSINESS_INFO = {
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=61557011930635',
     instagram: 'https://www.instagram.com/mrg.marketing/',
-    twitter: 'https://x.com/MitchellGilesAu',
     linkedin: 'https://www.linkedin.com/in/mrg-marketing/',
   },
 

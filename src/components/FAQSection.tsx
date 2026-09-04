@@ -56,20 +56,24 @@ function FAQItem({ question, answer }: FAQItemProps) {
 
 const faqs = [
   {
-    question: "How do you rank businesses in the top 3 on GMB in 14 days?",
-    answer: "Think of your GMB profile and website as two magnets. I make both extremely powerful. The exact method is proprietary — you'll find out exactly what that means when we work together."
+    question: 'How do you get a business into the top 3 on Google Maps in 14 days?',
+    answer:
+      'Your Google Business Profile and your website are two magnets. I make both strong at the same time. The exact method stays with me until we work together, but the heatmaps above are what it produces.',
   },
   {
-    question: "What do we do?",
-    answer: "We help businesses stop leaking revenue through weak ads, flat copy, slow websites, and broken follow-up. Then we fix the pipeline so more of your traffic turns into leads, calls, and sales."
+    question: 'Are you an agency or a consultant?',
+    answer:
+      'A consultant with a small team behind me. You deal with me directly and I do the thinking. The team reviews everything I produce before it reaches you.',
   },
   {
-    question: "Why is it a good idea to get in touch with us?",
-    answer: "Because most businesses do not need more random marketing. They need to know what is actually broken. One conversation can show you where you are losing leads, wasting ad spend, or leaving easy money on the table."
+    question: 'Why talk to you before spending more on marketing?',
+    answer:
+      "Because most businesses don't need more marketing. They need to know what's broken. One call usually shows where leads are being lost, where ad spend is wasted, and what the easy money is.",
   },
   {
-    question: "How do we help companies?",
-    answer: "First, we find the choke point. Then we fix it. That might mean better ads, sharper messaging, stronger landing pages, local SEO, email follow-up, or automation. Whatever is stopping growth gets addressed, so revenue becomes more predictable."
+    question: 'What do you actually do?',
+    answer:
+      "Whatever the choke point is. Google Business Profile, ads, landing pages, email follow-up, automation, copy. I don't sell packages. I fix the thing that's stopping growth.",
   },
 ];
 

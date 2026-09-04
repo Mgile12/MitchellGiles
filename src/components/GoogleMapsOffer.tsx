@@ -20,6 +20,18 @@ const heatmaps = [
   },
 ];
 
+const gbpProof = [
+  { src: '/proof/gbp-calls-89-up-324.png', stat: '89 calls', note: 'Up 324% on the same five months last year' },
+  { src: '/proof/gbp-clicks-164-up-273.png', stat: '164 website clicks', note: 'Up 273% year on year' },
+  { src: '/proof/gbp-clicks-303-up-197.png', stat: '303 website clicks', note: 'Up 197% year on year' },
+  { src: '/proof/gbp-calls-168-up-83.png', stat: '168 calls', note: 'Up 83% year on year' },
+  { src: '/proof/gbp-calls-266-up-23.png', stat: '266 calls', note: 'Up 23% through the wet season, the quietest stretch of the year' },
+  { src: '/proof/gbp-clicks-227-aug-up-21.png', stat: '227 website clicks in August', note: 'Up 21% on last August' },
+  { src: '/proof/gbp-interactions-306-up-18.png', stat: '306 profile interactions', note: 'Up 18% year on year' },
+  { src: '/proof/gbp-interactions-88-from-zero.png', stat: '88 interactions', note: 'From zero. Profile launched in June' },
+  { src: '/proof/gbp-calls-33-from-zero.png', stat: '33 calls', note: 'Same new profile, first three months' },
+];
+
 const testimonials = [
   'https://iili.io/qjTn7qu.jpg',
   'https://iili.io/qjTnagj.jpg',
@@ -57,10 +69,10 @@ export default function GoogleMapsOffer() {
         <AnimateOnScroll className="mb-16">
           <div className="text-center mb-10">
             <h4 className="text-2xl sm:text-3xl font-bold text-white font-serif mb-3">
-              Real Clients. Real Heatmaps. Real Rankings.
+              Two clients. Two heatmaps. Before and after.
             </h4>
             <p className="text-slate-400 font-sans">
-              These aren't projections — these are live Google Maps ranking heatmaps from actual clients.
+              Live Google Maps ranking heatmaps. The number is how many days it took.
             </p>
           </div>
 
@@ -117,11 +129,51 @@ export default function GoogleMapsOffer() {
           </div>
         </AnimateOnScroll>
 
+        {/* Google Business Profile performance */}
+        <AnimateOnScroll className="mb-16">
+          <div className="text-center mb-10">
+            <h4 className="text-2xl sm:text-3xl font-bold text-white font-serif mb-3">
+              Nine charts. Straight out of Google.
+            </h4>
+            <p className="text-slate-400 font-sans max-w-2xl mx-auto">
+              Calls, website clicks and interactions from Business Profiles I manage, April to August 2026.
+              Untouched screenshots. Tap any to enlarge.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            {gbpProof.map((item) => (
+              <button
+                key={item.src}
+                type="button"
+                onClick={() => setLightbox(item.src)}
+                className="proof-card group text-left rounded-2xl border border-white/[0.08] bg-white/[0.02] overflow-hidden"
+                aria-label={`${item.stat}. ${item.note}. Open full size.`}
+              >
+                <div className="relative overflow-hidden bg-white">
+                  <img
+                    src={item.src}
+                    alt={`Google Business Profile performance chart: ${item.stat}`}
+                    className="w-full h-auto block"
+                    loading="lazy"
+                    width={914}
+                    height={505}
+                  />
+                </div>
+                <div className="px-5 py-4 border-t border-white/[0.06]">
+                  <p className="text-white font-semibold font-sans">{item.stat}</p>
+                  <p className="text-slate-400 text-sm font-sans mt-0.5">{item.note}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </AnimateOnScroll>
+
         {/* Testimonial Screenshots */}
         <AnimateOnScroll className="mb-16">
           <div className="text-center mb-8">
-            <h4 className="text-xl sm:text-2xl font-bold text-white font-serif mb-2">What People Are Saying</h4>
-            <p className="text-slate-400 text-sm font-sans">Unfiltered. Unedited. Real.</p>
+            <h4 className="text-xl sm:text-2xl font-bold text-white font-serif mb-2">What clients say</h4>
+            <p className="text-slate-400 text-sm font-sans">Screenshots, not testimonials I wrote.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {testimonials.map((src, i) => (
