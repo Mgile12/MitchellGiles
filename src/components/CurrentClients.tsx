@@ -9,22 +9,22 @@ interface ClientLogo {
 }
 
 const rowOne: ClientLogo[] = [
-  { name: 'Tradie Marketing Pros', src: 'https://iili.io/qvDeeSe.webp', href: 'https://tradiemarketingpros.com.au/' },
-  { name: 'Polish Hub', src: 'https://iili.io/qvDesl1.png', href: 'https://polishhub.com.au/', wide: true },
-  { name: 'MJLT Services', src: 'https://iili.io/qvDeroQ.png', href: 'https://www.mjltservices.com.au/' },
-  { name: 'Ceramics Gold Coast', src: 'https://iili.io/qvDejPS.png', href: 'https://ceramicsgoldcoast.com.au/' },
-  { name: 'Elite Football Academy', src: 'https://iili.io/q87yt2t.md.png', href: 'https://www.elitefootball.com.au/' },
+  { name: 'Tradie Marketing Pros', src: '/clients/tradie-marketing-pros.webp', href: 'https://tradiemarketingpros.com.au/' },
+  { name: 'Polish Hub', src: '/clients/polish-hub.webp', href: 'https://polishhub.com.au/', wide: true },
+  { name: 'MJLT Services', src: '/clients/mjlt-services.webp', href: 'https://www.mjltservices.com.au/' },
+  { name: 'Ceramics Gold Coast', src: '/clients/ceramics-gold-coast.webp', href: 'https://ceramicsgoldcoast.com.au/' },
+  { name: 'Elite Football Academy', src: '/clients/elite-football-academy.webp', href: 'https://www.elitefootball.com.au/' },
   { name: 'Viking Athletics', src: '/logos/va.png', invert: true },
-  { name: 'All GC Hire', src: 'https://iili.io/qPHnu8x.png', href: 'https://allgchire.com.au/' },
+  { name: 'All GC Hire', src: '/clients/all-gc-hire.webp', href: 'https://allgchire.com.au/' },
 ];
 
 const rowTwo: ClientLogo[] = [
   { name: 'Greenstone Karate', src: '/logos/greenstone-karate.png' },
-  { name: 'Washroom Essential', src: 'https://iili.io/ChPt9R4.md.webp' },
-  { name: 'Cleaning Melbourne', src: 'https://iili.io/ChPtFs9.md.png' },
-  { name: 'Best Deal 4 U', src: 'https://iili.io/ChPtxOQ.md.png' },
-  { name: 'Fleur', src: 'https://iili.io/ChPZLxI.png' },
-  { name: 'InHouseAI', src: 'https://iili.io/q8YGebS.png' },
+  { name: 'Washroom Essential', src: '/clients/washroom-essentials.webp' },
+  { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne.webp' },
+  { name: 'Best Deal 4 U', src: '/clients/best-deal-4-u.webp' },
+  { name: 'Fleur', src: '/clients/fleur.webp' },
+  { name: 'InHouseAI', src: '/clients/inhouseai.webp' },
 ];
 
 function LogoTile({ logo }: { logo: ClientLogo }) {

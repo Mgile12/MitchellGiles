@@ -11,14 +11,14 @@ const heatmaps = [
   {
     client: 'Polish Hub Marine Detailing',
     result: '2 days',
-    before: 'https://iili.io/qjTeSUX.png',
-    after: 'https://iili.io/qjTegJn.md.png',
+    before: '/proof/heatmap-polish-hub-before.jpg',
+    after: '/proof/heatmap-polish-hub-after.jpg',
   },
   {
     client: 'Ceramics Gold Coast',
     result: '11 days',
-    before: 'https://iili.io/qjTeNxR.png',
-    after: 'https://iili.io/qjTnVX1.jpg',
+    before: '/proof/heatmap-ceramics-before.jpg',
+    after: '/proof/heatmap-ceramics-after.jpg',
   },
 ];
 
@@ -34,7 +34,7 @@ const gbpProof = [
   { src: '/proof/gbp-calls-33-from-zero.png', stat: '33 calls', note: 'Same new profile, first three months' },
 ];
 
-const testimonials = ['https://iili.io/qjTn7qu.jpg', 'https://iili.io/qjTnagj.jpg'];
+const testimonials = ['/proof/client-message-1.jpg', '/proof/client-message-2.jpg'];
 
 const steps = [
   {

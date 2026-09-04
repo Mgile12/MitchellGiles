@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: `${BUSINESS_INFO.url}/email-marketing-gold-coast/`,
     locale: 'en_AU',
-    images: [{ url: 'https://iili.io/qHd5dYb.md.jpg' }],
+    images: [{ url: '/email/email-marketing-hero.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Email Marketing Gold Coast | MRG Marketing',
     description:
       'Strategic email marketing services for Gold Coast businesses. Automation, campaigns, and reporting that turn your database into predictable monthly revenue.',
-    images: ['https://iili.io/qHd5dYb.md.jpg'],
+    images: ['/email/email-marketing-hero.jpg'],
   },
   alternates: {
     canonical: `${BUSINESS_INFO.url}/email-marketing-gold-coast/`,
