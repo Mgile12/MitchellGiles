@@ -548,3 +548,61 @@
     animation-duration: 1.4s;
   }
 }
+
+/* ------------------------------------------------------------------
+   Accessibility pass (WCAG 2.1 AA)
+   ------------------------------------------------------------------ */
+
+/* Visible focus for keyboard users, on every interactive element */
+:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.gold-flat-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Skip link: off-screen until focused */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #0a0a0a;
+  font-weight: 600;
+  transition: top 160ms var(--ease-out);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Primary button face: deep enough that white text reads at 4.5:1 or better
+   (#1477CC 4.6:1, #0B6FC4 5.2:1, #0960AB 6.1:1). The accent for text and rules stays #0C86EA. */
+.gold-flat-btn {
+  background-image: linear-gradient(180deg, #1477cc 0%, #0b6fc4 55%, #0960ab 100%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .gold-flat-btn:hover {
+    background-image: linear-gradient(180deg, #1477cc 0%, #0b6fc4 45%, #0960ab 100%);
+  }
+}
+
+/* Marquees pause on hover, on keyboard focus inside them, and when motion is paused site-wide */
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+html[data-motion='paused'] .marquee-track,
+html[data-motion='paused'] .chip,
+html[data-motion='paused'] .hero-blob-1,
+html[data-motion='paused'] .hero-blob-2 {
+  animation-play-state: paused;
+}

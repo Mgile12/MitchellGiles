@@ -20,8 +20,9 @@ export default function LayoutClient({ children }: { children: React.ReactNode }
 
   return (
     <div className="min-h-screen bg-navy-950">
+      <a href="#main" className="skip-link">Skip to content</a>
       <HeaderNav />
-      <main>{children}</main>
+      <main id="main" tabIndex={-1} className="outline-none">{children}</main>
       <Footer onOpenModal={() => setIsModalOpen(true)} />
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>

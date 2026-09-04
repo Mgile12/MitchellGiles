@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, FormEvent } from 'react';
+import { useEffect, useRef, useState, FormEvent } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { submitContactForm } from '../lib/supabase';
@@ -25,6 +25,32 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const reduce = useReducedMotion();
+  const panelRef = useRef<HTMLDivElement>(null);
+  const openerRef = useRef<HTMLElement | null>(null);
+
+  // Move focus in on open, keep it inside, give it back on close
+  useEffect(() => {
+    if (!isOpen) return;
+    openerRef.current = document.activeElement as HTMLElement | null;
+    const t = window.setTimeout(() => {
+      const first = panelRef.current?.querySelector<HTMLElement>('input, select, textarea') ?? panelRef.current?.querySelector<HTMLElement>('button');
+      first?.focus();
+    }, 40);
+    const trap = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab' || !panelRef.current) return;
+      const items = [...panelRef.current.querySelectorAll<HTMLElement>('input, select, textarea, button, a[href]')].filter((el) => !el.hasAttribute('disabled'));
+      if (!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    };
+    window.addEventListener('keydown', trap);
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener('keydown', trap);
+      openerRef.current?.focus?.();
+    };
+  }, [isOpen]);
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -104,6 +130,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           <div className="relative flex min-h-full items-center justify-center p-4 pointer-events-none">
             <motion.div
+              ref={panelRef}
               className="pointer-events-auto relative w-full max-w-md bg-navy-900 border border-white/[0.08] rounded-xl shadow-2xl shadow-black/60"
               initial={panelHidden}
               animate={{ opacity: 1, transform: 'scale(1)' }}
@@ -165,13 +192,16 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       <input
                         type="text"
                         id="name"
+                        aria-required="true"
+                        aria-invalid={!!errors.name}
+                        aria-describedby={errors.name ? 'name-error' : undefined}
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className={inputClass(!!errors.name)}
                         disabled={isSubmitting}
                         placeholder="John Smith"
                       />
-                      {errors.name && <p className="mt-1 text-xs text-red-400 font-sans">{errors.name}</p>}
+                      {errors.name && <p id="name-error" role="alert" className="mt-1 text-xs text-red-400 font-sans">{errors.name}</p>}
                     </div>
 
                     <div>
@@ -181,13 +211,16 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       <input
                         type="email"
                         id="email"
+                        aria-required="true"
+                        aria-invalid={!!errors.email}
+                        aria-describedby={errors.email ? 'email-error' : undefined}
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className={inputClass(!!errors.email)}
                         disabled={isSubmitting}
                         placeholder="john@example.com"
                       />
-                      {errors.email && <p className="mt-1 text-xs text-red-400 font-sans">{errors.email}</p>}
+                      {errors.email && <p id="email-error" role="alert" className="mt-1 text-xs text-red-400 font-sans">{errors.email}</p>}
                     </div>
 
                     <div>
@@ -197,13 +230,16 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       <input
                         type="tel"
                         id="phone"
+                        aria-required="true"
+                        aria-invalid={!!errors.phone}
+                        aria-describedby={errors.phone ? 'phone-error' : undefined}
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className={inputClass(!!errors.phone)}
                         disabled={isSubmitting}
                         placeholder="0400 000 000"
                       />
-                      {errors.phone && <p className="mt-1 text-xs text-red-400 font-sans">{errors.phone}</p>}
+                      {errors.phone && <p id="phone-error" role="alert" className="mt-1 text-xs text-red-400 font-sans">{errors.phone}</p>}
                     </div>
 
                     <div>
@@ -212,6 +248,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       </label>
                       <select
                         id="business_type"
+                        aria-required="true"
+                        aria-invalid={!!errors.business_type}
+                        aria-describedby={errors.business_type ? 'business_type-error' : undefined}
                         value={formData.business_type}
                         onChange={(e) => setFormData({ ...formData, business_type: e.target.value })}
                         className={inputClass(!!errors.business_type)}
@@ -224,7 +263,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         <option value="hospitality">Hospitality</option>
                         <option value="other">Other</option>
                       </select>
-                      {errors.business_type && <p className="mt-1 text-xs text-red-400 font-sans">{errors.business_type}</p>}
+                      {errors.business_type && <p id="business_type-error" role="alert" className="mt-1 text-xs text-red-400 font-sans">{errors.business_type}</p>}
                     </div>
 
                     <div>

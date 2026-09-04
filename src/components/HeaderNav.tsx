@@ -96,7 +96,11 @@ export default function HeaderNav() {
             >
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
-                className="inline-flex items-center gap-1 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+                onKeyDown={(e) => { if (e.key === 'Escape') setServicesOpen(false); }}
+                aria-expanded={servicesOpen}
+                aria-haspopup="true"
+                aria-controls="services-menu"
+                className="inline-flex items-center gap-1 py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
               >
                 Services
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -107,11 +111,16 @@ export default function HeaderNav() {
                   servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'
                 }`}
               >
-                <div className="w-72 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden">
+                <div
+                  id="services-menu"
+                  className="w-72 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden"
+                  onKeyDown={(e) => { if (e.key === 'Escape') setServicesOpen(false); }}
+                >
                   {serviceLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
+                      tabIndex={servicesOpen ? 0 : -1}
                       className="block px-5 py-3.5 text-sm font-medium text-slate-300 hover:text-gold hover:bg-white/[0.04] transition-colors duration-150"
                     >
                       {link.label}
@@ -123,26 +132,26 @@ export default function HeaderNav() {
 
             <Link
               href="/areas"
-              className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
               Areas
             </Link>
 
             <button
               onClick={() => scrollToSection('about')}
-              className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('results')}
-              className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
               Results
             </button>
             <a
               href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="inline-flex items-center gap-1.5 py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
               <Phone className="h-3.5 w-3.5" />
               {BUSINESS_INFO.phone}
@@ -159,6 +168,8 @@ export default function HeaderNav() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden absolute right-0 p-2 text-white/80 hover:text-white transition-colors"
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
           >
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -169,7 +180,9 @@ export default function HeaderNav() {
         className={`md:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
           mobileOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
+        id="mobile-menu"
         aria-hidden={!mobileOpen}
+        {...(mobileOpen ? {} : ({ inert: '' } as Record<string, string>))}
       >
         <div className="overflow-hidden">
         <div className="px-5 py-5 space-y-1">

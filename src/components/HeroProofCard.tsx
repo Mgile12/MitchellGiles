@@ -54,7 +54,7 @@ export default function HeroProofCard() {
               <TrendingUp className="w-3.5 h-3.5" />
               +324%
             </span>
-            <span className="text-slate-500"> on the same five months last year</span>
+            <span className="text-slate-400"> on the same five months last year</span>
           </p>
 
           <svg
@@ -145,7 +145,7 @@ export default function HeroProofCard() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-[11px] text-slate-500 font-sans leading-relaxed">
+          <p className="mt-4 text-[11px] text-slate-400 font-sans leading-relaxed">
             Four client profiles, year on year.{' '}
             <Link
               href="/google-business-profile-gold-coast"

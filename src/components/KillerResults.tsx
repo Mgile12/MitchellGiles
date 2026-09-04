@@ -83,9 +83,11 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
       index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
     } gap-8 lg:gap-12 items-center`}>
       <div className="w-full lg:w-1/2">
-        <div
-          className="relative group cursor-pointer hover-scale"
+        <button
+          type="button"
+          className="relative group cursor-pointer hover-scale block w-full text-left"
           onClick={onImageClick}
+          aria-label={`Open the screenshot for ${result.title} at full size`}
         >
           <div className="relative rounded-2xl overflow-hidden border border-gold/20 bg-white/[0.03] backdrop-blur-sm p-2 sm:p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] group-hover:border-gold/40 transition-colors duration-300">
             <div className="relative rounded-xl overflow-hidden">
@@ -104,14 +106,14 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
                 </div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                <div className="px-4 py-2 bg-gold/90 text-navy-950 rounded-lg font-semibold text-sm">
-                  Click to expand
+                <div className="px-4 py-2 bg-navy-950/90 text-white rounded-lg font-semibold text-sm border border-white/20">
+                  Open full size
                 </div>
               </div>
             </div>
             <div className="absolute inset-0 rounded-2xl border border-gold/10 pointer-events-none" />
           </div>
-        </div>
+        </button>
       </div>
 
       <div className="w-full lg:w-1/2 space-y-6">
@@ -119,9 +121,9 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 text-gold mb-4 hover:scale-105 hover:rotate-[5deg] transition-transform duration-200">
             <Icon className="w-7 h-7" />
           </div>
-          <h4 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
             {result.title}
-          </h4>
+          </h3>
           <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-sans">
             {result.description}
           </p>
@@ -133,13 +135,13 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
               {result.metric}
             </span>
           </div>
-          <p className="text-sm font-semibold mt-1 text-gold/70 font-sans">
+          <p className="text-sm font-semibold mt-1 text-gold font-sans">
             {result.metricLabel}
           </p>
         </div>
 
         <div className="pt-4 border-t border-white/[0.06]">
-          <p className="text-sm text-slate-500 italic font-sans">
+          <p className="text-sm text-slate-400 italic font-sans">
             Client account. Screenshot unedited.
           </p>
         </div>
@@ -157,9 +159,9 @@ export default function KillerResults() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
           <Eyebrow className="mb-4">Results</Eyebrow>
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
             What the work made.
-          </h3>
+          </h2>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
             Revenue, not vanity metrics. Every screenshot is from a client account. Tap any to enlarge. The Google Maps heatmaps and profile numbers are on the{' '}
             <Link href="/google-business-profile-gold-coast" className="text-gold underline underline-offset-2 hover:text-gold/80">Business Profile page</Link>.
@@ -184,13 +186,13 @@ export default function KillerResults() {
           >
             Book a 15-minute call
           </Link>
-          <p className="mt-4 text-sm text-slate-500 font-sans">
+          <p className="mt-4 text-sm text-slate-400 font-sans">
             Bring your numbers. I&apos;ll tell you what I&apos;d do with them.
           </p>
         </AnimateOnScroll>
       </div>
 
-      <Lightbox src={selectedImage} alt="Result preview" onClose={() => setSelectedImage(null)} />
+      <Lightbox src={selectedImage} alt={results.find((r) => r.image === selectedImage)?.title ?? 'Result screenshot'} onClose={() => setSelectedImage(null)} />
     </section>
   );
 }

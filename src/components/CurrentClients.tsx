@@ -27,7 +27,7 @@ const rowTwo: ClientLogo[] = [
   { name: 'InHouseAI', src: '/clients/inhouseai.webp' },
 ];
 
-function LogoTile({ logo }: { logo: ClientLogo }) {
+function LogoTile({ logo, hidden = false }: { logo: ClientLogo; hidden?: boolean }) {
   const img = (
     <img
       src={logo.src}
@@ -46,7 +46,7 @@ function LogoTile({ logo }: { logo: ClientLogo }) {
   const cls = 'logo-tile flex items-center justify-center h-20 sm:h-24 px-7 sm:px-10 opacity-70 shrink-0';
 
   return logo.href ? (
-    <a href={logo.href} target="_blank" rel="noopener noreferrer" className={cls} aria-label={logo.name}>
+    <a href={logo.href} target="_blank" rel="noopener noreferrer" className={cls} aria-label={logo.name} tabIndex={hidden ? -1 : 0}>
       {img}
     </a>
   ) : (
@@ -73,7 +73,7 @@ function MarqueeRow({
         {[0, 1].map((copy) => (
           <div key={copy} className="flex shrink-0" aria-hidden={copy === 1}>
             {logos.map((logo) => (
-              <LogoTile key={`${copy}-${logo.name}`} logo={logo} />
+              <LogoTile key={`${copy}-${logo.name}`} logo={logo} hidden={copy === 1} />
             ))}
           </div>
         ))}

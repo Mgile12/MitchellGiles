@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
 
@@ -15,17 +15,32 @@ interface LightboxProps {
 /**
  * Full-screen image viewer. Enters over 200ms from scale(0.97) and leaves the same way
  * in 150ms, so closing never teleports. Escape and any click outside the image close it.
+ * Focus moves to the close button on open, stays inside while open, and returns to
+ * whatever opened it on close.
  */
 export default function Lightbox({ src, alt = 'Expanded view', onClose }: LightboxProps) {
   const reduce = useReducedMotion();
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const openerRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (!src) return;
+    openerRef.current = document.activeElement as HTMLElement | null;
+    const t = window.setTimeout(() => closeRef.current?.focus(), 30);
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+      if (e.key === 'Tab') {
+        // the close button is the only control; keep focus on it
+        e.preventDefault();
+        closeRef.current?.focus();
+      }
     };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener('keydown', onKey);
+      openerRef.current?.focus?.();
+    };
   }, [src, onClose]);
 
   const hidden = { opacity: 0, transform: reduce ? 'scale(1)' : 'scale(0.97)' };
@@ -46,6 +61,7 @@ export default function Lightbox({ src, alt = 'Expanded view', onClose }: Lightb
           aria-label={alt}
         >
           <button
+            ref={closeRef}
             onClick={onClose}
             className="press absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-full z-10"
             aria-label="Close"

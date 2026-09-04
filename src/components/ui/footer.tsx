@@ -67,14 +67,14 @@ export function Footer({
                     {link.onClick ? (
                       <button
                         onClick={link.onClick}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans"
+                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
                       >
                         {link.label}
                       </button>
                     ) : link.href ? (
                       <Link
                         href={link.href}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans"
+                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
                       >
                         {link.label}
                       </Link>
@@ -97,7 +97,7 @@ export function Footer({
               >
                 {contactInfo.phone}
               </a>
-              <p className="text-sm text-slate-500 py-0.5 font-sans">
+              <p className="text-sm text-slate-400 py-0.5 font-sans">
                 {contactInfo.location}
               </p>
             </div>
@@ -111,7 +111,7 @@ export function Footer({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="text-slate-400 hover:text-gold transition-colors duration-200"
+                    className="inline-flex items-center justify-center w-11 h-11 -m-3 text-slate-400 hover:text-gold transition-colors duration-200"
                   >
                     {social.icon}
                   </a>
@@ -146,7 +146,7 @@ export function Footer({
 
         <div className="mt-10 pt-6 border-t border-white/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="text-xs text-slate-500 leading-relaxed font-sans">
+            <div className="text-xs text-slate-400 leading-relaxed font-sans">
               <span>{copyright.text}</span>
               {copyright.license && (
                 <>
@@ -157,7 +157,7 @@ export function Footer({
             </div>
 
             {bottomTagline && (
-              <p className="text-xs text-slate-600 italic font-sans">
+              <p className="text-xs text-slate-400 italic font-sans">
                 {bottomTagline}
               </p>
             )}

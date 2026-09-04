@@ -34,7 +34,7 @@ export default function FinalCTA() {
               Book a 15-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
-            <p className="mt-4 text-sm text-slate-500 font-sans">No pitch.</p>
+            <p className="mt-4 text-sm text-slate-400 font-sans">No pitch.</p>
           </div>
         </div>
       </AnimateOnScroll>
