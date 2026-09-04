@@ -113,8 +113,8 @@ export function AnimatedHero() {
               className="hero-in text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-xl mx-auto lg:mx-0 mt-5 font-sans"
               style={delay(240)}
             >
-              I find where your business is losing customers, fix it, and stay until the numbers move. Ormeau based,
-              working across the Gold Coast and Brisbane.
+              I find where your business is losing customers, fix it, and stay until the numbers move. Google Business
+              Profile first, then ads, email and strategy.
             </p>
 
             <div
