@@ -1,15 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import HeaderNav from '@/components/HeaderNav';
 import Footer from '@/components/Footer';
-import ContactModal from '@/components/ContactModal';
 
 const MINIMAL_ROUTES = ['/book'];
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const pathname = usePathname();
 
   const isMinimal = MINIMAL_ROUTES.some((route) => pathname === route || pathname.startsWith(route + '/'));
@@ -23,8 +20,7 @@ export default function LayoutClient({ children }: { children: React.ReactNode }
       <a href="#main" className="skip-link">Skip to content</a>
       <HeaderNav />
       <main id="main" tabIndex={-1} className="outline-none">{children}</main>
-      <Footer onOpenModal={() => setIsModalOpen(true)} />
-      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <Footer />
     </div>
   );
 }

@@ -5,9 +5,8 @@ interface FooterProps {
   brandName: string;
   tagline: string;
   mainLinks: Array<{
-    href?: string;
+    href: string;
     label: string;
-    onClick?: () => void;
   }>;
   contactInfo: {
     email: string;
@@ -64,21 +63,12 @@ export function Footer({
               <ul className="list-none flex flex-wrap gap-x-5 gap-y-2 md:justify-end">
                 {mainLinks.map((link, i) => (
                   <li key={i}>
-                    {link.onClick ? (
-                      <button
-                        onClick={link.onClick}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
-                      >
-                        {link.label}
-                      </button>
-                    ) : link.href ? (
-                      <Link
-                        href={link.href}
-                        className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
-                      >
-                        {link.label}
-                      </Link>
-                    ) : null}
+                    <Link
+                      href={link.href}
+                      className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
