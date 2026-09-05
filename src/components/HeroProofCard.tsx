@@ -112,7 +112,7 @@ export default function HeroProofCard() {
               fontSize="10"
               fontWeight="600"
               fill="#EAEAEA"
-              fontFamily="Inter, system-ui, sans-serif"
+              style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}
             >
               Aug · 35
             </text>
@@ -124,7 +124,7 @@ export default function HeroProofCard() {
                 textAnchor="middle"
                 fontSize="10"
                 fill="rgba(255,255,255,0.4)"
-                fontFamily="Inter, system-ui, sans-serif"
+                style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}
               >
                 {m}
               </text>

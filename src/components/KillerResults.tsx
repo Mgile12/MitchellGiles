@@ -10,6 +10,8 @@ import type { LucideIcon } from 'lucide-react';
 
 interface Result {
   image: string;
+  width: number;
+  height: number;
   title: string;
   description: string;
   metric: string;
@@ -20,7 +22,9 @@ interface Result {
 
 const results: Result[] = [
   {
-    image: '/image.png',
+    image: '/results/meta-ads-6-88x-roas.webp',
+    width: 1400,
+    height: 513,
     title: '6.88x return on Meta, three ad sets',
     description: 'Three ad sets, 67 website purchases, $30K in value. Screenshot from Ads Manager.',
     metric: '6.88x',
@@ -29,7 +33,9 @@ const results: Result[] = [
     overlay: '6.88x ROAS | 67 Purchases | $30K+ Value',
   },
   {
-    image: '/Screenshot_2026-02-20_082607.png',
+    image: '/results/email-60k-in-30-days.webp',
+    width: 764,
+    height: 402,
     title: '$60,632 from email in 30 days',
     description: "Email drove 63.4% of the store's revenue that month, from a list they already had.",
     metric: '$60K',
@@ -38,7 +44,9 @@ const results: Result[] = [
     overlay: '$60,632 in 30 Days | Email Marketing | 63.4% Monthly Revenue',
   },
   {
-    image: '/Screenshot 2025-08-04 132125.png',
+    image: '/results/event-upsell-82k.webp',
+    width: 479,
+    height: 288,
     title: '$82,574 from one event upsell, twice',
     description: 'A high-ticket upsell waitlist off a live event. $82,574 in under three hours, no ads. I ran the same sequence twice.',
     metric: '$82K',
@@ -47,7 +55,9 @@ const results: Result[] = [
     overlay: '$82,574 | Event Upsell | 3 Hours | Done Twice',
   },
   {
-    image: '/files_7126411-1763632304045-Screenshot 2025-07-24 143236.png',
+    image: '/results/email-72-open-rate.webp',
+    width: 488,
+    height: 507,
     title: '72% open rate, 10.3% click rate',
     description: 'One campaign to a list the client already had.',
     metric: '72%',
@@ -56,7 +66,9 @@ const results: Result[] = [
     overlay: '72% Open Rate | 10.3% Click Rate | Real Engagement',
   },
   {
-    image: '/files_7126411-1763632208203-Before and After Image Youtube Thumbnail (3).png',
+    image: '/results/annual-425k.webp',
+    width: 1280,
+    height: 720,
     title: '$425K in a year, up 436%',
     description: '1,801 orders and 1,425 bookings in twelve months.',
     metric: '$425K',
@@ -65,7 +77,9 @@ const results: Result[] = [
     overlay: '$425K Annual | 436% Growth | 1,801 Orders',
   },
   {
-    image: '/files_7126411-1763632208151-Before and After Image Youtube Thumbnail (4).png',
+    image: '/results/weekly-100k.webp',
+    width: 1280,
+    height: 720,
     title: '$100.3K in one week',
     description: '49 orders and 87 form submissions in seven days.',
     metric: '$100K',
@@ -95,6 +109,10 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
                 src={result.image}
                 alt={result.title}
                 className="w-full h-auto block"
+                loading="lazy"
+                decoding="async"
+                width={result.width}
+                height={result.height}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">

@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Montserrat', 'system-ui', 'sans-serif'],
-        serif: ['Montserrat', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       colors: {
         navy: {

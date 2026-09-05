@@ -85,10 +85,7 @@ export function AnimatedHero() {
               Ormeau · Gold Coast · Brisbane
             </p>
 
-            <h1
-              className="hero-in text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold font-serif text-white leading-[1.05]"
-              style={delay(80)}
-            >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold font-serif text-white leading-[1.05]">
               Marketing Consultant Ormeau
             </h1>
 
@@ -119,10 +116,7 @@ export function AnimatedHero() {
               })}
             </div>
 
-            <p
-              className="hero-in text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-xl mx-auto lg:mx-0 mt-5 font-sans"
-              style={delay(240)}
-            >
+            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-xl mx-auto lg:mx-0 mt-5 font-sans">
               I find where your business is losing customers, fix it, and stay until the numbers move. Google Business
               Profile first, then ads, email and strategy.
             </p>

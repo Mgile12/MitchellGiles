@@ -19,7 +19,7 @@ const rowOne: ClientLogo[] = [
 ];
 
 const rowTwo: ClientLogo[] = [
-  { name: 'Greenstone Karate', src: '/logos/greenstone-karate.png' },
+  { name: 'Greenstone Karate', src: '/logos/greenstone-karate.webp' },
   { name: 'Washroom Essential', src: '/clients/washroom-essentials.webp' },
   { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne.webp' },
   { name: 'Best Deal 4 U', src: '/clients/best-deal-4-u.webp' },
