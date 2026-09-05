@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { MoveRight, PhoneCall, Pause, Play } from 'lucide-react';
 import Link from 'next/link';
 import HeroProofCard from '@/components/HeroProofCard';
+import { EASE_OUT } from '@/lib/motion';
 
 // Mirrors the eight cards in ServicesGrid so the hero and the page say the same thing.
 const services = [
@@ -35,7 +36,6 @@ const PARTNERS = [
 ];
 
 const DISPLAY_MS = 3800;
-const EASE_OUT = [0.22, 1, 0.36, 1] as const;
 
 function delay(ms: number) {
   return { ['--d' as string]: `${ms}ms` };

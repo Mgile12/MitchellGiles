@@ -4,8 +4,7 @@ import { useEffect, useRef, useState, FormEvent } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { submitContactForm } from '../lib/supabase';
-
-const EASE_OUT = [0.23, 1, 0.32, 1] as const;
+import { EASE_OUT } from '@/lib/motion';
 
 interface ContactModalProps {
   isOpen: boolean;

@@ -43,64 +43,12 @@
   }
 }
 
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 500px;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 1;
-    max-height: 500px;
-  }
-  to {
-    opacity: 0;
-    max-height: 0;
-  }
-}
-
-@keyframes modalFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95) translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
 .animate-fade-in {
   animation: fadeIn 0.45s ease-out both;
 }
 
 .animate-fade-in-up {
   animation: fadeInUp 0.45s ease-out both;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.5s ease-out both;
-}
-
-.animate-modal-in {
-  animation: modalFadeIn 0.2s ease-out both;
 }
 
 .animate-delay-50 { animation-delay: 50ms; }
@@ -133,20 +81,14 @@
 .stagger-6 { transition-delay: 400ms; }
 .stagger-7 { transition-delay: 480ms; }
 
-.hover-lift {
-  transition: transform 0.3s ease-out;
-}
-
-.hover-lift:hover {
-  transform: translateY(-6px);
-}
-
 .hover-scale {
-  transition: transform 0.2s ease-out;
+  transition: transform 200ms var(--ease-out);
 }
 
-.hover-scale:hover {
-  transform: scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
 }
 
 .gold-flat-btn {
@@ -245,7 +187,7 @@
   .marquee-track {
     animation: none;
   }
-  .hover-lift, .hover-scale, .gold-flat-btn, .press, .logo-tile, .proof-card {
+  .hover-scale, .gold-flat-btn, .press, .logo-tile, .proof-card {
     transition: none;
   }
   html {
@@ -569,18 +511,19 @@
 .skip-link {
   position: absolute;
   left: 1rem;
-  top: -100px;
+  top: 1rem;
   z-index: 100;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   background: #fff;
   color: #0a0a0a;
   font-weight: 600;
-  transition: top 160ms var(--ease-out);
+  transform: translateY(-150%);
+  /* keyboard-triggered: appears instantly, no transition */
 }
 
 .skip-link:focus {
-  top: 1rem;
+  transform: translateY(0);
 }
 
 /* Primary button face: deep enough that white text reads at 4.5:1 or better

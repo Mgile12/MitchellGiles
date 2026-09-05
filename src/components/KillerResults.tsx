@@ -89,7 +89,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
           onClick={onImageClick}
           aria-label={`Open the screenshot for ${result.title} at full size`}
         >
-          <div className="relative rounded-2xl overflow-hidden border border-gold/20 bg-white/[0.03] backdrop-blur-sm p-2 sm:p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] group-hover:border-gold/40 transition-colors duration-300">
+          <div className="relative rounded-2xl overflow-hidden border border-gold/20 bg-white/[0.03] backdrop-blur-sm p-2 sm:p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] group-hover:border-gold/40 transition-colors duration-200">
             <div className="relative rounded-xl overflow-hidden">
               <img
                 src={result.image}
@@ -105,7 +105,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
                   </span>
                 </div>
               </div>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 bg-black/20">
                 <div className="px-4 py-2 bg-navy-950/90 text-white rounded-lg font-semibold text-sm border border-white/20">
                   Open full size
                 </div>
@@ -118,7 +118,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
 
       <div className="w-full lg:w-1/2 space-y-6">
         <div>
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 text-gold mb-4 hover:scale-105 hover:rotate-[5deg] transition-transform duration-200">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 text-gold mb-4">
             <Icon className="w-7 h-7" />
           </div>
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 font-serif">
@@ -129,7 +129,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
           </p>
         </div>
 
-        <div className="inline-block px-6 py-4 rounded-xl bg-gold/10 border-2 border-gold/30 hover-scale">
+        <div className="inline-block px-6 py-4 rounded-xl bg-gold/10 border-2 border-gold/30">
           <div className="flex items-baseline gap-2">
             <span className="text-gradient-accent text-4xl sm:text-5xl font-bold font-serif">
               {result.metric}

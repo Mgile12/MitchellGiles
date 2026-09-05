@@ -3,8 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
-
-const EASE_OUT = [0.23, 1, 0.32, 1] as const;
+import { EASE_OUT } from '@/lib/motion';
 
 interface LightboxProps {
   src: string | null;

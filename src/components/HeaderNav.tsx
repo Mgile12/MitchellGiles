@@ -69,21 +69,21 @@ export default function HeaderNav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-200 ${
         scrolled
           ? 'bg-navy-950/85 backdrop-blur-md border-b border-white/[0.06] shadow-lg shadow-black/20'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className={`relative flex items-center justify-center md:justify-between transition-all duration-300 ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
+        <div className={`relative flex items-center justify-center md:justify-between ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
           <Link href="/" className="shrink-0">
             <img
               src="/logos/mrg-wordmark.png"
               alt="MRG Marketing"
               width={240}
               height={63}
-              className={`w-auto object-contain transition-[height] duration-300 ${scrolled ? 'h-5 sm:h-6' : 'h-6 sm:h-7'}`}
+              className={`h-6 sm:h-7 w-auto object-contain origin-left transition-transform duration-200 ease-[var(--ease-out)] ${scrolled ? 'scale-[0.86]' : 'scale-100'}`}
             />
           </Link>
 
@@ -194,7 +194,7 @@ export default function HeaderNav() {
               Services
               <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-gold' : 'text-slate-500'}`} />
             </button>
-            <div className={`grid transition-all duration-300 ease-out ${mobileServicesOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+            <div className={`grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] ${mobileServicesOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
               <div className="overflow-hidden">
                 <div className="pl-6 pb-1 space-y-0.5">
                   {serviceLinks.map((link) => (
