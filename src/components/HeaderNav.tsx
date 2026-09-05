@@ -69,7 +69,7 @@ export default function HeaderNav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-200 ${
+      className={`header-in fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-200 ${
         scrolled
           ? 'bg-navy-950/85 backdrop-blur-md border-b border-white/[0.06] shadow-lg shadow-black/20'
           : 'bg-transparent'
@@ -250,6 +250,7 @@ export default function HeaderNav() {
         </div>
         </div>
       </div>
+      <div className="scroll-progress" aria-hidden="true" />
     </header>
   );
 }

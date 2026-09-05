@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import { MapPin, Search, Megaphone, Layers, Mail, Target, Cog, BarChart3, ArrowUpRight } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 import Eyebrow from './Eyebrow';
+import RevealText from './RevealText';
+import SpotlightLink from './SpotlightLink';
 
 const services = [
   {
@@ -67,7 +68,7 @@ export default function ServicesGrid() {
             id="services-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"
           >
-            Pick the problem. I&apos;ll pick the channel.
+            <RevealText text="Pick the problem. I'll pick the channel." />
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
             Eight things I do for Gold Coast businesses. Not sure which one you need? That&apos;s what the call is for.
@@ -79,19 +80,19 @@ export default function ServicesGrid() {
             const Icon = s.icon;
             return (
               <AnimateOnScroll key={s.href} stagger={Math.min(index + 1, 7)}>
-                <Link
+                <SpotlightLink
                   href={s.href}
-                  className="proof-card group flex h-full flex-col rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 hover:bg-white/[0.04]"
+                  className="proof-card spotlight group flex h-full flex-col rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 hover:bg-white/[0.04]"
                 >
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center">
+                    <div className="card-icon w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center">
                       <Icon className="w-5 h-5 text-gold" />
                     </div>
-                    <ArrowUpRight className="w-4 h-4 text-slate-600 group-hover:text-gold transition-colors duration-200" />
+                    <ArrowUpRight className="card-arrow w-4 h-4 text-slate-600 group-hover:text-gold" />
                   </div>
                   <h3 className="text-lg font-bold text-white font-serif mb-2">{s.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed font-sans">{s.blurb}</p>
-                </Link>
+                </SpotlightLink>
               </AnimateOnScroll>
             );
           })}

@@ -6,9 +6,11 @@ interface AnimateOnScrollProps {
   children: ReactNode;
   className?: string;
   stagger?: number;
+  /** `group`: the wrapper only toggles `is-visible`; children declare their own entrance with rv-up / rv-left / rv-right. */
+  variant?: 'block' | 'group';
 }
 
-export default function AnimateOnScroll({ children, className = '', stagger }: AnimateOnScrollProps) {
+export default function AnimateOnScroll({ children, className = '', stagger, variant = 'block' }: AnimateOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -30,9 +32,10 @@ export default function AnimateOnScroll({ children, className = '', stagger }: A
   }, []);
 
   const staggerClass = stagger ? `stagger-${stagger}` : '';
+  const base = variant === 'group' ? 'reveal-group' : 'animate-on-scroll';
 
   return (
-    <div ref={ref} className={`animate-on-scroll ${staggerClass} ${className}`}>
+    <div ref={ref} className={`${base} ${staggerClass} ${className}`}>
       {children}
     </div>
   );

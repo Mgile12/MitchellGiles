@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { MoveRight, PhoneCall, Pause, Play } from 'lucide-react';
 import Link from 'next/link';
@@ -46,6 +46,9 @@ export function AnimatedHero() {
   const [paused, setPaused] = useState(false);
   const reduce = useReducedMotion();
   const rotating = !paused && !reduce;
+  const sectionRef = useRef<HTMLElement>(null);
+  const blob1 = useRef<HTMLDivElement>(null);
+  const blob2 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!rotating) return;
@@ -61,18 +64,54 @@ export function AnimatedHero() {
     else document.documentElement.removeAttribute('data-motion');
   }, [paused]);
 
+  // Desktop only: the two glows lean toward the pointer, lagging it by about a second
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    if (
+      !window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      return;
+    }
+    let frame = 0;
+    let nx = 0;
+    let ny = 0;
+    const apply = () => {
+      frame = 0;
+      if (blob1.current) blob1.current.style.transform = `translate(${(nx * 48).toFixed(1)}px, ${(ny * 32).toFixed(1)}px)`;
+      if (blob2.current) blob2.current.style.transform = `translate(${(nx * -36).toFixed(1)}px, ${(ny * -24).toFixed(1)}px)`;
+    };
+    const onMove = (e: PointerEvent) => {
+      nx = e.clientX / window.innerWidth - 0.5;
+      ny = e.clientY / window.innerHeight - 0.5;
+      if (!frame) frame = requestAnimationFrame(apply);
+    };
+    const onLeave = () => {
+      if (frame) cancelAnimationFrame(frame);
+      frame = 0;
+      if (blob1.current) blob1.current.style.transform = '';
+      if (blob2.current) blob2.current.style.transform = '';
+    };
+    section.addEventListener('pointermove', onMove, { passive: true });
+    section.addEventListener('pointerleave', onLeave);
+    return () => {
+      section.removeEventListener('pointermove', onMove);
+      section.removeEventListener('pointerleave', onLeave);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
+
   return (
-    <section className="hero-grain relative w-full overflow-hidden bg-navy-950">
+    <section ref={sectionRef} className="hero-grain relative w-full overflow-hidden bg-navy-950">
       {/* Ground: faint grid, two slow-drifting glows */}
       <div className="hero-grid absolute inset-0 z-0" aria-hidden="true" />
-      <div
-        className="hero-blob hero-blob-1 absolute z-0 w-[520px] h-[520px] -top-40 -left-32 bg-[radial-gradient(circle,rgba(12,134,234,0.28),transparent_60%)]"
-        aria-hidden="true"
-      />
-      <div
-        className="hero-blob hero-blob-2 absolute z-0 w-[640px] h-[640px] -bottom-64 right-[-12%] bg-[radial-gradient(circle,rgba(61,160,240,0.16),transparent_60%)]"
-        aria-hidden="true"
-      />
+      <div ref={blob1} className="hero-blob-wrap absolute z-0 w-[520px] h-[520px] -top-40 -left-32" aria-hidden="true">
+        <div className="hero-blob hero-blob-1 absolute inset-0 bg-[radial-gradient(circle,rgba(12,134,234,0.28),transparent_60%)]" />
+      </div>
+      <div ref={blob2} className="hero-blob-wrap absolute z-0 w-[640px] h-[640px] -bottom-64 right-[-12%]" aria-hidden="true">
+        <div className="hero-blob hero-blob-2 absolute inset-0 bg-[radial-gradient(circle,rgba(61,160,240,0.16),transparent_60%)]" />
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 lg:pb-24">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
@@ -168,7 +207,7 @@ export function AnimatedHero() {
       </div>
 
       {/* One slow stats ticker. CSS-driven so it never stutters while the page loads. */}
-      <div className="relative z-10 w-full bg-[#0B6FC4] py-4">
+      <div className="ticker-in relative z-10 w-full bg-[#0B6FC4] py-4">
         <button
           type="button"
           onClick={() => setPaused((p) => !p)}

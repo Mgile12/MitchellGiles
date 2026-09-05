@@ -5,7 +5,10 @@ import Lightbox from './Lightbox';
 import { useState } from 'react';
 import Link from 'next/link';
 import AnimateOnScroll from './AnimateOnScroll';
+import CountUp from './CountUp';
 import Eyebrow from './Eyebrow';
+import RevealText from './RevealText';
+import TiltCard from './TiltCard';
 import type { LucideIcon } from 'lucide-react';
 
 interface Result {
@@ -93,16 +96,18 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
   const Icon = result.icon;
 
   return (
-    <AnimateOnScroll className={`flex flex-col ${
-      index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-    } gap-8 lg:gap-12 items-center`}>
-      <div className="w-full lg:w-1/2">
+    <AnimateOnScroll
+      variant="group"
+      className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
+    >
+      <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'rv-left' : 'rv-right'}`}>
         <button
           type="button"
-          className="relative group cursor-pointer hover-scale block w-full text-left"
+          className="relative group cursor-pointer block w-full text-left"
           onClick={onImageClick}
           aria-label={`Open the screenshot for ${result.title} at full size`}
         >
+          <TiltCard className="rounded-2xl">
           <div className="relative rounded-2xl overflow-hidden border border-gold/20 bg-white/[0.03] backdrop-blur-sm p-2 sm:p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] group-hover:border-gold/40 transition-colors duration-200">
             <div className="relative rounded-xl overflow-hidden">
               <img
@@ -131,10 +136,11 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
             </div>
             <div className="absolute inset-0 rounded-2xl border border-gold/10 pointer-events-none" />
           </div>
+          </TiltCard>
         </button>
       </div>
 
-      <div className="w-full lg:w-1/2 space-y-6">
+      <div className={`w-full lg:w-1/2 space-y-6 rv-delay-1 ${index % 2 === 0 ? 'rv-right' : 'rv-left'}`}>
         <div>
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 text-gold mb-4">
             <Icon className="w-7 h-7" />
@@ -150,7 +156,7 @@ function ResultCard({ result, index, onImageClick }: { result: Result; index: nu
         <div className="inline-block px-6 py-4 rounded-xl bg-gold/10 border-2 border-gold/30">
           <div className="flex items-baseline gap-2">
             <span className="text-gradient-accent text-4xl sm:text-5xl font-bold font-serif">
-              {result.metric}
+              <CountUp value={result.metric} />
             </span>
           </div>
           <p className="text-sm font-semibold mt-1 text-gold font-sans">
@@ -178,7 +184,7 @@ export default function KillerResults() {
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
           <Eyebrow className="mb-4">Results</Eyebrow>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 font-serif">
-            What the work made.
+            <RevealText text="What the work made." />
           </h2>
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-sans">
             Revenue, not vanity metrics. Every screenshot is from a client account. Tap any to enlarge. The Google Maps heatmaps and profile numbers are on the{' '}

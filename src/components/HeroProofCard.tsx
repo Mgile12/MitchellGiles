@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { TrendingUp, MapPin, Mail } from 'lucide-react';
+import CountUp from '@/components/CountUp';
 
 /**
  * Hero proof card. Every number is from a client account screenshot that also
@@ -46,7 +47,9 @@ export default function HeroProofCard() {
           </div>
 
           <div className="flex items-end gap-3 mb-1">
-            <p className="text-5xl font-bold text-white font-serif tabular-nums leading-none">89</p>
+            <p className="text-5xl font-bold text-white font-serif tabular-nums leading-none">
+              <CountUp value="89" delay={700} duration={1400} />
+            </p>
             <p className="text-sm text-slate-400 font-sans pb-1">calls from one client&apos;s profile</p>
           </div>
           <p className="text-sm font-sans mb-4">

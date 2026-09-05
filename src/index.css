@@ -64,8 +64,8 @@
 
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+  transform: translateY(24px);
+  transition: opacity 650ms var(--ease-out), transform 650ms var(--ease-out);
 }
 
 .animate-on-scroll.is-visible {
@@ -81,13 +81,77 @@
 .stagger-6 { transition-delay: 400ms; }
 .stagger-7 { transition-delay: 480ms; }
 
-.hover-scale {
-  transition: transform 200ms var(--ease-out);
+/* Group reveal: the wrapper only flips is-visible; children choose a direction and an optional delay */
+.reveal-group .rv-up,
+.reveal-group .rv-left,
+.reveal-group .rv-right {
+  opacity: 0;
+  transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+}
+.reveal-group .rv-up { transform: translateY(24px); }
+.reveal-group .rv-left { transform: translateX(-6%); }
+.reveal-group .rv-right { transform: translateX(6%); }
+.reveal-group.is-visible .rv-up,
+.reveal-group.is-visible .rv-left,
+.reveal-group.is-visible .rv-right {
+  opacity: 1;
+  transform: none;
+}
+.rv-delay-1 { transition-delay: 120ms; }
+.rv-delay-2 { transition-delay: 240ms; }
+
+/* Headline words slide up from behind a mask, 45ms apart, once an ancestor is visible */
+.rw {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  /* Room for descenders: the H2s run at line-height 1, so g, p and y reach ~0.11em past the line box */
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+}
+.rw-in {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 700ms var(--ease-out);
+  transition-delay: calc(var(--rw-base, 0ms) + var(--i, 0) * 45ms);
+}
+.is-visible .rw-in {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-group .rv-up,
+  .reveal-group .rv-left,
+  .reveal-group .rv-right {
+    transform: none;
+    transition: opacity 200ms ease;
+  }
+  .rw-in {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Result screenshots tilt toward the pointer; the light follows it (TiltCard.tsx sets the transform and --mx/--my) */
+.tilt {
+  transition: transform 160ms var(--ease-out);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-light {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.12), transparent 55%);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .hover-scale:hover {
-    transform: scale(1.02);
+  .tilt:hover .tilt-light {
+    opacity: 1;
   }
 }
 
@@ -157,9 +221,12 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .marquee:has(.logo-tile:hover) .logo-tile:not(:hover) {
+    opacity: 0.35;
+  }
   .logo-tile:hover {
     opacity: 1;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.06);
   }
 }
 
@@ -179,6 +246,49 @@
   transform: scale(0.98);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .proof-card:active {
+    transform: translateY(-3px) scale(0.98);
+  }
+}
+
+/* Spotlight: a soft accent light under the cursor (SpotlightLink.tsx sets --mx/--my on the card) */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--accent-rgb), 0.16), transparent 60%);
+}
+
+.card-icon {
+  transition: transform 200ms var(--ease-out);
+}
+
+.card-arrow {
+  transition: transform 200ms var(--ease-out), color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+  .proof-card:hover .card-icon {
+    transform: rotate(-6deg) scale(1.08);
+  }
+  .proof-card:hover .card-arrow {
+    transform: translate(2px, -2px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-on-scroll {
     transform: none;
@@ -187,7 +297,7 @@
   .marquee-track {
     animation: none;
   }
-  .hover-scale, .gold-flat-btn, .press, .logo-tile, .proof-card {
+  .gold-flat-btn, .press, .logo-tile, .proof-card {
     transition: none;
   }
   html {
@@ -248,6 +358,37 @@
 @keyframes heroCardIn {
   from { opacity: 0; transform: translateY(18px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* The glows lean toward the pointer (animated-hero.tsx sets the transform); the drift keeps running inside */
+.hero-blob-wrap {
+  transition: transform 900ms var(--ease-out);
+  will-change: transform;
+}
+
+/* Header drops in with the eyebrow; the stats ticker rises out of the hero after the buttons land */
+.header-in {
+  animation: headerIn 600ms var(--ease-out) both;
+}
+
+@keyframes headerIn {
+  from { opacity: 0; transform: translateY(-100%); }
+  to { opacity: 1; transform: none; }
+}
+
+.ticker-in {
+  animation: tickerIn 700ms var(--ease-out) 450ms both;
+}
+
+@keyframes tickerIn {
+  from { opacity: 0; transform: translateY(100%); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-in, .ticker-in {
+    animation: none;
+  }
 }
 
 /* Proof card chart: line draws, area fades, dots pop, label appears */
@@ -361,6 +502,23 @@
   background: radial-gradient(circle, rgba(var(--accent-rgb), var(--glow-a, 0.16)), transparent 62%);
 }
 
+/* Final CTA: the glow behind the last button breathes. Keyframes own the centring transform. */
+.glow-breathe {
+  animation: glowBreathe 3.2s ease-in-out infinite;
+}
+
+@keyframes glowBreathe {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-breathe {
+    animation: none;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -403,9 +561,63 @@
   background: linear-gradient(90deg, var(--accent-dark), var(--accent-light), var(--accent-dark));
 }
 
+/* Reading progress under the header. CSS scroll timeline: no JS, invisible where unsupported. */
+.scroll-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  transform-origin: left center;
+  transform: scaleX(0);
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent-light));
+}
+
+@supports (animation-timeline: scroll()) {
+  .scroll-progress {
+    opacity: 1;
+    animation: progressGrow linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
+@keyframes progressGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
 /* Primary button: gradient face, glow on hover */
 .gold-flat-btn {
   background-image: linear-gradient(180deg, var(--accent-light) 0%, var(--accent) 55%, var(--accent-dark) 100%);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Shine: a soft band sweeps across once per hover. Screen blend keeps the white label white. */
+.gold-flat-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+  transform: translateX(-130%);
+  mix-blend-mode: screen;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .gold-flat-btn:hover::after {
+    transform: translateX(130%);
+    transition: transform 750ms var(--ease-in-out);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-flat-btn::after {
+    display: none;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -477,6 +689,7 @@
 
 html[data-motion='paused'] .marquee-track,
 html[data-motion='paused'] .chip,
+html[data-motion='paused'] .glow-breathe,
 html[data-motion='paused'] .hero-blob-1,
 html[data-motion='paused'] .hero-blob-2 {
   animation-play-state: paused;

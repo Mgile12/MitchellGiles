@@ -1,6 +1,8 @@
 import { Users, Globe2, Scissors, CalendarCheck } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
+import CountUp from './CountUp';
 import Eyebrow from './Eyebrow';
+import RevealText from './RevealText';
 
 const howIWork = [
   {
@@ -45,8 +47,10 @@ export default function AboutSection() {
               id="about-heading"
               className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1] font-serif mb-6"
             >
-              One consultant.
-              <span className="text-slate-400"> No account manager in between.</span>
+              <RevealText text="One consultant." />{' '}
+              <span className="text-slate-400">
+                <RevealText text="No account manager in between." startIndex={2} />
+              </span>
             </h2>
             <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed font-sans max-w-2xl">
               <p>
@@ -90,7 +94,9 @@ export default function AboutSection() {
               <div className="divide-y divide-white/[0.06]">
                 {quickProof.map((p) => (
                   <div key={p.figure} className="py-5 first:pt-0 last:pb-0">
-                    <p className="text-gradient-accent text-3xl sm:text-4xl font-bold font-serif tabular-nums">{p.figure}</p>
+                    <p className="text-gradient-accent text-3xl sm:text-4xl font-bold font-serif tabular-nums">
+                      <CountUp value={p.figure} />
+                    </p>
                     <p className="text-sm text-slate-400 font-sans mt-1 leading-relaxed">{p.label}</p>
                   </div>
                 ))}
