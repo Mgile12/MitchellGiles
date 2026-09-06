@@ -2,7 +2,7 @@
 
 Marketing site for MRG Marketing: Mitchell Giles, marketing consultant in Ormeau on the Gold Coast.
 Next.js 14 static export, deployed on Netlify. No server, no database, no forms. Every call to
-action leads to the 15-minute booking call at `/book`.
+action leads to the 30-minute booking call at `/book`.
 
 ## Commands
 
@@ -55,7 +55,7 @@ mrgmarketing.com.au. Keep it; Search Console history depends on it.
 - No prices and no guarantees anywhere on the site. Offers, proof and detail belong on the
   service pages. The homepage stays general: what Mitchell does, the service categories, about,
   proof, one call to action.
-- Every call to action is the 15-minute call at `/book` (Motion embed). No free audits, no
+- Every call to action is the 30-minute call at `/book` (Motion embed). No free audits, no
   contact forms.
 - Copy is sentence case, first person, with contractions. Numbers lead the headlines. Australian
   English throughout.

@@ -87,8 +87,14 @@ export default function CurrentClients() {
   return (
     <section className="bg-navy-950 overflow-hidden" aria-label="Clients">
       <div className="py-8 sm:py-10">
-        <MarqueeRow logos={rowOne} direction="left" duration={55} />
-        <MarqueeRow logos={rowTwo} direction="left" duration={62} />
+        {/* Desktop: one long row (same px/s as before, so the longer track gets a longer duration). Mobile: two rows so logos stay legible. */}
+        <div className="hidden lg:block">
+          <MarqueeRow logos={[...rowOne, ...rowTwo]} direction="left" duration={100} />
+        </div>
+        <div className="lg:hidden">
+          <MarqueeRow logos={rowOne} direction="left" duration={55} />
+          <MarqueeRow logos={rowTwo} direction="left" duration={62} />
+        </div>
       </div>
     </section>
   );

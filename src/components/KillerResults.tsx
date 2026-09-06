@@ -202,18 +202,6 @@ export default function KillerResults() {
             />
           ))}
         </div>
-
-        <AnimateOnScroll className="text-center mt-16 sm:mt-20">
-          <Link
-            href="/book"
-            className="gold-flat-btn inline-block px-8 py-4 font-semibold rounded-lg text-lg font-sans"
-          >
-            Book a 15-minute call
-          </Link>
-          <p className="mt-4 text-sm text-slate-400 font-sans">
-            Bring your numbers. I&apos;ll tell you what I&apos;d do with them.
-          </p>
-        </AnimateOnScroll>
       </div>
 
       <Lightbox src={selectedImage} alt={results.find((r) => r.image === selectedImage)?.title ?? 'Result screenshot'} onClose={() => setSelectedImage(null)} />

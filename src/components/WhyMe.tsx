@@ -93,7 +93,7 @@ export default function WhyMe() {
                   href="/book"
                   className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold"
                 >
-                  Book a 15-minute call
+                  Book a 30-minute call
                 </Link>
                 <p className="mt-4 text-sm text-slate-400 font-sans lg:max-w-[16rem] lg:ml-auto">
                   Tell me what&apos;s not working. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.

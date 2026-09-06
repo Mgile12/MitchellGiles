@@ -15,7 +15,8 @@ const POINTS = CALLS.map((v, i) => [16 + i * 72, Math.round((100 - (v / 40) * 86
 const LINE = POINTS.map(([x, y]) => `${x},${y}`).join(' ');
 const AREA = `M${LINE.split(' ')[0]} ${POINTS.slice(1).map(([x, y]) => `L${x},${y}`).join(' ')} L304,100 L16,100 Z`;
 
-const BARS = [
+// `client` is optional: when the business names are supplied they show under each metric.
+const BARS: { label: string; delta: string; pct: number; client?: string }[] = [
   { label: 'Calls', delta: '+324%', pct: 100 },
   { label: 'Website clicks', delta: '+273%', pct: 84 },
   { label: 'Website clicks', delta: '+197%', pct: 61 },
@@ -137,7 +138,10 @@ export default function HeroProofCard() {
           <div className="mt-4 space-y-2.5">
             {BARS.map((b, i) => (
               <div key={`${b.label}-${b.delta}`} className="grid grid-cols-[92px_1fr_52px] items-center gap-3">
-                <span className="text-xs text-slate-400 font-sans truncate">{b.label}</span>
+                <span className="min-w-0 font-sans">
+                  <span className="block text-xs text-slate-400 truncate">{b.label}</span>
+                  {b.client && <span className="block text-[10px] leading-tight text-slate-500 truncate">{b.client}</span>}
+                </span>
                 <div className="h-1.5 rounded-full bg-white/[0.08] overflow-hidden">
                   <div
                     className="bar-fill h-full rounded-full bg-gradient-to-r from-gold-dark to-gold-light"

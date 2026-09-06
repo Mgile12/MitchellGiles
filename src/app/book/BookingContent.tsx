@@ -42,12 +42,12 @@ export default function BookingContent() {
             <div className="lg:pt-4 lg:sticky lg:top-8">
               <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="h-2 w-2 rounded-full bg-gold animate-pulse" />
-                <span className="text-xs font-semibold text-gold tracking-widest uppercase">15 minutes, free</span>
+                <span className="text-xs font-semibold text-gold tracking-widest uppercase">30 minutes, free</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
                 Book a<br />
-                <span className="text-gold">15-minute call</span>
+                <span className="text-gold">30-minute call</span>
               </h1>
 
               <p className="text-slate-400 text-base leading-relaxed mb-8">

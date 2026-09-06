@@ -18,7 +18,7 @@ export default function SEOCTA() {
               dominating search results in 12 months while their competitors are still paying per click.
             </p>
             <p className="text-base text-slate-400 leading-relaxed font-sans">
-              Book a 15-minute call and find out exactly where you stand and what it will take to rank.
+              Book a 30-minute call and find out exactly where you stand and what it will take to rank.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export default function SEOCTA() {
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
-              Book a 15-minute call
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>

@@ -21,7 +21,7 @@ export default function MetaAdsCTA() {
               integrity, explains technical frameworks clearly and scales methodically — let's talk.
             </p>
             <p className="text-base text-slate-400 font-sans">
-              Book a 15-minute call about your Meta Ads account. I&apos;ll show you exactly where budget
+              Book a 30-minute call about your Meta Ads account. I&apos;ll show you exactly where budget
               is being wasted and what it will take to scale profitably.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function MetaAdsCTA() {
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
-              Book a 15-minute call
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>

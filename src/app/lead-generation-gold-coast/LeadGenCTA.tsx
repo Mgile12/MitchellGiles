@@ -14,7 +14,7 @@ export default function LeadGenCTA() {
           </h2>
           <div className="space-y-4">
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-sans">
-              Book a 15-minute call and I&apos;ll show you exactly where your pipeline has gaps
+              Book a 30-minute call and I&apos;ll show you exactly where your pipeline has gaps
               and how to fix them.
             </p>
           </div>
@@ -24,7 +24,7 @@ export default function LeadGenCTA() {
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
-              Book a 15-minute call
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>

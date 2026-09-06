@@ -166,7 +166,7 @@ export function AnimatedHero() {
                 href="/book"
                 className="gold-flat-btn inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide"
               >
-                Book a 15-minute call <PhoneCall className="w-4 h-4" />
+                Book a 30-minute call <PhoneCall className="w-4 h-4" />
               </Link>
               <a
                 href="#results"
@@ -189,7 +189,7 @@ export function AnimatedHero() {
                     key={p.alt}
                     src={p.src}
                     alt={p.alt}
-                    className="h-6 sm:h-7 w-auto object-contain opacity-70"
+                    className="h-8 sm:h-9 w-auto object-contain opacity-70"
                     style={{ filter: 'brightness(0) invert(1)' }}
                     loading="eager"
                   />

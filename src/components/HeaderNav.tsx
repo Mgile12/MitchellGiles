@@ -3,8 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import { BUSINESS_INFO } from '../lib/business-info';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const serviceLinks = [
   { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
@@ -147,13 +146,6 @@ export default function HeaderNav() {
             >
               Results
             </button>
-            <a
-              href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-              className="inline-flex items-center gap-1.5 py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
-            >
-              <Phone className="h-3.5 w-3.5" />
-              {BUSINESS_INFO.phone}
-            </a>
             <Link
               href="/book"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
@@ -230,13 +222,6 @@ export default function HeaderNav() {
           >
             Results
           </button>
-          <a
-            href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-            className="flex items-center gap-2 px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
-          >
-            <Phone className="h-4 w-4" />
-            {BUSINESS_INFO.phone}
-          </a>
           <div className="pt-3">
             <Link
               href="/book"

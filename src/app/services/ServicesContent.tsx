@@ -161,7 +161,7 @@ export default function ServicesContent() {
               Not sure where to start?
             </h2>
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-sans mb-12">
-              Book a 15-minute call. Tell me what you sell and what is not working, and I will tell you where I would start,
+              Book a 30-minute call. Tell me what you sell and what is not working, and I will tell you where I would start,
               and recommend exactly where to focus first.
             </p>
 
@@ -170,7 +170,7 @@ export default function ServicesContent() {
                 href="/book"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
               >
-                Book a 15-minute call
+                Book a 30-minute call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </div>
