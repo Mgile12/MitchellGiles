@@ -220,8 +220,14 @@
   transition: opacity 200ms ease, transform 200ms var(--ease-out);
 }
 
+/* Logo wall: each slot squashes vertically from its centre when its logo swaps (CurrentClients.tsx drives it with WAAPI) */
+.logo-slot {
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+}
+
 @media (hover: hover) and (pointer: fine) {
-  .marquee:has(.logo-tile:hover) .logo-tile:not(:hover) {
+  .logo-wall:has(.logo-tile:hover) .logo-tile:not(:hover) {
     opacity: 0.35;
   }
   .logo-tile:hover {
