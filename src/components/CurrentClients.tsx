@@ -9,21 +9,23 @@ interface ClientLogo {
   href?: string;
   /** Extra width for wide wordmarks. */
   wide?: boolean;
+  /** Square emblems get more height so they match the wordmarks' visual weight. */
+  tall?: boolean;
 }
 
 // All logos are pre-baked as white-on-transparent files (the -mono versions), so no CSS filters or
 // blend modes are needed and the wall renders the same inside its compositing layer.
 const LOGOS: ClientLogo[] = [
   { name: 'Tradie Marketing Pros', src: '/clients/tradie-marketing-pros-mono.webp', href: 'https://tradiemarketingpros.com.au/' },
-  { name: 'Polish Hub', src: '/clients/polish-hub-mono.webp', href: 'https://polishhub.com.au/', wide: true },
+  { name: 'Polish Hub', src: '/clients/polish-hub-mono.webp', href: 'https://polishhub.com.au/', tall: true },
   { name: 'MJLT Services', src: '/clients/mjlt-services-mono.webp', href: 'https://www.mjltservices.com.au/' },
   { name: 'Ceramics Gold Coast', src: '/clients/ceramics-gold-coast-mono.webp', href: 'https://ceramicsgoldcoast.com.au/' },
   { name: 'Elite Football Academy', src: '/clients/elite-football-academy-mono.webp', href: 'https://www.elitefootball.com.au/' },
   { name: 'Viking Athletics', src: '/logos/va-mono.webp' },
   { name: 'All GC Hire', src: '/clients/all-gc-hire-mono.webp', href: 'https://allgchire.com.au/' },
-  { name: 'Greenstone Karate', src: '/logos/greenstone-karate-mono.webp' },
+  { name: 'Greenstone Karate', src: '/logos/greenstone-karate-mono.webp', tall: true },
   { name: 'Washroom Essential', src: '/clients/washroom-essentials-mono.webp' },
-  { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne-mono.webp' },
+  { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne-mono.webp', tall: true },
   { name: 'Best Deal 4 U', src: '/clients/best-deal-4-u-mono.webp' },
   { name: 'Fleur', src: '/clients/fleur-mono.webp' },
   { name: 'InHouseAI', src: '/clients/inhouseai-mono.webp' },
@@ -54,7 +56,7 @@ function LogoTile({ logo }: { logo: ClientLogo }) {
       alt={logo.name}
       draggable={false}
       loading="lazy"
-      className="max-h-12 sm:max-h-14 w-auto object-contain select-none"
+      className={`${logo.tall ? 'max-h-16 sm:max-h-20' : 'max-h-12 sm:max-h-14'} w-auto object-contain select-none`}
       style={{ maxWidth: logo.wide ? 180 : 130 }}
     />
   );
