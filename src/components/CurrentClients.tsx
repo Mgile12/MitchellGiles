@@ -7,26 +7,26 @@ interface ClientLogo {
   name: string;
   src: string;
   href?: string;
-  /** Logo is dark on a white ground; invert it and screen it onto the dark page. */
-  invert?: boolean;
   /** Extra width for wide wordmarks. */
   wide?: boolean;
 }
 
+// All logos are pre-baked as white-on-transparent files (the -mono versions), so no CSS filters or
+// blend modes are needed and the wall renders the same inside its compositing layer.
 const LOGOS: ClientLogo[] = [
-  { name: 'Tradie Marketing Pros', src: '/clients/tradie-marketing-pros.webp', href: 'https://tradiemarketingpros.com.au/' },
-  { name: 'Polish Hub', src: '/clients/polish-hub.webp', href: 'https://polishhub.com.au/', wide: true },
-  { name: 'MJLT Services', src: '/clients/mjlt-services.webp', href: 'https://www.mjltservices.com.au/' },
-  { name: 'Ceramics Gold Coast', src: '/clients/ceramics-gold-coast.webp', href: 'https://ceramicsgoldcoast.com.au/' },
-  { name: 'Elite Football Academy', src: '/clients/elite-football-academy.webp', href: 'https://www.elitefootball.com.au/' },
-  { name: 'Viking Athletics', src: '/logos/va.png', invert: true },
-  { name: 'All GC Hire', src: '/clients/all-gc-hire.webp', href: 'https://allgchire.com.au/' },
-  { name: 'Greenstone Karate', src: '/logos/greenstone-karate.webp' },
-  { name: 'Washroom Essential', src: '/clients/washroom-essentials.webp' },
-  { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne.webp' },
-  { name: 'Best Deal 4 U', src: '/clients/best-deal-4-u.webp' },
-  { name: 'Fleur', src: '/clients/fleur.webp' },
-  { name: 'InHouseAI', src: '/clients/inhouseai.webp' },
+  { name: 'Tradie Marketing Pros', src: '/clients/tradie-marketing-pros-mono.webp', href: 'https://tradiemarketingpros.com.au/' },
+  { name: 'Polish Hub', src: '/clients/polish-hub-mono.webp', href: 'https://polishhub.com.au/', wide: true },
+  { name: 'MJLT Services', src: '/clients/mjlt-services-mono.webp', href: 'https://www.mjltservices.com.au/' },
+  { name: 'Ceramics Gold Coast', src: '/clients/ceramics-gold-coast-mono.webp', href: 'https://ceramicsgoldcoast.com.au/' },
+  { name: 'Elite Football Academy', src: '/clients/elite-football-academy-mono.webp', href: 'https://www.elitefootball.com.au/' },
+  { name: 'Viking Athletics', src: '/logos/va-mono.webp' },
+  { name: 'All GC Hire', src: '/clients/all-gc-hire-mono.webp', href: 'https://allgchire.com.au/' },
+  { name: 'Greenstone Karate', src: '/logos/greenstone-karate-mono.webp' },
+  { name: 'Washroom Essential', src: '/clients/washroom-essentials-mono.webp' },
+  { name: 'Cleaning Melbourne', src: '/clients/cleaning-melbourne-mono.webp' },
+  { name: 'Best Deal 4 U', src: '/clients/best-deal-4-u-mono.webp' },
+  { name: 'Fleur', src: '/clients/fleur-mono.webp' },
+  { name: 'InHouseAI', src: '/clients/inhouseai-mono.webp' },
 ];
 
 // Five slots on desktop, four on tablet (one row), four on phones (two rows). Slot 5 is hidden below lg.
@@ -55,14 +55,10 @@ function LogoTile({ logo }: { logo: ClientLogo }) {
       draggable={false}
       loading="lazy"
       className="max-h-12 sm:max-h-14 w-auto object-contain select-none"
-      style={{
-        maxWidth: logo.wide ? 180 : 130,
-        filter: logo.invert ? 'invert(1)' : undefined,
-        mixBlendMode: logo.invert ? 'screen' : undefined,
-      }}
+      style={{ maxWidth: logo.wide ? 180 : 130 }}
     />
   );
-  const cls = 'logo-tile flex items-center justify-center h-20 sm:h-24 px-4 opacity-70';
+  const cls = 'logo-tile flex items-center justify-center h-20 sm:h-24 px-4 opacity-80';
   return logo.href ? (
     <a href={logo.href} target="_blank" rel="noopener noreferrer" className={cls} aria-label={logo.name}>
       {img}
