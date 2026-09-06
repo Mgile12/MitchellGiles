@@ -335,8 +335,9 @@ export default function OrmeauContent() {
 
             <AnimateOnScroll className="lg:col-span-7">
               <div className="rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.5)]" style={{ height: '440px' }}>
+                {/* Keyless embed resolves a name + address query to the listing; place_id queries only work with the keyed Embed API */}
                 <iframe
-                  src={`https://www.google.com/maps?q=place_id:${PLACE_ID}&z=14&output=embed`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.legalName}, ${BUSINESS_INFO.address.full}`)}&z=15&output=embed`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -346,6 +347,14 @@ export default function OrmeauContent() {
                   title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"
                 />
               </div>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.legalName)}&query_place_id=${PLACE_ID}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans"
+              >
+                Open in Google Maps <ArrowRight className="w-4 h-4" />
+              </a>
             </AnimateOnScroll>
           </div>
         </div>
