@@ -34,6 +34,33 @@ export default function AreasContent() {
         </div>
       </section>
 
+      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="suburbs-heading">
+        <div className="grid-ground absolute inset-0" aria-hidden="true" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <h2 id="suburbs-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif mb-4">
+            Suburbs I work in most
+          </h2>
+          <p className="text-base sm:text-lg text-slate-400 font-sans max-w-2xl mb-8">
+            Ormeau is home. The rest of the northern Gold Coast corridor is a short drive, and each suburb is getting
+            its own page.
+          </p>
+          <ul className="flex flex-wrap gap-3 font-sans">
+            <li>
+              <Link
+                href="/areas/ormeau"
+                className="press inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-2 text-sm font-semibold text-white hover:bg-gold/20"
+              >
+                Ormeau <ArrowRight className="w-4 h-4 text-gold" />
+              </Link>
+            </li>
+            {['Pimpama', 'Coomera', 'Upper Coomera', 'Helensvale', 'Oxenford', 'Gold Coast', 'Brisbane'].map((area) => (
+              <li key={area} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-slate-300">
+                {area}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       <section className="relative bg-navy-950 text-slate-50">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 

@@ -1,2 +1,6 @@
 https://mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
+
+# Suburb pages removed in May 2026: anything that no longer exists under /areas/ goes to the hub.
+# Not forced, so real pages like /areas/ormeau/ are served normally.
+/areas/* /areas/ 301
