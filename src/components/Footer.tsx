@@ -13,13 +13,10 @@ export default function Footer() {
       brandName={BUSINESS_INFO.legalName}
       tagline="Marketing consultant, Ormeau. Working across the Gold Coast and Brisbane."
       mainLinks={[
-        { href: '/services', label: 'All Services' },
         { href: '/google-business-profile-gold-coast', label: 'Google Business Profile' },
-        { href: '/seo-gold-coast', label: 'SEO' },
-        { href: '/google-ads-gold-coast', label: 'Google Ads' },
+        { href: '/seo-gold-coast', label: 'Local SEO' },
+        { href: '/meta-ads-agency', label: 'Meta Ads' },
         { href: '/email-marketing-gold-coast', label: 'Email Marketing' },
-        { href: '/lead-generation-gold-coast', label: 'Lead Generation' },
-        { href: '/digital-marketing-gold-coast', label: 'Digital Marketing' },
         { href: '/book', label: 'Book a call' },
       ]}
       contactInfo={{

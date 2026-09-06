@@ -1,4 +1,4 @@
-import { MapPin, Search, Megaphone, Layers, Mail, Target, Cog, BarChart3, ArrowUpRight } from 'lucide-react';
+import { MapPin, Search, Megaphone, Mail, Sparkles, Ticket, ArrowUpRight } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 import Eyebrow from './Eyebrow';
 import RevealText from './RevealText';
@@ -12,22 +12,16 @@ const services = [
     icon: MapPin,
   },
   {
-    title: 'SEO',
+    title: 'Local SEO',
     blurb: 'Rank for what people in your suburb actually type, not what a keyword tool says.',
     href: '/seo-gold-coast',
     icon: Search,
   },
   {
-    title: 'Google Ads',
-    blurb: 'Search campaigns tracked to the phone call, so you know what every dollar bought.',
-    href: '/google-ads-gold-coast',
-    icon: Megaphone,
-  },
-  {
     title: 'Meta Ads',
     blurb: 'Facebook and Instagram campaigns built around an offer, not a boost button.',
     href: '/meta-ads-agency',
-    icon: Layers,
+    icon: Megaphone,
   },
   {
     title: 'Email Marketing',
@@ -36,22 +30,16 @@ const services = [
     icon: Mail,
   },
   {
-    title: 'Lead Generation',
-    blurb: 'A pipeline you can count on every week, not a spike you can&apos;t repeat.',
-    href: '/lead-generation-gold-coast',
-    icon: Target,
+    title: 'AI Automations',
+    blurb: 'Put the repetitive work on autopilot, so every lead gets followed up and nothing slips.',
+    href: '/book',
+    icon: Sparkles,
   },
   {
-    title: 'Marketing Automation',
-    blurb: 'Follow-up that happens whether or not you&apos;re on the tools that day.',
-    href: '/marketing-automation-gold-coast',
-    icon: Cog,
-  },
-  {
-    title: 'Digital Marketing Strategy',
-    blurb: 'The plan that decides which of the above you actually need, and in what order.',
-    href: '/digital-marketing-gold-coast',
-    icon: BarChart3,
+    title: 'Event Tickets',
+    blurb: 'Fill the room and lift the spend per head. One upsell did $82K in three hours, twice.',
+    href: '/book',
+    icon: Ticket,
   },
 ];
 
@@ -71,11 +59,11 @@ export default function ServicesGrid() {
             <RevealText text="Pick the problem. I'll pick the channel." />
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
-            Eight things I do for Gold Coast businesses. Not sure which one you need? That&apos;s what the call is for.
+            Six things I do for Gold Coast businesses. Not sure which one you need? That&apos;s what the call is for.
           </p>
         </AnimateOnScroll>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {services.map((s, index) => {
             const Icon = s.icon;
             return (

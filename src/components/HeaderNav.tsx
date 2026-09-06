@@ -8,13 +8,11 @@ import { BUSINESS_INFO } from '../lib/business-info';
 
 const serviceLinks = [
   { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
-  { label: 'SEO Gold Coast', href: '/seo-gold-coast' },
-  { label: 'Google Ads Gold Coast', href: '/google-ads-gold-coast' },
-  { label: 'Meta Ads Agency', href: '/meta-ads-agency' },
-  { label: 'Email Marketing Gold Coast', href: '/email-marketing-gold-coast' },
-  { label: 'Lead Generation Gold Coast', href: '/lead-generation-gold-coast' },
-  { label: 'Digital Marketing Gold Coast', href: '/digital-marketing-gold-coast' },
-  { label: 'Marketing Automation Gold Coast', href: '/marketing-automation-gold-coast' },
+  { label: 'Local SEO', href: '/seo-gold-coast' },
+  { label: 'Meta Ads', href: '/meta-ads-agency' },
+  { label: 'Email Marketing', href: '/email-marketing-gold-coast' },
+  { label: 'AI Automations', href: '/book' },
+  { label: 'Event Tickets', href: '/book' },
 ];
 
 export default function HeaderNav() {

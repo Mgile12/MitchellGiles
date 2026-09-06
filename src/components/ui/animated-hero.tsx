@@ -7,16 +7,14 @@ import Link from 'next/link';
 import HeroProofCard from '@/components/HeroProofCard';
 import { EASE_OUT } from '@/lib/motion';
 
-// Mirrors the eight cards in ServicesGrid so the hero and the page say the same thing.
+// Mirrors the six cards in ServicesGrid so the hero and the page say the same thing.
 const services = [
   'Google Maps',
   'Local SEO',
-  'Google Ads',
   'Meta Ads',
   'Email Marketing',
-  'Lead Generation',
-  'Marketing Automation',
-  'AI Search (GEO)',
+  'AI Automations',
+  'Event Tickets',
 ];
 
 const STATS = [
