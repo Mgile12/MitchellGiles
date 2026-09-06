@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
     template: '%s | MRG Marketing',
   },
-  description: `Mitchell Giles is a marketing consultant in Ormeau on the Gold Coast. Google Business Profile, Google and Meta Ads, email and strategy for Australian businesses, with results you can check. Call ${BUSINESS_INFO.phone}.`,
+  description: `Mitchell Giles is a marketing consultant in Ormeau on the northern Gold Coast. Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets for Gold Coast and Brisbane businesses, with results you can check. Call ${BUSINESS_INFO.phone}.`,
   keywords: [
     'marketing consultant ormeau',
     'marketing consultant gold coast',
