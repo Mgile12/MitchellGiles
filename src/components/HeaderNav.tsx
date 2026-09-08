@@ -141,7 +141,7 @@ export default function HeaderNav() {
               About
             </button>
             <button
-              onClick={() => scrollToSection('results')}
+              onClick={() => scrollToSection('location')}
               className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
             >
               Results
@@ -217,7 +217,7 @@ export default function HeaderNav() {
             About
           </button>
           <button
-            onClick={() => scrollToSection('results')}
+            onClick={() => scrollToSection('location')}
             className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
           >
             Results

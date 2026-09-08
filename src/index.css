@@ -700,3 +700,19 @@ html[data-motion='paused'] .hero-blob-1,
 html[data-motion='paused'] .hero-blob-2 {
   animation-play-state: paused;
 }
+
+/* Locator Plus (homepage map, keyed) */
+.locator-plus gmpx-store-locator {
+  width: 100%;
+  height: 100%;
+  --gmpx-color-surface: #0b1220;
+  --gmpx-color-on-surface: #f8fafc;
+  --gmpx-color-on-surface-variant: #94a3b8;
+  --gmpx-color-primary: #0c86ea;
+  --gmpx-color-outline: rgba(255, 255, 255, 0.1);
+  --gmpx-fixed-panel-width-row-layout: 20em;
+  --gmpx-fixed-panel-height-column-layout: 55%;
+  --gmpx-font-family-base: var(--font-inter), sans-serif;
+  --gmpx-font-family-headings: var(--font-montserrat), sans-serif;
+  --gmpx-font-size-base: 0.875rem;
+}
