@@ -3,7 +3,6 @@ import CurrentClients from '@/components/CurrentClients';
 import ServicesGrid from '@/components/ServicesGrid';
 import AboutSection from '@/components/AboutSection';
 import WhyMe from '@/components/WhyMe';
-import KillerResults from '@/components/KillerResults';
 import FinalCTA from '@/components/FinalCTA';
 
 export default function HomePage() {
@@ -14,7 +13,6 @@ export default function HomePage() {
       <CurrentClients />
       <AboutSection />
       <WhyMe />
-      <KillerResults />
       <FinalCTA />
     </>
   );

@@ -169,10 +169,10 @@ export function AnimatedHero() {
                 Book a 30-minute call <PhoneCall className="w-4 h-4" />
               </Link>
               <a
-                href="#results"
+                href="#services"
                 className="press inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
               >
-                See the results <MoveRight className="w-4 h-4" />
+                See what I do <MoveRight className="w-4 h-4" />
               </a>
             </div>
 

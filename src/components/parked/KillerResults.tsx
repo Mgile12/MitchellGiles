@@ -1,13 +1,13 @@
 'use client';
 
 import { TrendingUp, BarChart3, Mail, ShoppingCart, Trophy } from 'lucide-react';
-import Lightbox from './Lightbox';
+import Lightbox from '../Lightbox';
 import { useState } from 'react';
 import Link from 'next/link';
-import AnimateOnScroll from './AnimateOnScroll';
-import CountUp from './CountUp';
-import Eyebrow from './Eyebrow';
-import RevealText from './RevealText';
+import AnimateOnScroll from '../AnimateOnScroll';
+import CountUp from '../CountUp';
+import Eyebrow from '../Eyebrow';
+import RevealText from '../RevealText';
 import TiltCard from './TiltCard';
 import type { LucideIcon } from 'lucide-react';
 

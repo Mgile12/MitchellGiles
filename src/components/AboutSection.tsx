@@ -101,12 +101,6 @@ export default function AboutSection() {
                   </div>
                 ))}
               </div>
-              <a
-                href="#results"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans"
-              >
-                See the screenshots below
-              </a>
             </div>
           </AnimateOnScroll>
         </div>
