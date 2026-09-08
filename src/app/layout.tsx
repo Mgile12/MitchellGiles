@@ -22,7 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
   title: {
-    default: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
+    default: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
     template: '%s | MRG Marketing',
   },
   description: `Mitchell Giles is a marketing consultant in Ormeau on the northern Gold Coast. Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets for Gold Coast and Brisbane businesses, with results you can check. Call ${BUSINESS_INFO.phone}.`,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     'max-snippet': -1,
   },
   openGraph: {
-    title: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
+    title: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
     description:
       'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
     type: 'website',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marketing Consultant Ormeau & Gold Coast | MRG Marketing',
+    title: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
     description:
       'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
     images: ['/og-image.png'],
