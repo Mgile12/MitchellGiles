@@ -21,5 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...servicePages,
     { url: `${baseUrl}/areas/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/areas/ormeau/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/Best-Marketing-Agency-in-Gold-Coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 }
