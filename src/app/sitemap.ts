@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
+import { caseStudies } from './case-studies/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = BUSINESS_INFO.url;
@@ -18,5 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/areas/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/areas/ormeau/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/Best-Marketing-Agency-in-Gold-Coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/case-studies/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    ...caseStudies.map((c) => ({ url: `${baseUrl}/case-studies/${c.slug}/`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 })),
   ];
 }

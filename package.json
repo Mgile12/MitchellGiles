@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "knip": "knip",
+    "indexnow": "node scripts/indexnow.mjs",
     "test": "next build && node scripts/smoke.mjs"
   },
   "dependencies": {

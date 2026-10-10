@@ -153,7 +153,7 @@ export default function HeroProofCard() {
             ))}
           </div>
           <p className="mt-4 text-[11px] text-slate-400 font-sans leading-relaxed">
-            Four client profiles, year on year.{' '}
+            Four client profiles, year on year. Calls are call-button taps, Google&apos;s own metric.{' '}
             <Link
               href="/google-business-profile-gold-coast"
               className="text-slate-300 underline underline-offset-2 hover:text-white transition-colors duration-150"

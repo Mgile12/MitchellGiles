@@ -35,9 +35,9 @@ const reasons = [
 ];
 
 const stats = [
-  { value: '68%', label: 'of online experiences begin with a search engine' },
-  { value: '75%', label: 'of users never scroll past the first page' },
-  { value: '14.6%', label: 'close rate for SEO leads vs 1.7% for outbound' },
+  { value: '266', label: 'call-button taps in five months from one Business Profile I manage, up 23% on the year before' },
+  { value: '2 days', label: 'for one client profile to go from page two to the top 3 on Google Maps' },
+  { value: '11 days', label: 'for a second client to do the same. Both before-and-after heatmaps are on the Business Profile page' },
 ];
 
 export default function SEOWhyMatters() {

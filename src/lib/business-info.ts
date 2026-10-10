@@ -6,7 +6,8 @@ export const BUSINESS_INFO = {
   founder: 'Mitchell Giles',
   url: 'https://mrgmarketing.com.au',
   logo: 'https://mrgmarketing.com.au/icon-512.png',
-  image: 'https://iili.io/fynfkw7.jpg',
+  image: 'https://mrgmarketing.com.au/best-marketing-agency-in-gold-coast.jpg',
+  placeId: 'ChIJI7me_LgPkWsRiuaYKm_2oqc',
   bookingUrl: 'https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337',
 
   phone: '0474 870 535',
@@ -23,8 +24,8 @@ export const BUSINESS_INFO = {
   },
 
   geo: {
-    latitude: -27.767,
-    longitude: 153.2616,
+    latitude: -27.7667993,
+    longitude: 153.2613798,
   },
 
   social: {
@@ -44,13 +45,15 @@ export const BUSINESS_INFO = {
 
   serviceArea: [
     'Ormeau',
+    'Ormeau Hills',
+    'Yatala',
+    'Pimpama',
+    'Coomera',
+    'Upper Coomera',
+    'Helensvale',
+    'Oxenford',
+    'Beenleigh',
     'Gold Coast',
-    'Southport',
-    'Surfers Paradise',
-    'Broadbeach',
-    'Burleigh Heads',
-    'Robina',
-    'Nerang',
     'Brisbane',
     'South East Queensland',
   ],

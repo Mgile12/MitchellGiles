@@ -112,7 +112,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] font-serif mb-6">
             Top 3 on Google Maps.
             <br />
-            <span className="text-gold">Within 90 days.</span>
+            <span className="text-gold">Planned for 90 days, often faster.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans">
             The top three Maps listings take around <strong className="text-white">70% of local clicks</strong>.
@@ -146,7 +146,12 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
               Two clients. Two heatmaps. Before and after.
             </h2>
             <p className="text-slate-400 font-sans">
-              Live Google Maps ranking heatmaps. The number is how many days it took.
+              Live Google Maps ranking heatmaps. The number is how many days it took. Both are written up in full, with
+              the work and the limits of the measurement, in the{' '}
+              <Link href="/case-studies" className="text-gold hover:text-gold/80 transition-colors duration-150">
+                case studies
+              </Link>
+              .
             </p>
           </AnimateOnScroll>
 
@@ -195,7 +200,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
             </h2>
             <p className="text-slate-400 font-sans max-w-2xl mx-auto">
               Calls, website clicks and interactions from Business Profiles I manage, April to August 2026. Untouched
-              screenshots. Tap any to enlarge.
+              screenshots. Tap any to enlarge. &ldquo;Calls&rdquo; is Google&apos;s own metric: taps on the profile&apos;s call
+              button, not a count of answered phone calls.
             </p>
           </AnimateOnScroll>
 

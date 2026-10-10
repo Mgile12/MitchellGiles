@@ -5,13 +5,13 @@ import GBPContent from './GBPContent';
 const PATH = '/google-business-profile-gold-coast';
 
 export const metadata: Metadata = {
-  title: 'Google Business Profile Gold Coast | Top 3 on Google Maps',
+  title: 'Google Business Profile Gold Coast | Top 3 on Google Maps, with the heatmaps to prove it',
   description:
-    'Google Business Profile management for Gold Coast businesses. Top 3 on Google Maps within 90 days, measured in calls and website clicks, with live ranking heatmaps from real clients. Based in Ormeau QLD.',
+    'Google Business Profile management for Gold Coast businesses. Top 3 on Google Maps, planned for 90 days and often faster, measured in call-button taps and website clicks, with before-and-after ranking heatmaps from real clients. Based in Ormeau QLD.',
   openGraph: {
     title: 'Google Business Profile Gold Coast | MRG Marketing',
     description:
-      'Top 3 on Google Maps within 90 days, measured in calls and website clicks. Live heatmaps from real Gold Coast clients.',
+      'Top 3 on Google Maps, planned for 90 days and often faster. Before-and-after heatmaps from real Gold Coast clients.',
     type: 'website',
     url: `${BUSINESS_INFO.url}${PATH}/`,
     locale: 'en_AU',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Google Business Profile Gold Coast | MRG Marketing',
     description:
-      'Top 3 on Google Maps within 90 days, measured in calls and website clicks. Live heatmaps from real Gold Coast clients.',
+      'Top 3 on Google Maps, planned for 90 days and often faster. Before-and-after heatmaps from real Gold Coast clients.',
     images: ['/og-image.png'],
   },
   alternates: {
@@ -74,7 +74,7 @@ function buildPageJsonLd() {
     serviceType: 'Google Business Profile Management',
     name: 'Google Business Profile Gold Coast',
     description:
-      'Google Business Profile optimisation and management for Gold Coast businesses, targeting the top 3 Google Maps positions within 90 days.',
+      'Google Business Profile optimisation and management for Gold Coast businesses, working towards the top 3 Google Maps positions, planned for 90 days.',
     provider: { '@id': `${BUSINESS_INFO.url}/#business` },
     areaServed: {
       '@type': 'City',

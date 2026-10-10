@@ -17,6 +17,7 @@ export default function Footer() {
         { href: '/seo-gold-coast', label: 'Local SEO' },
         { href: '/meta-ads-agency', label: 'Meta Ads' },
         { href: '/email-marketing-gold-coast', label: 'Email Marketing' },
+        { href: '/case-studies', label: 'Case studies' },
         { href: '/book', label: 'Book a call' },
       ]}
       contactInfo={{

@@ -81,27 +81,40 @@ export const metadata: Metadata = {
 };
 
 function buildJsonLd() {
+  const businessId = `${BUSINESS_INFO.url}/#business`;
   const localBusinessSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'MRG Marketing Agency',
-    image: 'https://lh3.googleusercontent.com/a-/ALV-UjUtAOR97S5jIwly0liOCgpKzJsI87KCOkFyismaIIKhpIPGYj46=s360-w360-h360',
-    '@id': 'https://mrgmarketing.com.au/',
-    url: 'https://mrgmarketing.com.au',
-    telephone: '0474870535',
+    '@type': ['LocalBusiness', 'ProfessionalService'],
+    '@id': businessId,
+    name: BUSINESS_INFO.name,
+    description: BUSINESS_INFO.description,
+    url: `${BUSINESS_INFO.url}/`,
+    logo: BUSINESS_INFO.logo,
+    image: [BUSINESS_INFO.logo, BUSINESS_INFO.image],
+    telephone: BUSINESS_INFO.phoneFormatted,
+    email: BUSINESS_INFO.email,
+    founder: {
+      '@type': 'Person',
+      name: BUSINESS_INFO.founder,
+      jobTitle: 'Marketing consultant',
+      sameAs: [BUSINESS_INFO.social.linkedin],
+    },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '9 Laverton St',
-      addressLocality: 'Ormeau',
-      addressRegion: 'QLD',
-      postalCode: '4208',
-      addressCountry: 'AU',
+      streetAddress: BUSINESS_INFO.address.street,
+      addressLocality: BUSINESS_INFO.address.locality,
+      addressRegion: BUSINESS_INFO.address.region,
+      postalCode: BUSINESS_INFO.address.postalCode,
+      addressCountry: BUSINESS_INFO.address.country,
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -27.767,
-      longitude: 153.2616,
+      latitude: BUSINESS_INFO.geo.latitude,
+      longitude: BUSINESS_INFO.geo.longitude,
     },
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.legalName)}&query_place_id=${BUSINESS_INFO.placeId}`,
+    areaServed: BUSINESS_INFO.serviceArea.map((name) => ({ '@type': 'Place', name })),
+    knowsAbout: [...BUSINESS_INFO.services],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -116,11 +129,7 @@ function buildJsonLd() {
         closes: '14:00',
       },
     ],
-    sameAs: [
-      'https://www.facebook.com/profile.php?id=61557011930635',
-      'https://www.linkedin.com/in/mrg-marketing/',
-      'https://www.instagram.com/mrg.marketing/',
-    ],
+    sameAs: [BUSINESS_INFO.social.facebook, BUSINESS_INFO.social.instagram],
   };
 
   const websiteSchema = {
@@ -129,7 +138,7 @@ function buildJsonLd() {
     name: BUSINESS_INFO.name,
     url: BUSINESS_INFO.url,
     description: BUSINESS_INFO.description,
-    publisher: { '@id': `${BUSINESS_INFO.url}/#business` },
+    publisher: { '@id': businessId },
   };
 
   const breadcrumbSchema = {

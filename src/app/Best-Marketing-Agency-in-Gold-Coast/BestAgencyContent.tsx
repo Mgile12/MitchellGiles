@@ -22,7 +22,7 @@ const proof = [
     icon: MapPin,
     title: 'Google Maps and the phone',
     body:
-      'One Business Profile took 266 calls in five months, up 23% on the year before. Another did 89 calls in a month, up 324%. Website clicks from Maps rose 273% on one profile and 197% on another, and a new profile went from zero to 33 calls. These are trades and local services between Beenleigh and Helensvale, and the phone ringing is the whole point.',
+      'One Business Profile took 266 calls in five months, up 23% on the year before. Another did 89 calls in a month, up 324%. Website clicks from Maps rose 273% on one profile and 197% on another, and a new profile went from zero to 33 calls. These are trades and local services between Beenleigh and Helensvale, and the phone ringing is the whole point. "Calls" is Google\'s own metric, taps on the profile\'s call button, so it counts people who tried to ring, not jobs won.',
     images: [
       { src: '/proof/gbp-calls-266-up-23.png', alt: '266 calls in five months, up 23%, from a client Google Business Profile' },
       { src: '/proof/gbp-calls-89-up-324.png', alt: '89 calls in a month, up 324%, from a client Google Business Profile' },
@@ -160,7 +160,11 @@ export default function BestAgencyContent() {
               <RevealText text="What the best marketing agency in Gold Coast looks like on a screen." />
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-400 font-sans">
-              Revenue, calls and bookings, not impressions. Tap any screenshot to open it.
+              Revenue, calls and bookings, not impressions. Tap any screenshot to open it. The{' '}
+              <Link href="/case-studies" className="text-gold hover:text-gold/80 transition-colors duration-150">
+                case studies
+              </Link>{' '}
+              have the dates, the work and the limits of each number.
             </p>
           </AnimateOnScroll>
 
