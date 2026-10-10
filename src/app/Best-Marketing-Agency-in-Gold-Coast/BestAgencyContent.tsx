@@ -7,7 +7,7 @@ import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
 
 const IMAGE = '/best-marketing-agency-in-gold-coast.jpg';
-const ALT = 'Mitchell Giles of MRG Marketing, best marketing agency in Gold Coast';
+const ALT = 'best marketing agency in gold coast';
 
 // Every figure is from a client account; the screenshots are the ones already published on this site.
 const headline = [

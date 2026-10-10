@@ -34,16 +34,12 @@ export const BUSINESS_INFO = {
   },
 
   services: [
-    'Email Marketing',
+    'Google Business Profile Optimisation',
+    'Local SEO',
     'Meta Ads Management',
-    'Google Ads Management',
-    'SEO',
-    'Copywriting',
-    'Marketing Automation',
-    'CRM Solutions',
-    'Website Development',
+    'Email Marketing',
+    'AI Automations',
     'Event Ticket Marketing',
-    'AI Marketing Solutions',
   ],
 
   serviceArea: [

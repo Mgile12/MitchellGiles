@@ -5,11 +5,11 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 const connections = [
   {
     icon: Megaphone,
-    title: 'SEO + Google Ads',
+    title: 'SEO + Meta Ads',
     description:
-      'Use SEO data to inform your ad targeting. Run ads for immediate visibility while organic rankings build. Reduce ad spend as organic traffic grows.',
-    href: '/google-ads-gold-coast',
-    linkLabel: 'Google Ads Gold Coast',
+      'Run Meta Ads for immediate enquiries while organic rankings build, and use what search data tells you about your customers to sharpen the targeting. Ease ad spend back as organic traffic grows.',
+    href: '/meta-ads-agency',
+    linkLabel: 'Meta Ads Agency',
   },
   {
     icon: Mail,
@@ -21,11 +21,11 @@ const connections = [
   },
   {
     icon: BarChart3,
-    title: 'SEO + Digital Strategy',
+    title: 'SEO + Google Business Profile',
     description:
-      'SEO is one channel in a broader system. When integrated with paid ads, email, and automation, each channel amplifies the others.',
-    href: '/digital-marketing-gold-coast',
-    linkLabel: 'Digital Marketing Gold Coast',
+      'Your Maps listing and your organic rankings feed each other. Service and suburb pages give the profile something to rank for, and the profile sends the calls.',
+    href: '/google-business-profile-gold-coast',
+    linkLabel: 'Google Business Profile Gold Coast',
   },
 ];
 

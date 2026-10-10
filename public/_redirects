@@ -8,3 +8,9 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 # Lowercase variant of the capitalised proof page
 /best-marketing-agency-in-gold-coast /Best-Marketing-Agency-in-Gold-Coast/ 301
 /best-marketing-agency-in-gold-coast/ /Best-Marketing-Agency-in-Gold-Coast/ 301
+
+# Service pages dropped Sept 2026 (offering curated to six)
+/google-ads-gold-coast/* /meta-ads-agency/ 301
+/lead-generation-gold-coast/* /google-business-profile-gold-coast/ 301
+/digital-marketing-gold-coast/* /services/ 301
+/marketing-automation-gold-coast/* /services/ 301

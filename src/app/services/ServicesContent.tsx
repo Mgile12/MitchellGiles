@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, Search, Megaphone, Mail, Target, BarChart3, Cog, ArrowRight, Layers } from 'lucide-react';
+import { ChevronRight, MapPin, Search, Megaphone, Mail, Sparkles, Ticket, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
@@ -9,53 +9,46 @@ import ServicesOverview from '@/components/ServicesOverview';
 
 const services = [
   {
-    icon: Search,
-    title: 'SEO Gold Coast',
+    icon: MapPin,
+    title: 'Google Business Profile',
     description:
-      'Technical audits, on-page optimisation, local SEO, content strategy and link building that earns sustainable organic visibility. Build an asset that keeps paying off over time.',
+      'Top 3 on Google Maps for the searches that happen within a few kilometres of you. The cheapest customers a local business will ever get.',
+    href: '/google-business-profile-gold-coast',
+  },
+  {
+    icon: Search,
+    title: 'Local SEO',
+    description:
+      'A page for every service and every suburb you serve, so you rank for what people in your area actually type, not what a keyword tool says.',
     href: '/seo-gold-coast',
   },
   {
     icon: Megaphone,
-    title: 'Google Ads Gold Coast',
+    title: 'Meta Ads',
     description:
-      'Search campaigns, remarketing, performance tracking and budget optimisation. Precision paid search that turns ad spend into qualified leads.',
-    href: '/google-ads-gold-coast',
-  },
-  {
-    icon: Layers,
-    title: 'Meta Ads Agency',
-    description:
-      'Signal-driven Facebook and Instagram advertising built on Andromeda, GEM and Lattice. Creative strategy, conversion tracking and methodical scaling for predictable revenue growth.',
+      'Facebook and Instagram campaigns built around an offer, not a boost button. Tracked to the enquiry, scaled when the numbers say so.',
     href: '/meta-ads-agency',
   },
   {
     icon: Mail,
-    title: 'Email Marketing Gold Coast',
+    title: 'Email Marketing',
     description:
-      'Strategy, automation, campaign management and reporting that turns your database into predictable monthly revenue. Nurture leads and drive repeat business.',
+      'Turn the list you already own into revenue. Campaigns, automations and reporting. One client does 63% of monthly sales this way.',
     href: '/email-marketing-gold-coast',
   },
   {
-    icon: Target,
-    title: 'Lead Generation Gold Coast',
+    icon: Sparkles,
+    title: 'AI Automations',
     description:
-      'Paid advertising, SEO, email nurturing and conversion tracking built into one system that generates qualified leads on repeat.',
-    href: '/lead-generation-gold-coast',
+      'Follow-up, review requests and booking reminders that run whether or not you are on the tools, so every lead gets a reply and nothing slips.',
+    href: '/book',
   },
   {
-    icon: BarChart3,
-    title: 'Digital Marketing Gold Coast',
+    icon: Ticket,
+    title: 'Event Tickets',
     description:
-      'Integrated strategy where SEO, ads, email and automation work together. Stop running channels in isolation and start building a connected system.',
-    href: '/digital-marketing-gold-coast',
-  },
-  {
-    icon: Cog,
-    title: 'Marketing Automation Gold Coast',
-    description:
-      'CRM integration, lead scoring, nurture sequences and conversion tracking. Build systems that scale without adding headcount.',
-    href: '/marketing-automation-gold-coast',
+      'Fill the room and lift the spend per head. Launch sequences, reminders and upsells. One upsell did $82K in three hours, twice.',
+    href: '/book',
   },
 ];
 

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'google business profile gold coast',
     'digital marketing gold coast',
     'Meta Ads gold coast',
-    'Google Ads gold coast',
+    'meta ads gold coast',
     'SEO gold coast',
     ...BUSINESS_INFO.services.map((s) => s.toLowerCase()),
   ],

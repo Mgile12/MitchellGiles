@@ -13,28 +13,28 @@ const integrations = [
   {
     icon: Target,
     title: 'Paid Ad Retargeting',
-    href: '/google-ads-gold-coast',
+    href: '/meta-ads-agency',
     description:
-      'Use email engagement data to build custom audiences for Meta and Google Ads. Reduce cost per acquisition by re-engaging warm prospects.',
+      'Use email engagement data to build custom audiences for Meta Ads. Reduce cost per acquisition by re-engaging warm prospects.',
   },
   {
     icon: Database,
     title: 'CRM Automation',
-    href: '/marketing-automation-gold-coast',
+    href: '/book',
     description:
       'Connect email directly to your CRM so sales teams get warm leads with full context. No manual handoffs, no dropped follow-ups.',
   },
   {
     icon: Filter,
     title: 'Lead Qualification',
-    href: '/lead-generation-gold-coast',
+    href: '/google-business-profile-gold-coast',
     description:
-      'Score and segment leads based on email behaviour. Prioritise follow-up with prospects who are actively engaged and ready to buy.',
+      'Score and segment leads based on email behaviour, and send the customers who found you on Maps a review request while the job is fresh.',
   },
 ];
 
 const examples = [
-  'A Google Ad drives traffic to a landing page. The visitor opts in. A welcome sequence warms them. A retargeting ad closes the sale.',
+  'A Meta ad drives traffic to a landing page. The visitor opts in. A welcome sequence warms them. A retargeting ad closes the sale.',
   'An SEO blog post ranks locally. The reader downloads a guide. Email automation nurtures them for 30 days. They book a call.',
   'A past customer receives a re-engagement sequence. They click through. A personalised offer brings them back for a repeat purchase.',
 ];

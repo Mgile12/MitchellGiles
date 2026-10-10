@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: `${BUSINESS_INFO.url}${PATH}/`,
     locale: 'en_AU',
-    images: [{ url: IMAGE, width: 1200, height: 1200, alt: TITLE }],
+    images: [{ url: IMAGE, width: 1200, height: 1200, alt: 'best marketing agency in gold coast' }],
   },
   twitter: {
     card: 'summary_large_image',
