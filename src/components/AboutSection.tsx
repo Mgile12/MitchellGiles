@@ -87,8 +87,23 @@ export default function AboutSection() {
             </div>
           </AnimateOnScroll>
 
-          <AnimateOnScroll className="lg:col-span-5">
-            <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8 lg:sticky lg:top-28">
+          <AnimateOnScroll className="lg:col-span-5 lg:sticky lg:top-28 space-y-5">
+            <figure className="relative rounded-2xl overflow-hidden border border-ink/10 shadow-[0_24px_64px_rgba(0,0,0,0.16)] bg-white/60">
+              <img
+                src="/mitchell-giles-internet-marketing-service-ormeau.jpg"
+                alt="Mitchell Giles, internet marketing service Ormeau"
+                title="Mitchell Giles, internet marketing service Ormeau"
+                width={1200}
+                height={960}
+                loading="lazy"
+                decoding="async"
+                className="w-full aspect-[5/4] object-cover block"
+              />
+              <figcaption className="absolute bottom-0 inset-x-0 px-5 py-3 bg-gradient-to-t from-black/70 to-transparent text-white text-sm font-sans">
+                Mitchell Giles, Ormeau
+              </figcaption>
+            </figure>
+            <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">
                 Three numbers, all from client accounts
               </p>
