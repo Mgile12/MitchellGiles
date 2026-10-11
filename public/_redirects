@@ -90,9 +90,6 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 /areas/worongary/* /areas/ 301
 /areas/yatala/* /areas/ 301
 
-# Lowercase variant of the capitalised proof page
-/best-marketing-agency-in-gold-coast /Best-Marketing-Agency-in-Gold-Coast/ 301
-/best-marketing-agency-in-gold-coast/ /Best-Marketing-Agency-in-Gold-Coast/ 301
 
 # Service pages dropped Sept 2026 (offering curated to six)
 /google-ads-gold-coast/* /meta-ads-agency/ 301
@@ -105,7 +102,6 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 /email-marketing-gold-coast/* /google-business-profile-gold-coast/ 301
 /case-studies/email-marketing-60k-in-30-days/ /case-studies/ 301
 
-# Oct 2026: the SEO page became the local SEO expert proof page
+# Oct 2026: the SEO page became the local SEO expert proof page. No lowercase->capitalised rules here:
+# Netlify matches paths case-insensitively, so such a rule redirects the canonical URL to lowercase.
 /seo-gold-coast/* /Best-local-seo-expert-in-Gold-Coast/ 301
-/best-local-seo-expert-in-gold-coast /Best-local-seo-expert-in-Gold-Coast/ 301
-/best-local-seo-expert-in-gold-coast/ /Best-local-seo-expert-in-Gold-Coast/ 301
