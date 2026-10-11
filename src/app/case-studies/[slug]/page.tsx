@@ -6,6 +6,7 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import { caseStudies } from '../data';
+import BarChart from '@/components/BarChart';
 
 const HUB = '/case-studies';
 
@@ -21,8 +22,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title,
     description: c.summary,
-    openGraph: { title: `${title} | MRG Marketing`, description: c.summary, type: 'article', url, locale: 'en_AU', images: [{ url: c.images[c.images.length - 1].src, alt: c.images[c.images.length - 1].alt }] },
-    twitter: { card: 'summary_large_image', title: `${title} | MRG Marketing`, description: c.summary, images: [c.images[c.images.length - 1].src] },
+    openGraph: { title: `${title} | MRG Marketing`, description: c.summary, type: 'article', url, locale: 'en_AU', images: c.images.length ? [{ url: c.images[c.images.length - 1].src, alt: c.images[c.images.length - 1].alt }] : [{ url: '/og-image.png', width: 1200, height: 630 }] },
+    twitter: { card: 'summary_large_image', title: `${title} | MRG Marketing`, description: c.summary, images: c.images.length ? [c.images[c.images.length - 1].src] : ['/og-image.png'] },
     alternates: { canonical: url },
   };
 }
@@ -131,6 +132,16 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                 </figure>
               ))}
             </AnimateOnScroll>
+
+            {c.charts && c.charts.length > 0 && (
+              <AnimateOnScroll variant="group" className={`mt-6 grid gap-4 ${c.charts.length > 1 ? 'lg:grid-cols-2' : ''}`}>
+                {c.charts.map((chart, i) => (
+                  <div key={chart.title} className={`rv-up ${i ? 'rv-delay-1' : ''}`}>
+                    <BarChart spec={chart} />
+                  </div>
+                ))}
+              </AnimateOnScroll>
+            )}
 
             <div className="mt-12">
               <Block title="The problem">

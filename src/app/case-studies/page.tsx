@@ -88,7 +88,7 @@ export default function CaseStudiesPage() {
 
         <section className="relative" aria-label="Case study list">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
-            <AnimateOnScroll variant="group" className="grid gap-5 sm:grid-cols-2 max-w-4xl mx-auto">
+            <AnimateOnScroll variant="group" className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {caseStudies.map((c, i) => (
                 <Link
                   key={c.slug}
@@ -96,7 +96,11 @@ export default function CaseStudiesPage() {
                   className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} group flex flex-col rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden hover:border-gold/40 transition-colors duration-200`}
                 >
                   <div className="aspect-[16/10] overflow-hidden border-b border-ink/[0.06] bg-navy-900">
-                    <img src={c.images[c.images.length - 1].src} alt={c.images[c.images.length - 1].alt} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    {c.images.length ? (
+                      <img src={c.images[c.images.length - 1].src} alt={c.images[c.images.length - 1].alt} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-5xl font-bold text-ink font-serif tabular-nums">{c.figure}</div>
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold font-sans">{c.service}</p>

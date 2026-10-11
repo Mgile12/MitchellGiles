@@ -20,6 +20,16 @@ const headline = [
 const proof = [
   {
     icon: Map,
+    title: 'Four plumbers, white-label',
+    body:
+      'Work I do for another agency, so the businesses are not named. Two plumbers went from 79 calls from Google in the three months before the work to 208 in the latest three, one of them 2.7x and the other 2.5x. A Perth plumber went from number 1 at 5 of 49 grid points to all 49 in five weeks. Each one is written up with dates, scans and caveats in the case studies.',
+    images: [
+      { src: '/proof/plumber-gold-coast-after.jpg', alt: 'Google Maps ranking grid for a Gold Coast plumber, top 3 at 46 of 49 points, 1 October 2026' },
+      { src: '/proof/plumber-perth-after.jpg', alt: 'Google Maps ranking grid for a Perth plumber, number 1 at all 49 points, 28 August 2026' },
+    ],
+  },
+  {
+    icon: Map,
     title: 'Page two to the top 3, with the scans to show it',
     body:
       'Local SEO is measured on a map, not a keyword tool. Polish Hub Marine Detailing went from outside the top 10 across most of a ranking grid to the top 3 on most points in two days. Ceramics Gold Coast did the same in eleven, from an average rank of 20 across the grid to 3.02. Both are written up with dates, search terms and the limits of the scan in the case studies.',

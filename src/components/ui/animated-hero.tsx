@@ -23,6 +23,8 @@ const STATS = [
   'Top 3 on Google Maps in 11 days',
   '33 calls from a brand-new profile in three months',
   'Website clicks up 197% year on year',
+  '208 calls from Google in three months for two plumbers',
+  'Number 1 on Maps at 49 of 49 grid points',
 ];
 
 const PARTNERS = [{ src: '/new-Google-Partner-logo-png-large-size.png', alt: 'Google Partner' }];
