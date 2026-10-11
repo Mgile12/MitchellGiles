@@ -58,7 +58,7 @@ const servicesHere = [
   {
     title: 'Local SEO',
     blurb: 'A page for every service and every suburb you serve, so Google has something to rank.',
-    href: '/Best-local-seo-expert-in-Gold-Coast',
+    href: '/best-local-seo-expert-in-gold-coast',
     icon: Search,
   },
   {
@@ -214,7 +214,7 @@ export default function OrmeauContent() {
                 title: 'A site that names your services and your suburbs',
                 text:
                   'Google needs something to rank. A page for each thing you do and each area you serve, written properly, with your name, address and phone on every one of them. This page is that, for me. Your version is what I build for you.',
-                href: '/Best-local-seo-expert-in-Gold-Coast',
+                href: '/best-local-seo-expert-in-gold-coast',
                 cta: 'Local SEO',
               },
               {

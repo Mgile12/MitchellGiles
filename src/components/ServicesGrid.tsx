@@ -14,7 +14,7 @@ const services = [
   {
     title: 'Local SEO',
     blurb: 'A page for every service and every suburb you serve, so you rank for what people in your area actually type and the profile has something to stand on.',
-    href: '/Best-local-seo-expert-in-Gold-Coast',
+    href: '/best-local-seo-expert-in-gold-coast',
     icon: Search,
   },
   {

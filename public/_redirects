@@ -104,4 +104,4 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 
 # Oct 2026: the SEO page became the local SEO expert proof page. No lowercase->capitalised rules here:
 # Netlify matches paths case-insensitively, so such a rule redirects the canonical URL to lowercase.
-/seo-gold-coast/* /Best-local-seo-expert-in-Gold-Coast/ 301
+/seo-gold-coast/* /best-local-seo-expert-in-gold-coast/ 301

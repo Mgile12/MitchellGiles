@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import BestAgencyContent from './BestAgencyContent';
 
-const PATH = '/Best-Marketing-Agency-in-Gold-Coast';
+const PATH = '/best-marketing-agency-in-gold-coast';
 const TITLE = 'Best Marketing Agency in Gold Coast';
 const DESCRIPTION = "MRG Marketing has been called the best marketing agency in Gold Coast. Here's the proof.";
 const IMAGE = '/best-marketing-agency-in-gold-coast.jpg';

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import BestSeoContent from './BestSeoContent';
 
-const PATH = '/Best-local-seo-expert-in-Gold-Coast';
+const PATH = '/best-local-seo-expert-in-gold-coast';
 const TITLE = 'Best Local SEO Expert in Gold Coast';
 const DESCRIPTION = "MRG Marketing has been called the best local seo expert in Gold Coast. Here's the proof.";
 const IMAGE = '/best-local-seo-expert-in-gold-coast.jpg';
