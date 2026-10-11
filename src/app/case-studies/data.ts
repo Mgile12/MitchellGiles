@@ -110,43 +110,4 @@ export const caseStudies: CaseStudy[] = [
       { src: '/proof/heatmap-ceramics-after.jpg', alt: 'Google Maps ranking heatmap for Ceramics Gold Coast eleven days later, mostly green', caption: 'After: top 3 across most of the grid, eleven days later.' },
     ],
   },
-  {
-    slug: 'email-marketing-60k-in-30-days',
-    client: 'Online retailer (not named publicly)',
-    industry: 'E-commerce',
-    location: 'Australia',
-    service: 'Email Marketing',
-    serviceHref: '/email-marketing-gold-coast',
-    headline: '$60,632 from email in 30 days, from a list the store already owned',
-    figure: '$60,632',
-    figureLabel: 'attributed to email in 30 days, 63.4% of the store’s revenue',
-    summary:
-      'A store with thousands of past customers on a list it rarely emailed. In one 30-day window, campaigns and automations to that list attributed $60,632, which was 63.4% of everything the store sold that month.',
-    problem:
-      'The store had paid once, through ads, to acquire every customer on its list, then left the list alone. Email was a small share of revenue and most of the list had not heard from the brand in months.',
-    work: [
-      'Cleaned and segmented the list by purchase history and engagement.',
-      'Built the core automations: welcome, browse and cart recovery, post-purchase and win-back.',
-      'Ran a calendar of campaigns to the engaged segments with one clear offer each, not a weekly newsletter.',
-      'Tracked attributed revenue in the email platform against total store revenue for the same 30 days.',
-    ],
-    period: 'The 30-day window shown in the screenshot, compared with the previous 30 days.',
-    measurement: [
-      { label: 'Attributed revenue', value: '$60,632 in 30 days, up $46,065 on the previous 30 days' },
-      { label: 'Store revenue', value: '$95,593 in the same 30 days, up $30,825' },
-      { label: 'Share of revenue from email', value: '63.4%' },
-      { label: 'Source', value: 'The email platform’s revenue report, screenshot untouched' },
-    ],
-    attribution:
-      'Attributed revenue is the email platform’s own last-click attribution: orders placed after a click on an email, within its attribution window. Store revenue is every order in the period. The email figure is a share of the store figure, not on top of it.',
-    corroboration: 'The screenshot is from the client’s email platform. The client is not named at their request.',
-    limitations: [
-      'Platform attribution gives email credit for orders that may have happened anyway. Treat 63.4% as the platform’s view, not a controlled test.',
-      'The store’s total revenue also rose that month, so part of the lift is a busier month, not only email.',
-      'A list this size and a product people reorder are the conditions that make this possible. A new store with no list cannot expect the same in 30 days.',
-    ],
-    images: [
-      { src: '/results/email-60k-in-30-days.webp', alt: 'Email platform revenue report: $60,632 attributed to email in 30 days, 63.4% of store revenue', caption: 'Attributed revenue A$60,632 against store revenue A$95,593 for the same 30 days.' },
-    ],
-  },
 ];

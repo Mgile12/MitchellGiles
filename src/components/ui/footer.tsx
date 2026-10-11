@@ -41,7 +41,7 @@ export function Footer({
   bottomTagline,
 }: FooterProps) {
   return (
-    <footer className="bg-navy-950 text-slate-50 border-t border-white/[0.06]">
+    <footer className="bg-navy-950 text-ink border-t border-ink/[0.06]">
       <div className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 pt-14 pb-8 sm:pt-16 sm:pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           <div className="space-y-4">
@@ -53,7 +53,7 @@ export function Footer({
               {logo}
               <span className="sr-only">{brandName}</span>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-xs font-sans">
+            <p className="text-sm text-ink/65 leading-relaxed max-w-xs font-sans">
               {tagline}
             </p>
           </div>
@@ -65,7 +65,7 @@ export function Footer({
                   <li key={i}>
                     <Link
                       href={link.href}
-                      className="text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
+                      className="text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200 font-sans inline-block py-1"
                     >
                       {link.label}
                     </Link>
@@ -77,17 +77,17 @@ export function Footer({
             <div className="space-y-1.5">
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
+                className="block text-sm text-ink/65 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
               >
                 {contactInfo.email}
               </a>
               <a
                 href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
-                className="block text-sm text-slate-400 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
+                className="block text-sm text-ink/65 hover:text-gold transition-colors duration-200 py-0.5 font-sans"
               >
                 {contactInfo.phone}
               </a>
-              <p className="text-sm text-slate-400 py-0.5 font-sans">
+              <p className="text-sm text-ink/65 py-0.5 font-sans">
                 {contactInfo.location}
               </p>
             </div>
@@ -101,7 +101,7 @@ export function Footer({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="inline-flex items-center justify-center w-11 h-11 -m-3 text-slate-400 hover:text-gold transition-colors duration-200"
+                    className="inline-flex items-center justify-center w-11 h-11 -m-3 text-ink/65 hover:text-gold transition-colors duration-200"
                   >
                     {social.icon}
                   </a>
@@ -112,7 +112,7 @@ export function Footer({
         </div>
 
         {areaLinks && areaLinks.length > 0 && (
-          <div className="mt-10 pt-6 border-t border-white/[0.06]">
+          <div className="mt-10 pt-6 border-t border-ink/[0.06]">
             <p className="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
               Areas We Serve
             </p>
@@ -124,7 +124,7 @@ export function Footer({
                   className={`text-sm transition-colors duration-200 font-sans ${
                     area.label === 'View All Areas'
                       ? 'font-semibold text-gold hover:text-gold-light'
-                      : 'text-slate-400 hover:text-gold'
+                      : 'text-ink/65 hover:text-gold'
                   }`}
                 >
                   {area.label}
@@ -134,9 +134,9 @@ export function Footer({
           </div>
         )}
 
-        <div className="mt-10 pt-6 border-t border-white/[0.06]">
+        <div className="mt-10 pt-6 border-t border-ink/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="text-xs text-slate-400 leading-relaxed font-sans">
+            <div className="text-xs text-ink/65 leading-relaxed font-sans">
               <span>{copyright.text}</span>
               {copyright.license && (
                 <>
@@ -147,7 +147,7 @@ export function Footer({
             </div>
 
             {bottomTagline && (
-              <p className="text-xs text-slate-400 italic font-sans">
+              <p className="text-xs text-ink/65 italic font-sans">
                 {bottomTagline}
               </p>
             )}

@@ -35,7 +35,7 @@ const steps = [
     number: '05',
     title: 'Offer and channel',
     description:
-      "We sharpen the offer and pick the channel that fits it. You might be certain it's Google Ads. Often it isn't.",
+      "We sharpen the offer and pick the channel that fits it. You might be certain it's your website. Often it's the profile.",
     icon: Crosshair,
   },
   {
@@ -57,18 +57,18 @@ const steps = [
 export default function ServicesOverview() {
   return (
     <section id="services" className="bg-navy-900 relative overflow-hidden" aria-labelledby="process-heading">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(12,134,234,0.05),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.5),transparent_60%)]" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-14 sm:mb-20">
           <Eyebrow className="mb-4">The process</Eyebrow>
           <h3
             id="process-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif"
           >
             How working with me goes
           </h3>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-ink/65 font-sans">
             No packages, no tiers. Seven steps, in the order they actually happen.
           </p>
         </AnimateOnScroll>
@@ -88,7 +88,7 @@ export default function ServicesOverview() {
                       </div>
                     </div>
 
-                    <div className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] transition-colors duration-200">
+                    <div className="relative rounded-2xl border border-ink/[0.06] bg-white/55 p-6 sm:p-8 hover:border-gold/20 hover:bg-white/85 transition-colors duration-200">
                       <div className="flex items-start gap-5">
                         <div className="md:hidden shrink-0 w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center">
                           <span className="text-gold font-bold text-sm font-serif">{step.number}</span>
@@ -99,9 +99,9 @@ export default function ServicesOverview() {
                             <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                               <Icon className="w-4 h-4 text-gold" />
                             </div>
-                            <h4 className="text-lg sm:text-xl font-bold text-white font-serif">{step.title}</h4>
+                            <h4 className="text-lg sm:text-xl font-bold text-ink font-serif">{step.title}</h4>
                           </div>
-                          <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
+                          <p className="text-sm sm:text-base text-ink/65 leading-relaxed font-sans">
                             {step.description}
                           </p>
                         </div>

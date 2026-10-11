@@ -1,4 +1,4 @@
-import { MapPin, Search, Megaphone, Mail, Sparkles, Ticket, ArrowUpRight } from 'lucide-react';
+import { MapPin, Search, Sparkles, ArrowUpRight } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 import Eyebrow from './Eyebrow';
 import RevealText from './RevealText';
@@ -6,40 +6,22 @@ import SpotlightLink from './SpotlightLink';
 
 const services = [
   {
-    title: 'Google Business Profile',
-    blurb: 'Top 3 on Google Maps. The cheapest customers a local business will ever get.',
+    title: 'Google Business Profile Optimisation',
+    blurb: 'Top 3 on Google Maps for the searches that happen within a few kilometres of you. The cheapest customers a local business will ever get.',
     href: '/google-business-profile-gold-coast',
     icon: MapPin,
   },
   {
     title: 'Local SEO',
-    blurb: 'Rank for what people in your suburb actually type, not what a keyword tool says.',
+    blurb: 'A page for every service and every suburb you serve, so you rank for what people in your area actually type and the profile has something to stand on.',
     href: '/seo-gold-coast',
     icon: Search,
   },
   {
-    title: 'Meta Ads',
-    blurb: 'Facebook and Instagram campaigns built around an offer, not a boost button.',
-    href: '/meta-ads-agency',
-    icon: Megaphone,
-  },
-  {
-    title: 'Email Marketing',
-    blurb: 'Turn the list you already own into revenue. One client does 63% of monthly sales from it.',
-    href: '/email-marketing-gold-coast',
-    icon: Mail,
-  },
-  {
-    title: 'AI Automations',
-    blurb: 'Put the repetitive work on autopilot, so every lead gets followed up and nothing slips.',
+    title: 'AI Search (GEO)',
+    blurb: 'Getting your business named when someone asks ChatGPT, Gemini or Google AI who to call. The same local signals, tuned for how the models choose.',
     href: '/book',
     icon: Sparkles,
-  },
-  {
-    title: 'Event Tickets',
-    blurb: 'Fill the room and lift the spend per head. One upsell did $82K in three hours, twice.',
-    href: '/book',
-    icon: Ticket,
   },
 ];
 
@@ -51,15 +33,15 @@ export default function ServicesGrid() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-12 sm:mb-16">
-          <Eyebrow className="mb-4">What I help with</Eyebrow>
+          <Eyebrow className="mb-4">What I do</Eyebrow>
           <h2
             id="services-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif"
           >
-            <RevealText text="Pick the problem. I'll pick the channel." />
+            <RevealText text="Three things. Done properly." />
           </h2>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
-            Six things I do for Gold Coast businesses. Not sure which one you need? That&apos;s what the call is for.
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-ink/65 font-sans">
+            Local SEO, Google Business Profile optimisation and AI search for Gold Coast and Brisbane businesses. No ads, no email, no packages. If you need something else, I&apos;ll tell you who to call.
           </p>
         </AnimateOnScroll>
 
@@ -70,16 +52,16 @@ export default function ServicesGrid() {
               <AnimateOnScroll key={s.href} stagger={Math.min(index + 1, 7)}>
                 <SpotlightLink
                   href={s.href}
-                  className="proof-card spotlight group flex h-full flex-col rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 hover:bg-white/[0.04]"
+                  className="proof-card spotlight group flex h-full flex-col rounded-2xl border border-ink/[0.06] bg-white/55 p-6 hover:bg-white/85"
                 >
                   <div className="flex items-center justify-between mb-5">
                     <div className="card-icon w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center">
                       <Icon className="w-5 h-5 text-gold" />
                     </div>
-                    <ArrowUpRight className="card-arrow w-4 h-4 text-slate-600 group-hover:text-gold" />
+                    <ArrowUpRight className="card-arrow w-4 h-4 text-ink/50 group-hover:text-gold" />
                   </div>
-                  <h3 className="text-lg font-bold text-white font-serif mb-2">{s.title}</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed font-sans">{s.blurb}</p>
+                  <h3 className="text-lg font-bold text-ink font-serif mb-2">{s.title}</h3>
+                  <p className="text-sm text-ink/65 leading-relaxed font-sans">{s.blurb}</p>
                 </SpotlightLink>
               </AnimateOnScroll>
             );

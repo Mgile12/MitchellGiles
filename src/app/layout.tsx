@@ -22,19 +22,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
   title: {
-    default: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
+    default: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
     template: '%s | MRG Marketing',
   },
-  description: `Mitchell Giles is a marketing consultant in Ormeau on the northern Gold Coast. Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets for Gold Coast and Brisbane businesses, with results you can check. Call ${BUSINESS_INFO.phone}.`,
+  description: `MRG Marketing is an internet marketing service in Ormeau on the northern Gold Coast. Local SEO, Google Business Profile optimisation and AI search (GEO) that put local businesses in the top 3 on Google Maps and in front of AI answers, with results you can check. Call ${BUSINESS_INFO.phone}.`,
   keywords: [
-    'marketing consultant ormeau',
-    'marketing consultant gold coast',
-    'marketing agency gold coast',
-    'google business profile gold coast',
-    'digital marketing gold coast',
-    'Meta Ads gold coast',
-    'meta ads gold coast',
-    'SEO gold coast',
+    'internet marketing service ormeau',
+    'internet marketing service gold coast',
+    'local seo ormeau',
+    'local seo gold coast',
+    'google business profile optimisation gold coast',
+    'google my business optimisation gold coast',
+    'google maps ranking gold coast',
+    'ai search optimisation gold coast',
+    'generative engine optimisation gold coast',
     ...BUSINESS_INFO.services.map((s) => s.toLowerCase()),
   ],
   authors: [{ name: BUSINESS_INFO.founder }],
@@ -45,20 +46,20 @@ export const metadata: Metadata = {
     'max-snippet': -1,
   },
   openGraph: {
-    title: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
+    title: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
     description:
-      'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
+      'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses, with results you can check.',
     type: 'website',
     url: BUSINESS_INFO.url,
     siteName: BUSINESS_INFO.name,
     locale: 'en_AU',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'MRG Marketing, marketing consultant, Ormeau, Gold Coast' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'MRG Marketing, internet marketing service, Ormeau, Gold Coast' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marketing Consultant Ormeau - Local SEO Services, Google My Business Optimisation & Email Marketing',
+    title: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
     description:
-      'Google Business Profile, ads, email and strategy for Gold Coast businesses, with results you can check.',
+      'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses, with results you can check.',
     images: ['/og-image.png'],
   },
   alternates: {
@@ -96,7 +97,7 @@ function buildJsonLd() {
     founder: {
       '@type': 'Person',
       name: BUSINESS_INFO.founder,
-      jobTitle: 'Marketing consultant',
+      jobTitle: 'Founder',
       sameAs: [BUSINESS_INFO.social.linkedin],
     },
     address: {

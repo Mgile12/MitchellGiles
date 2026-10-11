@@ -25,7 +25,7 @@ const alternatives = [
 ];
 
 const mine = [
-  'One consultant who does the work, not an account manager in between',
+  'One person who does the work, not an account manager in between',
   'Answered the same day, with an update every Friday',
   'No lock-in, no packages, budget goes where the results are',
   'I stay until the numbers move',
@@ -42,13 +42,13 @@ export default function WhyMe() {
           <Eyebrow className="mb-4">Why me</Eyebrow>
           <h2
             id="whyme-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif"
           >
-            <RevealText text="Three ways to fix your marketing." />
+            <RevealText text="Three ways to get found on Google Maps." />
           </h2>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 font-sans">
-            Two of them cost you more than they make. You didn&apos;t start your business to run ads, but the phone
-            won&apos;t ring on its own, and every month you wait is business walking to whoever did the work.
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-ink/65 font-sans">
+            Two of them cost you more than they make. You didn&apos;t start your business to fight Google, but the phone
+            won&apos;t ring on its own, and every month you sit on page two is business walking to whoever is in the top 3.
           </p>
         </AnimateOnScroll>
 
@@ -58,31 +58,31 @@ export default function WhyMe() {
             return (
               <div
                 key={a.title}
-                className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} flex h-full flex-col rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6`}
+                className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} flex h-full flex-col rounded-2xl border border-ink/[0.06] bg-white/55 p-6`}
               >
-                <div className="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center mb-5">
-                  <Icon className="w-5 h-5 text-slate-500" />
+                <div className="w-10 h-10 rounded-lg bg-white/55 border border-ink/10 flex items-center justify-center mb-5">
+                  <Icon className="w-5 h-5 text-ink/55" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-300 font-serif mb-2">{a.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed font-sans">{a.text}</p>
+                <h3 className="text-lg font-bold text-ink/80 font-serif mb-2">{a.title}</h3>
+                <p className="text-sm text-ink/55 leading-relaxed font-sans">{a.text}</p>
               </div>
             );
           })}
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="group">
-          <div className="accent-line rv-up relative overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-b from-gold/[0.08] to-white/[0.02] p-6 sm:p-8">
+          <div className="accent-line rv-up relative overflow-hidden rounded-2xl border border-gold/30 bg-gradient-to-b from-gold/[0.08] to-white/40 p-6 sm:p-8">
             <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8 lg:gap-12 items-center">
               <div>
                 <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-4 font-sans">Or</p>
-                <p className="text-xl sm:text-2xl font-bold text-white font-serif leading-snug mb-6">
+                <p className="text-xl sm:text-2xl font-bold text-ink font-serif leading-snug mb-6">
                   You get one person who does the work, picks up the same day, and stays until the numbers move.
                 </p>
                 <ul className="space-y-2.5">
                   {mine.map((point) => (
                     <li key={point} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-gold mt-1 shrink-0" />
-                      <span className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">{point}</span>
+                      <span className="text-sm sm:text-base text-ink/80 leading-relaxed font-sans">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -95,7 +95,7 @@ export default function WhyMe() {
                 >
                   Book a 30-minute call
                 </Link>
-                <p className="mt-4 text-sm text-slate-400 font-sans lg:max-w-[16rem] lg:ml-auto">
+                <p className="mt-4 text-sm text-ink/65 font-sans lg:max-w-[16rem] lg:ml-auto">
                   Tell me what&apos;s not working. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.
                 </p>
               </div>

@@ -3,13 +3,13 @@ import { BUSINESS_INFO } from '@/lib/business-info';
 import ServicesContent from './ServicesContent';
 
 export const metadata: Metadata = {
-  title: 'Services Gold Coast | Marketing Services for Local Business Growth',
+  title: 'Services Gold Coast | Local SEO, Google Business Profile & AI Search',
   description:
-    'Marketing services for Gold Coast businesses: Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets. One consultant, based in Ormeau QLD.',
+    'Three services for Gold Coast businesses: local SEO, Google Business Profile optimisation and AI search (GEO). An internet marketing service based in Ormeau QLD.',
   openGraph: {
     title: 'Services Gold Coast | MRG Marketing',
     description:
-      'Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets for Gold Coast businesses.',
+      'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses.',
     type: 'website',
     url: `${BUSINESS_INFO.url}/services/`,
     locale: 'en_AU',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Services Gold Coast | MRG Marketing',
     description:
-      'Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event tickets for Gold Coast businesses.',
+      'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses.',
     images: ['/og-image.png'],
   },
   alternates: {

@@ -1,6 +1,6 @@
 # mrgmarketing.com.au
 
-Marketing site for MRG Marketing: Mitchell Giles, marketing consultant in Ormeau on the Gold Coast.
+Marketing site for MRG Marketing: Mitchell Giles, internet marketing service in Ormeau on the Gold Coast.
 Next.js 14 static export, deployed on Netlify. No server, no database, no forms. Every call to
 action leads to the 30-minute booking call at `/book`.
 

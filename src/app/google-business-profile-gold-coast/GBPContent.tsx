@@ -67,7 +67,7 @@ interface FAQItem {
 function FAQ({ item }: { item: FAQItem }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border-b border-white/[0.06]">
+    <div className="border-b border-ink/[0.06]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left group"
@@ -75,18 +75,18 @@ function FAQ({ item }: { item: FAQItem }) {
       >
         <span
           className={`text-base sm:text-lg font-semibold transition-colors duration-200 font-sans ${
-            open ? 'text-gold' : 'text-white group-hover:text-gold/80'
+            open ? 'text-gold' : 'text-ink group-hover:text-gold/80'
           }`}
         >
           {item.question}
         </span>
         <ChevronDown
-          className={`w-5 h-5 shrink-0 transition-transform duration-200 ${open ? 'rotate-180 text-gold' : 'text-slate-500'}`}
+          className={`w-5 h-5 shrink-0 transition-transform duration-200 ${open ? 'rotate-180 text-gold' : 'text-ink/55'}`}
         />
       </button>
       <div className={`grid transition-all duration-300 ease-out ${open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className="overflow-hidden">
-          <p className="pb-6 pl-4 border-l-2 border-gold/30 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+          <p className="pb-6 pl-4 border-l-2 border-gold/30 text-sm sm:text-base text-ink/80 leading-relaxed font-sans">
             {item.answer}
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
   const [lightbox, setLightbox] = useState<string | null>(null);
 
   return (
-    <div className="bg-navy-950 text-white">
+    <div className="bg-navy-950 text-ink">
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="grid-ground absolute inset-0" aria-hidden="true" />
@@ -114,8 +114,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
             <br />
             <span className="text-gold">Planned for 90 days, often faster.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans">
-            The top three Maps listings take around <strong className="text-white">70% of local clicks</strong>.
+          <p className="text-lg sm:text-xl text-ink/80 max-w-2xl mx-auto leading-relaxed font-sans">
+            The top three Maps listings take around <strong className="text-ink">70% of local clicks</strong>.
             Everyone else splits what&apos;s left. I get Gold Coast businesses into that pack and keep them there.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -128,7 +128,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
             </Link>
             <a
               href="#heatmaps"
-              className="press inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
+              className="press inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold border border-ink/20 text-ink bg-white/55 hover:bg-white/85 hover:border-ink/40"
             >
               See the heatmaps
               <ArrowDown className="w-4 h-4" />
@@ -142,10 +142,10 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
         <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <AnimateOnScroll className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-serif mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ink font-serif mb-3">
               Two clients. Two heatmaps. Before and after.
             </h2>
-            <p className="text-slate-400 font-sans">
+            <p className="text-ink/65 font-sans">
               Live Google Maps ranking heatmaps. The number is how many days it took. Both are written up in full, with
               the work and the limits of the measurement, in the{' '}
               <Link href="/case-studies" className="text-gold hover:text-gold/80 transition-colors duration-150">
@@ -157,9 +157,9 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
 
           <AnimateOnScroll className="grid md:grid-cols-2 gap-8">
             {heatmaps.map((item) => (
-              <div key={item.client} className="rounded-2xl border border-white/[0.08] bg-white/[0.02] overflow-hidden">
-                <div className="px-6 py-4 border-b border-white/[0.06] flex items-center justify-between">
-                  <p className="text-white font-semibold font-sans">{item.client}</p>
+              <div key={item.client} className="rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden">
+                <div className="px-6 py-4 border-b border-ink/[0.06] flex items-center justify-between">
+                  <p className="text-ink font-semibold font-sans">{item.client}</p>
                   <div className="px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider">
                     {item.result}
                   </div>
@@ -169,7 +169,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                     <div key={k}>
                       <div
                         className={`text-xs font-bold uppercase tracking-wider mb-2 text-center ${
-                          k === 'before' ? 'text-red-400' : 'text-gold'
+                          k === 'before' ? 'text-ink/55' : 'text-gold'
                         }`}
                       >
                         {k}
@@ -177,7 +177,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                       <button
                         type="button"
                         onClick={() => setLightbox(item[k])}
-                        className="proof-card block w-full rounded-lg overflow-hidden border border-white/[0.06]"
+                        className="proof-card block w-full rounded-lg overflow-hidden border border-ink/[0.06]"
                         aria-label={`${item.client} ${k}, open full size`}
                       >
                         <img src={item[k]} alt={`${item.client} ${k}`} className="w-full h-auto block" loading="lazy" />
@@ -195,10 +195,10 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       <section className="bg-navy-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <AnimateOnScroll className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white font-serif mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ink font-serif mb-3">
               Nine charts. Straight out of Google.
             </h2>
-            <p className="text-slate-400 font-sans max-w-2xl mx-auto">
+            <p className="text-ink/65 font-sans max-w-2xl mx-auto">
               Calls, website clicks and interactions from Business Profiles I manage, April to August 2026. Untouched
               screenshots. Tap any to enlarge. &ldquo;Calls&rdquo; is Google&apos;s own metric: taps on the profile&apos;s call
               button, not a count of answered phone calls.
@@ -211,7 +211,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
               <button
                 type="button"
                 onClick={() => setLightbox(item.src)}
-                className="proof-card group w-full text-left rounded-2xl border border-white/[0.08] bg-white/[0.02] overflow-hidden"
+                className="proof-card group w-full text-left rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden"
                 aria-label={`${item.stat}. ${item.note}. Open full size.`}
               >
                 <div className="bg-white">
@@ -224,9 +224,9 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                     height={505}
                   />
                 </div>
-                <div className="px-5 py-4 border-t border-white/[0.06]">
-                  <p className="text-white font-semibold font-sans">{item.stat}</p>
-                  <p className="text-slate-400 text-sm font-sans mt-0.5">{item.note}</p>
+                <div className="px-5 py-4 border-t border-ink/[0.06]">
+                  <p className="text-ink font-semibold font-sans">{item.stat}</p>
+                  <p className="text-ink/65 text-sm font-sans mt-0.5">{item.note}</p>
                 </div>
               </button>
               </AnimateOnScroll>
@@ -239,8 +239,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <AnimateOnScroll className="text-center mb-8">
-            <h2 className="text-xl sm:text-2xl font-bold text-white font-serif mb-2">What clients say</h2>
-            <p className="text-slate-400 text-sm font-sans">Screenshots, not testimonials I wrote.</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-ink font-serif mb-2">What clients say</h2>
+            <p className="text-ink/65 text-sm font-sans">Screenshots, not testimonials I wrote.</p>
           </AnimateOnScroll>
           <AnimateOnScroll className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {testimonials.map((src, i) => (
@@ -248,7 +248,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                 key={src}
                 type="button"
                 onClick={() => setLightbox(src)}
-                className="proof-card rounded-2xl overflow-hidden border border-gold/20 shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+                className="proof-card rounded-2xl overflow-hidden border border-gold/20 shadow-[0_4px_24px_rgba(0,0,0,0.14)]"
                 aria-label={`Client message ${i + 1}, open full size`}
               >
                 <img src={src} alt={`Client message ${i + 1}`} className="w-full h-auto block" loading="lazy" />
@@ -263,7 +263,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <AnimateOnScroll className="text-center mb-12">
             <Eyebrow className="mb-4">How it works</Eyebrow>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif">
               Four steps. The last one never ends.
             </h2>
           </AnimateOnScroll>
@@ -272,12 +272,12 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
               const Icon = s.icon;
               return (
                 <AnimateOnScroll key={s.title} stagger={i + 1}>
-                  <div className="h-full rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6">
+                  <div className="h-full rounded-2xl border border-ink/[0.06] bg-white/55 p-6">
                     <div className="w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center mb-5">
                       <Icon className="w-5 h-5 text-gold" />
                     </div>
-                    <h3 className="text-lg font-bold text-white font-serif mb-2">{s.title}</h3>
-                    <p className="text-sm text-slate-400 leading-relaxed font-sans">{s.text}</p>
+                    <h3 className="text-lg font-bold text-ink font-serif mb-2">{s.title}</h3>
+                    <p className="text-sm text-ink/65 leading-relaxed font-sans">{s.text}</p>
                   </div>
                 </AnimateOnScroll>
               );
@@ -289,7 +289,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       {/* FAQ */}
       <section>
         <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif mb-10">Questions I get asked</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-10">Questions I get asked</h2>
           <div>
             {faqItems.map((item) => (
               <FAQ key={item.question} item={item} />
@@ -302,10 +302,10 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       <section className="relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
         <AnimateOnScroll className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-serif mb-5">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-5">
             Find out where you sit on the map
           </h2>
-          <p className="text-lg text-slate-300 font-sans leading-relaxed mb-10">
+          <p className="text-lg text-ink/80 font-sans leading-relaxed mb-10">
             Fifteen minutes. I&apos;ll look at your profile before the call and tell you what I&apos;d do first. If
             your industry and area are already taken, I&apos;ll say so.
           </p>

@@ -9,14 +9,12 @@ const footerAreaLinks = [{ href: '/areas', label: 'View All Areas' }];
 export default function Footer() {
   return (
     <UIFooter
-      logo={<img src="/logos/mrg-wordmark.png" alt="MRG Marketing" width={240} height={63} className="h-7 w-auto object-contain" />}
+      logo={<img src="/logos/mrg-wordmark.png" alt="MRG Marketing" width={240} height={63} className="h-7 w-auto object-contain" style={{ filter: 'brightness(0)' }} />}
       brandName={BUSINESS_INFO.legalName}
-      tagline="Marketing consultant, Ormeau. Working across the Gold Coast and Brisbane."
+      tagline="Internet marketing service, Ormeau. Local SEO, Google Business Profile optimisation and AI search for the Gold Coast and Brisbane."
       mainLinks={[
         { href: '/google-business-profile-gold-coast', label: 'Google Business Profile' },
         { href: '/seo-gold-coast', label: 'Local SEO' },
-        { href: '/meta-ads-agency', label: 'Meta Ads' },
-        { href: '/email-marketing-gold-coast', label: 'Email Marketing' },
         { href: '/case-studies', label: 'Case studies' },
         { href: '/book', label: 'Book a call' },
       ]}

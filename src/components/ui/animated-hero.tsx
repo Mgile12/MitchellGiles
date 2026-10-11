@@ -7,31 +7,25 @@ import Link from 'next/link';
 import HeroProofCard from '@/components/HeroProofCard';
 import { EASE_OUT } from '@/lib/motion';
 
-// Mirrors the six cards in ServicesGrid so the hero and the page say the same thing.
+// Mirrors the two cards in ServicesGrid so the hero and the page say the same thing.
 const services = [
-  'Google Maps',
   'Local SEO',
-  'Meta Ads',
-  'Email Marketing',
-  'AI Automations',
-  'Event Tickets',
+  'Google Business Profile',
+  'AI Search (GEO)',
+  'Top 3 on Google Maps',
 ];
 
 const STATS = [
-  '$60,632 in 30 days from email',
-  '$82,574 from a single event upsell',
   'Top 3 on Google Maps in 2 days',
-  '72% open rate, 10.3% click rate',
-  '$425K in sales, 436% growth',
-  '$100.3K in weekly sales',
   '266 calls in five months from one profile',
+  'Calls up 324% on the same five months last year',
+  'Website clicks up 273% year on year',
+  'Top 3 on Google Maps in 11 days',
+  '33 calls from a brand-new profile in three months',
+  'Website clicks up 197% year on year',
 ];
 
-const PARTNERS = [
-  { src: '/new-Google-Partner-logo-png-large-size.png', alt: 'Google Partner' },
-  { src: '/Met-Business-Partners.png', alt: 'Meta Business Partner' },
-  { src: '/Mailchimp-Partner-logo-mad-cat-marketing.png', alt: 'Mailchimp Partner' },
-];
+const PARTNERS = [{ src: '/new-Google-Partner-logo-png-large-size.png', alt: 'Google Partner' }];
 
 const DISPLAY_MS = 3800;
 
@@ -105,10 +99,10 @@ export function AnimatedHero() {
       {/* Ground: faint grid, two slow-drifting glows */}
       <div className="hero-grid absolute inset-0 z-0" aria-hidden="true" />
       <div ref={blob1} className="hero-blob-wrap absolute z-0 w-[520px] h-[520px] -top-40 -left-32" aria-hidden="true">
-        <div className="hero-blob hero-blob-1 absolute inset-0 bg-[radial-gradient(circle,rgba(12,134,234,0.28),transparent_60%)]" />
+        <div className="hero-blob hero-blob-1 absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.55),transparent_60%)]" />
       </div>
       <div ref={blob2} className="hero-blob-wrap absolute z-0 w-[640px] h-[640px] -bottom-64 right-[-12%]" aria-hidden="true">
-        <div className="hero-blob hero-blob-2 absolute inset-0 bg-[radial-gradient(circle,rgba(61,160,240,0.16),transparent_60%)]" />
+        <div className="hero-blob hero-blob-2 absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.4),transparent_60%)]" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 lg:pb-24">
@@ -122,8 +116,8 @@ export function AnimatedHero() {
               Ormeau · Gold Coast · Brisbane
             </p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold font-serif text-white leading-[1.05]">
-              Marketing Consultant Ormeau
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold font-serif text-ink leading-[1.05]">
+              Internet Marketing Service Ormeau
             </h1>
 
             <div
@@ -153,9 +147,9 @@ export function AnimatedHero() {
               })}
             </div>
 
-            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-slate-300 max-w-xl mx-auto lg:mx-0 mt-5 font-sans">
-              I find where your business is losing customers, fix it, and stay until the numbers move. Google Business
-              Profile first, then ads, email and strategy.
+            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-ink/80 max-w-xl mx-auto lg:mx-0 mt-5 font-sans">
+              I get local businesses into the top 3 on Google Maps, and named when people ask AI who to call. Local
+              SEO, Google Business Profile optimisation and AI search. That is the whole service.
             </p>
 
             <div
@@ -170,7 +164,7 @@ export function AnimatedHero() {
               </Link>
               <a
                 href="#services"
-                className="press inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide border border-white/20 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
+                className="press inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide border border-ink/25 text-ink bg-white/55 hover:bg-white/85 hover:border-ink/50"
               >
                 See what I do <MoveRight className="w-4 h-4" />
               </a>
@@ -180,7 +174,7 @@ export function AnimatedHero() {
               className="hero-in mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-8 gap-y-4"
               style={delay(420)}
             >
-              <span className="text-[11px] font-semibold tracking-[0.18em] uppercase text-slate-400 font-sans">
+              <span className="text-[11px] font-semibold tracking-[0.18em] uppercase text-ink/65 font-sans">
                 Accredited partner
               </span>
               <div className="flex items-center gap-6 sm:gap-8">
@@ -190,7 +184,7 @@ export function AnimatedHero() {
                     src={p.src}
                     alt={p.alt}
                     className="h-8 sm:h-9 w-auto object-contain opacity-70"
-                    style={{ filter: 'brightness(0) invert(1)' }}
+                    style={{ filter: 'brightness(0)' }}
                     loading="eager"
                   />
                 ))}
@@ -205,13 +199,13 @@ export function AnimatedHero() {
       </div>
 
       {/* One slow stats ticker. CSS-driven so it never stutters while the page loads. */}
-      <div className="ticker-in relative z-10 w-full bg-[#0B6FC4] py-4">
+      <div className="ticker-in relative z-10 w-full bg-ink py-4">
         <button
           type="button"
           onClick={() => setPaused((p) => !p)}
           aria-pressed={paused}
           aria-label={paused ? 'Play moving content' : 'Pause moving content'}
-          className="press absolute right-3 top-1/2 -translate-y-1/2 z-20 inline-flex items-center gap-1.5 rounded-full bg-navy-950/70 hover:bg-navy-950/90 text-white text-xs font-semibold px-3 py-2 font-sans"
+          className="press absolute right-3 top-1/2 -translate-y-1/2 z-20 inline-flex items-center gap-1.5 rounded-full bg-white/15 hover:bg-white/25 text-white text-xs font-semibold px-3 py-2 font-sans"
         >
           {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
           <span className="hidden sm:inline">{paused ? 'Play' : 'Pause'}</span>

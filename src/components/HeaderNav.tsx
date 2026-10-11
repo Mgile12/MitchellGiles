@@ -8,10 +8,8 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 const serviceLinks = [
   { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
   { label: 'Local SEO', href: '/seo-gold-coast' },
-  { label: 'Meta Ads', href: '/meta-ads-agency' },
-  { label: 'Email Marketing', href: '/email-marketing-gold-coast' },
-  { label: 'AI Automations', href: '/book' },
-  { label: 'Event Tickets', href: '/book' },
+  { label: 'AI Search (GEO)', href: '/book' },
+  { label: 'Case studies', href: '/case-studies' },
 ];
 
 export default function HeaderNav() {
@@ -68,7 +66,7 @@ export default function HeaderNav() {
     <header
       className={`header-in fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-200 ${
         scrolled
-          ? 'bg-navy-950/85 backdrop-blur-md border-b border-white/[0.06] shadow-lg shadow-black/20'
+          ? 'bg-navy-950/85 backdrop-blur-md border-b border-ink/[0.06] shadow-lg shadow-black/20'
           : 'bg-transparent'
       }`}
     >
@@ -76,7 +74,7 @@ export default function HeaderNav() {
         <div className={`relative flex items-center justify-center md:justify-between ${scrolled ? 'h-16 sm:h-[68px]' : 'h-20 sm:h-[88px]'}`}>
           <Link href="/" className="shrink-0">
             <img
-              src="/logos/mrg-wordmark.png"
+              src="/logos/mrg-wordmark.png" style={{ filter: 'brightness(0)' }}
               alt="MRG Marketing"
               width={240}
               height={63}
@@ -97,7 +95,7 @@ export default function HeaderNav() {
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
                 aria-controls="services-menu"
-                className="inline-flex items-center gap-1 py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+                className="inline-flex items-center gap-1 py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
               >
                 Services
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -110,7 +108,7 @@ export default function HeaderNav() {
               >
                 <div
                   id="services-menu"
-                  className="w-72 rounded-xl border border-white/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden"
+                  className="w-72 rounded-xl border border-ink/[0.08] bg-navy-900/95 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden"
                   onKeyDown={(e) => { if (e.key === 'Escape') setServicesOpen(false); }}
                 >
                   {serviceLinks.map((link) => (
@@ -118,7 +116,7 @@ export default function HeaderNav() {
                       key={link.href}
                       href={link.href}
                       tabIndex={servicesOpen ? 0 : -1}
-                      className="block px-5 py-3.5 text-sm font-medium text-slate-300 hover:text-gold hover:bg-white/[0.04] transition-colors duration-150"
+                      className="block px-5 py-3.5 text-sm font-medium text-ink/80 hover:text-gold hover:bg-white/85 transition-colors duration-150"
                     >
                       {link.label}
                     </Link>
@@ -129,20 +127,20 @@ export default function HeaderNav() {
 
             <Link
               href="/areas"
-              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
             >
               Areas
             </Link>
 
             <button
               onClick={() => scrollToSection('about')}
-              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('location')}
-              className="py-2 text-sm font-medium text-slate-300 hover:text-gold transition-colors duration-200"
+              className="py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
             >
               Location
             </button>
@@ -156,7 +154,7 @@ export default function HeaderNav() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden absolute right-0 p-2 text-white/80 hover:text-white transition-colors"
+            className="md:hidden absolute right-0 p-2 text-white/80 hover:text-ink transition-colors"
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -167,7 +165,7 @@ export default function HeaderNav() {
       </div>
 
       <div
-        className={`md:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] bg-navy-950/95 backdrop-blur-lg border-t border-white/[0.06] ${
+        className={`md:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] bg-navy-950/95 backdrop-blur-lg border-t border-ink/[0.06] ${
           mobileOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
         id="mobile-menu"
@@ -179,10 +177,10 @@ export default function HeaderNav() {
           <div>
             <button
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-              className="flex items-center justify-between w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+              className="flex items-center justify-between w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
             >
               Services
-              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-gold' : 'text-slate-500'}`} />
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-gold' : 'text-ink/55'}`} />
             </button>
             <div className={`grid transition-[grid-template-rows,opacity] duration-200 ease-[var(--ease-out)] ${mobileServicesOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
               <div className="overflow-hidden">
@@ -192,7 +190,7 @@ export default function HeaderNav() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block px-3 py-2.5 text-sm font-medium text-slate-400 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-150"
+                      className="block px-3 py-2.5 text-sm font-medium text-ink/65 hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-150"
                     >
                       {link.label}
                     </Link>
@@ -205,20 +203,20 @@ export default function HeaderNav() {
           <Link
             href="/areas"
             onClick={() => setMobileOpen(false)}
-            className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+            className="block w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
           >
             Areas
           </Link>
 
           <button
             onClick={() => scrollToSection('about')}
-            className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+            className="block w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('location')}
-            className="block w-full text-left px-3 py-3 text-base font-medium text-slate-200 hover:text-gold hover:bg-white/[0.04] rounded-lg transition-colors duration-200"
+            className="block w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
           >
             Location
           </button>

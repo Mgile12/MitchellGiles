@@ -14,15 +14,15 @@
 
   body {
     font-family: var(--font-inter), system-ui, sans-serif;
-    background-color: #0A0A0A;
-    color: #EAEAEA;
+    background-color: #D8D0C5;
+    color: #0A0A0A;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-montserrat), system-ui, sans-serif;
-    color: #FFFFFF;
+    color: #0A0A0A;
     text-wrap: balance;
   }
 }
@@ -146,7 +146,7 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 250ms ease;
-  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.12), transparent 55%);
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.5), transparent 55%);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -244,7 +244,7 @@
 @media (hover: hover) and (pointer: fine) {
   .proof-card:hover {
     transform: translateY(-3px);
-    border-color: rgba(12, 134, 234, 0.4);
+    border-color: rgba(10, 10, 10, 0.4);
   }
 }
 
@@ -272,7 +272,7 @@
   pointer-events: none;
   opacity: 0;
   transition: opacity 250ms ease;
-  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--accent-rgb), 0.16), transparent 60%);
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.55), transparent 60%);
 }
 
 .card-icon {
@@ -314,8 +314,8 @@
 /* Hero ground: faint grid that fades out toward the edges, two slow-drifting glows */
 .hero-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
   -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 40%, #000 25%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 65% at 50% 40%, #000 25%, transparent 75%);
@@ -479,21 +479,21 @@
 
 /* ------------------------------------------------------------------
    Shared ground, glow and accent system.
-   The accent is the Tailwind `gold` token (#0C86EA family). When the MRG
+   The accent is black on the sand ground (Tailwind `gold` token = #0A0A0A). When the MRG
    mark sets a new palette, change --accent* here AND `gold` in
    tailwind.config.js; nothing else needs touching.
    ------------------------------------------------------------------ */
 :root {
-  --accent: #0C86EA;
-  --accent-light: #3DA0F0;
-  --accent-dark: #0967B2;
-  --accent-rgb: 12, 134, 234;
+  --accent: #0A0A0A;
+  --accent-light: #3A3A3A;
+  --accent-dark: #000000;
+  --accent-rgb: 10, 10, 10;
 }
 
 .grid-ground {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.045) 1px, transparent 1px);
   background-size: 56px 56px;
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 15%, transparent 75%);
   mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 15%, transparent 75%);
@@ -505,7 +505,8 @@
   border-radius: 9999px;
   filter: blur(80px);
   pointer-events: none;
-  background: radial-gradient(circle, rgba(var(--accent-rgb), var(--glow-a, 0.16)), transparent 62%);
+  /* On the sand ground the glow is a soft white light, not a colour */
+  background: radial-gradient(circle, rgba(255, 255, 255, calc(var(--glow-a, 0.16) * 4)), transparent 62%);
 }
 
 /* Final CTA: the glow behind the last button breathes. Keyframes own the centring transform. */
@@ -608,7 +609,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.22) 50%, transparent 65%);
   transform: translateX(-130%);
   mix-blend-mode: screen;
 }
@@ -630,8 +631,8 @@
   .gold-flat-btn:hover {
     background-image: linear-gradient(180deg, var(--accent-light) 0%, var(--accent) 45%, var(--accent-dark) 100%);
     box-shadow:
-      0 0 0 1px rgba(var(--accent-rgb), 0.45),
-      0 12px 32px -8px rgba(var(--accent-rgb), 0.6);
+      0 0 0 1px rgba(10, 10, 10, 0.3),
+      0 12px 32px -8px rgba(10, 10, 10, 0.45);
   }
 }
 
@@ -647,13 +648,13 @@
 
 /* Visible focus for keyboard users, on every interactive element */
 :focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid #0A0A0A;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 .gold-flat-btn:focus-visible {
-  outline: 2px solid #fff;
+  outline: 2px solid #0A0A0A;
   outline-offset: 3px;
 }
 
@@ -665,8 +666,8 @@
   z-index: 100;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-  background: #fff;
-  color: #0a0a0a;
+  background: #0A0A0A;
+  color: #fff;
   font-weight: 600;
   transform: translateY(-150%);
   /* keyboard-triggered: appears instantly, no transition */
@@ -676,15 +677,14 @@
   transform: translateY(0);
 }
 
-/* Primary button face: deep enough that white text reads at 4.5:1 or better
-   (#1477CC 4.6:1, #0B6FC4 5.2:1, #0960AB 6.1:1). The accent for text and rules stays #0C86EA. */
+/* Primary button face: black, white label (21:1). */
 .gold-flat-btn {
-  background-image: linear-gradient(180deg, #1477cc 0%, #0b6fc4 55%, #0960ab 100%);
+  background-image: linear-gradient(180deg, #1f1f1f 0%, #0a0a0a 55%, #000 100%);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .gold-flat-btn:hover {
-    background-image: linear-gradient(180deg, #1477cc 0%, #0b6fc4 45%, #0960ab 100%);
+    background-image: linear-gradient(180deg, #2a2a2a 0%, #0f0f0f 45%, #000 100%);
   }
 }
 
@@ -705,11 +705,11 @@ html[data-motion='paused'] .hero-blob-2 {
 .locator-plus gmpx-store-locator {
   width: 100%;
   height: 100%;
-  --gmpx-color-surface: #0b1220;
-  --gmpx-color-on-surface: #f8fafc;
-  --gmpx-color-on-surface-variant: #94a3b8;
-  --gmpx-color-primary: #0c86ea;
-  --gmpx-color-outline: rgba(255, 255, 255, 0.1);
+  --gmpx-color-surface: #ffffff;
+  --gmpx-color-on-surface: #0a0a0a;
+  --gmpx-color-on-surface-variant: #5a5651;
+  --gmpx-color-primary: #0a0a0a;
+  --gmpx-color-outline: rgba(10, 10, 10, 0.12);
   --gmpx-fixed-panel-width-row-layout: 20em;
   --gmpx-fixed-panel-height-column-layout: 55%;
   --gmpx-font-family-base: var(--font-inter), sans-serif;

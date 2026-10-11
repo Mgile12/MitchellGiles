@@ -94,22 +94,22 @@ export default function LocationMap() {
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12 items-center">
           <AnimateOnScroll className="lg:col-span-5">
             <Eyebrow className="mb-4">Where I am</Eyebrow>
-            <h2 id="location-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+            <h2 id="location-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
               <RevealText text="Ormeau, northern Gold Coast." />
             </h2>
-            <p className="text-base sm:text-lg text-slate-400 font-sans leading-relaxed">
+            <p className="text-base sm:text-lg text-ink/65 font-sans leading-relaxed">
               Based in Ormeau, between the Gold Coast and Brisbane. Most calls happen online, and if you&apos;re nearby
               I&apos;m happy to come to you.
             </p>
 
             <ul className="mt-8 space-y-4 font-sans">
-              <li className="flex items-start gap-3 text-slate-300">
+              <li className="flex items-start gap-3 text-ink/80">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" aria-hidden="true" />
                 <span>{BUSINESS_INFO.address.full}</span>
               </li>
-              <li className="flex items-start gap-3 text-slate-300">
+              <li className="flex items-start gap-3 text-ink/80">
                 <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" aria-hidden="true" />
-                <a href={`tel:${BUSINESS_INFO.phoneFormatted}`} className="hover:text-white transition-colors duration-150">
+                <a href={`tel:${BUSINESS_INFO.phoneFormatted}`} className="hover:text-ink transition-colors duration-150">
                   {BUSINESS_INFO.phone}
                 </a>
               </li>
@@ -135,7 +135,7 @@ export default function LocationMap() {
           </AnimateOnScroll>
 
           <AnimateOnScroll className="lg:col-span-7">
-            <div className="rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.5)] bg-navy-950" style={{ height: '440px' }}>
+            <div className="rounded-2xl overflow-hidden border border-ink/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.16)] bg-navy-950" style={{ height: '440px' }}>
               {MAPS_KEY ? (
                 <LocatorPlus />
               ) : (

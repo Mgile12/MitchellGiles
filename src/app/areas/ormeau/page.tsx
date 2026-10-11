@@ -6,13 +6,13 @@ const PATH = '/areas/ormeau';
 
 // The layout's title template appends " | MRG Marketing".
 export const metadata: Metadata = {
-  title: 'Marketing in Ormeau | Local SEO, Google Business Profile, Meta Ads & Email for Ormeau Businesses',
+  title: 'Local SEO & Google Business Profile in Ormeau | Internet Marketing Service for Ormeau Businesses',
   description:
-    'Marketing for Ormeau businesses from a consultant based at 9 Laverton St. Google Business Profile, local SEO, Meta Ads and email for the Yatala to Coomera corridor. Book a 30-minute call.',
+    'Local SEO, Google Business Profile optimisation and AI search for Ormeau businesses from an internet marketing service based at 9 Laverton St. Top 3 on Google Maps for the Yatala to Coomera corridor. Book a 30-minute call.',
   openGraph: {
     title: 'Marketing in Ormeau | MRG Marketing',
     description:
-      'Marketing for Ormeau businesses from a consultant who is based here. Google Business Profile, local SEO, Meta Ads and email.',
+      'Local SEO, Google Business Profile optimisation and AI search for Ormeau businesses, from an internet marketing service that is based here.',
     type: 'website',
     url: `${BUSINESS_INFO.url}${PATH}/`,
     locale: 'en_AU',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Marketing in Ormeau | MRG Marketing',
     description:
-      'Marketing for Ormeau businesses from a consultant who is based here. Google Business Profile, local SEO, Meta Ads and email.',
+      'Local SEO, Google Business Profile optimisation and AI search for Ormeau businesses, from an internet marketing service that is based here.',
     images: ['/og-image.png'],
   },
   alternates: {
@@ -47,7 +47,7 @@ function buildPageJsonLd() {
     serviceType: 'Local marketing',
     name: 'Marketing in Ormeau',
     description:
-      'Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event ticket campaigns for businesses in Ormeau and the northern Gold Coast.',
+      'Local SEO, Google Business Profile optimisation and AI search for businesses in Ormeau and the northern Gold Coast.',
     provider: { '@id': `${BUSINESS_INFO.url}/#business` },
     areaServed: {
       '@type': 'City',

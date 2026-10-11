@@ -2,7 +2,7 @@ export const BUSINESS_INFO = {
   name: 'MRG Marketing',
   legalName: 'MRG Marketing',
   description:
-    'Marketing consultant and local marketing agency in Ormeau on the northern Gold Coast. Google Business Profile, local SEO, Meta Ads, email marketing, AI automations and event ticket marketing for service businesses across the Gold Coast and Brisbane.',
+    'Internet marketing service in Ormeau on the northern Gold Coast. Local SEO, Google Business Profile optimisation and AI search (GEO) for service businesses across the Gold Coast and Brisbane.',
   founder: 'Mitchell Giles',
   url: 'https://mrgmarketing.com.au',
   logo: 'https://mrgmarketing.com.au/icon-512.png',
@@ -35,12 +35,9 @@ export const BUSINESS_INFO = {
   },
 
   services: [
-    'Google Business Profile Optimisation',
     'Local SEO',
-    'Meta Ads Management',
-    'Email Marketing',
-    'AI Automations',
-    'Event Ticket Marketing',
+    'Google Business Profile Optimisation',
+    'AI Search Optimisation (GEO)',
   ],
 
   serviceArea: [

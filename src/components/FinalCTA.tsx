@@ -6,7 +6,7 @@ import RevealText from './RevealText';
 
 export default function FinalCTA() {
   return (
-    <section className="relative bg-navy-950 text-slate-50 overflow-hidden" aria-labelledby="final-heading">
+    <section className="relative bg-navy-950 text-ink overflow-hidden" aria-labelledby="final-heading">
       <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
       <div className="grid-ground absolute inset-0" aria-hidden="true" />
       <div className="glow glow-breathe w-[700px] h-[500px] top-1/2 left-1/2" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
@@ -16,7 +16,7 @@ export default function FinalCTA() {
           <Eyebrow className="mb-6">One honest question</Eyebrow>
           <h2
             id="final-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15] font-serif"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink leading-[1.15] font-serif"
           >
             <RevealText text="Do you care more about what you pay," />{' '}
             <span style={{ ['--rw-base' as string]: '520ms' }}>
@@ -24,7 +24,7 @@ export default function FinalCTA() {
             </span>
           </h2>
 
-          <p className="mt-8 text-lg sm:text-xl text-slate-300 leading-relaxed font-sans max-w-2xl mx-auto">
+          <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
             If it&apos;s the second, book 30 minutes. Tell me what you sell and what&apos;s not working. If I can help,
             you get a plan. If I can&apos;t, I&apos;ll say so.
           </p>
@@ -37,7 +37,7 @@ export default function FinalCTA() {
               Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
-            <p className="mt-4 text-sm text-slate-400 font-sans">No pitch.</p>
+            <p className="mt-4 text-sm text-ink/65 font-sans">No pitch.</p>
           </div>
         </div>
       </AnimateOnScroll>

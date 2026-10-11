@@ -99,3 +99,8 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 /lead-generation-gold-coast/* /google-business-profile-gold-coast/ 301
 /digital-marketing-gold-coast/* /services/ 301
 /marketing-automation-gold-coast/* /services/ 301
+
+# Oct 2026: the offer is local SEO + Google Business Profile + AI search only
+/meta-ads-agency/* /services/ 301
+/email-marketing-gold-coast/* /google-business-profile-gold-coast/ 301
+/case-studies/email-marketing-60k-in-30-days/ /case-studies/ 301

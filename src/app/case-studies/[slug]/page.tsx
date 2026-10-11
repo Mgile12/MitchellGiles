@@ -29,9 +29,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <AnimateOnScroll className="grid gap-4 sm:grid-cols-12 sm:gap-8 py-8 border-t border-white/[0.08]">
+    <AnimateOnScroll className="grid gap-4 sm:grid-cols-12 sm:gap-8 py-8 border-t border-ink/[0.08]">
       <h2 className="sm:col-span-3 text-xs font-semibold tracking-[0.2em] uppercase text-gold font-sans pt-1">{title}</h2>
-      <div className="sm:col-span-9 text-base sm:text-lg text-slate-300 leading-relaxed font-sans">{children}</div>
+      <div className="sm:col-span-9 text-base sm:text-lg text-ink/80 leading-relaxed font-sans">{children}</div>
     </AnimateOnScroll>
   );
 }
@@ -74,10 +74,10 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           <div className="grid-ground absolute inset-0" aria-hidden="true" />
           <div className="glow w-[700px] h-[600px] -top-40 right-[-10%]" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 sm:pt-32 sm:pb-16">
-            <nav aria-label="Breadcrumb" className="mb-8 font-sans text-sm text-slate-400">
+            <nav aria-label="Breadcrumb" className="mb-8 font-sans text-sm text-ink/65">
               <ol className="flex flex-wrap items-center gap-2">
                 <li>
-                  <Link href="/" className="hover:text-white transition-colors duration-150">
+                  <Link href="/" className="hover:text-ink transition-colors duration-150">
                     Home
                   </Link>
                 </li>
@@ -85,23 +85,23 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                   <ChevronRight className="w-4 h-4" />
                 </li>
                 <li>
-                  <Link href={HUB} className="hover:text-white transition-colors duration-150">
+                  <Link href={HUB} className="hover:text-ink transition-colors duration-150">
                     Case studies
                   </Link>
                 </li>
                 <li aria-hidden="true">
                   <ChevronRight className="w-4 h-4" />
                 </li>
-                <li className="text-slate-300">{c.client}</li>
+                <li className="text-ink/80">{c.client}</li>
               </ol>
             </nav>
             <Eyebrow align="left" className="mb-5">
               {c.service}
             </Eyebrow>
-            <h1 id="page-heading" className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1] font-serif">
+            <h1 id="page-heading" className="text-3xl sm:text-5xl font-bold tracking-tight text-ink leading-[1.1] font-serif">
               {c.headline}
             </h1>
-            <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed font-sans">{c.summary}</p>
+            <p className="mt-6 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans">{c.summary}</p>
 
             <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 font-sans text-sm">
               {[
@@ -111,8 +111,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                 ['Service', c.service],
               ].map(([k, v]) => (
                 <div key={k}>
-                  <dt className="text-xs font-semibold tracking-[0.18em] uppercase text-slate-500">{k}</dt>
-                  <dd className="mt-1 text-slate-200">{v}</dd>
+                  <dt className="text-xs font-semibold tracking-[0.18em] uppercase text-ink/55">{k}</dt>
+                  <dd className="mt-1 text-ink">{v}</dd>
                 </div>
               ))}
             </dl>
@@ -124,10 +124,10 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <AnimateOnScroll variant="group" className={`grid gap-4 ${c.images.length > 1 ? 'sm:grid-cols-2' : ''}`}>
               {c.images.map((img, i) => (
                 <figure key={img.src} className={`rv-up ${i ? 'rv-delay-1' : ''}`}>
-                  <a href={img.src} target="_blank" rel="noopener noreferrer" className="block rounded-2xl overflow-hidden border border-white/[0.08] bg-white/[0.03] p-2 hover:border-gold/40 transition-colors duration-200">
+                  <a href={img.src} target="_blank" rel="noopener noreferrer" className="block rounded-2xl overflow-hidden border border-ink/[0.08] bg-white/55 p-2 hover:border-gold/40 transition-colors duration-200">
                     <img src={img.src} alt={img.alt} decoding="async" className="w-full h-auto rounded-xl block" />
                   </a>
-                  <figcaption className="mt-2 text-sm text-slate-400 font-sans">{img.caption}</figcaption>
+                  <figcaption className="mt-2 text-sm text-ink/65 font-sans">{img.caption}</figcaption>
                 </figure>
               ))}
             </AnimateOnScroll>
@@ -151,11 +151,11 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                   <table className="w-full text-sm sm:text-base">
                     <tbody>
                       {c.measurement.map((m) => (
-                        <tr key={m.label} className="border-b border-white/[0.06] last:border-0 align-top">
-                          <th scope="row" className="py-3 pr-4 text-left font-semibold text-white w-[38%]">
+                        <tr key={m.label} className="border-b border-ink/[0.06] last:border-0 align-top">
+                          <th scope="row" className="py-3 pr-4 text-left font-semibold text-ink w-[38%]">
                             {m.label}
                           </th>
-                          <td className="py-3 text-slate-300">{m.value}</td>
+                          <td className="py-3 text-ink/80">{m.value}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -179,11 +179,11 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </div>
         </section>
 
-        <section className="relative bg-navy-900 mt-16 border-t border-white/[0.06]" aria-label="Next step">
+        <section className="relative bg-navy-900 mt-16 border-t border-ink/[0.06]" aria-label="Next step">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
             <AnimateOnScroll>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif">Is this the kind of result you need?</h2>
-              <p className="mt-4 text-slate-300 font-sans max-w-2xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold text-ink font-serif">Is this the kind of result you need?</h2>
+              <p className="mt-4 text-ink/80 font-sans max-w-2xl mx-auto">
                 Book 30 minutes. I&apos;ll look at your profile, your site and the three businesses above you, and tell
                 you what is realistic before you spend anything.
               </p>

@@ -30,18 +30,18 @@ const phases = [
 export default function SEOTimelines() {
   return (
     <section className="bg-navy-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(200,161,78,0.04),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.45),transparent_60%)]" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-14 sm:mb-20">
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
             Realistic Expectations
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
             SEO Timeline: What to Expect and When
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
               SEO is not instant. Anyone who tells you otherwise is lying. Here is what a realistic timeline
               looks like for a Gold Coast business.
             </p>
@@ -61,14 +61,14 @@ export default function SEOTimelines() {
                     </div>
                   </div>
 
-                  <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] transition-all duration-300">
+                  <div className="rounded-2xl border border-ink/[0.06] bg-white/55 p-6 sm:p-8 hover:border-gold/20 hover:bg-white/85 transition-all duration-300">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-3">
                       <span className="text-gold font-bold text-lg font-serif">{phase.period}</span>
-                      <span className="hidden sm:block text-slate-600">&#8212;</span>
-                      <span className="text-xs font-semibold tracking-[0.15em] uppercase text-slate-500 font-sans">{phase.status}</span>
+                      <span className="hidden sm:block text-ink/50">&#8212;</span>
+                      <span className="text-xs font-semibold tracking-[0.15em] uppercase text-ink/55 font-sans">{phase.status}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-white mb-2 font-serif">{phase.title}</h3>
-                    <p className="text-sm text-slate-400 leading-relaxed font-sans">{phase.description}</p>
+                    <h3 className="text-lg font-bold text-ink mb-2 font-serif">{phase.title}</h3>
+                    <p className="text-sm text-ink/65 leading-relaxed font-sans">{phase.description}</p>
                   </div>
                 </div>
               </AnimateOnScroll>

@@ -9,10 +9,10 @@ import { caseStudies } from './data';
 
 const PATH = '/case-studies';
 const DESCRIPTION =
-  'Three MRG Marketing case studies with the problem, the work, the dates, how the result was measured and what the numbers cannot prove. Google Maps rankings and email revenue, from client accounts.';
+  'MRG Marketing case studies with the problem, the work, the dates, how the result was measured and what the numbers cannot prove. Google Maps rankings from client accounts.';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Google Maps and Email Results, Measured',
+  title: 'Case Studies | Google Maps Results, Measured',
   description: DESCRIPTION,
   openGraph: {
     title: 'Case Studies | MRG Marketing',
@@ -59,26 +59,26 @@ export default function CaseStudiesPage() {
           <div className="grid-ground absolute inset-0" aria-hidden="true" />
           <div className="glow w-[700px] h-[600px] -top-40 right-[-10%]" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 sm:pt-32 sm:pb-16">
-            <nav aria-label="Breadcrumb" className="mb-8 font-sans text-sm text-slate-400">
+            <nav aria-label="Breadcrumb" className="mb-8 font-sans text-sm text-ink/65">
               <ol className="flex items-center gap-2">
                 <li>
-                  <Link href="/" className="hover:text-white transition-colors duration-150">
+                  <Link href="/" className="hover:text-ink transition-colors duration-150">
                     Home
                   </Link>
                 </li>
                 <li aria-hidden="true">
                   <ChevronRight className="w-4 h-4" />
                 </li>
-                <li className="text-slate-300">Case studies</li>
+                <li className="text-ink/80">Case studies</li>
               </ol>
             </nav>
             <Eyebrow align="left" className="mb-5">
               Case studies
             </Eyebrow>
-            <h1 id="page-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08] font-serif max-w-3xl">
+            <h1 id="page-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.08] font-serif max-w-3xl">
               The work, the dates, and what the numbers can and can&apos;t prove.
             </h1>
-            <p className="mt-7 text-lg sm:text-xl text-slate-300 leading-relaxed font-sans max-w-2xl">
+            <p className="mt-7 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl">
               Each study has the problem, the changes I made, the period, how the result was measured and where the
               measurement falls short. The screenshots are untouched. Where a client is named, it is with their
               knowledge.
@@ -88,22 +88,22 @@ export default function CaseStudiesPage() {
 
         <section className="relative" aria-label="Case study list">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
-            <AnimateOnScroll variant="group" className="grid gap-5 lg:grid-cols-3">
+            <AnimateOnScroll variant="group" className="grid gap-5 sm:grid-cols-2 max-w-4xl mx-auto">
               {caseStudies.map((c, i) => (
                 <Link
                   key={c.slug}
                   href={`${PATH}/${c.slug}`}
-                  className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} group flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.03] overflow-hidden hover:border-gold/40 transition-colors duration-200`}
+                  className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} group flex flex-col rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden hover:border-gold/40 transition-colors duration-200`}
                 >
-                  <div className="aspect-[16/10] overflow-hidden border-b border-white/[0.06] bg-navy-900">
+                  <div className="aspect-[16/10] overflow-hidden border-b border-ink/[0.06] bg-navy-900">
                     <img src={c.images[c.images.length - 1].src} alt={c.images[c.images.length - 1].alt} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold font-sans">{c.service}</p>
-                    <p className="mt-3 text-3xl font-bold text-white font-serif tabular-nums">{c.figure}</p>
-                    <p className="text-sm text-slate-400 font-sans">{c.figureLabel}</p>
-                    <h2 className="mt-4 text-lg font-bold text-white font-serif leading-snug">{c.headline}</h2>
-                    <p className="mt-2 text-sm text-slate-400 font-sans">
+                    <p className="mt-3 text-3xl font-bold text-ink font-serif tabular-nums">{c.figure}</p>
+                    <p className="text-sm text-ink/65 font-sans">{c.figureLabel}</p>
+                    <h2 className="mt-4 text-lg font-bold text-ink font-serif leading-snug">{c.headline}</h2>
+                    <p className="mt-2 text-sm text-ink/65 font-sans">
                       {c.client} · {c.industry}
                     </p>
                     <span className="mt-auto pt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold font-sans">
@@ -115,10 +115,10 @@ export default function CaseStudiesPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll className="mt-14 sm:mt-20 max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif">
+              <h2 className="text-2xl sm:text-3xl font-bold text-ink font-serif">
                 <RevealText text="Want the one that matches your business?" />
               </h2>
-              <p className="mt-4 text-slate-300 font-sans">
+              <p className="mt-4 text-ink/80 font-sans">
                 Tell me what you sell and what&apos;s not working. I&apos;ll show you the screenshots closest to your
                 situation, and say so if I don&apos;t have one.
               </p>

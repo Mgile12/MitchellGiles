@@ -28,14 +28,14 @@ const howIWork = [
 ];
 
 const quickProof = [
-  { figure: '266', label: 'calls in five months from one Business Profile, up 23% on last year' },
-  { figure: '$60,632', label: 'in 30 days from email, 63% of that store’s monthly revenue' },
-  { figure: '6.88x', label: 'return on ad spend across three Meta campaigns' },
+  { figure: '266', label: 'call-button taps in five months from one Business Profile, up 23% on last year' },
+  { figure: '2 days', label: 'for one profile to go from page two to the top 3 on Google Maps' },
+  { figure: '+273%', label: 'website clicks from Maps, year on year, on one profile I manage' },
 ];
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative bg-navy-950 text-white overflow-hidden" aria-labelledby="about-heading">
+    <section id="about" className="relative bg-navy-950 text-ink overflow-hidden" aria-labelledby="about-heading">
       <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
       <div className="glow w-[620px] h-[620px] -bottom-72 -left-40" style={{ ['--glow-a' as string]: '0.12' }} aria-hidden="true" />
 
@@ -45,25 +45,26 @@ export default function AboutSection() {
             <Eyebrow align="left" className="mb-5">About</Eyebrow>
             <h2
               id="about-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1] font-serif mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink leading-[1.1] font-serif mb-6"
             >
-              <RevealText text="One consultant." />{' '}
-              <span className="text-slate-400">
+              <RevealText text="One person." />{' '}
+              <span className="text-ink/65">
                 <RevealText text="No account manager in between." startIndex={2} />
               </span>
             </h2>
-            <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed font-sans max-w-2xl">
+            <div className="space-y-4 text-base sm:text-lg text-ink/80 leading-relaxed font-sans max-w-2xl">
               <p>
-                I&apos;m Mitchell Giles, a marketing consultant in Ormeau working with businesses across the Gold
-                Coast and Brisbane. Most of my clients are trades and local services. Some are event and e-commerce
-                businesses doing six figures a month.
+                I&apos;m Mitchell Giles. MRG Marketing is an internet marketing service in Ormeau, and it does one
+                thing: getting local businesses found, on Google Maps and in AI search, across the Gold Coast and
+                Brisbane. Most of my clients are trades and local services. I also do the same work white-label for
+                other agencies, which is why some of the best results on this site have the business name cropped out.
               </p>
               <p>
                 I started in Google Business Profiles, because free Google traffic is the fastest win a local business
                 can get. The paid, email and strategy work came from clients who wanted the phone to keep ringing
                 after that.
               </p>
-              <p className="text-white font-medium">
+              <p className="text-ink font-medium">
                 Most of my work is ongoing. One-off jobs get one-off results.
               </p>
             </div>
@@ -77,8 +78,8 @@ export default function AboutSection() {
                       <Icon className="w-4 h-4 text-gold" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold font-sans text-sm mb-1">{item.title}</p>
-                      <p className="text-slate-400 text-sm leading-relaxed font-sans">{item.text}</p>
+                      <p className="text-ink font-semibold font-sans text-sm mb-1">{item.title}</p>
+                      <p className="text-ink/65 text-sm leading-relaxed font-sans">{item.text}</p>
                     </div>
                   </div>
                 );
@@ -87,17 +88,17 @@ export default function AboutSection() {
           </AnimateOnScroll>
 
           <AnimateOnScroll className="lg:col-span-5">
-            <div className="accent-line relative overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.05] to-white/[0.02] p-6 sm:p-8 lg:sticky lg:top-28">
+            <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8 lg:sticky lg:top-28">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">
                 Three numbers, all from client accounts
               </p>
-              <div className="divide-y divide-white/[0.06]">
+              <div className="divide-y divide-ink/[0.06]">
                 {quickProof.map((p) => (
                   <div key={p.figure} className="py-5 first:pt-0 last:pb-0">
                     <p className="text-gradient-accent text-3xl sm:text-4xl font-bold font-serif tabular-nums">
                       <CountUp value={p.figure} />
                     </p>
-                    <p className="text-sm text-slate-400 font-sans mt-1 leading-relaxed">{p.label}</p>
+                    <p className="text-sm text-ink/65 font-sans mt-1 leading-relaxed">{p.label}</p>
                   </div>
                 ))}
               </div>

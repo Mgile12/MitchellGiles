@@ -72,18 +72,18 @@ const pillars = [
 export default function SEOPillars() {
   return (
     <section className="bg-navy-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(200,161,78,0.05),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.45),transparent_60%)]" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <AnimateOnScroll className="text-center mb-14 sm:mb-20">
           <span className="inline-block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-4 font-sans">
             The Five Pillars
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-5 font-serif">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
             What SEO Actually Involves
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
               SEO is not one thing. It is five interconnected disciplines that work together to build sustainable organic visibility.
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function SEOPillars() {
                       </div>
                     </div>
 
-                    <div className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 sm:p-8 hover:border-gold/20 hover:bg-white/[0.04] hover:-translate-y-1 transition-all duration-300">
+                    <div className="relative rounded-2xl border border-ink/[0.06] bg-white/55 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/20 hover:bg-white/85 hover:-translate-y-1 transition-all duration-300">
                       <div className="flex items-start gap-5">
                         <div className="md:hidden shrink-0 w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center">
                           <span className="text-gold font-bold text-sm font-serif">{pillar.number}</span>
@@ -115,16 +115,16 @@ export default function SEOPillars() {
                             <div className="w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                               <Icon className="w-4.5 h-4.5 text-gold" />
                             </div>
-                            <h3 className="text-lg sm:text-xl font-bold text-white font-serif">
+                            <h3 className="text-lg sm:text-xl font-bold text-ink font-serif">
                               {pillar.title}
                             </h3>
                           </div>
-                          <p className="text-sm sm:text-base text-slate-400 leading-relaxed mb-4 font-sans">
+                          <p className="text-sm sm:text-base text-ink/65 leading-relaxed mb-4 font-sans">
                             {pillar.description}
                           </p>
                           <ul className="space-y-2">
                             {pillar.points.map((point, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm text-slate-300 font-sans">
+                              <li key={i} className="flex items-start gap-2 text-sm text-ink/80 font-sans">
                                 <span className="text-gold mt-1.5 text-[8px]">&#9670;</span>
                                 {point}
                               </li>

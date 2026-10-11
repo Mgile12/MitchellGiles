@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { TrendingUp, MapPin, Mail } from 'lucide-react';
+import { TrendingUp, MapPin, Phone } from 'lucide-react';
 import CountUp from '@/components/CountUp';
 
 /**
@@ -25,8 +25,8 @@ const BARS: { label: string; delta: string; pct: number; client?: string }[] = [
 
 const CHIPS = [
   { text: 'Top 3 on Maps in 2 days', icon: MapPin, pos: 'lg:-top-4 lg:-right-3', delay: 1500, float: '7s' },
-  { text: '6.88x return on ad spend', icon: TrendingUp, pos: 'lg:-top-4 lg:-left-6', delay: 1650, float: '8s' },
-  { text: '$60,632 in 30 days from email', icon: Mail, pos: 'lg:-bottom-5 lg:right-8', delay: 1800, float: '6.5s' },
+  { text: 'Website clicks +273% year on year', icon: TrendingUp, pos: 'lg:-top-4 lg:-left-6', delay: 1650, float: '8s' },
+  { text: '33 calls from a brand-new profile', icon: Phone, pos: 'lg:-bottom-5 lg:right-8', delay: 1800, float: '6.5s' },
 ];
 
 export default function HeroProofCard() {
@@ -34,7 +34,7 @@ export default function HeroProofCard() {
 
   return (
     <div className="relative w-full max-w-md mx-auto lg:max-w-none">
-      <div className="hero-card-in relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] backdrop-blur-sm shadow-[0_24px_64px_rgba(0,0,0,0.5)] overflow-hidden">
+      <div className="hero-card-in relative rounded-2xl border border-ink/10 bg-gradient-to-b from-white/75 to-white/40 backdrop-blur-sm shadow-[0_24px_64px_rgba(0,0,0,0.16)] overflow-hidden">
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-gold-dark via-gold-light to-gold-dark" />
 
         <div className="p-5 sm:p-6">
@@ -42,23 +42,23 @@ export default function HeroProofCard() {
             <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-gold font-sans">
               Google Business Profile
             </p>
-            <span className="text-[11px] font-medium text-slate-400 border border-white/10 rounded-full px-2.5 py-1 font-sans whitespace-nowrap">
+            <span className="text-[11px] font-medium text-ink/65 border border-ink/10 rounded-full px-2.5 py-1 font-sans whitespace-nowrap">
               Apr – Aug 2026
             </span>
           </div>
 
           <div className="flex items-end gap-3 mb-1">
-            <p className="text-5xl font-bold text-white font-serif tabular-nums leading-none">
+            <p className="text-5xl font-bold text-ink font-serif tabular-nums leading-none">
               <CountUp value="89" delay={700} duration={1400} />
             </p>
-            <p className="text-sm text-slate-400 font-sans pb-1">calls from one client&apos;s profile</p>
+            <p className="text-sm text-ink/65 font-sans pb-1">calls from one client&apos;s profile</p>
           </div>
           <p className="text-sm font-sans mb-4">
-            <span className="inline-flex items-center gap-1 font-semibold text-emerald-400">
+            <span className="inline-flex items-center gap-1 font-semibold text-ink">
               <TrendingUp className="w-3.5 h-3.5" />
               +324%
             </span>
-            <span className="text-slate-400"> on the same five months last year</span>
+            <span className="text-ink/65"> on the same five months last year</span>
           </p>
 
           <svg
@@ -69,12 +69,12 @@ export default function HeroProofCard() {
           >
             <defs>
               <linearGradient id="heroArea" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#0C86EA" stopOpacity="0.35" />
-                <stop offset="100%" stopColor="#0C86EA" stopOpacity="0" />
+                <stop offset="0%" stopColor="#0A0A0A" stopOpacity="0.35" />
+                <stop offset="100%" stopColor="#0A0A0A" stopOpacity="0" />
               </linearGradient>
             </defs>
             {[14, 35.5, 57, 78.5, 100].map((y) => (
-              <line key={y} x1="16" x2="304" y1={y} y2={y} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
+              <line key={y} x1="16" x2="304" y1={y} y2={y} stroke="rgba(0,0,0,0.08)" strokeWidth="1" />
             ))}
             <path className="chart-area" d={AREA} fill="url(#heroArea)" />
             <polyline
@@ -82,7 +82,7 @@ export default function HeroProofCard() {
               pathLength={1}
               points={LINE}
               fill="none"
-              stroke="#3DA0F0"
+              stroke="#0A0A0A"
               strokeWidth="2.5"
               strokeLinejoin="round"
               strokeLinecap="round"
@@ -93,7 +93,7 @@ export default function HeroProofCard() {
               cx={lastX}
               cy={lastY}
               r="9"
-              fill="rgba(61,160,240,0.18)"
+              fill="rgba(10,10,10,0.1)"
             />
             {POINTS.map(([x, y], i) => (
               <circle
@@ -103,8 +103,8 @@ export default function HeroProofCard() {
                 cx={x}
                 cy={y}
                 r={i === POINTS.length - 1 ? 4.5 : 3}
-                fill="#0A0A0A"
-                stroke="#3DA0F0"
+                fill="#FFFFFF"
+                stroke="#0A0A0A"
                 strokeWidth="2"
               />
             ))}
@@ -115,7 +115,7 @@ export default function HeroProofCard() {
               textAnchor="end"
               fontSize="10"
               fontWeight="600"
-              fill="#EAEAEA"
+              fill="#0A0A0A"
               style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}
             >
               Aug · 35
@@ -127,7 +127,7 @@ export default function HeroProofCard() {
                 y="120"
                 textAnchor="middle"
                 fontSize="10"
-                fill="rgba(255,255,255,0.4)"
+                fill="rgba(0,0,0,0.5)"
                 style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}
               >
                 {m}
@@ -139,24 +139,24 @@ export default function HeroProofCard() {
             {BARS.map((b, i) => (
               <div key={`${b.label}-${b.delta}`} className="grid grid-cols-[92px_1fr_52px] items-center gap-3">
                 <span className="min-w-0 font-sans">
-                  <span className="block text-xs text-slate-400 truncate">{b.label}</span>
-                  {b.client && <span className="block text-[10px] leading-tight text-slate-500 truncate">{b.client}</span>}
+                  <span className="block text-xs text-ink/65 truncate">{b.label}</span>
+                  {b.client && <span className="block text-[10px] leading-tight text-ink/55 truncate">{b.client}</span>}
                 </span>
-                <div className="h-1.5 rounded-full bg-white/[0.08] overflow-hidden">
+                <div className="h-1.5 rounded-full bg-white/55 overflow-hidden">
                   <div
                     className="bar-fill h-full rounded-full bg-gradient-to-r from-gold-dark to-gold-light"
                     style={{ width: `${b.pct}%`, ['--d' as string]: `${1100 + i * 110}ms` }}
                   />
                 </div>
-                <span className="text-xs font-semibold text-white font-sans tabular-nums text-right">{b.delta}</span>
+                <span className="text-xs font-semibold text-ink font-sans tabular-nums text-right">{b.delta}</span>
               </div>
             ))}
           </div>
-          <p className="mt-4 text-[11px] text-slate-400 font-sans leading-relaxed">
+          <p className="mt-4 text-[11px] text-ink/65 font-sans leading-relaxed">
             Four client profiles, year on year. Calls are call-button taps, Google&apos;s own metric.{' '}
             <Link
               href="/google-business-profile-gold-coast"
-              className="text-slate-300 underline underline-offset-2 hover:text-white transition-colors duration-150"
+              className="text-ink/80 underline underline-offset-2 hover:text-ink transition-colors duration-150"
             >
               Screenshots here
             </Link>
@@ -172,7 +172,7 @@ export default function HeroProofCard() {
           return (
             <span
               key={c.text}
-              className={`chip inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-navy-900/90 backdrop-blur px-3 py-1.5 text-xs font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.45)] whitespace-nowrap lg:absolute ${c.pos}`}
+              className={`chip inline-flex items-center gap-1.5 rounded-full border border-ink/10 bg-navy-900/90 backdrop-blur px-3 py-1.5 text-xs font-semibold text-ink shadow-[0_8px_24px_rgba(0,0,0,0.14)] whitespace-nowrap lg:absolute ${c.pos}`}
               style={{ ['--d' as string]: `${c.delay}ms`, ['--float' as string]: c.float }}
             >
               <Icon className="w-3.5 h-3.5 text-gold" />
