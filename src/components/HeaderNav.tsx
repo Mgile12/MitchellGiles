@@ -7,7 +7,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 
 const serviceLinks = [
   { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
-  { label: 'Local SEO', href: '/seo-gold-coast' },
+  { label: 'Local SEO', href: '/Best-local-seo-expert-in-Gold-Coast' },
   { label: 'AI Search (GEO)', href: '/book' },
   { label: 'Case studies', href: '/case-studies' },
 ];

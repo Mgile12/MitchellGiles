@@ -14,7 +14,7 @@ export default function Footer() {
       tagline="Internet marketing service, Ormeau. Local SEO, Google Business Profile optimisation and AI search for the Gold Coast and Brisbane."
       mainLinks={[
         { href: '/google-business-profile-gold-coast', label: 'Google Business Profile' },
-        { href: '/seo-gold-coast', label: 'Local SEO' },
+        { href: '/Best-local-seo-expert-in-Gold-Coast', label: 'Local SEO' },
         { href: '/case-studies', label: 'Case studies' },
         { href: '/book', label: 'Book a call' },
       ]}

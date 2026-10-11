@@ -104,3 +104,8 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 /meta-ads-agency/* /services/ 301
 /email-marketing-gold-coast/* /google-business-profile-gold-coast/ 301
 /case-studies/email-marketing-60k-in-30-days/ /case-studies/ 301
+
+# Oct 2026: the SEO page became the local SEO expert proof page
+/seo-gold-coast/* /Best-local-seo-expert-in-Gold-Coast/ 301
+/best-local-seo-expert-in-gold-coast /Best-local-seo-expert-in-Gold-Coast/ 301
+/best-local-seo-expert-in-gold-coast/ /Best-local-seo-expert-in-Gold-Coast/ 301
