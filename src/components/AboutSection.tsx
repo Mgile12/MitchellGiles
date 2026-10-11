@@ -61,8 +61,8 @@ export default function AboutSection() {
               </p>
               <p>
                 I started in Google Business Profiles, because free Google traffic is the fastest win a local business
-                can get. The paid, email and strategy work came from clients who wanted the phone to keep ringing
-                after that.
+                can get. Everything since has been the same job: making the phone ring from Google Maps, and now from
+                AI search too.
               </p>
               <p className="text-ink font-medium">
                 Most of my work is ongoing. One-off jobs get one-off results.
