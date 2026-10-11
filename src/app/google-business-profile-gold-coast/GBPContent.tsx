@@ -11,30 +11,30 @@ const heatmaps = [
   {
     client: 'Polish Hub Marine Detailing',
     result: '2 days',
-    before: '/proof/heatmap-polish-hub-before.jpg',
-    after: '/proof/heatmap-polish-hub-after.jpg',
+    before: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-polish-hub-google-maps-ranking-before.jpg',
+    after: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-polish-hub-google-maps-ranking-after.jpg',
   },
   {
     client: 'Ceramics Gold Coast',
     result: '11 days',
-    before: '/proof/heatmap-ceramics-before.jpg',
-    after: '/proof/heatmap-ceramics-after.jpg',
+    before: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-ceramics-gold-coast-google-maps-ranking-before.jpg',
+    after: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-ceramics-gold-coast-google-maps-ranking-after.jpg',
   },
 ];
 
 const gbpProof = [
-  { src: '/proof/gbp-calls-89-up-324.png', stat: '89 calls', note: 'Up 324% on the same five months last year' },
-  { src: '/proof/gbp-clicks-164-up-273.png', stat: '164 website clicks', note: 'Up 273% year on year' },
-  { src: '/proof/gbp-clicks-303-up-197.png', stat: '303 website clicks', note: 'Up 197% year on year' },
-  { src: '/proof/gbp-calls-168-up-83.png', stat: '168 calls', note: 'Up 83% year on year' },
-  { src: '/proof/gbp-calls-266-up-23.png', stat: '266 calls', note: 'Up 23% through the wet season, the quietest stretch of the year' },
-  { src: '/proof/gbp-clicks-227-aug-up-21.png', stat: '227 website clicks in August', note: 'Up 21% on last August' },
-  { src: '/proof/gbp-interactions-306-up-18.png', stat: '306 profile interactions', note: 'Up 18% year on year' },
-  { src: '/proof/gbp-interactions-88-from-zero.png', stat: '88 interactions', note: 'From zero. Profile launched in June' },
-  { src: '/proof/gbp-calls-33-from-zero.png', stat: '33 calls', note: 'Same new profile, first three months' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-calls-89-up-324-percent.png', stat: '89 calls', note: 'Up 324% on the same five months last year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-website-clicks-164-up-273-percent.png', stat: '164 website clicks', note: 'Up 273% year on year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-website-clicks-303-up-197-percent.png', stat: '303 website clicks', note: 'Up 197% year on year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-calls-168-up-83-percent.png', stat: '168 calls', note: 'Up 83% year on year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-calls-266-up-23-percent.png', stat: '266 calls', note: 'Up 23% through the wet season, the quietest stretch of the year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-website-clicks-227-august-up-21-percent.png', stat: '227 website clicks in August', note: 'Up 21% on last August' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-interactions-306-up-18-percent.png', stat: '306 profile interactions', note: 'Up 18% year on year' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-interactions-88-from-zero.png', stat: '88 interactions', note: 'From zero. Profile launched in June' },
+  { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-calls-33-from-zero.png', stat: '33 calls', note: 'Same new profile, first three months' },
 ];
 
-const testimonials = ['/proof/client-message-1.jpg', '/proof/client-message-2.jpg'];
+const testimonials = ['/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-1.jpg', '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-2.jpg'];
 
 const steps = [
   {
@@ -180,7 +180,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                         className="proof-card block w-full rounded-lg overflow-hidden border border-ink/[0.06]"
                         aria-label={`${item.client} ${k}, open full size`}
                       >
-                        <img src={item[k]} alt={`${item.client} ${k}`} className="w-full h-auto block" loading="lazy" />
+                        <img src={item[k]} alt={`google business profile gold coast: ${item.client} Google Maps ranking grid ${k}`} className="w-full h-auto block" loading="lazy" />
                       </button>
                     </div>
                   ))}
@@ -217,7 +217,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                 <div className="bg-white">
                   <img
                     src={item.src}
-                    alt={`Google Business Profile performance chart: ${item.stat}`}
+                    alt={`google business profile gold coast: performance chart, ${item.stat}`}
                     className="w-full h-auto block"
                     loading="lazy"
                     width={914}
@@ -251,7 +251,7 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
                 className="proof-card rounded-2xl overflow-hidden border border-gold/20 shadow-[0_4px_24px_rgba(0,0,0,0.14)]"
                 aria-label={`Client message ${i + 1}, open full size`}
               >
-                <img src={src} alt={`Client message ${i + 1}`} className="w-full h-auto block" loading="lazy" />
+                <img src={src} alt={`google business profile gold coast: client message ${i + 1}`} className="w-full h-auto block" loading="lazy" />
               </button>
             ))}
           </AnimateOnScroll>

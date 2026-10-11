@@ -96,8 +96,8 @@ export default function CaseStudiesPage() {
                   className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} group flex flex-col rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden hover:border-gold/40 transition-colors duration-200`}
                 >
                   <div className="aspect-[16/10] overflow-hidden border-b border-ink/[0.06] bg-navy-900">
-                    {c.images.length ? (
-                      <img src={c.images[c.images.length - 1].src} alt={c.images[c.images.length - 1].alt} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                    {c.hubImage ? (
+                      <img src={c.hubImage.src} alt={c.hubImage.alt} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-5xl font-bold text-ink font-serif tabular-nums">{c.figure}</div>
                     )}

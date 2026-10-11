@@ -25,6 +25,8 @@ export interface CaseStudy {
   images: { src: string; alt: string; caption: string }[];
   /** Optional charts built from the figures in `measurement`, rendered after the screenshots. */
   charts?: BarChartSpec[];
+  /** The hub listing's own copy of the lead image, named for the hub page. */
+  hubImage?: { src: string; alt: string };
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -68,9 +70,10 @@ export const caseStudies: CaseStudy[] = [
       'Results this fast are not typical. I plan for 90 days and tell you on the call what is realistic for your category and competition.',
     ],
     images: [
-      { src: '/proof/heatmap-polish-hub-before.jpg', alt: 'Google Maps ranking heatmap for Polish Hub Marine Detailing before the work, mostly red', caption: 'Before: outside the top 10 across most of the grid.' },
-      { src: '/proof/heatmap-polish-hub-after.jpg', alt: 'Google Maps ranking heatmap for Polish Hub Marine Detailing two days later, mostly green', caption: 'After: top 3 across most of the grid, two days later.' },
+      { src: '/images/case-studies/polish-hub-marine-detailing-google-maps/polish-hub-marine-detailing-case-study-polish-hub-google-maps-ranking-before.jpg', alt: 'polish hub marine detailing case study: Polish Hub Google Maps ranking grid before', caption: 'Before: outside the top 10 across most of the grid.' },
+      { src: '/images/case-studies/polish-hub-marine-detailing-google-maps/polish-hub-marine-detailing-case-study-polish-hub-google-maps-ranking-after.jpg', alt: 'polish hub marine detailing case study: Polish Hub Google Maps ranking grid after, top 3 across the grid', caption: 'After: top 3 across most of the grid, two days later.' },
     ],
+    hubImage: { src: '/images/case-studies/hub/case-studies-polish-hub-google-maps-ranking-after.jpg', alt: 'case studies: Polish Hub Google Maps ranking grid after, top 3 across the grid' },
   },
   {
     slug: 'ceramics-gold-coast-google-maps',
@@ -110,9 +113,10 @@ export const caseStudies: CaseStudy[] = [
       'The two exports use two wordings of the same search. Both are kept untouched.',
     ],
     images: [
-      { src: '/proof/heatmap-ceramics-before.jpg', alt: 'Google Maps ranking heatmap for Ceramics Gold Coast before the work, mostly red', caption: 'Before: outside the top 10 across most of the grid.' },
-      { src: '/proof/heatmap-ceramics-after.jpg', alt: 'Google Maps ranking heatmap for Ceramics Gold Coast eleven days later, mostly green', caption: 'After: top 3 across most of the grid, eleven days later.' },
+      { src: '/images/case-studies/ceramics-gold-coast-google-maps/ceramics-gold-coast-case-study-ceramics-gold-coast-google-maps-ranking-before.jpg', alt: 'ceramics gold coast case study: Ceramics Gold Coast Google Maps ranking grid before', caption: 'Before: outside the top 10 across most of the grid.' },
+      { src: '/images/case-studies/ceramics-gold-coast-google-maps/ceramics-gold-coast-case-study-ceramics-gold-coast-google-maps-ranking-after.jpg', alt: 'ceramics gold coast case study: Ceramics Gold Coast Google Maps ranking grid after, top 3 across the grid', caption: 'After: top 3 across most of the grid, eleven days later.' },
     ],
+    hubImage: { src: '/images/case-studies/hub/case-studies-ceramics-gold-coast-google-maps-ranking-after.jpg', alt: 'case studies: Ceramics Gold Coast Google Maps ranking grid after, top 3 across the grid' },
   },
   {
     slug: 'gold-coast-plumber-calls-from-google-nearly-tripled',
@@ -153,9 +157,10 @@ export const caseStudies: CaseStudy[] = [
       'Weekly call counts swing a lot (5 one week, 19 another), so the comparison uses three-month totals.',
     ],
     images: [
-      { src: '/proof/plumber-gold-coast-before.jpg', alt: 'Google Maps ranking grid for a Gold Coast plumber on 28 July 2026, top 3 at 40 of 49 points', caption: 'Before, 28 Jul 2026: top 3 at 40 of 49 points, average position 1.82.' },
-      { src: '/proof/plumber-gold-coast-after.jpg', alt: 'Google Maps ranking grid for a Gold Coast plumber on 1 October 2026, top 3 at 46 of 49 points', caption: 'After, 1 Oct 2026: top 3 at 46 of 49 points, average position 1.45.' },
+      { src: '/images/case-studies/gold-coast-plumber-calls-from-google-nearly-tripled/gold-coast-plumber-case-study-gold-coast-plumber-google-maps-ranking-before.jpg', alt: 'gold coast plumber case study: Gold Coast plumber Google Maps ranking grid, 28 July 2026, top 3 at 40 of 49 points', caption: 'Before, 28 Jul 2026: top 3 at 40 of 49 points, average position 1.82.' },
+      { src: '/images/case-studies/gold-coast-plumber-calls-from-google-nearly-tripled/gold-coast-plumber-case-study-gold-coast-plumber-google-maps-ranking-after.jpg', alt: 'gold coast plumber case study: Gold Coast plumber Google Maps ranking grid, 1 October 2026, top 3 at 46 of 49 points', caption: 'After, 1 Oct 2026: top 3 at 46 of 49 points, average position 1.45.' },
     ],
+    hubImage: { src: '/images/case-studies/hub/case-studies-gold-coast-plumber-google-maps-ranking-after.jpg', alt: 'case studies: Gold Coast plumber Google Maps ranking grid, 1 October 2026, top 3 at 46 of 49 points' },
     charts: [
       {
         title: 'Three months before vs the latest three months',
@@ -208,9 +213,10 @@ export const caseStudies: CaseStudy[] = [
       'Rankings move week to week: this term sat at 61% top-3 on 1 August and 51% on 26 September. The comparison is the earliest and latest like-for-like scans.',
     ],
     images: [
-      { src: '/proof/plumber-logan-before.jpg', alt: 'Google Maps ranking grid for a Logan plumber on 27 July 2026, top 3 at 23 of 49 points', caption: 'Before, 27 Jul 2026: top 3 at 23 of 49 points, average position 4.85.' },
-      { src: '/proof/plumber-logan-after.jpg', alt: 'Google Maps ranking grid for a Logan plumber on 1 October 2026, top 3 at 29 of 49 points', caption: 'After, 1 Oct 2026: top 3 at 29 of 49 points, average position 3.61.' },
+      { src: '/images/case-studies/logan-plumber-2-5x-calls-in-first-three-months/logan-plumber-case-study-logan-plumber-google-maps-ranking-before.jpg', alt: 'logan plumber case study: Logan plumber Google Maps ranking grid, 27 July 2026, top 3 at 23 of 49 points', caption: 'Before, 27 Jul 2026: top 3 at 23 of 49 points, average position 4.85.' },
+      { src: '/images/case-studies/logan-plumber-2-5x-calls-in-first-three-months/logan-plumber-case-study-logan-plumber-google-maps-ranking-after.jpg', alt: 'logan plumber case study: Logan plumber Google Maps ranking grid, 1 October 2026, top 3 at 29 of 49 points', caption: 'After, 1 Oct 2026: top 3 at 29 of 49 points, average position 3.61.' },
     ],
+    hubImage: { src: '/images/case-studies/hub/case-studies-logan-plumber-google-maps-ranking-after.jpg', alt: 'case studies: Logan plumber Google Maps ranking grid, 1 October 2026, top 3 at 29 of 49 points' },
     charts: [
       {
         title: 'Three months before vs the first three months',
@@ -262,9 +268,10 @@ export const caseStudies: CaseStudy[] = [
       'Calls are taps on the Call button in Google, not answered calls or booked jobs.',
     ],
     images: [
-      { src: '/proof/plumber-perth-before.jpg', alt: 'Google Maps ranking grid for a Perth plumber on 24 July 2026, number 1 at 5 of 49 points', caption: 'Before, 24 Jul 2026: number 1 at 5 of 49 points, average position 1.94.' },
-      { src: '/proof/plumber-perth-after.jpg', alt: 'Google Maps ranking grid for a Perth plumber on 28 August 2026, number 1 at all 49 points', caption: 'After, 28 Aug 2026: number 1 at 49 of 49 points, average position 1.00.' },
+      { src: '/images/case-studies/perth-plumber-number-1-across-the-whole-grid/perth-plumber-case-study-perth-plumber-google-maps-ranking-before.jpg', alt: 'perth plumber case study: Perth plumber Google Maps ranking grid, 24 July 2026, number 1 at 5 of 49 points', caption: 'Before, 24 Jul 2026: number 1 at 5 of 49 points, average position 1.94.' },
+      { src: '/images/case-studies/perth-plumber-number-1-across-the-whole-grid/perth-plumber-case-study-perth-plumber-google-maps-ranking-after.jpg', alt: 'perth plumber case study: Perth plumber Google Maps ranking grid, 28 August 2026, number 1 at all 49 points', caption: 'After, 28 Aug 2026: number 1 at 49 of 49 points, average position 1.00.' },
     ],
+    hubImage: { src: '/images/case-studies/hub/case-studies-perth-plumber-google-maps-ranking-after.jpg', alt: 'case studies: Perth plumber Google Maps ranking grid, 28 August 2026, number 1 at all 49 points' },
     charts: [
       {
         title: 'Map points in the top 3, first scan vs one month later',

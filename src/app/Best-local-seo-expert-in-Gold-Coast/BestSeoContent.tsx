@@ -24,8 +24,8 @@ const proof = [
     body:
       'Work I do for another agency, so the businesses are not named. Two plumbers went from 79 calls from Google in the three months before the work to 208 in the latest three, one of them 2.7x and the other 2.5x. A Perth plumber went from number 1 at 5 of 49 grid points to all 49 in five weeks. Each one is written up with dates, scans and caveats in the case studies.',
     images: [
-      { src: '/proof/plumber-gold-coast-after.jpg', alt: 'Google Maps ranking grid for a Gold Coast plumber, top 3 at 46 of 49 points, 1 October 2026' },
-      { src: '/proof/plumber-perth-after.jpg', alt: 'Google Maps ranking grid for a Perth plumber, number 1 at all 49 points, 28 August 2026' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-gold-coast-plumber-google-maps-ranking-after.jpg', alt: 'best local seo expert in gold coast: Gold Coast plumber Google Maps ranking grid, 1 October 2026, top 3 at 46 of 49 points' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-perth-plumber-google-maps-ranking-after.jpg', alt: 'best local seo expert in gold coast: Perth plumber Google Maps ranking grid, 28 August 2026, number 1 at all 49 points' },
     ],
   },
   {
@@ -34,8 +34,8 @@ const proof = [
     body:
       'Local SEO is measured on a map, not a keyword tool. Polish Hub Marine Detailing went from outside the top 10 across most of a ranking grid to the top 3 on most points in two days. Ceramics Gold Coast did the same in eleven, from an average rank of 20 across the grid to 3.02. Both are written up with dates, search terms and the limits of the scan in the case studies.',
     images: [
-      { src: '/proof/heatmap-polish-hub-after.jpg', alt: 'Google Maps ranking heatmap, Polish Hub Marine Detailing, top 3 across most of the grid' },
-      { src: '/proof/heatmap-ceramics-after.jpg', alt: 'Google Maps ranking heatmap, Ceramics Gold Coast, top 3 across most of the grid' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-polish-hub-google-maps-ranking-after.jpg', alt: 'best local seo expert in gold coast: Polish Hub Google Maps ranking grid after, top 3 across the grid' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-ceramics-gold-coast-google-maps-ranking-after.jpg', alt: 'best local seo expert in gold coast: Ceramics Gold Coast Google Maps ranking grid after, top 3 across the grid' },
     ],
   },
   {
@@ -44,8 +44,8 @@ const proof = [
     body:
       'Both fixes were the same. A page for each service and suburb, in the words people here actually type. The Business Profile set to the same categories and services as the website. Real photos, every review answered, then the weekly routine. Google rewards a business whose profile and website agree. Most local sites contradict their own listing.',
     images: [
-      { src: '/proof/heatmap-polish-hub-before.jpg', alt: 'Google Maps ranking heatmap before the local SEO work, Polish Hub Marine Detailing, mostly outside the top 10' },
-      { src: '/proof/heatmap-ceramics-before.jpg', alt: 'Google Maps ranking heatmap before the local SEO work, Ceramics Gold Coast, mostly outside the top 10' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-polish-hub-google-maps-ranking-before.jpg', alt: 'best local seo expert in gold coast: Polish Hub Google Maps ranking grid before' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-ceramics-gold-coast-google-maps-ranking-before.jpg', alt: 'best local seo expert in gold coast: Ceramics Gold Coast Google Maps ranking grid before' },
     ],
   },
   {
@@ -54,8 +54,8 @@ const proof = [
     body:
       'One profile took 266 calls in five months, up 23% on the year before, through the quietest stretch of the year. Another did 89 calls in a month, up 324% on the same months last year. A brand-new profile went from zero to 33 calls in its first three months. "Calls" is Google’s own metric, taps on the call button, so it counts people who tried to ring, not jobs won.',
     images: [
-      { src: '/proof/gbp-calls-266-up-23.png', alt: '266 calls in five months, up 23%, from a client Google Business Profile' },
-      { src: '/proof/gbp-calls-33-from-zero.png', alt: '33 calls in the first three months of a new Google Business Profile' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-google-business-profile-calls-266-up-23-percent.png', alt: 'best local seo expert in gold coast: 266 calls in five months from a Google Business Profile, up 23%' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-google-business-profile-calls-33-from-zero.png', alt: 'best local seo expert in gold coast: 33 calls in the first three months of a new Google Business Profile' },
     ],
   },
   {
@@ -64,8 +64,8 @@ const proof = [
     body:
       'Website clicks from one profile rose 273% year on year to 164. Another rose 197% to 303. These are people who found the business on Maps and went looking for the site, which is where the service pages do their job and the booking happens.',
     images: [
-      { src: '/proof/gbp-clicks-164-up-273.png', alt: '164 website clicks, up 273% year on year, from a client Google Business Profile' },
-      { src: '/proof/gbp-clicks-303-up-197.png', alt: '303 website clicks, up 197% year on year, from a client Google Business Profile' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-google-business-profile-website-clicks-164-up-273-percent.png', alt: 'best local seo expert in gold coast: 164 website clicks from a Google Business Profile, up 273%' },
+      { src: '/images/best-local-seo-expert-in-gold-coast/best-local-seo-expert-in-gold-coast-google-business-profile-website-clicks-303-up-197-percent.png', alt: 'best local seo expert in gold coast: 303 website clicks from a Google Business Profile, up 197%' },
     ],
   },
 ];
