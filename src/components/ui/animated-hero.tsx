@@ -1,18 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
 import { MoveRight, PhoneCall, Pause, Play } from 'lucide-react';
 import Link from 'next/link';
 import HeroProofCard from '@/components/HeroProofCard';
-import { EASE_OUT } from '@/lib/motion';
-
-// Mirrors the two cards in ServicesGrid so the hero and the page say the same thing.
-const services = [
-  'Local SEO',
-  'Google Business Profile optimisation',
-  'AI Search Optimisation (GEO)',
-];
 
 const STATS = [
   'Top 3 on Google Maps in 2 days',
@@ -28,28 +19,15 @@ const STATS = [
 
 const PARTNERS = [{ src: '/new-Google-Partner-logo-png-large-size.png', alt: 'Google Partner' }];
 
-const DISPLAY_MS = 3800;
-
 function delay(ms: number) {
   return { ['--d' as string]: `${ms}ms` };
 }
 
 export function AnimatedHero() {
-  const [titleNumber, setTitleNumber] = useState(0);
   const [paused, setPaused] = useState(false);
-  const reduce = useReducedMotion();
-  const rotating = !paused && !reduce;
   const sectionRef = useRef<HTMLElement>(null);
   const blob1 = useRef<HTMLDivElement>(null);
   const blob2 = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!rotating) return;
-    const timeoutId = setTimeout(() => {
-      setTitleNumber((prev) => (prev === services.length - 1 ? 0 : prev + 1));
-    }, DISPLAY_MS);
-    return () => clearTimeout(timeoutId);
-  }, [titleNumber, rotating]);
 
   // One switch stops every looping animation on the page (ticker, chips, glows, logo rows)
   useEffect(() => {
@@ -122,30 +100,10 @@ export function AnimatedHero() {
             </h1>
 
             <h2
-              className="hero-in relative overflow-hidden h-[70px] sm:h-[80px] lg:h-[92px] mt-3"
+              className="hero-in mt-4 text-xl sm:text-2xl lg:text-[1.75rem] font-bold font-serif text-ink/80 leading-snug tracking-tight max-w-2xl mx-auto lg:mx-0"
               style={delay(160)}
-              aria-live="off"
             >
-              {services.map((title, index) => {
-                const isCurrent = titleNumber === index;
-                const isPast = index < titleNumber || (titleNumber === 0 && index === services.length - 1);
-                return (
-                  <motion.span
-                    key={title}
-                    className="absolute inset-x-0 text-center lg:text-left text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-gold tracking-tighter leading-tight pt-1"
-                    initial={false}
-                    animate={
-                      isCurrent
-                        ? { opacity: 1, transform: 'translateX(0px)' }
-                        : { opacity: 0, transform: isPast ? 'translateX(-64px)' : 'translateX(64px)' }
-                    }
-                    transition={isCurrent ? { duration: 0.9, ease: EASE_OUT } : { duration: 0.45, ease: EASE_OUT }}
-                    aria-hidden={!isCurrent}
-                  >
-                    {title}
-                  </motion.span>
-                );
-              })}
+              Marketing Agency &amp; Marketing Consultant for Local SEO, Google Business Profile Optimisation &amp; AI Search (GEO) in Ormeau
             </h2>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-ink/80 max-w-xl mx-auto lg:mx-0 mt-5 font-sans">
