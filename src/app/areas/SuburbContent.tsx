@@ -11,7 +11,7 @@ import { SUBURBS, type SuburbPage } from './suburbs';
 const services = [
   { title: 'Google Business Profile', blurb: 'Top 3 on Maps for the searches that happen a few kilometres from you.', href: '/google-business-profile-gold-coast', icon: MapPin },
   { title: 'Local SEO', blurb: 'A page for every service and every suburb you serve, so Google has something to rank.', href: '/best-local-seo-expert-in-gold-coast', icon: Search },
-  { title: 'AI Search (GEO)', blurb: 'Named when someone here asks ChatGPT or Google AI who to call.', href: '/book', icon: Sparkles },
+  { title: 'AI Search (GEO)', blurb: 'Named when someone here asks ChatGPT or Google AI who to call.', href: '/ai-search-geo-gold-coast', icon: Sparkles },
 ];
 
 const proof = [

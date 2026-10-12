@@ -27,8 +27,22 @@ const services = [
     title: 'AI Search (GEO)',
     description:
       'When someone asks ChatGPT, Gemini or Google AI who to call, the answer is built from the same local signals: a consistent business record, a profile that matches the website, and proof the models can read. I tune all three so your business is the one that gets named.',
-    href: '/book',
+    href: '/ai-search-geo-gold-coast',
   },
+];
+
+const supporting = [
+  { title: 'SEO for tradies', description: 'Why trades win or lose on Maps, the five things that decide a tradie’s position, and the numbers from plumbers.', href: '/seo-for-tradies-gold-coast' },
+  { title: 'Google Maps ranking', description: 'How the top 3 is decided, why your rank changes street by street, and how a ranking grid measures it.', href: '/google-maps-ranking-gold-coast' },
+  { title: 'Review management', description: 'A request system that gets reviews every week, replies that help ranking, and what to do about unfair ones.', href: '/review-management-gold-coast' },
+  { title: 'Local citations and directory listings', description: 'Which Australian directories matter, and making your name, address and phone identical everywhere.', href: '/local-citations-gold-coast' },
+  { title: 'Local SEO audit', description: 'What the audit covers, what the report looks like, and the eight problems I find most on the Gold Coast.', href: '/local-seo-audit-gold-coast' },
+];
+
+const trades = [
+  { title: 'SEO for plumbers', description: 'The profile set-up for “plumber near me”, the pages a plumbing site needs, and two plumbers’ numbers.', href: '/seo-for-plumbers' },
+  { title: 'SEO for electricians', description: 'Urgent versus planned electrical searches, and the switchboard, EV and solar pages that win quotes.', href: '/seo-for-electricians' },
+  { title: 'SEO for builders', description: 'Fewer searches, bigger jobs: project pages, process, honest cost guides and the Remodeler category.', href: '/seo-for-builders' },
 ];
 
 export default function ServicesContent() {
@@ -51,7 +65,7 @@ export default function ServicesContent() {
               Local SEO &amp; Google Business Profile, Gold Coast
             </h1>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
-              Local SEO, Google Business Profile optimisation and AI search. Three parts of one job: getting a local business found by the people a few kilometres away who are ready to call.
+              Local SEO, Google Business Profile optimisation and AI search are the job. The pages below explain each part of it, and how it plays out for the trades I work with most.
             </p>
           </div>
         </div>
@@ -88,6 +102,36 @@ export default function ServicesContent() {
                 </AnimateOnScroll>
               );
             })}
+          </div>
+          <div className="mt-16">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink font-serif mb-2">Supporting pages</h2>
+            <p className="text-base text-ink/65 font-sans mb-6 max-w-2xl">The parts of the job, each explained on its own page.</p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {supporting.map((item) => (
+                <Link key={item.href} href={item.href} className="group block rounded-2xl border border-ink/10 bg-white/55 p-5 hover:bg-white/85 hover:border-ink/30 transition-colors duration-200">
+                  <h3 className="text-base font-bold text-ink font-serif mb-1.5">{item.title}</h3>
+                  <p className="text-sm text-ink/70 font-sans leading-relaxed">{item.description}</p>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-ink font-sans">
+                    Read <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="mt-12">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink font-serif mb-2">By trade</h2>
+            <p className="text-base text-ink/65 font-sans mb-6 max-w-2xl">The same method, written for the trades I work with most.</p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {trades.map((item) => (
+                <Link key={item.href} href={item.href} className="group block rounded-2xl border border-ink/10 bg-white/55 p-5 hover:bg-white/85 hover:border-ink/30 transition-colors duration-200">
+                  <h3 className="text-base font-bold text-ink font-serif mb-1.5">{item.title}</h3>
+                  <p className="text-sm text-ink/70 font-sans leading-relaxed">{item.description}</p>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-ink font-sans">
+                    Read <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

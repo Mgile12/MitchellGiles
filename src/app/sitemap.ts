@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import { caseStudies } from './case-studies/data';
+import { SERVICE_PAGES } from './services/services-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = BUSINESS_INFO.url;
@@ -8,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/services/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/google-business-profile-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    ...SERVICE_PAGES.map((sp) => ({ url: `${baseUrl}/${sp.slug}/`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: sp.group === 'core' ? 0.9 : 0.7 })),
     { url: `${baseUrl}/email-marketing-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/best-local-seo-expert-in-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
   ];

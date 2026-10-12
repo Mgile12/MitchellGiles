@@ -6,6 +6,7 @@ import { MapPin, ArrowRight, ArrowDown, ChevronDown, Search, Magnet, CalendarDay
 import Lightbox from '@/components/Lightbox';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
+import GBPDepth from './GBPDepth';
 
 const heatmaps = [
   {
@@ -287,6 +288,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
       </section>
 
       {/* FAQ */}
+      <GBPDepth />
+
       <section>
         <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-10">Questions I get asked</h2>

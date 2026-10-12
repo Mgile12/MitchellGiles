@@ -8,8 +8,9 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 const serviceLinks = [
   { label: 'Google Business Profile', href: '/google-business-profile-gold-coast' },
   { label: 'Local SEO', href: '/best-local-seo-expert-in-gold-coast' },
-  { label: 'AI Search (GEO)', href: '/book' },
+  { label: 'AI Search (GEO)', href: '/ai-search-geo-gold-coast' },
   { label: 'Case studies', href: '/case-studies' },
+  { label: 'All services', href: '/services' },
 ];
 
 export default function HeaderNav() {

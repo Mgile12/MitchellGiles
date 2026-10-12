@@ -20,7 +20,7 @@ const services = [
   {
     title: 'AI Search (GEO)',
     blurb: 'Getting your business named when someone asks ChatGPT, Gemini or Google AI who to call. The same local signals, tuned for how the models choose.',
-    href: '/book',
+    href: '/ai-search-geo-gold-coast',
     icon: Sparkles,
   },
 ];

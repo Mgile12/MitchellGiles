@@ -64,7 +64,7 @@ const servicesHere = [
   {
     title: 'AI Search (GEO)',
     blurb: 'Named when someone in the corridor asks ChatGPT or Google AI who to call.',
-    href: '/book',
+    href: '/ai-search-geo-gold-coast',
     icon: Sparkles,
   },
 ];
@@ -222,7 +222,7 @@ export default function OrmeauContent() {
                 text:
                   'When someone in Pimpama or Coomera asks ChatGPT or Google AI for a plumber, a detailer or a physio, the answer comes from the same signals Maps uses: a consistent business record, a profile that matches the website, and proof the models can read. I tune those so the answer is you.',
                 cta: 'AI Search',
-                href: '/book',
+                href: '/ai-search-geo-gold-coast',
               },
             ].map((step, i) => (
               <div
