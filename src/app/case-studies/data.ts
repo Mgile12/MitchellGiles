@@ -27,6 +27,8 @@ export interface CaseStudy {
   charts?: BarChartSpec[];
   /** The hub listing's own copy of the lead image, named for the hub page. */
   hubImage?: { src: string; alt: string };
+  /** Not listed on the hub (reachable from its service page and the sitemap). */
+  hidden?: boolean;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -360,6 +362,124 @@ export const caseStudies: CaseStudy[] = [
         markLabel: 'Work starts',
         note: 'Google Business Profile performance data via Local Falcon, pulled 11 Oct 2026.',
       },
+    ],
+  },
+  {
+    slug: 'email-marketing-60k-in-30-days',
+    hidden: true,
+    client: 'Online retailer (not named publicly)',
+    industry: 'E-commerce',
+    location: 'Australia',
+    service: 'Email Marketing',
+    serviceHref: '/email-marketing-gold-coast',
+    headline: '$60,632 from email in 30 days, from a list the store already owned',
+    figure: '$60,632',
+    figureLabel: 'attributed to email in 30 days, 63.4% of the store’s revenue',
+    summary:
+      'A store with thousands of past customers on a list it rarely emailed. In one 30-day window, campaigns and automations to that list attributed $60,632, which was 63.4% of everything the store sold that month.',
+    problem:
+      'The store had paid once, through ads, to acquire every customer on its list, then left the list alone. Email was a small share of revenue and most of the list had not heard from the brand in months.',
+    work: [
+      'Cleaned and segmented the list by purchase history and engagement.',
+      'Built the core automations: welcome, browse and cart recovery, post-purchase and win-back.',
+      'Ran a calendar of campaigns to the engaged segments with one clear offer each, not a weekly newsletter.',
+      'Tracked attributed revenue in the email platform against total store revenue for the same 30 days.',
+    ],
+    period: 'The 30-day window shown in the screenshot, compared with the previous 30 days.',
+    measurement: [
+      { label: 'Attributed revenue', value: '$60,632 in 30 days, up $46,065 on the previous 30 days' },
+      { label: 'Store revenue', value: '$95,593 in the same 30 days, up $30,825' },
+      { label: 'Share of revenue from email', value: '63.4%' },
+      { label: 'Source', value: 'The email platform’s revenue report, screenshot untouched' },
+    ],
+    attribution:
+      'Attributed revenue is the email platform’s own last-click attribution: orders placed after a click on an email, within its attribution window. Store revenue is every order in the period. The email figure is a share of the store figure, not on top of it.',
+    corroboration: 'The screenshot is from the client’s email platform. The client is not named at their request.',
+    limitations: [
+      'Platform attribution gives email credit for orders that may have happened anyway. Treat 63.4% as the platform’s view, not a controlled test.',
+      'The store’s total revenue also rose that month, so part of the lift is a busier month, not only email.',
+      'A list this size and a product people reorder are the conditions that make this possible. A new store with no list cannot expect the same in 30 days.',
+    ],
+    images: [
+      { src: '/images/case-studies/email-marketing-60k-in-30-days/online-retailer-email-case-study-60632-dollars-from-email-in-30-days.webp', alt: 'online retailer email case study: $60,632 attributed to email in 30 days, 63.4% of store revenue', caption: 'Attributed revenue A$60,632 against store revenue A$95,593 for the same 30 days.' },
+    ],
+  },
+  {
+    slug: 'email-campaign-72-percent-open-rate',
+    hidden: true,
+    client: 'Service business (not named publicly)',
+    industry: 'Local services',
+    location: 'Australia',
+    service: 'Email Marketing',
+    serviceHref: '/email-marketing-gold-coast',
+    headline: '72% open rate and 10.3% click rate on one campaign to an existing list',
+    figure: '72%',
+    figureLabel: 'open rate, 10.3% click rate, on one campaign',
+    summary:
+      'One campaign to a list the client already had, written as a single plain offer to the right segment. 72% of the people it reached opened it and 10.3% clicked, against 35.9% and 446% lifts on the previous 30 days.',
+    problem:
+      'The list was being sent a generic newsletter, when it was sent anything at all. Opens were in the 50s and clicks under 2%, so the list was costing money to keep and making none.',
+    work: [
+      'Segmented the list to the people the offer was actually for.',
+      'One subject line, one offer, one button. No newsletter padding.',
+      'Sent from a named person, at a time the segment was known to open.',
+      'Measured against the previous 30 days in the same platform.',
+    ],
+    period: 'One send, measured against the platform’s previous 30-day figures.',
+    measurement: [
+      { label: 'Open rate', value: '72.0%, up 35.9% on the previous 30 days' },
+      { label: 'Click rate', value: '10.3%, up 446% on the previous 30 days' },
+      { label: 'Source', value: 'The email platform’s campaign report, screenshot untouched' },
+    ],
+    attribution: 'Open and click rates are the platform’s own. Opens are inflated by mail clients that pre-load images, so the click rate is the number that matters.',
+    corroboration: 'The screenshot is from the client’s email platform. The client is not named.',
+    limitations: [
+      'One campaign. A good send to a warm segment is repeatable, but it is not a monthly average.',
+      'Open rates across the industry are inflated by privacy features that pre-open mail; clicks are the honest figure.',
+      'No revenue figure is attached to this send, so it proves engagement, not sales.',
+    ],
+    images: [
+      { src: '/images/case-studies/email-campaign-72-percent-open-rate/email-campaign-case-study-72-percent-open-rate-campaign.webp', alt: 'email campaign case study: 72% open rate and 10.3% click rate on one email campaign', caption: 'Click rate 10.3% (up 446%) and open rate 72.0% (up 35.9%) against the previous 30 days.' },
+    ],
+  },
+  {
+    slug: 'event-waitlist-launch-sequence-82k',
+    hidden: true,
+    client: 'Event business (not named publicly)',
+    industry: 'Events',
+    location: 'Australia',
+    service: 'Email Marketing',
+    serviceHref: '/email-marketing-gold-coast',
+    headline: '$82,574 in under three hours from a launch sequence to an event waitlist',
+    figure: '$82,574',
+    figureLabel: 'in sales from 31 orders, in under three hours, no ads',
+    summary:
+      'A high-ticket upsell offered to the waitlist from a live event. The launch sequence went out, and in under three hours the offer had taken $82,574 across 31 orders with no ad spend. The same sequence was run a second time and worked again.',
+    problem:
+      'The business had a waitlist of people who had already shown up to an event and asked to hear about the next step, but no sequence to convert that interest while it was warm.',
+    work: [
+      'Built the waitlist from the live event, with a clear promise of what was coming.',
+      'Wrote a short launch sequence: the announcement, the reasons, the deadline.',
+      'Opened the offer for a fixed window and closed it on time.',
+      'Ran the same sequence again for the next event.',
+    ],
+    period: 'The launch window shown in the screenshot, under three hours from the first send. Repeated once.',
+    measurement: [
+      { label: 'Sales', value: '$82,574' },
+      { label: 'Orders', value: '31' },
+      { label: 'Ad spend', value: 'None' },
+      { label: 'Source', value: 'The store’s sales dashboard for the day, screenshot untouched' },
+    ],
+    attribution:
+      'The offer was only announced to the waitlist through the sequence and at the event itself, so the sales are the sequence plus the room. There is no way to split the two cleanly.',
+    corroboration: 'The screenshot is from the client’s sales dashboard. The client is not named.',
+    limitations: [
+      'This depends on a live event and a warm waitlist. It is not an email result a cold list can expect.',
+      'The dashboard shows the day’s sales, not a per-email attribution report.',
+      'Two runs is a pattern, not a guarantee.',
+    ],
+    images: [
+      { src: '/images/case-studies/event-waitlist-launch-sequence-82k/event-launch-sequence-case-study-82574-dollars-event-launch-sequence.webp', alt: 'event launch sequence case study: $82,574 in sales from a launch sequence to an event waitlist, 31 orders', caption: 'Total sales $82,574 from 31 orders on the day of the launch.' },
     ],
   },
 ];

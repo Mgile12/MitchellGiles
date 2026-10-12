@@ -35,7 +35,7 @@ function buildJsonLd() {
       description: DESCRIPTION,
       url: `${BUSINESS_INFO.url}${PATH}/`,
       about: { '@id': `${BUSINESS_INFO.url}/#business` },
-      hasPart: caseStudies.map((c) => ({ '@type': 'Article', headline: c.headline, url: `${BUSINESS_INFO.url}${PATH}/${c.slug}/` })),
+      hasPart: caseStudies.filter((c) => !c.hidden).map((c) => ({ '@type': 'Article', headline: c.headline, url: `${BUSINESS_INFO.url}${PATH}/${c.slug}/` })),
     },
     {
       '@context': 'https://schema.org',
@@ -89,7 +89,7 @@ export default function CaseStudiesPage() {
         <section className="relative" aria-label="Case study list">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
             <AnimateOnScroll variant="group" className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {caseStudies.map((c, i) => (
+              {caseStudies.filter((c) => !c.hidden).map((c, i) => (
                 <Link
                   key={c.slug}
                   href={`${PATH}/${c.slug}`}

@@ -16,6 +16,7 @@ export default function Footer() {
         { href: '/google-business-profile-gold-coast', label: 'Google Business Profile' },
         { href: '/best-local-seo-expert-in-gold-coast', label: 'Local SEO' },
         { href: '/case-studies', label: 'Case studies' },
+        { href: '/email-marketing-gold-coast', label: 'Email marketing' },
         { href: '/book', label: 'Book a call' },
       ]}
       contactInfo={{
