@@ -1,4 +1,5 @@
-import { Users, Globe2, Scissors, CalendarCheck } from 'lucide-react';
+import Link from 'next/link';
+import { Users, Globe2, Scissors, CalendarCheck, ArrowRight } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 import CountUp from './CountUp';
 import Eyebrow from './Eyebrow';
@@ -103,6 +104,9 @@ export default function AboutSection() {
                 Mitchell Giles, Ormeau
               </figcaption>
             </figure>
+            <Link href="/hardest-working-seo-expert-in-gold-coast" className="inline-flex items-center gap-2 text-sm font-semibold text-ink hover:text-ink/70 transition-colors duration-150 font-sans">
+              Meet the hardest working SEO expert in Gold Coast <ArrowRight className="w-4 h-4" />
+            </Link>
             <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">
                 Three numbers, all from client accounts

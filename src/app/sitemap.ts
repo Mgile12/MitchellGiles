@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/areas/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/areas/ormeau/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/best-marketing-agency-in-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/hardest-working-seo-expert-in-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/case-studies/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     ...caseStudies.map((c) => ({ url: `${baseUrl}/case-studies/${c.slug}/`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 })),
   ];
