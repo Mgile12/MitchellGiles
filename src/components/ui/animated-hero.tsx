@@ -10,9 +10,8 @@ import { EASE_OUT } from '@/lib/motion';
 // Mirrors the two cards in ServicesGrid so the hero and the page say the same thing.
 const services = [
   'Local SEO',
-  'Google Business Profile',
-  'AI Search (GEO)',
-  'Top 3 on Google Maps',
+  'Google Business Profile optimisation',
+  'AI Search Optimisation (GEO)',
 ];
 
 const STATS = [
@@ -122,8 +121,8 @@ export function AnimatedHero() {
               Internet Marketing Service Ormeau
             </h1>
 
-            <div
-              className="hero-in relative overflow-hidden h-[48px] sm:h-[56px] lg:h-[64px] mt-3"
+            <h2
+              className="hero-in relative overflow-hidden h-[70px] sm:h-[80px] lg:h-[92px] mt-3"
               style={delay(160)}
               aria-live="off"
             >
@@ -133,7 +132,7 @@ export function AnimatedHero() {
                 return (
                   <motion.span
                     key={title}
-                    className="absolute inset-x-0 text-center lg:text-left text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-gold tracking-tighter whitespace-nowrap leading-none pt-1"
+                    className="absolute inset-x-0 text-center lg:text-left text-2xl sm:text-3xl lg:text-4xl font-bold font-serif text-gold tracking-tighter leading-tight pt-1"
                     initial={false}
                     animate={
                       isCurrent
@@ -147,7 +146,7 @@ export function AnimatedHero() {
                   </motion.span>
                 );
               })}
-            </div>
+            </h2>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-ink/80 max-w-xl mx-auto lg:mx-0 mt-5 font-sans">
               I get local businesses into the top 3 on Google Maps, and named when people ask AI who to call. Local
