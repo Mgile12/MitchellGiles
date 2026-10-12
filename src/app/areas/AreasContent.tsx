@@ -41,23 +41,79 @@ export default function AreasContent() {
             Suburbs I work in most
           </h2>
           <p className="text-base sm:text-lg text-ink/65 font-sans max-w-2xl mb-8">
-            Ormeau is home. The rest of the northern Gold Coast corridor is a short drive, and each suburb is getting
-            its own page.
+            Ormeau is home. These are the twenty suburbs I work in, closest first. The ones with a link have their own
+            page, because that is where the searches are; the rest are covered from the nearest one.
           </p>
           <ul className="flex flex-wrap gap-3 font-sans">
             <li>
               <Link
                 href="/areas/ormeau"
-                className="press inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-2 text-sm font-semibold text-ink hover:bg-gold/20"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
               >
-                Ormeau <ArrowRight className="w-4 h-4 text-gold" />
+                Ormeau <ArrowRight className="w-4 h-4" />
               </Link>
             </li>
-            {['Pimpama', 'Coomera', 'Upper Coomera', 'Helensvale', 'Oxenford', 'Gold Coast', 'Brisbane'].map((area) => (
-              <li key={area} className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">
-                {area}
-              </li>
-            ))}
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Ormeau Hills</li>
+            <li>
+              <Link
+                href="/areas/pimpama"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Pimpama <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/areas/coomera"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Coomera <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/areas/upper-coomera"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Upper Coomera <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/areas/yatala"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Yatala <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/areas/stapylton"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Stapylton <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Jacobs Well</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Alberton</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Willow Vale</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Gilberton</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Norwell</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Woongoolba</li>
+            <li>
+              <Link
+                href="/areas/beenleigh"
+                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
+              >
+                Beenleigh <ArrowRight className="w-4 h-4" />
+              </Link>
+            </li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Eagleby</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Bahrs Scrub</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Waterford</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Oxenford</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Helensvale</li>
+            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Hope Island</li>
           </ul>
         </div>
       </section>

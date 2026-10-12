@@ -4,7 +4,7 @@ import { Footer as UIFooter } from '@/components/ui/footer';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../lib/business-info';
 
-const footerAreaLinks = [{ href: '/areas', label: 'View All Areas' }];
+const footerAreaLinks = [{ href: '/areas/ormeau', label: 'Ormeau' }, { href: '/areas', label: 'Ormeau Hills' }, { href: '/areas/pimpama', label: 'Pimpama' }, { href: '/areas/coomera', label: 'Coomera' }, { href: '/areas/upper-coomera', label: 'Upper Coomera' }, { href: '/areas/yatala', label: 'Yatala' }, { href: '/areas/stapylton', label: 'Stapylton' }, { href: '/areas', label: 'Jacobs Well' }, { href: '/areas', label: 'Alberton' }, { href: '/areas', label: 'Willow Vale' }, { href: '/areas', label: 'Gilberton' }, { href: '/areas', label: 'Norwell' }, { href: '/areas', label: 'Woongoolba' }, { href: '/areas/beenleigh', label: 'Beenleigh' }, { href: '/areas', label: 'Eagleby' }, { href: '/areas', label: 'Bahrs Scrub' }, { href: '/areas', label: 'Waterford' }, { href: '/areas', label: 'Oxenford' }, { href: '/areas', label: 'Helensvale' }, { href: '/areas', label: 'Hope Island' }, { href: '/areas', label: 'View All Areas' }];
 
 export default function Footer() {
   return (

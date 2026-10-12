@@ -129,7 +129,7 @@ export default function HeaderNav() {
               href="/areas"
               className="py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
             >
-              Areas
+              Areas we serve
             </Link>
 
             <button
@@ -205,7 +205,7 @@ export default function HeaderNav() {
             onClick={() => setMobileOpen(false)}
             className="block w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
           >
-            Areas
+            Areas we serve
           </Link>
 
           <button
