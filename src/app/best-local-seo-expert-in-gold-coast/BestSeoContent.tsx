@@ -5,6 +5,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import CountUp from '@/components/CountUp';
 import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
+import LinkWeb from '@/components/LinkWeb';
 
 const IMAGE = '/best-local-seo-expert-in-gold-coast.jpg';
 const ALT = 'best local seo expert in gold coast';
@@ -213,7 +214,9 @@ export default function BestSeoContent() {
         </div>
       </section>
 
-      {/* Why + CTA */}
+{/* Cross-links */}
+      <LinkWeb current="/best-local-seo-expert-in-gold-coast" intro="Where the proof comes from and where it goes: the services, the parts of the job, the trades, the suburbs." />
+            {/* Why + CTA */}
       <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="why-heading">
         <div className="absolute top-0 left-0 right-0 h-px bg-ink/10" />
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">

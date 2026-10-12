@@ -7,6 +7,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import { caseStudies } from '../data';
 import BarChart from '@/components/BarChart';
+import LinkWeb from '@/components/LinkWeb';
 
 const HUB = '/case-studies';
 
@@ -209,6 +210,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             </AnimateOnScroll>
           </div>
         </section>
+        <LinkWeb show={['services', 'guides', 'trades', 'areas']} heading="The work behind this result" />
       </div>
     </>
   );

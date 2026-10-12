@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
+import LinkWeb from '@/components/LinkWeb';
 
 const IMAGE = '/hardest-working-seo-expert-in-gold-coast.jpg';
 const ALT = 'hardest working seo expert in gold coast';
@@ -129,6 +130,7 @@ export default function HardestWorkingContent() {
           </div>
         </div>
       </section>
+      <LinkWeb current="/hardest-working-seo-expert-in-gold-coast" show={['services', 'guides', 'areas', 'proof']} intro="If the phrase got you here, this is the work behind it." />
     </div>
   );
 }

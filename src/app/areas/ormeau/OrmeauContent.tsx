@@ -6,6 +6,7 @@ import CountUp from '@/components/CountUp';
 import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
 import SpotlightLink from '@/components/SpotlightLink';
+import LinkWeb from '@/components/LinkWeb';
 
 // Google Business Profile: MRG Marketing, 9 Laverton St, Ormeau
 const PLACE_ID = 'ChIJI7me_LgPkWsRiuaYKm_2oqc';
@@ -362,7 +363,9 @@ export default function OrmeauContent() {
         </div>
       </section>
 
-      {/* Final CTA */}
+{/* Cross-links */}
+      <LinkWeb current="/areas/ormeau" heading="More for Ormeau businesses" intro="The services, the parts of the job, the trade guides, the other suburbs I work in, and the proof behind all of it." />
+            {/* Final CTA */}
       <section className="relative bg-navy-950 overflow-hidden" aria-labelledby="ormeau-cta-heading">
         <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
         <div className="glow glow-breathe w-[700px] h-[500px] top-1/2 left-1/2" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />

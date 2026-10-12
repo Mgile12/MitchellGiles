@@ -7,6 +7,7 @@ import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
 import SpotlightLink from '@/components/SpotlightLink';
 import { SUBURBS, type SuburbPage } from './suburbs';
+import LinkWeb from '@/components/LinkWeb';
 
 const services = [
   { title: 'Google Business Profile', blurb: 'Top 3 on Maps for the searches that happen a few kilometres from you.', href: '/google-business-profile-gold-coast', icon: MapPin },
@@ -299,7 +300,9 @@ export default function SuburbContent({ s, images }: { s: SuburbPage; images: { 
         </div>
       </section>
 
-      {/* CTA */}
+{/* Cross-links */}
+      <LinkWeb current={`/areas/${s.slug}`} heading={`More for ${s.name} businesses`} intro="The services, the parts of the job, the trade guides, the other suburbs I work in, and the proof behind all of it." />
+            {/* CTA */}
       <section className="relative bg-navy-900 overflow-x-clip" aria-labelledby="cta-heading">
         <div className="absolute top-0 left-0 right-0 h-px bg-ink/10" />
         <AnimateOnScroll className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">

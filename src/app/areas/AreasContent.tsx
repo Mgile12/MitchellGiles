@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import LinkWeb from '@/components/LinkWeb';
 
 export default function AreasContent() {
   return (
@@ -140,6 +141,7 @@ export default function AreasContent() {
           </div>
         </AnimateOnScroll>
       </section>
+      <LinkWeb show={['services', 'guides', 'trades', 'proof']} heading="What I do in these suburbs" />
     </div>
   );
 }

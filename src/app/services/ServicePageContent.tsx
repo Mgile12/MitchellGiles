@@ -5,6 +5,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
 import type { ServicePage } from './services-data';
+import LinkWeb from '@/components/LinkWeb';
 
 export interface ServiceImages {
   portrait: { src: string; alt: string };
@@ -231,7 +232,9 @@ export default function ServicePageContent({ s, images }: { s: ServicePage; imag
         </div>
       </section>
 
-      {/* CTA */}
+{/* Cross-links */}
+      <LinkWeb current={`/${s.slug}`} intro="Every page on this site links to the rest of the job: the three services, the parts that make them up, the trades I write for, the suburbs I work in, and the proof." />
+            {/* CTA */}
       <section className="relative bg-navy-900 overflow-x-clip" aria-labelledby="cta-heading">
         <div className="absolute top-0 left-0 right-0 h-px bg-ink/10" />
         <AnimateOnScroll className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">

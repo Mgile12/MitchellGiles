@@ -6,6 +6,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import RevealText from '@/components/RevealText';
 import { caseStudies } from './data';
+import LinkWeb from '@/components/LinkWeb';
 
 const PATH = '/case-studies';
 const DESCRIPTION =
@@ -132,6 +133,7 @@ export default function CaseStudiesPage() {
             </AnimateOnScroll>
           </div>
         </section>
+        <LinkWeb current="/case-studies" show={['services', 'guides', 'trades', 'areas']} heading="The work behind the numbers" />
       </div>
     </>
   );

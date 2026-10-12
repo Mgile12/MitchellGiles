@@ -7,6 +7,7 @@ import Lightbox from '@/components/Lightbox';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import GBPDepth from './GBPDepth';
+import LinkWeb from '@/components/LinkWeb';
 
 const heatmaps = [
   {
@@ -289,6 +290,8 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
 
       {/* FAQ */}
       <GBPDepth />
+
+      <LinkWeb current="/google-business-profile-gold-coast" intro="The parts of the job, the trades I write for, the suburbs I work in, and the proof." />
 
       <section>
         <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
