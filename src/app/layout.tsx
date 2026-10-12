@@ -22,7 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
   title: {
-    default: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
+    default: 'BEST Internet Marketing Service Ormeau | MRG Marketing | looking for an online marketing agency near me for local seo, google business optimisation or ai search? we put your business at the top 3 of Google',
     template: '%s | MRG Marketing',
   },
   description: `MRG Marketing is an internet marketing service in Ormeau on the northern Gold Coast. Local SEO, Google Business Profile optimisation and AI search (GEO) that put local businesses in the top 3 on Google Maps and in front of AI answers, with results you can check. Call ${BUSINESS_INFO.phone}.`,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     'max-snippet': -1,
   },
   openGraph: {
-    title: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
+    title: 'BEST Internet Marketing Service Ormeau | MRG Marketing | looking for an online marketing agency near me for local seo, google business optimisation or ai search? we put your business at the top 3 of Google',
     description:
       'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses, with results you can check.',
     type: 'website',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Internet Marketing Service Ormeau - Local SEO Services, Google My Business Optimisation & AI Search',
+    title: 'BEST Internet Marketing Service Ormeau | MRG Marketing | looking for an online marketing agency near me for local seo, google business optimisation or ai search? we put your business at the top 3 of Google',
     description:
       'Local SEO, Google Business Profile optimisation and AI search for Gold Coast businesses, with results you can check.',
     images: ['/og-image.png'],
