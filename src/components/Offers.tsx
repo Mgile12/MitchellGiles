@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { ArrowRight, PhoneCall, CalendarCheck } from 'lucide-react';
+import { ArrowRight, PhoneCall } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import AnimateOnScroll from './AnimateOnScroll';
 import Eyebrow from './Eyebrow';
@@ -45,7 +44,7 @@ export const OFFERS = [
       'Find out if ChatGPT, Gemini and Google AI recommend your business when locals ask who to call. Free AI search audit for Ormeau and Gold Coast businesses. Valid until 31 December 2026.',
     terms:
       'Offer valid until 31 December 2026. Available to businesses in Ormeau and the Gold Coast. One free audit per business, delivered as a short written summary. Bookings subject to availability. No obligation to purchase. MRG Marketing may withdraw or change this offer at any time.',
-    cta: { label: 'Book Now', href: '/book', kind: 'book' as const },
+    cta: { label: 'Call Now', href: `tel:${BUSINESS_INFO.phoneFormatted}`, kind: 'call' as const },
     image: {
       src: '/images/offers/free-ai-search-geo-audit-coomera-mrg-marketing.jpg',
       alt: 'Plumber checking whether AI search recommends his business on a smartphone in a Coomera kitchen',
@@ -69,7 +68,7 @@ export default function Offers() {
 
         <AnimateOnScroll variant="group" className="grid gap-5 lg:grid-cols-3">
           {OFFERS.map((o, i) => {
-            const Icon = o.cta.kind === 'call' ? PhoneCall : CalendarCheck;
+            const Icon = PhoneCall;
             const button = (
               <>
                 {o.cta.label} <Icon className="w-4 h-4" />
@@ -89,15 +88,9 @@ export default function Offers() {
                   <h3 className="text-xl font-bold text-ink font-serif leading-snug">{o.title}</h3>
                   <p className="mt-3 text-base text-ink/80 font-sans leading-relaxed">{o.body}</p>
                   <div className="mt-6">
-                    {o.cta.kind === 'book' ? (
-                      <Link href={o.cta.href} className={cls}>
-                        {button}
-                      </Link>
-                    ) : (
-                      <a href={o.cta.href} className={cls}>
-                        {button}
-                      </a>
-                    )}
+                    <a href={o.cta.href} className={cls}>
+                      {button}
+                    </a>
                   </div>
                   <details className="mt-5 group">
                     <summary className="cursor-pointer text-xs font-semibold tracking-[0.18em] uppercase text-ink/55 font-sans inline-flex items-center gap-1.5 list-none [&::-webkit-details-marker]:hidden">

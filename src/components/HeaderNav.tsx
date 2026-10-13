@@ -146,10 +146,10 @@ export default function HeaderNav() {
               Location
             </button>
             <Link
-              href="/book"
+              href="tel:+61474870535"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
             >
-              Book a call
+              Call me
             </Link>
           </nav>
 
@@ -223,10 +223,10 @@ export default function HeaderNav() {
           </button>
           <div className="pt-3">
             <Link
-              href="/book"
+              href="tel:+61474870535"
               className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
             >
-              Book a call
+              Call me
             </Link>
           </div>
         </div>

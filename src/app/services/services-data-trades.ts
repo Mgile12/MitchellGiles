@@ -18,7 +18,7 @@ export const TRADE_PAGES: ServicePage[] = [
     secondaryKeywords: ['plumber SEO', 'plumbing Google Business Profile', 'rank plumber on Google Maps', 'emergency plumber searches'],
     title: 'SEO for Plumbers | How Plumbing Businesses Win the Google Maps Pack, With Real Numbers',
     description:
-      'SEO for plumbers, from someone who runs it for plumbing businesses every week: what decides the Maps pack for "plumber near me", the service pages that matter, reviews that rank, and the numbers from two plumbers who went from 79 calls a quarter to 208. Book a 30-minute call.',
+      'SEO for plumbers, from someone who runs it for plumbing businesses every week: what decides the Maps pack for "plumber near me", the service pages that matter, reviews that rank, and the numbers from two plumbers who went from 79 calls a quarter to 208. Call me.',
     eyebrow: 'SEO for plumbers',
     h1: 'SEO for plumbers',
     intro: [
@@ -117,7 +117,7 @@ export const TRADE_PAGES: ServicePage[] = [
     secondaryKeywords: ['electrician SEO', 'rank electrician on Google Maps', 'electrical Google Business Profile', 'emergency electrician searches'],
     title: 'SEO for Electricians | Win the Maps Pack for Electrical Work in Your Suburbs',
     description:
-      'SEO for electricians: the Google Business Profile set-up for "electrician near me", the service pages for switchboards, solar, EV chargers and rewires, reviews that rank, and the licence and safety proof customers look for. From someone who runs it for trades every week. Book a call.',
+      'SEO for electricians: the Google Business Profile set-up for "electrician near me", the service pages for switchboards, solar, EV chargers and rewires, reviews that rank, and the licence and safety proof customers look for. From someone who runs it for trades every week. Call 0474 870 535.',
     eyebrow: 'SEO for electricians',
     h1: 'SEO for electricians',
     intro: [
@@ -216,7 +216,7 @@ export const TRADE_PAGES: ServicePage[] = [
     secondaryKeywords: ['builder SEO', 'renovation builder Google ranking', 'home builder local SEO', 'get building leads from Google'],
     title: 'SEO for Builders | Fewer Searches, Bigger Jobs: Winning Google for Renovations and New Builds',
     description:
-      'SEO for builders and renovation companies: how building searches differ from emergency trades, the project pages and photos that win quotes, the Google Business Profile set-up for builders, and the suburb pages that bring in the right jobs. Book a 30-minute call.',
+      'SEO for builders and renovation companies: how building searches differ from emergency trades, the project pages and photos that win quotes, the Google Business Profile set-up for builders, and the suburb pages that bring in the right jobs. Call me.',
     eyebrow: 'SEO for builders',
     h1: 'SEO for builders',
     intro: [

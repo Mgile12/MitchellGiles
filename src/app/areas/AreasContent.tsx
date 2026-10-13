@@ -131,10 +131,10 @@ export default function AreasContent() {
             </p>
             <div className="relative inline-block group">
               <Link
-                href="/book"
+                href="tel:+61474870535"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
               >
-                Book a 30-minute call
+                Call me
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </div>

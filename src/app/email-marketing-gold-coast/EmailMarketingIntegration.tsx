@@ -13,7 +13,7 @@ const integrations = [
   {
     icon: Database,
     title: 'CRM Automation',
-    href: '/book',
+    href: 'tel:+61474870535',
     description:
       'Connect email directly to your CRM so sales teams get warm leads with full context. No manual handoffs, no dropped follow-ups.',
   },

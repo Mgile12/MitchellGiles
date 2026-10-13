@@ -90,10 +90,10 @@ export default function WhyMe() {
 
               <div className="lg:text-right">
                 <Link
-                  href="/book"
+                  href="tel:+61474870535"
                   className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold"
                 >
-                  Book a 30-minute call
+                  Call me
                 </Link>
                 <p className="mt-4 text-sm text-ink/65 font-sans lg:max-w-[16rem] lg:ml-auto">
                   Tell me what&apos;s not working. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.

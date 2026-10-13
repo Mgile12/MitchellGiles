@@ -127,8 +127,8 @@ export default function CaseStudiesPage() {
                 Tell me what you sell and what&apos;s not working. I&apos;ll show you the screenshots closest to your
                 situation, and say so if I don&apos;t have one.
               </p>
-              <Link href="/book" className="gold-flat-btn mt-8 inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
-                Book a 30-minute call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+              <Link href="tel:+61474870535" className="gold-flat-btn mt-8 inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
+                Call me <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </AnimateOnScroll>
           </div>

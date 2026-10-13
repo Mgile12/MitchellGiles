@@ -8,7 +8,7 @@ const PATH = '/areas/ormeau';
 export const metadata: Metadata = {
   title: 'Local SEO & Google Business Profile in Ormeau | Internet Marketing Service for Ormeau Businesses',
   description:
-    'Local SEO, Google Business Profile optimisation and AI search for Ormeau businesses from an internet marketing service based at 9 Laverton St. Top 3 on Google Maps for the Yatala to Coomera corridor. Book a 30-minute call.',
+    'Local SEO, Google Business Profile optimisation and AI search for Ormeau businesses from an internet marketing service based at 9 Laverton St. Top 3 on Google Maps for the Yatala to Coomera corridor. Call me.',
   openGraph: {
     title: 'Marketing in Ormeau | MRG Marketing',
     description:

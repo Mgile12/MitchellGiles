@@ -74,8 +74,8 @@ export default function SuburbContent({ s, images }: { s: SuburbPage; images: { 
                 ))}
               </div>
               <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
-                <Link href="/book" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
-                  Book a 30-minute call
+                <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
+                  Call me
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <a href="#faq" className="inline-flex items-center gap-2 text-sm font-semibold text-ink hover:text-ink/70 transition-colors duration-150 font-sans">
@@ -312,11 +312,11 @@ export default function SuburbContent({ s, images }: { s: SuburbPage; images: { 
               <RevealText text={`Find out where your ${s.name} business shows up.`} />
             </h2>
             <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
-              Thirty minutes. Tell me what you do and where. I will look at your profile, your site and the three businesses above you on the {s.name} map, and tell you what I would do first. If I can&apos;t help, I will say so.
+              Call me. Tell me what you do and where. I will look at your profile, your site and the three businesses above you on the {s.name} map, and tell you what I would do first. If I can&apos;t help, I will say so.
             </p>
             <div className="mt-10">
-              <Link href="/book" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
-                Book a 30-minute call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+              <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
+                Call me <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
               <p className="mt-5 text-sm text-ink/65 font-sans">
                 Searching for {kw}? You are in the right place.{' '}

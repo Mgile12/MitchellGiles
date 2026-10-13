@@ -18,7 +18,7 @@ export default function Footer() {
         { href: '/ai-search-geo-gold-coast', label: 'AI Search (GEO)' },
         { href: '/case-studies', label: 'Case studies' },
         { href: '/email-marketing-gold-coast', label: 'Email marketing' },
-        { href: '/book', label: 'Book a call' },
+        { href: 'tel:+61474870535', label: 'Call 0474 870 535' },
       ]}
       contactInfo={{
         email: BUSINESS_INFO.email,

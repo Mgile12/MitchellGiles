@@ -25,7 +25,7 @@ const LOCATOR_CONFIG = {
       address2: `${BUSINESS_INFO.address.locality}, ${BUSINESS_INFO.address.region}, Australia`,
       coords: PIN,
       placeId: PLACE_ID,
-      actions: [{ label: 'Book appointment', defaultUrl: `${BUSINESS_INFO.url}/book/` }],
+      actions: [{ label: 'Call me', defaultUrl: `tel:${BUSINESS_INFO.phoneFormatted}` }],
     },
   ],
   mapOptions: {
@@ -117,10 +117,10 @@ export default function LocationMap() {
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
-                href="/book"
+                href="tel:+61474870535"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold group"
               >
-                Book a 30-minute call
+                Call me
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
               <a

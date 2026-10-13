@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import HeaderNav from '@/components/HeaderNav';
 import Footer from '@/components/Footer';
 
-const MINIMAL_ROUTES = ['/book'];
+const MINIMAL_ROUTES: string[] = [];
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
