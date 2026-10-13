@@ -25,16 +25,16 @@ export default function FinalCTA() {
           </h2>
 
           <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
-            If it&apos;s the second, call me. Tell me what you sell and what&apos;s not working. If I can help,
+            If it&apos;s the second, book 30 minutes. Tell me what you sell and what&apos;s not working. If I can help,
             you get a plan. If I can&apos;t, I&apos;ll say so.
           </p>
 
           <div className="mt-10">
             <Link
-              href="tel:+61474870535"
+              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
             >
-              Call me
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <p className="mt-4 text-sm text-ink/65 font-sans">No pitch.</p>

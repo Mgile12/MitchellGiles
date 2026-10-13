@@ -58,8 +58,8 @@ export default function ServicePageContent({ s, images }: { s: ServicePage; imag
                 <Para key={p.slice(0, 40)}>{p}</Para>
               ))}
               <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
-                <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
-                  Call me
+                <Link href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
+                  Book a 30-minute call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <a href="#faq" className="inline-flex items-center gap-2 text-sm font-semibold text-ink hover:text-ink/70 transition-colors duration-150 font-sans">
@@ -196,10 +196,10 @@ export default function ServicePageContent({ s, images }: { s: ServicePage; imag
                 </ul>
                 <div className="mt-6 pt-6 border-t border-ink/[0.08]">
                   <p className="text-sm text-ink/80 font-sans leading-relaxed">
-                    Call 0474 870 535. Tell me what you do and where, and I will tell you what I would do first.
+                    Thirty minutes, from Ormeau. Tell me what you do and where, and I will tell you what I would do first.
                   </p>
-                  <Link href="tel:+61474870535" className="gold-flat-btn mt-4 inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold group w-full">
-                    Call me <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" className="gold-flat-btn mt-4 inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold group w-full">
+                    Book a 30-minute call <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </Link>
                   <p className="mt-3 text-xs text-ink/55 font-sans">
                     {BUSINESS_INFO.address.full} · {BUSINESS_INFO.phone}
@@ -244,11 +244,11 @@ export default function ServicePageContent({ s, images }: { s: ServicePage; imag
               <RevealText text="Bring your numbers. I will tell you what I would do with them." />
             </h2>
             <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
-              Call me. If I can help, you get a plan. If I can&apos;t, I will say so and point you somewhere useful.
+              Thirty minutes. If I can help, you get a plan. If I can&apos;t, I will say so and point you somewhere useful.
             </p>
             <div className="mt-10">
-              <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
-                Call me <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+              <Link href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
+                Book a 30-minute call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function EmailMarketingHero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="tel:+61474870535"
+                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide group"
               >
                 Book a Call

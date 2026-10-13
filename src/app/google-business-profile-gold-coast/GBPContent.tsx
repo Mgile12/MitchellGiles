@@ -122,10 +122,10 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="tel:+61474870535"
+              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
             >
-              Call me
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <a
@@ -316,10 +316,10 @@ export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
             your industry and area are already taken, I&apos;ll say so.
           </p>
           <Link
-            href="tel:+61474870535"
+            href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
             className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
           >
-            Call me
+            Book a 30-minute call
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
           </Link>
         </AnimateOnScroll>

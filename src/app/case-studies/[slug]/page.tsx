@@ -196,12 +196,12 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <AnimateOnScroll>
               <h2 className="text-2xl sm:text-3xl font-bold text-ink font-serif">Is this the kind of result you need?</h2>
               <p className="mt-4 text-ink/80 font-sans max-w-2xl mx-auto">
-                Call me. I&apos;ll look at your profile, your site and the three businesses above you, and tell
+                Book 30 minutes. I&apos;ll look at your profile, your site and the three businesses above you, and tell
                 you what is realistic before you spend anything.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-                <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
-                  Call me <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                <Link href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group">
+                  Book a 30-minute call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <Link href={c.serviceHref} className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans">
                   About the {c.service} service <ArrowRight className="w-4 h-4" />

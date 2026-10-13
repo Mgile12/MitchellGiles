@@ -113,10 +113,10 @@ export default function BestSeoContent() {
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
                 <Link
-                  href="tel:+61474870535"
+                  href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                   className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group"
                 >
-                  Call me
+                  Book a 30-minute call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <Link
@@ -241,15 +241,15 @@ export default function BestSeoContent() {
             </p>
             <p className="mt-5 text-lg text-ink/80 leading-relaxed font-sans">
               If you are looking for the best local SEO expert in Gold Coast, don&apos;t take the label on trust. Book
-              call me, tell me what you do and where, and I&apos;ll show you the scans and profile numbers closest to
+              30 minutes, tell me what you do and where, and I&apos;ll show you the scans and profile numbers closest to
               your situation. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.
             </p>
             <div className="mt-10">
               <Link
-                href="tel:+61474870535"
+                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
               >
-                Call me
+                Book a 30-minute call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
               <p className="mt-4 text-sm text-ink/65 font-sans">No pitch.</p>

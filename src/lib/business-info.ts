@@ -8,7 +8,7 @@ export const BUSINESS_INFO = {
   logo: 'https://mrgmarketing.com.au/icon-512.png',
   image: 'https://mrgmarketing.com.au/best-marketing-agency-in-gold-coast.jpg',
   placeId: 'ChIJI7me_LgPkWsRiuaYKm_2oqc',
-  bookingUrl: 'https://app.usemotion.com/meet/mitchell-giles-xsnm/d2h4337',
+  bookingUrl: 'https://calendar.notion.com/meet/mitchellgiles134/tovi31rm',
 
   phone: '0474 870 535',
   phoneFormatted: '+61474870535',

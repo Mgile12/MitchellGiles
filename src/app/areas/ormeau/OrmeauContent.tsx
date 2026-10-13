@@ -38,7 +38,7 @@ export const faqItems = [
       'Mostly, yes. Trades and local services are the bulk of my clients, because Google Maps is the cheapest source of customers they will ever get. I also do the same work white-label for other agencies.',
   },
   {
-    question: 'What happens when I call?',
+    question: 'What happens on the 30-minute call?',
     answer:
       "You tell me what you sell and what's not working. I look at your profile, your site and the three businesses above you on the map. If I can help, you get a plan. If I can't, I'll say so and point you somewhere useful.",
   },
@@ -100,10 +100,10 @@ export default function OrmeauContent() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
-                href="tel:+61474870535"
+                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                 className="gold-flat-btn inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide"
               >
-                Call me <Phone className="w-4 h-4" />
+                Book a 30-minute call <Phone className="w-4 h-4" />
               </Link>
               <a
                 href="#services-here"
@@ -148,7 +148,7 @@ export default function OrmeauContent() {
                   suburb and one that ranks where your customers are.
                 </p>
                 <p>
-                  If we work together, it looks like this. We start with a call and a look at the three
+                  If we work together, it looks like this. We start with a 30-minute call and a look at the three
                   businesses above you on the map. Then I fix the profile, build the pages your services and suburbs
                   need, and only then spend money on ads. You deal with me, not an account manager. You get an update
                   every Friday, and anything in between is answered the same day. Most of my Ormeau work is ongoing,
@@ -376,15 +376,15 @@ export default function OrmeauContent() {
               <RevealText text="Bring your numbers. I'll tell you what I'd do with them." />
             </h2>
             <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
-              Call me. Tell me what you sell and what&apos;s not working. If I can help, you get a
+              Thirty minutes, from Ormeau. Tell me what you sell and what&apos;s not working. If I can help, you get a
               plan. If I can&apos;t, I&apos;ll say so.
             </p>
             <div className="mt-10">
               <Link
-                href="tel:+61474870535"
+                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                 className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
               >
-                Call me
+                Book a 30-minute call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
               <p className="mt-4 text-sm text-ink/65 font-sans">No pitch.</p>

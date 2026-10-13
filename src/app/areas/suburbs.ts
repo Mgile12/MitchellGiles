@@ -61,7 +61,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Pimpama',
     title: 'Local SEO Pimpama | Google Business Profile & Maps Ranking for Pimpama Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Pimpama businesses, from an internet marketing service ten minutes up the M1 in Ormeau. Top 3 on Google Maps for the searches that happen in Pimpama. Call me.',
+      'Local SEO and Google Business Profile optimisation for Pimpama businesses, from an internet marketing service ten minutes up the M1 in Ormeau. Top 3 on Google Maps for the searches that happen in Pimpama. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for one of the fastest-growing suburbs in the country.',
     intro: [
       'Pimpama has gone from paddocks to one of the fastest-growing suburbs in Australia in about fifteen years. Gainsborough Greens, The Heights, the estates either side of Pimpama-Jacobs Well Road: thousands of new families, most of them under 40, most of them searching for everything on a phone because they have no idea yet who the good local plumber, dentist or physio is.',
@@ -109,7 +109,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Coomera',
     title: 'Local SEO Coomera | Google Business Profile & Maps Ranking for Coomera Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Coomera businesses, from an internet marketing service in nearby Ormeau. Top 3 on Google Maps around Westfield Coomera, the train station and the estates. Call me.',
+      'Local SEO and Google Business Profile optimisation for Coomera businesses, from an internet marketing service in nearby Ormeau. Top 3 on Google Maps around Westfield Coomera, the train station and the estates. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for the suburb with the busiest shopping centre on the northern Gold Coast.',
     intro: [
       'Coomera is where the northern Gold Coast goes to shop, catch the train and take the kids to Dreamworld. Westfield Coomera on Foxwell Road changed the suburb when it opened, and the estates around Coomera Rivers and the Town Centre have filled in behind it. On a Saturday the car parks are full of people from Pimpama, Upper Coomera and Hope Island, and every one of them has a phone.',
@@ -157,7 +157,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Upper Coomera',
     title: 'Local SEO Upper Coomera | Google Business Profile & Maps Ranking for Upper Coomera Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Upper Coomera businesses, from an internet marketing service in nearby Ormeau. Top 3 on Google Maps along Days Road, Reserve Road and Old Coach Road. Call me.',
+      'Local SEO and Google Business Profile optimisation for Upper Coomera businesses, from an internet marketing service in nearby Ormeau. Top 3 on Google Maps along Days Road, Reserve Road and Old Coach Road. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for the family suburb between the M1 and the hills.',
     intro: [
       'Upper Coomera is the big family suburb on the western side of the M1: Days Road, Reserve Road, Old Coach Road, the schools, the shops at the Upper Coomera Centre and Coomera Grand, and estate after estate climbing toward the hinterland. It is the kind of place where a good trade or a good physio can be flat out for years on word of mouth, and where the ones who also own the Maps pack are the ones who never have a quiet month.',
@@ -205,7 +205,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Beenleigh',
     title: 'Local SEO Beenleigh | Google Business Profile & Maps Ranking for Beenleigh Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Beenleigh businesses, from an internet marketing service in Ormeau, twelve minutes down the M1. Top 3 on Google Maps for Beenleigh, Eagleby and Mount Warren Park. Call me.',
+      'Local SEO and Google Business Profile optimisation for Beenleigh businesses, from an internet marketing service in Ormeau, twelve minutes down the M1. Top 3 on Google Maps for Beenleigh, Eagleby and Mount Warren Park. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for the oldest town on the corridor.',
     intro: [
       'Beenleigh is older than the Gold Coast and acts like it. It has a proper town centre around George Street and the Town Square, a train station on the Brisbane line, the rum distillery that has been there since 1884, and a ring of suburbs, Eagleby, Mount Warren Park, Bahrs Scrub, Waterford, that all treat it as their shopping and service centre.',
@@ -253,7 +253,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Yatala',
     title: 'Local SEO Yatala | Google Business Profile & Maps Ranking for Yatala Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Yatala businesses, from an internet marketing service five minutes away in Ormeau. Top 3 on Google Maps for the Yatala Enterprise Area and the suburbs it serves. Call me.',
+      'Local SEO and Google Business Profile optimisation for Yatala businesses, from an internet marketing service five minutes away in Ormeau. Top 3 on Google Maps for the Yatala Enterprise Area and the suburbs it serves. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for the biggest industrial precinct between Brisbane and the Gold Coast.',
     intro: [
       'Yatala is the working end of the corridor. The Yatala Enterprise Area runs from the M1 at Exit 38 across to Stapylton and is one of the largest industrial precincts in South East Queensland: manufacturing, logistics, trade suppliers, equipment hire, workshops, and the pie shop that has fed all of them since 1914.',
@@ -302,7 +302,7 @@ export const SUBURB_PAGES: SuburbPage[] = [
     primaryKeyword: 'Local SEO Stapylton',
     title: 'Local SEO Stapylton | Google Business Profile & Maps Ranking for Stapylton Businesses',
     description:
-      'Local SEO and Google Business Profile optimisation for Stapylton businesses, from an internet marketing service in Ormeau, a few minutes down the highway. Top 3 on Google Maps for the industrial corridor off Exit 41. Call me.',
+      'Local SEO and Google Business Profile optimisation for Stapylton businesses, from an internet marketing service in Ormeau, a few minutes down the highway. Top 3 on Google Maps for the industrial corridor off Exit 41. Book a 30-minute call.',
     tagline: 'Google Business Profile, local SEO and AI search for the industrial corridor between Yatala and the Albert River.',
     intro: [
       'Stapylton is the quieter half of the Yatala industrial corridor: the estates off Exit 41 and Stapylton Road, the transport yards, the civil and equipment businesses, the sheds that supply the trades on the whole northern Gold Coast, and the drive-in that everyone still calls the Yatala Drive-In even though it sits in Stapylton.',

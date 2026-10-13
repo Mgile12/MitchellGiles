@@ -139,17 +139,17 @@ export default function HeaderNav() {
             >
               About
             </button>
-            <button
-              onClick={() => scrollToSection('location')}
+            <Link
+              href="/contact"
               className="py-2 text-sm font-medium text-ink/80 hover:text-gold transition-colors duration-200"
             >
-              Location
-            </button>
+              Contact
+            </Link>
             <Link
-              href="tel:+61474870535"
+              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
               className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold tracking-wide"
             >
-              Call me
+              Book a call
             </Link>
           </nav>
 
@@ -215,18 +215,19 @@ export default function HeaderNav() {
           >
             About
           </button>
-          <button
-            onClick={() => scrollToSection('location')}
+          <Link
+            href="/contact"
+            onClick={() => setMobileOpen(false)}
             className="block w-full text-left px-3 py-3 text-base font-medium text-ink hover:text-gold hover:bg-white/85 rounded-lg transition-colors duration-200"
           >
-            Location
-          </button>
+            Contact
+          </Link>
           <div className="pt-3">
             <Link
-              href="tel:+61474870535"
+              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
               className="gold-flat-btn block text-center rounded-lg px-5 py-3.5 text-sm font-semibold tracking-wide"
             >
-              Call me
+              Book a call
             </Link>
           </div>
         </div>

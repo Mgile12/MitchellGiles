@@ -104,5 +104,5 @@ https://www.mitchellgiles.com/* https://mrgmarketing.com.au/:splat 301!
 # Netlify matches paths case-insensitively, so such a rule redirects the canonical URL to lowercase.
 /seo-gold-coast/* /best-local-seo-expert-in-gold-coast/ 301
 
-# Oct 2026: every CTA is a phone call; the booking page is retired
-/book/* /#offers 301
+# Oct 2026: the old booking page is now the contact page
+/book/* /contact/ 301

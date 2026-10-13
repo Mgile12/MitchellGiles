@@ -98,12 +98,12 @@ export default function HardestWorkingContent() {
               <P>
                 MRG Marketing gets Gold Coast and Brisbane businesses into the top three on Google for the searches that
                 bring in customers. If you have read this far looking for the hardest working SEO expert in Gold Coast,
-                call me. Tell me what you do and where. I will tell you what is realistic, and if I can&apos;t
+                book 30 minutes. Tell me what you do and where. I will tell you what is realistic, and if I can&apos;t
                 help, I will say so.
               </P>
               <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-                <Link href="tel:+61474870535" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
-                  Call me
+                <Link href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold group">
+                  Book a 30-minute call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </Link>
                 <Link href="/case-studies" className="inline-flex items-center gap-2 text-sm font-semibold text-ink hover:text-ink/70 transition-colors duration-150 font-sans">

@@ -44,7 +44,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['generative engine optimisation', 'GEO', 'rank in ChatGPT', 'Google AI Overviews', 'get recommended by AI'],
     title: 'AI Search Optimisation Gold Coast (GEO) | Get Named When People Ask ChatGPT Who to Call',
     description:
-      'AI search optimisation (GEO) for Gold Coast businesses: the work that gets a local business named when someone asks ChatGPT, Gemini, Copilot or Google AI who to call. Same local signals as Maps, tuned for how the models choose. Call me.',
+      'AI search optimisation (GEO) for Gold Coast businesses: the work that gets a local business named when someone asks ChatGPT, Gemini, Copilot or Google AI who to call. Same local signals as Maps, tuned for how the models choose. Book a 30-minute call.',
     eyebrow: 'AI Search (GEO)',
     h1: 'AI search optimisation on the Gold Coast',
     intro: [
@@ -143,7 +143,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['tradie SEO', 'local SEO for trades', 'Google Maps for tradies', 'get more trade jobs from Google'],
     title: 'SEO for Tradies Gold Coast | Get the Phone Ringing from Google Maps',
     description:
-      'SEO for tradies on the Gold Coast and in Brisbane: Google Business Profile, a page per service and suburb, reviews on a schedule, and the weekly work that keeps a trade in the top 3 on Maps. Real numbers from plumbers. Call me.',
+      'SEO for tradies on the Gold Coast and in Brisbane: Google Business Profile, a page per service and suburb, reviews on a schedule, and the weekly work that keeps a trade in the top 3 on Maps. Real numbers from plumbers. Book a 30-minute call.',
     eyebrow: 'SEO for tradies',
     h1: 'SEO for tradies on the Gold Coast',
     intro: [
@@ -233,7 +233,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['rank higher on Google Maps', 'Maps pack', 'local 3-pack', 'ranking grid', 'Local Falcon scan'],
     title: 'Google Maps Ranking Gold Coast | How the Top 3 Is Decided, and How to Get There',
     description:
-      'How Google Maps ranking works on the Gold Coast: the three factors, why your position changes street by street, how a ranking grid scan measures it, and what moves a business into the top 3. With real before-and-after grids. Call me.',
+      'How Google Maps ranking works on the Gold Coast: the three factors, why your position changes street by street, how a ranking grid scan measures it, and what moves a business into the top 3. With real before-and-after grids. Book a 30-minute call.',
     eyebrow: 'Google Maps ranking',
     h1: 'Google Maps ranking on the Gold Coast',
     intro: [
@@ -323,7 +323,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['get more Google reviews', 'review requests', 'respond to reviews', 'remove fake reviews', 'review strategy for local business'],
     title: 'Google Review Management Gold Coast | More Reviews, Better Replies, and What To Do About Bad Ones',
     description:
-      'Google review management for Gold Coast businesses: a request system that gets reviews every week, replies that help ranking, and the right way to handle unfair or fake reviews. Part of the local SEO work that keeps a business in the top 3 on Maps. Call 0474 870 535.',
+      'Google review management for Gold Coast businesses: a request system that gets reviews every week, replies that help ranking, and the right way to handle unfair or fake reviews. Part of the local SEO work that keeps a business in the top 3 on Maps. Book a call.',
     eyebrow: 'Review management',
     h1: 'Google review management on the Gold Coast',
     intro: [
@@ -421,7 +421,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['directory listings', 'NAP consistency', 'business listings Australia', 'Bing Places', 'Apple Business Connect'],
     title: 'Local Citations & Directory Listings Gold Coast | Consistent NAP That Google and AI Trust',
     description:
-      'Local citations and directory listings for Gold Coast businesses: which Australian directories matter, how to make your name, address and phone identical everywhere, and why it matters for Google Maps and AI search. Call me.',
+      'Local citations and directory listings for Gold Coast businesses: which Australian directories matter, how to make your name, address and phone identical everywhere, and why it matters for Google Maps and AI search. Book a 30-minute call.',
     eyebrow: 'Local citations',
     h1: 'Local citations and directory listings on the Gold Coast',
     intro: [
@@ -513,7 +513,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     secondaryKeywords: ['Google Business Profile audit', 'local SEO checklist', 'why am I not ranking on Google Maps', 'SEO health check'],
     title: 'Local SEO Audit Gold Coast | Find Out Why You Are Not in the Top 3, in Plain English',
     description:
-      'A local SEO audit for Gold Coast businesses: the profile, the website, the citations, the reviews and a ranking grid scan, written up in plain English with what to fix first. The first step of every engagement, and the way I decide whether I can help. Call me.',
+      'A local SEO audit for Gold Coast businesses: the profile, the website, the citations, the reviews and a ranking grid scan, written up in plain English with what to fix first. The first step of every engagement, and the way I decide whether I can help. Book a 30-minute call.',
     eyebrow: 'Local SEO audit',
     h1: 'A local SEO audit for Gold Coast businesses',
     intro: [
@@ -587,7 +587,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       ],
     },
     faqs: [
-      { question: 'Is the local SEO audit free?', answer: 'The call is free, and on it I look at the profile, the site and the top three competitors live and tell you what I see. The full written audit with the grid scan is the first step of an engagement.' },
+      { question: 'Is the local SEO audit free?', answer: 'The 30-minute call is free, and on it I look at the profile, the site and the top three competitors live and tell you what I see. The full written audit with the grid scan is the first step of an engagement.' },
       { question: 'How long does the audit take?', answer: 'About a week from access to report, including the grid scan and the citation search.' },
       { question: 'Do I have to hire you after the audit?', answer: 'No. The report is written so you or your developer can act on it. Some people do, some come back later, some hire me. All fine.' },
       { question: 'What tools do you use?', answer: 'Local Falcon for the ranking grid and Business Profile performance data, Google Search Console and Bing Webmaster Tools for the website, and a lot of manual searching for citations and competitors. The tools gather; the judgement is the audit.' },

@@ -116,10 +116,10 @@ export function AnimatedHero() {
               style={delay(320)}
             >
               <Link
-                href="tel:+61474870535"
+                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
                 className="gold-flat-btn inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide"
               >
-                Call me <PhoneCall className="w-4 h-4" />
+                Book a 30-minute call <PhoneCall className="w-4 h-4" />
               </Link>
               <a
                 href="#services"

@@ -18,16 +18,16 @@ export default function EmailMarketingCTA() {
               For Gold Coast businesses serious about growth, email marketing is not optional -- it is foundational.
             </p>
             <p className="text-base text-ink/65 leading-relaxed font-sans">
-              Call me and we'll find the revenue already sitting in your database.
+              Book a 30-minute call and we'll find the revenue already sitting in your database.
             </p>
           </div>
 
           <div className="mt-12 relative inline-block group">
             <Link
-              href="tel:+61474870535"
+              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
               className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
             >
-              Call me
+              Book a 30-minute call
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
           </div>
