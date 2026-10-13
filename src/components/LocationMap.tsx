@@ -11,9 +11,10 @@ import RevealText from './RevealText';
 const PLACE_ID = 'ChIJI7me_LgPkWsRiuaYKm_2oqc';
 const PIN = { lat: -27.7667993, lng: 153.2613798 };
 
-// Browser key for Google's Locator Plus. Inlined at build time; restrict it to mrgmarketing.com.au in
-// Google Cloud. When it's absent the section falls back to the keyless Maps embed.
-const MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? '';
+// Browser key for Google's Locator Plus, from Mitchell's Quick Builder export (14 Oct 2026). It is a public
+// browser key, restricted to mrgmarketing.com.au in Google Cloud. A Netlify NEXT_PUBLIC_GOOGLE_MAPS_KEY
+// overrides it; an empty string falls back to the keyless Maps embed.
+const MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || 'AIzaSyA69MaB4yYx6weT20BzUD7Lsc_WihCRK5k';
 const LOCATOR_LIB = 'https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.15/index.min.js';
 
 // Mitchell's Locator Plus Quick Builder config, re-centred on the Ormeau pin
