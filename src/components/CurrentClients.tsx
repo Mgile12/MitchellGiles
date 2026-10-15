@@ -9,7 +9,6 @@ interface ClientLogo {
 // Black-on-transparent bakes (the dark theme's white -mono files, inverted), shown faded on the sand ground
 // so every mark sits at the same weight. Colour originals are still in public/.
 const LOGOS: ClientLogo[] = [
-  { name: 'Tradie Marketing Pros', src: '/clients/tradie-marketing-pros-ink.webp', href: 'https://tradiemarketingpros.com.au/' },
   { name: 'Polish Hub', src: '/clients/polish-hub-ink.webp', href: 'https://polishhub.com.au/', tall: true },
   { name: 'MJLT Services', src: '/clients/mjlt-services-ink.webp', href: 'https://www.mjltservices.com.au/' },
   { name: 'Ceramics Gold Coast', src: '/clients/ceramics-gold-coast-ink.webp', href: 'https://ceramicsgoldcoast.com.au/' },
