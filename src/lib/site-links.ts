@@ -38,4 +38,5 @@ export const PROOF_LINKS: SiteLink[] = [
   { label: 'Case studies', href: '/case-studies' },
   { label: 'Best marketing agency in Gold Coast', href: '/best-marketing-agency-in-gold-coast' },
   { label: 'Hardest working SEO expert in Gold Coast', href: '/hardest-working-seo-expert-in-gold-coast' },
+  { label: 'Blog: local SEO for tradies in 2026', href: '/blog/local-seo-gold-coast-tradies-2026' },
 ];

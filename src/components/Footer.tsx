@@ -18,6 +18,7 @@ export default function Footer() {
         { href: '/ai-search-geo-gold-coast', label: 'AI Search (GEO)' },
         { href: '/case-studies', label: 'Case studies' },
         { href: '/email-marketing-gold-coast', label: 'Email marketing' },
+        { href: '/blog', label: 'Blog' },
         { href: '/contact', label: 'Contact' },
         { href: 'https://calendar.notion.com/meet/mitchellgiles134/tovi31rm', label: 'Book a call' },
       ]}

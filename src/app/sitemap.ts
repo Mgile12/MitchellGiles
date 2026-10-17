@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
 import { caseStudies } from './case-studies/data';
 import { SERVICE_PAGES } from './services/services-data';
+import { POSTS } from './blog/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = BUSINESS_INFO.url;
@@ -29,6 +30,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hardest-working-seo-expert-in-gold-coast/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/case-studies/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/contact/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.6 },
+    { url: `${baseUrl}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 },
+    ...POSTS.map((p) => ({ url: `${baseUrl}/blog/${p.slug}/`, lastModified: new Date(p.dateModified), changeFrequency: 'monthly' as const, priority: 0.6 })),
     ...caseStudies.map((c) => ({ url: `${baseUrl}/case-studies/${c.slug}/`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 })),
   ];
 }
