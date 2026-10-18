@@ -142,20 +142,8 @@ function buildJsonLd() {
     publisher: { '@id': businessId },
   };
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: BUSINESS_INFO.url,
-      },
-    ],
-  };
-
-  return [localBusinessSchema, websiteSchema, breadcrumbSchema];
+  // No site-wide BreadcrumbList: each page emits its own full trail, and a Home-only one here duplicated it on every page.
+  return [localBusinessSchema, websiteSchema];
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
