@@ -23,8 +23,8 @@ export const POSTS: BlogPost[] = [
       'Local SEO Gold Coast tips for tradies in 2026. What still gets calls from Google Maps, what to stop doing, and a simple 6-step plan from an Ormeau local SEO agency.',
     excerpt:
       'What still gets tradies calls from Google Maps in 2026, what to stop doing, and the six-step plan I would follow with a plumber in Pimpama tomorrow.',
-    datePublished: '2026-10-20T09:00:00+10:00',
-    dateModified: '2026-10-20T09:00:00+10:00',
+    datePublished: '2026-10-18T09:00:00+10:00',
+    dateModified: '2026-10-18T09:00:00+10:00',
     image: {
       src: '/images/blog/local-seo-gold-coast-tradie-phone-call.webp',
       alt: 'Gold Coast tradie in hi-vis taking a customer call next to his ute in a northern Gold Coast street',
