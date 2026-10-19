@@ -67,7 +67,23 @@ function buildPageJsonLd() {
     ],
   };
 
-  return [faqSchema, serviceSchema, breadcrumbSchema];
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'SEO Ormeau: How to Get Into the Google Maps Top 3',
+    description:
+      'Mitchell Giles from MRG Marketing explains what gets Ormeau and northern Gold Coast businesses into the Google Maps top 3: Google Business Profile setup, suburb pages, directory listings and rank tracking.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/JS08Od_TN-g/hqdefault.jpg',
+    uploadDate: '2026-10-20T08:30:00+10:00',
+    duration: 'PT54S',
+    embedUrl: 'https://www.youtube.com/embed/JS08Od_TN-g',
+    contentUrl: 'https://www.youtube.com/shorts/JS08Od_TN-g',
+    inLanguage: 'en-AU',
+    author: { '@id': `${BUSINESS_INFO.url}/#mitchell-giles` },
+    publisher: { '@id': `${BUSINESS_INFO.url}/#business` },
+  };
+
+  return [faqSchema, serviceSchema, breadcrumbSchema, videoSchema];
 }
 
 export default function OrmeauPage() {

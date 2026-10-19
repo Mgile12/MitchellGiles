@@ -219,6 +219,7 @@ export default function OrmeauContent() {
                 cta: 'Local SEO',
               },
               {
+                n: '03',
                 title: 'AI search for the corridor, not the whole coast',
                 text:
                   'When someone in Pimpama or Coomera asks ChatGPT or Google AI for a plumber, a detailer or a physio, the answer comes from the same signals Maps uses: a consistent business record, a profile that matches the website, and proof the models can read. I tune those so the answer is you.',
@@ -238,6 +239,31 @@ export default function OrmeauContent() {
                 </Link>
               </div>
             ))}
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* Video: Mitchell on getting into the Maps top 3 (YouTube Short, 20 Oct 2026). VideoObject schema is in page.tsx. */}
+      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="video-heading">
+        <div className="grid-ground absolute inset-0" aria-hidden="true" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <AnimateOnScroll className="text-center mb-10">
+            <Eyebrow className="mb-4">In 54 seconds</Eyebrow>
+            <h2 id="video-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink font-serif">
+              <RevealText text="How an Ormeau business gets into the Google Maps top 3." />
+            </h2>
+          </AnimateOnScroll>
+          <AnimateOnScroll className="mx-auto w-full max-w-[360px]">
+            <div className="relative overflow-hidden rounded-2xl border border-ink/10 bg-ink shadow-[0_24px_64px_rgba(0,0,0,0.16)]" style={{ paddingTop: '177.78%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/JS08Od_TN-g"
+                title="SEO Ormeau: How to Get Into the Google Maps Top 3"
+                className="absolute inset-0 h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>
