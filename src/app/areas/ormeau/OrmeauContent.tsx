@@ -45,7 +45,7 @@ export const faqItems = [
   {
     question: 'Can we meet in person?',
     answer:
-      "Yes. I'm at 9 Laverton St in Ormeau. I'll come to your site anywhere from Beenleigh to Helensvale, or we can do it on a call if that's easier.",
+      "Yes. I'm based in Ormeau and I come to you. Site visits anywhere from Beenleigh to Helensvale are part of the job, or we can do it on a call if that's easier.",
   },
 ];
 
