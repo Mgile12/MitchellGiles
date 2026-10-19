@@ -38,6 +38,12 @@ export default function Footer() {
         license: 'All rights reserved',
       }}
       bottomTagline="Ormeau, Gold Coast, Queensland."
+      badges={
+        // My Gold Coast directory badge (Featured listing, from Oct 2026). Embed code as supplied by the directory.
+        <a href="https://mygoldcoast.directory/business/mrg-marketing" title="MRG Marketing on My Gold Coast">
+          <img src="https://mygoldcoast.directory/images/badge-featured.png" alt="Featured on My Gold Coast" width={220} height={64} loading="lazy" style={{ border: 0 }} />
+        </a>
+      }
     />
   );
 }

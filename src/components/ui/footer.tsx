@@ -27,6 +27,8 @@ interface FooterProps {
     license?: string;
   };
   bottomTagline?: string;
+  /** Directory and award badges, shown above the copyright row */
+  badges?: React.ReactNode;
 }
 
 export function Footer({
@@ -39,6 +41,7 @@ export function Footer({
   areaLinks,
   copyright,
   bottomTagline,
+  badges,
 }: FooterProps) {
   return (
     <footer className="bg-navy-950 text-ink border-t border-ink/[0.06]">
@@ -133,6 +136,8 @@ export function Footer({
             </div>
           </div>
         )}
+
+        {badges && <div className="mt-10 flex flex-wrap items-center gap-4">{badges}</div>}
 
         <div className="mt-10 pt-6 border-t border-ink/[0.06]">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
