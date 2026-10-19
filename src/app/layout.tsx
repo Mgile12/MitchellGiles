@@ -130,7 +130,7 @@ function buildJsonLd() {
         closes: '14:00',
       },
     ],
-    sameAs: [BUSINESS_INFO.social.facebook, BUSINESS_INFO.social.instagram],
+    sameAs: Object.values(BUSINESS_INFO.social),
   };
 
   const websiteSchema = {

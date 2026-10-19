@@ -30,8 +30,11 @@ export const BUSINESS_INFO = {
 
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=61557011930635',
-    instagram: 'https://www.instagram.com/mrg.marketing/',
+    instagram: 'https://www.instagram.com/mrgmarketing.agency',
     linkedin: 'https://www.linkedin.com/in/mrg-marketing/',
+    tiktok: 'https://www.tiktok.com/@mrg.marketing',
+    x: 'https://x.com/MRG_MarketingAU',
+    youtube: 'https://www.youtube.com/channel/UCZA2c-THw-0CM6Z6TE2CPxA',
   },
 
   services: [
