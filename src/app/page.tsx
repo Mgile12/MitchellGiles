@@ -1,5 +1,6 @@
 import { AnimatedHero } from '@/components/ui/animated-hero';
 import CurrentClients from '@/components/CurrentClients';
+import GoogleReviews from '@/components/GoogleReviews';
 import ServicesGrid from '@/components/ServicesGrid';
 import Offers, { OFFERS } from '@/components/Offers';
 import GuaranteeOffer from '@/components/GuaranteeOffer';
@@ -41,6 +42,7 @@ export default function HomePage() {
       <GuaranteeOffer />
       <Offers />
       <CurrentClients />
+      <GoogleReviews />
       <AboutSection />
       <WhyMe />
       <LocationMap />
