@@ -21,6 +21,15 @@ export const TRADE_PAGES: ServicePage[] = [
       'SEO for plumbers, from someone who runs it for plumbing businesses every week: what decides the Maps pack for "plumber near me", the service pages that matter, reviews that rank, and the numbers from two plumbers who went from 79 calls a quarter to 208. Book a 30-minute call.',
     eyebrow: 'SEO for plumbers',
     h1: 'SEO for plumbers',
+    video: {
+      youtubeId: 'yZQxe2kTBw8',
+      heading: 'Watch: how Gold Coast plumbers win the Map Pack',
+      name: 'SEO for Plumbers Gold Coast: How Plumbing Businesses Win the Map Pack',
+      description:
+        'Mitchell Giles from MRG Marketing explains how Gold Coast plumbing businesses get into the Google Maps top 3: the right Google Business Profile category and services, reviews that mention the job and suburb, service and suburb pages, and tracking rank across the service area.',
+      uploadDate: '2026-10-21T19:05:23+10:00',
+      duration: 'PT57S',
+    },
     intro: [
       'Plumbing is the trade I have the most data for, so this page is specific. Two plumbers I work for went from 79 calls from Google in the three months before the work to 208 in the latest three. A third sits at number one on every point of a 49-point ranking grid for "plumber" plus its suburb. None of that came from clever tricks. It came from doing the same handful of things properly, every week, for businesses whose competitors were not.',
       'Plumbing searches are the purest local intent there is. "Blocked drain Coomera", "hot water repair Beenleigh", "emergency plumber near me" at 9pm. The person is at home, the problem is now, and Google shows three businesses with a Call button. Here is how to be one of them.',

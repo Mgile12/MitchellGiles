@@ -26,6 +26,8 @@ export interface ServicePage {
   checklist?: { title: string; items: string[] };
   faqs: { question: string; answer: string }[];
   related: { label: string; href: string }[];
+  /** Optional YouTube Short shown straight after the intro, with VideoObject schema */
+  video?: { youtubeId: string; heading: string; name: string; description: string; uploadDate: string; duration: string };
 }
 
 const CORE_LINKS = [

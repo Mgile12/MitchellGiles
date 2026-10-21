@@ -96,6 +96,32 @@ export default function ServicePageContent({ s, images }: { s: ServicePage; imag
         </div>
       </section>
 
+      {s.video && (
+        <section className="relative bg-navy-950 overflow-hidden" aria-labelledby="video-heading">
+          <div className="grid-ground absolute inset-0" aria-hidden="true" />
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+            <AnimateOnScroll className="text-center mb-10">
+              <Eyebrow className="mb-4">In under a minute</Eyebrow>
+              <h2 id="video-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink font-serif">
+                <RevealText text={s.video.heading} />
+              </h2>
+            </AnimateOnScroll>
+            <AnimateOnScroll className="mx-auto w-full max-w-[360px]">
+              <div className="relative overflow-hidden rounded-2xl border border-ink/10 bg-ink shadow-[0_24px_64px_rgba(0,0,0,0.16)]" style={{ paddingTop: '177.78%' }}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${s.video.youtubeId}`}
+                  title={s.video.name}
+                  className="absolute inset-0 h-full w-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </section>
+      )}
+
       {/* Body */}
       <section className="relative bg-navy-900 overflow-x-clip" aria-label="Article">
         <div className="grid-ground absolute inset-0" aria-hidden="true" />

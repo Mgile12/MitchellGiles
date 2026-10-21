@@ -62,6 +62,24 @@ export function ServiceRoute({ slug }: { slug: string }) {
         { '@type': 'ListItem', position: 3, name: s.name, item: url },
       ],
     },
+    ...(s.video
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'VideoObject',
+            name: s.video.name,
+            description: s.video.description,
+            thumbnailUrl: `https://i.ytimg.com/vi/${s.video.youtubeId}/hqdefault.jpg`,
+            uploadDate: s.video.uploadDate,
+            duration: s.video.duration,
+            embedUrl: `https://www.youtube.com/embed/${s.video.youtubeId}`,
+            contentUrl: `https://www.youtube.com/shorts/${s.video.youtubeId}`,
+            inLanguage: 'en-AU',
+            author: { '@id': `${BUSINESS_INFO.url}/#mitchell-giles` },
+            publisher: { '@id': `${BUSINESS_INFO.url}/#business` },
+          },
+        ]
+      : []),
   ];
   return (
     <>
