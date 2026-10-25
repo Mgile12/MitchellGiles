@@ -5,8 +5,6 @@ import { MoveRight, PhoneCall } from 'lucide-react';
 import Link from 'next/link';
 import HeroProofCard from '@/components/HeroProofCard';
 
-const PARTNERS = [{ src: '/new-Google-Partner-logo-png-large-size.png', alt: 'Google Partner' }];
-
 function delay(ms: number) {
   return { ['--d' as string]: `${ms}ms` };
 }
@@ -114,26 +112,6 @@ export function AnimatedHero() {
               Established 2024 <span className="mx-2 text-ink/30" aria-hidden="true">|</span> $1.4M+ generated for clients
             </p>
 
-            <div
-              className="hero-in mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-8 gap-y-4"
-              style={delay(420)}
-            >
-              <span className="text-[11px] font-semibold tracking-[0.18em] uppercase text-ink/65 font-sans">
-                Accredited partner
-              </span>
-              <div className="flex items-center gap-6 sm:gap-8">
-                {PARTNERS.map((p) => (
-                  <img
-                    key={p.alt}
-                    src={p.src}
-                    alt={p.alt}
-                    className="h-8 sm:h-9 w-auto object-contain opacity-70"
-                    style={{ filter: 'brightness(0)' }}
-                    loading="eager"
-                  />
-                ))}
-              </div>
-            </div>
           </div>
 
           <div className="lg:col-span-5">
