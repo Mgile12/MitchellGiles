@@ -99,7 +99,7 @@ export default function ProjectMaths() {
                 <span>4x</span>
               </div>
             </Field>
-            <Field id={`${uid}-spend`} label="Monthly investment (optional)" hint="Leave blank to see revenue only.">
+            <Field id={`${uid}-spend`} label="What you would spend a month on this (optional)" hint="Your own budget for the work, not my price. Leave blank to see revenue only.">
               <input id={`${uid}-spend`} type="number" min={0} step={100} value={investment} onChange={(e) => setInvestment(e.target.value)} placeholder="$" className={inputCls} inputMode="numeric" />
             </Field>
           </form>
@@ -128,7 +128,7 @@ export default function ProjectMaths() {
             </dl>
             {spend > 0 && (
               <div className="mt-6 pt-5 border-t border-white/15">
-                <p className="text-sm text-white/65 font-sans">After the monthly investment</p>
+                <p className="text-sm text-white/65 font-sans">After what you would spend</p>
                 <p className="mt-1 text-2xl font-bold font-serif tabular-nums text-white">{aud.format(net)} a month</p>
                 <p className="mt-1 text-xs text-white/55 font-sans">
                   {jobsToCover > 0 && `About ${one.format(jobsToCover)} extra job${jobsToCover > 1.05 ? 's' : ''} a month covers it.`}{' '}

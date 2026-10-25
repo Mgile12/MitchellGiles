@@ -109,7 +109,7 @@ export function AnimatedHero() {
             </div>
 
             <p className="hero-in mt-8 text-sm font-semibold text-ink/70 font-sans text-center lg:text-left" style={delay(380)}>
-              Established 2024 <span className="mx-2 text-ink/30" aria-hidden="true">|</span> $1.4M+ generated for clients
+              Established 2024 <span className="mx-2 text-ink/30" aria-hidden="true">|</span> $2.4M+ generated for clients
             </p>
 
           </div>

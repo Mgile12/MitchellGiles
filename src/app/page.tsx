@@ -41,13 +41,13 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />
       <AnimatedHero />
       <CurrentClients />
-      <ServicesGrid />
-      <Industries />
+      <AboutSection />
       <ProjectMaths />
+      <GoogleReviews />
       <Offers />
       <StatsTicker />
-      <GoogleReviews />
-      <AboutSection />
+      <ServicesGrid />
+      <Industries />
       <WhyMe />
       <LocationMap />
       <LinkWeb show={['guides', 'trades', 'areas', 'proof']} heading="Everything else on this site" intro="The parts of the job, the trades I write for, the suburbs I work in, and the proof." />

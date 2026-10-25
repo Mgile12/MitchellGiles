@@ -29,7 +29,7 @@ const howIWork = [
 ];
 
 const quickProof = [
-  { figure: '$1.4M+', label: 'generated for clients since MRG was established in 2024' },
+  { figure: '$2.4M+', label: 'generated for clients since MRG was established in 2024' },
   { figure: '266', label: 'call-button taps in five months from one Business Profile, up 23% on last year' },
   { figure: '2 days', label: 'for one profile to go from page two to the top 3 on Google Maps' },
   { figure: '+273%', label: 'website clicks from Maps, year on year, on one profile I manage' },

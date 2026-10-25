@@ -6,7 +6,7 @@ import { Pause, Play } from 'lucide-react';
 // Headline results, every one from a client Business Profile or a ranking scan (see the case studies).
 const STATS = [
   'Established 2024',
-  '$1.4M+ generated for clients',
+  '$2.4M+ generated for clients',
   'Top 3 on Google Maps in 2 days',
   '266 calls in five months from one profile',
   'Calls up 324% on the same five months last year',
