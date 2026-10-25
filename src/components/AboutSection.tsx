@@ -29,6 +29,7 @@ const howIWork = [
 ];
 
 const quickProof = [
+  { figure: '$1.4M+', label: 'generated for clients since MRG was established in 2024' },
   { figure: '266', label: 'call-button taps in five months from one Business Profile, up 23% on last year' },
   { figure: '2 days', label: 'for one profile to go from page two to the top 3 on Google Maps' },
   { figure: '+273%', label: 'website clicks from Maps, year on year, on one profile I manage' },
@@ -109,7 +110,7 @@ export default function AboutSection() {
             </Link>
             <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">
-                Three numbers, all from client accounts
+                Four numbers, from client accounts and the books
               </p>
               <div className="divide-y divide-ink/[0.06]">
                 {quickProof.map((p) => (

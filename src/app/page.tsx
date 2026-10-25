@@ -2,6 +2,7 @@ import { AnimatedHero } from '@/components/ui/animated-hero';
 import CurrentClients from '@/components/CurrentClients';
 import GoogleReviews from '@/components/GoogleReviews';
 import Industries from '@/components/Industries';
+import StatsTicker from '@/components/StatsTicker';
 import ServicesGrid from '@/components/ServicesGrid';
 import Offers, { OFFERS } from '@/components/Offers';
 import GuaranteeOffer from '@/components/GuaranteeOffer';
@@ -39,11 +40,12 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }} />
       <AnimatedHero />
+      <CurrentClients />
       <ServicesGrid />
       <Industries />
       <GuaranteeOffer />
       <Offers />
-      <CurrentClients />
+      <StatsTicker />
       <GoogleReviews />
       <AboutSection />
       <WhyMe />

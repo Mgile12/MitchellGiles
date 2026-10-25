@@ -57,7 +57,7 @@ export default function Footer() {
         text: `\u00A9 ${new Date().getFullYear()} ${BUSINESS_INFO.legalName}`,
         license: 'All rights reserved',
       }}
-      bottomTagline="Ormeau, Gold Coast, Queensland."
+      bottomTagline="Ormeau, Gold Coast, Queensland. Established 2024."
       badges={
         // My Gold Coast directory badge (Featured listing, from Oct 2026). Embed code as supplied by the directory.
         <a href="https://mygoldcoast.directory/business/mrg-marketing" title="MRG Marketing on My Gold Coast">

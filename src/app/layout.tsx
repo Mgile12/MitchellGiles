@@ -116,6 +116,7 @@ function buildJsonLd() {
     hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.legalName)}&query_place_id=${BUSINESS_INFO.placeId}`,
     areaServed: BUSINESS_INFO.serviceArea.map((name) => ({ '@type': 'Place', name })),
     knowsAbout: [...BUSINESS_INFO.services],
+    foundingDate: '2024',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
