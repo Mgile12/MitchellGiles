@@ -1,8 +1,8 @@
 import { ArrowRight, CalendarCheck, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import AnimateOnScroll from './AnimateOnScroll';
-import Eyebrow from './Eyebrow';
-import RevealText from './RevealText';
+import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Eyebrow from '@/components/Eyebrow';
+import RevealText from '@/components/RevealText';
 
 // The headline offer. No price on the site: it is sold on the call.
 const GUARANTEE = {

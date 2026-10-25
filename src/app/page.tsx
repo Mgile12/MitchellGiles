@@ -5,7 +5,7 @@ import Industries from '@/components/Industries';
 import StatsTicker from '@/components/StatsTicker';
 import ServicesGrid from '@/components/ServicesGrid';
 import Offers, { OFFERS } from '@/components/Offers';
-import GuaranteeOffer from '@/components/GuaranteeOffer';
+import ProjectMaths from '@/components/ProjectMaths';
 import AboutSection from '@/components/AboutSection';
 import WhyMe from '@/components/WhyMe';
 import LocationMap from '@/components/LocationMap';
@@ -43,7 +43,7 @@ export default function HomePage() {
       <CurrentClients />
       <ServicesGrid />
       <Industries />
-      <GuaranteeOffer />
+      <ProjectMaths />
       <Offers />
       <StatsTicker />
       <GoogleReviews />
