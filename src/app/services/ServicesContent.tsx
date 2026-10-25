@@ -7,6 +7,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Eyebrow from '@/components/Eyebrow';
 import ServicesOverview from '@/components/ServicesOverview';
 import LinkWeb from '@/components/LinkWeb';
+import Industries from '@/components/Industries';
 
 const services = [
   {
@@ -193,6 +194,7 @@ export default function ServicesContent() {
           </div>
         </AnimateOnScroll>
       </section>
+      <Industries />
       <LinkWeb show={['areas', 'proof']} heading="Where I do this, and the proof" />
     </div>
   );
