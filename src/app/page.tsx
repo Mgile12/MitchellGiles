@@ -2,6 +2,7 @@ import { AnimatedHero } from '@/components/ui/animated-hero';
 import CurrentClients from '@/components/CurrentClients';
 import GoogleReviews from '@/components/GoogleReviews';
 import Industries from '@/components/Industries';
+import Process from '@/components/Process';
 import StatsTicker from '@/components/StatsTicker';
 import ServicesGrid from '@/components/ServicesGrid';
 import Offers, { OFFERS } from '@/components/Offers';
@@ -47,6 +48,7 @@ export default function HomePage() {
       <Offers />
       <StatsTicker />
       <ServicesGrid />
+      <Process />
       <Industries />
       <WhyMe />
       <LocationMap />
