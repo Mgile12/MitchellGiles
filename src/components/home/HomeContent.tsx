@@ -518,7 +518,7 @@ export default function HomeContent() {
         <div data-rv="up" data-d=".3" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)","borderBottom":"1px solid rgba(255,255,255,.4)"}}><strong>3</strong><span>Miss the target in 90 days and you get back the management fees paid in those 90 days.</span></div>
       </div>
       <div data-rv="up" data-d=".35" style={{"display":"flex","flexWrap":"wrap","gap":"8px 18px","alignItems":"center","fontWeight":"700","fontSize":"15px"}}>
-        <span>No lock-in</span><span>·</span><span>You own everything</span><span>·</span><span>Update every Friday</span>
+        <span>No lock-in</span><span>·</span><span>You own everything</span><span>·</span><span>Update every Friday</span><Link href="/terms/#guarantee" style={{"color":"#fff"}}>Full terms</Link>
         
       </div>
     </div>
@@ -624,7 +624,7 @@ export default function HomeContent() {
     </div>
     <div style={{"borderTop":"1px solid #3a3a38","paddingTop":"18px","display":"flex","flexWrap":"wrap","gap":"8px 20px","justifyContent":"space-between","fontSize":"13px"}}>
       <span>© 2026 MRG Marketing · Ormeau, Gold Coast · Established 2024</span>
-      <span style={{"display":"flex","gap":"16px","flexWrap":"wrap"}}><span>MRG Marketing is not affiliated with Google.</span></span>
+      <span style={{"display":"flex","gap":"16px","flexWrap":"wrap"}}><Link href="/terms/" style={{"color":"#b8b5ac"}}>Terms</Link><Link href="/privacy/" style={{"color":"#b8b5ac"}}>Privacy</Link><span>MRG Marketing is not affiliated with Google.</span></span>
     </div>
   </div>
 </footer>

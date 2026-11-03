@@ -25,6 +25,7 @@ interface FooterProps {
   copyright: {
     text: string;
     license?: string;
+    links?: Array<{ href: string; label: string }>;
   };
   bottomTagline?: string;
   /** Directory and award badges, shown above the copyright row */
@@ -149,6 +150,12 @@ export function Footer({
                   <span>{copyright.license}</span>
                 </>
               )}
+              {copyright.links?.map((l) => (
+                <span key={l.href}>
+                  <span className="mx-1.5 text-slate-700">|</span>
+                  <a href={l.href} className="underline underline-offset-2 hover:text-ink">{l.label}</a>
+                </span>
+              ))}
             </div>
 
             {bottomTagline && (

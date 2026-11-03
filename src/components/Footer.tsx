@@ -56,6 +56,7 @@ export default function Footer() {
       copyright={{
         text: `\u00A9 ${new Date().getFullYear()} ${BUSINESS_INFO.legalName}`,
         license: 'All rights reserved',
+        links: [{ href: '/terms/', label: 'Terms' }, { href: '/privacy/', label: 'Privacy' }],
       }}
       bottomTagline="Ormeau, Gold Coast, Queensland. Established 2024."
       badges={

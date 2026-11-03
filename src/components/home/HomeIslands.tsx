@@ -157,6 +157,9 @@ export function LeadForm({ variant }: { variant: 'home-hero' | 'home-final' }) {
         {hero && <span style={{ width: 8, height: 8, borderRadius: '50%', background: BLUE, animation: 'mrgPulse 2s infinite' }} />}
         No discovery call unless you ask.{hero && <> <strong style={{ color: INK }}>10 a week.</strong></>}
       </p>
+      <p style={{ margin: 0, fontSize: 12, textAlign: 'center', color: '#55534d' }}>
+        How I handle your details: <Link href="/privacy/">privacy policy</Link>
+      </p>
     </form>
   );
 }
