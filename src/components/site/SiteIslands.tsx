@@ -40,7 +40,7 @@ export function HomeNav() {
           )}
         </nav>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <a href="#get-video" className="hv-ink-bg" style={{ height: 44, padding: '0 16px', display: 'inline-flex', alignItems: 'center', background: BLUE, color: '#fff', textDecoration: 'none', fontStretch: '125%', fontWeight: 800, fontSize: 15, whiteSpace: 'nowrap' }}>
+          <a href="#get-video" className="hv-ink-bg s-nav-cta" style={{ height: 44, padding: '0 16px', display: 'inline-flex', alignItems: 'center', background: BLUE, color: '#fff', textDecoration: 'none', fontStretch: '125%', fontWeight: 800, fontSize: 15, whiteSpace: 'nowrap' }}>
             Get my map video
           </a>
           <button
@@ -247,18 +247,38 @@ export function HomeCalculator() {
   );
 }
 
-/** Phone-only button that appears once neither form is on screen. */
+/**
+ * Phone-only button. Hidden while a form is on screen. On pages with the 12-week grid (the homepage) it stays
+ * hidden from the top of the page until the visitor has scrolled past the end of the grid.
+ */
 export function MobileBar() {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    const targets = [document.querySelector('[data-hero-form]'), document.querySelector('[data-final]')].filter(Boolean) as Element[];
-    const onScreen = new Set<Element>();
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => (e.isIntersecting ? onScreen.add(e.target) : onScreen.delete(e.target)));
-      setShow(onScreen.size === 0);
-    });
-    targets.forEach((t) => io.observe(t));
-    return () => io.disconnect();
+    const forms = [document.querySelector('[data-hero-form]'), document.querySelector('[data-final]')].filter(Boolean) as Element[];
+    const story = document.querySelector('[data-scrub="sticky"]');
+    let pending = false;
+    const check = () => {
+      pending = false;
+      const vh = window.innerHeight;
+      const passedStory = !story || story.getBoundingClientRect().bottom <= 0;
+      const formOnScreen = forms.some((f) => {
+        const r = f.getBoundingClientRect();
+        return r.bottom > 0 && r.top < vh;
+      });
+      setShow(passedStory && !formOnScreen);
+    };
+    const onScroll = () => {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(check);
+    };
+    check();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
   return (
     <div className="only-narrow-block" style={{ position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 50, padding: '10px 12px calc(10px + env(safe-area-inset-bottom))', background: '#f3f1ec', borderTop: `1px solid ${INK}`, transform: show ? 'translateY(0)' : 'translateY(110%)', transition: 'transform .3s ease' }}>

@@ -142,7 +142,7 @@ export default function HomeContent() {
 <section style={{"padding":"clamp(56px,8vw,88px) 20px","background":"#fff"}}>
   <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexDirection":"column","gap":"36px"}}>
     <div data-rv="up" style={{"containerType":"inline-size","display":"flex","flexWrap":"wrap","alignItems":"flex-end","gap":"8px 28px","paddingBottom":"32px","borderBottom":"3px solid #111110"}}>
-      <div data-num="" data-target="2.4" data-fmt="d1" data-pre="$" data-suf="M+" style={{"fontStretch":"125%","fontWeight":"900","fontSize":"clamp(72px,19cqi,220px)","lineHeight":".8","letterSpacing":"-.05em","fontVariantNumeric":"tabular-nums","color":"#2F6BFF"}}>$2.4M+</div>
+      <div data-num="" data-target="2.4" data-fmt="d1" data-pre="$" data-suf="M+" style={{"fontStretch":"125%","fontWeight":"900","fontSize":"clamp(60px,19cqi,220px)","lineHeight":".8","letterSpacing":"-.05em","fontVariantNumeric":"tabular-nums","color":"#2F6BFF"}}>$2.4M+</div>
       <div style={{"fontSize":"clamp(18px,2.2vw,24px)","fontWeight":"700","lineHeight":"1.2","maxWidth":"340px","paddingBottom":"6px","textWrap":"pretty"}}>generated for clients since MRG was established in 2024.</div>
     </div>
     <div style={{"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(min(100%,260px),1fr))","gap":"0"}}>
@@ -180,7 +180,7 @@ export default function HomeContent() {
     <p data-rv="up" data-d=".1" style={{"margin":"0","fontSize":"18px","color":"#d4d1c8","maxWidth":"680px","textWrap":"pretty"}}>Every search is <Link href="/google-maps-ranking-gold-coast/" style={{"color":"#6f98ff"}}>ranked from where the customer is standing</Link>. Most profiles are half-built, so you show up in your own street and disappear three streets away, where most of the calls are. Scroll to watch 12 weeks of work.</p>
   </div>
   <div data-scrub="sticky" style={{"position":"relative","height":"280vh"}}>
-    <div style={{"position":"sticky","top":"60px","height":"calc(100vh - 60px)","display":"flex","alignItems":"center","padding":"16px 20px","overflow":"hidden"}}>
+    <div className="s-story-pin" style={{"position":"sticky","top":"60px","height":"calc(100vh - 60px)","display":"flex","alignItems":"center","padding":"16px 20px","overflow":"hidden"}}>
       <div style={{"maxWidth":"1240px","width":"100%","margin":"0 auto","display":"flex","flexWrap":"wrap","gap":"clamp(20px,5vw,64px)","alignItems":"center","justifyContent":"center"}}>
         <div style={{"flex":"1 1 300px","minWidth":"0","maxWidth":"440px","display":"flex","flexDirection":"column","gap":"clamp(12px,2.4vh,24px)"}}>
           <div style={{"display":"flex","alignItems":"baseline","gap":"14px","flexWrap":"wrap"}}><span data-pnum="" data-min="0" data-max="12" data-pre="Week " style={{"fontStretch":"125%","fontWeight":"900","fontSize":"clamp(40px,7vw,80px)","lineHeight":".9","letterSpacing":"-.03em","fontVariantNumeric":"tabular-nums"}}>Week 0</span><span style={{"fontFamily":"var(--font-jb),monospace","fontSize":"12px","letterSpacing":".1em","color":"#b8b5ac"}}>&quot;BLOCKED DRAINS&quot;</span></div>
@@ -190,9 +190,9 @@ export default function HomeContent() {
             <div><div data-pnum="" data-min="17" data-max="2" data-pre="#" style={{"fontStretch":"125%","fontWeight":"900","fontSize":"clamp(30px,4.4vw,48px)","lineHeight":"1","fontVariantNumeric":"tabular-nums"}}>#17</div><div style={{"fontSize":"14px","color":"#b8b5ac"}}>average map position</div></div>
           </div>
           <div style={{"display":"flex","flexWrap":"wrap","gap":"12px 18px","fontSize":"13px","color":"#d4d1c8"}}><span style={{"display":"flex","alignItems":"center","gap":"6px"}}><span style={{"width":"12px","height":"12px","borderRadius":"50%","background":"oklch(0.66 0.17 150)"}}></span>Top 3</span><span style={{"display":"flex","alignItems":"center","gap":"6px"}}><span style={{"width":"12px","height":"12px","borderRadius":"50%","background":"oklch(0.8 0.15 85)"}}></span>4–10</span><span style={{"display":"flex","alignItems":"center","gap":"6px"}}><span style={{"width":"12px","height":"12px","borderRadius":"50%","background":"oklch(0.62 0.2 28)"}}></span>11+</span></div>
-          <div style={{"fontSize":"12px","color":"#8a877e"}}>Illustration modelled on a real client&apos;s 7x7 Local Falcon grid.</div>
+          <div className="s-story-note" style={{"fontSize":"12px","color":"#8a877e"}}>Illustration modelled on a real client&apos;s 7x7 Local Falcon grid.</div>
         </div>
-        <div style={{"flex":"0 1 auto","width":"min(100%,50vh,520px)","position":"relative"}}>
+        <div className="s-story-grid" style={{"flex":"0 1 auto","width":"min(100%,50vh,520px)","position":"relative"}}>
           <div style={{"display":"grid","gridTemplateColumns":"repeat(7,minmax(0,1fr))","gap":"clamp(4px,1vw,8px)","padding":"clamp(10px,2vw,18px)","background":"#1c1c1b","border":"1px solid #3a3a38"}}>
             {cells.map((c, cIdx) => (<Fragment key={cIdx}>
               <div style={{"position":"relative","aspectRatio":"1/1","borderRadius":"50%","background":`${c.bg}`,"color":`${c.fg}`,"display":"flex","alignItems":"center","justifyContent":"center","fontWeight":"800","fontSize":"clamp(9px,1.6vh,14px)","fontVariantNumeric":"tabular-nums"}}>{c.b}<span style={{"position":"absolute","inset":"0","borderRadius":"50%","background":`${c.ag}`,"color":"#fff","display":"flex","alignItems":"center","justifyContent":"center","opacity":`clamp(0, calc((var(--p,0) - ${c.t}) * 9), 1)`,"transform":`scale(clamp(.6, calc(.6 + (var(--p,0) - ${c.t}) * 4), 1))`}}>{c.a}</span></div>
@@ -327,7 +327,7 @@ export default function HomeContent() {
     
     <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(32px,6.4vw,64px)","lineHeight":".95","letterSpacing":"-.03em"}}>Three things. <span style={{"color":"#2F6BFF"}}>Done properly.</span></h2>
     <div style={{"display":"flex","flexWrap":"wrap","gap":"clamp(28px,5vw,56px)","alignItems":"flex-start"}}>
-      <div style={{"flex":"1 1 360px","minWidth":"0","position":"sticky","top":"90px"}}>
+      <div className="s-sticky-wide" style={{"flex":"1 1 360px","minWidth":"0"}}>
         <div data-demo="" data-rv="scale" style={{"background":"#fff","border":"3px solid #111110","boxShadow":"10px 10px 0 #111110","padding":"16px","display":"flex","flexDirection":"column","gap":"14px"}}>
           <div style={{"display":"flex","justifyContent":"space-between","alignItems":"center","gap":"10px"}}><span data-demo-src="" style={{"fontFamily":"var(--font-jb),monospace","fontSize":"11px","letterSpacing":".12em","fontWeight":"600","background":"#111110","color":"#fff","padding":"4px 8px"}}>GOOGLE MAPS</span><span style={{"fontFamily":"var(--font-jb),monospace","fontSize":"11px","letterSpacing":".1em","color":"#55534d","display":"flex","alignItems":"center","gap":"6px"}}><span style={{"width":"7px","height":"7px","borderRadius":"50%","background":"#2F6BFF","animation":"mrgPulse 2s infinite"}}></span>LIVE DEMO</span></div>
           <div style={{"height":"52px","border":"2px solid #111110","borderRadius":"26px","display":"flex","alignItems":"center","gap":"10px","padding":"0 18px","fontSize":"17px","fontWeight":"600","overflow":"hidden","whiteSpace":"nowrap"}}><span style={{"color":"#2F6BFF","fontSize":"18px"}}>⌕</span><span data-demo-q="" style={{"overflow":"hidden","textOverflow":"ellipsis"}}>plumber coomera</span><span style={{"width":"2px","height":"22px","background":"#2F6BFF","flex":"none","animation":"mrgBlink 1s infinite"}}></span></div>
@@ -345,7 +345,7 @@ export default function HomeContent() {
               </div>
               <div data-demo-row="2" style={{"position":"absolute","left":"0","right":"0","top":"0","height":"68px","border":"2px solid #2F6BFF","background":"#fff","display":"flex","alignItems":"center","gap":"12px","padding":"0 12px","zIndex":"2","transition":"transform .8s cubic-bezier(.7,0,.2,1),opacity .4s"}}>
                 <span style={{"width":"30px","height":"30px","borderRadius":"50%","background":"#2F6BFF","flex":"none","color":"#fff","display":"flex","alignItems":"center","justifyContent":"center","fontWeight":"900","fontSize":"14px"}}>★</span>
-                <div style={{"flex":"1","minWidth":"0","display":"flex","flexDirection":"column","gap":"2px"}}><span style={{"fontWeight":"800","fontSize":"16px"}}>Your business</span><span style={{"fontSize":"13px","color":"#55534d"}}>★ 5.0 · Open now · 4 min away</span></div>
+                <div style={{"flex":"1","minWidth":"0","display":"flex","flexDirection":"column","gap":"2px"}}><span style={{"fontWeight":"800","fontSize":"16px"}}>Your business</span><span style={{"fontSize":"13px","color":"#55534d"}}>★ 5.0 · Open now<span className="s-hide-narrow"> · 4 min away</span></span></div>
                 <span style={{"height":"36px","padding":"0 14px","background":"#2F6BFF","color":"#fff","fontWeight":"800","fontSize":"14px","display":"flex","alignItems":"center"}}>Call</span>
                 <span data-demo-pop="" style={{"position":"absolute","right":"-8px","top":"-14px","background":"#111110","color":"#fff","fontFamily":"var(--font-jb),monospace","fontSize":"11px","fontWeight":"600","padding":"4px 8px","transition":"opacity .3s,transform .4s cubic-bezier(.3,1.6,.5,1)"}}>+1 CALL</span>
               </div>
@@ -425,7 +425,7 @@ export default function HomeContent() {
         <div data-rv="up" data-d=".26" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>Local first, then the best in the world</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>I study your competitors here, then the top operators nationally and globally, and bring that standard back to your suburb.</div></div>
         <div data-rv="up" data-d=".34" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>You own everything</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>Your profile, your site, your pages. No lock-in.</div></div>
       </div>
-      <Link className="hv2" data-rv="up" data-d=".4" href="/hardest-working-seo-expert-in-gold-coast/" style={{"alignSelf":"flex-start","display":"flex","alignItems":"center","gap":"12px","height":"56px","padding":"0 22px","border":"2px solid #fff","color":"#fff","textDecoration":"none","fontStretch":"125%","fontWeight":"800","fontSize":"17px"}}>Meet the hardest working SEO expert in Gold Coast <span style={{"fontSize":"20px"}}>→</span></Link>
+      <Link className="hv2" data-rv="up" data-d=".4" href="/hardest-working-seo-expert-in-gold-coast/" style={{"alignSelf":"flex-start","display":"flex","alignItems":"center","gap":"12px","minHeight":"56px","padding":"12px 22px","lineHeight":"1.2","border":"2px solid #fff","color":"#fff","textDecoration":"none","fontStretch":"125%","fontWeight":"800","fontSize":"17px"}}>Meet the hardest working SEO expert in Gold Coast <span style={{"fontSize":"20px"}}>→</span></Link>
     </div>
   </div>
 </section>
@@ -511,7 +511,7 @@ export default function HomeContent() {
     <div style={{"flex":"1 1 380px","minWidth":"0","maxWidth":"560px"}}>
       <div data-rv="up" data-d=".15" style={{"background":"#fff","color":"#111110","border":"3px solid #fff","boxShadow":"10px 10px 0 #2F6BFF","padding":"clamp(16px,4vw,24px)"}}><LeadForm variant="home-final" />
       </div>
-      <div style={{"fontSize":"15px","marginTop":"22px","color":"#d4d1c8"}}>Rather talk now? <a href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" style={{"color":"#6f98ff"}} rel="noopener noreferrer">Book a 30-minute call</a> or ring <a href="tel:0474870535" style={{"color":"#6f98ff"}}>0474 870 535</a></div>
+      <div className="s-rather-c" style={{"fontSize":"15px","marginTop":"22px","color":"#d4d1c8"}}>Rather talk now? <a href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm" style={{"color":"#6f98ff"}} rel="noopener noreferrer">Book a 30-minute call</a> or ring <a href="tel:0474870535" style={{"color":"#6f98ff"}}>0474 870 535</a></div>
     </div>
   </div>
 </section>

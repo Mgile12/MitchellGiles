@@ -124,7 +124,7 @@ export function CtaSection({ title, children, variant, searchHint, after }: { ti
         </div>
         <div data-rv="up" data-d=".15" className="s-split-form">
           <div className="s-formbox s-formbox-dark"><LeadForm variant={variant} searchHint={searchHint} /></div>
-          <p className="s-small s-rather">
+          <p className="s-small s-rather s-rather-c">
             Rather talk now? <a href={BUSINESS_INFO.bookingUrl}>Book a 30-minute call</a> or ring <a href={`tel:${BUSINESS_INFO.phoneFormatted}`}>{BUSINESS_INFO.phone}</a>
           </p>
         </div>
