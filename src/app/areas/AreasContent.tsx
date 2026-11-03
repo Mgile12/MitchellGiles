@@ -1,147 +1,61 @@
-'use client';
-
 import Link from 'next/link';
-import { ChevronRight, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import AnimateOnScroll from '@/components/AnimateOnScroll';
-import LinkWeb from '@/components/LinkWeb';
+import SiteShell from '@/components/site/SiteShell';
+import { CtaSection, LinksSection, PageHero } from '@/components/site/Blocks';
+import { SUBURBS, SUBURB_PAGES } from './suburbs';
+
+const ORMEAU = { slug: 'ormeau', name: 'Ormeau', primaryKeyword: 'Local SEO Ormeau', tagline: 'Home base. Where I live and work, and where I know the map best.', minutes: null as number | null };
+const CARDS = [ORMEAU, ...SUBURB_PAGES.map((s) => ({ slug: s.slug, name: s.name, primaryKeyword: s.primaryKeyword, tagline: s.tagline, minutes: s.drive.minutes as number | null }))];
 
 export default function AreasContent() {
   return (
-    <div className="bg-navy-950 min-h-screen">
-      <section className="relative bg-navy-950 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.45),transparent_60%)]" />
+    <SiteShell>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Areas We Serve' }]}
+        kicker="Local Coverage"
+        title={<>Areas We <span className="s-accent">Serve</span></>}
+        lead={
+          <p>
+            Based in {BUSINESS_INFO.address.locality}, we work with businesses across the Gold Coast, Brisbane and South East Queensland. Local expertise, real results. See our full range of{' '}
+            <Link href="/services/">marketing services</Link> to find out what we can do for your business.
+          </p>
+        }
+        variant="area-hub"
+        image={{ src: '/images/home/mitchell-giles-local-seo-consultant-ormeau.webp', alt: 'Mitchell Giles, MRG Marketing, Ormeau', width: 920, height: 1150 }}
+        caption="Mitchell Giles, Ormeau"
+      />
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-16 sm:pb-24">
-          <nav className="flex items-center gap-2 text-sm text-ink/55 mb-10 animate-fade-in font-sans">
-            <Link href="/" className="hover:text-gold transition-colors duration-200">Home</Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-ink/80">Areas We Serve</span>
-          </nav>
-
-          <div className="max-w-3xl animate-fade-in-up">
-            <span className="inline-block text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-5 font-sans">
-              Local Coverage
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.1] mb-6 font-serif">
-              Areas We Serve
-            </h1>
-            <p className="text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
-              Based in {BUSINESS_INFO.address.locality}, we work with businesses across the Gold Coast, Brisbane
-              and South East Queensland. Local expertise, real results. See our full range of{' '}
-              <Link href="/services" className="text-gold hover:underline">marketing services</Link> to find out what we can do for your business.
+      <section className="s-sec s-white" aria-labelledby="suburbs-heading">
+        <div className="s-wrap s-stack-lg">
+          <div className="s-stack-sm">
+            <h2 id="suburbs-heading" data-rv="up" className="s-h2">Suburbs I work <span className="s-accent">in most</span></h2>
+            <p data-rv="up" data-d=".1" className="s-lead">
+              Ormeau is home. These are the twenty suburbs I work in, closest first. The ones with a link have their own page, because that is where the searches are; the rest are covered from the nearest one.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="suburbs-heading">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 id="suburbs-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-4">
-            Suburbs I work in most
-          </h2>
-          <p className="text-base sm:text-lg text-ink/65 font-sans max-w-2xl mb-8">
-            Ormeau is home. These are the twenty suburbs I work in, closest first. The ones with a link have their own
-            page, because that is where the searches are; the rest are covered from the nearest one.
-          </p>
-          <ul className="flex flex-wrap gap-3 font-sans">
-            <li>
-              <Link
-                href="/areas/ormeau"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Ormeau <ArrowRight className="w-4 h-4" />
+          <div className="s-cards">
+            {CARDS.map((c, i) => (
+              <Link key={c.slug} data-rv="up" data-d={String(Math.min(i, 3) * 0.08)} href={`/areas/${c.slug}/`} className="s-card">
+                <span className="s-card-k">{c.minutes ? `${c.minutes} minutes from Ormeau` : 'Home base'}</span>
+                <h3>{c.primaryKeyword}</h3>
+                <span className="s-card-b">{c.tagline}</span>
+                <span className="s-card-more">{c.name} →</span>
               </Link>
-            </li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Ormeau Hills</li>
-            <li>
-              <Link
-                href="/areas/pimpama"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Pimpama <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/areas/coomera"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Coomera <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/areas/upper-coomera"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Upper Coomera <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/areas/yatala"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Yatala <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/areas/stapylton"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Stapylton <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Jacobs Well</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Alberton</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Willow Vale</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Gilberton</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Norwell</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Woongoolba</li>
-            <li>
-              <Link
-                href="/areas/beenleigh"
-                className="press inline-flex items-center gap-2 rounded-full border border-ink/25 bg-white/55 px-4 py-2 text-sm font-semibold text-ink hover:bg-white/85"
-              >
-                Beenleigh <ArrowRight className="w-4 h-4" />
-              </Link>
-            </li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Eagleby</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Bahrs Scrub</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Waterford</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Oxenford</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Helensvale</li>
-            <li className="rounded-full border border-ink/10 bg-white/55 px-4 py-2 text-sm text-ink/80">Hope Island</li>
+            ))}
+          </div>
+          <ul data-rv="up" className="s-chips" aria-label="All twenty suburbs">
+            {SUBURBS.map((s) => (
+              <li key={s.slug}>{s.hasPage ? <Link href={`/areas/${s.slug}/`}>{s.name}</Link> : <span>{s.name}</span>}</li>
+            ))}
           </ul>
         </div>
       </section>
-      <section className="relative bg-navy-950 text-ink">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-        <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink leading-tight mb-6 font-serif">
-              Ready to grow your local business?
-            </h2>
-            <p className="text-lg text-ink/80 leading-relaxed font-sans mb-12">
-              No matter where you are in South East Queensland, the process starts with a conversation.
-            </p>
-            <div className="relative inline-block group">
-              <Link
-                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-                className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
-              >
-                Book a 30-minute call
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-            </div>
-          </div>
-        </AnimateOnScroll>
-      </section>
-      <LinkWeb show={['services', 'guides', 'trades', 'proof']} heading="What I do in these suburbs" />
-    </div>
+      <CtaSection title={<>Ready to grow your <span className="s-accent">local business?</span></>} variant="area-hub">
+        <p>No matter where you are in South East Queensland, the process starts with a short video of your own Google Maps position, street by street. Free, within 48 hours.</p>
+      </CtaSection>
+
+      <LinksSection title="What I do in these suburbs" current="/areas/" />
+    </SiteShell>
   );
 }

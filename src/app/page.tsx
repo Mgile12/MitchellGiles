@@ -1,12 +1,9 @@
-import { Archivo, JetBrains_Mono } from 'next/font/google';
+import SiteShell from '@/components/site/SiteShell';
 import HomeContent from '@/components/home/HomeContent';
 import { FAQS } from '@/components/home/faqs';
 import { BUSINESS_INFO } from '@/lib/business-info';
 
 // The homepage's title, description, canonical, LocalBusiness and WebSite schema all come from layout.tsx.
-
-const archivo = Archivo({ subsets: ['latin'], axes: ['wdth'], variable: '--font-archivo', display: 'swap' });
-const jetbrains = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '600'], variable: '--font-jb', display: 'swap' });
 
 const VIDEO_ID = 'uC-0gdj_ii4';
 
@@ -57,11 +54,11 @@ const videoSchema = {
 
 export default function HomePage() {
   return (
-    <div className={`${archivo.variable} ${jetbrains.variable}`}>
+    <SiteShell>
       {[offerSchema, faqSchema, videoSchema].map((schema) => (
         <script key={schema['@type']} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
       <HomeContent />
-    </div>
+    </SiteShell>
   );
 }

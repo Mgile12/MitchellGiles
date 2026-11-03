@@ -4,8 +4,8 @@ import { usePathname } from 'next/navigation';
 import HeaderNav from '@/components/HeaderNav';
 import Footer from '@/components/Footer';
 
-// The homepage carries its own header and footer from the design.
-const MINIMAL_ROUTES: string[] = ['/'];
+// Pages in the new design carry their own header and footer (components/site/SiteShell).
+const MINIMAL_ROUTES: string[] = ['/', '/areas'];
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

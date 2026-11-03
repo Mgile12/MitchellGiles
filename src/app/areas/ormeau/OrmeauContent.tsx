@@ -1,12 +1,8 @@
 import Link from 'next/link';
-import { MapPin, Search, Sparkles, ArrowRight, ChevronRight, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import AnimateOnScroll from '@/components/AnimateOnScroll';
-import CountUp from '@/components/CountUp';
-import Eyebrow from '@/components/Eyebrow';
-import RevealText from '@/components/RevealText';
-import SpotlightLink from '@/components/SpotlightLink';
-import LinkWeb from '@/components/LinkWeb';
+import SiteShell from '@/components/site/SiteShell';
+import { BigStats, CtaSection, FaqSection, LinksSection, PageHero, ServiceRows } from '@/components/site/Blocks';
+import { SUBURBS } from '../suburbs';
 
 // Google Business Profile: MRG Marketing, 9 Laverton St, Ormeau
 const PLACE_ID = 'ChIJI7me_LgPkWsRiuaYKm_2oqc';
@@ -50,374 +46,201 @@ export const faqItems = [
 ];
 
 const servicesHere = [
-  {
-    title: 'Google Business Profile',
-    blurb: 'Top 3 on Maps for the searches that happen within a few kilometres of you.',
-    href: '/google-business-profile-gold-coast',
-    icon: MapPin,
-  },
-  {
-    title: 'Local SEO',
-    blurb: 'A page for every service and every suburb you serve, so Google has something to rank.',
-    href: '/best-local-seo-expert-in-gold-coast',
-    icon: Search,
-  },
-  {
-    title: 'AI Search (GEO)',
-    blurb: 'Named when someone in the corridor asks ChatGPT or Google AI who to call.',
-    href: '/ai-search-geo-gold-coast',
-    icon: Sparkles,
-  },
+  { title: 'Google Business Profile', blurb: 'Top 3 on Maps for the searches that happen within a few kilometres of you.', href: '/google-business-profile-gold-coast/' },
+  { title: 'Local SEO', blurb: 'A page for every service and every suburb you serve, so Google has something to rank.', href: '/best-local-seo-expert-in-gold-coast/' },
+  { title: 'AI Search (GEO)', blurb: 'Named when someone in the corridor asks ChatGPT or Google AI who to call.', href: '/ai-search-geo-gold-coast/' },
 ];
 
 const nearby = ['Ormeau Hills', 'Yatala', 'Pimpama', 'Coomera', 'Upper Coomera', 'Helensvale', 'Oxenford', 'Beenleigh'];
 
+const STEPS = [
+  {
+      n: '01',
+      title: 'Your Google Business Profile, before anything else',
+      text:
+        'The map pack around Ormeau shifts kilometre by kilometre. The right primary category, a full services list, photos from real jobs and a steady run of reviews move a profile more than any website change. It is also the cheapest source of customers a local business will ever have.',
+      href: '/google-business-profile-gold-coast',
+      cta: 'Google Business Profile',
+    },
+    {
+      n: '02',
+      title: 'A site that names your services and your suburbs',
+      text:
+        'Google needs something to rank. A page for each thing you do and each area you serve, written properly, with your name, address and phone on every one of them. This page is that, for me. Your version is what I build for you.',
+      href: '/best-local-seo-expert-in-gold-coast',
+      cta: 'Local SEO',
+    },
+    {
+      n: '03',
+      title: 'AI search for the corridor, not the whole coast',
+      text:
+        'When someone in Pimpama or Coomera asks ChatGPT or Google AI for a plumber, a detailer or a physio, the answer comes from the same signals Maps uses: a consistent business record, a profile that matches the website, and proof the models can read. I tune those so the answer is you.',
+      cta: 'AI Search',
+      href: '/ai-search-geo-gold-coast',
+    },
+];
+
+const STATS = [
+  { figure: '89', label: 'calls in five months from one Business Profile, up 324% on the same months last year' },
+  { figure: '266', label: 'calls in five months from another, up 23% on last year' },
+  { figure: '2', label: 'days for one profile to go from page two to the top 3 on Maps' },
+];
+
 export default function OrmeauContent() {
   return (
-    <div className="bg-navy-950 min-h-screen text-ink">
-      {/* Hero */}
-      <section className="hero-grain relative overflow-hidden bg-navy-950">
-        <div className="hero-grid absolute inset-0 z-0" aria-hidden="true" />
-        <div className="glow w-[560px] h-[560px] -top-40 -left-32" style={{ ['--glow-a' as string]: '0.16' }} aria-hidden="true" />
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-40 pb-16 lg:pb-20">
-          <nav className="flex items-center gap-2 text-sm text-ink/55 mb-8 font-sans" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-gold transition-colors duration-200">Home</Link>
-            <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
-            <Link href="/areas" className="hover:text-gold transition-colors duration-200">Areas we serve</Link>
-            <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
-            <span className="text-ink/80">Ormeau</span>
-          </nav>
+    <SiteShell>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Areas we serve', href: '/areas/' }, { label: 'Ormeau' }]}
+        kicker="Ormeau, northern Gold Coast"
+        title={<>Local SEO for <span className="s-accent">Ormeau businesses</span></>}
+        lead={
+          <p>
+            I run an internet marketing service based at {BUSINESS_INFO.address.street}, Ormeau. If you run a business here, in Ormeau Hills, or anywhere along the M1 between Yatala and Coomera, this page is what works in this corridor, what doesn&apos;t, and what I&apos;d do first.
+          </p>
+        }
+        variant="area-ormeau"
+        searchHint="e.g. plumber Ormeau"
+        image={{ src: '/images/home/mitchell-giles-local-seo-consultant-ormeau.webp', alt: 'Mitchell Giles, MRG Marketing, Ormeau', width: 920, height: 1150 }}
+        caption="Mitchell Giles, Ormeau"
+      />
 
-          <div className="max-w-3xl">
-            <Eyebrow align="left" className="mb-5">Ormeau, northern Gold Coast</Eyebrow>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-ink leading-[1.05] font-serif">
-              Local SEO for Ormeau businesses
-            </h1>
-            <p className="mt-6 text-lg md:text-xl leading-relaxed text-ink/80 font-sans max-w-2xl">
-              I run an internet marketing service based at {BUSINESS_INFO.address.street}, Ormeau. If you run a business here, in
-              Ormeau Hills, or anywhere along the M1 between Yatala and Coomera, this page is what works in this
-              corridor, what doesn&apos;t, and what I&apos;d do first.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link
-                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-                className="gold-flat-btn inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide"
-              >
-                Book a 30-minute call <Phone className="w-4 h-4" />
-              </Link>
-              <a
-                href="#services-here"
-                className="press inline-flex items-center justify-center gap-3 h-12 rounded-lg px-7 text-sm font-semibold tracking-wide border border-ink/20 text-ink bg-white/55 hover:bg-white/85 hover:border-ink/40"
-              >
-                What I do here <ArrowRight className="w-4 h-4" />
-              </a>
+      <section className="s-sec s-ink" aria-labelledby="ormeau-heading">
+        <div className="s-wrap s-split">
+          <div className="s-stack">
+            <p data-rv="left" className="s-kicker">The place</p>
+            <h2 id="ormeau-heading" data-rv="up" className="s-h2">Ormeau, from someone <span className="s-accent">who lives here.</span></h2>
+            <div data-rv="up" data-d=".1" className="s-lead">
+              <p>
+                Ormeau sits on the M1 at the top of the Gold Coast, with the Yatala industrial area on one side and the Pimpama and Coomera growth corridor on the other. It is one of the fastest-growing stretches in South East Queensland, which means two things for a business here: there are more customers every year, and there are more competitors every year.
+              </p>
+              <p>
+                Most of the businesses around here are trades, transport, automotive, fitness, allied health and home services. Their customers are spread from Beenleigh down to Helensvale, and they search from a phone, usually in a car, usually with &quot;near me&quot; on the end. Google answers those searches with the map first, and the map is decided by proximity, reviews and how complete a profile is. That is why so much of my work in Ormeau starts with Google Maps and not with a website.
+              </p>
+              <p>
+                The agencies you will find when you search for marketing help on the Gold Coast are in Nerang, Burleigh and Brisbane. I am in Ormeau. I know which suburbs a Coomera plumber actually gets calls from, why a Yatala workshop should not be chasing Surfers Paradise, and how far a Pimpama gym&apos;s map ranking really reaches. That is not a slogan, it is the difference between a profile that ranks in your own suburb and one that ranks where your customers are.
+              </p>
+              <p>
+                If we work together, it looks like this. We start with a look at the three businesses above you on the map. Then I fix the profile, build the pages your services and suburbs need, and only then spend money on ads. You deal with me, not an account manager. You get an update every Friday, and anything in between is answered the same day. Most of my Ormeau work is ongoing, because a map ranking is held, not won once.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Ormeau, from someone who lives here */}
-      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="ormeau-heading">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
-            <AnimateOnScroll className="lg:col-span-7">
-              <Eyebrow align="left" className="mb-5">The place</Eyebrow>
-              <h2 id="ormeau-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink leading-[1.1] font-serif mb-6">
-                <RevealText text="Ormeau, from someone who lives here." />
-              </h2>
-              <div className="space-y-4 text-base sm:text-lg text-ink/80 leading-relaxed font-sans max-w-2xl">
-                <p>
-                  Ormeau sits on the M1 at the top of the Gold Coast, with the Yatala industrial area on one side and the
-                  Pimpama and Coomera growth corridor on the other. It is one of the fastest-growing stretches in South
-                  East Queensland, which means two things for a business here: there are more customers every year, and
-                  there are more competitors every year.
-                </p>
-                <p>
-                  Most of the businesses around here are trades, transport, automotive, fitness, allied health and home
-                  services. Their customers are spread from Beenleigh down to Helensvale, and they search from a phone,
-                  usually in a car, usually with &quot;near me&quot; on the end. Google answers those searches with the
-                  map first, and the map is decided by proximity, reviews and how complete a profile is. That is why so
-                  much of my work in Ormeau starts with Google Maps and not with a website.
-                </p>
-                <p>
-                  The agencies you will find when you search for marketing help on the Gold Coast are in Nerang, Burleigh
-                  and Brisbane. I am in Ormeau. I know which suburbs a Coomera plumber actually gets calls from, why a
-                  Yatala workshop should not be chasing Surfers Paradise, and how far a Pimpama gym&apos;s map ranking
-                  really reaches. That is not a slogan, it is the difference between a profile that ranks in your own
-                  suburb and one that ranks where your customers are.
-                </p>
-                <p>
-                  If we work together, it looks like this. We start with a 30-minute call and a look at the three
-                  businesses above you on the map. Then I fix the profile, build the pages your services and suburbs
-                  need, and only then spend money on ads. You deal with me, not an account manager. You get an update
-                  every Friday, and anything in between is answered the same day. Most of my Ormeau work is ongoing,
-                  because a map ranking is held, not won once.
-                </p>
-              </div>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll className="lg:col-span-5">
-              <div className="accent-line relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-gradient-to-b from-white/75 to-white/40 p-6 sm:p-8 lg:sticky lg:top-28">
-                <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-6 font-sans">From client profiles</p>
-                <div className="divide-y divide-ink/[0.06]">
-                  {[
-                    { figure: '89', label: 'calls in five months from one Business Profile, up 324% on the same months last year' },
-                    { figure: '266', label: 'calls in five months from another, up 23% on last year' },
-                    { figure: '2', label: 'days for one profile to go from page two to the top 3 on Maps' },
-                  ].map((p) => (
-                    <div key={p.label} className="py-5 first:pt-0 last:pb-0">
-                      <p className="text-gradient-accent text-3xl sm:text-4xl font-bold font-serif tabular-nums">
-                        <CountUp value={p.figure} />
-                      </p>
-                      <p className="text-sm text-ink/65 font-sans mt-1 leading-relaxed">{p.label}</p>
-                    </div>
-                  ))}
-                </div>
-                <Link
-                  href="/google-business-profile-gold-coast"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans"
-                >
-                  See the screenshots and heatmaps <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </AnimateOnScroll>
+          <div className="s-stack">
+            <BigStats kicker="From client profiles" stats={STATS} />
+            <p data-rv="up"><Link href="/google-business-profile-gold-coast/" style={{ fontWeight: 700 }}>See the screenshots and heatmaps →</Link></p>
           </div>
         </div>
       </section>
 
-      {/* What gets Ormeau businesses found */}
-      <section className="relative bg-navy-950 overflow-hidden" aria-labelledby="found-heading">
-        <div className="glow w-[600px] h-[600px] -top-52 right-[-8%]" style={{ ['--glow-a' as string]: '0.12' }} aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-12 sm:mb-16">
-            <Eyebrow className="mb-4">What works here</Eyebrow>
-            <h2 id="found-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
-              <RevealText text="Three things get an Ormeau business found." />
-            </h2>
-            <p className="max-w-2xl mx-auto text-base sm:text-lg text-ink/65 font-sans">
-              In this order, most of the time. I&apos;ll tell you on the call if your situation is the exception.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll variant="group" className="grid gap-4 sm:gap-5 lg:grid-cols-3">
-            {[
-              {
-                n: '01',
-                title: 'Your Google Business Profile, before anything else',
-                text:
-                  'The map pack around Ormeau shifts kilometre by kilometre. The right primary category, a full services list, photos from real jobs and a steady run of reviews move a profile more than any website change. It is also the cheapest source of customers a local business will ever have.',
-                href: '/google-business-profile-gold-coast',
-                cta: 'Google Business Profile',
-              },
-              {
-                n: '02',
-                title: 'A site that names your services and your suburbs',
-                text:
-                  'Google needs something to rank. A page for each thing you do and each area you serve, written properly, with your name, address and phone on every one of them. This page is that, for me. Your version is what I build for you.',
-                href: '/best-local-seo-expert-in-gold-coast',
-                cta: 'Local SEO',
-              },
-              {
-                n: '03',
-                title: 'AI search for the corridor, not the whole coast',
-                text:
-                  'When someone in Pimpama or Coomera asks ChatGPT or Google AI for a plumber, a detailer or a physio, the answer comes from the same signals Maps uses: a consistent business record, a profile that matches the website, and proof the models can read. I tune those so the answer is you.',
-                cta: 'AI Search',
-                href: '/ai-search-geo-gold-coast',
-              },
-            ].map((step, i) => (
-              <div
-                key={step.n}
-                className={`rv-up ${i === 1 ? 'rv-delay-1' : i === 2 ? 'rv-delay-2' : ''} flex h-full flex-col rounded-2xl border border-ink/[0.06] bg-white/55 p-6 sm:p-7`}
-              >
-                <p className="text-xs font-semibold tracking-[0.2em] text-gold font-sans mb-4">{step.n}</p>
-                <h3 className="text-lg font-bold text-ink font-serif mb-3">{step.title}</h3>
-                <p className="text-sm text-ink/65 leading-relaxed font-sans flex-1">{step.text}</p>
-                <Link href={step.href} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans">
-                  {step.cta} <ArrowRight className="w-4 h-4" />
-                </Link>
+      <section className="s-sec s-sand" aria-labelledby="found-heading">
+        <div className="s-wrap s-stack-lg">
+          <div className="s-stack-sm">
+            <p data-rv="left" className="s-kicker">What works here</p>
+            <h2 id="found-heading" data-rv="up" className="s-h2">Three things get an <span className="s-accent">Ormeau business found.</span></h2>
+            <p data-rv="up" data-d=".1" className="s-lead">In this order, most of the time. I&apos;ll tell you if your situation is the exception.</p>
+          </div>
+          <div className="s-cols">
+            {STEPS.map((step, i) => (
+              <div key={step.n} data-rv="up" data-d={String(i * 0.1)} className="s-col">
+                <span className="s-col-k">{step.n}</span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+                <Link href={step.href} style={{ fontWeight: 800 }}>{step.cta} →</Link>
               </div>
             ))}
-          </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
-      {/* Video: Mitchell on getting into the Maps top 3 (YouTube Short, 20 Oct 2026). VideoObject schema is in page.tsx. */}
-      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="video-heading">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10">
-            <Eyebrow className="mb-4">In 54 seconds</Eyebrow>
-            <h2 id="video-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink font-serif">
-              <RevealText text="How an Ormeau business gets into the Google Maps top 3." />
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll className="mx-auto w-full max-w-[360px]">
-            <div className="relative overflow-hidden rounded-2xl border border-ink/10 bg-ink shadow-[0_24px_64px_rgba(0,0,0,0.16)]" style={{ paddingTop: '177.78%' }}>
+      {/* Mitchell on getting into the Maps top 3 (YouTube Short, 20 Oct 2026). VideoObject schema is in page.tsx. */}
+      <section className="s-sec s-white" aria-labelledby="video-heading">
+        <div className="s-wrap s-split" style={{ alignItems: 'center' }}>
+          <div className="s-stack">
+            <p data-rv="left" className="s-kicker">In 54 seconds</p>
+            <h2 id="video-heading" data-rv="up" className="s-h2">How an Ormeau business gets into the <span className="s-accent">Google Maps top 3.</span></h2>
+          </div>
+          <div data-rv="scale" style={{ maxWidth: 340, margin: '0 auto', width: '100%' }}>
+            <div className="s-framed" style={{ position: 'relative', paddingTop: '177.78%', background: '#111110' }}>
               <iframe
                 src="https://www.youtube.com/embed/JS08Od_TN-g"
                 title="SEO Ormeau: How to Get Into the Google Maps Top 3"
-                className="absolute inset-0 h-full w-full border-0"
+                style={{ position: 'absolute', inset: 0, height: '100%' }}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
               />
             </div>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* Services here */}
-      <section id="services-here" className="relative bg-navy-900 overflow-hidden" aria-labelledby="services-here-heading">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-12 sm:mb-16">
-            <Eyebrow className="mb-4">Services in Ormeau</Eyebrow>
-            <h2 id="services-here-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
-              <RevealText text="Six things I do for businesses here." />
-            </h2>
-            <p className="max-w-2xl mx-auto text-base sm:text-lg text-ink/65 font-sans">
-              Not sure which one you need? That&apos;s what the call is for.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {servicesHere.map((s, index) => {
-              const Icon = s.icon;
-              return (
-                <AnimateOnScroll key={s.title} stagger={Math.min(index + 1, 7)}>
-                  <SpotlightLink
-                    href={s.href}
-                    className="proof-card spotlight group flex h-full flex-col rounded-2xl border border-ink/[0.06] bg-white/55 p-6 hover:bg-white/85"
-                  >
-                    <div className="card-icon w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center mb-5">
-                      <Icon className="w-5 h-5 text-gold" />
-                    </div>
-                    <h3 className="text-lg font-bold text-ink font-serif mb-2">{s.title}</h3>
-                    <p className="text-sm text-ink/65 leading-relaxed font-sans">{s.blurb}</p>
-                  </SpotlightLink>
-                </AnimateOnScroll>
-              );
-            })}
           </div>
         </div>
       </section>
 
-      {/* Where I am + nearby */}
-      <section className="relative bg-navy-950 overflow-hidden" aria-labelledby="where-heading">
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-            <AnimateOnScroll className="lg:col-span-5">
-              <Eyebrow align="left" className="mb-5">Where I am</Eyebrow>
-              <h2 id="where-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-ink leading-[1.1] font-serif mb-6">
-                <RevealText text="Ten minutes from most of you." />
-              </h2>
-              <address className="not-italic text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
-                <span className="block font-semibold text-ink">{BUSINESS_INFO.legalName}</span>
-                <span className="block">{BUSINESS_INFO.address.full}</span>
-                <a href={`tel:${BUSINESS_INFO.phoneFormatted}`} className="block text-gold hover:text-gold/80 transition-colors duration-150 mt-2">
-                  {BUSINESS_INFO.phone}
-                </a>
-                <a href={`mailto:${BUSINESS_INFO.email}`} className="block text-gold hover:text-gold/80 transition-colors duration-150">
-                  {BUSINESS_INFO.email}
-                </a>
-              </address>
-              <p className="mt-6 text-base text-ink/65 leading-relaxed font-sans">
-                I work from Ormeau and come to you. Site visits anywhere between Beenleigh and Helensvale are part of
-                the job, and Brisbane or the southern Gold Coast are a call first.
-              </p>
+      <section id="services-here" className="s-sec s-sand" aria-labelledby="services-here-heading">
+        <div className="s-wrap s-stack-lg">
+          <div className="s-stack-sm">
+            <p data-rv="left" className="s-kicker">Services in Ormeau</p>
+            <h2 id="services-here-heading" data-rv="up" className="s-h2">Three things I do for <span className="s-accent">businesses here.</span></h2>
+            <p data-rv="up" data-d=".1" className="s-lead">Not sure which one you need? Your map video will show you.</p>
+          </div>
+          <ServiceRows rows={servicesHere} />
+        </div>
+      </section>
 
-              <p className="mt-8 text-xs font-semibold tracking-[0.2em] uppercase text-gold font-sans mb-3">Nearby areas</p>
-              <ul className="flex flex-wrap gap-2 font-sans">
-                {nearby.map((area) => (
-                  <li key={area} className="rounded-full border border-ink/10 bg-white/55 px-3 py-1.5 text-sm text-ink/80">
-                    {area}
-                  </li>
-                ))}
+      <section className="s-sec s-white" aria-labelledby="where-heading">
+        <div className="s-wrap s-split">
+          <div className="s-stack">
+            <p data-rv="left" className="s-kicker">Where I am</p>
+            <h2 id="where-heading" data-rv="up" className="s-h2">Ten minutes from <span className="s-accent">most of you.</span></h2>
+            <address data-rv="up" className="s-address">
+              <span>{BUSINESS_INFO.legalName}</span>
+              <span>{BUSINESS_INFO.address.full}</span>
+              <a href={`tel:${BUSINESS_INFO.phoneFormatted}`}>{BUSINESS_INFO.phone}</a>
+              <a href={`mailto:${BUSINESS_INFO.email}`}>{BUSINESS_INFO.email}</a>
+              <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.legalName)}&query_place_id=${PLACE_ID}`} target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+            </address>
+            <p data-rv="up" data-d=".1" className="s-lead">
+              I work from Ormeau and come to you. Site visits anywhere between Beenleigh and Helensvale are part of the job, and Brisbane or the southern Gold Coast are a call first.
+            </p>
+            <div className="s-stack-sm">
+              <p data-rv="left" className="s-kicker">Nearby areas</p>
+              <ul data-rv="up" className="s-chips">
+                {nearby.map((area) => {
+                  const hit = SUBURBS.find((x) => x.name === area);
+                  return <li key={area}>{hit?.hasPage ? <Link href={`/areas/${hit.slug}/`}>{area}</Link> : <span>{area}</span>}</li>;
+                })}
               </ul>
-              <Link href="/areas" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans">
-                All areas I serve <ArrowRight className="w-4 h-4" />
-              </Link>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll className="lg:col-span-7">
-              <div className="rounded-2xl overflow-hidden border border-ink/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.16)]" style={{ height: '440px' }}>
-                {/* Keyless embed resolves a name + address query to the listing; place_id queries only work with the keyed Embed API */}
-                <iframe
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.legalName}, ${BUSINESS_INFO.address.full}`)}&z=15&output=embed`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"
-                />
-              </div>
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_INFO.legalName)}&query_place_id=${PLACE_ID}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans"
-              >
-                Open in Google Maps <ArrowRight className="w-4 h-4" />
-              </a>
-            </AnimateOnScroll>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="relative bg-navy-900 overflow-hidden" aria-labelledby="faq-heading">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10 sm:mb-14">
-            <Eyebrow className="mb-4">Questions from Ormeau</Eyebrow>
-            <h2 id="faq-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink font-serif">
-              <RevealText text="What business owners here ask me." />
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll variant="group" className="divide-y divide-ink/[0.06] border-y border-ink/[0.06]">
-            {faqItems.map((item, i) => (
-              <div key={item.question} className={`rv-up ${i % 3 === 1 ? 'rv-delay-1' : i % 3 === 2 ? 'rv-delay-2' : ''} py-6`}>
-                <h3 className="text-lg font-bold text-ink font-serif mb-2">{item.question}</h3>
-                <p className="text-base text-ink/65 leading-relaxed font-sans">{item.answer}</p>
-              </div>
-            ))}
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-{/* Cross-links */}
-      <LinkWeb current="/areas/ormeau" heading="More for Ormeau businesses" intro="The services, the parts of the job, the trade guides, the other suburbs I work in, and the proof behind all of it." />
-            {/* Final CTA */}
-      <section className="relative bg-navy-950 overflow-hidden" aria-labelledby="ormeau-cta-heading">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
-        <div className="glow glow-breathe w-[700px] h-[500px] top-1/2 left-1/2" style={{ ['--glow-a' as string]: '0.14' }} aria-hidden="true" />
-        <AnimateOnScroll className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
-          <div className="max-w-3xl mx-auto text-center">
-            <Eyebrow className="mb-6">One call</Eyebrow>
-            <h2 id="ormeau-cta-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink leading-[1.15] font-serif">
-              <RevealText text="Bring your numbers. I'll tell you what I'd do with them." />
-            </h2>
-            <p className="mt-8 text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl mx-auto">
-              Thirty minutes, from Ormeau. Tell me what you sell and what&apos;s not working. If I can help, you get a
-              plan. If I can&apos;t, I&apos;ll say so.
-            </p>
-            <div className="mt-10">
-              <Link
-                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-                className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
-              >
-                Book a 30-minute call
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-              <p className="mt-4 text-sm text-ink/65 font-sans">No pitch.</p>
+              <p data-rv="up"><Link href="/areas/" style={{ fontWeight: 700 }}>All areas I serve →</Link></p>
             </div>
           </div>
-        </AnimateOnScroll>
+          <div data-rv="up" className="s-framed" style={{ height: 'clamp(300px,45vw,440px)' }}>
+            {/* Keyless embed resolves a name + address query to the listing; place_id queries only work with the keyed Embed API */}
+            <iframe
+              src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.legalName}, ${BUSINESS_INFO.address.full}`)}&z=15&output=embed`}
+              width="100%"
+              height="100%"
+              style={{ height: '100%' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"
+            />
+          </div>
+        </div>
       </section>
-    </div>
+
+      <FaqSection kicker="Questions from Ormeau" title={<>What business owners here <span className="s-accent">ask me.</span></>} faqs={faqItems} />
+
+      <CtaSection
+        title={<>Bring your numbers. <span className="s-accent">I&apos;ll tell you what I&apos;d do with them.</span></>}
+        variant="area-ormeau"
+        searchHint="e.g. plumber Ormeau"
+      >
+        <p>From Ormeau, within 48 hours: a short video of your own Google Maps position, street by street, and the three things I&apos;d fix first. If I can help, you get a plan. If I can&apos;t, I&apos;ll say so.</p>
+      </CtaSection>
+
+      <LinksSection
+        title="More for Ormeau businesses"
+        intro="The services, the parts of the job, the trade guides, the other suburbs I work in, and the proof behind all of it."
+        current="/areas/ormeau/"
+      />
+    </SiteShell>
   );
 }

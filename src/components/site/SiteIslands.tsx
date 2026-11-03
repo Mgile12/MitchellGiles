@@ -12,7 +12,7 @@ const NAV_LINKS: { label: string; mobileLabel?: string; href: string }[] = [
   { label: 'Services', href: '/services/' },
   { label: 'Case studies', href: '/case-studies/' },
   { label: 'Areas', mobileLabel: 'Areas we serve', href: '/areas/' },
-  { label: 'About', href: '#about' },
+  { label: 'About', href: '/#about' },
   { label: 'Blog', href: '/blog/' },
   { label: 'Contact', href: '/contact/' },
 ];
@@ -94,9 +94,8 @@ const LABEL_TEXT: CSSProperties = { fontSize: 13, fontWeight: 700 };
  * is why this one carries no data-netlify attribute: Netlify rewriting React's HTML would break hydration.
  * Keep /free-map-video/ (or another static copy of the form) in the build, or these submissions stop working.
  */
-export function LeadForm({ variant }: { variant: 'home-hero' | 'home-final' }) {
+export function LeadForm({ variant, hero = false, searchHint = 'e.g. plumber Coomera' }: { variant: string; hero?: boolean; searchHint?: string }) {
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
-  const hero = variant === 'home-hero';
 
   // A lead from either form closes both, so nobody is asked twice
   useEffect(() => {
@@ -143,7 +142,7 @@ export function LeadForm({ variant }: { variant: 'home-hero' | 'home-final' }) {
       <p style={{ position: 'absolute', left: -9999 }} aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></p>
       {hero && <div style={{ fontStretch: '125%', fontWeight: 900, fontSize: 20, lineHeight: 1.1 }}>Free: your Google Maps position, on video.</div>}
       <label style={LABEL}><span style={LABEL_TEXT}>Your business</span><input className="mrg-input" required name="biz" autoComplete="organization" enterKeyHint="next" placeholder="Business name or Google profile link" style={FIELD} /></label>
-      <label style={LABEL}><span style={LABEL_TEXT}>The search you want to win</span><input className="mrg-input" required name="search" autoComplete="off" enterKeyHint="next" placeholder="e.g. plumber Coomera" style={FIELD} /></label>
+      <label style={LABEL}><span style={LABEL_TEXT}>The search you want to win</span><input className="mrg-input" required name="search" autoComplete="off" enterKeyHint="next" placeholder={searchHint} style={FIELD} /></label>
       <label style={LABEL}><span style={LABEL_TEXT}>Mobile</span><input className="mrg-input" required name="mobile" type="tel" inputMode="tel" autoComplete="tel" enterKeyHint="send" placeholder="04xx xxx xxx" style={FIELD} /></label>
       <button type="submit" disabled={state === 'sending'} className="hv-ink-bg" style={{ height: 62, border: 0, background: BLUE, color: '#fff', font: 'inherit', fontStretch: '125%', fontWeight: 800, fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
         {hero ? 'Get my free map video' : 'Send me my map video'} <span style={{ fontSize: 22 }}>→</span>

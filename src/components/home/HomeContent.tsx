@@ -1,8 +1,8 @@
 import { Fragment, type ReactNode } from 'react';
 import Link from 'next/link';
-import { HomeCalculator, HomeMotion, HomeNav, LeadForm, MobileBar, PlayVideo } from './HomeIslands';
+import { HomeCalculator, LeadForm, PlayVideo } from '@/components/site/SiteIslands';
+import SiteLinks from '@/components/site/SiteLinks';
 import { FAQS } from './faqs';
-import './home.css';
 
 // The homepage from Mitchell's design export (MRG Homepage v2, 3 Nov 2026). This file renders on the server, so
 // every word and link is in the HTML. Only the form, calculator, video players, menu and motion run in the browser.
@@ -73,43 +73,6 @@ const tradeLoopB = ALL_T.slice(HALF).concat(ALL_T.slice(HALF));
 const SEARCHES = ['plumber Coomera', 'physio near me', 'electrician Ormeau', 'roof leak repair Coomera', 'pilates studio Helensvale', 'landscaper Upper Coomera', 'accountant near me', 'hot water repair Beenleigh', 'wedding makeup Gold Coast', 'locksmith near me'];
 const searchLoop = SEARCHES.concat(SEARCHES);
 
-// Everything the old homepage linked to is in here or in the page above: nothing lost its homepage link.
-const siteLinks = [
-  { h: 'SERVICES', links: [
-    { t: 'Google Business Profile optimisation', href: '/google-business-profile-gold-coast/' },
-    { t: 'Local SEO', href: '/best-local-seo-expert-in-gold-coast/' },
-    { t: 'AI Search (GEO)', href: '/ai-search-geo-gold-coast/' },
-    { t: 'All services', href: '/services/' },
-    { t: 'Current offers', href: '/services/#offers' },
-  ] },
-  { h: 'THE PARTS OF THE JOB', links: [
-    { t: 'SEO for tradies', href: '/seo-for-tradies-gold-coast/' },
-    { t: 'Google Maps ranking', href: '/google-maps-ranking-gold-coast/' },
-    { t: 'Review management', href: '/review-management-gold-coast/' },
-    { t: 'Local citations', href: '/local-citations-gold-coast/' },
-    { t: 'Local SEO audit', href: '/local-seo-audit-gold-coast/' },
-    { t: 'Email marketing', href: '/email-marketing-gold-coast/' },
-  ] },
-  { h: 'BY TRADE', links: [
-    { t: 'SEO for plumbers', href: '/seo-for-plumbers/' },
-    { t: 'SEO for electricians', href: '/seo-for-electricians/' },
-    { t: 'SEO for builders', href: '/seo-for-builders/' },
-  ] },
-  { h: 'MORE', links: [
-    { t: 'Best local SEO expert in Gold Coast', href: '/best-local-seo-expert-in-gold-coast/' },
-    { t: 'Best marketing agency in Gold Coast', href: '/best-marketing-agency-in-gold-coast/' },
-    { t: 'Hardest working SEO expert in Gold Coast', href: '/hardest-working-seo-expert-in-gold-coast/' },
-    { t: 'Best SEO agency for tradies in Australia', href: '/best-seo-agency-for-tradies-in-australia/' },
-    { t: 'Case studies', href: '/case-studies/' },
-    { t: 'Blog', href: '/blog/' },
-    { t: 'Local SEO for tradies in 2026', href: '/blog/local-seo-gold-coast-tradies-2026/' },
-    { t: 'Contact', href: '/contact/' },
-  ] },
-];
-
-const AREA_PAGES: Record<string, string> = { Ormeau: 'ormeau', Pimpama: 'pimpama', Coomera: 'coomera', 'Upper Coomera': 'upper-coomera', Yatala: 'yatala', Stapylton: 'stapylton', Beenleigh: 'beenleigh' };
-const areas = ['Ormeau', 'Ormeau Hills', 'Pimpama', 'Coomera', 'Upper Coomera', 'Yatala', 'Stapylton', 'Jacobs Well', 'Alberton', 'Willow Vale', 'Gilberton', 'Norwell', 'Woongoolba', 'Beenleigh', 'Eagleby', 'Bahrs Scrub', 'Waterford', 'Oxenford', 'Helensvale', 'Hope Island', 'Gold Coast', 'Brisbane'].map((t) => ({ t, href: AREA_PAGES[t] ? `/areas/${AREA_PAGES[t]}/` : '/areas/' }));
-
 const GOOD = 'oklch(0.66 0.17 150)', MID = 'oklch(0.8 0.15 85)', BAD = 'oklch(0.62 0.2 28)';
 const cells: { b: string; a: string; bg: string; fg: string; ag: string; t: string }[] = [];
 for (let y = 0; y < 7; y++) for (let x = 0; x < 7; x++) {
@@ -123,11 +86,7 @@ const spotBars = Array.from({ length: 10 }, (_, i) => ({ bg: '#2F6BFF', d: (0.3 
 
 export default function HomeContent() {
   return (
-    <div className="mrg-home">
-      <a href="#main" className="skip-link">Skip to content</a>
-      <HomeMotion />
-<HomeNav />
-<main id="main" tabIndex={-1} style={{outline:"none"}}>
+    <>
 
 <section className="mrg-rise" style={{"padding":"clamp(28px,6vw,64px) 20px clamp(40px,6vw,64px)","background":"#f3f1ec","overflow":"hidden"}}>
   <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexWrap":"wrap","gap":"36px","alignItems":"flex-start"}}>
@@ -151,7 +110,7 @@ export default function HomeContent() {
             </PlayVideo>
         </div>
       </div>
-      <div data-hero-form="" data-rv="up" data-d=".45" style={{"background":"#fff","border":"3px solid #111110","boxShadow":"8px 8px 0 #111110","padding":"clamp(16px,4vw,20px)"}}><LeadForm variant="home-hero" />
+      <div data-hero-form="" data-rv="up" data-d=".45" style={{"background":"#fff","border":"3px solid #111110","boxShadow":"8px 8px 0 #111110","padding":"clamp(16px,4vw,20px)"}}><LeadForm variant="home-hero" hero />
       </div>
       <div data-rv="up" data-d=".55" style={{"display":"flex","flexWrap":"wrap","gap":"8px 18px","alignItems":"center","fontSize":"14px","color":"#3b3a36"}}>
         <span><strong data-num="" data-target="266" data-suf=" calls" style={{"color":"#111110","fontVariantNumeric":"tabular-nums"}}>266 calls</strong> in 5 months from one profile</span>
@@ -573,61 +532,13 @@ export default function HomeContent() {
     <div data-rv="up" style={{"border":"3px solid #111110","boxShadow":"10px 10px 0 #2F6BFF","background":"#e6e3da","height":"clamp(300px,45vw,440px)"}}>
       <iframe src="https://www.google.com/maps?q=MRG%20Marketing%2C%209%20Laverton%20St%2C%20Ormeau%20QLD%204208&amp;z=15&amp;output=embed" width="100%" height="100%" style={{"border":"0","display":"block","width":"100%","height":"100%"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"></iframe>
     </div>
-    <div style={{"display":"flex","flexDirection":"column","gap":"12px"}}>
-      <div style={{"fontFamily":"var(--font-jb),monospace","fontSize":"11px","letterSpacing":".14em","color":"#55534d"}}>AREAS WE SERVE</div>
-      <div data-rv="up" style={{"display":"flex","flexWrap":"wrap","gap":"6px"}}>
-        {areas.map((a, aIdx) => (<Fragment key={aIdx}>
-          <Link className="hv3" href={a.href} style={{"border":"1px solid #111110","padding":"5px 10px","fontSize":"14px","color":"#111110","textDecoration":"none","background":"#fff"}}>{a.t}</Link>
-        </Fragment>))}
-      </div>
-    </div>
-    <div style={{"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(min(100%,200px),1fr))","gap":"28px","borderTop":"1px solid #111110","paddingTop":"28px"}}>
-      {siteLinks.map((col, colIdx) => (<Fragment key={colIdx}>
-        <div style={{"display":"flex","flexDirection":"column","gap":"8px"}}>
-          <div style={{"fontFamily":"var(--font-jb),monospace","fontSize":"11px","letterSpacing":".14em","color":"#55534d"}}>{col.h}</div>
-          {col.links.map((l, lIdx) => (<Fragment key={lIdx}>
-            <Link className="hv4" href={l.href} style={{"color":"#111110","textDecoration":"none","fontWeight":"600","fontSize":"15px"}}>{l.t}</Link>
-          </Fragment>))}
-        </div>
-      </Fragment>))}
-    </div>
+    <SiteLinks />
   </div>
 </section>
 
-</main>
-<MobileBar />
 
-<footer style={{"background":"#111110","color":"#b8b5ac","padding":"44px 20px 32px"}}>
-  <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexDirection":"column","gap":"28px","fontSize":"14px"}}>
-    <div style={{"display":"flex","flexWrap":"wrap","gap":"28px","justifyContent":"space-between","alignItems":"flex-start"}}>
-      <div style={{"display":"flex","flexDirection":"column","gap":"12px","maxWidth":"380px"}}>
-        <img src="/images/home/mrg-marketing-logo-white.webp" alt="MRG Marketing" style={{"height":"30px","width":"auto","display":"block","alignSelf":"flex-start"}} loading="lazy" decoding="async" />
-        <span>Local SEO, Google Business Profile and AI search for the Gold Coast and Brisbane.</span>
-      </div>
-      <div style={{"display":"flex","flexDirection":"column","gap":"6px"}}>
-        <a href="mailto:mitchell@mrgmarketing.com.au" style={{"color":"#fff"}}>mitchell@mrgmarketing.com.au</a>
-        <a href="tel:0474870535" style={{"color":"#fff"}}>0474 870 535</a>
-        <span>9 Laverton St, Ormeau QLD 4208</span>
-        <span>ABN 20 700 519 893</span>
-      </div>
-      <div style={{"display":"flex","flexDirection":"column","gap":"12px","alignItems":"flex-start"}}>
-        <div style={{"display":"flex","flexWrap":"wrap","gap":"8px 16px"}}>
-          <a href="https://www.instagram.com/mrgmarketing.agency" style={{"color":"#fff"}} rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61557011930635" style={{"color":"#fff"}} rel="noopener noreferrer">Facebook</a>
-          <a href="https://www.linkedin.com/in/mrg-marketing/" style={{"color":"#fff"}} rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://www.youtube.com/channel/UCZA2c-THw-0CM6Z6TE2CPxA" style={{"color":"#fff"}} rel="noopener noreferrer">YouTube</a>
-          <a href="https://www.tiktok.com/@mrg.marketing" style={{"color":"#fff"}} rel="noopener noreferrer">TikTok</a>
-          <a href="https://x.com/MRG_MarketingAU" style={{"color":"#fff"}} rel="noopener noreferrer">X</a>
-        </div>
-        <a href="https://mygoldcoast.directory/business/mrg-marketing" title="MRG Marketing on My Gold Coast" style={{"display":"block"}} rel="noopener noreferrer"><img src="https://mygoldcoast.directory/images/badge-featured.png" alt="Featured on My Gold Coast" style={{"height":"52px","width":"auto","display":"block"}} loading="lazy" decoding="async" /></a>
-      </div>
-    </div>
-    <div style={{"borderTop":"1px solid #3a3a38","paddingTop":"18px","display":"flex","flexWrap":"wrap","gap":"8px 20px","justifyContent":"space-between","fontSize":"13px"}}>
-      <span>© 2026 MRG Marketing · Ormeau, Gold Coast · Established 2024</span>
-      <span style={{"display":"flex","gap":"16px","flexWrap":"wrap"}}><Link href="/terms/" style={{"color":"#b8b5ac"}}>Terms</Link><Link href="/privacy/" style={{"color":"#b8b5ac"}}>Privacy</Link><span>MRG Marketing is not affiliated with Google.</span></span>
-    </div>
-  </div>
-</footer>
-    </div>
+
+
+    </>
   );
 }
