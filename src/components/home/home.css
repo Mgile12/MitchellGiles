@@ -1,0 +1,57 @@
+/* Homepage from the design export. Everything is scoped to .mrg-home so the rest of the site is untouched. */
+.mrg-home { font-family: var(--font-archivo), system-ui, sans-serif; color: #111110; background: #f3f1ec; font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+.mrg-home h1, .mrg-home h2, .mrg-home h3 { color: inherit; }
+.mrg-home h2, .mrg-home h3 { font-family: inherit; }
+.mrg-home a { color: #2F6BFF; text-decoration: underline; text-underline-offset: 3px; }
+.mrg-home a:hover { color: #111110; }
+.mrg-home summary::-webkit-details-marker { display: none; }
+.mrg-home input::placeholder { color: #8a877e; }
+.mrg-home input[type='range'] { accent-color: #2F6BFF; }
+.mrg-home section[id] { scroll-margin-top: 70px; }
+.mrg-home .mrg-input:focus { border-color: #2F6BFF !important; box-shadow: 0 0 0 3px rgba(47, 107, 255, 0.25); }
+.mrg-home .hv-blue-text:hover { color: #2F6BFF !important; }
+.mrg-home .hv-ink-bg:hover { background: #111110 !important; }
+.mrg-home .hv-white-bg:hover { background: #fff !important; color: #111110 !important; }
+
+/* Phone and desktop differences, in CSS so the server HTML is the same on every width */
+.only-narrow, .only-narrow-flex, .only-narrow-block { display: none; }
+.only-wide { display: contents; }
+.only-wide-flex { display: flex; }
+@media (max-width: 859px) {
+  .only-narrow { display: contents; }
+  .only-narrow-flex { display: flex; }
+  .only-narrow-block { display: block; }
+  .only-wide, .only-wide-flex { display: none; }
+  /* Room for the fixed button, so it never covers the footer's last line */
+  .mrg-home footer { padding-bottom: 96px !important; }
+}
+
+@keyframes mrgMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes mrgMarqueeR { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@keyframes mrgPulse { 0% { box-shadow: 0 0 0 0 rgba(47, 107, 255, 0.6); } 70% { box-shadow: 0 0 0 12px rgba(47, 107, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(47, 107, 255, 0); } }
+@keyframes mrgBlink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes mrgBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+@keyframes mrgRise { from { opacity: 0; transform: translate3d(0, 24px, 0); } to { opacity: 1; transform: none; } }
+
+/* The hero animates in CSS, so it never waits on JavaScript */
+.mrg-rise [data-rv] { animation: mrgRise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.mrg-rise [data-d='.05'] { animation-delay: 0.05s; }
+.mrg-rise [data-d='.15'] { animation-delay: 0.15s; }
+.mrg-rise [data-d='.25'] { animation-delay: 0.25s; }
+.mrg-rise [data-d='.3'] { animation-delay: 0.3s; }
+.mrg-rise [data-d='.35'] { animation-delay: 0.35s; }
+.mrg-rise [data-d='.4'] { animation-delay: 0.4s; }
+.mrg-rise [data-d='.45'] { animation-delay: 0.45s; }
+.mrg-rise [data-d='.55'] { animation-delay: 0.55s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mrg-home [data-marquee] { animation: none !important; }
+  .mrg-rise [data-rv] { animation: none; }
+}
+
+/* Hover states from the design */
+.mrg-home .hv0:hover { background:#2F6BFF !important; }
+.mrg-home .hv1:hover { color:#2F6BFF !important; padding-left:12px !important; }
+.mrg-home .hv2:hover { background:#2F6BFF !important; border-color:#2F6BFF !important; color:#fff !important; }
+.mrg-home .hv3:hover { background:#111110 !important; color:#fff !important; }
+.mrg-home .hv4:hover { color:#2F6BFF !important; }

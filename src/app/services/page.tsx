@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { BUSINESS_INFO } from '@/lib/business-info';
+import { OFFERS } from '@/components/Offers';
 import ServicesContent from './ServicesContent';
 
 export const metadata: Metadata = {
@@ -37,7 +38,29 @@ function buildPageJsonLd() {
     ],
   };
 
-  return [breadcrumbSchema];
+  // The offers and their schema moved here from the homepage (4 Nov 2026). Same three as the Google Business Profile Offer posts.
+  const offerSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'OfferCatalog',
+    name: 'Special Offers for Ormeau & Northern Gold Coast Businesses',
+    url: `${BUSINESS_INFO.url}/services/#offers`,
+    itemListElement: OFFERS.map((o) => ({
+      '@type': 'Offer',
+      name: o.title,
+      description: o.body,
+      url: `${BUSINESS_INFO.url}/services/#${o.id}`,
+      validThrough: o.validThrough,
+      availability: 'https://schema.org/InStock',
+      areaServed: [
+        { '@type': 'Place', name: 'Ormeau' },
+        { '@type': 'Place', name: 'Northern Gold Coast' },
+      ],
+      offeredBy: { '@id': `${BUSINESS_INFO.url}/#business` },
+      image: `${BUSINESS_INFO.url}${o.image.src}`,
+    })),
+  };
+
+  return [breadcrumbSchema, offerSchema];
 }
 
 export default function ServicesPage() {
