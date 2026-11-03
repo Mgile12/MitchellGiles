@@ -20,7 +20,7 @@ export default function TermsPage() {
       name="Terms"
       path="/terms/"
       updated="4 November 2026"
-      intro={<p>The plain version: month to month, you own what I build, and if you do your part and I miss the agreed call target in 90 days, you get back the management fees you paid in those 90 days.</p>}
+      intro={<p>The plain version: month to month, you own what I build, and if you do your part and I miss the agreed call target in 90 days, you get back the management fees you paid in those 90 days. If you cancel early, there are no refunds.</p>}
     >
       <h2>Who these terms are with</h2>
       <p>
@@ -38,10 +38,18 @@ export default function TermsPage() {
       <ul>
         <li>What I will do and what it costs is agreed in writing before work starts. Fees are not published on this site.</li>
         <li>Services run month to month. There is no lock-in contract.</li>
+        <li>Your first month includes a one-off onboarding fee on top of the monthly fee, for the setup work that happens at the start. The amount is in your written proposal.</li>
         <li>You can cancel at any time by email. The service then stops at the end of the month you have already paid for.</li>
         <li>You give me the access and information the work needs, such as your Google Business Profile and website. The timeline starts the day I have that access.</li>
         <li>Third-party costs, such as advertising, domains, hosting and paid directory listings, are yours and are separate from my fees unless we agree otherwise in writing.</li>
       </ul>
+
+      <h2 id="refunds">Cancelling early: no refunds</h2>
+      <p>
+        <strong>If you cancel early, you get no refund.</strong> That covers monthly fees already paid, part-months, and the onboarding fee. The 90-day call guarantee also ends the day you cancel, so it can&apos;t be claimed afterwards.
+        The onboarding fee is never refunded, because that work is done at the start.
+      </p>
+      <p>The only exceptions are a valid claim under the guarantee below, and any rights the law gives you that can&apos;t be excluded.</p>
 
       <h2 id="guarantee">The 90-day call guarantee</h2>
       <p>This guarantee applies to new monthly management clients, once per business.</p>
@@ -66,7 +74,7 @@ export default function TermsPage() {
         <li>Google suspends or restricts your profile because of something outside my work, or your business closes, moves or changes its main service during the 90 days. If this happens we will talk it through, and we can agree in writing to pause the 90 days.</li>
         <li>Reviews were paid for, incentivised or not from genuine customers. Those break Google&apos;s rules and can put your profile at risk.</li>
       </ul>
-      <p>The refund covers my management fees only. It does not cover third-party costs, advertising, one-off project work, or lost income.</p>
+      <p>The refund covers my monthly management fees only. It does not cover the onboarding fee, third-party costs, advertising, one-off project work, or lost income.</p>
 
       <h2>What is and isn&apos;t promised</h2>
       <p>

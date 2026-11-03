@@ -515,7 +515,7 @@ export default function HomeContent() {
       <div style={{"display":"flex","flexDirection":"column","fontSize":"18px"}}>
         <div data-rv="up" data-d=".1" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>1</strong><span>We agree a call target in writing before I start.</span></div>
         <div data-rv="up" data-d=".2" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>2</strong><span>You do your part: 4 new reviews and 10 job photos a week.</span></div>
-        <div data-rv="up" data-d=".3" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)","borderBottom":"1px solid rgba(255,255,255,.4)"}}><strong>3</strong><span>Miss the target in 90 days and you get back the management fees paid in those 90 days.</span></div>
+        <div data-rv="up" data-d=".3" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)","borderBottom":"1px solid rgba(255,255,255,.4)"}}><strong>3</strong><span>Miss the target in 90 days and you get back the management fees paid in those 90 days. Cancel before the 90 days end and there is no refund.</span></div>
       </div>
       <div data-rv="up" data-d=".35" style={{"display":"flex","flexWrap":"wrap","gap":"8px 18px","alignItems":"center","fontWeight":"700","fontSize":"15px"}}>
         <span>No lock-in</span><span>·</span><span>You own everything</span><span>·</span><span>Update every Friday</span><Link href="/terms/#guarantee" style={{"color":"#fff"}}>Full terms</Link>

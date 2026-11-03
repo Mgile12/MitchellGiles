@@ -8,7 +8,7 @@ export const FAQS = [
     q: "Will I understand what you're doing?",
     a: 'Yes, because I break it down for you. Every Friday update and every report comes back to calls, jobs and money, not numbers that just sound impressive. The goal is that you can look at your bank account and it all makes sense: more money coming in.',
   },
-  { q: 'Am I locked in?', a: 'No. Month to month.' },
+  { q: 'Am I locked in?', a: 'No. Month to month. You can cancel any time, but nothing already paid is refunded, including the onboarding fee.' },
   { q: 'Who owns my profile and website?', a: 'You do. Always.' },
   { q: 'Do I need a new website?', a: 'Usually not. The profile moves first.' },
 ];
