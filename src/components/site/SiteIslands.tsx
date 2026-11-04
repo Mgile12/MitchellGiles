@@ -144,8 +144,8 @@ export function LeadForm({ variant, hero = false, searchHint = 'e.g. plumber Coo
       <label style={LABEL}><span style={LABEL_TEXT}>Your business</span><input className="mrg-input" required name="biz" autoComplete="organization" enterKeyHint="next" placeholder="Business name or Google profile link" style={FIELD} /></label>
       <label style={LABEL}><span style={LABEL_TEXT}>The search you want to win</span><input className="mrg-input" required name="search" autoComplete="off" enterKeyHint="next" placeholder={searchHint} style={FIELD} /></label>
       <label style={LABEL}><span style={LABEL_TEXT}>Mobile</span><input className="mrg-input" required name="mobile" type="tel" inputMode="tel" autoComplete="tel" enterKeyHint="send" placeholder="04xx xxx xxx" style={FIELD} /></label>
-      <button type="submit" disabled={state === 'sending'} className="hv-ink-bg" style={{ height: 62, border: 0, background: BLUE, color: '#fff', font: 'inherit', fontStretch: '125%', fontWeight: 800, fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
-        {hero ? 'Get my free map video' : 'Send me my map video'} <span style={{ fontSize: 22 }}>→</span>
+      <button type="submit" disabled={state === 'sending'} className="hv-ink-bg" style={{ minHeight: 62, padding: '8px 14px', border: 0, background: BLUE, color: '#fff', font: 'inherit', fontStretch: '125%', fontWeight: 800, fontSize: 'clamp(13px, 4vw, 18px)', lineHeight: 1.2, textWrap: 'balance', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
+        {hero ? 'Get my free map video' : 'Send me my map video'} <span style={{ fontSize: 22, flex: 'none' }}>→</span>
       </button>
       {state === 'error' && (
         <p role="alert" style={{ margin: 0, fontSize: 14, color: '#b3261e', fontWeight: 700 }}>
@@ -239,8 +239,8 @@ export function HomeCalculator() {
         <div><div style={sub}>Extra revenue a month</div><div style={{ ...big, fontSize: 'clamp(40px,7vw,68px)', color: '#6f98ff' }}><Tween value={rev} format={aud} /></div></div>
         <div><div style={sub}>Extra revenue a year</div><div style={{ ...big, fontSize: 'clamp(40px,7vw,68px)' }}><Tween value={rev * 12} format={aud} /></div></div>
         {s > 0 && <div style={{ border: '1px solid #fff', padding: '12px 14px', fontWeight: 700 }}>Every $1 spent returns about <span style={{ color: '#6f98ff' }}>${(rev / s).toFixed(2)}</span> a month.</div>}
-        <a href="#get-video" className="hv-white-bg" style={{ marginTop: 'auto', height: 56, background: BLUE, color: '#fff', textDecoration: 'none', fontStretch: '125%', fontWeight: 800, fontSize: 17, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-          See where you stand now <span style={{ fontSize: 20 }}>→</span>
+        <a href="#get-video" className="hv-white-bg" style={{ marginTop: 'auto', minHeight: 56, padding: '8px 14px', background: BLUE, color: '#fff', textDecoration: 'none', fontStretch: '125%', fontWeight: 800, fontSize: 'clamp(12.5px, 3.7vw, 17px)', lineHeight: 1.2, textAlign: 'center', textWrap: 'balance', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+          See where you stand now <span style={{ fontSize: 20, flex: 'none' }}>→</span>
         </a>
       </div>
     </div>

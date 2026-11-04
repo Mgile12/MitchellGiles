@@ -114,7 +114,7 @@ export default function HomeContent() {
       </div>
       <div data-rv="up" data-d=".55" style={{"display":"flex","flexWrap":"wrap","gap":"8px 18px","alignItems":"center","fontSize":"14px","color":"#3b3a36"}}>
         <span><strong data-num="" data-target="266" data-suf=" calls" style={{"color":"#111110","fontVariantNumeric":"tabular-nums"}}>266 calls</strong> in 5 months from one profile</span>
-        <span style={{"color":"#2F6BFF","letterSpacing":"1px"}}>★★★★★</span><span><strong style={{"color":"#111110"}}>5.0</strong> on Google</span>
+        <span style={{"display":"inline-flex","gap":"8px","whiteSpace":"nowrap"}}><span style={{"color":"#2F6BFF","letterSpacing":"1px"}}>★★★★★</span><span><strong style={{"color":"#111110"}}>5.0</strong> on Google</span></span>
       </div>
     </div>
     <div className="only-wide">
