@@ -214,7 +214,7 @@ export default function EmailMarketingContent({ faqItems }: { faqItems: FAQItem[
         lead={<><p>&ldquo;Email is dead.&rdquo;</p><p>It is not. What is dead is lazy, batch-and-blast email with no strategy behind it. Done well, email marketing remains one of the highest-returning channels available to any Gold Coast business -- whether you are a tradie, a property agent, a hospitality venue, or a professional service provider.</p></>}
         links={<a href="#why-email">See What This Involves ↓</a>}
         variant="service-email-marketing"
-        image={{ src: '/email/email-marketing-hero.jpg', alt: 'Team planning email marketing strategy for Gold Coast business', width: 1200, height: 900 }}
+        image={{ src: '/email/email-marketing-hero.jpg', alt: 'Team planning email marketing strategy for Gold Coast business', width: 500, height: 500 }}
       />
 
       <section id="why-email" className="s-sec s-white">

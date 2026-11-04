@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 import { BUSINESS_INFO } from '@/lib/business-info';
+import SiteShell from '@/components/site/SiteShell';
+import { CtaSection, LinksSection, PageHero } from '@/components/site/Blocks';
 
 /** Plain reading layout for the terms and privacy pages. */
 export default function LegalPage({
@@ -27,14 +29,24 @@ export default function LegalPage({
   };
 
   return (
-    <article className="bg-navy-950">
+    <SiteShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-16 sm:pb-24 font-sans text-base sm:text-lg leading-relaxed text-ink/80 [&_a]:underline [&_a]:underline-offset-2 [&_a]:text-ink [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:font-serif [&_h2]:text-ink [&_h2]:scroll-mt-24 [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-2">
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-ink font-serif">{title}</h1>
-        <p className="mt-3 text-sm text-ink/60">Last updated {updated}</p>
-        <div className="mt-6 text-lg sm:text-xl text-ink">{intro}</div>
-        {children}
-      </div>
-    </article>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: name }]}
+        kicker={`Last updated ${updated}`}
+        title={title}
+        lead={intro}
+        form={false}
+      />
+      <section className="s-sec s-white">
+        <div className="s-wrap">
+          <article className="s-prose s-legal">{children}</article>
+        </div>
+      </section>
+      <CtaSection title={<>Free: your Google Maps position, <span className="s-accent">on video.</span></>} variant={`legal-${name.toLowerCase()}`}>
+        <p>Send me your business and the search you want to win. Within 48 hours you get a short video of where you stand, and the three things I&apos;d fix first.</p>
+      </CtaSection>
+      <LinksSection title="Keep reading" current={path} />
+    </SiteShell>
   );
 }

@@ -1,16 +1,20 @@
 import Link from 'next/link';
+import SiteShell from '@/components/site/SiteShell';
+import { LinksSection, PageHero } from '@/components/site/Blocks';
 
 export default function NotFound() {
   return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
-      <h1 className="text-6xl font-bold text-gold font-serif mb-4">404</h1>
-      <p className="text-xl text-ink/80 mb-8 font-sans">Page not found</p>
-      <Link
-        href="/"
-        className="gold-flat-btn inline-flex items-center justify-center rounded-lg px-8 py-4 text-sm font-semibold tracking-wide"
-      >
-        Back to Home
-      </Link>
-    </div>
+    <SiteShell>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Page not found' }]}
+        kicker="Page not found"
+        title={<span className="s-accent">404</span>}
+        lead={<p>Page not found</p>}
+        links={<Link href="/">Back to Home →</Link>}
+        variant="not-found"
+        formId="get-video"
+      />
+      <LinksSection title="Everything else on this site" />
+    </SiteShell>
   );
 }

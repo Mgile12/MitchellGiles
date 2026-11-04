@@ -1,23 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Inter, Montserrat } from 'next/font/google';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import LayoutClient from './LayoutClient';
 import '@/index.css';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_INFO.url),
@@ -151,7 +135,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const jsonLdData = buildJsonLd();
 
   return (
-    <html lang="en-AU" className={`${montserrat.variable} ${inter.variable}`}>
+    <html lang="en-AU">
       <head>
         {jsonLdData.map((schema, i) => (
           <script
@@ -182,7 +166,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}
       </Script>
       <body>
-        <LayoutClient>{children}</LayoutClient>
+        {children}
       </body>
     </html>
   );

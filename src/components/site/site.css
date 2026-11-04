@@ -321,3 +321,12 @@ button.s-shot { padding: 0; cursor: zoom-in; width: 100%; text-align: left; font
 .s-col-dark .s-col-k { color: #6f98ff; }
 .mrg-home .s-col h4 { margin: 0; font-family: inherit; color: inherit; font-weight: 800; font-size: 20px; line-height: 1.2; }
 .s-col-dark .s-ticks { color: #d4d1c8; }
+.s-prose ul { margin: 20px 0 0; padding-left: 24px; }
+.s-prose ul li::marker { color: #2F6BFF; }
+.mrg-home .s-legal h2 { scroll-margin-top: 80px; }
+.s-hero-side .s-facts { margin-top: 0; }
+.s-nums, .s-prose ol { list-style: decimal; }
+.s-prose ul { list-style: disc; }
+.mrg-home .s-ink .s-btn, .mrg-home .s-ink .s-btn:hover { color: #fff; }
+.mrg-home .s-ink .s-btn:hover { background: #fff; color: #111110; }
+.mrg-home .s-offer .s-btn-ghost { font-size: clamp(13px, 3.5vw, 16px); padding-inline: 10px; overflow-wrap: anywhere; }

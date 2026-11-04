@@ -19,7 +19,7 @@ export interface BarChartSpec {
   note?: string;
 }
 
-const FILLS = ['rgba(10,10,10,0.32)', '#0A0A0A', 'rgba(10,10,10,0.62)'];
+const FILLS = ['#b8b5ac', '#2F6BFF', '#111110'];
 
 export default function BarChart({ spec }: { spec: BarChartSpec }) {
   const { series, groups } = spec;
@@ -40,16 +40,16 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
   const ticks = [0, 0.5, 1].map((f) => Math.round(max * f));
 
   return (
-    <figure className="rounded-2xl border border-ink/10 bg-white/70 p-4 sm:p-6">
+    <figure className="s-box">
       <figcaption className="mb-3">
-        <p className="text-base sm:text-lg font-bold text-ink font-serif leading-snug">{spec.title}</p>
-        {spec.subtitle && <p className="text-sm text-ink/65 font-sans mt-1">{spec.subtitle}</p>}
+        <p className="text-base sm:text-lg font-bold leading-snug">{spec.title}</p>
+        {spec.subtitle && <p className="text-sm text-ink/65 mt-1">{spec.subtitle}</p>}
       </figcaption>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block" role="img" aria-label={spec.title}>
         {ticks.map((t) => (
           <g key={t}>
             <line x1={padL} x2={W - padR} y1={y(t)} y2={y(t)} stroke="rgba(10,10,10,0.08)" strokeWidth="1" />
-            <text x={padL} y={y(t) - 4} fontSize="15" fill="rgba(10,10,10,0.45)" fontFamily="var(--font-inter), system-ui, sans-serif">
+            <text x={padL} y={y(t) - 4} fontSize="15" fill="rgba(10,10,10,0.45)" fontFamily="var(--font-archivo), system-ui, sans-serif">
               {t}
             </text>
           </g>
@@ -66,7 +66,7 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
               strokeDasharray="4 4"
             />
             {spec.markLabel && (
-              <text x={padL + groupW * spec.markBefore + 6} y={padT - 12} fontSize="16" fontWeight="600" fill="#0A0A0A" fontFamily="var(--font-inter), system-ui, sans-serif">
+              <text x={padL + groupW * spec.markBefore + 6} y={padT - 12} fontSize="16" fontWeight="600" fill="#0A0A0A" fontFamily="var(--font-archivo), system-ui, sans-serif">
                 {spec.markLabel}
               </text>
             )}
@@ -91,7 +91,7 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
                       fontWeight="600"
                       textAnchor="middle"
                       fill="#0A0A0A"
-                      fontFamily="var(--font-inter), system-ui, sans-serif"
+                      fontFamily="var(--font-archivo), system-ui, sans-serif"
                     >
                       {v}
                     </text>
@@ -105,7 +105,7 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
               fontSize={groups.length > 8 ? 14 : 16}
               textAnchor="middle"
               fill="rgba(10,10,10,0.7)"
-              fontFamily="var(--font-inter), system-ui, sans-serif"
+              fontFamily="var(--font-archivo), system-ui, sans-serif"
             >
               {g.label}
             </text>
@@ -114,7 +114,7 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
         <line x1={padL} x2={W - padR} y1={padT + plotH} y2={padT + plotH} stroke="rgba(10,10,10,0.25)" strokeWidth="1" />
       </svg>
       {series.length > 1 && (
-        <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-ink/70 font-sans" aria-label="Legend">
+        <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-ink/70" aria-label="Legend">
           {series.map((s, i) => (
             <li key={s} className="inline-flex items-center gap-2">
               <span className="inline-block w-3 h-3 rounded-sm" style={{ background: FILLS[i % FILLS.length] }} aria-hidden="true" />
@@ -148,7 +148,7 @@ export default function BarChart({ spec }: { spec: BarChartSpec }) {
         </tbody>
       </table>
       </div>
-      {spec.note && <p className="mt-3 text-xs text-ink/55 font-sans">{spec.note}</p>}
+      {spec.note && <p className="mt-3 text-xs text-ink/55">{spec.note}</p>}
     </figure>
   );
 }

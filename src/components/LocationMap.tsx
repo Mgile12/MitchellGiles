@@ -1,12 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Link from 'next/link';
-import { ArrowRight, MapPin, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import AnimateOnScroll from './AnimateOnScroll';
-import Eyebrow from './Eyebrow';
-import RevealText from './RevealText';
 
 const PLACE_ID = 'ChIJI7me_LgPkWsRiuaYKm_2oqc';
 const PIN = { lat: -27.7667993, lng: 153.2613798 };
@@ -84,75 +79,39 @@ function LocatorPlus() {
   return <div ref={host} className="locator-plus h-full w-full" aria-label="MRG Marketing on Google Maps" />;
 }
 
-/** Homepage profile map: Google Locator Plus when a Maps key is configured, otherwise the keyless embed. */
+/** Contact page map: Google Locator Plus when a Maps key is configured, otherwise the keyless embed. */
 export default function LocationMap() {
   return (
-    <section id="location" className="relative bg-navy-900 overflow-hidden" aria-labelledby="location-heading">
-      <div className="grid-ground absolute inset-0" aria-hidden="true" />
-      <div className="glow w-[600px] h-[600px] -bottom-52 right-[-8%]" style={{ ['--glow-a' as string]: '0.1' }} aria-hidden="true" />
-
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-12 items-center">
-          <AnimateOnScroll className="lg:col-span-5">
-            <Eyebrow className="mb-4">Where I am</Eyebrow>
-            <h2 id="location-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink mb-5 font-serif">
-              <RevealText text="Ormeau, northern Gold Coast." />
-            </h2>
-            <p className="text-base sm:text-lg text-ink/65 font-sans leading-relaxed">
-              Based in Ormeau, between the Gold Coast and Brisbane. Most calls happen online, and if you&apos;re nearby
-              I&apos;m happy to come to you.
-            </p>
-
-            <ul className="mt-8 space-y-4 font-sans">
-              <li className="flex items-start gap-3 text-ink/80">
-                <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" aria-hidden="true" />
-                <span>{BUSINESS_INFO.address.full}</span>
-              </li>
-              <li className="flex items-start gap-3 text-ink/80">
-                <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" aria-hidden="true" />
-                <a href={`tel:${BUSINESS_INFO.phoneFormatted}`} className="hover:text-ink transition-colors duration-150">
-                  {BUSINESS_INFO.phone}
-                </a>
-              </li>
-            </ul>
-
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-              <Link
-                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-                className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold group"
-              >
-                Book a 30-minute call
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-              <a
-                href={mapsSearchUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold/80 transition-colors duration-150 font-sans"
-              >
-                Open in Google Maps <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll className="lg:col-span-7">
-            <div className="rounded-2xl overflow-hidden border border-ink/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.16)] bg-navy-950" style={{ height: '440px' }}>
-              {MAPS_KEY ? (
-                <LocatorPlus />
-              ) : (
-                <iframe
-                  src={embedUrl}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"
-                />
-              )}
-            </div>
-          </AnimateOnScroll>
+    <section id="location" className="s-sec s-sand" aria-labelledby="location-heading">
+      <div className="s-wrap s-split" style={{ alignItems: 'center' }}>
+        <div className="s-stack">
+          <p data-rv="left" className="s-kicker">Where I am</p>
+          <h2 id="location-heading" data-rv="up" className="s-h2">Ormeau, <span className="s-accent">northern Gold Coast.</span></h2>
+          <p data-rv="up" data-d=".1" className="s-lead">
+            Based in Ormeau, between the Gold Coast and Brisbane. Most calls happen online, and if you&apos;re nearby I&apos;m happy to come to you.
+          </p>
+          <div data-rv="up" data-d=".15" className="s-address">
+            <span>{BUSINESS_INFO.address.full}</span>
+            <a href={`tel:${BUSINESS_INFO.phoneFormatted}`}>{BUSINESS_INFO.phone}</a>
+            <a href={BUSINESS_INFO.bookingUrl}>Book a 30-minute call</a>
+            <a href={mapsSearchUrl} target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+          </div>
+        </div>
+        <div data-rv="up" className="s-framed" style={{ height: 440 }}>
+          {MAPS_KEY ? (
+            <LocatorPlus />
+          ) : (
+            <iframe
+              src={embedUrl}
+              width="100%"
+              height="100%"
+              style={{ height: '100%' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="MRG Marketing on Google Maps, 9 Laverton St, Ormeau"
+            />
+          )}
         </div>
       </div>
     </section>
