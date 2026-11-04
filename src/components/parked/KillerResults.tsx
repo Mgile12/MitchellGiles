@@ -5,7 +5,7 @@ import Lightbox from '../Lightbox';
 import { useState } from 'react';
 import Link from 'next/link';
 import AnimateOnScroll from '../AnimateOnScroll';
-import CountUp from '../CountUp';
+import CountUp from './CountUp';
 import Eyebrow from '../Eyebrow';
 import RevealText from '../RevealText';
 import TiltCard from './TiltCard';

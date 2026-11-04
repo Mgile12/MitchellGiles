@@ -1,32 +1,24 @@
-'use client';
-
 import Link from 'next/link';
-import { ChevronRight, MapPin, Search, Sparkles, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-info';
-import AnimateOnScroll from '@/components/AnimateOnScroll';
-import Eyebrow from '@/components/Eyebrow';
-import ServicesOverview from '@/components/ServicesOverview';
-import LinkWeb from '@/components/LinkWeb';
+import SiteShell from '@/components/site/SiteShell';
+import { CtaSection, LinksSection, PageHero, SectionHead, ServiceRows } from '@/components/site/Blocks';
 import Industries from '@/components/Industries';
 import Offers from '@/components/Offers';
 
 const services = [
   {
-    icon: MapPin,
     title: 'Google Business Profile Optimisation',
     description:
       'Categories, services, photos, reviews, posts and the website behind the profile, fixed once and then worked every week, so you sit in the top 3 on Google Maps for the searches that happen near you and stay there.',
     href: '/google-business-profile-gold-coast',
   },
   {
-    icon: Search,
     title: 'Local SEO',
     description:
       'A page for every service and every suburb you serve, written for what people here actually type. It is what gives the profile something to rank for and what turns a Maps search into a call.',
     href: '/best-local-seo-expert-in-gold-coast',
   },
   {
-    icon: Sparkles,
     title: 'AI Search (GEO)',
     description:
       'When someone asks ChatGPT, Gemini or Google AI who to call, the answer is built from the same local signals: a consistent business record, a profile that matches the website, and proof the models can read. I tune all three so your business is the one that gets named.',
@@ -48,156 +40,133 @@ const trades = [
   { title: 'SEO for builders', description: 'Fewer searches, bigger jobs: project pages, process, honest cost guides and the Remodeler category.', href: '/seo-for-builders' },
 ];
 
+const steps = [
+  {
+    number: '01',
+    title: 'Discovery',
+    description:
+      "We talk. I want to know what you sell, who buys it, what you've tried and what you actually want out of this. I take it away. Nothing gets pitched on the first call.",
+  },
+  {
+    number: '02',
+    title: 'Market research',
+    description:
+      'I look at your local competitors, then the top operators nationally, then globally. Businesses that have spent millions working out what converts. I bring that standard back to your suburb.',
+  },
+  {
+    number: '03',
+    title: 'Your best customers',
+    description:
+      'I speak to your best current and past customers. They tell me why they chose you, in words your website has never used.',
+  },
+  {
+    number: '04',
+    title: 'Team review',
+    description:
+      'Everything I produce goes past my team, one by one, before you see it. Each review is reviewed. It is slower, and it is why the work holds up.',
+  },
+  {
+    number: '05',
+    title: 'Offer and channel',
+    description:
+      "We sharpen the offer and pick the channel that fits it. You might be certain it's your website. Often it's the profile.",
+  },
+  {
+    number: '06',
+    title: 'Launch, then cut fast',
+    description:
+      "We run it, watch it, and cut what doesn't work quickly. Budget goes where the results are, not where the plan said.",
+  },
+  {
+    number: '07',
+    title: 'Every Friday',
+    description:
+      'You get an update from me every Friday. Any message during the week is answered within two hours.',
+  },
+];
+
+function Cards({ items }: { items: { title: string; description: string; href: string }[] }) {
+  return (
+    <div className="s-cards">
+      {items.map((item, i) => (
+        <Link key={item.href} data-rv="up" data-d={String(Math.min(i, 3) * 0.08)} href={item.href} className="s-card">
+          <h3>{item.title}</h3>
+          <span className="s-card-b">{item.description}</span>
+          <span className="s-card-more">Read →</span>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 export default function ServicesContent() {
   return (
-    <div className="bg-navy-950 min-h-screen">
-      <section className="relative bg-navy-950 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.45),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.45),transparent_60%)]" />
+    <SiteShell>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Services' }]}
+        kicker="All services"
+        title={<>Local SEO &amp; Google Business Profile, <span className="s-accent">Gold Coast</span></>}
+        lead={<p>Local SEO, Google Business Profile optimisation and AI search are the job. The pages below explain each part of it, and how it plays out for the trades I work with most.</p>}
+        variant="services-hub"
+        image={{ src: '/images/home/mitchell-giles-local-seo-consultant-ormeau.webp', alt: 'Mitchell Giles, MRG Marketing, Ormeau', width: 920, height: 1150 }}
+        caption="Mitchell Giles, Ormeau"
+      />
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 pb-16 sm:pb-24">
-          <nav className="flex items-center gap-2 text-sm text-ink/55 mb-10 animate-fade-in font-sans">
-            <Link href="/" className="hover:text-gold transition-colors duration-200">Home</Link>
-            <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-ink/80">Services</span>
-          </nav>
-
-          <div className="max-w-3xl animate-fade-in-up">
-            <Eyebrow align="left" className="mb-5">All services</Eyebrow>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.1] mb-6 font-serif">
-              Local SEO &amp; Google Business Profile, Gold Coast
-            </h1>
-            <p className="text-base sm:text-lg text-ink/80 leading-relaxed font-sans">
-              Local SEO, Google Business Profile optimisation and AI search are the job. The pages below explain each part of it, and how it plays out for the trades I work with most.
-            </p>
+      <section className="s-sec s-white">
+        <div className="s-wrap s-stack-lg">
+          <ServiceRows level={2} more="Learn more →" rows={services.map((s) => ({ title: s.title, blurb: s.description, href: s.href }))} />
+          <div className="s-stack">
+            <SectionHead title="Supporting pages" lead={<p>The parts of the job, each explained on its own page.</p>} />
+            <Cards items={supporting} />
+          </div>
+          <div className="s-stack">
+            <SectionHead title="By trade" lead={<p>The same method, written for the trades I work with most.</p>} />
+            <Cards items={trades} />
           </div>
         </div>
       </section>
 
-      <section className="bg-navy-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.45),transparent_60%)]" />
-
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <AnimateOnScroll
-                  key={index}
-                  stagger={index + 1}
-                >
-                  <Link
-                    href={item.href}
-                    className="block h-full rounded-2xl border border-ink/[0.06] bg-white/55 p-6 sm:p-7 hover:border-gold/20 hover:bg-white/85 hover:-translate-y-1 transition-all duration-300 group"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-6">
-                      <Icon className="w-6 h-6 text-gold" />
-                    </div>
-                    <h2 className="text-xl font-bold text-ink mb-3 font-serif group-hover:text-gold transition-colors duration-200">
-                      {item.title}
-                    </h2>
-                    <p className="text-sm text-ink/65 leading-relaxed mb-5 font-sans">{item.description}</p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold group-hover:text-gold-light transition-colors duration-200 font-sans">
-                      Learn more
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                    </span>
-                  </Link>
-                </AnimateOnScroll>
-              );
-            })}
-          </div>
-          <div className="mt-16">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink font-serif mb-2">Supporting pages</h2>
-            <p className="text-base text-ink/65 font-sans mb-6 max-w-2xl">The parts of the job, each explained on its own page.</p>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {supporting.map((item) => (
-                <Link key={item.href} href={item.href} className="group block rounded-2xl border border-ink/10 bg-white/55 p-5 hover:bg-white/85 hover:border-ink/30 transition-colors duration-200">
-                  <h3 className="text-base font-bold text-ink font-serif mb-1.5">{item.title}</h3>
-                  <p className="text-sm text-ink/70 font-sans leading-relaxed">{item.description}</p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-ink font-sans">
-                    Read <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="mt-12">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink font-serif mb-2">By trade</h2>
-            <p className="text-base text-ink/65 font-sans mb-6 max-w-2xl">The same method, written for the trades I work with most.</p>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {trades.map((item) => (
-                <Link key={item.href} href={item.href} className="group block rounded-2xl border border-ink/10 bg-white/55 p-5 hover:bg-white/85 hover:border-ink/30 transition-colors duration-200">
-                  <h3 className="text-base font-bold text-ink font-serif mb-1.5">{item.title}</h3>
-                  <p className="text-sm text-ink/70 font-sans leading-relaxed">{item.description}</p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-ink font-sans">
-                    Read <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
-                  </span>
-                </Link>
-              ))}
-            </div>
+      <section id="services" className="s-sec s-ink" aria-labelledby="process-heading">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead kicker="The process" id="process-heading" level={3} title="How working with me goes" lead={<p>No packages, no tiers. Seven steps, in the order they actually happen.</p>} />
+          <div className="s-cols">
+            {steps.map((step, i) => (
+              <div key={step.number} data-rv="up" data-d={String(Math.min(i, 3) * 0.08)} className="s-col s-col-dark">
+                <span className="s-col-k">{step.number}</span>
+                <h4>{step.title}</h4>
+                <p>{step.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-navy-950 relative overflow-hidden">
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10">
-            <Eyebrow className="mb-4">Location</Eyebrow>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink mb-5 font-serif">
-              Based in Ormeau
-            </h2>
-            <p className="text-ink/65 text-base max-w-2xl mx-auto font-sans">
-              North end of the Gold Coast, half an hour from Brisbane. I work with businesses across both, and most of
-              it happens over the phone and on site with you.
-            </p>
-          </AnimateOnScroll>
-          <AnimateOnScroll>
-            <div className="rounded-2xl overflow-hidden border border-ink/[0.08]" style={{ height: '450px' }}>
-              <iframe
-                src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.address.full}, Australia`)}&z=14&output=embed`}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={`MRG Marketing, ${BUSINESS_INFO.address.full}, on Google Maps`}
-              />
-            </div>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      <ServicesOverview />
-
-      <section className="relative bg-navy-950 text-ink">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-
-        <AnimateOnScroll className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-ink leading-tight mb-6 font-serif">
-              Not sure where to start?
-            </h2>
-            <p className="text-lg sm:text-xl text-ink/80 leading-relaxed font-sans mb-12">
-              Book a 30-minute call. Tell me what you sell and what is not working, and I will tell you where I would start,
-              and recommend exactly where to focus first.
-            </p>
-
-            <div className="relative inline-block group">
-              <Link
-                href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-                className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950 group"
-              >
-                Book a 30-minute call
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-            </div>
-          </div>
-        </AnimateOnScroll>
-      </section>
-      <Offers />
       <Industries />
-      <LinkWeb show={['areas', 'proof']} heading="Where I do this, and the proof" />
-    </div>
+      <Offers />
+
+      <section className="s-sec s-white">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead kicker="Location" title="Based in Ormeau" lead={<p>North end of the Gold Coast, half an hour from Brisbane. I work with businesses across both, and most of it happens over the phone and on site with you.</p>} />
+          <div data-rv="up" className="s-framed" style={{ height: 'clamp(300px,45vw,450px)' }}>
+            <iframe
+              src={`https://www.google.com/maps?q=${encodeURIComponent(`${BUSINESS_INFO.address.full}, Australia`)}&z=14&output=embed`}
+              width="100%"
+              height="100%"
+              style={{ height: '100%' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`MRG Marketing, ${BUSINESS_INFO.address.full}, on Google Maps`}
+            />
+          </div>
+        </div>
+      </section>
+
+      <CtaSection title={<>Not sure <span className="s-accent">where to start?</span></>} variant="services-hub">
+        <p>Tell me what you sell and the search you want to win. Within 48 hours I will send you a short video of where you stand, tell you where I would start, and recommend exactly where to focus first.</p>
+      </CtaSection>
+
+      <LinksSection title="Where I do this, and the proof" current="/services/" />
+    </SiteShell>
   );
 }

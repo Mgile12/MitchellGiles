@@ -1,13 +1,7 @@
-'use client';
-
-import { useState } from 'react';
 import Link from 'next/link';
-import { MapPin, ArrowRight, ArrowDown, ChevronDown, Search, Magnet, CalendarDays, Lock } from 'lucide-react';
-import Lightbox from '@/components/Lightbox';
-import AnimateOnScroll from '@/components/AnimateOnScroll';
-import Eyebrow from '@/components/Eyebrow';
-import GBPDepth from './GBPDepth';
-import LinkWeb from '@/components/LinkWeb';
+import SiteShell from '@/components/site/SiteShell';
+import ZoomImage from '@/components/site/ZoomImage';
+import { CtaSection, FaqSection, LinksSection, PageHero, SectionHead } from '@/components/site/Blocks';
 
 const heatmaps = [
   {
@@ -36,29 +30,61 @@ const gbpProof = [
   { src: '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-google-business-profile-calls-33-from-zero.png', stat: '33 calls', note: 'Same new profile, first three months' },
 ];
 
-const testimonials = ['/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-1.jpg', '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-2.jpg'];
-
 const steps = [
   {
-    icon: Search,
     title: 'Audit',
     text: 'I look at your profile, your website and the three businesses currently above you, and tell you on the call what is holding you back.',
   },
   {
-    icon: Magnet,
     title: 'Fix both magnets',
     text: 'Your profile and your website, together. Most people only touch one, which is why most people stay on page two.',
   },
   {
-    icon: CalendarDays,
     title: 'Weekly work',
     text: 'Reviews, posts, photos, categories, services. Every week, not once at the start.',
   },
   {
-    icon: Lock,
     title: 'Hold the spot',
     text: 'Rankings drift the moment the work stops. This is ongoing, and I take one business per industry, per area.',
   },
+];
+
+const testimonials = ['/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-1.jpg', '/images/google-business-profile-gold-coast/google-business-profile-gold-coast-client-message-2.jpg'];
+
+const parts = [
+  {
+    title: 'Categories and services',
+    text: 'The primary category is the single biggest lever on the profile and the most common thing I find wrong: "Contractor" where it should say "Plumber", "Business service" where it should say "Steel fabricator". Secondary categories cover what else is true. Then the services list, every job you do, in the words customers use, because Google matches searches against it and most profiles list three services for a business that does thirty.',
+  },
+  {
+    title: 'Description, attributes and hours',
+    text: 'The description says what you do, where, since when and for whom, in plain text, with the licence number if you hold one. Attributes (owner-run, wheelchair access, online quotes) are set honestly. Hours are what you actually answer, because a profile that says 24/7 and goes to voicemail at midnight earns one-star reviews, and Google reads those too.',
+  },
+  {
+    title: 'Photos, posts and products',
+    text: 'Real photos of real work, added every month: vans, jobs, the team, the premises. A post each week with a job and a suburb in the caption. Products set up for the things people buy as a unit: hot water systems, ceramic coating packages, service plans. None of this is decoration; together it is how Google tells a live business from a dormant one.',
+  },
+  {
+    title: 'Reviews and replies',
+    text: 'A request that goes out by text after every job, asking for the job and the suburb in the customer’s words. A reply to every review within a day, naming the job back. Flagging the ones that break policy with the right policy cited. The review stream is the one ranking factor customers can see, and it works best as a weekly habit rather than a quarterly push.',
+  },
+  {
+    title: 'The website behind the profile',
+    text: 'Google reads the site linked from the profile to confirm what the business does and where. A page for each service and each suburb, saying the same things the profile says, is what lets the profile rank beyond its pin and what turns a Maps search into a call. The profile and the website are two halves of the same job.',
+  },
+  {
+    title: 'Measuring it: the grid and the calls',
+    text: 'A ranking grid scan around the business before the work, and then monthly on the same grid, so the before and after mean something. Calls, website clicks and direction requests from the profile’s own performance data, month on month and against the same months last year. Calls are taps on the Call button, which Google defines, and I say so on every report.',
+  },
+];
+
+const weekly = [
+  'Review requests out, new reviews answered',
+  'One post with a real job and the suburb',
+  'Categories, services, hours and attributes checked against what the business is doing this season',
+  'Photos added; Q&A answered; spam edits reverted',
+  'One website improvement that supports the profile',
+  'Monthly: the grid scan, the performance numbers, and a call about what moved',
 ];
 
 interface FAQItem {
@@ -66,266 +92,140 @@ interface FAQItem {
   answer: string;
 }
 
-function FAQ({ item }: { item: FAQItem }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-b border-ink/[0.06]">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-4 py-5 text-left group"
-        aria-expanded={open}
-      >
-        <span
-          className={`text-base sm:text-lg font-semibold transition-colors duration-200 font-sans ${
-            open ? 'text-gold' : 'text-ink group-hover:text-gold/80'
-          }`}
-        >
-          {item.question}
-        </span>
-        <ChevronDown
-          className={`w-5 h-5 shrink-0 transition-transform duration-200 ${open ? 'rotate-180 text-gold' : 'text-ink/55'}`}
-        />
-      </button>
-      <div className={`grid transition-all duration-300 ease-out ${open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-        <div className="overflow-hidden">
-          <p className="pb-6 pl-4 border-l-2 border-gold/30 text-sm sm:text-base text-ink/80 leading-relaxed font-sans">
-            {item.answer}
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function GBPContent({ faqItems }: { faqItems: FAQItem[] }) {
-  const [lightbox, setLightbox] = useState<string | null>(null);
-
   return (
-    <div className="bg-navy-950 text-ink">
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="grid-ground absolute inset-0" aria-hidden="true" />
-        <div className="glow w-[720px] h-[520px] -top-56 left-1/2 -translate-x-1/2" style={{ ['--glow-a' as string]: '0.16' }} aria-hidden="true" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 sm:pt-44 pb-16 sm:pb-20 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold/40 text-gold rounded-full mb-6 font-semibold text-sm tracking-wide uppercase font-sans">
-            <MapPin className="w-4 h-4" />
-            Google Business Profile
-          </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] font-serif mb-6">
-            Top 3 on Google Maps.
-            <br />
-            <span className="text-gold">Planned for 90 days, often faster.</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-ink/80 max-w-2xl mx-auto leading-relaxed font-sans">
-            The top three Maps listings take around <strong className="text-ink">70% of local clicks</strong>.
-            Everyone else splits what&apos;s left. I get Gold Coast businesses into that pack and keep them there.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-              className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
-            >
-              Book a 30-minute call
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </Link>
-            <a
-              href="#heatmaps"
-              className="press inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold border border-ink/20 text-ink bg-white/55 hover:bg-white/85 hover:border-ink/40"
-            >
-              See the heatmaps
-              <ArrowDown className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </section>
+    <SiteShell>
+      <PageHero
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services/' }, { label: 'Google Business Profile' }]}
+        kicker="Google Business Profile"
+        title={<>Top 3 on Google Maps. <span className="s-accent">Planned for 90 days, often faster.</span></>}
+        lead={<p>The top three Maps listings take around <strong>70% of local clicks</strong>. Everyone else splits what&apos;s left. I get Gold Coast businesses into that pack and keep them there.</p>}
+        links={<a href="#heatmaps">See the heatmaps ↓</a>}
+        variant="service-google-business-profile"
+        image={{ src: '/images/home/mitchell-giles-local-seo-consultant-ormeau.webp', alt: 'Mitchell Giles, MRG Marketing, Ormeau', width: 920, height: 1150 }}
+        caption="Mitchell Giles, Ormeau"
+      />
 
-      {/* Heatmaps */}
-      <section id="heatmaps" className="relative scroll-mt-24">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ink font-serif mb-3">
-              Two clients. Two heatmaps. Before and after.
-            </h2>
-            <p className="text-ink/65 font-sans">
-              Live Google Maps ranking heatmaps. The number is how many days it took. Both are written up in full, with
-              the work and the limits of the measurement, in the{' '}
-              <Link href="/case-studies" className="text-gold hover:text-gold/80 transition-colors duration-150">
-                case studies
-              </Link>
-              .
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll className="grid md:grid-cols-2 gap-8">
+      <section id="heatmaps" className="s-sec s-white">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead
+            title={<>Two clients. Two heatmaps. <span className="s-accent">Before and after.</span></>}
+            lead={<p>Live Google Maps ranking heatmaps. The number is how many days it took. Both are written up in full, with the work and the limits of the measurement, in the <Link href="/case-studies/">case studies</Link>.</p>}
+          />
+          <div className="s-shots">
             {heatmaps.map((item) => (
-              <div key={item.client} className="rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden">
-                <div className="px-6 py-4 border-b border-ink/[0.06] flex items-center justify-between">
-                  <p className="text-ink font-semibold font-sans">{item.client}</p>
-                  <div className="px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider">
-                    {item.result}
-                  </div>
-                </div>
-                <div className="p-4 sm:p-6 grid grid-cols-2 gap-3 sm:gap-4">
+              <div key={item.client} data-rv="up" className="s-box">
+                <div className="s-box-head"><span>{item.client}</span><span className="s-tag">{item.result}</span></div>
+                <div className="s-pair">
                   {(['before', 'after'] as const).map((k) => (
                     <div key={k}>
-                      <div
-                        className={`text-xs font-bold uppercase tracking-wider mb-2 text-center ${
-                          k === 'before' ? 'text-ink/55' : 'text-gold'
-                        }`}
-                      >
-                        {k}
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => setLightbox(item[k])}
-                        className="proof-card block w-full rounded-lg overflow-hidden border border-ink/[0.06]"
-                        aria-label={`${item.client} ${k}, open full size`}
-                      >
-                        <img src={item[k]} alt={`google business profile gold coast: ${item.client} Google Maps ranking grid ${k}`} className="w-full h-auto block" loading="lazy" />
-                      </button>
+                      <span className="s-pair-k">{k}</span>
+                      <ZoomImage src={item[k]} label={`${item.client} ${k}, open full size`}>
+                        <img src={item[k]} alt={`google business profile gold coast: ${item.client} Google Maps ranking grid ${k}`} loading="lazy" />
+                      </ZoomImage>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-          </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
-      {/* Performance screenshots */}
-      <section className="bg-navy-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ink font-serif mb-3">
-              Nine charts. Straight out of Google.
-            </h2>
-            <p className="text-ink/65 font-sans max-w-2xl mx-auto">
-              Calls, website clicks and interactions from Business Profiles I manage, April to August 2026. Untouched
-              screenshots. Tap any to enlarge. &ldquo;Calls&rdquo; is Google&apos;s own metric: taps on the profile&apos;s call
-              button, not a count of answered phone calls.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {gbpProof.map((item, index) => (
-              <AnimateOnScroll key={item.src} stagger={(index % 3) + 1}>
-              <button
-                type="button"
-                onClick={() => setLightbox(item.src)}
-                className="proof-card group w-full text-left rounded-2xl border border-ink/[0.08] bg-white/55 overflow-hidden"
-                aria-label={`${item.stat}. ${item.note}. Open full size.`}
-              >
-                <div className="bg-white">
-                  <img
-                    src={item.src}
-                    alt={`google business profile gold coast: performance chart, ${item.stat}`}
-                    className="w-full h-auto block"
-                    loading="lazy"
-                    width={914}
-                    height={505}
-                  />
-                </div>
-                <div className="px-5 py-4 border-t border-ink/[0.06]">
-                  <p className="text-ink font-semibold font-sans">{item.stat}</p>
-                  <p className="text-ink/65 text-sm font-sans mt-0.5">{item.note}</p>
-                </div>
-              </button>
-              </AnimateOnScroll>
+      <section className="s-sec s-sand">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead
+            title={<>Nine charts. <span className="s-accent">Straight out of Google.</span></>}
+            lead={<p>Calls, website clicks and interactions from Business Profiles I manage, April to August 2026. Untouched screenshots. Tap any to enlarge. &ldquo;Calls&rdquo; is Google&apos;s own metric: taps on the profile&apos;s call button, not a count of answered phone calls.</p>}
+          />
+          <div className="s-shots">
+            {gbpProof.map((item, i) => (
+              <div key={item.src} data-rv="up" data-d={String((i % 3) * 0.08)}>
+                <ZoomImage src={item.src} label={`${item.stat}. ${item.note}. Open full size.`}>
+                  <img src={item.src} alt={`google business profile gold coast: performance chart, ${item.stat}`} loading="lazy" width={914} height={505} />
+                  <span className="s-shot-note"><strong>{item.stat}</strong><span>{item.note}</span></span>
+                </ZoomImage>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <AnimateOnScroll className="text-center mb-8">
-            <h2 className="text-xl sm:text-2xl font-bold text-ink font-serif mb-2">What clients say</h2>
-            <p className="text-ink/65 text-sm font-sans">Screenshots, not testimonials I wrote.</p>
-          </AnimateOnScroll>
-          <AnimateOnScroll className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <section className="s-sec s-white">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead title="What clients say" lead={<p>Screenshots, not testimonials I wrote.</p>} />
+          <div className="s-shots" style={{ maxWidth: 820 }}>
             {testimonials.map((src, i) => (
-              <button
-                key={src}
-                type="button"
-                onClick={() => setLightbox(src)}
-                className="proof-card rounded-2xl overflow-hidden border border-gold/20 shadow-[0_4px_24px_rgba(0,0,0,0.14)]"
-                aria-label={`Client message ${i + 1}, open full size`}
-              >
-                <img src={src} alt={`google business profile gold coast: client message ${i + 1}`} className="w-full h-auto block" loading="lazy" />
-              </button>
+              <div key={src} data-rv="up" data-d={String(i * 0.1)}>
+                <ZoomImage src={src} label={`Client message ${i + 1}, open full size`}>
+                  <img src={src} alt={`google business profile gold coast: client message ${i + 1}`} loading="lazy" />
+                </ZoomImage>
+              </div>
             ))}
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="bg-navy-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <AnimateOnScroll className="text-center mb-12">
-            <Eyebrow className="mb-4">How it works</Eyebrow>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif">
-              Four steps. The last one never ends.
-            </h2>
-          </AnimateOnScroll>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {steps.map((s, i) => {
-              const Icon = s.icon;
-              return (
-                <AnimateOnScroll key={s.title} stagger={i + 1}>
-                  <div className="h-full rounded-2xl border border-ink/[0.06] bg-white/55 p-6">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center mb-5">
-                      <Icon className="w-5 h-5 text-gold" />
-                    </div>
-                    <h3 className="text-lg font-bold text-ink font-serif mb-2">{s.title}</h3>
-                    <p className="text-sm text-ink/65 leading-relaxed font-sans">{s.text}</p>
-                  </div>
-                </AnimateOnScroll>
-              );
-            })}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <GBPDepth />
-
-      <LinkWeb current="/google-business-profile-gold-coast" intro="The parts of the job, the trades I write for, the suburbs I work in, and the proof." />
-
-      <section>
-        <AnimateOnScroll className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-10">Questions I get asked</h2>
-          <div>
-            {faqItems.map((item) => (
-              <FAQ key={item.question} item={item} />
+      <section className="s-sec s-ink">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead kicker="How it works" title={<>Four steps. <span className="s-accent">The last one never ends.</span></>} />
+          <div className="s-cols">
+            {steps.map((s, i) => (
+              <div key={s.title} data-rv="up" data-d={String(i * 0.08)} className="s-col s-col-dark">
+                <span className="s-col-k">{String(i + 1).padStart(2, '0')}</span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </div>
             ))}
           </div>
-        </AnimateOnScroll>
+        </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gold/20" />
-        <AnimateOnScroll className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-ink font-serif mb-5">
-            Find out where you sit on the map
-          </h2>
-          <p className="text-lg text-ink/80 font-sans leading-relaxed mb-10">
-            Fifteen minutes. I&apos;ll look at your profile before the call and tell you what I&apos;d do first. If
-            your industry and area are already taken, I&apos;ll say so.
-          </p>
-          <Link
-            href="https://calendar.notion.com/meet/mitchellgiles134/tovi31rm"
-            className="gold-flat-btn inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold group"
-          >
-            Book a 30-minute call
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
-        </AnimateOnScroll>
+      <section className="s-sec s-sand" aria-labelledby="depth-heading">
+        <div className="s-wrap s-stack-lg">
+          <SectionHead
+            kicker="What the work actually is"
+            id="depth-heading"
+            title={<>Six parts of a Business Profile, <span className="s-accent">and what I do with each.</span></>}
+            lead={<p>Google Business Profile optimisation is not a one-off set-up. It is a short list of things done properly once, and then kept up every week, because the profile that stops being worked is the profile that slides out of the top three. This is the list.</p>}
+          />
+          <div className="s-cols">
+            {parts.map((p, i) => (
+              <div key={p.title} data-rv="up" data-d={String((i % 3) * 0.08)} className="s-col">
+                <span className="s-col-k">PART {i + 1}</span>
+                <h3>{p.title}</h3>
+                <p>{p.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="s-split">
+            <div className="s-stack-sm">
+              <h3 data-rv="up" className="s-h3">What a week looks like</h3>
+              <ul data-rv="up" className="s-ticks s-copy">
+                {weekly.map((w) => <li key={w}>{w}</li>)}
+              </ul>
+            </div>
+            <div className="s-stack-sm">
+              <h3 data-rv="up" className="s-h3">Suspensions, duplicates and spam</h3>
+              <div data-rv="up" className="s-copy">
+                <p>Three things can undo months of work in a day. A profile suspended after a well-meant edit to the name or address. A duplicate profile that splits the reviews and confuses Google about which business is real. And competitors stuffing their names with keywords or sitting on fake addresses to steal the pack. I handle the first two through the reinstatement and merge processes, with the evidence Google asks for, and the third by reporting it properly and beating it on the fundamentals.</p>
+                <p>
+                  If your profile is already suspended, that is the first and only job until it is back. <Link href="/local-seo-audit-gold-coast/">The audit</Link> finds it, <Link href="/google-maps-ranking-gold-coast/">the ranking grid</Link> measures what comes back, and <Link href="/review-management-gold-coast/">review management</Link> keeps it there.
+                </p>
+                <p><Link href="/seo-for-tradies-gold-coast/">How this works for tradies →</Link></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <Lightbox src={lightbox} onClose={() => setLightbox(null)} />
-    </div>
+      <FaqSection title="Questions I get asked" faqs={faqItems} />
+
+      <CtaSection title={<>Find out where you sit <span className="s-accent">on the map</span></>} variant="service-google-business-profile">
+        <p>Within 48 hours you get a short video of your own Google Maps position and what I&apos;d do first. If your industry and area are already taken, I&apos;ll say so.</p>
+      </CtaSection>
+
+      <LinksSection title="Keep reading" intro="The parts of the job, the trades I write for, the suburbs I work in, and the proof." current="/google-business-profile-gold-coast/" />
+    </SiteShell>
   );
 }
