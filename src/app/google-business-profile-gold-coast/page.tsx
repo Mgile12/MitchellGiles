@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: 'Do you guarantee a top 3 ranking?',
     answer:
-      "No. Nobody can guarantee a Google ranking, and anyone who does is guessing with your money. What I can show you is the track record on this page, and I'll tell you on the call if your situation isn't a fit.",
+      "Yes, for new monthly clients. We agree your main search in writing, you get 3 new reviews and 7 job photos a week, and if you're not in the top 3 on Google Maps for that search after 90 days, you get back the management fees paid in those 90 days. Cancel early and there is no refund. The full conditions are on the terms page.",
   },
   {
     question: 'What does it cost?',

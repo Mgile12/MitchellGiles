@@ -470,11 +470,11 @@ export default function HomeContent() {
     <div data-rv="scale" style={{"flex":"0 1 auto","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(120px,22vw,260px)","lineHeight":".8","letterSpacing":"-.06em","fontVariantNumeric":"tabular-nums"}}><span data-num="" data-target="90">90</span></div>
     <div style={{"flex":"1 1 420px","minWidth":"0","display":"flex","flexDirection":"column","gap":"18px"}}>
       <div data-rv="left" style={{"fontFamily":"var(--font-jb),monospace","fontSize":"12px","letterSpacing":".14em","color":"#dbe5ff"}}>IF YOU GO AHEAD</div>
-      <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(30px,5.4vw,52px)","lineHeight":".95","letterSpacing":"-.03em","textWrap":"balance"}}>Your calls, guaranteed for 90 days.</h2>
+      <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(30px,5.4vw,52px)","lineHeight":".95","letterSpacing":"-.03em","textWrap":"balance"}}>Top 3, guaranteed in 90 days.</h2>
       <div style={{"display":"flex","flexDirection":"column","fontSize":"18px"}}>
-        <div data-rv="up" data-d=".1" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>1</strong><span>We agree a call target in writing before I start.</span></div>
-        <div data-rv="up" data-d=".2" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>2</strong><span>You do your part: 4 new reviews and 10 job photos a week.</span></div>
-        <div data-rv="up" data-d=".3" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)","borderBottom":"1px solid rgba(255,255,255,.4)"}}><strong>3</strong><span>Miss the target in 90 days and you get back the management fees paid in those 90 days. Cancel before the 90 days end and there is no refund.</span></div>
+        <div data-rv="up" data-d=".1" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>1</strong><span>We agree your main search in writing before I start.</span></div>
+        <div data-rv="up" data-d=".2" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)"}}><strong>2</strong><span>You do your part: 3 new reviews and 7 job photos a week.</span></div>
+        <div data-rv="up" data-d=".3" style={{"display":"flex","gap":"14px","padding":"12px 0","borderTop":"1px solid rgba(255,255,255,.4)","borderBottom":"1px solid rgba(255,255,255,.4)"}}><strong>3</strong><span>Not in the top 3 on Google Maps in 90 days and you get back the management fees paid in those 90 days. Cancel before the 90 days end and there is no refund.</span></div>
       </div>
       <div data-rv="up" data-d=".35" style={{"display":"flex","flexWrap":"wrap","gap":"8px 18px","alignItems":"center","fontWeight":"700","fontSize":"15px"}}>
         <span>No lock-in</span><span>·</span><span>You own everything</span><span>·</span><span>Update every Friday</span><Link href="/terms/#guarantee" style={{"color":"#fff"}}>Full terms</Link>

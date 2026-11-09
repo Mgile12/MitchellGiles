@@ -4,23 +4,23 @@ import LegalPage from '@/components/LegalPage';
 import { BUSINESS_INFO } from '@/lib/business-info';
 
 const DESCRIPTION =
-  'Terms for MRG Marketing in Ormeau: the free map video, month-to-month services, who owns the work, and the full conditions of the 90-day call guarantee.';
+  'Terms for MRG Marketing in Ormeau: the free map video, month-to-month services, who owns the work, and the full conditions of the 90-day top 3 guarantee.';
 
 export const metadata: Metadata = {
-  title: 'Terms and 90-Day Call Guarantee',
+  title: 'Terms and 90-Day Top 3 Guarantee',
   description: DESCRIPTION,
   alternates: { canonical: `${BUSINESS_INFO.url}/terms/` },
-  openGraph: { title: 'Terms and 90-Day Call Guarantee | MRG Marketing', description: DESCRIPTION, type: 'website', url: `${BUSINESS_INFO.url}/terms/`, locale: 'en_AU' },
+  openGraph: { title: 'Terms and 90-Day Top 3 Guarantee | MRG Marketing', description: DESCRIPTION, type: 'website', url: `${BUSINESS_INFO.url}/terms/`, locale: 'en_AU' },
 };
 
 export default function TermsPage() {
   return (
     <LegalPage
-      title="Terms and 90-day call guarantee"
+      title="Terms and 90-day top 3 guarantee"
       name="Terms"
       path="/terms/"
-      updated="4 November 2026"
-      intro={<p>The plain version: month to month, you own what I build, and if you do your part and I miss the agreed call target in 90 days, you get back the management fees you paid in those 90 days. If you cancel early, there are no refunds.</p>}
+      updated="9 November 2026"
+      intro={<p>The plain version: month to month, you own what I build, and if you do your part and you're not in the top 3 on Google Maps for your agreed search in 90 days, you get back the management fees you paid in those 90 days. If you cancel early, there are no refunds.</p>}
     >
       <h2>Who these terms are with</h2>
       <p>
@@ -46,24 +46,24 @@ export default function TermsPage() {
 
       <h2 id="refunds">Cancelling early: no refunds</h2>
       <p>
-        <strong>If you cancel early, you get no refund.</strong> That covers monthly fees already paid, part-months, and the onboarding fee. The 90-day call guarantee also ends the day you cancel, so it can&apos;t be claimed afterwards.
+        <strong>If you cancel early, you get no refund.</strong> That covers monthly fees already paid, part-months, and the onboarding fee. The 90-day top 3 guarantee also ends the day you cancel, so it can&apos;t be claimed afterwards.
         The onboarding fee is never refunded, because that work is done at the start.
       </p>
       <p>The only exceptions are a valid claim under the guarantee below, and any rights the law gives you that can&apos;t be excluded.</p>
 
-      <h2 id="guarantee">The 90-day call guarantee</h2>
+      <h2 id="guarantee">The 90-day top&nbsp;3 guarantee</h2>
       <p>This guarantee applies to new monthly management clients, once per business.</p>
       <p><strong>How it works</strong></p>
       <ul>
-        <li><strong>The target.</strong> Before I start, we agree in writing a call target for your Google Business Profile.</li>
+        <li><strong>The target.</strong> Before I start, we agree in writing your main search, such as &quot;plumber Coomera&quot;. The target is the top 3 on Google Maps for that search.</li>
         <li><strong>The 90 days.</strong> The 90 days start on the start date we record in writing, which will not be before I have the access I need.</li>
-        <li><strong>How calls are counted.</strong> Calls means taps on the Call button in Google, as shown in your Business Profile Performance report. That is the same way every number on this site is measured.</li>
-        <li><strong>Your part.</strong> In each week of the 90 days, you get at least 4 new reviews from genuine customers and supply at least 10 photos of real jobs.</li>
-        <li><strong>The refund.</strong> If you did your part and the call target was not met by the end of the 90 days, I refund the management fees you paid me for those 90 days, including any GST you paid on them.</li>
+        <li><strong>How it is checked.</strong> On the last day of the 90 days, I run a ranking scan for the agreed search centred on your business address. Top 3 means your profile shows in the top 3 Google Maps results at that point.</li>
+        <li><strong>Your part.</strong> In each week of the 90 days, you get at least 3 new reviews from genuine customers and supply at least 7 photos of real jobs.</li>
+        <li><strong>The refund.</strong> If you did your part and you are not in the top 3 for the agreed search at the end of the 90 days, I refund the management fees you paid me for those 90 days, including any GST you paid on them.</li>
       </ul>
       <p><strong>Making a claim</strong></p>
       <p>
-        Email <a href={`mailto:${BUSINESS_INFO.email}`}>{BUSINESS_INFO.email}</a> within 14 days after the 90 days end. We check the Performance report together.
+        Email <a href={`mailto:${BUSINESS_INFO.email}`}>{BUSINESS_INFO.email}</a> within 14 days after the 90 days end. We check the ranking scan together.
         If the conditions are met, I refund you within 14 days, to the account you paid from. You keep all the work done up to that point.
       </p>
       <p><strong>When the guarantee does not apply</strong></p>
