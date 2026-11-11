@@ -118,7 +118,15 @@ export function LeadForm({ variant, hero = false, searchHint = 'e.g. plumber Coo
       window.dispatchEvent(new Event('mrg-lead-sent'));
       const w = window as unknown as { fbq?: (...a: unknown[]) => void; gtag?: (...a: unknown[]) => void };
       w.fbq?.('track', 'Lead');
-      w.gtag?.('event', 'generate_lead', { form: 'map-video', variant });
+      // Thank-you page once the event has gone (or after 800ms if analytics is blocked)
+      let gone = false;
+      const go = () => {
+        if (gone) return;
+        gone = true;
+        window.location.href = '/free-map-video/thank-you/';
+      };
+      w.gtag?.('event', 'generate_lead', { form: 'map-video', variant, event_callback: go });
+      setTimeout(go, 800);
     } catch {
       setState('error');
     }
