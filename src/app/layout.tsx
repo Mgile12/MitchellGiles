@@ -144,6 +144,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
+        {/* Microsoft Clarity, project zbu5a67izi. Loads its tag async, so it doesn't block rendering. */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zbu5a67izi");`,
+          }}
+        />
         <noscript>
           <img height="1" width="1" loading="lazy" style={{ display: 'none' }} alt="" src="https://www.facebook.com/tr?id=1874195909924234&ev=PageView&noscript=1" />
         </noscript>

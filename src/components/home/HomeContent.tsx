@@ -89,8 +89,8 @@ export default function HomeContent() {
     <>
 
 <section className="mrg-rise" style={{"padding":"clamp(28px,6vw,64px) 20px clamp(40px,6vw,64px)","background":"#f3f1ec","overflow":"hidden"}}>
-  <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexWrap":"wrap","gap":"36px","alignItems":"flex-start"}}>
-    <div style={{"containerType":"inline-size","flex":"1 1 400px","minWidth":"0","maxWidth":"620px","display":"flex","flexDirection":"column","gap":"18px"}}>
+  <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexWrap":"wrap","gap":"clamp(36px,4vw,56px)","alignItems":"center"}}>
+    <div style={{"containerType":"inline-size","flex":"1 1 400px","minWidth":"0","maxWidth":"590px","display":"flex","flexDirection":"column","gap":"18px"}}>
       <div style={{"display":"flex","flexDirection":"column","gap":"14px"}}>
         <h1 data-rv="left" style={{"margin":"0","display":"flex","alignItems":"center","gap":"10px","fontFamily":"var(--font-jb),monospace","fontSize":"13px","letterSpacing":".14em","fontWeight":"600","textTransform":"uppercase","lineHeight":"1.3"}}><span style={{"width":"8px","height":"8px","borderRadius":"50%","background":"#2F6BFF","flex":"none","margin":"0 2px 0 4px","animation":"mrgPulse 2s infinite"}}></span>Internet Marketing Service Ormeau</h1>
         <p style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(30px,8.6cqi,68px)","lineHeight":".95","letterSpacing":"-.03em","display":"flex","flexDirection":"column","whiteSpace":"nowrap"}}>
@@ -118,7 +118,7 @@ export default function HomeContent() {
       </div>
     </div>
     <div className="only-wide">
-      <div style={{"flex":"1 1 360px","minWidth":"0","display":"flex","flexDirection":"column","gap":"12px","paddingTop":"clamp(0px,4vw,40px)"}}>
+      <div style={{"flex":"1 1 360px","minWidth":"0","display":"flex","flexDirection":"column","gap":"12px"}}>
         <div data-rv="scale" data-d=".3" style={{"position":"relative","aspectRatio":"16/9","overflow":"hidden","background":"#111110","border":"3px solid #111110","boxShadow":"10px 10px 0 #2F6BFF"}}>
           <PlayVideo embed="https://www.youtube-nocookie.com/embed/uC-0gdj_ii4?autoplay=1&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Meet Mitchell, MRG Marketing" label="Play founder video">
               <img src="https://i.ytimg.com/vi/uC-0gdj_ii4/maxresdefault.jpg" alt="Mitchell Giles, MRG Marketing" style={{"width":"100%","height":"100%","objectFit":"cover","display":"block"}} fetchPriority="high" decoding="async" />
