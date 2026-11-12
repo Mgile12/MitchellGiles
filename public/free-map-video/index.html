@@ -365,6 +365,47 @@ fbq('init','1874195909924234');fbq('track','PageView');
     });
   });
 
+  // Hero founder video: starts muted with captions once the page has loaded, so the form isn't slowed down.
+  // Skipped for reduced motion and data saver; the thumbnail and play button stay as the fallback.
+  var saveData=navigator.connection&&navigator.connection.saveData;
+  if(!reduce&&!saveData){
+    var startHero=function(){
+      // Phone and desktop each have a copy; use whichever is showing now
+      var heroVid=$$('#hero-form, [data-screen-label="01 Hero"] [aria-label="Play founder video"]').filter(function(b){return b.tagName==='BUTTON'&&b.offsetParent})[0];
+      if(!heroVid)return;
+      var box=heroVid.parentNode,f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/uC-0gdj_ii4?autoplay=1&mute=1&playsinline=1&cc_load_policy=1&cc_lang_pref=en&rel=0&modestbranding=1&enablejsapi=1&origin='+encodeURIComponent(location.origin);
+      f.title='MRG Marketing founder video';
+      f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
+      // Hidden under the thumbnail until YouTube says it's playing. If it never does (blocked autoplay,
+      // a YouTube sign-in check), it's removed and the thumbnail and play button stay as they were.
+      f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;display:block;opacity:0;pointer-events:none;transition:opacity .5s';
+      box.appendChild(f);
+      var send=function(func,args){f.contentWindow.postMessage(JSON.stringify({event:'command',func:func,args:args||[]}),'*')};
+      f.addEventListener('load',function(){f.contentWindow.postMessage(JSON.stringify({event:'listening',id:'hero'}),'*')});
+      var playing=false;
+      var onMsg=function(e){
+        if(e.source!==f.contentWindow)return;
+        var d;try{d=JSON.parse(e.data)}catch(_){return}
+        if(playing||!d.info||d.info.playerState!==1)return;
+        playing=true;window.removeEventListener('message',onMsg);
+        f.style.opacity=1;f.style.pointerEvents='auto';
+        setTimeout(function(){if(heroVid.parentNode)heroVid.remove()},500);
+        var snd=document.createElement('button');
+        snd.type='button';snd.innerHTML='<span aria-hidden="true">🔊</span> Tap for sound';
+        snd.style.cssText='position:absolute;left:12px;bottom:12px;z-index:2;border:0;background:#2F6BFF;color:#fff;font:inherit;font-weight:800;font-size:15px;padding:10px 14px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)';
+        snd.addEventListener('click',function(){send('unMute');send('setVolume',[100]);send('seekTo',[0,true]);send('playVideo');snd.remove()});
+        box.appendChild(snd);
+      };
+      window.addEventListener('message',onMsg);
+      // Tapping the thumbnail first plays the normal version with sound, so drop the muted one
+      heroVid.addEventListener('click',function(){if(!playing){playing=true;window.removeEventListener('message',onMsg);f.remove()}});
+      setTimeout(function(){if(!playing){window.removeEventListener('message',onMsg);f.remove()}},8000);
+    };
+    var later=function(){setTimeout(startHero,400)};
+    if(document.readyState==='complete')later();else window.addEventListener('load',later);
+  }
+
   // Sticky bar on phones, once the hero form has scrolled away and before the final form
   var heroVis=true,finalVis=false,barEl=$('#bar');
   function bar(){barEl.style.transform=(window.innerWidth<760&&!heroVis&&!finalVis&&!done)?'translateY(0)':'translateY(110%)'}
