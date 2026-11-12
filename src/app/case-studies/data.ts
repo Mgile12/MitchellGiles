@@ -29,6 +29,12 @@ export interface CaseStudy {
   hubImage?: { src: string; alt: string };
   /** Not listed on the hub (reachable from its service page and the sitemap). */
   hidden?: boolean;
+  /** Client logo, shown only where the client has agreed to be named. */
+  logo?: { src: string; alt: string };
+  /** The client's situation in plain words, from an interview with them. Shown before the evidence blocks. */
+  story?: { paragraphs: string[]; source: string };
+  /** The client's own words. Reported, not measured. */
+  quotes?: { text: string; by: string }[];
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -76,6 +82,20 @@ export const caseStudies: CaseStudy[] = [
       { src: '/images/case-studies/polish-hub-marine-detailing-google-maps/polish-hub-marine-detailing-case-study-polish-hub-google-maps-ranking-after.jpg', alt: 'polish hub marine detailing case study: Polish Hub Google Maps ranking grid after, top 3 across the grid', caption: 'After: top 3 across most of the grid, two days later.' },
     ],
     hubImage: { src: '/images/case-studies/hub/case-studies-polish-hub-google-maps-ranking-after.jpg', alt: 'case studies: Polish Hub Google Maps ranking grid after, top 3 across the grid' },
+    logo: { src: '/clients/polish-hub.webp', alt: 'Polish Hub Marine Detailing logo' },
+    story: {
+      paragraphs: [
+        'Conrad runs Polish Hub, a marine detailing business on the Gold Coast. Before this work, most of his jobs came through word of mouth, industry contacts, Facebook posts and marina referrals.',
+        'That built the business, but it left him depending on other people for work. Jobs that came through personal connections often came with pressure to discount, and he wanted customers who found Polish Hub themselves and paid what the work was worth.',
+        'So the goal was never a ranking for its own sake. It was a source of enquiries he controlled.',
+        'Since the profile and website work, Conrad says the profile has sat between 1st and 3rd for his main search, and that more enquiries and bookings for his detailing packages have come in directly. Those two points are his account, not a measurement: there are no call counts on record for this profile, which is why the figures below stick to the ranking scans.',
+      ],
+      source: 'From an interview with Conrad Smith, November 2026.',
+    },
+    quotes: [
+      { text: 'It just made me feel more in control of my operation.', by: 'Conrad Smith, Polish Hub' },
+      { text: 'You’d explain everything to me and put it in ways I could understand it.', by: 'Conrad Smith, Polish Hub' },
+    ],
   },
   {
     slug: 'ceramics-gold-coast-google-maps',

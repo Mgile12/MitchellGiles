@@ -177,7 +177,7 @@ export default function HomeContent() {
   <div style={{"maxWidth":"1240px","margin":"0 auto","padding":"clamp(64px,10vw,112px) 20px 0","display":"flex","flexDirection":"column","gap":"22px"}}>
     
     <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(32px,6.4vw,64px)","lineHeight":".95","letterSpacing":"-.03em","textWrap":"balance","maxWidth":"980px"}}>Google doesn&apos;t rank you once. It ranks you <span style={{"color":"#6f98ff"}}>street by street.</span></h2>
-    <p data-rv="up" data-d=".1" style={{"margin":"0","fontSize":"18px","color":"#d4d1c8","maxWidth":"680px","textWrap":"pretty"}}>Every search is <Link href="/google-maps-ranking-gold-coast/" style={{"color":"#6f98ff"}}>ranked from where the customer is standing</Link>. Most profiles are half-built, so you show up in your own street and disappear three streets away, where most of the calls are. Scroll to watch 12 weeks of work.</p>
+    <p data-rv="up" data-d=".1" style={{"margin":"0","fontSize":"18px","color":"#d4d1c8","maxWidth":"680px","textWrap":"pretty"}}>Every search is <Link href="/google-maps-ranking-gold-coast/" style={{"color":"#6f98ff"}}>ranked from where the customer is standing</Link>. Most profiles are half-built, so you show up in your own street and disappear three streets away, where most of the calls are. On the map below, red means a competitor shows up ahead of you and green means you&apos;re the business they call. Scroll to watch 12 weeks of work.</p>
   </div>
   <div data-scrub="sticky" style={{"position":"relative","height":"280vh"}}>
     <div className="s-story-pin" style={{"position":"sticky","top":"60px","height":"calc(100vh - 60px)","display":"flex","alignItems":"center","padding":"16px 20px","overflow":"hidden"}}>
@@ -322,6 +322,14 @@ export default function HomeContent() {
   </div>
 </section>
 
+<section style={{"padding":"clamp(56px,9vw,104px) 20px","background":"#2F6BFF","color":"#fff"}}>
+  <div style={{"maxWidth":"960px","margin":"0 auto","display":"flex","flexDirection":"column","gap":"18px"}}>
+    <div data-rv="left" style={{"fontFamily":"var(--font-jb),monospace","fontSize":"12px","letterSpacing":".14em","color":"#dbe5ff"}}>WHAT MATTERS MORE?</div>
+    <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(30px,6vw,56px)","lineHeight":".98","letterSpacing":"-.03em","textWrap":"balance"}}>How much you spend on marketing, or how much your marketing makes you?</h2>
+    <p data-rv="up" data-d=".1" style={{"margin":"0","fontSize":"18px","maxWidth":"640px","textWrap":"pretty"}}>Better rankings are only part of it. More calls from people ready to book, and jobs you can charge properly for, are what matter to your business.</p>
+  </div>
+</section>
+
 <section id="services" style={{"padding":"clamp(64px,10vw,112px) 20px","background":"#f3f1ec"}}>
   <div style={{"maxWidth":"1240px","margin":"0 auto","display":"flex","flexDirection":"column","gap":"28px"}}>
     
@@ -417,10 +425,10 @@ export default function HomeContent() {
     </div>
     <div style={{"flex":"1 1 440px","minWidth":"0","display":"flex","flexDirection":"column","gap":"22px"}}>
       <div data-rv="left" style={{"display":"flex","alignItems":"center","gap":"10px","fontFamily":"var(--font-jb),monospace","fontSize":"12px","letterSpacing":".14em","color":"#b8b5ac"}}><span style={{"width":"22px","height":"3px","background":"#2F6BFF"}}></span>ABOUT</div>
-      
+      <h2 data-rv="up" style={{"margin":"0","fontStretch":"125%","fontWeight":"900","fontSize":"clamp(32px,6vw,56px)","lineHeight":".95","letterSpacing":"-.03em","textWrap":"balance"}}>One person. <span style={{"color":"#6f98ff"}}>No agency queue.</span></h2>
       <p data-rv="up" data-d=".1" style={{"margin":"0","fontSize":"18px","color":"#d4d1c8","textWrap":"pretty"}}>I&apos;m Mitchell. I started in <Link href="/google-business-profile-gold-coast/" style={{"color":"#6f98ff"}}>Google Business Profiles</Link> because free Google traffic is the fastest win a local business can get. Most of my clients are <Link href="/best-seo-agency-for-tradies-in-australia/" style={{"color":"#6f98ff"}}>trades and local services</Link>. I also do the same work white-label for other agencies, which is why some results on this site have the name cropped out.</p>
       <div style={{"display":"grid","gridTemplateColumns":"repeat(auto-fit,minmax(min(100%,220px),1fr))","gap":"0 28px"}}>
-        <div data-rv="up" data-d=".1" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>You deal with me</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>I do the research and the work. A small team checks it before it reaches you.</div></div>
+        <div data-rv="up" data-d=".1" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>You deal with me</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>I explain your rankings, make the changes and answer your questions. No rotating account managers, and no repeating yourself to someone new every month. A small team checks the work before it reaches you.</div></div>
         <div data-rv="up" data-d=".18" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>Same-day replies</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>An update every Friday. Anything in between, answered the same day.</div></div>
         <div data-rv="up" data-d=".26" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>Local first, then the best in the world</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>I study your competitors here, then the top operators nationally and globally, and bring that standard back to your suburb.</div></div>
         <div data-rv="up" data-d=".34" style={{"padding":"16px 0","borderTop":"1px solid #3a3a38"}}><div style={{"fontWeight":"800"}}>You own everything</div><div style={{"color":"#b8b5ac","fontSize":"15px"}}>Your profile, your site, your pages. No lock-in.</div></div>

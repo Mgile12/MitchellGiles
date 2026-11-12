@@ -77,6 +77,11 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
         form={false}
         side={
           <dl className="s-facts">
+            {c.logo && (
+              <div style={{ gridColumn: '1 / -1' }}>
+                <img src={c.logo.src} alt={c.logo.alt} width={96} height={96} style={{ width: 96, height: 96, objectFit: 'contain', display: 'block' }} />
+              </div>
+            )}
             <div className="s-facts-big">
               <p className="s-figure-n" style={{ color: '#2F6BFF' }}>{c.figure}</p>
               <p className="s-stat-l">{c.figureLabel}</p>
@@ -120,6 +125,18 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             </div>
           )}
           <div className="s-blocks">
+            {c.story && (
+              <Block title="The story">
+                {c.story.paragraphs.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
+                {c.quotes?.map((q) => (
+                  <blockquote key={q.text} style={{ margin: '18px 0 0', paddingLeft: 18, borderLeft: '4px solid #2F6BFF' }}>
+                    <p style={{ margin: 0, fontWeight: 800, fontSize: 20, lineHeight: 1.3 }}>&ldquo;{q.text}&rdquo;</p>
+                    <footer style={{ marginTop: 6, fontSize: 14, color: '#55534d' }}>{q.by}</footer>
+                  </blockquote>
+                ))}
+                <p style={{ fontSize: 14, color: '#55534d' }}>{c.story.source}</p>
+              </Block>
+            )}
             <Block title="The problem"><p>{c.problem}</p></Block>
             <Block title="The work">
               <ol className="s-nums">{c.work.map((w) => <li key={w}>{w}</li>)}</ol>
