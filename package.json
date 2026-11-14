@@ -12,6 +12,7 @@
     "test": "next build && node scripts/smoke.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "11.1.7",
     "framer-motion": "^12.34.3",
     "lucide-react": "^0.344.0",
     "next": "^14.2.35",

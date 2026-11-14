@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState, type CSSProperties, type FormEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type FormEvent } from 'react';
 import { summarise, type ScanPoint } from '@/lib/calc-maths';
 
 const MONO = 'var(--font-jb),monospace';
@@ -8,6 +8,15 @@ const BLUE = '#2F6BFF';
 const INK = '#111110';
 const GRID = 5;
 const FN = '/.netlify/functions';
+// Cloudflare Turnstile site key (public). Set NEXT_PUBLIC_TURNSTILE_SITE_KEY in Netlify; without it the check is skipped.
+const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? '';
+
+interface Turnstile {
+  render: (el: HTMLElement, o: Record<string, unknown>) => string;
+  reset: (id: string) => void;
+  remove: (id: string) => void;
+}
+const turnstile = () => (window as unknown as { turnstile?: Turnstile }).turnstile;
 
 const LABEL: CSSProperties = { display: 'flex', flexDirection: 'column', gap: 6 };
 const LABEL_TEXT: CSSProperties = { fontSize: 13, fontWeight: 700 };
@@ -50,6 +59,56 @@ export default function CallsCalculator() {
   const [gateError, setGateError] = useState('');
   const [emailed, setEmailed] = useState(false);
 
+  const formShown = step === 'form' || step === 'finding';
+
+  // Human check: loads when the calculator is on screen, runs invisibly, asks for a tick only if unsure
+  const humanBox = useRef<HTMLDivElement>(null);
+  const human = useRef({ token: '', id: '', waiters: [] as ((t: string) => void)[] });
+  useEffect(() => {
+    if (!SITE_KEY || !humanBox.current) return;
+    const box = humanBox.current;
+    const draw = () => {
+      const t = turnstile();
+      if (!t || human.current.id || !box.isConnected) return;
+      human.current.id = t.render(box, {
+        sitekey: SITE_KEY,
+        appearance: 'interaction-only',
+        action: 'calculator',
+        callback: (token: string) => {
+          human.current.token = token;
+          human.current.waiters.splice(0).forEach((w) => w(token));
+        },
+        'expired-callback': () => { human.current.token = ''; },
+      });
+    };
+    const io = new IntersectionObserver((es) => {
+      if (!es.some((e) => e.isIntersecting)) return;
+      io.disconnect();
+      if (turnstile()) return draw();
+      const sc = document.createElement('script');
+      sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      sc.async = true;
+      sc.onload = draw;
+      document.head.appendChild(sc);
+    }, { rootMargin: '200px' });
+    io.observe(box);
+    const h = human.current;
+    return () => {
+      io.disconnect();
+      if (h.id) turnstile()?.remove(h.id);
+      h.id = '';
+      h.token = '';
+    };
+  }, [formShown]);
+
+  const humanToken = () =>
+    !SITE_KEY || human.current.token
+      ? Promise.resolve(human.current.token)
+      : new Promise<string>((done) => {
+          human.current.waiters.push(done);
+          setTimeout(() => done(''), 15000);
+        });
+
   const inputs = useMemo(() => ({ calls: Number(calls) || 0, close, value: Number(value) || 0 }), [calls, close, value]);
   const sum = useMemo(() => summarise(points, inputs, GRID), [points, inputs]);
 
@@ -60,7 +119,13 @@ export default function CallsCalculator() {
         ? 'The live scan is being set up. Ask for the free map video below and I will run your numbers by hand.'
         : code === 'expired'
           ? 'That took a while and the session ran out. Please run it again.'
-          : 'That did not work. Check the business name and suburb, then try again.',
+          : code === 'bot'
+            ? 'I couldn’t confirm you’re a person. Refresh the page and try again.'
+            : code === 'rate_limited'
+              ? 'You’ve run a few scans today. Ask for the free map video below and I’ll look at your map myself.'
+              : code === 'busy'
+                ? 'The scanner has hit its limit for today. Ask for the free map video below and I’ll look at your map myself.'
+                : 'That did not work. Check the business name and suburb, then try again.',
     );
   };
 
@@ -70,7 +135,11 @@ export default function CallsCalculator() {
     setStep('finding');
     const website = (new FormData(e.currentTarget).get('website') as string) ?? '';
     try {
-      const d = await post<{ candidates: Candidate[]; demo?: boolean }>('calc-find', { name: biz.name, suburb: biz.suburb, website });
+      const token = await humanToken();
+      // A check token works once, so get a fresh one ready for the next search
+      human.current.token = '';
+      if (human.current.id) turnstile()?.reset(human.current.id);
+      const d = await post<{ candidates: Candidate[]; demo?: boolean }>('calc-find', { name: biz.name, suburb: biz.suburb, website, human: token });
       setSample(Boolean(d.demo));
       setCandidates(d.candidates);
       setStep('pick');
@@ -166,7 +235,8 @@ export default function CallsCalculator() {
             <label style={LABEL}><span style={LABEL_TEXT}>Calls from Google a month, right now</span><span style={HINT}>Your Business Profile shows this under Performance. Guess if you have to.</span><input className="mrg-input" type="number" inputMode="numeric" required min={1} max={5000} value={calls} onChange={num(setCalls)} style={FIELD} /></label>
             <label style={LABEL}><span style={LABEL_TEXT}>Average job value ($)</span><input className="mrg-input" type="number" inputMode="numeric" required min={1} max={1000000} value={value} onChange={num(setValue)} style={FIELD} /></label>
             <label style={{ ...LABEL, gap: 8 }}><span style={{ ...LABEL_TEXT, display: 'flex', justifyContent: 'space-between', gap: 12 }}><span>Calls that become jobs</span><span style={{ color: BLUE }}>{close}%</span></span><input type="range" min={5} max={90} step={5} value={close} onChange={(e) => setClose(Number(e.target.value))} style={{ width: '100%' }} /></label>
-            <button type="submit" disabled={step === 'finding'} className="hv-ink-bg" style={{ ...BTN, marginTop: 'auto' }}>{step === 'finding' ? 'Finding your listing…' : 'Scan my area'} <span aria-hidden="true" style={{ fontSize: 22, flex: 'none' }}>→</span></button>
+            <div ref={humanBox} style={{ marginTop: 'auto' }} />
+            <button type="submit" disabled={step === 'finding'} className="hv-ink-bg" style={BTN}>{step === 'finding' ? 'Finding your listing…' : 'Scan my area'} <span aria-hidden="true" style={{ fontSize: 22, flex: 'none' }}>→</span></button>
             {error && <p role="alert" style={ERR}>{error}</p>}
             <p style={{ ...HINT, margin: 0, textAlign: 'center' }}>Free. Takes about 30 seconds. No email needed to see where you rank.</p>
           </div>

@@ -58,7 +58,7 @@ export default function PrivacyPage() {
         <li><strong>Microsoft Clarity</strong> shows me how people use the site, including clicks, scrolling and recordings of visits. What you type into forms is masked.</li>
         <li><strong>Meta Pixel</strong> measures my Facebook and Instagram ads, including when a form is sent, and can be used to show ads to people who have visited the site. The form details you type are not passed to the pixel. You can change this in your <a href="https://www.facebook.com/adpreferences" rel="noopener noreferrer">Meta ad preferences</a>.</li>
         <li><strong>Netlify</strong> hosts the site, receives the map video and calculator forms and measures site performance.</li>
-        <li><strong>DataForSEO</strong> runs the Google Maps searches for the calculator. It receives your business name, suburb and search, not your email or mobile. <strong>Resend</strong> sends the calculator report to the email address you give.</li>
+        <li><strong>DataForSEO</strong> runs the Google Maps searches for the calculator. It receives your business name, suburb and search, not your email or mobile. <strong>Resend</strong> sends the calculator report to the email address you give. <strong>Cloudflare Turnstile</strong> checks that the calculator is being used by a person, not a bot, using details about your browser and connection.</li>
         <li><strong>Embedded content</strong> from YouTube, Loom and Google Maps comes from those companies and is covered by their own privacy policies. The videos only load when you press play.</li>
       </ul>
       <p>You can block or clear cookies in your browser settings. The site will still work.</p>

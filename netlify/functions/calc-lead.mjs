@@ -1,6 +1,7 @@
 // Step 3 of the calculator: email the visitor their report. The lead itself is saved by Netlify Forms
 // from the page, so a lead is never lost if the email service is down or not set up yet.
 import { clean, configured, json, readBody, verify } from '../lib/calc.mjs';
+import { allowEmail, clientIp } from '../lib/guard.mjs';
 
 const SITE = 'https://mrgmarketing.com.au';
 const num = (v, max) => Math.max(0, Math.min(max, Math.round(Number(v) || 0)));
@@ -34,7 +35,7 @@ ${rivals ? `<h2 style="font-size:18px;margin:0 0 6px">Who is above you</h2><tabl
 </div>`;
 }
 
-export default async (req) => {
+export default async (req, context) => {
   if (!configured()) return json({ error: 'not_configured' }, 503);
   const body = await readBody(req);
   const biz = body && verify(body.token);
@@ -44,6 +45,8 @@ export default async (req) => {
   const key = process.env.RESEND_API_KEY;
   const from = process.env.CALC_EMAIL_FROM;
   if (!key || !from) return json({ emailed: false });
+  // Stops the form being used to send reports to other people's inboxes
+  if (!(await allowEmail(clientIp(req, context), email))) return json({ emailed: false, limited: true });
   try {
     const notify = process.env.CALC_NOTIFY_TO;
     const r = await fetch('https://api.resend.com/emails', {
