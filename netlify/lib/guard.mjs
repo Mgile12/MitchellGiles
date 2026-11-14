@@ -69,7 +69,7 @@ async function take(name, id, limit) {
 export const allowFind = (ip) => take('find', ip, LIMITS.findsPerIp);
 
 /** A full scan is counted once, when its first row is asked for. Both limits are checked before either is counted. */
-export async function allowScan(ip) {
+async function allowScan(ip) {
   const siteKey = `${today()}/scan-site/${hash('all')}`;
   const ipKey = `${today()}/scan/${hash(ip)}`;
   const [site, mine] = await Promise.all([read(siteKey), read(ipKey)]);
@@ -79,9 +79,25 @@ export async function allowScan(ip) {
   return 'ok';
 }
 
-/** Each row of a scan can be fetched once per session, so one session can't be replayed for free scans. */
-export async function allowRow(sessionId, row) {
-  return take(`row-${row}`, sessionId, 1);
+/**
+ * Counts a scan once per session, on its centre point. Returns 'ok', 'rate_limited' or 'busy'.
+ * Other points are refused until the centre has been counted, so the limits can't be skipped.
+ */
+export async function countScan(ip, sessionId) {
+  const key = `${today()}/scan-session/${hash(sessionId)}`;
+  if ((await read(key)) >= 1) return 'ok';
+  const ok = await allowScan(ip);
+  if (ok === 'ok') await write(key, 1);
+  return ok;
+}
+
+export async function scanCounted(sessionId) {
+  return (await read(`${today()}/scan-session/${hash(sessionId)}`)) >= 1;
+}
+
+/** Each point of a scan can be fetched twice per session (first try and one retry), so one session can't be replayed for free scans. */
+export async function allowCell(sessionId, cell) {
+  return take(`cell-${cell}`, sessionId, 2);
 }
 
 export async function allowEmail(ip, email) {

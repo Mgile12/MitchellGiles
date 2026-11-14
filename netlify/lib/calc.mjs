@@ -63,10 +63,10 @@ function gridPoint(lat, lng, row, col) {
 }
 
 // ---- Google Maps results, via DataForSEO ----
-async function mapsSearch(task) {
+async function mapsSearch(task, timeoutMs = 20000) {
   const auth = Buffer.from(`${process.env.DATAFORSEO_LOGIN}:${process.env.DATAFORSEO_PASSWORD}`).toString('base64');
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 20000);
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
     const r = await fetch(DFS_URL, {
       method: 'POST',
@@ -116,28 +116,29 @@ export async function findBusiness(name, suburb) {
 
 const norm = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
-/** One row of the grid: the business's rank at each point and the three listings on top there. */
-export async function scanRow(biz, keyword, row) {
-  const cols = Array.from({ length: GRID }, (_, col) => col);
-  return Promise.all(
-    cols.map(async (col) => {
-      const pt = gridPoint(biz.la, biz.ln, row, col);
-      try {
-        const items = demo()
-          ? demoResults(biz, keyword, row, col)
-          : (await mapsSearch({ keyword, location_coordinate: `${pt.lat.toFixed(6)},${pt.lng.toFixed(6)},15z` })).map((i, idx) => ({ ...listing(i), rank: i.rank_group ?? idx + 1 }));
-        const mine = items.find((i) => (biz.p && i.placeId === biz.p) || (biz.c && i.cid === biz.c)) ?? items.find((i) => norm(i.title) === norm(biz.n));
-        return {
-          row,
-          col,
-          rank: mine ? mine.rank : null, // null = not in the first 20 results
-          top: items.slice(0, 3).map((i) => ({ title: i.title, rating: i.rating, reviews: i.reviews, me: i === mine })),
-        };
-      } catch {
-        return { row, col, rank: null, top: [], failed: true };
-      }
-    }),
-  );
+export const CENTRE = (GRID * GRID - 1) / 2; // the point on the business's own address
+
+/** One point of the grid: the business's rank there and the three listings on top. */
+export async function scanPoint(biz, keyword, cell) {
+  const row = Math.floor(cell / GRID);
+  const col = cell % GRID;
+  const pt = gridPoint(biz.la, biz.ln, row, col);
+  try {
+    const items = demo()
+      ? demoResults(biz, keyword, row, col)
+      : // 8.5 seconds, so a slow answer fails this one point instead of the whole function
+        (await mapsSearch({ keyword, location_coordinate: `${pt.lat.toFixed(6)},${pt.lng.toFixed(6)},15z` }, 8500)).map((i, idx) => ({ ...listing(i), rank: i.rank_group ?? idx + 1 }));
+    const mine = items.find((i) => (biz.p && i.placeId === biz.p) || (biz.c && i.cid === biz.c)) ?? items.find((i) => norm(i.title) === norm(biz.n));
+    return {
+      row,
+      col,
+      rank: mine ? mine.rank : null, // null = not in the first 20 results
+      top: items.slice(0, 3).map((i) => ({ title: i.title, rating: i.rating, reviews: i.reviews, me: i === mine })),
+    };
+  } catch (e) {
+    console.error('calc-scan point', cell, e?.name === 'AbortError' ? 'timeout' : e?.message);
+    return { row, col, rank: null, top: [], failed: true };
+  }
 }
 
 // ---- sample data, for local testing only (CALC_DEMO=1) ----

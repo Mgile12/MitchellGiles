@@ -53,7 +53,7 @@ export default function CallsCalculator() {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [chosen, setChosen] = useState<Candidate | null>(null);
   const [points, setPoints] = useState<ScanPoint[]>([]);
-  const [rowsDone, setRowsDone] = useState(0);
+  const [done, setDone] = useState(0);
   const [sample, setSample] = useState(false);
   const [gate, setGate] = useState<'locked' | 'sending' | 'open'>('locked');
   const [gateError, setGateError] = useState('');
@@ -101,6 +101,19 @@ export default function CallsCalculator() {
     };
   }, [formShown]);
 
+  const card = useRef<HTMLDivElement>(null);
+  const errBox = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    if (step === 'finding' || (step === 'form' && !error)) return;
+    const el = step === 'form' ? errBox.current : card.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    if (r.top < 70 || r.top > window.innerHeight * 0.6) {
+      const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      el.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: step === 'form' ? 'center' : 'start' });
+    }
+  }, [step, error]);
+
   const humanToken = () =>
     !SITE_KEY || human.current.token
       ? Promise.resolve(human.current.token)
@@ -125,7 +138,9 @@ export default function CallsCalculator() {
               ? 'You’ve run a few scans today. Ask for the free map video below and I’ll look at your map myself.'
               : code === 'busy'
                 ? 'The scanner has hit its limit for today. Ask for the free map video below and I’ll look at your map myself.'
-                : 'That did not work. Check the business name and suburb, then try again.',
+                : code === 'scan_failed'
+                  ? 'Google Maps was slow to answer just now. Please try again in a minute.'
+                  : `That did not work. Check the business name and suburb, then try again. (${code})`,
     );
   };
 
@@ -151,21 +166,37 @@ export default function CallsCalculator() {
   const scan = async (c: Candidate) => {
     setChosen(c);
     setPoints([]);
-    setRowsDone(0);
+    setDone(0);
     setGate('locked');
     setStep('scanning');
+    const total = GRID * GRID;
+    const centre = (total - 1) / 2;
+    const one = async (cell: number): Promise<ScanPoint> => {
+      const ask = () => post<{ point: ScanPoint }>('calc-scan', { token: c.token, keyword: biz.keyword, cell }).then((d) => d.point);
+      let p: ScanPoint;
+      try {
+        p = await ask();
+        if (p.failed) p = await ask();
+      } catch (err) {
+        const code = (err as Error).message;
+        // Limits and expired sessions are final; anything else (a slow or dropped request) gets one retry
+        if (cell === centre || ['rate_limited', 'busy', 'expired', 'not_configured'].includes(code)) throw err;
+        p = await ask().catch(() => ({ row: Math.floor(cell / GRID), col: cell % GRID, rank: null, top: [], failed: true }));
+      }
+      setDone((n) => n + 1);
+      return p;
+    };
     try {
-      const rows = await Promise.all(
-        Array.from({ length: GRID }, (_, row) =>
-          post<{ points: ScanPoint[] }>('calc-scan', { token: c.token, keyword: biz.keyword, row }).then((d) => {
-            setRowsDone((n) => n + 1);
-            return d.points;
-          }),
-        ),
+      // The centre goes first: it's your own address, and it's where the scan is counted
+      const all: ScanPoint[] = [await one(centre)];
+      const rest = Array.from({ length: total }, (_, i) => i).filter((i) => i !== centre);
+      await Promise.all(
+        Array.from({ length: 6 }, async () => {
+          for (let cell = rest.shift(); cell !== undefined; cell = rest.shift()) all.push(await one(cell));
+        }),
       );
-      const all = rows.flat();
-      if (all.filter((p) => !p.failed).length < (GRID * GRID) / 2) throw new Error('scan_failed');
-      setPoints(all);
+      if (all.filter((p) => !p.failed).length < total / 2) throw new Error('scan_failed');
+      setPoints(all.sort((a, b) => a.row * GRID + a.col - (b.row * GRID + b.col)));
       setStep('result');
     } catch (err) {
       fail((err as Error).message);
@@ -218,7 +249,7 @@ export default function CallsCalculator() {
   const text = (k: keyof typeof biz) => (e: { target: { value: string } }) => setBiz((b) => ({ ...b, [k]: e.target.value }));
 
   return (
-    <div id="calculator" style={{ border: `3px solid ${INK}`, boxShadow: `10px 10px 0 ${INK}`, background: '#f3f1ec', scrollMarginTop: 90 }}>
+    <div id="calculator" ref={card} style={{ border: `3px solid ${INK}`, boxShadow: `10px 10px 0 ${INK}`, background: '#f3f1ec', scrollMarginTop: 90 }}>
       {sample && <div style={{ background: '#e9b72e', color: INK, padding: '8px 16px', fontFamily: MONO, fontSize: 12, letterSpacing: '.08em' }}>SAMPLE DATA · NOT A REAL SCAN</div>}
 
       {(step === 'form' || step === 'finding') && (
@@ -237,7 +268,7 @@ export default function CallsCalculator() {
             <label style={{ ...LABEL, gap: 8 }}><span style={{ ...LABEL_TEXT, display: 'flex', justifyContent: 'space-between', gap: 12 }}><span>Calls that become jobs</span><span style={{ color: BLUE }}>{close}%</span></span><input type="range" min={5} max={90} step={5} value={close} onChange={(e) => setClose(Number(e.target.value))} style={{ width: '100%' }} /></label>
             <div ref={humanBox} style={{ marginTop: 'auto' }} />
             <button type="submit" disabled={step === 'finding'} className="hv-ink-bg" style={BTN}>{step === 'finding' ? 'Finding your listing…' : 'Scan my area'} <span aria-hidden="true" style={{ fontSize: 22, flex: 'none' }}>→</span></button>
-            {error && <p role="alert" style={ERR}>{error}</p>}
+            {error && <p ref={errBox} role="alert" style={ERR}>{error}</p>}
             <p style={{ ...HINT, margin: 0, textAlign: 'center' }}>Free. Takes about 30 seconds. No email needed to see where you rank.</p>
           </div>
         </form>
@@ -261,8 +292,8 @@ export default function CallsCalculator() {
         <div role="status" style={{ background: INK, color: '#fff', padding: 'clamp(28px,6vw,56px)', display: 'flex', flexDirection: 'column', gap: 16 }}>
           <p style={{ ...KICKER, margin: 0, color: '#b8b5ac' }}>Scanning {GRID * GRID} points around {chosen?.title}</p>
           <div style={{ ...BIG, fontSize: 'clamp(28px,5vw,44px)' }}>Searching &quot;{biz.keyword}&quot; street by street…</div>
-          <div style={{ height: 8, background: '#3a3a38' }}><div style={{ height: '100%', width: `${(rowsDone / GRID) * 100}%`, background: BLUE, transition: 'width .4s ease' }} /></div>
-          <p style={{ margin: 0, color: '#d4d1c8' }}>{rowsDone * GRID} of {GRID * GRID} points checked. This takes about 30 seconds.</p>
+          <div style={{ height: 8, background: '#3a3a38' }}><div style={{ height: '100%', width: `${(done / (GRID * GRID)) * 100}%`, background: BLUE, transition: 'width .4s ease' }} /></div>
+          <p style={{ margin: 0, color: '#d4d1c8' }}>{done} of {GRID * GRID} points checked. This takes about 30 seconds.</p>
         </div>
       )}
 
