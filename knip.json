@@ -1,3 +1,4 @@
 {
+  "entry": ["netlify/functions/*.mjs"],
   "ignore": ["src/components/parked/**"]
 }

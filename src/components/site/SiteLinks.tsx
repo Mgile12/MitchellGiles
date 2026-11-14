@@ -16,6 +16,7 @@ const siteLinks = [
     { t: 'Review management', href: '/review-management-gold-coast/' },
     { t: 'Local citations', href: '/local-citations-gold-coast/' },
     { t: 'Local SEO audit', href: '/local-seo-audit-gold-coast/' },
+    { t: 'Missed calls calculator', href: '/missed-calls-calculator/' },
     { t: 'Email marketing', href: '/email-marketing-gold-coast/' },
   ] },
   { h: 'BY TRADE', links: [

@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       title="Privacy policy"
       name="Privacy"
       path="/privacy/"
-      updated="4 November 2026"
+      updated="14 November 2026"
       intro={<p>I collect what I need to make your map video and do the work, I don&apos;t sell your details, and you can ask me to see or delete them at any time.</p>}
     >
       <h2>Who this covers</h2>
@@ -31,6 +31,7 @@ export default function PrivacyPage() {
       <h2>What I collect</h2>
       <ul>
         <li><strong>When you ask for a map video:</strong> your business name or Google profile link, the search you want to win and your mobile number. I also record which page or ad version you came from.</li>
+        <li><strong>When you use the missed calls calculator:</strong> your business name, suburb, the search you want to win and the numbers you enter. If you unlock the full report, your email and mobile too.</li>
         <li><strong>When you contact me or book a call:</strong> your name, email, phone number and whatever you choose to tell me. Bookings go through Notion Calendar.</li>
         <li><strong>If you become a client:</strong> business and billing details, plus the access and information the work needs.</li>
         <li><strong>When you use the website:</strong> pages viewed, approximate location, device and browser details, and how you arrived. This comes through cookies and similar tools, described below.</li>
@@ -41,6 +42,7 @@ export default function PrivacyPage() {
       <h2>How I use it</h2>
       <ul>
         <li>To make your map video and text you the link.</li>
+        <li>To run the calculator scan, email you the report you asked for, and follow up about it.</li>
         <li>To reply to you, run our calls and provide the services you ask for.</li>
         <li>To send invoices and keep the records the law requires.</li>
         <li>To see how the website and my advertising are working, and to improve them.</li>
@@ -53,8 +55,10 @@ export default function PrivacyPage() {
       <h2>Cookies, analytics and advertising</h2>
       <ul>
         <li><strong>Google Analytics</strong> shows me how people use the site. You can opt out with <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer">Google&apos;s browser add-on</a>.</li>
+        <li><strong>Microsoft Clarity</strong> shows me how people use the site, including clicks, scrolling and recordings of visits. What you type into forms is masked.</li>
         <li><strong>Meta Pixel</strong> measures my Facebook and Instagram ads, including when a form is sent, and can be used to show ads to people who have visited the site. The form details you type are not passed to the pixel. You can change this in your <a href="https://www.facebook.com/adpreferences" rel="noopener noreferrer">Meta ad preferences</a>.</li>
-        <li><strong>Netlify</strong> hosts the site, receives the map video form and measures site performance.</li>
+        <li><strong>Netlify</strong> hosts the site, receives the map video and calculator forms and measures site performance.</li>
+        <li><strong>DataForSEO</strong> runs the Google Maps searches for the calculator. It receives your business name, suburb and search, not your email or mobile. <strong>Resend</strong> sends the calculator report to the email address you give.</li>
         <li><strong>Embedded content</strong> from YouTube, Loom and Google Maps comes from those companies and is covered by their own privacy policies. The videos only load when you press play.</li>
       </ul>
       <p>You can block or clear cookies in your browser settings. The site will still work.</p>
